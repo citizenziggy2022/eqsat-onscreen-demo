@@ -1,0 +1,48 @@
+name: live-runner
+# Self-looping runner (GitHub's */5 cron has not fired on this repo). One run lasts ~5 h 45 m:
+#   every 6 min  alerttypes.json + news.json (commit only when changed; ~10 Pages builds/hour max)
+#   every 60 min blocked.json + keepiton.json + blocked_extra.json
+# then it dispatches itself again. Cancel the run (Actions tab) to stop the chain.
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: live-runner
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install requests
+      - name: loop
+        run: |
+          git config user.name "eqsat-live-bot"
+          git config user.email "actions@users.noreply.github.com"
+          end=$(( $(date +%s) + 345*60 ))
+          lastfeeds=0
+          while [ "$(date +%s)" -lt "$end" ]; do
+            python3 scripts/alerttypes.py || echo "alerttypes failed, keeping last file"
+            python3 scripts/fetch_news.py || echo "news failed, keeping last file"
+            files="alerttypes.json news.json"
+            if [ $(( $(date +%s) - lastfeeds )) -ge 3600 ]; then
+              python3 scripts/feeds.py || echo "feeds failed"
+              python3 scripts/fetch_blocked_extra.py --ooni blocked.json --out blocked_extra.json || echo "blocked_extra failed"
+              files="$files blocked.json keepiton.json blocked_extra.json"
+              lastfeeds=$(date +%s)
+            fi
+            git add $files 2>/dev/null || true
+            if ! git diff --cached --quiet; then
+              git commit -q -m "live: data $(date -u +%H:%MZ)"
+              for i in 1 2 3; do git pull -q --rebase -X ours origin main && git push -q && break; sleep 5; done
+            fi
+            sleep 360
+          done
+      - name: next run
+        if: success()
+        run: gh workflow run runner.yml --ref main -R "$GITHUB_REPOSITORY"
+        env:
+          GH_TOKEN: ${{ github.token }}
