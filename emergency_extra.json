@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-08T19:58:14Z",
- "note": "Extra emergency cards (Jason approved Nov 8 2026 4:37 PM). Shown in the main ticker's emergency rotation, after the cards in emergency.json. Edit freely: enabled=false hides a card; lines[] are number + uk/en label (+ optional value). Every item carries source_url + source_date.",
+ "updated": "2026-11-08T20:08:10Z",
+ "note": "Extra emergency cards (Jason approved Nov 8 2026 4:37 PM). Shown in the main ticker's emergency rotation, after the cards in emergency.json. Edit freely: enabled=false hides a card; lines[] are number + uk/en label (+ optional value). Every item carries source_url + source_date. emoji: shown before the title; the TV font has no 📻/📡 glyphs, so radio uses 🆘 and the dish card a blank (the ticker's own satellite icon marks it).",
  "cards": [
   {
    "id": "family",
@@ -81,7 +81,7 @@
   {
    "id": "radio-am-sw",
    "enabled": true,
-   "emoji": "📻",
+   "emoji": "🆘",
    "split": "lines",
    "title_uk": "РАДІО, ЯКЩО НЕМАЄ ТБ",
    "title_en": "RADIO IF TV IS DOWN",
@@ -125,7 +125,7 @@
   {
    "id": "dish-hotbird",
    "enabled": true,
-   "emoji": "📡",
+   "emoji": " ",
    "split": "lines",
    "title_uk": "АНТЕНА HOTBIRD 13°E",
    "title_en": "DISH",
