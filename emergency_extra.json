@@ -1,0 +1,287 @@
+{
+ "updated": "2026-11-08T19:50:19Z",
+ "note": "Extra emergency cards (Jason approved Nov 8 2026 4:37 PM). Shown in the main ticker's emergency rotation, after the cards in emergency.json. Edit freely: enabled=false hides a card; lines[] are number + uk/en label (+ optional value). Every item carries source_url + source_date.",
+ "cards": [
+  {
+   "id": "family",
+   "enabled": true,
+   "emoji": "🆘",
+   "split": "lines",
+   "title_uk": "ПОШУК РІДНИХ",
+   "title_en": "FIND MISSING FAMILY",
+   "lines": [
+    {
+     "number": "1648",
+     "uk": "Нац. інформаційне бюро: полонені, депортовані, зниклі, 24/7",
+     "en": "National Information Bureau, 24/7",
+     "source_url": "https://nib.gov.ua/",
+     "source_date": "2026-11-08"
+    },
+    {
+     "number": "+380 44 287 81 65",
+     "uk": "Нац. інформаційне бюро, дзвінки з-за кордону",
+     "en": "National Information Bureau from abroad",
+     "source_url": "https://nib.gov.ua/",
+     "source_date": "2026-11-08"
+    },
+    {
+     "number": "1698",
+     "uk": "Уповноважений МВС зі зниклих безвісти, пн–пт 9–18",
+     "en": "Commissioner for missing persons, Mon–Fri",
+     "source_url": "https://mvs.gov.ua/upovnovazenii-z-pitan-osib-zniklix-bezvisti-za-osoblivix-obstavin-1/kontakti/gariaca-liniia-upovnovazenogo-z-pitan-osib-zniklix-bezvisti-za-osoblivix-obstavin",
+     "source_date": "2026-11-08"
+    },
+    {
+     "number": "0 800 300 155",
+     "uk": "МКЧХ, розшук зниклих, пн–пт 9–17",
+     "en": "ICRC Central Tracing Agency, Mon–Fri 9–17",
+     "source_url": "https://www.icrc.org/en/document/central-tracing-agency-missing-persons-ukraine",
+     "source_date": "page modified 2026-11-05, read 2026-11-08"
+    },
+    {
+     "number": "0 800 332 656",
+     "uk": "Червоний Хрест України, служба розшуку",
+     "en": "Ukrainian Red Cross tracing · rfl@redcross.org.ua",
+     "source_url": "https://redcross.org.ua/rfl/",
+     "source_date": "2026-11-08"
+    },
+    {
+     "number": "1678",
+     "uk": "Омбудсман: депортовані, затримані, зниклі",
+     "en": "Ombudsman: deported, detained, missing",
+     "source_url": "https://ombudsman.gov.ua/",
+     "source_date": "2026-11-08"
+    },
+    {
+     "number": "+380 44 299 74 08",
+     "uk": "Омбудсман, дзвінки з-за кордону",
+     "en": "Ombudsman from abroad",
+     "source_url": "https://ombudsman.gov.ua/",
+     "source_date": "2026-11-08"
+    },
+    {
+     "number": "0 800 300 529",
+     "uk": "Коордштаб: полонені і зниклі, пн–пт 10–16",
+     "en": "Coordination HQ for POWs, Mon–Fri 10–16",
+     "source_url": "https://web.archive.org/web/20261011190420/https://koordshtab.gov.ua/contacts",
+     "source_date": "archive snapshot 2026-10-11"
+    },
+    {
+     "number": "nib.gov.ua · redcross.org.ua/rfl",
+     "uk": "",
+     "en": "",
+     "source_url": "https://nib.gov.ua/ ; https://redcross.org.ua/rfl/",
+     "source_date": "2026-11-08"
+    }
+   ],
+   "qr_url": "https://nib.gov.ua/",
+   "source_url": "https://nib.gov.ua/",
+   "source_date": "2026-11-08"
+  },
+  {
+   "id": "radio-am-sw",
+   "enabled": true,
+   "emoji": "📻",
+   "split": "lines",
+   "title_uk": "РАДІО, ЯКЩО НЕМАЄ ТБ",
+   "title_en": "RADIO IF TV IS DOWN",
+   "season": "winter B26; Kyiv = UTC+2 until 2027-03-28; times shown in Kyiv time",
+   "lines": [
+    {
+     "number": "1278 kHz AM",
+     "uk": "Українське Радіо, цілодобово",
+     "en": "Ukrainian Radio, 24 h",
+     "source_url": "https://ukr.radio/maps",
+     "source_date": "2026-11-08 (live page; same text in Wayback 2026-10-30)",
+     "cross_check": "Aoki B24 via shortwaveschedule.com (Kurisove 100 kW)"
+    },
+    {
+     "number": "1386 kHz AM",
+     "uk": "Українське Радіо, 00:00–06:30",
+     "en": "Ukrainian Radio, 00:00–06:30",
+     "source_url": "https://ukr.radio/maps",
+     "source_date": "2026-11-08",
+     "cross_check": "EiBi sked-b26.csv (Viešintos, Lithuania)"
+    },
+    {
+     "number": "5955 kHz КХ/SW",
+     "uk": "Радіо Румунія українською, 18:00–18:30 і 20:00–20:30",
+     "en": "Radio Romania in Ukrainian",
+     "source_url": "http://www.hfcc.org/data/b26/b26allx2.zip",
+     "source_date": "HFCC B26 (2026-10-25 → 2027-03-28), file updated 2026-11-05",
+     "utc": "16:00-16:30, 18:00-18:30",
+     "cross_check": "EiBi sked-b26.csv"
+    },
+    {
+     "uk": "Час київський · ukr.radio, HFCC · 08.11.2026",
+     "en": "Kyiv time",
+     "source_url": "https://ukr.radio/maps",
+     "source_date": "2026-11-08"
+    }
+   ],
+   "source_url": "https://ukr.radio/maps",
+   "source_date": "2026-11-08"
+  },
+  {
+   "id": "dish-hotbird",
+   "enabled": true,
+   "emoji": "📡",
+   "split": "lines",
+   "title_uk": "АНТЕНА НА HOTBIRD 13°E",
+   "title_en": "DISH POINTING",
+   "lines": [
+    {
+     "uk": "eQtv: 10950 MHz V, SR 27500, FEC 2/3",
+     "en": "",
+     "source_url": "https://tv.equalit.ie/",
+     "source_date": "2026-11-08"
+    },
+    {
+     "uk": "LNB ↻ = за годинниковою стрілкою, вигляд ззаду антени",
+     "en": "clockwise, seen from behind the dish",
+     "source_url": "computed",
+     "source_date": "2026-11-08"
+    },
+    {
+     "uk": "Херсон",
+     "en": "Kherson",
+     "value": "— азимут / azimuth 206° · кут / elevation 33° · LNB ↻17.5°",
+     "source_url": "computed from city coordinates https://en.wikipedia.org/wiki/Kherson",
+     "source_date": "2026-11-08"
+    },
+    {
+     "uk": "Мелітополь",
+     "en": "Melitopol",
+     "value": "— азимут / azimuth 209.5° · кут / elevation 32° · LNB ↻20°",
+     "source_url": "computed from city coordinates https://en.wikipedia.org/wiki/Melitopol",
+     "source_date": "2026-11-08"
+    },
+    {
+     "uk": "Маріуполь",
+     "en": "Mariupol",
+     "value": "— азимут / azimuth 212° · кут / elevation 31° · LNB ↻21.5°",
+     "source_url": "computed from city coordinates https://en.wikipedia.org/wiki/Mariupol",
+     "source_date": "2026-11-08"
+    },
+    {
+     "uk": "Донецьк",
+     "en": "Donetsk",
+     "value": "— азимут / azimuth 212° · кут / elevation 30° · LNB ↻21°",
+     "source_url": "computed from city coordinates https://en.wikipedia.org/wiki/Donetsk",
+     "source_date": "2026-11-08"
+    },
+    {
+     "uk": "Луганськ",
+     "en": "Luhansk",
+     "value": "— азимут / azimuth 213.5° · кут / elevation 29° · LNB ↻21.5°",
+     "source_url": "computed from city coordinates https://en.wikipedia.org/wiki/Luhansk",
+     "source_date": "2026-11-08"
+    },
+    {
+     "uk": "Сімферополь",
+     "en": "Simferopol",
+     "value": "— азимут / azimuth 208.5° · кут / elevation 34° · LNB ↻20°",
+     "source_url": "computed from city coordinates https://en.wikipedia.org/wiki/Simferopol",
+     "source_date": "2026-11-08"
+    },
+    {
+     "uk": "Тирасполь",
+     "en": "Tiraspol",
+     "value": "— азимут / azimuth 202.5° · кут / elevation 34° · LNB ↻15°",
+     "source_url": "computed from city coordinates https://en.wikipedia.org/wiki/Tiraspol",
+     "source_date": "2026-11-08"
+    }
+   ],
+   "data": [
+    {
+     "uk": "Херсон",
+     "en": "Kherson",
+     "value": "206° / 33° / ↻17.5°",
+     "azimuth_true": 206.0,
+     "elevation": 33.0,
+     "lnb_skew_cw_from_behind": 17.5,
+     "lat": 46.6425,
+     "lon": 32.625,
+     "source_url": "https://en.wikipedia.org/wiki/Kherson",
+     "source_date": "2026-11-08"
+    },
+    {
+     "uk": "Мелітополь",
+     "en": "Melitopol",
+     "value": "209.5° / 32° / ↻20°",
+     "azimuth_true": 209.5,
+     "elevation": 32.0,
+     "lnb_skew_cw_from_behind": 20.0,
+     "lat": 46.8489,
+     "lon": 35.3675,
+     "source_url": "https://en.wikipedia.org/wiki/Melitopol",
+     "source_date": "2026-11-08"
+    },
+    {
+     "uk": "Маріуполь",
+     "en": "Mariupol",
+     "value": "212° / 31° / ↻21.5°",
+     "azimuth_true": 212.0,
+     "elevation": 31.0,
+     "lnb_skew_cw_from_behind": 21.5,
+     "lat": 47.0958,
+     "lon": 37.5494,
+     "source_url": "https://en.wikipedia.org/wiki/Mariupol",
+     "source_date": "2026-11-08"
+    },
+    {
+     "uk": "Донецьк",
+     "en": "Donetsk",
+     "value": "212° / 30° / ↻21°",
+     "azimuth_true": 212.0,
+     "elevation": 30.0,
+     "lnb_skew_cw_from_behind": 21.0,
+     "lat": 48.0158,
+     "lon": 37.8028,
+     "source_url": "https://en.wikipedia.org/wiki/Donetsk",
+     "source_date": "2026-11-08"
+    },
+    {
+     "uk": "Луганськ",
+     "en": "Luhansk",
+     "value": "213.5° / 29° / ↻21.5°",
+     "azimuth_true": 213.5,
+     "elevation": 29.0,
+     "lnb_skew_cw_from_behind": 21.5,
+     "lat": 48.5678,
+     "lon": 39.3031,
+     "source_url": "https://en.wikipedia.org/wiki/Luhansk",
+     "source_date": "2026-11-08"
+    },
+    {
+     "uk": "Сімферополь",
+     "en": "Simferopol",
+     "value": "208.5° / 34° / ↻20°",
+     "azimuth_true": 208.5,
+     "elevation": 34.0,
+     "lnb_skew_cw_from_behind": 20.0,
+     "lat": 44.95,
+     "lon": 34.1,
+     "source_url": "https://en.wikipedia.org/wiki/Simferopol",
+     "source_date": "2026-11-08"
+    },
+    {
+     "uk": "Тирасполь",
+     "en": "Tiraspol",
+     "value": "202.5° / 34° / ↻15°",
+     "azimuth_true": 202.5,
+     "elevation": 34.0,
+     "lnb_skew_cw_from_behind": 15.0,
+     "lat": 46.8403,
+     "lon": 29.6433,
+     "source_url": "https://en.wikipedia.org/wiki/Tiraspol",
+     "source_date": "2026-11-08"
+    }
+   ],
+   "method": "Geostationary look angles for Hot Bird at 13.0°E (r = 42 164 km) from a WGS-84 site at the city-centre coordinates (Wikipedia); azimuth from true north; LNB skew = rotation of the satellite's vertical polarisation seen looking at the satellite (clockwise positive). Rounded to 0.5°. Cross-checked against the spherical formulas az = 180° − atan(tan ΔL / sin φ), el = atan((cos ΔL cos φ − 0.1513)/√(1 − cos²ΔL cos²φ)), skew = atan(sin ΔL / tan φ): agree within 0.5°.",
+   "qr_url": "https://tv.equalit.ie/",
+   "source_url": "https://tv.equalit.ie/",
+   "source_date": "2026-11-08"
+  }
+ ]
+}
