@@ -36,6 +36,27 @@ SOURCES=[
  ('tg_ukrinform','Укрінформ','tg','ukrinform_news','uk',False),
  ('tg_kyivindependent','Kyiv Independent','tg','KyivIndependent_official','en',False),
 ]
+# Admin page (Jason, Nov 8 2026): the Base44 ScreenConfig row "news_sources" (public read) replaces SOURCES when it holds
+# a valid list with at least one enabled source; any error or empty list keeps the built-in SOURCES above.
+def config_sources():
+    try:
+        rows=requests.get('https://base44.app/api/apps/6aef5bc4dc3b4bfd4350617c/entities/ScreenConfig',params={'limit':200},headers=UA,timeout=15).json()
+        rows=[r for r in rows if isinstance(r,dict) and r.get('key')=='news_sources' and (r.get('data') or '').strip()]
+        if not rows: return None
+        rows.sort(key=lambda r:r.get('updated_date') or r.get('created_date') or '')
+        out=[]
+        for s in json.loads(rows[-1]['data']):
+            if not isinstance(s,dict) or s.get('enabled') is False or s.get('kind') not in ('rss','bsky','tg'): continue
+            url=str(s.get('url') or '').strip(); label=str(s.get('label') or '').strip()
+            if not url or not label: continue
+            if s['kind']=='rss' and not re.match(r'^https?://',url): continue
+            sid=re.sub(r'[^A-Za-z0-9_]+','_',str(s.get('id') or label))[:40]
+            out.append((sid,label,s['kind'],url,str(s.get('lang') or 'uk'),bool(s.get('filter_ua'))))
+        return out or None
+    except Exception as e:
+        print('config sources unavailable, using built-in list:',str(e)[:120]); return None
+_cfg=config_sources()
+if _cfg: SOURCES=_cfg; print('sources from admin config:',len(SOURCES))
 def clean(s):
     s=re.sub(r'<!\[CDATA\[|\]\]>','',s or '')
     s=html.unescape(s)  # some feeds escape their HTML
