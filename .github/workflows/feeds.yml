@@ -1,0 +1,24 @@
+name: feeds
+# Hourly: blocked.json (OONI) and keepiton.json (Access Now #KeepItOn) for the eQsat screen ticker.
+on:
+  schedule:
+    - cron: "23 * * * *"
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: feeds
+  cancel-in-progress: false
+jobs:
+  feeds:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/feeds.py
+      - name: commit
+        run: |
+          git config user.name "eqsat-feeds-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add blocked.json keepiton.json
+          git diff --cached --quiet || (git commit -m "feeds: blocked + keepiton $(date -u +%H:%MZ)" && git pull --rebase && git push)
