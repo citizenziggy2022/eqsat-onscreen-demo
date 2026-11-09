@@ -57,11 +57,284 @@
     "logo": "https://ceno.app/wp-content/uploads/2025/12/ceno-logo.png",
     "url": "https://ceno.app/"
    }
+  ],
+  "news_sources": [
+   {
+    "id": "kyivindependent",
+    "label": "Kyiv Independent",
+    "kind": "rss",
+    "url": "https://kyivindependent.com/news-archive/rss/",
+    "lang": "en",
+    "filter_ua": false,
+    "enabled": true,
+    "ua_panel": false
+   },
+   {
+    "id": "ukrinform",
+    "label": "Ukrinform",
+    "kind": "rss",
+    "url": "https://www.ukrinform.net/rss/block-lastnews",
+    "lang": "en",
+    "filter_ua": false,
+    "enabled": true,
+    "ua_panel": false
+   },
+   {
+    "id": "upravda",
+    "label": "Ukrainska Pravda",
+    "kind": "rss",
+    "url": "https://www.pravda.com.ua/eng/rss/",
+    "lang": "en",
+    "filter_ua": false,
+    "enabled": true,
+    "ua_panel": false
+   },
+   {
+    "id": "kyivpost",
+    "label": "Kyiv Post",
+    "kind": "rss",
+    "url": "https://www.kyivpost.com/feed",
+    "lang": "en",
+    "filter_ua": false,
+    "enabled": true,
+    "ua_panel": false
+   },
+   {
+    "id": "nv",
+    "label": "NV (New Voice)",
+    "kind": "rss",
+    "url": "https://english.nv.ua/rss/all_english.xml",
+    "lang": "en",
+    "filter_ua": true,
+    "enabled": true,
+    "ua_panel": false
+   },
+   {
+    "id": "suspilne",
+    "label": "Суспільне",
+    "kind": "rss",
+    "url": "https://suspilne.media/rss/all.rss",
+    "lang": "uk",
+    "filter_ua": false,
+    "enabled": true,
+    "ua_panel": true
+   },
+   {
+    "id": "guardian",
+    "label": "The Guardian",
+    "kind": "rss",
+    "url": "https://www.theguardian.com/world/ukraine/rss",
+    "lang": "en",
+    "filter_ua": false,
+    "enabled": true,
+    "ua_panel": false
+   },
+   {
+    "id": "meduza",
+    "label": "Meduza",
+    "kind": "rss",
+    "url": "https://meduza.io/rss/en/all",
+    "lang": "en",
+    "filter_ua": true,
+    "enabled": true,
+    "ua_panel": false
+   },
+   {
+    "id": "rferl",
+    "label": "RFE/RL",
+    "kind": "rss",
+    "url": "https://www.rferl.org/api/",
+    "lang": "en",
+    "filter_ua": true,
+    "enabled": true,
+    "ua_panel": false
+   },
+   {
+    "id": "bbc",
+    "label": "BBC",
+    "kind": "rss",
+    "url": "https://feeds.bbci.co.uk/news/world/europe/rss.xml",
+    "lang": "en",
+    "filter_ua": true,
+    "enabled": true,
+    "ua_panel": false
+   },
+   {
+    "id": "dw",
+    "label": "DW",
+    "kind": "rss",
+    "url": "https://rss.dw.com/rdf/rss-en-all",
+    "lang": "en",
+    "filter_ua": true,
+    "enabled": true,
+    "ua_panel": false
+   },
+   {
+    "id": "aljazeera",
+    "label": "Al Jazeera",
+    "kind": "rss",
+    "url": "https://www.aljazeera.com/xml/rss/all.xml",
+    "lang": "en",
+    "filter_ua": true,
+    "enabled": true,
+    "ua_panel": false
+   },
+   {
+    "id": "euronews",
+    "label": "Euronews",
+    "kind": "rss",
+    "url": "https://www.euronews.com/rss?format=mrss&level=theme&name=news",
+    "lang": "en",
+    "filter_ua": true,
+    "enabled": true,
+    "ua_panel": false
+   },
+   {
+    "id": "cbc",
+    "label": "CBC",
+    "kind": "rss",
+    "url": "https://news.google.com/rss/search?q=Ukraine+site:cbc.ca+when:2d&hl=en-CA&gl=CA&ceid=CA:en",
+    "lang": "en",
+    "filter_ua": true,
+    "enabled": true,
+    "ua_panel": false
+   },
+   {
+    "id": "reuters",
+    "label": "Reuters",
+    "kind": "rss",
+    "url": "https://news.google.com/rss/search?q=Ukraine+site:reuters.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+    "lang": "en",
+    "filter_ua": true,
+    "enabled": true,
+    "ua_panel": false
+   },
+   {
+    "id": "ap",
+    "label": "AP",
+    "kind": "rss",
+    "url": "https://news.google.com/rss/search?q=Ukraine+site:apnews.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+    "lang": "en",
+    "filter_ua": true,
+    "enabled": true,
+    "ua_panel": false
+   },
+   {
+    "id": "bsky_kyivindependent",
+    "label": "Kyiv Independent",
+    "kind": "bsky",
+    "url": "kyivindependent.com",
+    "lang": "en",
+    "filter_ua": false,
+    "enabled": true,
+    "ua_panel": false
+   },
+   {
+    "id": "bsky_pravda",
+    "label": "Ukrainska Pravda",
+    "kind": "bsky",
+    "url": "pravda.ua",
+    "lang": "en",
+    "filter_ua": false,
+    "enabled": true,
+    "ua_panel": false
+   },
+   {
+    "id": "bsky_kyivpost",
+    "label": "Kyiv Post",
+    "kind": "bsky",
+    "url": "kyivpost.com",
+    "lang": "en",
+    "filter_ua": false,
+    "enabled": true,
+    "ua_panel": false
+   },
+   {
+    "id": "bsky_euromaidan",
+    "label": "Euromaidan Press",
+    "kind": "bsky",
+    "url": "euromaidanpress.bsky.social",
+    "lang": "en",
+    "filter_ua": false,
+    "enabled": true,
+    "ua_panel": false
+   },
+   {
+    "id": "tg_zelensky",
+    "label": "Zelenskyy / Official",
+    "kind": "tg",
+    "url": "V_Zelenskiy_official",
+    "lang": "uk",
+    "filter_ua": false,
+    "enabled": true,
+    "ua_panel": false
+   },
+   {
+    "id": "tg_kpszsu",
+    "label": "Повітряні сили ЗСУ",
+    "kind": "tg",
+    "url": "kpszsu",
+    "lang": "uk",
+    "filter_ua": false,
+    "enabled": true,
+    "ua_panel": false
+   },
+   {
+    "id": "tg_genstaff",
+    "label": "Генштаб ЗСУ",
+    "kind": "tg",
+    "url": "GeneralStaffZSU",
+    "lang": "uk",
+    "filter_ua": false,
+    "enabled": true,
+    "ua_panel": false
+   },
+   {
+    "id": "tg_dsns",
+    "label": "ДСНС",
+    "kind": "tg",
+    "url": "dsns_telegram",
+    "lang": "uk",
+    "filter_ua": false,
+    "enabled": true,
+    "ua_panel": false
+   },
+   {
+    "id": "tg_suspilne",
+    "label": "Суспільне Новини",
+    "kind": "tg",
+    "url": "suspilnenews",
+    "lang": "uk",
+    "filter_ua": false,
+    "enabled": true,
+    "ua_panel": false
+   },
+   {
+    "id": "tg_ukrinform",
+    "label": "Укрінформ",
+    "kind": "tg",
+    "url": "ukrinform_news",
+    "lang": "uk",
+    "filter_ua": false,
+    "enabled": true,
+    "ua_panel": true
+   },
+   {
+    "id": "tg_kyivindependent",
+    "label": "Kyiv Independent",
+    "kind": "tg",
+    "url": "KyivIndependent_official",
+    "lang": "en",
+    "filter_ua": false,
+    "enabled": true,
+    "ua_panel": false
+   }
   ]
  },
  "saved_at": {
   "stations": "2026-11-09T15:53:10.732Z",
   "theme": "2026-11-09T15:35:16.000Z",
-  "sponsor": "2026-11-09T15:52:17.864Z"
+  "sponsor": "2026-11-09T15:52:17.864Z",
+  "news_sources": "2026-11-09T15:54:24.507Z"
  }
 }
