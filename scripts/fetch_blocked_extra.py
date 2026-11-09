@@ -123,6 +123,8 @@ def cp_categories():
     return cat
 
 
+CP_RECENT_RAW, CP_RECENT = {}, {}  # (cc, domain) -> counts / reading over the last 2 days
+
 DASH = "query($f:FilterDashboard!){ dashboard(filter:$f){ domain date outcome count unexpectedCount } }"
 
 
@@ -130,6 +132,7 @@ def censored_planet(days):
     end = datetime.now(timezone.utc).date()
     start = end - timedelta(days=days)
     rng = {"startDate": str(start), "endDate": str(end)}
+    recent_from = str(end - timedelta(days=1))
     all_domains = cp_query('query($r:DateRange!){ domains(range:$r, protocol:"HTTPS") }', {"r": rng})["domains"]
     cats = cp_categories()
     chosen = []
@@ -167,12 +170,28 @@ def censored_planet(days):
                 if (r.get("unexpectedCount") or 0) > 0 and r["date"] > a["last"]:
                     a["last"] = r["date"]
                 a["last_any"] = max(a["last_any"], r["date"])
+                if r["date"] >= recent_from:  # last 2 days, for blocked_history.json
+                    b = CP_RECENT_RAW.setdefault(key, {"n": 0, "u": 0, "bp": 0})
+                    b["n"] += r.get("count") or 0
+                    b["u"] += r.get("unexpectedCount") or 0
+                    if "blockpage" in (r.get("outcome") or "").lower():
+                        b["bp"] += r.get("count") or 0
 
     # per-country baseline: median unexpected share over all measured domains
     base = {}
     for cc in CP_COUNTRIES:
         rates = sorted(a["u"] / a["n"] for (c, _), a in agg.items() if c == cc and a["n"] >= CP_MIN_N)
         base[cc] = rates[len(rates) // 2] if rates else 0.0
+    # recent readings for blocked_history.json (the "available now" marker): ok = >=5, no block page, <20% unexpected
+    for key, b in CP_RECENT_RAW.items():
+        cc = key[0]
+        if not b["n"]:
+            continue
+        rate = b["u"] / b["n"]
+        if b["bp"] > 0 or (b["n"] >= CP_MIN_N and rate >= CP_MIN_RATE and rate >= base[cc] + 0.3):
+            CP_RECENT[key] = ("blocked", b["n"], rate)
+        elif b["n"] >= 5 and rate < 0.2:
+            CP_RECENT[key] = ("ok", b["n"], rate)
 
     items, totals = [], {cc: {"confirmed": 0, "likely": 0, "measured": 0} for cc in CP_COUNTRIES}
     for (cc, dom), a in agg.items():
@@ -296,4 +315,17 @@ def main():
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    rc = main()
+    try:  # blocked_history.json ("available now"), Jason Nov 9 2026 5:10 PM; never fails this script
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        import blocked_history
+        ap = argparse.ArgumentParser()
+        ap.add_argument("--ooni", default="blocked.json")
+        ap.add_argument("--out", default="blocked_extra.json")
+        ap.add_argument("--days", type=int, default=7)
+        a = ap.parse_args()
+        blocked_history.update(cp_recent=CP_RECENT, ooni_path=a.ooni, extra_path=a.out,
+                               out_path=os.path.join(os.path.dirname(os.path.abspath(a.out)), "blocked_history.json"))
+    except Exception as e:
+        print("blocked_history failed:", e)
+    sys.exit(rc)

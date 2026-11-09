@@ -29,7 +29,7 @@ def ooni(cc, since):
 def blocked():
     since = (datetime.now(timezone.utc) - timedelta(days=7)).strftime("%Y-%m-%d")
     items, total = [], {}
-    for cc, cap in (("RU", 60), ("UA", 30)):
+    for cc, cap in (("RU", 300), ("UA", 120)):  # long list (Jason, Nov 9 2026 5:10 PM); was 60 / 30
         rows = ooni(cc, since)
         total[cc] = {"confirmed": sum(1 for r in rows if r["kind"] == "confirmed"), "anomaly": sum(1 for r in rows if r["kind"] == "anomaly")}
         items += rows[:cap]

@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-09T21:05:29+00:00",
+ "generated": "2026-11-09T21:23:52+00:00",
  "sources": {
   "censoredplanet": {
    "name": "Censored Planet (University of Michigan)",
@@ -10,7 +10,7 @@
     "endDate": "2026-11-09"
    },
    "domains_tested": 869,
-   "query_errors": 2,
+   "query_errors": 0,
    "baseline_unexpected_share": {
     "RU": 0.003,
     "UA": 0.0,
@@ -20,13 +20,13 @@
    "totals": {
     "RU": {
      "confirmed": 2,
-     "likely": 79,
-     "measured": 828
+     "likely": 80,
+     "measured": 838
     },
     "UA": {
      "confirmed": 0,
      "likely": 0,
-     "measured": 829
+     "measured": 838
     },
     "BY": {
      "confirmed": 20,
@@ -40,7 +40,7 @@
     }
    },
    "rule": "confirmed = a known block page was returned; likely = >=20 measurements, >=50% unexpected and >=30 points above the country median",
-   "seconds": 20.0
+   "seconds": 17.9
   },
   "rkn": {
    "name": "Roskomnadzor registry (via antifilter.download)",
@@ -49,17 +49,17 @@
    "total_domains": 1780121,
    "well_known_listed": 56,
    "note": "Official RKN blocking registry. Rows are registry entries (incl. wildcard and mirror domains), not distinct sites.",
-   "seconds": 28.1
+   "seconds": 5.6
   }
  },
  "credit": "Censored Planet (U. Michigan) · RKN registry via antifilter.download",
  "counts": {
-  "items": 156,
-  "new_vs_ooni": 131,
+  "items": 157,
+  "new_vs_ooni": 106,
   "by_source_country": {
    "rkn/RU": 44,
    "censoredplanet/BY": 31,
-   "censoredplanet/RU": 81
+   "censoredplanet/RU": 82
   }
  },
  "items": [
@@ -144,7 +144,7 @@
    "also": [
     "rkn"
    ],
-   "new_vs_ooni": true,
+   "new_vs_ooni": false,
    "well_known": true
   },
   {
@@ -164,7 +164,7 @@
    "status": "listed",
    "last_seen": "2026-11-09",
    "category": "news",
-   "new_vs_ooni": true,
+   "new_vs_ooni": false,
    "well_known": true
   },
   {
@@ -184,7 +184,7 @@
    "status": "listed",
    "last_seen": "2026-11-09",
    "category": "news",
-   "new_vs_ooni": true,
+   "new_vs_ooni": false,
    "well_known": true
   },
   {
@@ -194,7 +194,7 @@
    "status": "listed",
    "last_seen": "2026-11-09",
    "category": "news",
-   "new_vs_ooni": true,
+   "new_vs_ooni": false,
    "well_known": true
   },
   {
@@ -244,7 +244,7 @@
    "status": "listed",
    "last_seen": "2026-11-09",
    "category": "news",
-   "new_vs_ooni": true,
+   "new_vs_ooni": false,
    "well_known": true
   },
   {
@@ -415,7 +415,7 @@
    "also": [
     "rkn"
    ],
-   "new_vs_ooni": true,
+   "new_vs_ooni": false,
    "well_known": true
   },
   {
@@ -430,7 +430,7 @@
    "also": [
     "rkn"
    ],
-   "new_vs_ooni": true,
+   "new_vs_ooni": false,
    "well_known": true
   },
   {
@@ -462,7 +462,7 @@
    "status": "listed",
    "last_seen": "2026-11-09",
    "category": "news",
-   "new_vs_ooni": true,
+   "new_vs_ooni": false,
    "well_known": true
   },
   {
@@ -516,7 +516,7 @@
    "status": "listed",
    "last_seen": "2026-11-09",
    "category": "rights",
-   "new_vs_ooni": true,
+   "new_vs_ooni": false,
    "well_known": true
   },
   {
@@ -536,7 +536,7 @@
    "status": "listed",
    "last_seen": "2026-11-09",
    "category": "rights",
-   "new_vs_ooni": true,
+   "new_vs_ooni": false,
    "well_known": true
   },
   {
@@ -546,7 +546,7 @@
    "status": "listed",
    "last_seen": "2026-11-09",
    "category": "rights",
-   "new_vs_ooni": true,
+   "new_vs_ooni": false,
    "well_known": true
   },
   {
@@ -595,7 +595,7 @@
    "status": "listed",
    "last_seen": "2026-11-09",
    "category": "rights",
-   "new_vs_ooni": true,
+   "new_vs_ooni": false,
    "well_known": true
   },
   {
@@ -617,7 +617,7 @@
    "status": "listed",
    "last_seen": "2026-11-09",
    "category": "rights",
-   "new_vs_ooni": true,
+   "new_vs_ooni": false,
    "well_known": true
   },
   {
@@ -637,7 +637,7 @@
    "status": "listed",
    "last_seen": "2026-11-09",
    "category": "rights",
-   "new_vs_ooni": true,
+   "new_vs_ooni": false,
    "well_known": true
   },
   {
@@ -662,7 +662,7 @@
    "also": [
     "rkn"
    ],
-   "new_vs_ooni": true,
+   "new_vs_ooni": false,
    "well_known": true
   },
   {
@@ -672,7 +672,7 @@
    "status": "listed",
    "last_seen": "2026-11-09",
    "category": "vpn",
-   "new_vs_ooni": true,
+   "new_vs_ooni": false,
    "well_known": true
   },
   {
@@ -687,7 +687,7 @@
    "also": [
     "rkn"
    ],
-   "new_vs_ooni": true,
+   "new_vs_ooni": false,
    "well_known": true
   },
   {
@@ -697,7 +697,7 @@
    "status": "listed",
    "last_seen": "2026-11-09",
    "category": "vpn",
-   "new_vs_ooni": true,
+   "new_vs_ooni": false,
    "well_known": true
   },
   {
@@ -719,7 +719,7 @@
    "status": "listed",
    "last_seen": "2026-11-09",
    "category": "vpn",
-   "new_vs_ooni": true,
+   "new_vs_ooni": false,
    "well_known": true
   },
   {
@@ -741,7 +741,7 @@
    "status": "listed",
    "last_seen": "2026-11-09",
    "category": "vpn",
-   "new_vs_ooni": true,
+   "new_vs_ooni": false,
    "well_known": true
   },
   {
@@ -756,7 +756,7 @@
    "also": [
     "rkn"
    ],
-   "new_vs_ooni": true,
+   "new_vs_ooni": false,
    "well_known": true
   },
   {
@@ -848,7 +848,7 @@
    "status": "listed",
    "last_seen": "2026-11-09",
    "category": "platform",
-   "new_vs_ooni": true,
+   "new_vs_ooni": false,
    "well_known": true
   },
   {
@@ -1116,18 +1116,6 @@
    "well_known": false
   },
   {
-   "domain": "hola.org",
-   "country": "RU",
-   "source": "censoredplanet",
-   "status": "likely",
-   "last_seen": "2026-11-08",
-   "rate": 0.88,
-   "measurements": 774,
-   "category": "anon",
-   "new_vs_ooni": true,
-   "well_known": false
-  },
-  {
    "domain": "mail.proton.me",
    "country": "RU",
    "source": "censoredplanet",
@@ -1308,18 +1296,6 @@
    "well_known": false
   },
   {
-   "domain": "vpn-api.proton.me",
-   "country": "RU",
-   "source": "censoredplanet",
-   "status": "likely",
-   "last_seen": "2026-11-08",
-   "rate": 0.88,
-   "measurements": 757,
-   "category": "anon",
-   "new_vs_ooni": true,
-   "well_known": false
-  },
-  {
    "domain": "vpngate.net",
    "country": "RU",
    "source": "censoredplanet",
@@ -1392,18 +1368,6 @@
    "well_known": false
   },
   {
-   "domain": "hornet.com",
-   "country": "RU",
-   "source": "censoredplanet",
-   "status": "likely",
-   "last_seen": "2026-11-08",
-   "rate": 0.87,
-   "measurements": 772,
-   "category": "lgbt",
-   "new_vs_ooni": true,
-   "well_known": false
-  },
-  {
    "domain": "idelreal.org",
    "country": "RU",
    "source": "censoredplanet",
@@ -1411,6 +1375,18 @@
    "last_seen": "2026-11-08",
    "rate": 0.87,
    "measurements": 750,
+   "category": "news",
+   "new_vs_ooni": true,
+   "well_known": false
+  },
+  {
+   "domain": "kavkazr.com",
+   "country": "RU",
+   "source": "censoredplanet",
+   "status": "likely",
+   "last_seen": "2026-11-08",
+   "rate": 0.87,
+   "measurements": 749,
    "category": "news",
    "new_vs_ooni": true,
    "well_known": false
@@ -1544,18 +1520,6 @@
    "rate": 0.86,
    "measurements": 741,
    "category": "news",
-   "new_vs_ooni": true,
-   "well_known": false
-  },
-  {
-   "domain": "cyberghostvpn.com",
-   "country": "RU",
-   "source": "censoredplanet",
-   "status": "likely",
-   "last_seen": "2026-11-08",
-   "rate": 0.86,
-   "measurements": 750,
-   "category": "anon",
    "new_vs_ooni": true,
    "well_known": false
   },
@@ -1704,6 +1668,18 @@
    "well_known": false
   },
   {
+   "domain": "hola.org",
+   "country": "RU",
+   "source": "censoredplanet",
+   "status": "likely",
+   "last_seen": "2026-11-08",
+   "rate": 0.88,
+   "measurements": 774,
+   "category": "anon",
+   "new_vs_ooni": false,
+   "well_known": false
+  },
+  {
    "domain": "i.instagram.com",
    "country": "RU",
    "source": "censoredplanet",
@@ -1824,6 +1800,18 @@
    "well_known": false
   },
   {
+   "domain": "vpn-api.proton.me",
+   "country": "RU",
+   "source": "censoredplanet",
+   "status": "likely",
+   "last_seen": "2026-11-08",
+   "rate": 0.88,
+   "measurements": 757,
+   "category": "anon",
+   "new_vs_ooni": false,
+   "well_known": false
+  },
+  {
    "domain": "edge-mqtt.facebook.com",
    "country": "RU",
    "source": "censoredplanet",
@@ -1860,6 +1848,18 @@
    "well_known": false
   },
   {
+   "domain": "hornet.com",
+   "country": "RU",
+   "source": "censoredplanet",
+   "status": "likely",
+   "last_seen": "2026-11-08",
+   "rate": 0.87,
+   "measurements": 772,
+   "category": "lgbt",
+   "new_vs_ooni": false,
+   "well_known": false
+  },
+  {
    "domain": "scontent.xx.fbcdn.net",
    "country": "RU",
    "source": "censoredplanet",
@@ -1880,6 +1880,18 @@
    "rate": 0.87,
    "measurements": 756,
    "category": "grp",
+   "new_vs_ooni": false,
+   "well_known": false
+  },
+  {
+   "domain": "cyberghostvpn.com",
+   "country": "RU",
+   "source": "censoredplanet",
+   "status": "likely",
+   "last_seen": "2026-11-08",
+   "rate": 0.86,
+   "measurements": 750,
+   "category": "anon",
    "new_vs_ooni": false,
    "well_known": false
   }
