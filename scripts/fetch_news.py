@@ -147,3 +147,11 @@ json.dump(dict(generated=NOW.isoformat().replace('+00:00','Z'),items=items[:300]
 print(len(items),'items;',sum(s['ok'] for s in status),'/',len(status),'sources ok')
 for s in status:
     if not s['ok'] or not s['count']: print('  WARN',s)
+
+# auto bulletins for the BULLETINS box (Nov 9 2026): fetch_bulletins.py throttles itself to every 10 min, keeps the
+# last good file on failure and stages auto_bulletins.json so the live-runner's commit carries it.
+try:
+    import subprocess as _sp, sys as _sys
+    _sp.run([_sys.executable, 'scripts/fetch_bulletins.py'], timeout=90, check=False)
+except Exception as _e:
+    print('auto bulletins skipped:', _e)
