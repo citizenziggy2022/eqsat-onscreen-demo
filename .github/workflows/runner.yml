@@ -1,6 +1,6 @@
 name: live-runner
 # Self-looping runner (GitHub's */5 cron has not fired on this repo). One run lasts ~5 h 45 m:
-#   every 1 min  alerttypes.json; every 2 min news.json; every 60 min blocked / keepiton / blocked_extra;
+#   every 1 min  alerttypes.json + feed.json (alert states + Svoboda/KI news, replaces the Base44 function); every 2 min news.json; every 60 min blocked / keepiton / blocked_extra;
 #   every 3 h lineup.json (eQtv schedule; a failed fetch keeps the last good file)
 #   a changed file is committed and Pages is deployed through Actions (pages.yml, no hourly cap)
 # then it dispatches itself again. Cancel the run (Actions tab) to stop the chain.
@@ -32,7 +32,8 @@ jobs:
           while [ "$(date +%s)" -lt "$end" ]; do
             t0=$(date +%s)
             python3 scripts/alerttypes.py || echo "alerttypes failed, keeping last file"
-            files="alerttypes.json"
+            python3 scripts/fetch_feed.py || echo "feed failed, keeping last file"
+            files="alerttypes.json feed.json"
             if [ $(( $(date +%s) - lastnews )) -ge 115 ]; then
               python3 scripts/fetch_news.py || echo "news failed, keeping last file"
               files="$files news.json"

@@ -79,14 +79,29 @@ def get(url,**kw):
         r=requests.get(url,headers=UA,timeout=20,**kw)
         if r.status_code==200: return r
     r.raise_for_status(); return r
+def gnews_url(feed_url,lang):
+    # same outlet through Google News, for official feeds whose CDN blocks datacenter IPs (Suspilne: Cloudflare 403)
+    host=re.sub(r'^www\.','',requests.utils.urlparse(feed_url).hostname or '')
+    hl,gl,ceid=('uk','UA','UA:uk') if lang=='uk' else ('en-US','US','US:en')
+    return f'https://news.google.com/rss/search?q=site:{host}+when:1d&hl={hl}&gl={gl}&ceid={ceid}'
+VIA={}
 def rss(src):
-    t=get(src[3]).text
+    try:
+        t=get(src[3]).text
+        if not re.search(r'<(item|entry)[ >]',t): raise ValueError('no items in feed')
+    except Exception as e:
+        if 'news.google.com' in src[3]: raise
+        gu=gnews_url(src[3],src[4])
+        t=get(gu).text; VIA[src[0]]=f'google-news fallback ({str(e)[:60]})'
+        src=(src[0],src[1],src[2],gu,src[4],src[5])
     out=[]
     for m in re.finditer(r'<(item|entry)[ >].*?</(item|entry)>',t,re.S):
         b=m.group(0); title=clean(tag(b,'title'))
         link=clean(tag(b,'link')) or (re.search(r'<link[^>]*href="([^"]+)"',b) or [None,''])[1]
         d=pdate(clean(tag(b,'pubDate','dc:date','published','updated')))
         if src[2]=='rss' and 'news.google.com' in src[3]: title=re.sub(r'\s+-\s+[^-]+$','',title)  # drop " - Reuters"
+        if src[0] in VIA and src[4]=='uk' and len(re.findall('[а-яіїєґА-ЯІЇЄҐ]',title))<len(re.findall('[A-Za-z]',title)): continue  # fallback: Ukrainian-language headlines only
+        if src[0] in VIA and re.search(r'Суспільне Спорт|розклад, наживо',title): continue  # schedule pages, not news
         out.append(dict(title=title,url=link,published=d,text=clean(tag(b,'description','summary'))[:280]))
     return out
 def bsky(src):
@@ -122,7 +137,7 @@ with cf.ThreadPoolExecutor(12) as ex: results=list(ex.map(run,SOURCES))
 items,status=[],[]
 seen=set()
 for src,res,err in results:
-    status.append(dict(id=src[0],source=src[1],kind=src[2],ok=err is None,count=len(res),error=err))
+    status.append(dict(id=src[0],source=src[1],kind=src[2],ok=err is None,count=len(res),error=err,**({'via':VIA[src[0]]} if src[0] in VIA else {})))
     for r in res:
         k=re.sub(r'\W+','',r['title'].lower())[:60]
         if k in seen: continue
