@@ -1,5 +1,46 @@
 {
  "note": "Screen settings saved from the admin page. A missing section = the screen uses its built-in / repo-file default.",
- "sections": {},
- "saved_at": {}
+ "sections": {
+  "stations": [
+   {
+    "enabled": true,
+    "id": "eqtv-en",
+    "kind": "eqtv",
+    "uk": "eQtv · англійською",
+    "en": "eQtv English",
+    "hosts": [
+     "live-eqtv-mw-3.prmt-eu.com",
+     "live-eqtv-mw-4.prmt-eu.com"
+    ],
+    "track": "eQtv-eu__audio_eng_mid.m3u8"
+   },
+   {
+    "enabled": true,
+    "id": "radio-nv",
+    "kind": "stream",
+    "uk": "Радіо НВ",
+    "en": "Radio NV",
+    "url": "https://online-radio.nv.ua/radionv.mp3"
+   },
+   {
+    "enabled": false,
+    "id": "united-news",
+    "kind": "stream",
+    "uk": "Єдині новини",
+    "en": "United News",
+    "url": "https://online-news.radioplayer.ua/RadioNews"
+   },
+   {
+    "enabled": true,
+    "id": "ukr-radio",
+    "kind": "stream",
+    "uk": "Українське радіо",
+    "en": "Ukrainian Radio",
+    "url": "https://radio.ukr.radio/ur1-mp3"
+   }
+  ]
+ },
+ "saved_at": {
+  "stations": "2026-11-09T09:34:42.065Z"
+ }
 }
