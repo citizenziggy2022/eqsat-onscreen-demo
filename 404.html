@@ -5,14 +5,86 @@
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Crect width=%2216%22 height=%2216%22 fill=%22%230C4A6E%22/%3E%3C/svg%3E" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>eQsat Hotbird</title>
-    <script type="module" crossorigin src="/eqsat-onscreen-demo/assets/index-CPWZzWjg.js"></script>
+    <script type="module" crossorigin src="/eqsat-onscreen-demo/assets/index-D8IQ0ZY6.js"></script>
     <link rel="modulepreload" crossorigin href="/eqsat-onscreen-demo/assets/rolldown-runtime-CbXtAM7H.js">
     <link rel="modulepreload" crossorigin href="/eqsat-onscreen-demo/assets/vendor-xDKrLVXf.js">
     <link rel="modulepreload" crossorigin href="/eqsat-onscreen-demo/assets/vendor-react-TWKgYiuu.js">
     <link rel="modulepreload" crossorigin href="/eqsat-onscreen-demo/assets/vendor-icons-B3amNSya.js">
     <link rel="modulepreload" crossorigin href="/eqsat-onscreen-demo/assets/vendor-hls-DPdwm16v.js">
     <link rel="modulepreload" crossorigin href="/eqsat-onscreen-demo/assets/app-regions-B2-gJNDA.js">
-    <link rel="stylesheet" crossorigin href="/eqsat-onscreen-demo/assets/index-C1-FdSc5.css">
+    <link rel="stylesheet" crossorigin href="/eqsat-onscreen-demo/assets/index-CJoPOSrN.css">
+    <script type="module">
+if (window.self === window.top) {
+  let lastPath = "";
+  // The visitor's analytics_storage choice from window.__b44Consent; null until one is known.
+  let consentGranted = null;
+  function getPageNameFromPath(path) {
+    const segments = path.split("/").filter(Boolean);
+    return segments[0] || null;
+  }
+  // Same rules as @base44/sdk analytics. Read on every send: the server sets the meta.
+  function analyticsMode() {
+    const meta = document.querySelector('meta[name="base44-analytics"]');
+    return meta ? meta.getAttribute("content") : null;
+  }
+  function deniedBefore() {
+    try {
+      return window.localStorage.getItem("base44_analytics_denied") === "1";
+    } catch (e) {
+      return false;
+    }
+  }
+  function mayTrack() {
+    const mode = analyticsMode();
+    if (mode === "off") return false;
+    if (mode === "consent") return consentGranted === true;
+    if (mode === "on") return consentGranted === null ? !deniedBefore() : consentGranted;
+    return true;
+  }
+  function trackPageView() {
+    if (!mayTrack()) return;
+    const path = window.location.pathname;
+    if (path === lastPath) return;
+    lastPath = path;
+    const pageName = getPageNameFromPath(path) || "home";
+    const appId = "";
+    if (!appId) return;
+    fetch(`/api/app-logs/${appId}/log-user-in-app/${pageName}`, {
+      method: "POST",
+    }).catch(() => {});
+  }
+  const originalPushState = history.pushState.bind(history);
+  history.pushState = function (...args) {
+    originalPushState(...args);
+    trackPageView();
+  };
+  const originalReplaceState = history.replaceState.bind(history);
+  history.replaceState = function (...args) {
+    originalReplaceState(...args);
+    trackPageView();
+  };
+  window.addEventListener("popstate", trackPageView);
+  // A module script runs after the head's classic scripts, so the listener exists by now.
+  // Without it, "consent" never sends and "on" relies on the saved Decline only.
+  try {
+    if (window.__b44Consent) {
+      window.__b44Consent.on(
+        "analytics_storage",
+        function () {
+          consentGranted = true;
+          trackPageView();
+        },
+        function () {
+          consentGranted = false;
+          // A later grant sends the page the visitor is on, even one they saw before.
+          lastPath = "";
+        }
+      );
+    }
+  } catch (e) {}
+  trackPageView();
+}
+</script>
   </head>
   <body>
     <div id="root"></div>
