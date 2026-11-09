@@ -42,7 +42,7 @@ jobs:
             if [ $(( $(date +%s) - lastfeeds )) -ge 3600 ]; then
               python3 scripts/feeds.py || echo "feeds failed"
               python3 scripts/fetch_blocked_extra.py --ooni blocked.json --out blocked_extra.json || echo "blocked_extra failed"
-              files="$files blocked.json keepiton.json blocked_extra.json"
+              files="$files blocked.json keepiton.json blocked_extra.json blocked_history.json"
               lastfeeds=$(date +%s)
             fi
             if [ $(( $(date +%s) - lastlineup )) -ge 10800 ]; then
