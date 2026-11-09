@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-09T21:23:52+00:00",
+ "updated": "2026-11-09T22:01:02+00:00",
  "ooni_ok": true,
- "rule": "available = blocked in an earlier snapshot, newest reading ok (>=5 measurements, <20% anomalies, no block page); shown 24 h from available_since",
+ "rule": "available = blocked in an earlier snapshot, newest reading ok (>=5 measurements, <20% anomalies, no block page); shown 24 h from available_since; RU / BY / MD only, never Russian state, propaganda or Russian-platform domains",
  "counts": {
   "tracked": 1157,
-  "available": 12
+  "available": 6
  },
  "available": [
   "BY:dailymotion.com",
@@ -12,13 +12,7 @@
   "BY:ru.krymr.com",
   "BY:rus.azattyq.org",
   "BY:ua.krymr.com",
-  "RU:meetup.com",
-  "UA:1tv.ru",
-  "UA:mail.yandex.ru",
-  "UA:ria.ru",
-  "UA:russia.tv",
-  "UA:smotrim.ru",
-  "UA:vesti.ru"
+  "RU:meetup.com"
  ],
  "items": {
   "RU:1337x.st": {
@@ -5495,8 +5489,7 @@
    "last_ok": "2026-11-09T21:23:52+00:00",
    "ok_n": 21,
    "ok_anomaly_share": 0.0,
-   "ok_source": "censoredplanet",
-   "available_since": "2026-11-09T21:23:52+00:00"
+   "ok_source": "censoredplanet"
   },
   "UA:ria.ru": {
    "domain": "ria.ru",
@@ -5506,8 +5499,7 @@
    "last_ok": "2026-11-09T21:23:52+00:00",
    "ok_n": 21,
    "ok_anomaly_share": 0.0,
-   "ok_source": "censoredplanet",
-   "available_since": "2026-11-09T21:23:52+00:00"
+   "ok_source": "censoredplanet"
   },
   "UA:russia.tv": {
    "domain": "russia.tv",
@@ -5517,8 +5509,7 @@
    "last_ok": "2026-11-09T21:23:52+00:00",
    "ok_n": 21,
    "ok_anomaly_share": 0.0,
-   "ok_source": "censoredplanet",
-   "available_since": "2026-11-09T21:23:52+00:00"
+   "ok_source": "censoredplanet"
   },
   "UA:smotrim.ru": {
    "domain": "smotrim.ru",
@@ -5528,8 +5519,7 @@
    "last_ok": "2026-11-09T21:23:52+00:00",
    "ok_n": 21,
    "ok_anomaly_share": 0.0,
-   "ok_source": "censoredplanet",
-   "available_since": "2026-11-09T21:23:52+00:00"
+   "ok_source": "censoredplanet"
   },
   "UA:1tv.ru": {
    "domain": "1tv.ru",
@@ -5539,8 +5529,7 @@
    "last_ok": "2026-11-09T21:23:52+00:00",
    "ok_n": 21,
    "ok_anomaly_share": 0.0,
-   "ok_source": "censoredplanet",
-   "available_since": "2026-11-09T21:23:52+00:00"
+   "ok_source": "censoredplanet"
   },
   "UA:vesti.ru": {
    "domain": "vesti.ru",
@@ -5550,8 +5539,7 @@
    "last_ok": "2026-11-09T21:23:52+00:00",
    "ok_n": 20,
    "ok_anomaly_share": 0.0,
-   "ok_source": "censoredplanet",
-   "available_since": "2026-11-09T21:23:52+00:00"
+   "ok_source": "censoredplanet"
   },
   "BY:bbc.com": {
    "domain": "bbc.com",

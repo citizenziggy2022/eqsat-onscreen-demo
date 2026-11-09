@@ -36,6 +36,25 @@ def norm(d):
     d = str(d or "").strip().lower().rstrip(".")
     return d[4:] if d.startswith("www.") else d
 
+# Never green on a Ukrainian channel (Tab, Nov 9 2026): the "available now" marker is about sites blocked FOR people
+# in RU, BY and MD. UA keys are Ukraine's own bans (mostly Russian state outlets), and Russian state, propaganda and
+# Russian-platform domains never get the marker in any country.
+AVAIL_CCS = {"RU", "BY", "MD"}
+EXCLUDE = {
+    "1tv.ru", "russia.tv", "smotrim.ru", "vesti.ru", "ria.ru", "rt.com", "tass.ru", "tass.com", "ntv.ru", "iz.ru",
+    "rg.ru", "lenta.ru", "gazeta.ru", "kp.ru", "aif.ru", "mk.ru", "rbc.ru", "tvzvezda.ru", "sputniknews.com",
+    "yandex.ru", "mail.ru", "vk.com", "ok.ru",
+}
+
+
+def excluded(d):
+    d = norm(d)
+    return any(d == x or d.endswith("." + x) for x in EXCLUDE)
+
+
+def may_be_available(cc, d):
+    return cc in AVAIL_CCS and not excluded(d)
+
 
 def ooni_24h(cc):
     since = (datetime.now(timezone.utc) - timedelta(days=1)).strftime("%Y-%m-%d")
@@ -128,11 +147,14 @@ def update(cp_recent=None, ooni_path="blocked.json", extra_path="blocked_extra.j
             h["ok_source"] = src
             if h.get("last_blocked") and h["last_blocked"] < now and not h.get("available_since"):
                 h["available_since"] = now
+    for k, v in items.items():  # an excluded pair never carries the marker, whatever an older file said
+        if not may_be_available(v.get("cc") or k.split(":", 1)[0], v.get("domain") or k.split(":", 1)[1]):
+            v.pop("available_since", None)
     cut = (datetime.now(timezone.utc) - timedelta(days=KEEP_DAYS)).isoformat(timespec="seconds")
     items = {k: v for k, v in items.items() if max(v.get("last_blocked", ""), v.get("last_ok", "")) >= cut}
-    avail = sorted(k for k, v in items.items() if v.get("available_since"))
+    avail = sorted(k for k, v in items.items() if v.get("available_since") and may_be_available(v.get("cc"), v.get("domain")))
     out = {"updated": now, "ooni_ok": ooni_ok,
-           "rule": "available = blocked in an earlier snapshot, newest reading ok (>=5 measurements, <20% anomalies, no block page); shown 24 h from available_since",
+           "rule": "available = blocked in an earlier snapshot, newest reading ok (>=5 measurements, <20% anomalies, no block page); shown 24 h from available_since; RU / BY / MD only, never Russian state, propaganda or Russian-platform domains",
            "counts": {"tracked": len(items), "available": len(avail)}, "available": avail, "items": items}
     if not ooni_ok and old:
         out["ooni_ok"] = False  # still written: Censored Planet / list readings are real
