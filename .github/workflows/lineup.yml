@@ -1,0 +1,34 @@
+name: lineup
+# Every 6 h: lineup.json (eQtv NOW / NEXT) from eQtv's published schedule, tv.equalit.ie/schedule/ (~7 days ahead).
+# A failed fetch keeps the last good lineup.json (fetch_lineup.py writes nothing on failure). The live-runner also
+# refreshes it every 3 h, so a missed cron run does not matter. No secrets.
+on:
+  schedule:
+    - cron: "41 */6 * * *"
+  workflow_dispatch: {}
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: lineup
+  cancel-in-progress: false
+jobs:
+  lineup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install requests
+      - run: python3 scripts/fetch_lineup.py
+      - name: commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "eqsat-lineup-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add lineup.json
+          if ! git diff --cached --quiet; then
+            git commit -q -m "lineup: eQtv schedule $(date -u +%H:%MZ)"
+            for i in 1 2 3; do git pull -q --rebase -X ours origin main && git push -q && break; sleep 5; done
+            gh workflow run pages.yml --ref main -R "$GITHUB_REPOSITORY" || echo "pages dispatch failed"
+          fi
