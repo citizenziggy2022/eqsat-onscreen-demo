@@ -36,16 +36,16 @@ SOURCES=[
  ('tg_ukrinform','Укрінформ','tg','ukrinform_news','uk',False),
  ('tg_kyivindependent','Kyiv Independent','tg','KyivIndependent_official','en',False),
 ]
-# Admin page (Jason, Nov 8 2026): the Base44 ScreenConfig row "news_sources" (public read) replaces SOURCES when it holds
-# a valid list with at least one enabled source; any error or empty list keeps the built-in SOURCES above.
+# Admin page (Jason, Nov 8 2026; moved to GitHub Nov 9): config.json's sections.news_sources (in this repo, committed by
+# the admin page) replaces SOURCES when it holds a valid list with at least one enabled source; any error or empty list
+# keeps the built-in SOURCES above.
 def config_sources():
     try:
-        rows=requests.get('https://base44.app/api/apps/6aef5bc4dc3b4bfd4350617c/entities/ScreenConfig',params={'limit':200},headers=UA,timeout=15).json()
-        rows=[r for r in rows if isinstance(r,dict) and r.get('key')=='news_sources' and (r.get('data') or '').strip()]
-        if not rows: return None
-        rows.sort(key=lambda r:r.get('updated_date') or r.get('created_date') or '')
+        cfg=json.load(open('config.json',encoding='utf-8'))
+        lst=(cfg.get('sections') or {}).get('news_sources')
+        if not isinstance(lst,list) or not lst: return None
         out=[]
-        for s in json.loads(rows[-1]['data']):
+        for s in lst:
             if not isinstance(s,dict) or s.get('enabled') is False or s.get('kind') not in ('rss','bsky','tg'): continue
             url=str(s.get('url') or '').strip(); label=str(s.get('label') or '').strip()
             if not url or not label: continue
