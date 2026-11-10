@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). Text is the source's own, shortened. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-10T04:36:04Z",
+ "generated_at": "2026-11-10T04:47:02Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok 1"
+   "status": "ok 0"
   },
   {
    "name": "Херсонська ОВА",
@@ -39,19 +39,5 @@
    "status": "ok 0"
   }
  ],
- "bulletins": [
-  {
-   "id": "auto-dsns_telegram-80091",
-   "title": "За кожним виїздом рятувальників - ризик, виснаження і велика відповідальність.",
-   "body": "Російські удари не залишають часу на перепочинок, а повторні атаки роблять кожен виїзд ще небезпечнішим. Лише за тиждень наші рятувальники здійснили 5 131 виїзд на ліквідацію надзвичайних ситуацій, ліквідували 837 пожеж, уберегли від знищення 309 будівель і…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/80091",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-09T16:37:16Z",
-   "expires_at": "2026-11-10T04:37:16Z",
-   "auto": true
-  }
- ]
+ "bulletins": []
 }
