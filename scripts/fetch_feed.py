@@ -97,6 +97,12 @@ def bulletins():
         subprocess.run([_s.executable, 'scripts/fetch_bulletins.py'], timeout=75, check=False)
     except Exception as e:
         print('auto bulletins skipped:', str(e)[:120])
+    # power cuts (Ukrenergo, every 2.5 min) + border queues (eCherha, every 3 min) for the WATER / ROADS maps (Nov 11 2026)
+    try:
+        import subprocess, sys as _s
+        subprocess.run([_s.executable, 'scripts/fetch_water_roads.py'], timeout=60, check=False)
+    except Exception as e:
+        print('water/roads skipped:', str(e)[:120])
 
 
 if __name__ == '__main__':
