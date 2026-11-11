@@ -2,7 +2,8 @@
 """photos-cache/ for the eQsat screen's photo panel (v2.27, Nov 11 2026; Jason 7:58 PM, photo bandwidth fix).
 
 The screen used to load every approved photo as its full-size original from Wikimedia (up to ~720 KB each). This makes
-one WebP per ON-AIR photo, at most 1280 px wide (quality 75), never cropped (a resize keeps the whole picture, so the
+one WebP per ON-AIR photo, at most 960 px wide (quality 75; 1280 px in v2.27, 960 px since Jason's OK
+Nov 11 8:39 PM: the on-air photo box is 951 px wide), never cropped (a resize keeps the whole picture, so the
 CC BY-ND photos shown "contain" stay uncut), and stores it in the public repo as photos-cache/<hash>.webp, where <hash>
 is the first 16 hex of sha1(image_url). photos-cache/index.json maps each original image_url to its file. photos.json
 and photos-conflict.json are not touched: the original Wikimedia URL, licence, author and credit fields stay exactly as
@@ -19,7 +20,7 @@ OUT_DIR = "photos-cache"
 INDEX = os.path.join(OUT_DIR, "index.json")
 EVERY_S = 10 * 60
 MAX_NEW = 40
-MAX_W = 1280
+MAX_W = 960
 QUALITY = 75
 UA = "eQsat-photo-cache/1.0 (+https://citizenziggy2022.github.io/eqsat-onscreen-demo/; resizes approved CC photos for a TV screen)"
 
@@ -45,7 +46,7 @@ def on_air():
 
 
 def thumb_url(url):
-    # Wikimedia's own standard 1280 px step for an upload.wikimedia.org original (lighter on their servers); None if not one
+    # Wikimedia's own standard 960 px step for an upload.wikimedia.org original (lighter on their servers); None if not one
     m = __import__("re").match(r"^https://upload\.wikimedia\.org/wikipedia/commons/(?!thumb/)([0-9a-f]/[0-9a-f]{2})/([^/?#]+)$", url)
     if not m:
         return None
@@ -71,7 +72,10 @@ def main(force=False):
             print(f"photos-cache: checked {int(age)} s ago")
             return
     urls = on_air()
-    todo = [u for u in urls if u not in files or not os.path.exists(files[u]["file"])]
+    missing = [u for u in urls if u not in files or not os.path.exists(files[u]["file"])]
+    # made at an older, wider size (1280 px before Nov 11): redo at MAX_W, after the missing ones; until then the old file serves
+    wide = [u for u in urls if u not in missing and (files[u].get("w") or 0) > MAX_W]
+    todo = missing + wide
     if todo:
         import requests
         Image = pil()
@@ -87,7 +91,7 @@ def main(force=False):
                         print("photos-cache: Wikimedia asked us to slow down (429), the rest waits for the next run")
                         break
                     if not r.ok:
-                        r = None  # e.g. the original is narrower than 1280 px: no such thumb, take the original
+                        r = None  # e.g. the original is narrower than 960 px: no such thumb, take the original
                 if r is None:
                     r = requests.get(url, headers={"User-Agent": UA}, timeout=60)
                     if r.status_code == 429:
@@ -115,7 +119,7 @@ def main(force=False):
                 print("photos-cache: skipped", url[-80:], repr(e)[:160])
         print(f"photos-cache: {done} new, {len(todo) - done} left uncached this run")
     idx = {
-        "note": "One WebP per on-air photo, at most 1280 px wide, quality 75, resized never cropped (scripts/cache_photos.py). "
+        "note": "One WebP per on-air photo, at most 960 px wide, quality 75, resized never cropped (scripts/cache_photos.py). "
         "Keys are the original image_url; credits and licences stay in photos.json / photos-conflict.json.",
         "checked_at": now_iso(),
         "files": files,
