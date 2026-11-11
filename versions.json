@@ -2,6 +2,12 @@
   "note": "Every screen deploy, newest first: version 1.N (N + 1 per deploy), deploy time (UTC), one-line summary, build code. Read by the admin (History › Versions).",
   "versions": [
     {
+      "version": "2.27",
+      "at": "2026-11-11T23:26:06Z",
+      "summary": "Photos: one resized WebP per on-air photo from photos-cache/ (≤1280 px, q75, never cropped); credits/licences unchanged; ~1.43 → ~0.74 MB/min",
+      "build": "index-z_6MyYXe.js"
+    },
+    {
       "version": "2.26",
       "at": "2026-11-11T23:14:36Z",
       "summary": "ПОВІТРЯ / AIR QUALITY: named-city dots, median US EPA AQI (PM2.5) from the SaveEcoBot API, hourly, server side; replaces the per-oblast air fill",
