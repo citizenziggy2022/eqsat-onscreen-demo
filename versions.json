@@ -2,6 +2,12 @@
  "note": "Every screen deploy, newest first: version 1.N (N + 1 per deploy), deploy time (UTC), one-line summary, build code. Read by the admin (History › Versions).",
  "versions": [
   {
+   "version": "2.12",
+   "at": "2026-11-11T18:56:10Z",
+   "summary": "ПОГОДА: official weather and sea warnings (Meteoalarm / Укргідрометцентр, CC BY 4.0; Moldova when it has warnings), fetched by the live-runner every 10 min, one line per warning in the issuer's words, newest first, as cards in the bulletin box rotation",
+   "build": "index-B1AXo4du.js"
+  },
+  {
    "version": "2.11",
    "at": "2026-11-11T18:37:53Z",
    "summary": "Internet signal per oblast (IODA, Georgia Tech) now fetched in the live-runner every 5 min (ioda.json); oblasts with an IODA critical alert drawn red and listed first with the start time; header counts critical oblasts",
