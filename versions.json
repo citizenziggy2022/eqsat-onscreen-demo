@@ -2,6 +2,12 @@
   "note": "Every screen deploy, newest first: version 1.N (N + 1 per deploy), deploy time (UTC), one-line summary, build code. Read by the admin (History › Versions).",
   "versions": [
     {
+      "version": "2.25",
+      "at": "2026-11-11T22:57:39Z",
+      "summary": "Map views: Water/Roads show water/roads; Power cuts + Border queues get own rows. POW line in Live News crawl (blue), bulletins strip gone. Look → Themes. Settings: Stats/Live screen rows removed (still on tab/↗)",
+      "build": "index-Kej3yKmn.js"
+    },
+    {
       "version": "2.24",
       "at": "2026-11-11T21:58:17Z",
       "summary": "POW exchange banner: yellow strip under the bulletins title for 24 h after Koord_shtab reports an exchange (pow.json, fetch_pow.py)",
