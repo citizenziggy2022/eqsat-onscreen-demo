@@ -3,7 +3,7 @@
 
 Reads the public web previews (t.me/s/<channel>) of official emergency channels, each one checked against the
 authority's own .gov.ua site or Telegram's verified badge on 2026-11-09 (see SOURCES). Keeps posts from the last
-6 h, skips anything about troop positions / front lines and anything graphic, shortens the post's own words (no
+12 h (safety posts only, see SAFETY), skips anything about troop positions / front lines and anything graphic, shortens the post's own words (no
 text is written here: title = the post's first sentence, body = the next ones, cut at a word with "…"), and writes
 auto_bulletins.json with source name, source URL, published time and an expiry 8 h after publishing.
 A failed fetch keeps the last good items for that source; a total failure leaves the file untouched.
@@ -44,10 +44,31 @@ MILITARY = re.compile(
     r"ППО|збито|дрон\w* збит|БпЛА збит|мобіліз|ТЦК|військовослужбов|захисник|загиблих захисників",
     re.I,
 )
-# nothing graphic: deaths, bodies, injuries described, blood
-GRAPHIC = re.compile(r"загин|загибл|вбит|убит|тіл[оа]|тіл |смерт|помер|кров|поранен|травмован|постраждал|жертв|розстріл|катуван|страт", re.I)
+# nothing graphic: bodies, blood, executions (plain casualty notices, "загиблі / поранені", pass: Jason, Nov 11 9:13 AM)
+GRAPHIC = re.compile(r"тіл[оа]|тіл |кров|розстріл|катуван|страт|тела убит|растрел|пытк", re.I)
 # not bulletins: congratulations, ads, donations, interviews
-NOISE = re.compile(r"повітряна тривога|відбій|вітаю|привітан|день народження|донат|збір кошт|реклам|інтерв.ю|ефір|підписуйтесь|розіграш|конкурс", re.I)
+NOISE = re.compile(r"відбій|вітаю|вітаєм|привітан|поздоровл|поздравл|день народження|донат|збір кошт|реклам|інтерв.ю|ефір|підписуйтесь|розіграш|конкурс", re.I)
+
+# SAFETY FILTER (Jason, Nov 11 2026 9:13 AM, "yes"): a post is kept ONLY if it is about safety: alerts and shelters,
+# evacuation, shelling, explosions, fires; power cuts and schedules; water, gas, heat; mines; casualty notices;
+# Invincibility Points and humanitarian aid; phone/mobile outages; road closures; ДСНС rescue work. UK and RU forms.
+SAFETY = re.compile(
+    r"тривог|тревог|укритт|укрит|укрыт|евакуац|эвакуац|обстріл|обстрел|вибух|взрыв|пожеж|пожар|"
+    r"знеструм|обесточ|відключен|отключен|світл|\bсвет|електро|электро|графік\w* відключ|график\w* отключ|"
+    r"водопост|водоснабж|без води|без воды|\bвод[аиуіы]\b|\bгаз|тепл|опален|отоплен|"
+    r"\bмін[иау]\b|\bмин[ыау]\b|мінн|минн|вибухонебезп|взрывоопас|загибл|погиб|поранен|ранен[ыи]|"
+    r"незламн|несокруш|гуманітарн\w* допомог|гуманитарн\w* помощ|зв.яз|связ|мобільн|мобильн|"
+    r"перекрит|перекрыт|\bрух\b|дорог|ДСНС|ГСЧС|рятувальн|спасател",
+    re.I,
+)
+# dropped even when a safety word appears: holidays, culture, sports, pension Q&A, meetings, visits, awards,
+# school / children's leisure, congratulations
+DROP = re.compile(
+    r"свят|праздн|культур|концерт|виставк|выставк|фестивал|спорт|чемпіон|чемпион|турнір|турнир|матч|пенсі|пенси|"
+    r"зустрів|зустріч|встреч|засіданн|заседан|нарад|совещан|візит|визит|нагород|награ|відзнак|грамот|"
+    r"знайомтес|знакомьтес|^\s*Це\s*[–—-]\s*[А-ЯІЇЄҐ]|школ|учн|дитяч\w* (?:табор|дозвілл|гурт)|дозвілл|досуг|канікул|каникул|вітаю|вітаєм|поздоров|поздрав|подяк|ювіле|юбиле",
+    re.I,
+)
 
 # what a bulletin is for: safety, power/water/heat, help, evacuation, hotlines, closures
 USEFUL = re.compile(
@@ -109,6 +130,7 @@ def fetch_channel(src):
         except requests.RequestException:
             pass
     items = []
+    seen = [0]
     now = datetime.now(timezone.utc)
     for block in MSG.findall(page):
         post = re.search(r'data-post="([^"]+)"', block)
@@ -125,7 +147,8 @@ def fetch_channel(src):
         if now - published > timedelta(hours=MAX_AGE_H) or published > now + timedelta(minutes=5):
             continue
         raw = text_of(body.group(1))
-        if MILITARY.search(raw) or GRAPHIC.search(raw) or NOISE.search(raw) or NOT_BULLETIN.search(raw) or not USEFUL.search(raw):
+        seen[0] += 1
+        if MILITARY.search(raw) or GRAPHIC.search(raw) or NOISE.search(raw) or NOT_BULLETIN.search(raw) or DROP.search(raw) or not SAFETY.search(raw):
             continue
         lines = clean(raw)
         sent = sentences(lines)
@@ -149,7 +172,14 @@ def fetch_channel(src):
             "auto": True,
         })
     items.sort(key=lambda i: i["issued_at"], reverse=True)
-    return items[:PER_SOURCE]
+    uniq = {i["id"]: i for i in items}  # the older page can repeat a post
+    items = sorted(uniq.values(), key=lambda i: i["issued_at"], reverse=True)
+    return items[:PER_SOURCE], len(items), seen[0] - len(items)
+
+
+def passes(text):
+    """The safety filter on stored items too, so nothing kept from before the filter stays on air."""
+    return bool(SAFETY.search(text)) and not (MILITARY.search(text) or GRAPHIC.search(text) or DROP.search(text) or NOT_BULLETIN.search(text))
 
 
 def main():
@@ -174,11 +204,11 @@ def main():
     out, status, ok = [], {}, 0
     for src in SOURCES:
         try:
-            got = fetch_channel(src)
+            got, kept, dropped = fetch_channel(src)
             ok += 1
-            status[src["id"]] = f"ok {len(got)}"
+            status[src["id"]] = f"ok: kept {kept} / dropped {dropped}, showing {len(got)}"
         except Exception as exc:  # keep this source's last good items
-            got = [i for i in old_by_source.get(src["name"], []) if i.get("expires_at", "") > now.strftime("%Y-%m-%dT%H:%M:%SZ")]
+            got = [i for i in old_by_source.get(src["name"], []) if i.get("expires_at", "") > now.strftime("%Y-%m-%dT%H:%M:%SZ") and passes(i.get("title", "") + " " + i.get("body", ""))]
             status[src["id"]] = f"failed ({str(exc)[:80]}), kept {len(got)}"
         out.extend(got)
     if not ok:
@@ -186,7 +216,7 @@ def main():
         return 1
     out.sort(key=lambda i: i["issued_at"], reverse=True)
     data = {
-        "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). Text is the source's own, shortened. Manual bulletins in config.json / bulletins.json are shown first.",
+        "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
         "generated_at": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
         "sources": [{"name": s["name"], "url": f"https://t.me/s/{s['channel']}", "verified": s["verified"], "status": status.get(s["id"])} for s in SOURCES],
         "bulletins": out[:MAX_ITEMS],
