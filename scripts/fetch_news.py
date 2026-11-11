@@ -196,3 +196,11 @@ try:
     _sp6.run([_sys6.executable, 'scripts/fetch_radiation.py'], timeout=150, check=False)
 except Exception as _e6:
     print('radiation skipped:', _e6)
+
+# ПОВІТРЯ / AIR QUALITY view (v2.26, Nov 11 2026): fetch_airquality.py reads SaveEcoBot /sensors (key: SAVEECOBOT_KEY
+# secret, live-runner only) about once an hour, writes airquality.json (named cities only, median US EPA AQI) and stages it.
+try:
+    import subprocess as _sp7, sys as _sys7
+    _sp7.run([_sys7.executable, 'scripts/fetch_airquality.py'], timeout=150, check=False)
+except Exception as _e7:
+    print('air quality skipped:', _e7)

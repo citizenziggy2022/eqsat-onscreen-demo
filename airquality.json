@@ -1,0 +1,279 @@
+{
+ "fetched_at": "2026-11-11T23:12:33Z",
+ "updated_at": "2026-11-11T23:00:00Z",
+ "source": {
+  "id": "saveecobot",
+  "name": "SaveEcoBot",
+  "credit": "Data were obtained from the SaveEcoBot system",
+  "credit_uk": "Дані отримано із системи SaveEcoBot",
+  "url": "https://www.saveecobot.com/maps",
+  "short_url": "saveecobot.com"
+ },
+ "index": "US EPA AQI (NowCast, PM2.5), per station as SaveEcoBot computes it; each city is the median of its fresh stations (≤ 3 h)",
+ "bands": [
+  {
+   "id": "good",
+   "en": "Good",
+   "uk": "Добре",
+   "max": 50
+  },
+  {
+   "id": "moderate",
+   "en": "Moderate",
+   "uk": "Помірне",
+   "max": 100
+  },
+  {
+   "id": "usg",
+   "en": "Unhealthy for Sensitive Groups",
+   "uk": "Шкідливе для чутливих груп",
+   "max": 150
+  },
+  {
+   "id": "unhealthy",
+   "en": "Unhealthy",
+   "uk": "Шкідливе",
+   "max": 200
+  },
+  {
+   "id": "very_unhealthy",
+   "en": "Very Unhealthy",
+   "uk": "Дуже шкідливе",
+   "max": 300
+  },
+  {
+   "id": "hazardous",
+   "en": "Hazardous",
+   "uk": "Небезпечне",
+   "max": null
+  }
+ ],
+ "cities": [
+  {
+   "id": "kyiv",
+   "uk": "Київ",
+   "en": "Kyiv",
+   "lat": 50.45,
+   "lon": 30.523,
+   "rad_site": false,
+   "aqi": 64,
+   "band": "moderate",
+   "stations": 57,
+   "stations_listed": 403,
+   "networks": [
+    "Київська міська державна адміністрація",
+    "luftdaten.info",
+    "ЛУН Місто",
+    "SaveDnipro"
+   ],
+   "updated_at": "2026-11-11T23:00:00Z"
+  },
+  {
+   "id": "kharkiv",
+   "uk": "Харків",
+   "en": "Kharkiv",
+   "lat": 49.994,
+   "lon": 36.231,
+   "rad_site": false,
+   "aqi": 25,
+   "band": "good",
+   "stations": 3,
+   "stations_listed": 53,
+   "networks": [
+    "SaveDnipro",
+    "luftdaten.info"
+   ],
+   "updated_at": "2026-11-11T23:00:00Z"
+  },
+  {
+   "id": "dnipro",
+   "uk": "Дніпро",
+   "en": "Dnipro",
+   "lat": 48.465,
+   "lon": 35.046,
+   "rad_site": false,
+   "aqi": 66,
+   "band": "moderate",
+   "stations": 7,
+   "stations_listed": 110,
+   "networks": [
+    "SaveDnipro",
+    "ЛУН Місто",
+    "AirGradient",
+    "luftdaten.info"
+   ],
+   "updated_at": "2026-11-11T23:00:00Z"
+  },
+  {
+   "id": "zaporizhzhia",
+   "uk": "Запоріжжя",
+   "en": "Zaporizhzhia",
+   "lat": 47.838,
+   "lon": 35.139,
+   "rad_site": false,
+   "aqi": 28,
+   "band": "good",
+   "stations": 2,
+   "stations_listed": 67,
+   "networks": [
+    "SaveDnipro"
+   ],
+   "updated_at": "2026-11-11T23:00:00Z"
+  },
+  {
+   "id": "odesa",
+   "uk": "Одеса",
+   "en": "Odesa",
+   "lat": 46.482,
+   "lon": 30.723,
+   "rad_site": false,
+   "aqi": 64,
+   "band": "moderate",
+   "stations": 2,
+   "stations_listed": 43,
+   "networks": [
+    "ЛУН Місто"
+   ],
+   "updated_at": "2026-11-11T23:00:00Z"
+  },
+  {
+   "id": "mykolaiv",
+   "uk": "Миколаїв",
+   "en": "Mykolaiv",
+   "lat": 46.975,
+   "lon": 31.995,
+   "rad_site": false,
+   "aqi": 142,
+   "band": "usg",
+   "stations": 3,
+   "stations_listed": 26,
+   "networks": [
+    "Smart Citizen"
+   ],
+   "updated_at": "2026-11-11T23:00:00Z"
+  },
+  {
+   "id": "kherson",
+   "uk": "Херсон",
+   "en": "Kherson",
+   "lat": 46.636,
+   "lon": 32.617,
+   "rad_site": false,
+   "aqi": null,
+   "band": null,
+   "stations": 0,
+   "stations_listed": 6,
+   "networks": [],
+   "updated_at": null
+  },
+  {
+   "id": "lviv",
+   "uk": "Львів",
+   "en": "Lviv",
+   "lat": 49.839,
+   "lon": 24.03,
+   "rad_site": false,
+   "aqi": 42,
+   "band": "good",
+   "stations": 9,
+   "stations_listed": 84,
+   "networks": [
+    "ЛУН Місто",
+    "Львівська міська рада",
+    "SaveDnipro",
+    "luftdaten.info"
+   ],
+   "updated_at": "2026-11-11T23:00:00Z"
+  },
+  {
+   "id": "nikopol",
+   "uk": "Нікополь",
+   "en": "Nikopol",
+   "lat": 47.567,
+   "lon": 34.397,
+   "rad_site": true,
+   "aqi": null,
+   "band": null,
+   "stations": 0,
+   "stations_listed": 14,
+   "networks": [],
+   "updated_at": null
+  },
+  {
+   "id": "marhanets",
+   "uk": "Марганець",
+   "en": "Marhanets",
+   "lat": 47.643,
+   "lon": 34.628,
+   "rad_site": true,
+   "aqi": 59,
+   "band": "moderate",
+   "stations": 1,
+   "stations_listed": 4,
+   "networks": [
+    "SaveDnipro & uRADMonitor"
+   ],
+   "updated_at": "2026-11-11T23:00:00Z"
+  },
+  {
+   "id": "chornobyl",
+   "uk": "Чорнобиль",
+   "en": "Chornobyl",
+   "lat": 51.273,
+   "lon": 30.222,
+   "rad_site": true,
+   "aqi": 18,
+   "band": "good",
+   "stations": 1,
+   "stations_listed": 2,
+   "networks": [
+    "SaveDnipro"
+   ],
+   "updated_at": "2026-11-11T23:00:00Z"
+  },
+  {
+   "id": "yuzhnoukrainsk",
+   "uk": "Южноукраїнськ",
+   "en": "Yuzhnoukrainsk",
+   "lat": 47.83,
+   "lon": 31.17,
+   "rad_site": true,
+   "aqi": 28,
+   "band": "good",
+   "stations": 2,
+   "stations_listed": 2,
+   "networks": [
+    "SaveDnipro"
+   ],
+   "updated_at": "2026-11-11T23:00:00Z"
+  },
+  {
+   "id": "varash",
+   "uk": "Вараш",
+   "en": "Varash",
+   "lat": 51.345,
+   "lon": 25.85,
+   "rad_site": true,
+   "aqi": null,
+   "band": null,
+   "stations": 0,
+   "stations_listed": 1,
+   "networks": [],
+   "updated_at": null
+  },
+  {
+   "id": "netishyn",
+   "uk": "Нетішин",
+   "en": "Netishyn",
+   "lat": 50.34,
+   "lon": 26.64,
+   "rad_site": true,
+   "aqi": null,
+   "band": null,
+   "stations": 0,
+   "stations_listed": 1,
+   "networks": [],
+   "updated_at": null
+  }
+ ]
+}
