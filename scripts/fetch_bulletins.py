@@ -7,7 +7,9 @@ authority's own .gov.ua site or Telegram's verified badge on 2026-11-09 (see SOU
 text is written here: title = the post's first sentence, body = the next ones, cut at a word with "…"), and writes
 auto_bulletins.json with source name, source URL, published time and an expiry 8 h after publishing.
 A failed fetch keeps the last good items for that source; a total failure leaves the file untouched.
-Run from fetch_news.py at most every 10 min; it stages auto_bulletins.json itself so the live-runner commits it.
+Run from fetch_feed.py every live-runner cycle (about 1 min; throttled to 55 s), politely: one preview page per
+channel per run, the older page at most every 10 min, ETag / If-Modified-Since when Telegram sends them, and a doubling
+back-off per channel on 429 / errors (the channel keeps its last good items meanwhile); it stages auto_bulletins.json itself so the live-runner commits it.
 """
 import html, json, os, re, subprocess, sys, time
 from datetime import datetime, timedelta, timezone
@@ -15,7 +17,9 @@ from datetime import datetime, timedelta, timezone
 import requests
 
 OUT = "auto_bulletins.json"
-MIN_INTERVAL_S = 10 * 60
+MIN_INTERVAL_S = 55  # every live-runner cycle (Jason, Nov 11 9:37 AM: "as realtime as possible")
+OLDER_PAGE_S = 10 * 60  # the second (older) preview page per channel, at most this often
+STATE = ".cache/fetch_bulletins_state.json"  # untracked: throttle, ETags, back-off per channel
 MAX_AGE_H = 12
 EXPIRE_H = 12
 PER_SOURCE = 2
@@ -114,21 +118,62 @@ def sentences(lines):
     return [p.strip() for p in parts if p.strip()]
 
 
-def fetch_channel(src):
-    url = f"https://t.me/s/{src['channel']}"
-    r = requests.get(url, headers=UA, timeout=20)
+class NotModified(Exception):
+    pass
+
+
+class Backoff(Exception):
+    pass
+
+
+def get_page(url, st, key):
+    """GET with the stored validators; 304 -> NotModified, 429 / 5xx -> Backoff (doubling, up to 30 min)."""
+    h = dict(UA)
+    v = st.setdefault("validators", {}).get(key) or {}
+    if v.get("etag"):
+        h["If-None-Match"] = v["etag"]
+    if v.get("modified"):
+        h["If-Modified-Since"] = v["modified"]
+    r = requests.get(url, headers=h, timeout=20)
+    if r.status_code == 304:
+        raise NotModified()
+    if r.status_code == 429 or r.status_code >= 500:
+        wait = min(1800, max(60, int(st.setdefault("backoff", {}).get(key, {}).get("wait", 30)) * 2))
+        try:
+            wait = max(wait, int(r.headers.get("Retry-After", "0")))
+        except ValueError:
+            pass
+        st["backoff"][key] = {"until": time.time() + wait, "wait": wait}
+        raise Backoff(f"HTTP {r.status_code}, backing off {wait} s")
     r.raise_for_status()
-    page = r.text
+    st.setdefault("backoff", {}).pop(key, None)
+    st["validators"][key] = {"etag": r.headers.get("ETag"), "modified": r.headers.get("Last-Modified")}
+    return r.text
+
+
+def fetch_channel(src, st=None):
+    st = st if st is not None else {}
+    key = src["channel"]
+    b = st.setdefault("backoff", {}).get(key)
+    if b and time.time() < b.get("until", 0):
+        raise Backoff(f"backing off {int(b['until'] - time.time())} s more")
+    url = f"https://t.me/s/{src['channel']}"
+    page = get_page(url, st, key)
     if "tgme_channel_info" not in page:
         raise RuntimeError("no channel preview")
     ids = [int(x) for x in re.findall(r'data-post="[^"/]+/(\d+)"', page)]
-    if ids:  # one older page, so a busy channel's last 12 h are covered
+    older_at = st.setdefault("older_at", {})
+    cache = st.setdefault("older_page", {})
+    if ids and time.time() - older_at.get(key, 0) >= OLDER_PAGE_S:  # one older page, so a busy channel's last 12 h are covered
         try:
             older = requests.get(f"{url}?before={min(ids)}", headers=UA, timeout=20)
             if older.ok:
-                page = older.text + page
+                cache[key] = older.text[-400000:]
+                older_at[key] = time.time()
         except requests.RequestException:
             pass
+    if cache.get(key):
+        page = cache[key] + page
     items = []
     seen = [0]
     now = datetime.now(timezone.utc)
@@ -190,13 +235,14 @@ def main():
             old = json.load(f)
     except Exception:
         old = {}
-    if not force and old.get("generated_at"):
-        try:
-            last = datetime.fromisoformat(old["generated_at"].replace("Z", "+00:00"))
-            if time.time() - last.timestamp() < MIN_INTERVAL_S:
-                return 0
-        except ValueError:
-            pass
+    try:
+        with open(STATE, encoding="utf-8") as f:
+            st = json.load(f)
+    except Exception:
+        st = {}
+    if not force and time.time() - st.get("ran_at", 0) < MIN_INTERVAL_S:
+        return 0
+    st["ran_at"] = time.time()
     now = datetime.now(timezone.utc)
     old_by_source = {}
     for item in old.get("bulletins", []):
@@ -204,13 +250,21 @@ def main():
     out, status, ok = [], {}, 0
     for src in SOURCES:
         try:
-            got, kept, dropped = fetch_channel(src)
+            got, kept, dropped = fetch_channel(src, st)
             ok += 1
             status[src["id"]] = f"ok: kept {kept} / dropped {dropped}, showing {len(got)}"
+        except (NotModified, Backoff) as exc:  # unchanged or resting: keep this source's items, not a failure
+            ok += 1
+            got = [i for i in old_by_source.get(src["name"], []) if i.get("expires_at", "") > now.strftime("%Y-%m-%dT%H:%M:%SZ") and passes(i.get("title", "") + " " + i.get("body", ""))]
+            prev = next((x.get("status") for x in old.get("sources", []) if x.get("name") == src["name"]), None)
+            status[src["id"]] = (prev or "ok") if isinstance(exc, NotModified) else f"resting ({exc}), kept {len(got)}"
         except Exception as exc:  # keep this source's last good items
             got = [i for i in old_by_source.get(src["name"], []) if i.get("expires_at", "") > now.strftime("%Y-%m-%dT%H:%M:%SZ") and passes(i.get("title", "") + " " + i.get("body", ""))]
             status[src["id"]] = f"failed ({str(exc)[:80]}), kept {len(got)}"
         out.extend(got)
+    os.makedirs(os.path.dirname(STATE), exist_ok=True)
+    with open(STATE, "w", encoding="utf-8") as f:
+        json.dump(st, f)
     if not ok:
         print("auto bulletins: every source failed, keeping last file", status)
         return 1
@@ -221,6 +275,10 @@ def main():
         "sources": [{"name": s["name"], "url": f"https://t.me/s/{s['channel']}", "verified": s["verified"], "status": status.get(s["id"])} for s in SOURCES],
         "bulletins": out[:MAX_ITEMS],
     }
+    # rewrite only when the bulletins or a source's state changed (no commit churn every minute)
+    if not force and old.get("bulletins") == data["bulletins"] and [x.get("status") for x in old.get("sources", [])] == [x.get("status") for x in data["sources"]]:
+        print("auto bulletins: unchanged", status)
+        return 0
     tmp = OUT + ".tmp"
     with open(tmp, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=1)

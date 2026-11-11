@@ -89,5 +89,18 @@ def main():
     on = sum(1 for v in (alerts or {}).get('states', {}).values() if v.get('alertnow'))
     print(f'feed.json: alerts {"fresh" if alerts and alerts.get("fetched_at")==iso(NOW) else "STALE"} ({on} states alerting), news {len(news)}/4')
 
+def bulletins():
+    # auto bulletins every live-runner cycle (Jason, Nov 11 2026 9:37 AM: "updates should be as realtime as possible"):
+    # fetch_bulletins.py throttles itself to 55 s, backs off per channel on 429 and stages auto_bulletins.json itself
+    try:
+        import subprocess, sys as _s
+        subprocess.run([_s.executable, 'scripts/fetch_bulletins.py'], timeout=75, check=False)
+    except Exception as e:
+        print('auto bulletins skipped:', str(e)[:120])
+
+
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    finally:
+        bulletins()
