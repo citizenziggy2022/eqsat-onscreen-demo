@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-11T13:18:27Z",
+ "generated_at": "2026-11-11T13:21:27Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -41,6 +41,19 @@
  ],
  "bulletins": [
   {
+   "id": "auto-dsns_telegram-80208",
+   "title": "5 людей постраждали через атаку російських БпЛА.",
+   "body": "Сьогодні вранці та вдень ворог атакував обласний центр ударними безпілотниками! Влучання зафіксовані у Салтівському, Шевченківському та Основ’янському районах міста. Виникли три осередки пожеж: горіли легкові автомобілі, облицювання будівлі станції…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/80208",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-11T13:19:55Z",
+   "expires_at": "2026-11-12T01:19:55Z",
+   "auto": true
+  },
+  {
    "id": "auto-zoda_gov_ua-68949",
    "title": "Ворог атакував Запоріжжя",
    "body": "Внаслідок удару ворожого FPV-дрона поранені троє чоловіків. Медики надають усю необхідну допомогу",
@@ -77,19 +90,6 @@
    "severity": "info",
    "issued_at": "2026-11-11T11:27:12Z",
    "expires_at": "2026-11-11T23:27:12Z",
-   "auto": true
-  },
-  {
-   "id": "auto-dsns_telegram-80197",
-   "title": "П'ятеро людей травмовані через російську атаку по Запоріжжю: сьогодні вдень ворог завдав ударів БпЛА по…",
-   "body": "Внаслідок влучання травмовані дві жінки та три чоловіка. Їм надається необхідна допомога. У житловій п'ятиповерхівці пошкоджені вікна та дах, загорівся утеплювач вентиляційного обладнання. Також виникла пожежа на одному з обʼєктів інфраструктури. Психологи…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/80197",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-11T11:03:41Z",
-   "expires_at": "2026-11-11T23:03:41Z",
    "auto": true
   },
   {
