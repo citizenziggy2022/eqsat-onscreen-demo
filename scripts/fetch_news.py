@@ -204,3 +204,11 @@ try:
     _sp7.run([_sys7.executable, 'scripts/fetch_airquality.py'], timeout=150, check=False)
 except Exception as _e7:
     print('air quality skipped:', _e7)
+
+# photo bandwidth fix (v2.27, Nov 11 2026): cache_photos.py throttles itself to every 10 min and makes one resized WebP
+# (≤1280 px wide, never cropped) per on-air photo into photos-cache/ (+ index.json), at most 40 new per run; stages it.
+try:
+    import subprocess as _sp8, sys as _sys8
+    _sp8.run([_sys8.executable, 'scripts/cache_photos.py'], timeout=240, check=False)
+except Exception as _e8:
+    print('photo cache skipped:', _e8)
