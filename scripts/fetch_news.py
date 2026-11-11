@@ -180,3 +180,11 @@ try:
     _sp4.run([_sys4.executable, 'scripts/fetch_ioda.py'], timeout=120, check=False)
 except Exception as _e4:
     print('ioda skipped:', _e4)
+
+# ПОГОДА card (v2.12, Nov 11 2026): fetch_meteoalarm.py throttles itself to every 10 min, writes weather_warnings.json
+# (Meteoalarm / Укргідрометцентр, + Moldova when it has warnings) and stages it; a failed feed keeps its last warnings.
+try:
+    import subprocess as _sp5, sys as _sys5
+    _sp5.run([_sys5.executable, 'scripts/fetch_meteoalarm.py'], timeout=120, check=False)
+except Exception as _e5:
+    print('weather warnings skipped:', _e5)
