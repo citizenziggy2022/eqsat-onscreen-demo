@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-11T08:38:34+00:00",
+ "generated": "2026-11-11T09:39:36+00:00",
  "sources": {
   "censoredplanet": {
    "name": "Censored Planet (University of Michigan)",
@@ -20,13 +20,13 @@
    "totals": {
     "RU": {
      "confirmed": 2,
-     "likely": 80,
-     "measured": 838
+     "likely": 78,
+     "measured": 820
     },
     "UA": {
      "confirmed": 0,
      "likely": 0,
-     "measured": 819
+     "measured": 838
     },
     "BY": {
      "confirmed": 20,
@@ -40,7 +40,7 @@
     }
    },
    "rule": "confirmed = a known block page was returned; likely = >=20 measurements, >=50% unexpected and >=30 points above the country median",
-   "seconds": 18.2
+   "seconds": 17.9
   },
   "rkn": {
    "name": "Roskomnadzor registry (via antifilter.download)",
@@ -55,11 +55,11 @@
  "credit": "Censored Planet (U. Michigan) · RKN registry via antifilter.download",
  "counts": {
   "items": 157,
-  "new_vs_ooni": 102,
+  "new_vs_ooni": 100,
   "by_source_country": {
-   "rkn/RU": 44,
+   "rkn/RU": 46,
    "censoredplanet/BY": 31,
-   "censoredplanet/RU": 82
+   "censoredplanet/RU": 80
   }
  },
  "items": [
@@ -406,15 +406,10 @@
   {
    "domain": "rferl.org",
    "country": "RU",
-   "source": "censoredplanet",
-   "status": "likely",
-   "last_seen": "2026-11-08",
-   "rate": 0.87,
-   "measurements": 756,
+   "source": "rkn",
+   "status": "listed",
+   "last_seen": "2026-11-11",
    "category": "news",
-   "also": [
-    "rkn"
-   ],
    "new_vs_ooni": false,
    "well_known": true
   },
@@ -484,7 +479,7 @@
    "status": "listed",
    "last_seen": "2026-11-11",
    "category": "news",
-   "new_vs_ooni": true,
+   "new_vs_ooni": false,
    "well_known": true
   },
   {
@@ -647,7 +642,7 @@
    "status": "listed",
    "last_seen": "2026-11-11",
    "category": "rights",
-   "new_vs_ooni": true,
+   "new_vs_ooni": false,
    "well_known": true
   },
   {
@@ -678,15 +673,10 @@
   {
    "domain": "proton.me",
    "country": "RU",
-   "source": "censoredplanet",
-   "status": "likely",
-   "last_seen": "2026-11-08",
-   "rate": 0.68,
-   "measurements": 1147,
+   "source": "rkn",
+   "status": "listed",
+   "last_seen": "2026-11-11",
    "category": "vpn",
-   "also": [
-    "rkn"
-   ],
    "new_vs_ooni": false,
    "well_known": true
   },
