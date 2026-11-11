@@ -163,3 +163,12 @@ try:
     _sp2.run([_sys2.executable, 'scripts/stats.py'], timeout=60, check=False)
 except Exception as _e2:
     print('stats skipped:', _e2)
+
+# live conflict photos (v2.10, Nov 11 2026): fetch_conflict_photos.py --runner throttles itself to every 10 min, writes
+# photos-pending.json (candidates, never on air: only the Editor's Approve puts one in photos-conflict.json) and stages
+# it so the live-runner's commit carries it. A failure keeps the last file.
+try:
+    import subprocess as _sp3, sys as _sys3
+    _sp3.run([_sys3.executable, 'scripts/fetch_conflict_photos.py', '--runner'], timeout=150, check=False)
+except Exception as _e3:
+    print('conflict photos skipped:', _e3)
