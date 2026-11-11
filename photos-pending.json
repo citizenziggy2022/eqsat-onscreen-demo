@@ -1,11 +1,17 @@
 {
- "fetched_at": "2026-11-11T21:42:22Z",
+ "fetched_at": "2026-11-11T21:54:23Z",
  "every_s": 600,
  "note": "Conflict photo candidates, NOT on air. Fetched by scripts/fetch_conflict_photos.py in the live-runner every 10 min. An item goes on air only when the Editor's Approve moves it to photos-conflict.json.",
  "check": "none in the runner (no vision model): nothing is approved automatically",
  "auto_approved": 0,
  "items": [],
  "fetch_rejects": [
+  {
+   "source": "commons",
+   "title": "File:Destructions in Pryluky after Russian attack, 2026-10-07 (20).jpg",
+   "reason": "taken 2026-10-07, older than 7 days",
+   "stage": "fetch"
+  },
   {
    "source": "commons",
    "title": "File:Destructions in Pryluky after Russian attack, 2026-10-07 (40).jpg",
@@ -422,14 +428,7 @@
   },
   {
    "source": "undp",
-   "title": "https://www.flickr.com/photos/undpukraine/55644943633/",
-   "reason": "off-topic (no war/recovery words in caption or tags): Dmytro Popov, National Digital Accessibility Expert, UNDP…",
-   "stage": "fetch"
-  },
-  {
-   "source": "undp",
-   "title": "https://www.flickr.com/photos/undpukraine/55645220995/",
-   "reason": "off-topic (no war/recovery words in caption or tags): ",
+   "reason": "source failed: ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='www.flickr.com', port=443): Read timed out. (read timeout=20)\"))",
    "stage": "fetch"
   },
   {
@@ -487,5 +486,5 @@
    "stage": "fetch"
   }
  ],
- "took_s": 6.8
+ "took_s": 26.5
 }
