@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-11T23:04:29Z",
+ "generated_at": "2026-11-11T23:27:31Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -30,7 +30,7 @@
    "name": "Луганська ОВА",
    "url": "https://t.me/s/luhanskaVTSA",
    "verified": "linked from lova.gov.ua (Luhansk OVA site)",
-   "status": "ok: kept 1 / dropped 4, showing 1"
+   "status": "ok: kept 0 / dropped 4, showing 0"
   },
   {
    "name": "Харківська ОВА",
@@ -127,24 +127,6 @@
    "en_mt": {
     "title": "We are doing everything possible so that people whose homes were damaged by Russian strikes can return to their homes as soon as possible",
     "body": "Checked how the restoration of three high-rise buildings is proceeding in the Khortytskyi and Zavodskyi districts of Zaporizhzhia. On Svitle Street in the summer, a Russian aerial bomb seriously damaged the house. 14 apartments were declared emergency. Now we are completing the preparation of the project and expertise….",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-luhanskaVTSA-39234",
-   "title": "СТАН ЕНЕРГОСИСТЕМИ",
-   "body": "Протягом ночі і зранку ворог продовжував атаки на об’єкти енергетичної інфраструктури. Через наслідки ворожих атак на ранок є часткові знеструмлення споживачів у Дніпропетровській, Житомирській, Запорізькій, Київській, Рівненській, Харківській, Одеській та…",
-   "source": "Луганська ОВА",
-   "source_url": "https://t.me/luhanskaVTSA/39234",
-   "region": "Луганщина",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-11T11:27:12Z",
-   "expires_at": "2026-11-11T23:27:12Z",
-   "auto": true,
-   "en_mt": {
-    "title": "STATE OF THE ENERGY SYSTEM",
-    "body": "Throughout the night and morning the enemy continued attacks on objects of the energy infrastructure. Due to the consequences of enemy attacks in the morning there are partial power outages for consumers in Dnipropetrovsk, Zhytomyr, Zaporizhzhia, Kyiv, Rivne, Kharkiv, Odesa and…",
     "by": "m2m100"
    }
   }
