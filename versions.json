@@ -2,6 +2,12 @@
   "note": "Every screen deploy, newest first: version 1.N (N + 1 per deploy), deploy time (UTC), one-line summary, build code. Read by the admin (History › Versions).",
   "versions": [
     {
+      "version": "2.21",
+      "at": "2026-11-11T21:28:01Z",
+      "summary": "Broadcast clock: time zone under the Kyiv time (EET · UTC+2 / EEST · UTC+3, from Europe/Kyiv via Intl), inside the clock cell",
+      "build": "index-gqn5v-Xo.js"
+    },
+    {
       "version": "2.20",
       "at": "2026-11-11T21:22:40Z",
       "summary": "Editor: Preview (eye) on every map view row, live map card in a sheet with ‹ › through all views; screen ?mapview for the preview frame only",
