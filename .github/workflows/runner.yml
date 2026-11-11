@@ -23,6 +23,8 @@ jobs:
       - name: loop
         env:
           GH_TOKEN: ${{ github.token }}
+          # SaveEcoBot API key (radiation.json, v2.14): only scripts/fetch_radiation.py reads it; never printed or written
+          SAVEECOBOT_KEY: ${{ secrets.SAVEECOBOT_KEY }}
         run: |
           git config user.name "eqsat-live-bot"
           git config user.email "actions@users.noreply.github.com"

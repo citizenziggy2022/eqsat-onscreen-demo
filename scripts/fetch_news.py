@@ -188,3 +188,11 @@ try:
     _sp5.run([_sys5.executable, 'scripts/fetch_meteoalarm.py'], timeout=120, check=False)
 except Exception as _e5:
     print('weather warnings skipped:', _e5)
+
+# РАДІАЦІЯ view (v2.14, Nov 11 2026): fetch_radiation.py reads SaveEcoBot (key: SAVEECOBOT_KEY secret, live-runner only)
+# about every 2 min, Safecast as the labelled backup, writes radiation.json (selected sites only) and stages it.
+try:
+    import subprocess as _sp6, sys as _sys6
+    _sp6.run([_sys6.executable, 'scripts/fetch_radiation.py'], timeout=150, check=False)
+except Exception as _e6:
+    print('radiation skipped:', _e6)
