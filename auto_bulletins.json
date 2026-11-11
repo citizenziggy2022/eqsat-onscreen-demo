@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-11T15:43:30Z",
+ "generated_at": "2026-11-11T15:50:29Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-dsns_telegram-80234",
+   "title": "Сьогодні вдень росіяни знову атакували Салтівський район Харкова!",
+   "body": "Ударний БпЛА влучив у дорожнє покриття внаслідок чого загорівся легковий автомобіль. У ньому загинули двоє людей — водій та пасажир. Крім того, пошкоджене скло у вікнах житлової багатоповерхівки, а також інші автомобілі. Рятувальники оперативно ліквідували…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/80234",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-11T15:49:33Z",
+   "expires_at": "2026-11-12T03:49:33Z",
+   "auto": true,
+   "en_mt": {
+    "title": "Today during the day Russians again attacked Saltivskyi district of Kharkiv!",
+    "body": "A strike drone hit the road surface as a result of which a passenger car caught fire. Two people died in it - the driver and the passenger. In addition, the glass in the windows of a residential high-rise building was damaged, as well as other cars. Rescuers quickly eliminated…",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-dsns_telegram-80225",
    "title": "Рятувальники ДСНС Житомирщини провели тренування у скелястій місцевості!",
@@ -91,24 +109,6 @@
    "en_mt": {
     "title": "We are doing everything possible so that people whose homes were damaged by Russian strikes can return to their homes as soon as possible",
     "body": "Checked how the restoration of three high-rise buildings is proceeding in the Khortytskyi and Zavodskyi districts of Zaporizhzhia. On Svitle Street in the summer, a Russian aerial bomb seriously damaged the house. 14 apartments were declared emergency. Now we are completing the preparation of the project and expertise….",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-80216",
-   "title": "внаслідок російського удару по території приватного підприємства виникла пожежа виробничої будівлі!",
-   "body": "Рятувальники локалізували загорання. За уточненою інформацією травмовані 5 людей. Сайт • Fb • X • IG • YT • TT",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/80216",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-11T13:52:33Z",
-   "expires_at": "2026-11-12T01:52:33Z",
-   "auto": true,
-   "en_mt": {
-    "title": "as a result of the Russian strike on the territory of a private enterprise, a fire broke out in the production building!",
-    "body": "Rescuers have localized the fire. According to updated information, 5 people were injured. Site • Fb • X • IG • YT • TT",
     "by": "m2m100"
    }
   },
