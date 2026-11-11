@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-11T14:43:28Z",
+ "generated_at": "2026-11-11T14:44:28Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 7 / dropped 1, showing 2"
+   "status": "ok: kept 7 / dropped 0, showing 2"
   },
   {
    "name": "Херсонська ОВА",
@@ -40,6 +40,19 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-dsns_telegram-80225",
+   "title": "Рятувальники ДСНС Житомирщини провели тренування у скелястій місцевості!",
+   "body": "Фахівці відпрацьовували навички в умовах, максимально наближених до реальних. Під час таких відпрацювань важливо довести кожен рух до автоматизму, адже під час справжніх операцій немає права на помилку.",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/80225",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-11T14:43:25Z",
+   "expires_at": "2026-11-12T02:43:25Z",
+   "auto": true
+  },
   {
    "id": "auto-kharkivoda-32717",
    "title": "У Харківській ОВА обговорили поточну діяльність медіа в області",
@@ -77,19 +90,6 @@
    "severity": "info",
    "issued_at": "2026-11-11T13:52:33Z",
    "expires_at": "2026-11-12T01:52:33Z",
-   "auto": true
-  },
-  {
-   "id": "auto-dsns_telegram-80208",
-   "title": "5 людей постраждали через атаку російських БпЛА.",
-   "body": "Сьогодні вранці та вдень ворог атакував обласний центр ударними безпілотниками! Влучання зафіксовані у Салтівському, Шевченківському та Основ’янському районах міста. Виникли три осередки пожеж: горіли легкові автомобілі, облицювання будівлі станції…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/80208",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-11T13:19:55Z",
-   "expires_at": "2026-11-12T01:19:55Z",
    "auto": true
   },
   {
