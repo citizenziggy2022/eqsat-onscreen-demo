@@ -2,6 +2,12 @@
   "note": "Every screen deploy, newest first: version 1.N (N + 1 per deploy), deploy time (UTC), one-line summary, build code. Read by the admin (History › Versions).",
   "versions": [
     {
+      "version": "2.26",
+      "at": "2026-11-11T23:14:36Z",
+      "summary": "ПОВІТРЯ / AIR QUALITY: named-city dots, median US EPA AQI (PM2.5) from the SaveEcoBot API, hourly, server side; replaces the per-oblast air fill",
+      "build": "index-VfYuGpys.js"
+    },
+    {
       "version": "2.25",
       "at": "2026-11-11T22:57:39Z",
       "summary": "Map views: Water/Roads show water/roads; Power cuts + Border queues get own rows. POW line in Live News crawl (blue), bulletins strip gone. Look → Themes. Settings: Stats/Live screen rows removed (still on tab/↗)",
