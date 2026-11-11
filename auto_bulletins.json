@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). Text is the source's own, shortened. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-11T08:41:56Z",
+ "generated_at": "2026-11-11T08:52:56Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -36,8 +36,22 @@
    "name": "Харківська ОВА",
    "url": "https://t.me/s/kharkivoda",
    "verified": "linked from kharkivoda.gov.ua",
-   "status": "ok 0"
+   "status": "ok 1"
   }
  ],
- "bulletins": []
+ "bulletins": [
+  {
+   "id": "auto-kharkivoda-32689",
+   "title": "«Посилюємо готовність Харківщини до оперативного реагування на можливі надзвичайні ситуації в…",
+   "body": "«Разом з екстреними службами, волонтерами та благодійниками відпрацьовуємо алгоритми дій на випадок довготривалих знеструмлень або відсутності опалення в оселях наших громадян. Передусім ідеться про оперативне реагування та встановлення мобільних пунктів…",
+   "source": "Харківська ОВА",
+   "source_url": "https://t.me/kharkivoda/32689",
+   "region": "Харківщина",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-11T08:43:25Z",
+   "expires_at": "2026-11-11T20:43:25Z",
+   "auto": true
+  }
+ ]
 }
