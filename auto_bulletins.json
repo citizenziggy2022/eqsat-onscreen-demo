@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-11T13:46:30Z",
+ "generated_at": "2026-11-11T13:53:28Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 8 / dropped 1, showing 2"
+   "status": "ok: kept 7 / dropped 1, showing 2"
   },
   {
    "name": "Херсонська ОВА",
@@ -41,6 +41,19 @@
  ],
  "bulletins": [
   {
+   "id": "auto-dsns_telegram-80216",
+   "title": "внаслідок російського удару по території приватного підприємства виникла пожежа виробничої будівлі!",
+   "body": "Рятувальники локалізували загорання. За уточненою інформацією, травмовані 5 людей. Сайт • Fb • X • IG • YT • TT",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/80216",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-11T13:52:33Z",
+   "expires_at": "2026-11-12T01:52:33Z",
+   "auto": true
+  },
+  {
    "id": "auto-dsns_telegram-80208",
    "title": "5 людей постраждали через атаку російських БпЛА.",
    "body": "Сьогодні вранці та вдень ворог атакував обласний центр ударними безпілотниками! Влучання зафіксовані у Салтівському, Шевченківському та Основ’янському районах міста. Виникли три осередки пожеж: горіли легкові автомобілі, облицювання будівлі станції…",
@@ -64,19 +77,6 @@
    "severity": "info",
    "issued_at": "2026-11-11T12:22:08Z",
    "expires_at": "2026-11-12T00:22:08Z",
-   "auto": true
-  },
-  {
-   "id": "auto-dsns_telegram-80201",
-   "title": "росіяни нанесли удар по місту Чорноморськ. Є загиблий та постраждалі!",
-   "body": "Пошкоджений приватний житловий будинок і торговельні павільйони ринку, виникла пожежа. Рятувальники оперативно прибули на місце події та ліквідували пожежу, не допустивши подальшого поширення вогню. Сайт • Fb • X • IG • YT • TT",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/80201",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-11T11:43:34Z",
-   "expires_at": "2026-11-11T23:43:34Z",
    "auto": true
   },
   {
