@@ -104,6 +104,13 @@ def bulletins():
         subprocess.run([_s.executable, 'scripts/fetch_airforce.py'], timeout=60, check=False)
     except Exception as e:
         print('air force skipped:', str(e)[:120])
+    # POW exchanges (v2.24, Nov 11 2026): fetch_pow.py throttles itself to 120 s, writes pow.json (t.me/s/Koord_shtab,
+    # only posts that report an exchange with the number freed) for the 24 h banner on the bulletins panel, stages it itself
+    try:
+        import subprocess, sys as _s
+        subprocess.run([_s.executable, 'scripts/fetch_pow.py'], timeout=60, check=False)
+    except Exception as e:
+        print('pow skipped:', str(e)[:120])
     # power cuts (Ukrenergo, every 2.5 min) + border queues (eCherha, every 3 min) for the WATER / ROADS maps (Nov 11 2026)
     try:
         import subprocess, sys as _s
