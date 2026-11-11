@@ -172,3 +172,11 @@ try:
     _sp3.run([_sys3.executable, 'scripts/fetch_conflict_photos.py', '--runner'], timeout=150, check=False)
 except Exception as _e3:
     print('conflict photos skipped:', _e3)
+
+# internet signal per oblast (v2.11, Nov 11 2026): fetch_ioda.py throttles itself to every 5 min, writes ioda.json for the
+# ІНТЕРНЕТ map (score + IODA critical level) and stages it; a failure keeps the last file.
+try:
+    import subprocess as _sp4, sys as _sys4
+    _sp4.run([_sys4.executable, 'scripts/fetch_ioda.py'], timeout=120, check=False)
+except Exception as _e4:
+    print('ioda skipped:', _e4)

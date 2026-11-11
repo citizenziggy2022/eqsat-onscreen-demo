@@ -1,0 +1,417 @@
+{
+ "fetched_at": "2026-11-11T18:37:22Z",
+ "updated_at": "2026-11-11T18:20:00Z",
+ "source": "IODA (Internet Outage Detection and Analysis), Georgia Tech, https://ioda.inetintel.cc.gatech.edu",
+ "note": "Internet signal per oblast. score 0-100 vs the region's own 7-day median (BGP 40%, ping /24 60%); level critical while IODA's outage alert for the region is critical. The cause is unknown (power, damage or shutdown look the same).",
+ "critical": [
+  "kherson"
+ ],
+ "regions": {
+  "crimea": {
+   "score": 100,
+   "parts": {
+    "ping-slash24": {
+     "ratio": 0.9896,
+     "score": 100
+    },
+    "bgp": {
+     "ratio": 1.0,
+     "score": 100
+    }
+   },
+   "level": "normal"
+  },
+  "mykolaiv": {
+   "score": 100,
+   "parts": {
+    "ping-slash24": {
+     "ratio": 1.0066,
+     "score": 100
+    },
+    "bgp": {
+     "ratio": 1.0022,
+     "score": 100
+    }
+   },
+   "level": "normal"
+  },
+  "chernihiv": {
+   "score": 100,
+   "parts": {
+    "ping-slash24": {
+     "ratio": 1.0266,
+     "score": 100
+    },
+    "bgp": {
+     "ratio": 1.0,
+     "score": 100
+    }
+   },
+   "level": "normal"
+  },
+  "rivne": {
+   "score": 100,
+   "parts": {
+    "ping-slash24": {
+     "ratio": 1.0029,
+     "score": 100
+    },
+    "bgp": {
+     "ratio": 1.0,
+     "score": 100
+    }
+   },
+   "level": "normal"
+  },
+  "chernivtsi": {
+   "score": 100,
+   "parts": {
+    "ping-slash24": {
+     "ratio": 0.9962,
+     "score": 100
+    },
+    "bgp": {
+     "ratio": 1.0,
+     "score": 100
+    }
+   },
+   "level": "normal"
+  },
+  "ivano": {
+   "score": 100,
+   "parts": {
+    "ping-slash24": {
+     "ratio": 1.0041,
+     "score": 100
+    },
+    "bgp": {
+     "ratio": 1.0,
+     "score": 100
+    }
+   },
+   "level": "normal"
+  },
+  "khmelnytskyi": {
+   "score": 100,
+   "parts": {
+    "ping-slash24": {
+     "ratio": 0.9982,
+     "score": 100
+    },
+    "bgp": {
+     "ratio": 0.9928,
+     "score": 100
+    }
+   },
+   "level": "normal"
+  },
+  "lviv": {
+   "score": 100,
+   "parts": {
+    "ping-slash24": {
+     "ratio": 1.004,
+     "score": 100
+    },
+    "bgp": {
+     "ratio": 0.9997,
+     "score": 100
+    }
+   },
+   "level": "normal"
+  },
+  "ternopil": {
+   "score": 100,
+   "parts": {
+    "ping-slash24": {
+     "ratio": 1.0119,
+     "score": 100
+    },
+    "bgp": {
+     "ratio": 1.0018,
+     "score": 100
+    }
+   },
+   "level": "normal"
+  },
+  "zakarpattia": {
+   "score": 100,
+   "parts": {
+    "ping-slash24": {
+     "ratio": 0.9958,
+     "score": 100
+    },
+    "bgp": {
+     "ratio": 1.0,
+     "score": 100
+    }
+   },
+   "level": "normal"
+  },
+  "volyn": {
+   "score": 100,
+   "parts": {
+    "ping-slash24": {
+     "ratio": 1.007,
+     "score": 100
+    },
+    "bgp": {
+     "ratio": 1.0,
+     "score": 100
+    }
+   },
+   "level": "normal"
+  },
+  "cherkasy": {
+   "score": 100,
+   "parts": {
+    "ping-slash24": {
+     "ratio": 1.1943,
+     "score": 100
+    },
+    "bgp": {
+     "ratio": 1.0,
+     "score": 100
+    }
+   },
+   "level": "normal"
+  },
+  "kirovohrad": {
+   "score": 100,
+   "parts": {
+    "ping-slash24": {
+     "ratio": 1.0189,
+     "score": 100
+    },
+    "bgp": {
+     "ratio": 1.0018,
+     "score": 100
+    }
+   },
+   "level": "normal",
+   "alerts": {
+    "bgp": {
+     "level": "normal",
+     "time": 1794358500,
+     "value": 548,
+     "history": 548
+    }
+   }
+  },
+  "kyivobl": {
+   "score": 100,
+   "parts": {
+    "ping-slash24": {
+     "ratio": 1.0313,
+     "score": 100
+    },
+    "bgp": {
+     "ratio": 1.001,
+     "score": 100
+    }
+   },
+   "level": "normal"
+  },
+  "odesa": {
+   "score": 100,
+   "parts": {
+    "ping-slash24": {
+     "ratio": 0.977,
+     "score": 100
+    },
+    "bgp": {
+     "ratio": 0.999,
+     "score": 100
+    }
+   },
+   "level": "normal"
+  },
+  "vinnytsia": {
+   "score": 100,
+   "parts": {
+    "ping-slash24": {
+     "ratio": 1.0204,
+     "score": 100
+    },
+    "bgp": {
+     "ratio": 1.001,
+     "score": 100
+    }
+   },
+   "level": "normal"
+  },
+  "zhytomyr": {
+   "score": 73,
+   "parts": {
+    "ping-slash24": {
+     "ratio": 0.7615,
+     "score": 56
+    },
+    "bgp": {
+     "ratio": 0.9969,
+     "score": 100
+    }
+   },
+   "level": "normal"
+  },
+  "sumy": {
+   "score": 100,
+   "parts": {
+    "ping-slash24": {
+     "ratio": 1.012,
+     "score": 100
+    },
+    "bgp": {
+     "ratio": 1.0,
+     "score": 100
+    }
+   },
+   "level": "normal"
+  },
+  "dnipro": {
+   "score": 100,
+   "parts": {
+    "ping-slash24": {
+     "ratio": 1.0358,
+     "score": 100
+    },
+    "bgp": {
+     "ratio": 1.0001,
+     "score": 100
+    }
+   },
+   "level": "normal"
+  },
+  "donetsk": {
+   "score": 92,
+   "parts": {
+    "ping-slash24": {
+     "ratio": 0.9053,
+     "score": 86
+    },
+    "bgp": {
+     "ratio": 1.0,
+     "score": 100
+    }
+   },
+   "level": "normal"
+  },
+  "kharkiv": {
+   "score": 100,
+   "parts": {
+    "ping-slash24": {
+     "ratio": 1.0194,
+     "score": 100
+    },
+    "bgp": {
+     "ratio": 1.0003,
+     "score": 100
+    }
+   },
+   "level": "normal"
+  },
+  "luhansk": {
+   "score": 78,
+   "parts": {
+    "ping-slash24": {
+     "ratio": 0.7948,
+     "score": 63
+    },
+    "bgp": {
+     "ratio": 0.9981,
+     "score": 100
+    }
+   },
+   "level": "normal",
+   "alerts": {
+    "bgp": {
+     "level": "normal",
+     "time": 1794402900,
+     "value": 514,
+     "history": 514
+    }
+   }
+  },
+  "poltava": {
+   "score": 100,
+   "parts": {
+    "ping-slash24": {
+     "ratio": 1.0672,
+     "score": 100
+    },
+    "bgp": {
+     "ratio": 1.0,
+     "score": 100
+    }
+   },
+   "level": "normal"
+  },
+  "zaporizhzhia": {
+   "score": 100,
+   "parts": {
+    "ping-slash24": {
+     "ratio": 1.0031,
+     "score": 100
+    },
+    "bgp": {
+     "ratio": 1.0006,
+     "score": 100
+    }
+   },
+   "level": "normal"
+  },
+  "kyivcity": {
+   "score": 100,
+   "parts": {
+    "ping-slash24": {
+     "ratio": 1.036,
+     "score": 100
+    },
+    "bgp": {
+     "ratio": 0.9995,
+     "score": 100
+    }
+   },
+   "level": "normal"
+  },
+  "kherson": {
+   "score": 100,
+   "parts": {
+    "ping-slash24": {
+     "ratio": 1.0087,
+     "score": 100
+    },
+    "bgp": {
+     "ratio": 1.0,
+     "score": 100
+    }
+   },
+   "level": "critical",
+   "since": 1794408600,
+   "critical_sources": [
+    "bgp"
+   ],
+   "alerts": {
+    "bgp": {
+     "level": "critical",
+     "time": 1794408600,
+     "value": 572,
+     "history": 579
+    }
+   }
+  },
+  "sevastopol": {
+   "score": 99,
+   "parts": {
+    "ping-slash24": {
+     "ratio": 0.9588,
+     "score": 98
+    },
+    "bgp": {
+     "ratio": 1.0,
+     "score": 100
+    }
+   },
+   "level": "normal"
+  }
+ }
+}
