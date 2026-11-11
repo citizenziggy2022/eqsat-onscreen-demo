@@ -222,6 +222,41 @@ def fetch_channel(src, st=None):
     return items[:PER_SOURCE], len(items), seen[0] - len(items)
 
 
+
+# English line under the Ukrainian (Jason, Nov 11 2026 11:53 AM: "yes english live under"): machine translation through
+# the eqsat-log worker (Workers AI m2m100; it caches every text by hash, so a post is translated once). Shown on the
+# card as "EN · machine translation". A failed call leaves the item Ukrainian only: nothing is ever made up here.
+MT_URL = "https://eqsat-log.eqsat.workers.dev/translate"
+
+
+def add_english(items, old_items):
+    prev = {i.get("id"): i for i in old_items or []}
+    todo = []
+    for it in items:
+        p = prev.get(it["id"])
+        if p and p.get("en_mt") and p.get("title") == it["title"] and p.get("body") == it.get("body"):
+            it["en_mt"] = p["en_mt"]
+        else:
+            todo.append(it)
+    for k in range(0, len(todo), 6):
+        part = todo[k:k + 6]
+        texts = []
+        for it in part:
+            texts += [it["title"][:800], (it.get("body") or "")[:800]]
+        try:
+            r = requests.post(MT_URL, json={"texts": texts, "source": "uk", "target": "en"}, timeout=40)
+            out = r.json().get("out") if r.ok else None
+        except Exception as exc:
+            print("translation skipped:", str(exc)[:100])
+            return
+        if not isinstance(out, list) or len(out) != len(texts):
+            print("translation skipped:", r.status_code)
+            return
+        for j, it in enumerate(part):
+            t, b = out[2 * j], out[2 * j + 1]
+            if isinstance(t, str) and t.strip():
+                it["en_mt"] = {"title": t.strip()[:300], "body": (b or "").strip()[:500] if it.get("body") else "", "by": "m2m100"}
+
 def passes(text):
     """The safety filter on stored items too, so nothing kept from before the filter stays on air."""
     return bool(SAFETY.search(text)) and not (MILITARY.search(text) or GRAPHIC.search(text) or DROP.search(text) or NOT_BULLETIN.search(text))
@@ -269,8 +304,12 @@ def main():
         print("auto bulletins: every source failed, keeping last file", status)
         return 1
     out.sort(key=lambda i: i["issued_at"], reverse=True)
+    try:
+        add_english(out[:MAX_ITEMS], old.get("bulletins", []))
+    except Exception as exc:  # the Ukrainian bulletins never wait on the translation
+        print("translation skipped:", str(exc)[:100])
     data = {
-        "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
+        "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
         "generated_at": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
         "sources": [{"name": s["name"], "url": f"https://t.me/s/{s['channel']}", "verified": s["verified"], "status": status.get(s["id"])} for s in SOURCES],
         "bulletins": out[:MAX_ITEMS],
