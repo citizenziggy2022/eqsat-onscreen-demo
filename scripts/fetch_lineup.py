@@ -92,7 +92,7 @@ def main():
         prev = {}
     panel = prev.get('panel') or {
         'label_uk': 'eQtv · ДАЛІ В ЕФІРІ', 'label_en': 'eQtv · COMING UP', 'logo': 'eqtv-logo-white.png',
-        'tune_in': 'Hotbird 13°E · Transponder G · 10950 MHz V · SR 27500 · FEC 2/3', 'watch_url': 'tv.equalit.ie/live'}
+        'tune_in': 'Hotbird 13°E · 13G · 10950 MHz V · SR 27500 · FEC 2/3', 'watch_url': 'tv.equalit.ie/live'}
     ahead_h = (dt.datetime.fromisoformat(items[-1]['airs_utc'].replace('Z', '+00:00')) - NOW).total_seconds() / 3600
     doc = dict(panel=panel, status='live', generated_at=NOW.strftime('%Y-%m-%dT%H:%M:%SZ'),
                source='https://tv.equalit.ie/schedule/ (EN + UK, admin-ajax eqtv_get_schedule_programs, UTC)',
