@@ -1,6 +1,6 @@
 {
- "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-11T15:07:28Z",
+ "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
+ "generated_at": "2026-11-11T15:14:27Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -51,7 +51,12 @@
    "severity": "info",
    "issued_at": "2026-11-11T14:43:25Z",
    "expires_at": "2026-11-12T02:43:25Z",
-   "auto": true
+   "auto": true,
+   "en_mt": {
+    "title": "Rescuers of the SES of the Zhytomyr region conducted training in rocky terrain!",
+    "body": "Experts practiced skills in conditions maximally close to real ones. During such practices, it is important to bring every movement to automatism, because during real operations there is no right to make a mistake. Site • Fb • X • IG • YT • TT",
+    "by": "m2m100"
+   }
   },
   {
    "id": "auto-kharkivoda-32717",
@@ -64,7 +69,12 @@
    "severity": "info",
    "issued_at": "2026-11-11T14:30:21Z",
    "expires_at": "2026-11-12T02:30:21Z",
-   "auto": true
+   "auto": true,
+   "en_mt": {
+    "title": "In the Kharkiv OVA they discussed the current activity of the media in the region",
+    "body": "This was discussed during a briefing at the Official Media Center of KhOVA by Iryna Panchenko, a representative of the National Council of Ukraine on Television and Radio Broadcasting in the Kharkiv region. During the War for Ukraine's Independence, broadcasting and communication facilities of Kharkiv region…",
+    "by": "m2m100"
+   }
   },
   {
    "id": "auto-zoda_gov_ua-68950",
@@ -77,7 +87,12 @@
    "severity": "info",
    "issued_at": "2026-11-11T14:22:58Z",
    "expires_at": "2026-11-12T02:22:58Z",
-   "auto": true
+   "auto": true,
+   "en_mt": {
+    "title": "We are doing everything possible so that people whose homes were damaged by Russian strikes can return to their homes as soon as possible",
+    "body": "Checked how the restoration of three high-rise buildings is proceeding in the Khortytskyi and Zavodskyi districts of Zaporizhzhia. On Svitle Street in the summer, a Russian aerial bomb seriously damaged the house. 14 apartments were declared emergency. Now we are completing the preparation of the project and expertise….",
+    "by": "m2m100"
+   }
   },
   {
    "id": "auto-dsns_telegram-80216",
@@ -90,7 +105,12 @@
    "severity": "info",
    "issued_at": "2026-11-11T13:52:33Z",
    "expires_at": "2026-11-12T01:52:33Z",
-   "auto": true
+   "auto": true,
+   "en_mt": {
+    "title": "as a result of the Russian strike on the territory of a private enterprise, a fire broke out in the production building!",
+    "body": "Rescuers have localized the fire. According to updated information, 5 people were injured. Site • Fb • X • IG • YT • TT",
+    "by": "m2m100"
+   }
   },
   {
    "id": "auto-zoda_gov_ua-68949",
@@ -103,7 +123,12 @@
    "severity": "info",
    "issued_at": "2026-11-11T12:22:08Z",
    "expires_at": "2026-11-12T00:22:08Z",
-   "auto": true
+   "auto": true,
+   "en_mt": {
+    "title": "The enemy attacked Zaporizhzhia",
+    "body": "As a result of the strike by an enemy FPV drone, three men were injured. Medics are providing all necessary assistance.",
+    "by": "m2m100"
+   }
   },
   {
    "id": "auto-luhanskaVTSA-39234",
@@ -116,7 +141,12 @@
    "severity": "info",
    "issued_at": "2026-11-11T11:27:12Z",
    "expires_at": "2026-11-11T23:27:12Z",
-   "auto": true
+   "auto": true,
+   "en_mt": {
+    "title": "STATE OF THE ENERGY SYSTEM",
+    "body": "Throughout the night and morning the enemy continued attacks on objects of the energy infrastructure. Due to the consequences of enemy attacks in the morning there are partial power outages for consumers in Dnipropetrovsk, Zhytomyr, Zaporizhzhia, Kyiv, Rivne, Kharkiv, Odesa and…",
+    "by": "m2m100"
+   }
   },
   {
    "id": "auto-kharkivoda-32689",
@@ -129,7 +159,12 @@
    "severity": "info",
    "issued_at": "2026-11-11T08:43:25Z",
    "expires_at": "2026-11-11T20:43:25Z",
-   "auto": true
+   "auto": true,
+   "en_mt": {
+    "title": "Strengthening Kharkiv region's readiness for prompt response to possible emergency situations in…",
+    "body": "Together with emergency services, volunteers and charities, we are working out algorithms of actions in case of long-term power outages or lack of heating in the homes of our citizens. First of all, it is about operational response and the establishment of mobile points…",
+    "by": "m2m100"
+   }
   },
   {
    "id": "auto-VadymFilashkin-19203",
@@ -142,7 +177,12 @@
    "severity": "info",
    "issued_at": "2026-11-11T06:05:11Z",
    "expires_at": "2026-11-11T18:05:11Z",
-   "auto": true
+   "auto": true,
+   "en_mt": {
+    "title": "Russia is killing civilians!",
+    "body": "On 10 November Russians killed 2 residents of Donetchyna: in Kramatorsk and Slovyansk. Another 5 people in the region received injuries over the day. The total number of Russian victims in Donetchyna is given without taking into account Mariupol and Volnovakha.",
+    "by": "m2m100"
+   }
   }
  ]
 }
