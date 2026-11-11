@@ -155,3 +155,11 @@ try:
     _sp.run([_sys.executable, 'scripts/fetch_bulletins.py'], timeout=90, check=False)
 except Exception as _e:
     print('auto bulletins skipped:', _e)
+
+# admin Stats tab rollup (Nov 11 2026): stats.py throttles itself to every 5 min, keeps the last good file on failure
+# and stages stats.json so the live-runner's commit carries it.
+try:
+    import subprocess as _sp2, sys as _sys2
+    _sp2.run([_sys2.executable, 'scripts/stats.py'], timeout=60, check=False)
+except Exception as _e2:
+    print('stats skipped:', _e2)

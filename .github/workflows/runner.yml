@@ -1,7 +1,8 @@
 name: live-runner
 # Self-looping runner (GitHub's */5 cron has not fired on this repo). One run lasts ~5 h 45 m:
 #   every 1 min  alerttypes.json + feed.json (alert states + Svoboda/KI news, replaces the Base44 function); every 2 min news.json; every 60 min blocked / keepiton / blocked_extra;
-#   every 3 h lineup.json (eQtv schedule; a failed fetch keeps the last good file)
+#   every 3 h lineup.json (eQtv schedule; a failed fetch keeps the last good file); every 5 min stats.json (admin Stats
+#   tab rollup, run through fetch_news.py); failures are logged to $RUNNER_LOG for stats.json's "last errors"
 #   a changed file is committed and Pages is deployed through Actions (pages.yml, no hourly cap)
 # then it dispatches itself again. Cancel the run (Actions tab) to stop the chain.
 on:
@@ -25,28 +26,30 @@ jobs:
         run: |
           git config user.name "eqsat-live-bot"
           git config user.email "actions@users.noreply.github.com"
+          export RUNNER_LOG=/tmp/runner-errors.log
+          fail() { echo "$1"; echo "$(date -u +%FT%TZ) $1" >> "$RUNNER_LOG"; }
           end=$(( $(date +%s) + 345*60 ))
           lastfeeds=0
           lastnews=0
           lastlineup=0
           while [ "$(date +%s)" -lt "$end" ]; do
             t0=$(date +%s)
-            python3 scripts/alerttypes.py || echo "alerttypes failed, keeping last file"
-            python3 scripts/fetch_feed.py || echo "feed failed, keeping last file"
+            python3 scripts/alerttypes.py || fail "alerttypes failed, keeping last file"
+            python3 scripts/fetch_feed.py || fail "feed failed, keeping last file"
             files="alerttypes.json feed.json"
             if [ $(( $(date +%s) - lastnews )) -ge 115 ]; then
-              python3 scripts/fetch_news.py || echo "news failed, keeping last file"
+              python3 scripts/fetch_news.py || fail "news failed, keeping last file"
               files="$files news.json"
               lastnews=$(date +%s)
             fi
             if [ $(( $(date +%s) - lastfeeds )) -ge 3600 ]; then
-              python3 scripts/feeds.py || echo "feeds failed"
-              python3 scripts/fetch_blocked_extra.py --ooni blocked.json --out blocked_extra.json || echo "blocked_extra failed"
+              python3 scripts/feeds.py || fail "feeds failed"
+              python3 scripts/fetch_blocked_extra.py --ooni blocked.json --out blocked_extra.json || fail "blocked_extra failed"
               files="$files blocked.json keepiton.json blocked_extra.json blocked_history.json"
               lastfeeds=$(date +%s)
             fi
             if [ $(( $(date +%s) - lastlineup )) -ge 10800 ]; then
-              python3 scripts/fetch_lineup.py || echo "lineup failed, keeping last file"
+              python3 scripts/fetch_lineup.py || fail "lineup failed, keeping last file"
               files="$files lineup.json"
               lastlineup=$(date +%s)
             fi
@@ -54,7 +57,7 @@ jobs:
             if ! git diff --cached --quiet; then
               git commit -q -m "live: data $(date -u +%H:%MZ)"
               for i in 1 2 3; do git pull -q --rebase -X ours origin main && git push -q && break; sleep 5; done
-              gh workflow run pages.yml --ref main -R "$GITHUB_REPOSITORY" || echo "pages dispatch failed"
+              gh workflow run pages.yml --ref main -R "$GITHUB_REPOSITORY" || fail "pages dispatch failed"
             fi
             sleep $(( 60 - ( $(date +%s) - t0 ) > 5 ? 60 - ( $(date +%s) - t0 ) : 5 ))
           done
