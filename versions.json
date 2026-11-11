@@ -2,6 +2,12 @@
  "note": "Every screen deploy, newest first: version 1.N (N + 1 per deploy), deploy time (UTC), one-line summary, build code. Read by the admin (History › Versions).",
  "versions": [
   {
+   "version": "2.13",
+   "at": "2026-11-11T19:12:02Z",
+   "summary": "ПОГОДА cards now join the bulletins (after manual and auto ones) instead of the family/dish/radio rotation, so every page of weather warnings is shown once per bulletin cycle",
+   "build": "index-BvOv4yGa.js"
+  },
+  {
    "version": "2.12",
    "at": "2026-11-11T18:56:10Z",
    "summary": "ПОГОДА: official weather and sea warnings (Meteoalarm / Укргідрометцентр, CC BY 4.0; Moldova when it has warnings), fetched by the live-runner every 10 min, one line per warning in the issuer's words, newest first, as cards in the bulletin box rotation",
