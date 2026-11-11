@@ -97,6 +97,13 @@ def bulletins():
         subprocess.run([_s.executable, 'scripts/fetch_bulletins.py'], timeout=75, check=False)
     except Exception as e:
         print('auto bulletins skipped:', str(e)[:120])
+    # Air Force threat warnings (v2.15, Nov 11 2026): fetch_airforce.py throttles itself to 50 s, writes airforce.json
+    # (t.me/s/kpszsu, threat warnings only, word for word) for the red line in the live news crawl, stages it itself
+    try:
+        import subprocess, sys as _s
+        subprocess.run([_s.executable, 'scripts/fetch_airforce.py'], timeout=60, check=False)
+    except Exception as e:
+        print('air force skipped:', str(e)[:120])
     # power cuts (Ukrenergo, every 2.5 min) + border queues (eCherha, every 3 min) for the WATER / ROADS maps (Nov 11 2026)
     try:
         import subprocess, sys as _s
