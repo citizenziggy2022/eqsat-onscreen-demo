@@ -1,18 +1,18 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). Text is the source's own, shortened. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-11T12:17:17Z",
+ "generated_at": "2026-11-11T12:27:28Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok 1"
+   "status": "ok 2"
   },
   {
    "name": "Херсонська ОВА",
    "url": "https://t.me/s/khersonskaODA",
    "verified": "linked from khoda.gov.ua; channel links back to khoda.gov.ua",
-   "status": "ok 1"
+   "status": "ok 2"
   },
   {
    "name": "Запорізька ОВА",
@@ -40,6 +40,32 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-khersonskaODA-71157",
+   "title": "Криворізький координаційний центр «Вільні разом» надає системну підтримку ВПО з Херсонщини",
+   "body": "Протягом тижня його команда працювала за такими напрямами: ▪Гуманітарна допомога. Видали допоміжні засоби реабілітації. ▪Юридична та психологічна допомога. Фахівці БФ «Право на захист», ГО «Десяте квітня», БО «Схід SOS» та ГМ «Проліска» надали підтримку 18…",
+   "source": "Херсонська ОВА",
+   "source_url": "https://t.me/khersonskaODA/71157",
+   "region": "Херсонщина",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-11T12:23:43Z",
+   "expires_at": "2026-11-12T00:23:43Z",
+   "auto": true
+  },
+  {
+   "id": "auto-dsns_telegram-80207",
+   "title": "Це – Михайло Хижняк, водолаз Міжрегіонального центру швидкого реагування на водних об’єктах ДСНС України",
+   "body": "Минулої зими він разом із колегами ліквідовував наслідки російського обстрілу на одній зі столичних ТЕЦ. Водолази занурювалися у крижану воду під час 15-градусних морозів, аби відновити життєво важливе обладнання, від якого залежало світло й тепло в оселях…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/80207",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-11T12:23:37Z",
+   "expires_at": "2026-11-12T00:23:37Z",
+   "auto": true
+  },
   {
    "id": "auto-kharkivoda-32705",
    "title": "Перша група дітей із Харківщини прибула на відпочинок до Закарпаття в межах проєкту «Карпатська зміна»",
