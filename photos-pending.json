@@ -1,11 +1,17 @@
 {
- "fetched_at": "2026-11-11T23:59:27Z",
+ "fetched_at": "2026-11-12T00:11:46Z",
  "every_s": 600,
  "note": "Conflict photo candidates, NOT on air. Fetched by scripts/fetch_conflict_photos.py in the live-runner every 10 min. An item goes on air only when the Editor's Approve moves it to photos-conflict.json.",
  "check": "none in the runner (no vision model): nothing is approved automatically",
  "auto_approved": 0,
  "items": [],
  "fetch_rejects": [
+  {
+   "source": "commons",
+   "title": "File:Destructions in Pryluky after Russian attack, 2026-10-07 (20).jpg",
+   "reason": "taken 2026-10-07, older than 7 days",
+   "stage": "fetch"
+  },
   {
    "source": "commons",
    "title": "File:Destructions in Pryluky after Russian attack, 2026-10-07 (40).jpg",
@@ -475,17 +481,11 @@
    "stage": "fetch"
   },
   {
-   "source": "Wikimedia Commons (dsns.gov.ua)",
-   "title": "File:Shopping center in Odesa after Russian attack, 2026-11-03 (01).webp",
-   "reason": "duplicate image URL",
-   "stage": "fetch"
-  },
-  {
    "source": "Wikimedia Commons",
    "title": "File:Destructions in Kyiv after Russian attack, 2026-11-07 (21).jpg",
    "reason": "duplicate image URL",
    "stage": "fetch"
   }
  ],
- "took_s": 6.9
+ "took_s": 6.8
 }
