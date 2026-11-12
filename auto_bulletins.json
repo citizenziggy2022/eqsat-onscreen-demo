@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-12T06:08:37Z",
+ "generated_at": "2026-11-12T06:50:37Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 1 / dropped 1, showing 1"
+   "status": "ok: kept 2 / dropped 1, showing 2"
   },
   {
    "name": "Херсонська ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-dsns_telegram-80247",
+   "title": "Одна людина постраждала через російську атаку на Житомирщині!",
+   "body": "Впродовж доби ворог неодноразово атакував регіон. Під ударами опинилися об’єкти енергетичної інфраструктури в Житомирському, Коростенському та Бердичівському районах. Пошкоджена будівля одного з підприємств, покрівля житлового будинку, вікна в оселях і…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/80247",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-12T06:49:18Z",
+   "expires_at": "2026-11-12T18:49:18Z",
+   "auto": true,
+   "en_mt": {
+    "title": "One person was injured in a Russian attack on Zhytomyr region!",
+    "body": "Throughout the day, the enemy repeatedly attacked the region. Objects of the energy infrastructure in the Zhytomyr, Korosten, and Berdychiv districts came under attack. A building of one of the enterprises was damaged, the roof of a residential building, windows in homes and…",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-dsns_telegram-80243",
    "title": "Рівненщина: рятувальники ліквідували наслідки нічної російської атаки",
