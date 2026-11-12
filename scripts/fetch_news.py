@@ -235,3 +235,11 @@ try:
     _sp11.run([_sys11.executable, 'scripts/fetch_quakes.py'], timeout=120, check=False)
 except Exception as _e11:
     print('quakes skipped:', _e11)
+
+# RIVERS (v2.40, Jason Nov 12 2026: "Dnipro river warnings"): fetch_rivers.py writes rivers.json (UkrHMC hydrological
+# warnings for river basins + Dnipro reservoirs, as published), at most every 30 min; stages it.
+try:
+    import subprocess as _sp12, sys as _sys12
+    _sp12.run([_sys12.executable, 'scripts/fetch_rivers.py'], timeout=120, check=False)
+except Exception as _e12:
+    print('rivers skipped:', _e12)
