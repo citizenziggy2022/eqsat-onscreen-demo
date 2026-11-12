@@ -228,3 +228,10 @@ try:
     _sp10.run([_sys10.executable, 'scripts/fetch_fires.py'], timeout=200, check=False)
 except Exception as _e10:
     print('fires skipped:', _e10)
+
+# EARTHQUAKES (v2.34): fetch_quakes.py writes quakes.json (EMSC, 30 days, M2.5+), at most every 10 min; stages it.
+try:
+    import subprocess as _sp11, sys as _sys11
+    _sp11.run([_sys11.executable, 'scripts/fetch_quakes.py'], timeout=120, check=False)
+except Exception as _e11:
+    print('quakes skipped:', _e11)
