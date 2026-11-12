@@ -1,13 +1,12 @@
 {
- "fetched_at": "2026-11-12T18:23:23Z",
+ "fetched_at": "2026-11-12T18:26:45Z",
  "source": {
-  "id": "safecast",
-  "name": "Safecast (backup)",
-  "credit": "Safecast (backup) · CC0 · safecast.org",
-  "credit_uk": "Safecast (резервне джерело) · CC0",
-  "url": "https://safecast.org",
-  "short_url": "safecast.org",
-  "why": "no SAVEECOBOT_KEY in this run"
+  "id": "saveecobot",
+  "name": "SaveEcoBot",
+  "credit": "Data were obtained from the SaveEcoBot system",
+  "credit_uk": "Дані отримано із системи SaveEcoBot",
+  "url": "https://www.saveecobot.com/radiation-maps",
+  "short_url": "saveecobot.com"
  },
  "unit": "nSv/h",
  "normal_nsv_h": [
@@ -24,13 +23,41 @@
    "en": "Nikopol",
    "sub_uk": "ЗАЕС, 16 км",
    "sub_en": "ZNPP area, 16 km",
-   "nsv_h": null,
-   "time": null,
-   "oldest": null,
-   "n": 0,
-   "platforms": [],
-   "notes": [],
-   "readings": []
+   "nsv_h": 121,
+   "time": "2026-11-12T15:00:00Z",
+   "oldest": "2026-11-12T07:00:00Z",
+   "n": 2,
+   "platforms": [
+    "Міністерство охорони здоров'я України",
+    "Український гідрометеорологічний центр"
+   ],
+   "notes": [
+    "ДУ «Дніпропетровський обласний центр контролю та профілактики хвороб МОЗ України»"
+   ],
+   "readings": [
+    {
+     "sensor_id": 20720,
+     "station": "Нікополь",
+     "city": "Нікополь",
+     "nsv_h": 120.0,
+     "time": "2026-11-12T07:00:00Z",
+     "fresh": true,
+     "manual": true,
+     "platform": "Міністерство охорони здоров'я України",
+     "notes": "ДУ «Дніпропетровський обласний центр контролю та профілактики хвороб МОЗ України»"
+    },
+    {
+     "sensor_id": 3887,
+     "station": "вулиця Борзенко 41",
+     "city": "Нікополь",
+     "nsv_h": 122.0,
+     "time": "2026-11-12T15:00:00Z",
+     "fresh": true,
+     "manual": true,
+     "platform": "Український гідрометеорологічний центр",
+     "notes": null
+    }
+   ]
   },
   {
    "id": "marhanets",
@@ -39,24 +66,39 @@
    "en": "Marhanets",
    "sub_uk": "ЗАЕС, 16 км",
    "sub_en": "ZNPP area, 16 km",
-   "nsv_h": 110,
-   "time": "2026-11-12T17:37:55Z",
-   "oldest": "2026-11-12T17:37:55Z",
-   "n": 1,
+   "nsv_h": 121,
+   "time": "2026-11-12T18:25:17Z",
+   "oldest": "2026-11-12T17:27:11Z",
+   "n": 2,
    "platforms": [
-    "Safecast"
+    "SaveDnipro & Greenpeace",
+    "SaveDnipro & Safecast"
    ],
-   "notes": [],
+   "notes": [
+    "Онлайн-моніторинг радіаційного стану приладами Radnote від Safecast та Blues Inc"
+   ],
    "readings": [
     {
-     "device": "note:dev:867648049117979",
-     "station": "Tomakivka",
-     "nsv_h": 109.6,
-     "time": "2026-11-12T17:37:55Z",
+     "sensor_id": 24050,
+     "station": "вулиця Ворошилова, 1",
+     "city": "Марганець",
+     "nsv_h": 133.0,
+     "time": "2026-11-12T18:25:17Z",
      "fresh": true,
      "manual": false,
-     "platform": "Safecast",
+     "platform": "SaveDnipro & Greenpeace",
      "notes": null
+    },
+    {
+     "sensor_id": 24382,
+     "station": "вулиця Різдвяна",
+     "city": "Марганець",
+     "nsv_h": 109.6,
+     "time": "2026-11-12T17:27:11Z",
+     "fresh": true,
+     "manual": false,
+     "platform": "SaveDnipro & Safecast",
+     "notes": "Онлайн-моніторинг радіаційного стану приладами Radnote від Safecast та Blues Inc"
     }
    ]
   },
@@ -68,25 +110,105 @@
    "sub_uk": "МАГАТЕ, щодоби",
    "sub_en": "IAEA, daily",
    "daily": true,
-   "nsv_h": null,
-   "time": null,
-   "oldest": null,
-   "n": 0,
-   "platforms": [],
-   "notes": [],
-   "readings": []
+   "nsv_h": 120,
+   "time": "2026-11-12T06:00:00Z",
+   "oldest": "2026-11-12T06:00:00Z",
+   "n": 1,
+   "platforms": [
+    "АТ «НАЕК «Енергоатом»"
+   ],
+   "notes": [
+    "Дані із системи IRMIS від МАГАТЕ, які публікує «Енергоатом» щодобово в себе на сайті."
+   ],
+   "readings": [
+    {
+     "sensor_id": 23481,
+     "station": "Промисловий майданчик, Запорізька АЕС",
+     "city": "Енергодар",
+     "nsv_h": 120.0,
+     "time": "2026-11-12T06:00:00Z",
+     "fresh": true,
+     "manual": true,
+     "platform": "АТ «НАЕК «Енергоатом»",
+     "notes": "Дані із системи IRMIS від МАГАТЕ, які публікує «Енергоатом» щодобово в себе на сайті."
+    }
+   ]
   },
   {
    "id": "chornobyl_town",
    "uk": "Чорнобиль",
    "en": "Chornobyl town",
-   "nsv_h": null,
-   "time": null,
-   "oldest": null,
-   "n": 0,
-   "platforms": [],
-   "notes": [],
-   "readings": []
+   "nsv_h": 188,
+   "time": "2026-11-12T18:25:45Z",
+   "oldest": "2026-11-12T16:00:00Z",
+   "n": 4,
+   "platforms": [
+    "SaveDnipro & Safecast",
+    "SaveDnipro & uRADMonitor",
+    "ДСП \"Екоцентр\""
+   ],
+   "notes": [
+    "Дані збираються через систему ЕкоЗагроза",
+    "Онлайн-моніторинг радіаційного стану навколо Атомних Електростанцій України",
+    "Онлайн-моніторинг радіаційного стану приладами Radnote від Safecast та Blues Inc"
+   ],
+   "readings": [
+    {
+     "sensor_id": 3713,
+     "station": "вулиця Кірова, 21",
+     "city": "Чорнобиль",
+     "nsv_h": 197.0,
+     "time": "2026-11-12T16:00:00Z",
+     "fresh": true,
+     "manual": false,
+     "platform": "ДСП \"Екоцентр\"",
+     "notes": "Дані збираються через систему ЕкоЗагроза"
+    },
+    {
+     "sensor_id": 3739,
+     "station": "ДСП \"РУЗОД\"",
+     "city": "Чорнобиль",
+     "nsv_h": 179.0,
+     "time": "2026-11-12T16:00:00Z",
+     "fresh": true,
+     "manual": false,
+     "platform": "ДСП \"Екоцентр\"",
+     "notes": "Дані збираються через систему ЕкоЗагроза"
+    },
+    {
+     "sensor_id": 22415,
+     "station": "вулиця Богдана Хмельницького",
+     "city": "Чорнобиль",
+     "nsv_h": 203.0,
+     "time": "2026-11-12T18:25:45Z",
+     "fresh": true,
+     "manual": false,
+     "platform": "SaveDnipro & uRADMonitor",
+     "notes": "Онлайн-моніторинг радіаційного стану навколо Атомних Електростанцій України"
+    },
+    {
+     "sensor_id": 24281,
+     "station": "вулиця Шкільна, 8",
+     "city": "Чорнобиль",
+     "nsv_h": 125.1,
+     "time": "2026-11-12T17:50:22Z",
+     "fresh": true,
+     "manual": false,
+     "platform": "SaveDnipro & Safecast",
+     "notes": "Онлайн-моніторинг радіаційного стану приладами Radnote від Safecast та Blues Inc"
+    },
+    {
+     "sensor_id": 3797,
+     "station": "Чорнобиль",
+     "city": "Чорнобиль",
+     "nsv_h": 157.0,
+     "time": "2026-11-12T15:00:00Z",
+     "fresh": true,
+     "manual": true,
+     "platform": "Український гідрометеорологічний центр",
+     "notes": null
+    }
+   ]
   },
   {
    "id": "chnpp_site",
@@ -95,34 +217,49 @@
    "sub_uk": "зона відчуження — високі значення звичні",
    "sub_en": "exclusion zone — high values normal",
    "zone": true,
-   "nsv_h": 2162,
-   "time": "2026-11-12T17:47:38Z",
-   "oldest": "2026-11-12T17:41:20Z",
-   "n": 2,
+   "nsv_h": 1829,
+   "time": "2026-11-12T16:00:00Z",
+   "oldest": "2026-11-12T16:00:00Z",
+   "n": 3,
    "platforms": [
-    "Safecast"
+    "ДСП \"Екоцентр\""
    ],
-   "notes": [],
+   "notes": [
+    "Дані збираються через систему ЕкоЗагроза"
+   ],
    "readings": [
     {
-     "device": "note:dev:867648049116831",
-     "station": "Kryva Hora",
-     "nsv_h": 2646.7,
-     "time": "2026-11-12T17:47:38Z",
+     "sensor_id": 3734,
+     "station": "СВЯП",
+     "city": null,
+     "nsv_h": 1829.0,
+     "time": "2026-11-12T16:00:00Z",
      "fresh": true,
      "manual": false,
-     "platform": "Safecast",
-     "notes": null
+     "platform": "ДСП \"Екоцентр\"",
+     "notes": "Дані збираються через систему ЕкоЗагроза"
     },
     {
-     "device": "note:dev:867648049117904",
-     "station": "Kryva Hora",
-     "nsv_h": 1678.1,
-     "time": "2026-11-12T17:41:20Z",
+     "sensor_id": 3733,
+     "station": "СРТВ",
+     "city": null,
+     "nsv_h": 2639.0,
+     "time": "2026-11-12T16:00:00Z",
      "fresh": true,
      "manual": false,
-     "platform": "Safecast",
-     "notes": null
+     "platform": "ДСП \"Екоцентр\"",
+     "notes": "Дані збираються через систему ЕкоЗагроза"
+    },
+    {
+     "sensor_id": 3730,
+     "station": "АБК-1",
+     "city": null,
+     "nsv_h": 378.0,
+     "time": "2026-11-12T16:00:00Z",
+     "fresh": true,
+     "manual": false,
+     "platform": "ДСП \"Екоцентр\"",
+     "notes": "Дані збираються через систему ЕкоЗагроза"
     }
    ]
   },
@@ -130,64 +267,62 @@
    "id": "kyiv",
    "uk": "Київ",
    "en": "Kyiv",
-   "nsv_h": 115,
-   "time": "2026-11-12T17:37:24Z",
-   "oldest": "2026-11-12T17:25:22Z",
+   "nsv_h": 106,
+   "time": "2026-11-12T18:14:29Z",
+   "oldest": "2026-11-12T16:00:00Z",
    "n": 4,
    "platforms": [
-    "Safecast"
+    "SaveDnipro & Safecast",
+    "Європейська система обміну радіологічними даними"
    ],
-   "notes": [],
+   "notes": [
+    "Онлайн-моніторинг радіаційного стану приладами Radnote від Safecast та Blues Inc",
+    "Посольство Франції в Україні"
+   ],
    "readings": [
     {
-     "device": "note:dev:867648049068867",
-     "station": "Kyiv",
-     "nsv_h": 92.8,
-     "time": "2026-11-12T17:37:24Z",
+     "sensor_id": 3779,
+     "station": "вулиця Рейтарська, 39",
+     "city": "Київ",
+     "nsv_h": 92.0,
+     "time": "2026-11-12T16:00:00Z",
      "fresh": true,
      "manual": false,
-     "platform": "Safecast",
-     "notes": null
+     "platform": "Європейська система обміну радіологічними даними",
+     "notes": "Посольство Франції в Україні"
     },
     {
-     "device": "note:dev:867648049094186",
-     "station": "Kyiv",
-     "nsv_h": 102.9,
-     "time": "2026-11-12T17:28:01Z",
+     "sensor_id": 25998,
+     "station": "вулиця Сковороди, 2",
+     "city": "Київ",
+     "nsv_h": 137.1,
+     "time": "2026-11-12T18:14:29Z",
      "fresh": true,
      "manual": false,
-     "platform": "Safecast",
-     "notes": null
+     "platform": "SaveDnipro & Safecast",
+     "notes": "Онлайн-моніторинг радіаційного стану приладами Radnote від Safecast та Blues Inc"
     },
     {
-     "device": "note:dev:867648049098732",
-     "station": "Kyiv",
-     "nsv_h": 134.6,
-     "time": "2026-11-12T17:25:22Z",
+     "sensor_id": 24276,
+     "station": "Венеційський міст",
+     "city": "Київ",
+     "nsv_h": 103.0,
+     "time": "2026-11-12T17:17:16Z",
      "fresh": true,
      "manual": false,
-     "platform": "Safecast",
-     "notes": null
+     "platform": "SaveDnipro & Safecast",
+     "notes": "Онлайн-моніторинг радіаційного стану приладами Radnote від Safecast та Blues Inc"
     },
     {
-     "device": "note:dev:867648049106527",
-     "station": "Kyiv",
-     "nsv_h": 131.4,
-     "time": "2026-07-20T08:11:22Z",
-     "fresh": false,
-     "manual": false,
-     "platform": "Safecast",
-     "notes": null
-    },
-    {
-     "device": "note:dev:867648049116716",
-     "station": "Stara Darnytsya",
-     "nsv_h": 126.3,
-     "time": "2026-11-12T17:36:01Z",
+     "sensor_id": 24279,
+     "station": "Берестейський проспект",
+     "city": "Київ",
+     "nsv_h": 108.9,
+     "time": "2026-11-12T17:25:10Z",
      "fresh": true,
      "manual": false,
-     "platform": "Safecast",
-     "notes": null
+     "platform": "SaveDnipro & Safecast",
+     "notes": "Онлайн-моніторинг радіаційного стану приладами Radnote від Safecast та Blues Inc"
     }
    ]
   },
@@ -198,23 +333,59 @@
    "sub_uk": "Південноукр. АЕС",
    "sub_en": "South Ukraine NPP",
    "nsv_h": 136,
-   "time": "2026-11-12T17:32:06Z",
-   "oldest": "2026-11-12T17:32:06Z",
+   "time": "2026-11-12T17:21:24Z",
+   "oldest": "2026-11-12T17:21:24Z",
    "n": 1,
    "platforms": [
-    "Safecast"
+    "SaveDnipro & Safecast"
    ],
-   "notes": [],
+   "notes": [
+    "Онлайн-моніторинг радіаційного стану приладами Radnote від Safecast та Blues Inc"
+   ],
    "readings": [
     {
-     "device": "note:dev:867648049069204",
-     "station": "Kostyantynivka",
+     "sensor_id": 24332,
+     "station": "проспект Незалежності",
+     "city": "Южноукраїнськ",
+     "nsv_h": 110.0,
+     "time": "2026-11-12T07:00:00Z",
+     "fresh": true,
+     "manual": true,
+     "platform": "Южноукраїнська міська рада",
+     "notes": "Це щодобові ранкові дані з постів спостереження ВП ЮУАЕС, які публікує в себе на сайті Южноукраїнська міська рада. Місце розташування поста приблизне."
+    },
+    {
+     "sensor_id": 25965,
+     "station": "вулиця Садова",
+     "city": "Костянтинівка",
      "nsv_h": 136.5,
-     "time": "2026-11-12T17:32:06Z",
+     "time": "2026-11-12T17:21:24Z",
      "fresh": true,
      "manual": false,
-     "platform": "Safecast",
-     "notes": null
+     "platform": "SaveDnipro & Safecast",
+     "notes": "Онлайн-моніторинг радіаційного стану приладами Radnote від Safecast та Blues Inc"
+    },
+    {
+     "sensor_id": 20832,
+     "station": "Южноукраїнськ",
+     "city": "Южноукраїнськ",
+     "nsv_h": 130.0,
+     "time": "2026-11-11T07:00:00Z",
+     "fresh": false,
+     "manual": true,
+     "platform": "Міністерство охорони здоров'я України",
+     "notes": "ДУ «Миколаївський обласний центр контролю та профілактики хвороб МОЗ України»"
+    },
+    {
+     "sensor_id": 23482,
+     "station": "Промисловий майданчик, Південноукраїнська АЕС",
+     "city": "Южноукраїнськ",
+     "nsv_h": 80.0,
+     "time": "2026-11-12T06:00:00Z",
+     "fresh": true,
+     "manual": true,
+     "platform": "АТ «НАЕК «Енергоатом»",
+     "notes": "Це щодобові дані. «Енергоатом» має онлайн моніторинг, але не відкриває його."
     }
    ]
   },
@@ -225,23 +396,48 @@
    "sub_uk": "Рівненська АЕС",
    "sub_en": "Rivne NPP",
    "nsv_h": 108,
-   "time": "2026-11-12T18:15:04Z",
-   "oldest": "2026-11-12T18:15:04Z",
+   "time": "2026-11-12T18:04:20Z",
+   "oldest": "2026-11-12T18:04:20Z",
    "n": 1,
    "platforms": [
-    "Safecast"
+    "SaveDnipro & Safecast"
    ],
-   "notes": [],
+   "notes": [
+    "Онлайн-моніторинг радіаційного стану приладами Radnote від Safecast та Blues Inc"
+   ],
    "readings": [
     {
-     "device": "note:dev:867648049105958",
-     "station": "Varash",
+     "sensor_id": 24717,
+     "station": "майдан Незалежності",
+     "city": "Вараш",
      "nsv_h": 108.3,
-     "time": "2026-11-12T18:15:04Z",
+     "time": "2026-11-12T18:04:20Z",
      "fresh": true,
      "manual": false,
-     "platform": "Safecast",
-     "notes": null
+     "platform": "SaveDnipro & Safecast",
+     "notes": "Онлайн-моніторинг радіаційного стану приладами Radnote від Safecast та Blues Inc"
+    },
+    {
+     "sensor_id": 20857,
+     "station": "Вараш",
+     "city": "Вараш",
+     "nsv_h": 140.0,
+     "time": "2026-11-12T07:00:00Z",
+     "fresh": true,
+     "manual": true,
+     "platform": "Міністерство охорони здоров'я України",
+     "notes": "ДУ «Рівненський обласний центр контролю та профілактики хвороб МОЗ України»"
+    },
+    {
+     "sensor_id": 23484,
+     "station": "Промисловий майданчик, Рівненська АЕС",
+     "city": "Вараш",
+     "nsv_h": 110.0,
+     "time": "2026-11-12T06:00:00Z",
+     "fresh": true,
+     "manual": true,
+     "platform": "АТ «НАЕК «Енергоатом»",
+     "notes": "Це щодобові дані. «Енергоатом» має онлайн моніторинг, але не відкриває його."
     }
    ]
   },
@@ -251,13 +447,51 @@
    "en": "Netishyn",
    "sub_uk": "Хмельницька АЕС",
    "sub_en": "Khmelnytskyi NPP",
-   "nsv_h": null,
-   "time": null,
-   "oldest": null,
-   "n": 0,
-   "platforms": [],
-   "notes": [],
-   "readings": []
+   "nsv_h": 120,
+   "time": "2026-11-12T18:25:29Z",
+   "oldest": "2026-11-12T18:25:29Z",
+   "n": 1,
+   "platforms": [
+    "SaveDnipro & uRADMonitor"
+   ],
+   "notes": [
+    "Онлайн-моніторинг радіаційного стану навколо Атомних Електростанцій України"
+   ],
+   "readings": [
+    {
+     "sensor_id": 22877,
+     "station": "проспект Незалежності",
+     "city": "Нетішин",
+     "nsv_h": 120.0,
+     "time": "2026-11-12T18:25:29Z",
+     "fresh": true,
+     "manual": false,
+     "platform": "SaveDnipro & uRADMonitor",
+     "notes": "Онлайн-моніторинг радіаційного стану навколо Атомних Електростанцій України"
+    },
+    {
+     "sensor_id": 20908,
+     "station": "Нетішин",
+     "city": "Нетішин",
+     "nsv_h": 90.0,
+     "time": "2026-11-12T07:00:00Z",
+     "fresh": true,
+     "manual": true,
+     "platform": "Міністерство охорони здоров'я України",
+     "notes": "ДУ «Хмельницький обласний центр контролю та профілактики хвороб МОЗ України»"
+    },
+    {
+     "sensor_id": 23483,
+     "station": "Промисловий майданчик, Хмельницька АЕС",
+     "city": "Нетішин",
+     "nsv_h": 120.0,
+     "time": "2026-11-12T06:00:00Z",
+     "fresh": true,
+     "manual": true,
+     "platform": "АТ «НАЕК «Енергоатом»",
+     "notes": "Це щодобові дані. «Енергоатом» має онлайн моніторинг, але не відкриває його."
+    }
+   ]
   },
   {
    "id": "rozdilna",
@@ -266,22 +500,36 @@
    "sub_uk": "біля Придністров'я",
    "sub_en": "near Transnistria",
    "nsv_h": 122,
-   "time": "2026-11-12T17:31:23Z",
-   "oldest": "2026-11-12T17:31:23Z",
+   "time": "2026-11-12T17:20:44Z",
+   "oldest": "2026-11-12T17:20:44Z",
    "n": 1,
    "platforms": [
-    "Safecast"
+    "SaveDnipro & Safecast"
    ],
-   "notes": [],
+   "notes": [
+    "Онлайн-моніторинг радіаційного стану приладами Radnote від Safecast та Blues Inc"
+   ],
    "readings": [
     {
-     "device": "note:dev:867648049107384",
-     "station": "Rozdilna",
+     "sensor_id": 25826,
+     "station": "вулиця Шевченка",
+     "city": "Роздільна",
      "nsv_h": 122.1,
-     "time": "2026-11-12T17:31:23Z",
+     "time": "2026-11-12T17:20:44Z",
      "fresh": true,
      "manual": false,
-     "platform": "Safecast",
+     "platform": "SaveDnipro & Safecast",
+     "notes": "Онлайн-моніторинг радіаційного стану приладами Radnote від Safecast та Blues Inc"
+    },
+    {
+     "sensor_id": 3890,
+     "station": "Роздільна",
+     "city": "Роздільна",
+     "nsv_h": 114.0,
+     "time": "2026-11-12T15:00:00Z",
+     "fresh": true,
+     "manual": true,
+     "platform": "Український гідрометеорологічний центр",
      "notes": null
     }
    ]
