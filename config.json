@@ -1,417 +1,441 @@
 {
- "note": "Screen settings saved from the admin page. A missing section = the screen uses its built-in / repo-file default.",
- "sections": {
-  "stations": [
-   {
-    "enabled": true,
-    "id": "ukr-radio",
-    "kind": "stream",
-    "uk": "Українське радіо",
-    "en": "Ukrainian Radio",
-    "url": "https://radio.ukr.radio/ur1-mp3-m"
-   },
-   {
-    "enabled": true,
-    "id": "eqtv-en",
-    "kind": "eqtv",
-    "uk": "eQtv · англійською",
-    "en": "eQtv English",
-    "hosts": [
-     "live-eqtv-mw-3.prmt-eu.com",
-     "live-eqtv-mw-4.prmt-eu.com"
+  "note": "Screen settings saved from the admin page. A missing section = the screen uses its built-in / repo-file default.",
+  "sections": {
+    "stations": [
+      {
+        "enabled": true,
+        "id": "ukr-radio",
+        "kind": "stream",
+        "uk": "Українське радіо",
+        "en": "Ukrainian Radio",
+        "url": "https://radio.ukr.radio/ur1-mp3-m"
+      },
+      {
+        "enabled": true,
+        "id": "ur2-promin",
+        "kind": "stream",
+        "uk": "Українське радіо: Промінь",
+        "en": "UR2 Promin",
+        "url": "https://radio.ukr.radio/ur2-mp3-m"
+      },
+      {
+        "enabled": true,
+        "id": "ur3-kultura",
+        "kind": "stream",
+        "uk": "Українське радіо: Культура",
+        "en": "UR3 Kultura",
+        "url": "https://radio.ukr.radio/ur3-mp3-m"
+      },
+      {
+        "enabled": true,
+        "id": "army-fm",
+        "kind": "stream",
+        "uk": "Армія FM",
+        "en": "Army FM",
+        "url": "https://icecast.armyfm.com.ua:8443/ArmyFM"
+      },
+      {
+        "enabled": true,
+        "id": "eqtv-en",
+        "kind": "eqtv",
+        "uk": "eQtv · англійською",
+        "en": "eQtv English",
+        "hosts": [
+          "live-eqtv-mw-3.prmt-eu.com",
+          "live-eqtv-mw-4.prmt-eu.com"
+        ],
+        "track": "eQtv-eu__audio_eng_mid.m3u8"
+      },
+      {
+        "enabled": true,
+        "id": "radio-nv",
+        "kind": "stream",
+        "uk": "Радіо НВ",
+        "en": "Radio NV",
+        "url": "https://online-radio.nv.ua/radionv.mp3"
+      },
+      {
+        "enabled": false,
+        "id": "united-news",
+        "kind": "stream",
+        "uk": "Єдині новини",
+        "en": "United News",
+        "url": "https://online-news.radioplayer.ua/RadioNews"
+      }
     ],
-    "track": "eQtv-eu__audio_eng_mid.m3u8"
-   },
-   {
-    "enabled": false,
-    "id": "radio-nv",
-    "kind": "stream",
-    "uk": "Радіо НВ",
-    "en": "Radio NV",
-    "url": "https://online-radio.nv.ua/radionv.mp3"
-   },
-   {
-    "enabled": false,
-    "id": "united-news",
-    "kind": "stream",
-    "uk": "Єдині новини",
-    "en": "United News",
-    "url": "https://online-news.radioplayer.ua/RadioNews"
-   }
-  ],
-  "theme": {
-   "id": "hifi-cb"
+    "theme": {
+      "id": "hifi-cb"
+    },
+    "sponsor": [
+      {
+        "id": "nordvpn",
+        "enabled": true,
+        "name": "NordVPN",
+        "logo": "sponsors/nordvpn.svg",
+        "url": "https://nordvpn.com"
+      },
+      {
+        "id": "sponsor-1794239182510",
+        "enabled": true,
+        "name": "Ceno Browser",
+        "logo": "https://ceno.app/wp-content/uploads/2025/12/ceno-logo.png",
+        "url": "https://ceno.app/"
+      },
+      {
+        "id": "sponsor-1794392731331",
+        "enabled": true,
+        "name": "eQualit.ie",
+        "logo": "https://tv.equalit.ie/wp-content/uploads/2024/12/default-768x172.png",
+        "url": "https://equalit.ie"
+      }
+    ],
+    "news_sources": [
+      {
+        "id": "kyivindependent",
+        "label": "Kyiv Independent",
+        "kind": "rss",
+        "url": "https://kyivindependent.com/news-archive/rss/",
+        "lang": "en",
+        "filter_ua": false,
+        "enabled": true,
+        "ua_panel": true
+      },
+      {
+        "id": "ukrinform",
+        "label": "Ukrinform",
+        "kind": "rss",
+        "url": "https://www.ukrinform.net/rss/block-lastnews",
+        "lang": "en",
+        "filter_ua": false,
+        "enabled": true,
+        "ua_panel": true
+      },
+      {
+        "id": "upravda",
+        "label": "Ukrainska Pravda",
+        "kind": "rss",
+        "url": "https://www.pravda.com.ua/eng/rss/",
+        "lang": "en",
+        "filter_ua": false,
+        "enabled": true,
+        "ua_panel": true
+      },
+      {
+        "id": "kyivpost",
+        "label": "Kyiv Post",
+        "kind": "rss",
+        "url": "https://www.kyivpost.com/feed",
+        "lang": "en",
+        "filter_ua": false,
+        "enabled": true,
+        "ua_panel": true
+      },
+      {
+        "id": "nv",
+        "label": "NV (New Voice)",
+        "kind": "rss",
+        "url": "https://english.nv.ua/rss/all_english.xml",
+        "lang": "en",
+        "filter_ua": false,
+        "enabled": true,
+        "ua_panel": true
+      },
+      {
+        "id": "suspilne",
+        "label": "Суспільне",
+        "kind": "rss",
+        "url": "https://suspilne.media/rss/all.rss",
+        "lang": "uk",
+        "filter_ua": false,
+        "enabled": true,
+        "ua_panel": true
+      },
+      {
+        "id": "guardian",
+        "label": "The Guardian",
+        "kind": "rss",
+        "url": "https://www.theguardian.com/world/ukraine/rss",
+        "lang": "en",
+        "filter_ua": false,
+        "enabled": true,
+        "ua_panel": true
+      },
+      {
+        "id": "meduza",
+        "label": "Meduza",
+        "kind": "rss",
+        "url": "https://meduza.io/rss/en/all",
+        "lang": "en",
+        "filter_ua": true,
+        "enabled": true,
+        "ua_panel": true
+      },
+      {
+        "id": "rferl",
+        "label": "RFE/RL",
+        "kind": "rss",
+        "url": "https://www.rferl.org/api/",
+        "lang": "en",
+        "filter_ua": true,
+        "enabled": true,
+        "ua_panel": true
+      },
+      {
+        "id": "bbc",
+        "label": "BBC",
+        "kind": "rss",
+        "url": "https://feeds.bbci.co.uk/news/world/europe/rss.xml",
+        "lang": "en",
+        "filter_ua": true,
+        "enabled": true,
+        "ua_panel": true
+      },
+      {
+        "id": "dw",
+        "label": "DW",
+        "kind": "rss",
+        "url": "https://rss.dw.com/rdf/rss-en-all",
+        "lang": "en",
+        "filter_ua": true,
+        "enabled": true,
+        "ua_panel": true
+      },
+      {
+        "id": "aljazeera",
+        "label": "Al Jazeera",
+        "kind": "rss",
+        "url": "https://www.aljazeera.com/xml/rss/all.xml",
+        "lang": "en",
+        "filter_ua": true,
+        "enabled": true,
+        "ua_panel": true
+      },
+      {
+        "id": "euronews",
+        "label": "Euronews",
+        "kind": "rss",
+        "url": "https://www.euronews.com/rss?format=mrss&level=theme&name=news",
+        "lang": "en",
+        "filter_ua": true,
+        "enabled": true,
+        "ua_panel": true
+      },
+      {
+        "id": "cbc",
+        "label": "CBC",
+        "kind": "rss",
+        "url": "https://news.google.com/rss/search?q=Ukraine+site:cbc.ca+when:2d&hl=en-CA&gl=CA&ceid=CA:en",
+        "lang": "en",
+        "filter_ua": false,
+        "enabled": true,
+        "ua_panel": true
+      },
+      {
+        "id": "reuters",
+        "label": "Reuters",
+        "kind": "rss",
+        "url": "https://news.google.com/rss/search?q=Ukraine+site:reuters.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+        "lang": "en",
+        "filter_ua": false,
+        "enabled": true,
+        "ua_panel": true
+      },
+      {
+        "id": "ap",
+        "label": "AP",
+        "kind": "rss",
+        "url": "https://news.google.com/rss/search?q=Ukraine+site:apnews.com+when:1d&hl=en-US&gl=US&ceid=US:en",
+        "lang": "en",
+        "filter_ua": false,
+        "enabled": true,
+        "ua_panel": true
+      },
+      {
+        "id": "bsky_kyivindependent",
+        "label": "Kyiv Independent",
+        "kind": "bsky",
+        "url": "kyivindependent.com",
+        "lang": "en",
+        "filter_ua": false,
+        "enabled": true,
+        "ua_panel": true
+      },
+      {
+        "id": "bsky_pravda",
+        "label": "Ukrainska Pravda",
+        "kind": "bsky",
+        "url": "pravda.ua",
+        "lang": "en",
+        "filter_ua": false,
+        "enabled": true,
+        "ua_panel": true
+      },
+      {
+        "id": "bsky_kyivpost",
+        "label": "Kyiv Post",
+        "kind": "bsky",
+        "url": "kyivpost.com",
+        "lang": "en",
+        "filter_ua": false,
+        "enabled": true,
+        "ua_panel": true
+      },
+      {
+        "id": "bsky_euromaidan",
+        "label": "Euromaidan Press",
+        "kind": "bsky",
+        "url": "euromaidanpress.bsky.social",
+        "lang": "en",
+        "filter_ua": false,
+        "enabled": true,
+        "ua_panel": true
+      },
+      {
+        "id": "tg_zelensky",
+        "label": "Zelenskyy / Official",
+        "kind": "tg",
+        "url": "V_Zelenskiy_official",
+        "lang": "uk",
+        "filter_ua": false,
+        "enabled": true,
+        "ua_panel": true
+      },
+      {
+        "id": "tg_kpszsu",
+        "label": "Повітряні сили ЗСУ",
+        "kind": "tg",
+        "url": "kpszsu",
+        "lang": "uk",
+        "filter_ua": false,
+        "enabled": true,
+        "ua_panel": true
+      },
+      {
+        "id": "tg_genstaff",
+        "label": "Генштаб ЗСУ",
+        "kind": "tg",
+        "url": "GeneralStaffZSU",
+        "lang": "uk",
+        "filter_ua": false,
+        "enabled": true,
+        "ua_panel": true
+      },
+      {
+        "id": "tg_dsns",
+        "label": "ДСНС",
+        "kind": "tg",
+        "url": "dsns_telegram",
+        "lang": "uk",
+        "filter_ua": false,
+        "enabled": true,
+        "ua_panel": true
+      },
+      {
+        "id": "tg_suspilne",
+        "label": "Суспільне Новини",
+        "kind": "tg",
+        "url": "suspilnenews",
+        "lang": "uk",
+        "filter_ua": false,
+        "enabled": true,
+        "ua_panel": true
+      },
+      {
+        "id": "tg_ukrinform",
+        "label": "Укрінформ",
+        "kind": "tg",
+        "url": "ukrinform_news",
+        "lang": "uk",
+        "filter_ua": false,
+        "enabled": true,
+        "ua_panel": true
+      },
+      {
+        "id": "tg_kyivindependent",
+        "label": "Kyiv Independent",
+        "kind": "tg",
+        "url": "KyivIndependent_official",
+        "lang": "en",
+        "filter_ua": false,
+        "enabled": true,
+        "ua_panel": true
+      }
+    ],
+    "maps": [
+      {
+        "id": "occupied",
+        "enabled": true
+      },
+      {
+        "id": "alert-types",
+        "enabled": true
+      },
+      {
+        "id": "alerts",
+        "enabled": true
+      },
+      {
+        "id": "internet",
+        "enabled": true
+      },
+      {
+        "id": "power",
+        "enabled": true
+      },
+      {
+        "id": "radiation-map",
+        "defaultOn": true,
+        "enabled": true
+      },
+      {
+        "id": "water",
+        "enabled": true
+      },
+      {
+        "id": "power-cuts",
+        "defaultOn": true,
+        "enabled": true
+      },
+      {
+        "id": "roads",
+        "enabled": true
+      },
+      {
+        "id": "border",
+        "defaultOn": true,
+        "enabled": true
+      },
+      {
+        "id": "temp",
+        "enabled": true
+      },
+      {
+        "id": "wind",
+        "enabled": true
+      },
+      {
+        "id": "wet",
+        "enabled": true
+      },
+      {
+        "id": "air",
+        "enabled": true
+      },
+      {
+        "id": "night",
+        "enabled": true
+      }
+    ],
+    "photopanel": {
+      "enabled": false
+    }
   },
-  "sponsor": [
-   {
-    "id": "nordvpn",
-    "enabled": true,
-    "name": "NordVPN",
-    "logo": "sponsors/nordvpn.svg",
-    "url": "https://nordvpn.com"
-   },
-   {
-    "id": "sponsor-1794239182510",
-    "enabled": true,
-    "name": "Ceno Browser",
-    "logo": "https://ceno.app/wp-content/uploads/2025/12/ceno-logo.png",
-    "url": "https://ceno.app/"
-   },
-   {
-    "id": "sponsor-1794392731331",
-    "enabled": true,
-    "name": "eQualit.ie",
-    "logo": "https://tv.equalit.ie/wp-content/uploads/2024/12/default-768x172.png",
-    "url": "https://equalit.ie"
-   }
-  ],
-  "news_sources": [
-   {
-    "id": "kyivindependent",
-    "label": "Kyiv Independent",
-    "kind": "rss",
-    "url": "https://kyivindependent.com/news-archive/rss/",
-    "lang": "en",
-    "filter_ua": false,
-    "enabled": true,
-    "ua_panel": true
-   },
-   {
-    "id": "ukrinform",
-    "label": "Ukrinform",
-    "kind": "rss",
-    "url": "https://www.ukrinform.net/rss/block-lastnews",
-    "lang": "en",
-    "filter_ua": false,
-    "enabled": true,
-    "ua_panel": true
-   },
-   {
-    "id": "upravda",
-    "label": "Ukrainska Pravda",
-    "kind": "rss",
-    "url": "https://www.pravda.com.ua/eng/rss/",
-    "lang": "en",
-    "filter_ua": false,
-    "enabled": true,
-    "ua_panel": true
-   },
-   {
-    "id": "kyivpost",
-    "label": "Kyiv Post",
-    "kind": "rss",
-    "url": "https://www.kyivpost.com/feed",
-    "lang": "en",
-    "filter_ua": false,
-    "enabled": true,
-    "ua_panel": true
-   },
-   {
-    "id": "nv",
-    "label": "NV (New Voice)",
-    "kind": "rss",
-    "url": "https://english.nv.ua/rss/all_english.xml",
-    "lang": "en",
-    "filter_ua": false,
-    "enabled": true,
-    "ua_panel": true
-   },
-   {
-    "id": "suspilne",
-    "label": "Суспільне",
-    "kind": "rss",
-    "url": "https://suspilne.media/rss/all.rss",
-    "lang": "uk",
-    "filter_ua": false,
-    "enabled": true,
-    "ua_panel": true
-   },
-   {
-    "id": "guardian",
-    "label": "The Guardian",
-    "kind": "rss",
-    "url": "https://www.theguardian.com/world/ukraine/rss",
-    "lang": "en",
-    "filter_ua": false,
-    "enabled": true,
-    "ua_panel": true
-   },
-   {
-    "id": "meduza",
-    "label": "Meduza",
-    "kind": "rss",
-    "url": "https://meduza.io/rss/en/all",
-    "lang": "en",
-    "filter_ua": true,
-    "enabled": true,
-    "ua_panel": true
-   },
-   {
-    "id": "rferl",
-    "label": "RFE/RL",
-    "kind": "rss",
-    "url": "https://www.rferl.org/api/",
-    "lang": "en",
-    "filter_ua": true,
-    "enabled": true,
-    "ua_panel": true
-   },
-   {
-    "id": "bbc",
-    "label": "BBC",
-    "kind": "rss",
-    "url": "https://feeds.bbci.co.uk/news/world/europe/rss.xml",
-    "lang": "en",
-    "filter_ua": true,
-    "enabled": true,
-    "ua_panel": true
-   },
-   {
-    "id": "dw",
-    "label": "DW",
-    "kind": "rss",
-    "url": "https://rss.dw.com/rdf/rss-en-all",
-    "lang": "en",
-    "filter_ua": true,
-    "enabled": true,
-    "ua_panel": true
-   },
-   {
-    "id": "aljazeera",
-    "label": "Al Jazeera",
-    "kind": "rss",
-    "url": "https://www.aljazeera.com/xml/rss/all.xml",
-    "lang": "en",
-    "filter_ua": true,
-    "enabled": true,
-    "ua_panel": true
-   },
-   {
-    "id": "euronews",
-    "label": "Euronews",
-    "kind": "rss",
-    "url": "https://www.euronews.com/rss?format=mrss&level=theme&name=news",
-    "lang": "en",
-    "filter_ua": true,
-    "enabled": true,
-    "ua_panel": true
-   },
-   {
-    "id": "cbc",
-    "label": "CBC",
-    "kind": "rss",
-    "url": "https://news.google.com/rss/search?q=Ukraine+site:cbc.ca+when:2d&hl=en-CA&gl=CA&ceid=CA:en",
-    "lang": "en",
-    "filter_ua": false,
-    "enabled": true,
-    "ua_panel": true
-   },
-   {
-    "id": "reuters",
-    "label": "Reuters",
-    "kind": "rss",
-    "url": "https://news.google.com/rss/search?q=Ukraine+site:reuters.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-    "lang": "en",
-    "filter_ua": false,
-    "enabled": true,
-    "ua_panel": true
-   },
-   {
-    "id": "ap",
-    "label": "AP",
-    "kind": "rss",
-    "url": "https://news.google.com/rss/search?q=Ukraine+site:apnews.com+when:1d&hl=en-US&gl=US&ceid=US:en",
-    "lang": "en",
-    "filter_ua": false,
-    "enabled": true,
-    "ua_panel": true
-   },
-   {
-    "id": "bsky_kyivindependent",
-    "label": "Kyiv Independent",
-    "kind": "bsky",
-    "url": "kyivindependent.com",
-    "lang": "en",
-    "filter_ua": false,
-    "enabled": true,
-    "ua_panel": true
-   },
-   {
-    "id": "bsky_pravda",
-    "label": "Ukrainska Pravda",
-    "kind": "bsky",
-    "url": "pravda.ua",
-    "lang": "en",
-    "filter_ua": false,
-    "enabled": true,
-    "ua_panel": true
-   },
-   {
-    "id": "bsky_kyivpost",
-    "label": "Kyiv Post",
-    "kind": "bsky",
-    "url": "kyivpost.com",
-    "lang": "en",
-    "filter_ua": false,
-    "enabled": true,
-    "ua_panel": true
-   },
-   {
-    "id": "bsky_euromaidan",
-    "label": "Euromaidan Press",
-    "kind": "bsky",
-    "url": "euromaidanpress.bsky.social",
-    "lang": "en",
-    "filter_ua": false,
-    "enabled": true,
-    "ua_panel": true
-   },
-   {
-    "id": "tg_zelensky",
-    "label": "Zelenskyy / Official",
-    "kind": "tg",
-    "url": "V_Zelenskiy_official",
-    "lang": "uk",
-    "filter_ua": false,
-    "enabled": true,
-    "ua_panel": true
-   },
-   {
-    "id": "tg_kpszsu",
-    "label": "Повітряні сили ЗСУ",
-    "kind": "tg",
-    "url": "kpszsu",
-    "lang": "uk",
-    "filter_ua": false,
-    "enabled": true,
-    "ua_panel": true
-   },
-   {
-    "id": "tg_genstaff",
-    "label": "Генштаб ЗСУ",
-    "kind": "tg",
-    "url": "GeneralStaffZSU",
-    "lang": "uk",
-    "filter_ua": false,
-    "enabled": true,
-    "ua_panel": true
-   },
-   {
-    "id": "tg_dsns",
-    "label": "ДСНС",
-    "kind": "tg",
-    "url": "dsns_telegram",
-    "lang": "uk",
-    "filter_ua": false,
-    "enabled": true,
-    "ua_panel": true
-   },
-   {
-    "id": "tg_suspilne",
-    "label": "Суспільне Новини",
-    "kind": "tg",
-    "url": "suspilnenews",
-    "lang": "uk",
-    "filter_ua": false,
-    "enabled": true,
-    "ua_panel": true
-   },
-   {
-    "id": "tg_ukrinform",
-    "label": "Укрінформ",
-    "kind": "tg",
-    "url": "ukrinform_news",
-    "lang": "uk",
-    "filter_ua": false,
-    "enabled": true,
-    "ua_panel": true
-   },
-   {
-    "id": "tg_kyivindependent",
-    "label": "Kyiv Independent",
-    "kind": "tg",
-    "url": "KyivIndependent_official",
-    "lang": "en",
-    "filter_ua": false,
-    "enabled": true,
-    "ua_panel": true
-   }
-  ],
-  "maps": [
-   {
-    "id": "occupied",
-    "enabled": true
-   },
-   {
-    "id": "alert-types",
-    "enabled": true
-   },
-   {
-    "id": "alerts",
-    "enabled": true
-   },
-   {
-    "id": "internet",
-    "enabled": true
-   },
-   {
-    "id": "power",
-    "enabled": true
-   },
-   {
-    "id": "radiation-map",
-    "defaultOn": true,
-    "enabled": true
-   },
-   {
-    "id": "water",
-    "enabled": true
-   },
-   {
-    "id": "power-cuts",
-    "defaultOn": true,
-    "enabled": true
-   },
-   {
-    "id": "roads",
-    "enabled": true
-   },
-   {
-    "id": "border",
-    "defaultOn": true,
-    "enabled": true
-   },
-   {
-    "id": "temp",
-    "enabled": true
-   },
-   {
-    "id": "wind",
-    "enabled": true
-   },
-   {
-    "id": "wet",
-    "enabled": true
-   },
-   {
-    "id": "air",
-    "enabled": true
-   },
-   {
-    "id": "night",
-    "enabled": true
-   }
-  ],
-  "photopanel": {
-   "enabled": false
+  "saved_at": {
+    "stations": "2026-11-12T13:46:39Z",
+    "theme": "2026-11-12T13:29:52.060Z",
+    "sponsor": "2026-11-11T10:27:05.213Z",
+    "news_sources": "2026-11-09T17:18:39.229Z",
+    "maps": "2026-11-12T12:57:53.067Z",
+    "photopanel": "2026-11-11T16:43:19.944Z"
   }
- },
- "saved_at": {
-  "stations": "2026-11-12T13:08:23.020Z",
-  "theme": "2026-11-12T13:29:52.060Z",
-  "sponsor": "2026-11-11T10:27:05.213Z",
-  "news_sources": "2026-11-09T17:18:39.229Z",
-  "maps": "2026-11-12T12:57:53.067Z",
-  "photopanel": "2026-11-11T16:43:19.944Z"
- }
 }
