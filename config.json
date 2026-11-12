@@ -3,20 +3,20 @@
  "sections": {
   "stations": [
    {
-    "enabled": false,
-    "id": "svoboda-uk",
-    "kind": "stream",
-    "uk": "Радіо Свобода",
-    "en": "Radio Svoboda (Ukrainian)",
-    "url": "https://rferl-ingest.akamaized.net/hls/live/2121754/axia07/master.m3u8"
-   },
-   {
     "enabled": true,
     "id": "ukr-radio",
     "kind": "stream",
     "uk": "Українське радіо",
     "en": "Ukrainian Radio",
     "url": "https://radio.ukr.radio/ur1-mp3-m"
+   },
+   {
+    "enabled": false,
+    "id": "svoboda-uk",
+    "kind": "stream",
+    "uk": "Радіо Свобода",
+    "en": "Radio Svoboda (Ukrainian)",
+    "url": "https://rferl-ingest.akamaized.net/hls/live/2121754/axia07/master.m3u8"
    },
    {
     "enabled": true,
@@ -489,7 +489,7 @@
   }
  },
  "saved_at": {
-  "stations": "2026-11-12T15:58:52.507Z",
+  "stations": "2026-11-12T15:59:20.205Z",
   "theme": "2026-11-12T13:29:52.060Z",
   "sponsor": "2026-11-11T10:27:05.213Z",
   "news_sources": "2026-11-09T17:18:39.229Z",
