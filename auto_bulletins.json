@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-12T09:13:03Z",
+ "generated_at": "2026-11-12T09:17:15Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 3 / dropped 0, showing 2"
+   "status": "ok: kept 4 / dropped 0, showing 2"
   },
   {
    "name": "Херсонська ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-dsns_telegram-80267",
+   "title": "вночі внаслідок російської атаки у Ковельському районі на території стоянки загорілися кілька вантажних…",
+   "body": "Постраждав чоловік 1972 року народження Одночасно з приборканням горіння рятувальники здійснили охолодження сусідніх автомобілів та відтягнули на безпечну відстань дві великогабаритні вантажівки, завантажені пальним. Через загрозу повторного обстрілу роботи…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/80267",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-12T09:15:46Z",
+   "expires_at": "2026-11-12T21:15:46Z",
+   "auto": true,
+   "en_mt": {
+    "title": "at night as a result of a Russian attack in Kovel district on the territory of a parking lot several trucks caught fire…",
+    "body": "A man born in 1972 was injured. At the same time as extinguishing the fire, rescuers cooled neighboring cars and towed two large trucks loaded with fuel to a safe distance. Due to the threat of repeated shelling, the work…",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-kharkivoda-32734",
    "title": "На Харківщині за тиждень виявили та знищили майже 700 вибухонебезпечних предметів",
@@ -127,24 +145,6 @@
    "en_mt": {
     "title": "Approximately at 08:30 Russian military attacked Novovorontsovka with a drone",
     "body": "Through an enemy strike, a 32-year-old man was injured. He received a blast injury, shrapnel wounds to his back, arm and leg. The victim was taken to the hospital. Currently, doctors are providing him with the necessary assistance.",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-80247",
-   "title": "Одна людина постраждала через російську атаку на Житомирщині!",
-   "body": "Впродовж доби ворог неодноразово атакував регіон. Під ударами опинилися об’єкти енергетичної інфраструктури в Житомирському, Коростенському та Бердичівському районах. Пошкоджена будівля одного з підприємств, покрівля житлового будинку, вікна в оселях і…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/80247",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-12T06:49:18Z",
-   "expires_at": "2026-11-12T18:49:18Z",
-   "auto": true,
-   "en_mt": {
-    "title": "One person was injured in a Russian attack on Zhytomyr region!",
-    "body": "Throughout the day, the enemy repeatedly attacked the region. Objects of the energy infrastructure in the Zhytomyr, Korosten, and Berdychiv districts came under attack. A building of one of the enterprises was damaged, the roof of a residential building, windows in homes and…",
     "by": "m2m100"
    }
   }
