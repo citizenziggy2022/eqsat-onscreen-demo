@@ -1,41 +1,11 @@
 {
- "fetched_at": "2026-11-12T15:56:04Z",
+ "fetched_at": "2026-11-12T16:07:12Z",
  "every_s": 600,
  "note": "Conflict photo candidates, NOT on air. Fetched by scripts/fetch_conflict_photos.py in the live-runner every 10 min. An item goes on air only when the Editor's Approve moves it to photos-conflict.json.",
  "check": "none in the runner (no vision model): nothing is approved automatically",
  "auto_approved": 0,
  "items": [],
  "fetch_rejects": [
-  {
-   "source": "commons",
-   "title": "File:Destructions in Kramatorsk after Russian attack, 2026-10-08 (001).webm",
-   "reason": "not a photo file (video/webm)",
-   "stage": "fetch"
-  },
-  {
-   "source": "commons",
-   "title": "File:Destructions in Kramatorsk after Russian attack, 2026-10-08 (11).webp",
-   "reason": "taken 2026-10-08, older than 7 days",
-   "stage": "fetch"
-  },
-  {
-   "source": "commons",
-   "title": "File:Destructions in Kramatorsk after Russian attack, 2026-10-08 (12).webp",
-   "reason": "taken 2026-10-08, older than 7 days",
-   "stage": "fetch"
-  },
-  {
-   "source": "commons",
-   "title": "File:Destructions in Kramatorsk after Russian attack, 2026-10-08 (13).webp",
-   "reason": "taken 2026-10-08, older than 7 days",
-   "stage": "fetch"
-  },
-  {
-   "source": "commons",
-   "title": "File:Bus in Sloviansk after Russian attack, 2026-10-07 (01).webp",
-   "reason": "taken 2026-10-07, older than 7 days",
-   "stage": "fetch"
-  },
   {
    "source": "commons",
    "title": "File:Destructions in Pryluky after Russian attack, 2026-10-07 (20).jpg",
@@ -434,7 +404,38 @@
   },
   {
    "source": "undp",
-   "reason": "source failed: ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='www.flickr.com', port=443): Read timed out. (read timeout=20)\"))",
+   "title": "https://www.flickr.com/photos/undpukraine/55644802446/",
+   "reason": "off-topic (no war/recovery words in caption or tags): Mariia Iefremova, Lead Business Analyst / Head of Business…",
+   "stage": "fetch"
+  },
+  {
+   "source": "undp",
+   "title": "https://www.flickr.com/photos/undpukraine/55643819667/",
+   "reason": "off-topic (no war/recovery words in caption or tags): Ihor Mandar, Deputy Head of Ivano-Frankivsk Regional State…",
+   "stage": "fetch"
+  },
+  {
+   "source": "undp",
+   "title": "https://www.flickr.com/photos/undpukraine/55644802426/",
+   "reason": "off-topic (no war/recovery words in caption or tags): Oleksandr Tereshchenko, First Deputy Head of Rivne Regional…",
+   "stage": "fetch"
+  },
+  {
+   "source": "undp",
+   "title": "https://www.flickr.com/photos/undpukraine/55643819652/",
+   "reason": "off-topic (no war/recovery words in caption or tags): Andrii Kostenko, Head of the Digital Accessibility…",
+   "stage": "fetch"
+  },
+  {
+   "source": "undp",
+   "title": "https://www.flickr.com/photos/undpukraine/55644943633/",
+   "reason": "off-topic (no war/recovery words in caption or tags): Dmytro Popov, National Digital Accessibility Expert, UNDP…",
+   "stage": "fetch"
+  },
+  {
+   "source": "undp",
+   "title": "https://www.flickr.com/photos/undpukraine/55645220995/",
+   "reason": "off-topic (no war/recovery words in caption or tags): ",
    "stage": "fetch"
   },
   {
@@ -486,5 +487,5 @@
    "stage": "fetch"
   }
  ],
- "took_s": 41.8
+ "took_s": 8.4
 }
