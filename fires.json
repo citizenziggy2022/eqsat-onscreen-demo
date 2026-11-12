@@ -1,0 +1,29 @@
+{
+  "note": "NASA FIRMS active-fire detections, last 24 h, counted per oblast. Counts only, no locations (by design). A detection is a hot spot seen from space: wildfire, field burning, industrial heat, or fire after an attack. Low-confidence detections dropped; one spot seen by several satellites counts once.",
+  "source": "NASA FIRMS (VIIRS NOAA-20/21, MODIS)",
+  "source_url": "https://firms.modaps.eosdis.nasa.gov/",
+  "window_hours": 24,
+  "checked_at": "2026-11-12T13:47:52Z",
+  "updated": "2026-11-12T13:47:52Z",
+  "newest_detection": "2026-11-12T01:06:00Z",
+  "total": 3,
+  "counts": {
+    "dnipro": 2,
+    "odesa": 1
+  },
+  "satellites": [
+    {
+      "satellite": "VIIRS NOAA-20",
+      "rows": 227
+    },
+    {
+      "satellite": "VIIRS NOAA-21",
+      "rows": 266
+    },
+    {
+      "satellite": "MODIS",
+      "rows": 25
+    }
+  ],
+  "errors": []
+}

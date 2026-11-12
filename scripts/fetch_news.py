@@ -220,3 +220,11 @@ try:
     _sp9.run([_sys9.executable, 'scripts/verify_static.py'], timeout=200, check=False)
 except Exception as _e9:
     print('daily source check skipped:', _e9)
+
+# FIRES (v2.33, Jason Nov 12 2026): fetch_fires.py writes fires.json (NASA FIRMS, count per oblast only, no coordinates),
+# at most once an hour; stages it.
+try:
+    import subprocess as _sp10, sys as _sys10
+    _sp10.run([_sys10.executable, 'scripts/fetch_fires.py'], timeout=200, check=False)
+except Exception as _e10:
+    print('fires skipped:', _e10)
