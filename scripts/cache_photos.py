@@ -20,8 +20,9 @@ OUT_DIR = "photos-cache"
 INDEX = os.path.join(OUT_DIR, "index.json")
 EVERY_S = 10 * 60
 MAX_NEW = 40
-MAX_W = 960
-QUALITY = 75
+MAX_W = 720  # 720 px since Jason's OK Nov 12 2026 10:32 (about half the bytes of 960)
+FETCH_W = 960  # Wikimedia standard thumb step we download, then resize to MAX_W
+QUALITY = 60
 UA = "eQsat-photo-cache/1.0 (+https://citizenziggy2022.github.io/eqsat-onscreen-demo/; resizes approved CC photos for a TV screen)"
 
 
@@ -51,7 +52,7 @@ def thumb_url(url):
     if not m:
         return None
     name = m.group(2)
-    return f"https://upload.wikimedia.org/wikipedia/commons/thumb/{m.group(1)}/{name}/{MAX_W}px-{name}"
+    return f"https://upload.wikimedia.org/wikipedia/commons/thumb/{m.group(1)}/{name}/{FETCH_W}px-{name}"
 
 
 def pil():
@@ -119,7 +120,7 @@ def main(force=False):
                 print("photos-cache: skipped", url[-80:], repr(e)[:160])
         print(f"photos-cache: {done} new, {len(todo) - done} left uncached this run")
     idx = {
-        "note": "One WebP per on-air photo, at most 960 px wide, quality 75, resized never cropped (scripts/cache_photos.py). "
+        "note": "One WebP per on-air photo, at most 720 px wide, quality 60, resized never cropped (scripts/cache_photos.py). "
         "Keys are the original image_url; credits and licences stay in photos.json / photos-conflict.json.",
         "checked_at": now_iso(),
         "files": files,
