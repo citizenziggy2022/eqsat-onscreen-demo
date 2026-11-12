@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-12T04:35:36Z",
+ "generated_at": "2026-11-12T04:36:36Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 1 / dropped 1, showing 1"
+   "status": "ok: kept 0 / dropped 1, showing 0"
   },
   {
    "name": "Херсонська ОВА",
@@ -39,24 +39,5 @@
    "status": "ok: kept 0 / dropped 0, showing 0"
   }
  ],
- "bulletins": [
-  {
-   "id": "auto-dsns_telegram-80240",
-   "title": "Рівень довіри до ДСНС сягнув 96%: результати нового загальнонаціонального опитування",
-   "body": "Державна служба України з надзвичайних ситуацій отримала найвищий показник довіри серед державних інституцій, діяльність яких оцінювали респонденти. Роботу відомства підтримують 96% українців. Про це свідчать результати нового загальнонаціонального…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/80240",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-11T16:36:21Z",
-   "expires_at": "2026-11-12T04:36:21Z",
-   "auto": true,
-   "en_mt": {
-    "title": "The level of trust in the SES has reached 96%: results of a new nationwide survey",
-    "body": "The State Emergency Service of Ukraine received the highest level of trust among state institutions, the activities of which were evaluated by respondents. The work of the department is supported by 96% of Ukrainians. This is evidenced by the results of a new nationwide…",
-    "by": "m2m100"
-   }
-  }
- ]
+ "bulletins": []
 }
