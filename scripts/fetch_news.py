@@ -212,3 +212,11 @@ try:
     _sp8.run([_sys8.executable, 'scripts/cache_photos.py'], timeout=240, check=False)
 except Exception as _e8:
     print('photo cache skipped:', _e8)
+
+# daily source re-check (Jason, Nov 12 2026: "every day be sure to update everything at least once"): verify_static.py
+# re-checks every hand-made emergency number against its official page once per 20 h; numbers are never changed by it.
+try:
+    import subprocess as _sp9, sys as _sys9
+    _sp9.run([_sys9.executable, 'scripts/verify_static.py'], timeout=200, check=False)
+except Exception as _e9:
+    print('daily source check skipped:', _e9)
