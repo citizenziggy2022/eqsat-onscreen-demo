@@ -243,3 +243,11 @@ try:
     _sp12.run([_sys12.executable, 'scripts/fetch_rivers.py'], timeout=120, check=False)
 except Exception as _e12:
     print('rivers skipped:', _e12)
+
+# DEFENCE TODAY (v2.41, Jason Nov 12 2026): fetch_defence.py writes defence.json (Air Force overnight launched / shot down,
+# General Staff daily losses; numbers only), at most every 30 min; stages it.
+try:
+    import subprocess as _sp13, sys as _sys13
+    _sp13.run([_sys13.executable, 'scripts/fetch_defence.py'], timeout=120, check=False)
+except Exception as _e13:
+    print('defence skipped:', _e13)
