@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-12T22:59:22Z",
+ "fetched_at": "2026-11-12T23:11:39Z",
  "every_s": 600,
  "note": "Conflict photo candidates, NOT on air. Fetched by scripts/fetch_conflict_photos.py in the live-runner every 10 min. An item goes on air only when the Editor's Approve moves it to photos-conflict.json.",
  "check": "none in the runner (no vision model): nothing is approved automatically",
@@ -19,7 +19,7 @@
    "active": false,
    "id": "cf_1d344d6e284a",
    "kind": "conflict",
-   "date_added": "2026-11-12T22:59:24Z",
+   "date_added": "2026-11-12T23:11:42Z",
    "taken_at": "2026-11-12",
    "source": "Wikimedia Commons (dsns.gov.ua)",
    "source_url": "https://commons.wikimedia.org/wiki/File:Destructions_in_Kyiv_after_Russian_attack,_2026-11-12_(02).jpg",
@@ -46,7 +46,7 @@
    "active": false,
    "id": "cf_b80100134634",
    "kind": "conflict",
-   "date_added": "2026-11-12T22:59:24Z",
+   "date_added": "2026-11-12T23:11:42Z",
    "taken_at": "2026-11-12",
    "source": "Wikimedia Commons (dsns.gov.ua)",
    "source_url": "https://commons.wikimedia.org/wiki/File:Destructions_in_Kyiv_after_Russian_attack,_2026-11-12_(01).jpg",
@@ -61,6 +61,12 @@
   }
  ],
  "fetch_rejects": [
+  {
+   "source": "commons",
+   "title": "File:Destructions in Kramatorsk after Russian attack, 2026-10-08 (12).webp",
+   "reason": "taken 2026-10-08, older than 7 days",
+   "stage": "fetch"
+  },
   {
    "source": "commons",
    "title": "File:Destructions in Kramatorsk after Russian attack, 2026-10-08 (13).webp",
@@ -357,12 +363,6 @@
   },
   {
    "source": "commons",
-   "title": "File:Destructions in Kyiv Oblast after Russian attack, 2026-09-28 (02).jpg",
-   "reason": "taken 2026-09-28, older than 7 days",
-   "stage": "fetch"
-  },
-  {
-   "source": "commons",
    "title": "File:Destructions in Kyiv after Russian attack, 2026-11-07 (05).jpg",
    "reason": "too small (960 px wide < 1280)",
    "stage": "fetch"
@@ -542,5 +542,5 @@
    "stage": "fetch"
   }
  ],
- "took_s": 30.4
+ "took_s": 8.4
 }
