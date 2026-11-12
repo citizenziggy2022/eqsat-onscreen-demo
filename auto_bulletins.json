@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-12T21:03:35Z",
+ "generated_at": "2026-11-12T21:12:36Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -36,7 +36,7 @@
    "name": "Харківська ОВА",
    "url": "https://t.me/s/kharkivoda",
    "verified": "linked from kharkivoda.gov.ua",
-   "status": "ok: kept 1 / dropped 3, showing 1"
+   "status": "ok: kept 0 / dropped 3, showing 0"
   }
  ],
  "bulletins": [
@@ -127,24 +127,6 @@
    "en_mt": {
     "title": "Demining of the right-bank of the Kherson region is ongoing",
     "body": "Throughout the past week pyrotechnicians inspected another 538 hectares of territories and defused over 230 units of Russian explosives. The dynamics of demining are in the infographics.",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-kharkivoda-32734",
-   "title": "На Харківщині за тиждень виявили та знищили майже 700 вибухонебезпечних предметів",
-   "body": "З 5 по 11 листопада включно піротехнічні підрозділи в Харківській області обстежили понад 68 га території, виявили та знешкодили 668 вибухонебезпечних предметів. Системну організацію заходів із розмінування та безпеки в області здійснює Центр координації…",
-   "source": "Харківська ОВА",
-   "source_url": "https://t.me/kharkivoda/32734",
-   "region": "Харківщина",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-12T09:12:31Z",
-   "expires_at": "2026-11-12T21:12:31Z",
-   "auto": true,
-   "en_mt": {
-    "title": "In Kharkiv region almost 700 explosive objects were detected and destroyed in a week",
-    "body": "From 5 to 11 November inclusive, pyrotechnic units in Kharkiv region inspected over 68 ha of territory, detected and defused 668 explosive objects. Systematic organization of demining and security measures in the region is carried out by the Coordination Centre…",
     "by": "m2m100"
    }
   }
