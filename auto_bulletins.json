@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-12T08:01:00Z",
+ "generated_at": "2026-11-12T08:04:00Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -12,7 +12,7 @@
    "name": "Херсонська ОВА",
    "url": "https://t.me/s/khersonskaODA",
    "verified": "linked from khoda.gov.ua; channel links back to khoda.gov.ua",
-   "status": "ok: kept 3 / dropped 7, showing 2"
+   "status": "ok: kept 4 / dropped 7, showing 2"
   },
   {
    "name": "Запорізька ОВА",
@@ -41,6 +41,24 @@
  ],
  "bulletins": [
   {
+   "id": "auto-khersonskaODA-71224",
+   "title": "До лікарні звернувся чоловік, який напередодні вдень підірвався на російській міні у Дніпровському районі Херсона",
+   "body": "Попередньо, внаслідок детонації боєприпасу 70-річний херсонець дістав мінно-вибухову травму. Постраждалий самостійно звернувся до лікарні. Наразі медики проводять обстеження та надають йому допомогу. Нагадуємо три основні правила мінної безпеки: не підходь…",
+   "source": "Херсонська ОВА",
+   "source_url": "https://t.me/khersonskaODA/71224",
+   "region": "Херсонщина",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-12T08:03:21Z",
+   "expires_at": "2026-11-12T20:03:21Z",
+   "auto": true,
+   "en_mt": {
+    "title": "To the hospital a man turned for help, who the day before during the day had blown himself up on a Russian mine in the Dnipro district of Kherson",
+    "body": "Previously, as a result of the detonation of ammunition, a 70-year-old Kherson resident received a mine-explosive injury. The victim himself applied to the hospital. Currently, doctors are conducting an examination and providing him with assistance. We recall the three main rules of mine safety: do not approach…",
+    "by": "m2m100"
+   }
+  },
+  {
    "id": "auto-khersonskaODA-71223",
    "title": "Орієнтовно о 08:30 російські військові атакували безпілотником Нововоронцовку",
    "body": "Через ворожий удар постраждав 32-річний чоловік. Він отримав вибухову травму, уламкові поранення спини, руки та ноги. Потерпілого доставили до лікарні. Наразі медики надають йому необхідну допомогу.",
@@ -55,24 +73,6 @@
    "en_mt": {
     "title": "Approximately at 08:30 Russian military attacked Novovorontsovka with a drone",
     "body": "Through an enemy strike, a 32-year-old man was injured. He received a blast injury, shrapnel wounds to his back, arm and leg. The victim was taken to the hospital. Currently, doctors are providing him with the necessary assistance.",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-khersonskaODA-71221",
-   "title": "До медиків по допомогу звернулась 52-річна мешканка Комишан, яка 7 листопада потрапила під атаку російського БпЛА",
-   "body": "Внаслідок влучання ворожого дрона в автівку жінка отримала мінно-вибухову травму, контузію та гостру реакцію на стрес. Потерпілій призначили амбулаторне лікування.",
-   "source": "Херсонська ОВА",
-   "source_url": "https://t.me/khersonskaODA/71221",
-   "region": "Херсонщина",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-12T07:04:53Z",
-   "expires_at": "2026-11-12T19:04:53Z",
-   "auto": true,
-   "en_mt": {
-    "title": "Medics were approached for help by a 52-year-old resident of Komyshany, who on November 7 fell under the attack of a Russian UAV",
-    "body": "As a result of the enemy drone hitting the car, the woman received a mine-blast trauma, a concussion and an acute stress reaction. The victim was prescribed outpatient treatment.",
     "by": "m2m100"
    }
   },
