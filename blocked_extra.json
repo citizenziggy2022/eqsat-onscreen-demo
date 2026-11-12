@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-12T10:16:02+00:00",
+ "generated": "2026-11-12T11:17:06+00:00",
  "sources": {
   "censoredplanet": {
    "name": "Censored Planet (University of Michigan)",
@@ -10,7 +10,7 @@
     "endDate": "2026-11-12"
    },
    "domains_tested": 869,
-   "query_errors": 1,
+   "query_errors": 0,
    "baseline_unexpected_share": {
     "RU": 0.003,
     "UA": 0.0,
@@ -26,7 +26,7 @@
     "UA": {
      "confirmed": 0,
      "likely": 0,
-     "measured": 828
+     "measured": 838
     },
     "BY": {
      "confirmed": 20,
@@ -40,7 +40,7 @@
     }
    },
    "rule": "confirmed = a known block page was returned; likely = >=20 measurements, >=50% unexpected and >=30 points above the country median",
-   "seconds": 18.3
+   "seconds": 20.8
   },
   "rkn": {
    "name": "Roskomnadzor registry (via antifilter.download)",
@@ -484,7 +484,7 @@
    "status": "listed",
    "last_seen": "2026-11-12",
    "category": "news",
-   "new_vs_ooni": false,
+   "new_vs_ooni": true,
    "well_known": true
   },
   {
@@ -1404,18 +1404,6 @@
    "well_known": false
   },
   {
-   "domain": "kavkazr.com",
-   "country": "RU",
-   "source": "censoredplanet",
-   "status": "likely",
-   "last_seen": "2026-11-11",
-   "rate": 0.87,
-   "measurements": 747,
-   "category": "news",
-   "new_vs_ooni": true,
-   "well_known": false
-  },
-  {
    "domain": "lemonde.fr",
    "country": "RU",
    "source": "censoredplanet",
@@ -1868,6 +1856,18 @@
    "rate": 0.87,
    "measurements": 767,
    "category": "anon",
+   "new_vs_ooni": false,
+   "well_known": false
+  },
+  {
+   "domain": "kavkazr.com",
+   "country": "RU",
+   "source": "censoredplanet",
+   "status": "likely",
+   "last_seen": "2026-11-11",
+   "rate": 0.87,
+   "measurements": 747,
+   "category": "news",
    "new_vs_ooni": false,
    "well_known": false
   },
