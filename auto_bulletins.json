@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-12T13:08:03Z",
+ "generated_at": "2026-11-12T13:14:03Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -41,6 +41,24 @@
  ],
  "bulletins": [
   {
+   "id": "auto-dsns_telegram-80299",
+   "title": "У Сумах під час ліквідації пожежі в житловій 10-поверхівці рятувальники ДСНС врятували 7 людей, а ще 17…",
+   "body": "Полум’я охопило фасад будинку до рівня 6-го поверху, також горів припаркований поруч автомобіль. Наразі надзвичайники вже ліквідували займання.",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/80299",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-12T13:13:26Z",
+   "expires_at": "2026-11-13T01:13:26Z",
+   "auto": true,
+   "en_mt": {
+    "title": "In Sumy during the elimination of a fire in a residential 10-storey building, rescuers of the State Emergency Service saved 7 people, and another 17…",
+    "body": "The flames engulfed the facade of the house up to the 6th floor level, and a car parked nearby was also on fire. Currently, the rescuers have already extinguished the fire.",
+    "by": "m2m100"
+   }
+  },
+  {
    "id": "auto-zoda_gov_ua-68973",
    "title": "російський дрон атакував рейсовий пасажирський автобус у Запорізькому районі",
    "body": "Поранено трьох жінок, одна з них - у тяжкому стані. У момент удару в автобусі перебували приблизно 12–15 людей. Постраждалим надають необхідну допомогу.",
@@ -73,24 +91,6 @@
    "en_mt": {
     "title": "‼ Head of the SES of Ukraine Andriy Danyk: \"There are no words to convey the pain from such news: in Yahotyn in the Kyiv region…",
     "body": "",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-80276",
-   "title": "вдень уламки російського БпЛА впали на проїзну частину дороги у Шевченківському районі. Постраждала 1 людина",
-   "body": "На місці виникла пожежа, яку оперативно ліквідували вогнеборці. Пошкоджений пасажирський автобус. Сайт • Fb • X • IG • YT • TT",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/80276",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-12T11:44:51Z",
-   "expires_at": "2026-11-12T23:44:51Z",
-   "auto": true,
-   "en_mt": {
-    "title": "During the day, fragments of a Russian UAV fell onto the roadway in the Shevchenkivskyi district, 1 person was injured.",
-    "body": "A fire broke out on the spot, which was promptly extinguished by firefighters. A passenger bus was damaged. Site • Fb • X • IG • YT • TT",
     "by": "m2m100"
    }
   },
