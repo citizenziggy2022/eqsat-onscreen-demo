@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-12T12:58:42+00:00",
+ "generated": "2026-11-12T14:01:37+00:00",
  "sources": {
   "censoredplanet": {
    "name": "Censored Planet (University of Michigan)",
@@ -49,13 +49,13 @@
    "total_domains": 1790410,
    "well_known_listed": 56,
    "note": "Official RKN blocking registry. Rows are registry entries (incl. wildcard and mirror domains), not distinct sites.",
-   "seconds": 29.8
+   "seconds": 18.4
   }
  },
  "credit": "Censored Planet (U. Michigan) · RKN registry via antifilter.download",
  "counts": {
   "items": 157,
-  "new_vs_ooni": 102,
+  "new_vs_ooni": 100,
   "by_source_country": {
    "rkn/RU": 44,
    "censoredplanet/BY": 31,
@@ -484,7 +484,7 @@
    "status": "listed",
    "last_seen": "2026-11-12",
    "category": "news",
-   "new_vs_ooni": true,
+   "new_vs_ooni": false,
    "well_known": true
   },
   {
@@ -1128,18 +1128,6 @@
    "well_known": false
   },
   {
-   "domain": "idelreal.org",
-   "country": "RU",
-   "source": "censoredplanet",
-   "status": "likely",
-   "last_seen": "2026-11-11",
-   "rate": 0.88,
-   "measurements": 755,
-   "category": "news",
-   "new_vs_ooni": true,
-   "well_known": false
-  },
-  {
    "domain": "ktat.krymr.com",
    "country": "RU",
    "source": "censoredplanet",
@@ -1688,6 +1676,18 @@
    "rate": 0.88,
    "measurements": 771,
    "category": "grp",
+   "new_vs_ooni": false,
+   "well_known": false
+  },
+  {
+   "domain": "idelreal.org",
+   "country": "RU",
+   "source": "censoredplanet",
+   "status": "likely",
+   "last_seen": "2026-11-11",
+   "rate": 0.88,
+   "measurements": 755,
+   "category": "news",
    "new_vs_ooni": false,
    "well_known": false
   },
