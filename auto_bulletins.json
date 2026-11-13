@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-13T11:07:02Z",
+ "generated_at": "2026-11-13T11:35:59Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -18,7 +18,7 @@
    "name": "Запорізька ОВА",
    "url": "https://t.me/s/zoda_gov_ua",
    "verified": "linked from zoda.gov.ua",
-   "status": "ok: kept 10 / dropped 0, showing 2"
+   "status": "ok: kept 11 / dropped 0, showing 2"
   },
   {
    "name": "Донецька ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-zoda_gov_ua-69010",
+   "title": "Кількість поранених збільшилась до 9 людей.",
+   "body": "Пошуково-рятувальні роботи тривають",
+   "source": "Запорізька ОВА",
+   "source_url": "https://t.me/zoda_gov_ua/69010",
+   "region": "Запоріжжя",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-13T11:35:03Z",
+   "expires_at": "2026-11-13T23:35:03Z",
+   "auto": true,
+   "en_mt": {
+    "title": "The number of injured has increased to 9 people.",
+    "body": "Search and rescue operations are ongoing",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-zoda_gov_ua-69003",
    "title": "росіяни вдарили по п’ятиповерховому житловому будинку в Космічному районі Запоріжжі.",
@@ -91,24 +109,6 @@
    "en_mt": {
     "title": "STATE OF THE ENERGY SYSTEM",
     "body": "Throughout the last day the enemy continued to attack objects of the energy infrastructure. Due to the consequences of enemy strikes there are power outages for consumers in Dnipropetrovsk, Donetsk, Zaporizhzhia, Zhytomyr, Kyiv, Mykolaiv, Odesa, Rivne…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-zoda_gov_ua-69002",
-   "title": "Наші рятувальники боряться за кожне життя, чи то людини, чи то беззахисної тварини",
-   "body": "Дякую за людяність та небайдужість",
-   "source": "Запорізька ОВА",
-   "source_url": "https://t.me/zoda_gov_ua/69002",
-   "region": "Запоріжжя",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-13T10:19:10Z",
-   "expires_at": "2026-11-13T22:19:10Z",
-   "auto": true,
-   "en_mt": {
-    "title": "Our rescuers are fighting for every life, whether it is a person or a defenseless animal",
-    "body": "Thank you for humanity and concern",
     "by": "m2m100"
    }
   },
