@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-13T05:21:45Z",
+ "generated_at": "2026-11-13T05:35:46Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 1 / dropped 2, showing 1"
+   "status": "ok: kept 2 / dropped 2, showing 2"
   },
   {
    "name": "Херсонська ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-dsns_telegram-80337",
+   "title": "Рятувальники ліквідували пожежі на цивільних об’єктах, що виникли через російські атаки, постраждалих немає",
+   "body": "Увечері та вночі росіяни атакували дронами 4 громади області. У Чугуєві загорілися два гаражні бокси. У Новому Коротичі БпЛА двічі вдарили по поштовому терміналу: після першого влучання горіли конструкції будівлі, а після повторного удару зайнявся дах. Всі…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/80337",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-13T05:34:07Z",
+   "expires_at": "2026-11-13T17:34:07Z",
+   "auto": true,
+   "en_mt": {
+    "title": "Rescuers have eliminated fires at civilian facilities that occurred due to Russian attacks, there are no casualties",
+    "body": "In the evening and at night, Russians attacked 4 communities of the region with drones. In Chuhuiv, two garage boxes caught fire. In Novy Korotych, a UAV twice hit the postal terminal: after the first hit, the building's structures were on fire, and after the second strike, the roof caught fire. Everyone…",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-dsns_telegram-80333",
    "title": "Дві жінки віком 54 та 22 роки травмовані внаслідок нічного російського удару по місту",
