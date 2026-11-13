@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-13T17:52:02+00:00",
+ "generated": "2026-11-13T18:49:05+00:00",
  "sources": {
   "censoredplanet": {
    "name": "Censored Planet (University of Michigan)",
@@ -40,7 +40,7 @@
     }
    },
    "rule": "confirmed = a known block page was returned; likely = >=20 measurements, >=50% unexpected and >=30 points above the country median",
-   "seconds": 20.4
+   "seconds": 16.9
   },
   "rkn": {
    "name": "Roskomnadzor registry (via antifilter.download)",
@@ -49,7 +49,7 @@
    "total_domains": 1797754,
    "well_known_listed": 56,
    "note": "Official RKN blocking registry. Rows are registry entries (incl. wildcard and mirror domains), not distinct sites.",
-   "seconds": 14.1
+   "seconds": 20.6
   }
  },
  "credit": "Censored Planet (U. Michigan) · RKN registry via antifilter.download",
