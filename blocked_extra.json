@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-13T21:52:35+00:00",
+ "generated": "2026-11-13T22:53:42+00:00",
  "sources": {
   "censoredplanet": {
    "name": "Censored Planet (University of Michigan)",
@@ -40,7 +40,7 @@
     }
    },
    "rule": "confirmed = a known block page was returned; likely = >=20 measurements, >=50% unexpected and >=30 points above the country median",
-   "seconds": 16.8
+   "seconds": 19.7
   },
   "rkn": {
    "name": "Roskomnadzor registry (via antifilter.download)",
@@ -49,13 +49,13 @@
    "total_domains": 1800364,
    "well_known_listed": 56,
    "note": "Official RKN blocking registry. Rows are registry entries (incl. wildcard and mirror domains), not distinct sites.",
-   "seconds": 20.6
+   "seconds": 21.6
   }
  },
  "credit": "Censored Planet (U. Michigan) · RKN registry via antifilter.download",
  "counts": {
   "items": 157,
-  "new_vs_ooni": 101,
+  "new_vs_ooni": 100,
   "by_source_country": {
    "rkn/RU": 44,
    "censoredplanet/BY": 31,
@@ -1428,18 +1428,6 @@
    "well_known": false
   },
   {
-   "domain": "sibreal.org",
-   "country": "RU",
-   "source": "censoredplanet",
-   "status": "likely",
-   "last_seen": "2026-11-11",
-   "rate": 0.87,
-   "measurements": 750,
-   "category": "news",
-   "new_vs_ooni": true,
-   "well_known": false
-  },
-  {
    "domain": "tuta.com",
    "country": "RU",
    "source": "censoredplanet",
@@ -1867,6 +1855,18 @@
    "last_seen": "2026-11-11",
    "rate": 0.87,
    "measurements": 747,
+   "category": "news",
+   "new_vs_ooni": false,
+   "well_known": false
+  },
+  {
+   "domain": "sibreal.org",
+   "country": "RU",
+   "source": "censoredplanet",
+   "status": "likely",
+   "last_seen": "2026-11-11",
+   "rate": 0.87,
+   "measurements": 750,
    "category": "news",
    "new_vs_ooni": false,
    "well_known": false
