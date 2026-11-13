@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-13T09:05:43Z",
+ "generated_at": "2026-11-13T09:10:42Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -18,7 +18,7 @@
    "name": "Запорізька ОВА",
    "url": "https://t.me/s/zoda_gov_ua",
    "verified": "linked from zoda.gov.ua",
-   "status": "ok: kept 4 / dropped 0, showing 2"
+   "status": "ok: kept 5 / dropped 0, showing 2"
   },
   {
    "name": "Донецька ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-zoda_gov_ua-68988",
+   "title": "російський дрон атакував рейсовий пасажирський автобус у Запорізькому районі.",
+   "body": "Поранено трьох жінок, одна з них - у тяжкому стані. У момент удару в автобусі перебували приблизно 12–15 людей. Постраждалим надають необхідну допомогу.",
+   "source": "Запорізька ОВА",
+   "source_url": "https://t.me/zoda_gov_ua/68988",
+   "region": "Запоріжжя",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-13T09:09:52Z",
+   "expires_at": "2026-11-13T21:09:52Z",
+   "auto": true,
+   "en_mt": {
+    "title": "a Russian drone attacked a regular passenger bus in the Zaporizhzhia district.",
+    "body": "Three women were injured, one of them is in serious condition. At the moment of the strike, there were approximately 12–15 people in the bus. The victims are being provided with necessary assistance.",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-zoda_gov_ua-68987",
    "title": "Підтвердилася загибель чоловіка, який опинився під завалами внаслідок російського удару по промисловому…",
@@ -91,24 +109,6 @@
    "en_mt": {
     "title": "as a result of the shelling by the rf, a 17-year-old teenager was killed, 4 more people were injured, including a 10-year-old boy",
     "body": "Through the attack of the rf 2 private residential houses were destroyed. The blast wave damaged the nearby houses. All emergency services of the city and volunteers of the Rapid Response Team worked at the scene. The number of victims is being clarified. Site • Fb • X • IG • YT • TT",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-zoda_gov_ua-68986",
-   "title": "Ворог завдав чергового удару по Запоріжжю",
-   "body": "Попередньо, внаслідок атаки під завалами опинився чоловік. Також виникла пожежа. Інформація про стан чоловіка та інші наслідки удару уточнюється.",
-   "source": "Запорізька ОВА",
-   "source_url": "https://t.me/zoda_gov_ua/68986",
-   "region": "Запоріжжя",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-13T08:18:15Z",
-   "expires_at": "2026-11-13T20:18:15Z",
-   "auto": true,
-   "en_mt": {
-    "title": "The enemy struck another blow at Zaporizhzhia",
-    "body": "Previously, as a result of the attack, a man was under the rubble. A fire also broke out. Information about the man's condition and other consequences of the strike is being clarified.",
     "by": "m2m100"
    }
   },
