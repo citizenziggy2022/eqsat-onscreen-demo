@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-13T05:06:46Z",
+ "generated_at": "2026-11-13T05:10:45Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 0 / dropped 2, showing 0"
+   "status": "ok: kept 1 / dropped 2, showing 1"
   },
   {
    "name": "Херсонська ОВА",
@@ -39,5 +39,24 @@
    "status": "ok: kept 0 / dropped 2, showing 0"
   }
  ],
- "bulletins": []
+ "bulletins": [
+  {
+   "id": "auto-dsns_telegram-80333",
+   "title": "Дві жінки віком 54 та 22 роки травмовані внаслідок нічного російського удару по місту",
+   "body": "Вночі росіяни атакували Вінницю - постраждалих жінок госпіталізували, на місці з людьми також працював психолог ДСНС. На двох локаціях спалахнули пожежі, пошкоджено приватні оселі, вибито вікна у кількох багатоповерхівках та дитячому садку. Усі осередки…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/80333",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-13T05:09:47Z",
+   "expires_at": "2026-11-13T17:09:47Z",
+   "auto": true,
+   "en_mt": {
+    "title": "Two women aged 54 and 22 were injured as a result of the Russian night strike on the city",
+    "body": "At night, Russians attacked Vinnytsia - injured women were hospitalized, a psychologist from the State Emergency Service also worked with people at the scene. Fires broke out at two locations, private homes were damaged, windows were smashed in several high-rise buildings and a kindergarten. All centers…",
+    "by": "m2m100"
+   }
+  }
+ ]
 }
