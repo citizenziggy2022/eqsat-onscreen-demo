@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-13T12:29:19Z",
+ "generated_at": "2026-11-13T12:54:20Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-dsns_telegram-80418",
+   "title": "Українські вогнеборці ліквідовують наслідки чергової російської атаки",
+   "body": "Втомлені, але зібрані. Попри небезпеку й постійні обстріли, вони знову і знову стають до роботи, щоб допомогти людям і не допустити ще більших втрат. За кожним обличчям — сила, стійкість, професіоналізм і готовність прийти на допомогу. Дякуємо, наші…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/80418",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-13T12:53:40Z",
+   "expires_at": "2026-11-14T00:53:40Z",
+   "auto": true,
+   "en_mt": {
+    "title": "Ukrainian firefighters are eliminating the consequences of another Russian attack",
+    "body": "Tired, but gathered. Despite the danger and constant shelling, they again and again get to work, to help people and not allow even greater losses. Behind each face - strength, resilience, professionalism and readiness to come to the rescue. Thank you, our…",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-khersonskaODA-71309",
    "title": "До лікарні звернувся чоловік, який сьогодні близько 03:00 постраждав через російський обстріл Корабельного…",
@@ -109,24 +127,6 @@
    "en_mt": {
     "title": "The number of injured has increased to 9 people.",
     "body": "Search and rescue operations are ongoing",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-80398",
-   "title": "‼ внаслідок російського удару 13 людей поранені, з них 5 дітей",
-   "body": "На місці удару рятувальники деблокували 14 людей, які опинилися заблокованими у своїх квартирах. Кількість постраждалих уточнюється. За однією з адрес внаслідок удару пошкоджені квартири у п’ятиповерхівці та фасад будинку. Виникли пожежі у квартирах і…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/80398",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-13T10:55:17Z",
-   "expires_at": "2026-11-13T22:55:17Z",
-   "auto": true,
-   "en_mt": {
-    "title": "as a result of the Russian strike 13 people were injured, including 5 children",
-    "body": "At the site of the strike, rescuers deblocked 14 people who were blocked in their apartments. The number of victims is being clarified. At one of the addresses, as a result of the strike, apartments in a five-story building and the facade of the house were damaged. Fires broke out in apartments and…",
     "by": "m2m100"
    }
   },
