@@ -1,10 +1,37 @@
 {
- "fetched_at": "2026-11-13T02:05:29Z",
+ "fetched_at": "2026-11-13T02:16:28Z",
  "every_s": 600,
  "note": "Conflict photo candidates, NOT on air. Fetched by scripts/fetch_conflict_photos.py in the live-runner every 10 min. An item goes on air only when the Editor's Approve moves it to photos-conflict.json.",
  "check": "none in the runner (no vision model): nothing is approved automatically",
  "auto_approved": 0,
  "items": [
+  {
+   "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Destructions_in_Kovel_after_Russian_attack%2C_2026-11-12_%2801%29.webp",
+   "caption_uk": "Kovel: наслідки російського удару",
+   "caption_en": "Fire in Kovel (Volyn Oblast of Ukraine) after Russian drone attack in the night on 12…",
+   "place": "Kovel, Volyn Oblast",
+   "date": "2026-11-12",
+   "author": "State Emergency Service of Ukraine",
+   "license": "CC BY 4.0",
+   "caption": "Kovel: наслідки російського удару",
+   "taken": "Kovel, Nov 12 · ДСНС, CC BY 4.0",
+   "order": 0.0,
+   "active": false,
+   "id": "cf_dfe23c7725af",
+   "kind": "conflict",
+   "date_added": "2026-11-13T02:16:31Z",
+   "taken_at": "2026-11-12",
+   "source": "Wikimedia Commons (dsns.gov.ua)",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Destructions_in_Kovel_after_Russian_attack,_2026-11-12_(01).webp",
+   "taken_uk": "Kovel, 12 листопада · ДСНС, CC BY 4.0",
+   "width": 1600,
+   "height": 1066,
+   "display": "cover",
+   "review": "pending_vision",
+   "commons_title": "File:Destructions in Kovel after Russian attack, 2026-11-12 (01).webp",
+   "orig_url": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Destructions_in_Kovel_after_Russian_attack%2C_2026-11-12_%2801%29.webp?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+   "preview_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Destructions_in_Kovel_after_Russian_attack%2C_2026-11-12_%2801%29.webp/500px-Destructions_in_Kovel_after_Russian_attack%2C_2026-11-12_%2801%29.webp"
+  },
   {
    "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Destructions_in_Kyiv_after_Russian_attack%2C_2026-11-12_%2811%29.webp",
    "caption_uk": "Київ: наслідки російського удару",
@@ -19,7 +46,7 @@
    "active": false,
    "id": "cf_40e750f700f4",
    "kind": "conflict",
-   "date_added": "2026-11-13T02:05:31Z",
+   "date_added": "2026-11-13T02:16:31Z",
    "taken_at": "2026-11-12",
    "source": "Wikimedia Commons (dsns.gov.ua)",
    "source_url": "https://commons.wikimedia.org/wiki/File:Destructions_in_Kyiv_after_Russian_attack,_2026-11-12_(11).webp",
@@ -46,7 +73,7 @@
    "active": false,
    "id": "cf_1d344d6e284a",
    "kind": "conflict",
-   "date_added": "2026-11-13T02:05:31Z",
+   "date_added": "2026-11-13T02:16:31Z",
    "taken_at": "2026-11-12",
    "source": "Wikimedia Commons (dsns.gov.ua)",
    "source_url": "https://commons.wikimedia.org/wiki/File:Destructions_in_Kyiv_after_Russian_attack,_2026-11-12_(02).jpg",
@@ -73,7 +100,7 @@
    "active": false,
    "id": "cf_b80100134634",
    "kind": "conflict",
-   "date_added": "2026-11-13T02:05:31Z",
+   "date_added": "2026-11-13T02:16:31Z",
    "taken_at": "2026-11-12",
    "source": "Wikimedia Commons (dsns.gov.ua)",
    "source_url": "https://commons.wikimedia.org/wiki/File:Destructions_in_Kyiv_after_Russian_attack,_2026-11-12_(01).jpg",
@@ -88,6 +115,12 @@
   }
  ],
  "fetch_rejects": [
+  {
+   "source": "commons",
+   "title": "File:Destructions in Kramatorsk after Russian attack, 2026-10-08 (18).webp",
+   "reason": "taken 2026-09-08, older than 7 days",
+   "stage": "fetch"
+  },
   {
    "source": "commons",
    "title": "File:Destructions in Kramatorsk after Russian attack, 2026-10-08 (002).webm",
@@ -390,12 +423,6 @@
   },
   {
    "source": "commons",
-   "title": "File:Destructions in Kyiv after Russian attack, 2026-09-28 (01).jpg",
-   "reason": "not landscape (758x1010)",
-   "stage": "fetch"
-  },
-  {
-   "source": "commons",
    "title": "File:Destructions in Kyiv after Russian attack, 2026-11-07 (05).jpg",
    "reason": "too small (960 px wide < 1280)",
    "stage": "fetch"
@@ -569,5 +596,5 @@
    "stage": "fetch"
   }
  ],
- "took_s": 8.7
+ "took_s": 20.2
 }
