@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-13T18:00:15Z",
+ "generated_at": "2026-11-13T18:05:15Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -24,7 +24,7 @@
    "name": "Донецька ОВА",
    "url": "https://t.me/s/VadymFilashkin",
    "verified": "channel of the OVA head (dn.gov.ua/persons/vadim-filashkin), links to dn.gov.ua",
-   "status": "ok: kept 2 / dropped 5, showing 2"
+   "status": "ok: kept 1 / dropped 5, showing 1"
   },
   {
    "name": "Луганська ОВА",
@@ -163,24 +163,6 @@
    "en_mt": {
     "title": "Approximately at 09:30 Russian occupiers attacked the hospital in Bilozerka with a drone",
     "body": "As a result of the strike on the medical facility, the roof and facade of the building were damaged. A 66-year-old nurse was injured at her workplace. She sustained shrapnel wounds to her legs, a concussion, explosive and closed craniocerebral trauma. The woman was hospitalized in a state…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-VadymFilashkin-19228",
-   "title": "Росія вбиває цивільних!",
-   "body": "За 12 листопада росіяни вбили 4 жителів Донеччини: 3 у Краматорську та 1 у Біленькому. Ще 7 людей в області за добу отримали поранення. Загальна кількість жертв росіян на Донеччині подана без урахування Маріуполя та Волновахи. __ Russia kills civilians! On…",
-   "source": "Донецька ОВА",
-   "source_url": "https://t.me/VadymFilashkin/19228",
-   "region": "Донеччина",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-13T06:04:58Z",
-   "expires_at": "2026-11-13T18:04:58Z",
-   "auto": true,
-   "en_mt": {
-    "title": "Russia is killing civilians!",
-    "body": "On 12 November Russians killed 4 residents of Donetsk region: 3 in Kramatorsk and 1 in Bilenke. Another 7 people in the region received injuries per day. The total number of Russian victims in Donetsk region is given without taking into account Mariupol and Volnovakha. __ Russia kills civilians! On…",
     "by": "m2m100"
    }
   }
