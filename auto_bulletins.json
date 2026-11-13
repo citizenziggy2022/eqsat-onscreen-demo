@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-13T20:29:25Z",
+ "generated_at": "2026-11-13T20:44:24Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -12,7 +12,7 @@
    "name": "Херсонська ОВА",
    "url": "https://t.me/s/khersonskaODA",
    "verified": "linked from khoda.gov.ua; channel links back to khoda.gov.ua",
-   "status": "ok: kept 2 / dropped 11, showing 2"
+   "status": "ok: kept 3 / dropped 11, showing 2"
   },
   {
    "name": "Запорізька ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-khersonskaODA-71333",
+   "title": "Близько 13:00 у селі Високе на російській вибухівці підірвались двоє працівників Тягинської СВА",
+   "body": "Внаслідок детонації вибухового пристрою один 46-річний чоловік отримав мінно-вибухову травму, поранення попереку та ноги, інший працівник того ж віку дістав мінно-вибухову травму, а також ушкодження руки та голови. Потерпілим надали необхідну меддопомогу.…",
+   "source": "Херсонська ОВА",
+   "source_url": "https://t.me/khersonskaODA/71333",
+   "region": "Херсонщина",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-13T20:42:34Z",
+   "expires_at": "2026-11-14T08:42:34Z",
+   "auto": true,
+   "en_mt": {
+    "title": "At about 13:00 in the village of Vyske on a Russian explosive device, two employees of the Tyahynska SVA were blown up",
+    "body": "As a result of the detonation of an explosive device, one 46-year-old man received a mine-explosive injury, a back and leg injury, another worker of the same age received a mine-explosive injury, as well as damage to his hand and head. The victims were provided with the necessary medical assistance….",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-zoda_gov_ua-69018",
    "title": "У Космічному районі Запоріжжя FPV-дрон влучив у багатоповерхівку",
@@ -163,24 +181,6 @@
    "en_mt": {
     "title": "Thanks to the Czech humanitarian organisation \"People in Need\" and financial support from international donors…",
     "body": "Sets are formed taking into account the needs of people in the cold season. They will help preserve heat, provide the opportunity to cook hot food and lighting in conditions of regular emergency shutdowns of electricity and gas supply due to attacks by Russian…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-khersonskaODA-71297",
-   "title": "Орієнтовно о 09:30 російські окупанти атакували безпілотником лікарню у Білозерці",
-   "body": "Унаслідок удару в медзакладі пошкоджено покрівлю та фасад будівлі. На робочому місці постраждала 66-річна медична сестра. Вона дістала уламкові поранення ніг, струс головного мозку, вибухову та закриту черепно-мозкову травми. Жінку шпиталізували у стані…",
-   "source": "Херсонська ОВА",
-   "source_url": "https://t.me/khersonskaODA/71297",
-   "region": "Херсонщина",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-13T08:58:54Z",
-   "expires_at": "2026-11-13T20:58:54Z",
-   "auto": true,
-   "en_mt": {
-    "title": "Approximately at 09:30 Russian occupiers attacked the hospital in Bilozerka with a drone",
-    "body": "As a result of the strike on the medical facility, the roof and facade of the building were damaged. A 66-year-old nurse was injured at her workplace. She sustained shrapnel wounds to her legs, a concussion, explosive and closed craniocerebral trauma. The woman was hospitalized in a state…",
     "by": "m2m100"
    }
   }
