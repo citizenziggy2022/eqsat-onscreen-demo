@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-13T07:51:19Z",
+ "generated_at": "2026-11-13T08:00:19Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -42,7 +42,7 @@
  "bulletins": [
   {
    "id": "auto-dsns_telegram-80362",
-   "title": "через російську атаку загинули 2 людини, ще 5 - постраждали",
+   "title": "через російську атаку загинули 2 людини, попередньо ще 5 - постраждали",
    "body": "Внаслідок удару зруйнований одноповерховий приватний житловий будинок, виникла пожежа. Рятувальники оперативно ліквідували загоряння. За іншою адресою зафіксоване влучання на відкритій місцевості, внаслідок чого пошкоджені 11 легкових автомобілів. На місці…",
    "source": "ДСНС України",
    "source_url": "https://t.me/dsns_telegram/80362",
@@ -53,7 +53,7 @@
    "expires_at": "2026-11-13T19:46:11Z",
    "auto": true,
    "en_mt": {
-    "title": "through the Russian attack 2 people were killed, 5 more were injured",
+    "title": "through the Russian attack 2 people were killed, preliminarily another 5 were injured",
     "body": "As a result of the strike, a one-story private residential house was destroyed, a fire broke out. Rescuers quickly eliminated the fire. At another address, a hit was recorded in an open area, as a result of which 11 passenger cars were damaged. At the scene…",
     "by": "m2m100"
    }
