@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-13T18:06:16Z",
+ "generated_at": "2026-11-13T18:08:15Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -12,7 +12,7 @@
    "name": "Херсонська ОВА",
    "url": "https://t.me/s/khersonskaODA",
    "verified": "linked from khoda.gov.ua; channel links back to khoda.gov.ua",
-   "status": "ok: kept 1 / dropped 17, showing 1"
+   "status": "ok: kept 2 / dropped 13, showing 2"
   },
   {
    "name": "Запорізька ОВА",
@@ -91,6 +91,24 @@
    "en_mt": {
     "title": "The number of people injured as a result of the Russian attack has increased to 25 people.",
     "body": "Among them are six children. Rescue and search operations have been completed. All victims are being provided with necessary assistance.",
+    "by": "m2m100"
+   }
+  },
+  {
+   "id": "auto-khersonskaODA-71309",
+   "title": "До лікарні звернувся чоловік, який сьогодні близько 03:00 постраждав через російський обстріл Корабельного…",
+   "body": "У 71-річного містянина діагностували вибухову травму та контузію. Після надання меддопомоги потерпілому призначили амбулаторне лікування.",
+   "source": "Херсонська ОВА",
+   "source_url": "https://t.me/khersonskaODA/71309",
+   "region": "Херсонщина",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-13T12:27:42Z",
+   "expires_at": "2026-11-14T00:27:42Z",
+   "auto": true,
+   "en_mt": {
+    "title": "To the hospital a man turned who today at about 03:00 was injured due to Russian shelling of Korabelnyi…",
+    "body": "A 71-year-old townsman was diagnosed with a blast injury and a concussion. After providing medical assistance, the victim was prescribed outpatient treatment.",
     "by": "m2m100"
    }
   },
