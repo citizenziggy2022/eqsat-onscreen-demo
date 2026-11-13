@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-13T09:26:48Z",
+ "generated_at": "2026-11-13T09:31:46Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -18,7 +18,7 @@
    "name": "Запорізька ОВА",
    "url": "https://t.me/s/zoda_gov_ua",
    "verified": "linked from zoda.gov.ua",
-   "status": "ok: kept 5 / dropped 0, showing 2"
+   "status": "ok: kept 6 / dropped 0, showing 2"
   },
   {
    "name": "Донецька ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-zoda_gov_ua-68989",
+   "title": "Підтвердилася загибель чоловіка, який опинився під завалами внаслідок російського удару по промисловому…",
+   "body": "Щирі співчуття рідним і близьким загиблого.",
+   "source": "Запорізька ОВА",
+   "source_url": "https://t.me/zoda_gov_ua/68989",
+   "region": "Запоріжжя",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-13T09:30:17Z",
+   "expires_at": "2026-11-13T21:30:17Z",
+   "auto": true,
+   "en_mt": {
+    "title": "The death of a man who was under the rubble as a result of the Russian strike on an industrial…",
+    "body": "Sincere condolences to the relatives and loved ones of the deceased.",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-VadymFilashkin-19237",
    "title": "Завдяки чеській гуманітарній організації «Людина в біді» та фінансової підтримки міжнародних донорів…",
@@ -91,24 +109,6 @@
    "en_mt": {
     "title": "a Russian drone attacked a regular passenger bus in the Zaporizhzhia district.",
     "body": "Three women were injured, one of them is in serious condition. At the moment of the strike, there were approximately 12–15 people in the bus. The victims are being provided with necessary assistance.",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-zoda_gov_ua-68987",
-   "title": "Підтвердилася загибель чоловіка, який опинився під завалами внаслідок російського удару по промисловому…",
-   "body": "Щирі співчуття рідним і близьким загиблого.",
-   "source": "Запорізька ОВА",
-   "source_url": "https://t.me/zoda_gov_ua/68987",
-   "region": "Запоріжжя",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-13T08:59:16Z",
-   "expires_at": "2026-11-13T20:59:16Z",
-   "auto": true,
-   "en_mt": {
-    "title": "The death of a man who was under the rubble as a result of the Russian strike on an industrial…",
-    "body": "Sincere condolences to the relatives and loved ones of the deceased.",
     "by": "m2m100"
    }
   },
