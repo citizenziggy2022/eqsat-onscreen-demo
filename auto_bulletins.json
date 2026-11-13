@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-13T09:48:48Z",
+ "generated_at": "2026-11-13T09:53:46Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -41,6 +41,24 @@
  ],
  "bulletins": [
   {
+   "id": "auto-zoda_gov_ua-68995",
+   "title": "росіяни вдарили по п’ятиповерховому житловому будинку в Космічному районі Запоріжжі.",
+   "body": "Внаслідок ворожої атаки пошкоджені квартири на трьох поверхах. Виникла пожежа у квартирах на другому та третьому поверхах, також загорілися автомобілі у дворі. Щонайменше…",
+   "source": "Запорізька ОВА",
+   "source_url": "https://t.me/zoda_gov_ua/68995",
+   "region": "Запоріжжя",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-13T09:53:42Z",
+   "expires_at": "2026-11-13T21:53:42Z",
+   "auto": true,
+   "en_mt": {
+    "title": "Russians struck a five-storey residential building in the Kosmichny district of Zaporizhzhia.",
+    "body": "As a result of the enemy attack, apartments on three floors were damaged. A fire broke out in apartments on the second and third floors, and cars also caught fire in the yard. At least…",
+    "by": "m2m100"
+   }
+  },
+  {
    "id": "auto-zoda_gov_ua-68994",
    "title": "росіяни вдарили по п’ятиповерховому житловому будинку в Космічному районі Запоріжжі",
    "body": "Внаслідок ворожої атаки пошкоджені квартири на трьох поверхах. Виникла пожежа у квартирах на другому та третьому поверхах, також загорілися автомобілі у дворі. Щонайменше 4 постраждалих, серед них 2 дітей",
@@ -55,24 +73,6 @@
    "en_mt": {
     "title": "Russians struck a five-story residential building in the Kosmic district of Zaporizhzhia",
     "body": "As a result of the enemy attack, apartments on three floors were damaged. A fire broke out in apartments on the second and third floors, and cars also caught fire in the yard. At least 4 people were injured, including 2 children.",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-zoda_gov_ua-68989",
-   "title": "Підтвердилася загибель чоловіка, який опинився під завалами внаслідок російського удару по промисловому…",
-   "body": "Щирі співчуття рідним і близьким загиблого.",
-   "source": "Запорізька ОВА",
-   "source_url": "https://t.me/zoda_gov_ua/68989",
-   "region": "Запоріжжя",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-13T09:30:17Z",
-   "expires_at": "2026-11-13T21:30:17Z",
-   "auto": true,
-   "en_mt": {
-    "title": "The death of a man who was under the rubble as a result of the Russian strike on an industrial…",
-    "body": "Sincere condolences to the relatives and loved ones of the deceased.",
     "by": "m2m100"
    }
   },
