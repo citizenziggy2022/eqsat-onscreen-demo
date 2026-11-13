@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-13T20:51:30+00:00",
+ "generated": "2026-11-13T21:52:35+00:00",
  "sources": {
   "censoredplanet": {
    "name": "Censored Planet (University of Michigan)",
@@ -40,7 +40,7 @@
     }
    },
    "rule": "confirmed = a known block page was returned; likely = >=20 measurements, >=50% unexpected and >=30 points above the country median",
-   "seconds": 34.2
+   "seconds": 16.8
   },
   "rkn": {
    "name": "Roskomnadzor registry (via antifilter.download)",
@@ -55,7 +55,7 @@
  "credit": "Censored Planet (U. Michigan) · RKN registry via antifilter.download",
  "counts": {
   "items": 157,
-  "new_vs_ooni": 102,
+  "new_vs_ooni": 101,
   "by_source_country": {
    "rkn/RU": 44,
    "censoredplanet/BY": 31,
@@ -647,7 +647,7 @@
    "status": "listed",
    "last_seen": "2026-11-13",
    "category": "rights",
-   "new_vs_ooni": true,
+   "new_vs_ooni": false,
    "well_known": true
   },
   {
