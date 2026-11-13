@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-13T19:34:20Z",
+ "generated_at": "2026-11-13T20:14:25Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -18,7 +18,7 @@
    "name": "Запорізька ОВА",
    "url": "https://t.me/s/zoda_gov_ua",
    "verified": "linked from zoda.gov.ua",
-   "status": "ok: kept 12 / dropped 4, showing 2"
+   "status": "ok: kept 13 / dropped 4, showing 2"
   },
   {
    "name": "Донецька ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-zoda_gov_ua-69018",
+   "title": "У Космічному районі Запоріжжя FPV-дрон влучив у багатоповерхівку",
+   "body": "Сталася пожежа. Інформацію щодо поранених уточнююєть.",
+   "source": "Запорізька ОВА",
+   "source_url": "https://t.me/zoda_gov_ua/69018",
+   "region": "Запоріжжя",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-13T20:13:43Z",
+   "expires_at": "2026-11-14T08:13:43Z",
+   "auto": true,
+   "en_mt": {
+    "title": "In the Kosmic district of Zaporizhzhia an FPV-drone hit a high-rise building",
+    "body": "A fire occurred. They are clarifying information about the injured.",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-zoda_gov_ua-69017",
    "title": "У Космічному районі Запоріжжя внаслідок атаки FPV-дрона поранено жінку",
@@ -91,24 +109,6 @@
    "en_mt": {
     "title": "In Kharkiv region rescuers of DSNS saved a couple from under the rubble of a destroyed house!",
     "body": "Tonight Russian troops struck the residential sector of the village of Malyshivka Chuhuiv district. As a result of the hit, a residential building was destroyed, under the rubble…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-zoda_gov_ua-69012",
-   "title": "Кількість постраждалих внаслідок російської атаки зросла до 25 людей.",
-   "body": "Серед них - шестеро дітей. Рятувально-пошукові роботи завершено. Усім постраждалим надається необхідна допомога.",
-   "source": "Запорізька ОВА",
-   "source_url": "https://t.me/zoda_gov_ua/69012",
-   "region": "Запоріжжя",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-13T13:11:52Z",
-   "expires_at": "2026-11-14T01:11:52Z",
-   "auto": true,
-   "en_mt": {
-    "title": "The number of people injured as a result of the Russian attack has increased to 25 people.",
-    "body": "Among them are six children. Rescue and search operations have been completed. All victims are being provided with necessary assistance.",
     "by": "m2m100"
    }
   },
