@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-13T09:10:42Z",
+ "generated_at": "2026-11-13T09:17:42Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 5 / dropped 2, showing 2"
+   "status": "ok: kept 6 / dropped 2, showing 2"
   },
   {
    "name": "Херсонська ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-dsns_telegram-80382",
+   "title": "На Харківщині рятувальники ДСНС врятували подружжя з-під завалів зруйнованого будинку!",
+   "body": "Сьогодні вночі російські війська завдали удару по житловому сектору селища Малинівка Чугуївського району. Унаслідок влучання зруйновано житловий будинок, під завалами якого опинилися чоловік та жінка. Рятувальники ДСНС спільно з вогнеборцями добровільної…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/80382",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-13T09:15:58Z",
+   "expires_at": "2026-11-13T21:15:58Z",
+   "auto": true,
+   "en_mt": {
+    "title": "In Kharkiv region rescuers of DSNS saved a couple from under the rubble of a destroyed house!",
+    "body": "Tonight Russian troops struck the residential sector of the village of Malyshivka in Chuhuiv district. As a result of the hit, a residential building was destroyed, under the rubble of which a man and a woman were trapped. Rescuers of the State Emergency Service together with firefighters of the voluntary…",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-zoda_gov_ua-68988",
    "title": "російський дрон атакував рейсовий пасажирський автобус у Запорізькому районі.",
@@ -109,24 +127,6 @@
    "en_mt": {
     "title": "as a result of the shelling by the rf, a 17-year-old teenager was killed, 4 more people were injured, including a 10-year-old boy",
     "body": "Through the attack of the rf 2 private residential houses were destroyed. The blast wave damaged the nearby houses. All emergency services of the city and volunteers of the Rapid Response Team worked at the scene. The number of victims is being clarified. Site • Fb • X • IG • YT • TT",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-80362",
-   "title": "через російську атаку загинули 2 людини, попередньо ще 5 - постраждали",
-   "body": "Внаслідок удару зруйнований одноповерховий приватний житловий будинок, виникла пожежа. Рятувальники оперативно ліквідували загоряння. За іншою адресою зафіксоване влучання на відкритій місцевості, внаслідок чого пошкоджені 11 легкових автомобілів. На місці…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/80362",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-13T07:46:11Z",
-   "expires_at": "2026-11-13T19:46:11Z",
-   "auto": true,
-   "en_mt": {
-    "title": "through the Russian attack 2 people were killed, preliminarily another 5 were injured",
-    "body": "As a result of the strike, a one-story private residential house was destroyed, a fire broke out. Rescuers quickly eliminated the fire. At another address, a hit was recorded in an open area, as a result of which 11 passenger cars were damaged. At the scene…",
     "by": "m2m100"
    }
   },
