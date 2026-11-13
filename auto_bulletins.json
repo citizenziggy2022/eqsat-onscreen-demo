@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-13T11:43:59Z",
+ "generated_at": "2026-11-13T12:07:20Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 4 / dropped 2, showing 2"
+   "status": "ok: kept 4 / dropped 1, showing 2"
   },
   {
    "name": "Херсонська ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-dsns_telegram-80409",
+   "title": "Рівненщина зустріла черговий евакуаційний потяг зі східних регіонів України",
+   "body": "Ще 16 людей, які через війну залишили свої домівки в пошуках безпечного прихистку, зустріли на залізничному вокзалі рятувальники, представники органів влади, волонтери, поліцейські та психологи. Усі евакуйовані отримали необхідну підтримку: допомогу з…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/80409",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-13T12:06:14Z",
+   "expires_at": "2026-11-14T00:06:14Z",
+   "auto": true,
+   "en_mt": {
+    "title": "Rivnenshchyna met another evacuation train from eastern regions of Ukraine",
+    "body": "Another 16 people who due to the war left their homes in search of safe shelter were met at the railway station by rescuers, representatives of the authorities, volunteers, police and psychologists. All evacuees received the necessary support: assistance with…",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-zoda_gov_ua-69010",
    "title": "Кількість поранених збільшилась до 9 людей.",
@@ -127,24 +145,6 @@
    "en_mt": {
     "title": "Thanks to the Czech humanitarian organisation \"People in Need\" and financial support from international donors…",
     "body": "Sets are formed taking into account the needs of people in the cold season. They will help preserve heat, provide the opportunity to cook hot food and lighting in conditions of regular emergency shutdowns of electricity and gas supply due to attacks by Russian…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-80382",
-   "title": "На Харківщині рятувальники ДСНС врятували подружжя з-під завалів зруйнованого будинку!",
-   "body": "Сьогодні вночі російські війська завдали удару по житловому сектору селища Малинівка Чугуївського району. Унаслідок влучання зруйновано житловий будинок, під завалами якого опинилися чоловік та жінка. Рятувальники ДСНС спільно з вогнеборцями добровільної…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/80382",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-13T09:15:58Z",
-   "expires_at": "2026-11-13T21:15:58Z",
-   "auto": true,
-   "en_mt": {
-    "title": "In Kharkiv region rescuers of DSNS saved a couple from under the rubble of a destroyed house!",
-    "body": "Tonight Russian troops struck the residential sector of the village of Malyshivka in Chuhuiv district. As a result of the hit, a residential building was destroyed, under the rubble of which a man and a woman were trapped. Rescuers of the State Emergency Service together with firefighters of the voluntary…",
     "by": "m2m100"
    }
   },
