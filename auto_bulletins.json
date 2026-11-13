@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-13T06:27:44Z",
+ "generated_at": "2026-11-13T06:40:02Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -18,7 +18,7 @@
    "name": "Запорізька ОВА",
    "url": "https://t.me/s/zoda_gov_ua",
    "verified": "linked from zoda.gov.ua",
-   "status": "ok: kept 1 / dropped 0, showing 1"
+   "status": "ok: kept 2 / dropped 0, showing 2"
   },
   {
    "name": "Донецька ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-zoda_gov_ua-68977",
+   "title": "росіяни атакували приватний сектор Запоріжжя.",
+   "body": "На жаль, загинув 17-річний хлопець. Щирі співчуття рідним і близьким. Із-під завалів рятувальники дістали чотирьох людей: 35-річну жінку, 10-річного хлопчика, 34-річного чоловіка та 58-річну жінку. Усіх постраждалих…",
+   "source": "Запорізька ОВА",
+   "source_url": "https://t.me/zoda_gov_ua/68977",
+   "region": "Запоріжжя",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-13T06:38:06Z",
+   "expires_at": "2026-11-13T18:38:06Z",
+   "auto": true,
+   "en_mt": {
+    "title": "Russians attacked the private sector of Zaporizhzhia.",
+    "body": "Unfortunately, a 17-year-old boy died. Sincere condolences to the relatives and loved ones. From under the rubble, rescuers pulled out four people: a 35-year-old woman, a 10-year-old boy, a 34-year-old man and a 58-year-old woman. All the victims…",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-VadymFilashkin-19228",
    "title": "Росія вбиває цивільних!",
