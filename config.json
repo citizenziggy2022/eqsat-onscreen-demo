@@ -47,14 +47,6 @@
     "url": "https://icecast.armyfm.com.ua:8443/ArmyFM"
    },
    {
-    "enabled": false,
-    "id": "svoboda-uk",
-    "kind": "stream",
-    "uk": "Радіо Свобода",
-    "en": "Radio Svoboda (Ukrainian)",
-    "url": "https://rferl-ingest.akamaized.net/hls/live/2121754/axia07/master.m3u8"
-   },
-   {
     "enabled": true,
     "id": "eqtv-uk",
     "kind": "eqtv",
@@ -65,6 +57,14 @@
      "live-eqtv-mw-4.prmt-eu.com"
     ],
     "track": "eQtv-eu__audio_ukr_mid.m3u8"
+   },
+   {
+    "enabled": false,
+    "id": "svoboda-uk",
+    "kind": "stream",
+    "uk": "Радіо Свобода",
+    "en": "Radio Svoboda (Ukrainian)",
+    "url": "https://rferl-ingest.akamaized.net/hls/live/2121754/axia07/master.m3u8"
    },
    {
     "enabled": false,
@@ -816,7 +816,7 @@
   ]
  },
  "saved_at": {
-  "stations": "2026-11-14T16:18:23.402Z",
+  "stations": "2026-11-14T16:18:28.355Z",
   "theme": "2026-11-12T13:29:52.060Z",
   "sponsor": "2026-11-11T10:27:05.213Z",
   "news_sources": "2026-11-09T17:18:39.229Z",
