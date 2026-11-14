@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-14T10:26:12Z",
+ "generated_at": "2026-11-14T10:29:12Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 1 / dropped 1, showing 1"
+   "status": "ok: kept 2 / dropped 1, showing 2"
   },
   {
    "name": "Херсонська ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-dsns_telegram-80449",
+   "title": ": російські БпЛА зруйнували два житлові будинки, рятувальники ліквідували пожежу",
+   "body": "Уночі російські війська атакували селище Малинівка Чугуївського району. Внаслідок ударів безпілотників виникла пожежа на площі 200 кв. м, зруйновано два житлові будинки, пошкоджено сусідні домоволодіння. Загиблих і постраждалих немає. До ліквідації пожежі…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/80449",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-14T10:28:05Z",
+   "expires_at": "2026-11-14T22:28:05Z",
+   "auto": true,
+   "en_mt": {
+    "title": ": Russian UAVs destroyed two residential buildings, rescuers extinguished the fire",
+    "body": "At night, Russian troops attacked the village of Malyshivka in Chuhuiv district. As a result of drone strikes, a fire broke out on an area of 200 sq. m, two residential buildings were destroyed, and neighboring households were damaged. There are no dead or injured. The fire is being extinguished…",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-zoda_gov_ua-69024",
    "title": "У Вознесенівському районі Запоріжжя внаслідок російського удару пошкоджені житловий будинок та вікна…",
