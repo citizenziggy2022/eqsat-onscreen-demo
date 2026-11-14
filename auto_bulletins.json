@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-14T01:25:30Z",
+ "generated_at": "2026-11-14T02:02:32Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 2 / dropped 3, showing 2"
+   "status": "ok: kept 1 / dropped 3, showing 1"
   },
   {
    "name": "Херсонська ОВА",
@@ -109,24 +109,6 @@
    "en_mt": {
     "title": "as a result of the Russian attack a fire broke out at the gas station",
     "body": "Rescuers promptly arrived at the scene and extinguished the fire. Fortunately, there were no casualties.",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-80429",
-   "title": "На Харківщині рятувальники ДСНС врятували подружжя з-під завалів зруйнованого будинку!",
-   "body": "Сьогодні вночі російські війська завдали удару по житловому сектору селища Малинівка Чугуївського району. Унаслідок влучання зруйновано житловий будинок, під завалами…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/80429",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-13T14:02:02Z",
-   "expires_at": "2026-11-14T02:02:02Z",
-   "auto": true,
-   "en_mt": {
-    "title": "In Kharkiv region rescuers of DSNS saved a couple from under the rubble of a destroyed house!",
-    "body": "Tonight Russian troops struck the residential sector of the village of Malyshivka Chuhuiv district. As a result of the hit, a residential building was destroyed, under the rubble…",
     "by": "m2m100"
    }
   }
