@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-14T08:23:43+00:00",
+ "generated": "2026-11-14T09:24:53+00:00",
  "sources": {
   "censoredplanet": {
    "name": "Censored Planet (University of Michigan)",
@@ -10,7 +10,7 @@
     "endDate": "2026-11-14"
    },
    "domains_tested": 869,
-   "query_errors": 1,
+   "query_errors": 2,
    "baseline_unexpected_share": {
     "RU": 0.006,
     "UA": 0.0,
@@ -26,7 +26,7 @@
     "UA": {
      "confirmed": 0,
      "likely": 0,
-     "measured": 838
+     "measured": 828
     },
     "BY": {
      "confirmed": 0,
@@ -49,13 +49,13 @@
    "total_domains": 1800364,
    "well_known_listed": 56,
    "note": "Official RKN blocking registry. Rows are registry entries (incl. wildcard and mirror domains), not distinct sites.",
-   "seconds": 20.7
+   "seconds": 20.0
   }
  },
  "credit": "Censored Planet (U. Michigan) · RKN registry via antifilter.download",
  "counts": {
   "items": 150,
-  "new_vs_ooni": 96,
+  "new_vs_ooni": 95,
   "by_source_country": {
    "rkn/RU": 45,
    "censoredplanet/RU": 79,
@@ -194,7 +194,7 @@
    "status": "listed",
    "last_seen": "2026-11-13",
    "category": "news",
-   "new_vs_ooni": true,
+   "new_vs_ooni": false,
    "well_known": true
   },
   {
@@ -244,7 +244,7 @@
    "status": "listed",
    "last_seen": "2026-11-13",
    "category": "news",
-   "new_vs_ooni": false,
+   "new_vs_ooni": true,
    "well_known": true
   },
   {
@@ -1195,18 +1195,6 @@
    "well_known": false
   },
   {
-   "domain": "kavkazr.com",
-   "country": "RU",
-   "source": "censoredplanet",
-   "status": "likely",
-   "last_seen": "2026-11-11",
-   "rate": 0.84,
-   "measurements": 384,
-   "category": "news",
-   "new_vs_ooni": true,
-   "well_known": false
-  },
-  {
    "domain": "messenger.com",
    "country": "RU",
    "source": "censoredplanet",
@@ -1647,6 +1635,18 @@
    "rate": 0.84,
    "measurements": 386,
    "category": "grp",
+   "new_vs_ooni": false,
+   "well_known": false
+  },
+  {
+   "domain": "kavkazr.com",
+   "country": "RU",
+   "source": "censoredplanet",
+   "status": "likely",
+   "last_seen": "2026-11-11",
+   "rate": 0.84,
+   "measurements": 384,
+   "category": "news",
    "new_vs_ooni": false,
    "well_known": false
   },
