@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-14T06:28:39Z",
+ "fetched_at": "2026-11-14T06:31:23Z",
  "source": {
   "id": "saveecobot",
   "name": "SaveEcoBot",
@@ -109,16 +109,12 @@
    "sub_uk": "МАГАТЕ, щодоби",
    "sub_en": "IAEA, daily",
    "daily": true,
-   "nsv_h": 120,
-   "time": "2026-11-13T06:00:00Z",
-   "oldest": "2026-11-13T06:00:00Z",
-   "n": 1,
-   "platforms": [
-    "АТ «НАЕК «Енергоатом»"
-   ],
-   "notes": [
-    "Дані із системи IRMIS від МАГАТЕ, які публікує «Енергоатом» щодобово в себе на сайті."
-   ],
+   "nsv_h": null,
+   "time": null,
+   "oldest": null,
+   "n": 0,
+   "platforms": [],
+   "notes": [],
    "readings": [
     {
      "sensor_id": 23481,
@@ -126,7 +122,7 @@
      "city": "Енергодар",
      "nsv_h": 120.0,
      "time": "2026-11-13T06:00:00Z",
-     "fresh": true,
+     "fresh": false,
      "manual": true,
      "platform": "АТ «НАЕК «Енергоатом»",
      "notes": "Дані із системи IRMIS від МАГАТЕ, які публікує «Енергоатом» щодобово в себе на сайті."
@@ -138,7 +134,7 @@
    "uk": "Чорнобиль",
    "en": "Chornobyl town",
    "nsv_h": 170,
-   "time": "2026-11-14T06:27:37Z",
+   "time": "2026-11-14T06:30:37Z",
    "oldest": "2026-11-14T04:00:00Z",
    "n": 4,
    "platforms": [
@@ -178,8 +174,8 @@
      "sensor_id": 22415,
      "station": "вулиця Богдана Хмельницького",
      "city": "Чорнобиль",
-     "nsv_h": 184.0,
-     "time": "2026-11-14T06:27:37Z",
+     "nsv_h": 190.0,
+     "time": "2026-11-14T06:30:37Z",
      "fresh": true,
      "manual": false,
      "platform": "SaveDnipro & uRADMonitor",
@@ -381,7 +377,7 @@
      "city": "Южноукраїнськ",
      "nsv_h": 100.0,
      "time": "2026-11-13T06:00:00Z",
-     "fresh": true,
+     "fresh": false,
      "manual": true,
      "platform": "АТ «НАЕК «Енергоатом»",
      "notes": "Це щодобові дані. «Енергоатом» має онлайн моніторинг, але не відкриває його."
@@ -433,7 +429,7 @@
      "city": "Вараш",
      "nsv_h": 100.0,
      "time": "2026-11-13T06:00:00Z",
-     "fresh": true,
+     "fresh": false,
      "manual": true,
      "platform": "АТ «НАЕК «Енергоатом»",
      "notes": "Це щодобові дані. «Енергоатом» має онлайн моніторинг, але не відкриває його."
@@ -447,8 +443,8 @@
    "sub_uk": "Хмельницька АЕС",
    "sub_en": "Khmelnytskyi NPP",
    "nsv_h": 120,
-   "time": "2026-11-14T06:27:16Z",
-   "oldest": "2026-11-14T06:27:16Z",
+   "time": "2026-11-14T06:30:16Z",
+   "oldest": "2026-11-14T06:30:16Z",
    "n": 1,
    "platforms": [
     "SaveDnipro & uRADMonitor"
@@ -462,7 +458,7 @@
      "station": "проспект Незалежності",
      "city": "Нетішин",
      "nsv_h": 120.0,
-     "time": "2026-11-14T06:27:16Z",
+     "time": "2026-11-14T06:30:16Z",
      "fresh": true,
      "manual": false,
      "platform": "SaveDnipro & uRADMonitor",
@@ -485,7 +481,7 @@
      "city": "Нетішин",
      "nsv_h": 120.0,
      "time": "2026-11-13T06:00:00Z",
-     "fresh": true,
+     "fresh": false,
      "manual": true,
      "platform": "АТ «НАЕК «Енергоатом»",
      "notes": "Це щодобові дані. «Енергоатом» має онлайн моніторинг, але не відкриває його."
