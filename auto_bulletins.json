@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-14T14:01:41Z",
+ "generated_at": "2026-11-14T14:11:48Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 5 / dropped 1, showing 2"
+   "status": "ok: kept 6 / dropped 0, showing 2"
   },
   {
    "name": "Херсонська ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-dsns_telegram-80466",
+   "title": "Маленьке врятоване життя серед великих руйнувань",
+   "body": "У Глухівській громаді, що на Сумщині, ліквідовуючи наслідки ворожого удару по житловому сектору, рятувальники почули скавчання собаки. Чотирилапий був на прив’язі, частково засипаний уламками та не міг самостійно вибратися. Надзвичайники обережно звільнили…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/80466",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-14T14:10:38Z",
+   "expires_at": "2026-11-15T02:10:38Z",
+   "auto": true,
+   "en_mt": {
+    "title": "A small saved life amidst great destructions",
+    "body": "In the Hlukhiv community, in the Sumy region, while eliminating the consequences of the enemy strike on the residential sector, rescuers heard the barking of a dog. The four-legged animal was on a leash, partially buried under debris and could not get out on its own. The rescuers carefully freed…",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-zoda_gov_ua-69036",
    "title": "росіяни атакували селище Кушугум",
@@ -91,24 +109,6 @@
    "en_mt": {
     "title": ": as a result of Russian strikes in Dergachi, seven people were injured, including four children",
     "body": "This morning Russian troops attacked civilian facilities in three populated areas of Kharkiv region. In Derhachi as a result of shelling of the residential sector seven people were injured, among them four children. Private households and cars were damaged. Also…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-80458",
-   "title": "Чадний газ не має кольору та запаху, але є смертельно небезпечним.",
-   "body": "Він може утворюватися під час роботи генераторів, печей чи несправних газових приладів. Як уберегти себе та близьких від отруєння і чому датчик чадного газу має бути в кожній оселі, де є піч, газовий котел чи колонка? Дивіться у відео Матеріали підготували…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/80458",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-14T11:56:55Z",
-   "expires_at": "2026-11-14T23:56:55Z",
-   "auto": true,
-   "en_mt": {
-    "title": "Carbon monoxide has no colour and smell, but is deadly dangerous.",
-    "body": "It can form during the operation of generators, furnaces or faulty gas appliances. How to protect yourself and your loved ones from poisoning and why a carbon monoxide sensor should be in every dwelling where there is a furnace, gas boiler or column? Watch the video Materials were prepared…",
     "by": "m2m100"
    }
   }
