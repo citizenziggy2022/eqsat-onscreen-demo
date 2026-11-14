@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-13T23:52:28Z",
+ "fetched_at": "2026-11-14T00:03:29Z",
  "every_s": 600,
  "note": "Conflict photo candidates, NOT on air. Fetched by scripts/fetch_conflict_photos.py in the live-runner every 10 min. An item goes on air only when the Editor's Approve moves it to photos-conflict.json.",
  "check": "none in the runner (no vision model): nothing is approved automatically",
@@ -19,7 +19,7 @@
    "active": false,
    "id": "cf_dfe23c7725af",
    "kind": "conflict",
-   "date_added": "2026-11-13T23:52:29Z",
+   "date_added": "2026-11-14T00:03:30Z",
    "taken_at": "2026-11-12",
    "source": "Wikimedia Commons (dsns.gov.ua)",
    "source_url": "https://commons.wikimedia.org/wiki/File:Destructions_in_Kovel_after_Russian_attack,_2026-11-12_(01).webp",
@@ -46,7 +46,7 @@
    "active": false,
    "id": "cf_40e750f700f4",
    "kind": "conflict",
-   "date_added": "2026-11-13T23:52:29Z",
+   "date_added": "2026-11-14T00:03:30Z",
    "taken_at": "2026-11-12",
    "source": "Wikimedia Commons (dsns.gov.ua)",
    "source_url": "https://commons.wikimedia.org/wiki/File:Destructions_in_Kyiv_after_Russian_attack,_2026-11-12_(11).webp",
@@ -73,7 +73,7 @@
    "active": false,
    "id": "cf_1d344d6e284a",
    "kind": "conflict",
-   "date_added": "2026-11-13T23:52:29Z",
+   "date_added": "2026-11-14T00:03:30Z",
    "taken_at": "2026-11-12",
    "source": "Wikimedia Commons (dsns.gov.ua)",
    "source_url": "https://commons.wikimedia.org/wiki/File:Destructions_in_Kyiv_after_Russian_attack,_2026-11-12_(02).jpg",
@@ -100,7 +100,7 @@
    "active": false,
    "id": "cf_b80100134634",
    "kind": "conflict",
-   "date_added": "2026-11-13T23:52:29Z",
+   "date_added": "2026-11-14T00:03:30Z",
    "taken_at": "2026-11-12",
    "source": "Wikimedia Commons (dsns.gov.ua)",
    "source_url": "https://commons.wikimedia.org/wiki/File:Destructions_in_Kyiv_after_Russian_attack,_2026-11-12_(01).jpg",
@@ -115,6 +115,24 @@
   }
  ],
  "fetch_rejects": [
+  {
+   "source": "commons",
+   "title": "File:Destructions in Zaporizhzhia after Russian attack, 2026-10-10 (11).webp",
+   "reason": "taken 2026-10-10, older than 7 days",
+   "stage": "fetch"
+  },
+  {
+   "source": "commons",
+   "title": "File:Hospital in Kramatorsk after Russian attack, 2026-10-06 (01).webp",
+   "reason": "taken 2026-10-06, older than 7 days",
+   "stage": "fetch"
+  },
+  {
+   "source": "commons",
+   "title": "File:Destructions in Kramatorsk after Russian attack, 2026-10-08 (17).webp",
+   "reason": "taken 2026-09-08, older than 7 days",
+   "stage": "fetch"
+  },
   {
    "source": "commons",
    "title": "File:Destructions in Kramatorsk after Russian attack, 2026-10-08 (18).webp",
@@ -422,12 +440,6 @@
    "stage": "fetch"
   },
   {
-   "source": "commons",
-   "title": "File:Destructions in Kyiv after Russian attack, 2026-11-07 (05).jpg",
-   "reason": "too small (960 px wide < 1280)",
-   "stage": "fetch"
-  },
-  {
    "source": "undp",
    "title": "https://www.flickr.com/photos/undpukraine/55644943503/",
    "reason": "off-topic (no war/recovery words in caption or tags): Tetiana Lomakina, Advisor-Commissioner of the President of…",
@@ -573,12 +585,6 @@
   },
   {
    "source": "Wikimedia Commons (dsns.gov.ua)",
-   "title": "File:Sports complex in Kamianske after Russian attack, 2026-11-06 (01).webp",
-   "reason": "duplicate image URL",
-   "stage": "fetch"
-  },
-  {
-   "source": "Wikimedia Commons (dsns.gov.ua)",
    "title": "File:Destructions in Kyiv after Russian attack, 2026-11-07 (51).webp",
    "reason": "duplicate image URL",
    "stage": "fetch"
@@ -588,13 +594,7 @@
    "title": "File:Destructions in Kyiv after Russian attack, 2026-11-07 (01).webp",
    "reason": "duplicate image URL",
    "stage": "fetch"
-  },
-  {
-   "source": "Wikimedia Commons",
-   "title": "File:Destructions in Kyiv after Russian attack, 2026-11-07 (21).jpg",
-   "reason": "duplicate image URL",
-   "stage": "fetch"
   }
  ],
- "took_s": 14.8
+ "took_s": 5.1
 }
