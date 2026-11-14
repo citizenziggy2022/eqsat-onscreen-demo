@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-14T13:08:30+00:00",
+ "generated": "2026-11-14T14:09:33+00:00",
  "sources": {
   "censoredplanet": {
    "name": "Censored Planet (University of Michigan)",
@@ -20,8 +20,8 @@
    "totals": {
     "RU": {
      "confirmed": 0,
-     "likely": 78,
-     "measured": 829
+     "likely": 79,
+     "measured": 828
     },
     "UA": {
      "confirmed": 0,
@@ -40,7 +40,7 @@
     }
    },
    "rule": "confirmed = a known block page was returned; likely = >=20 measurements, >=50% unexpected and >=30 points above the country median",
-   "seconds": 20.0
+   "seconds": 19.6
   },
   "rkn": {
    "name": "Roskomnadzor registry (via antifilter.download)",
@@ -54,11 +54,11 @@
  },
  "credit": "Censored Planet (U. Michigan) · RKN registry via antifilter.download",
  "counts": {
-  "items": 149,
-  "new_vs_ooni": 94,
+  "items": 150,
+  "new_vs_ooni": 95,
   "by_source_country": {
    "rkn/RU": 45,
-   "censoredplanet/RU": 78,
+   "censoredplanet/RU": 79,
    "censoredplanet/BY": 26
   }
  },
@@ -939,6 +939,18 @@
    "rate": 0.85,
    "measurements": 393,
    "category": "lgbt",
+   "new_vs_ooni": true,
+   "well_known": false
+  },
+  {
+   "domain": "lemonde.fr",
+   "country": "RU",
+   "source": "censoredplanet",
+   "status": "likely",
+   "last_seen": "2026-11-11",
+   "rate": 0.85,
+   "measurements": 389,
+   "category": "news",
    "new_vs_ooni": true,
    "well_known": false
   },
