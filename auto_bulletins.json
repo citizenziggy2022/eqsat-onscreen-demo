@@ -1,18 +1,18 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-14T16:40:59Z",
+ "generated_at": "2026-11-14T16:43:59Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 8 / dropped 1, showing 2"
+   "status": "ok: kept 9 / dropped 1, showing 2"
   },
   {
    "name": "Херсонська ОВА",
    "url": "https://t.me/s/khersonskaODA",
    "verified": "linked from khoda.gov.ua; channel links back to khoda.gov.ua",
-   "status": "ok: kept 0 / dropped 23, showing 0"
+   "status": "ok: kept 0 / dropped 19, showing 0"
   },
   {
    "name": "Запорізька ОВА",
@@ -41,6 +41,24 @@
  ],
  "bulletins": [
   {
+   "id": "auto-dsns_telegram-80481",
+   "title": "Два брати, одна професія і незламний спільний шлях: історія Віталія та Владислава Радченків, сержантів…",
+   "body": "Вони зростали разом, ділили дитячі радощі й навіть справу життя обрали одну на двох. Вже 10 років Віталій та Владислав служать у ДСНС України – обидва працюють хіміками-рятувальниками. Чорнобиль, лісові пожежі під Ізюмом, ліквідація наслідків ворожих…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/80481",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-14T16:42:46Z",
+   "expires_at": "2026-11-15T04:42:46Z",
+   "auto": true,
+   "en_mt": {
+    "title": "Two brothers, one profession and an unbreakable common path: the story of Vitaliy and Vladyslav Radchenko, sergeants…",
+    "body": "They grew up together, shared childhood joys and even chose one life's work for the two of them. For 10 years already, Vitaliy and Vladyslav have been serving in the SES of Ukraine – both work as chemist-rescuers. Chornobyl, forest fires near Izium, elimination of the consequences of enemy…",
+    "by": "m2m100"
+   }
+  },
+  {
    "id": "auto-dsns_telegram-80473",
    "title": ": рятувальники ліквідовують наслідки ворожого обстрілу",
    "body": "Ворог продовжує безперервно атакувати Київщину. Унаслідок ворожого обстрілу у Вишгородському районі виникла пожежа у трьох складських приміщеннях. На цей час пожежу локалізовано. Рятувальники проводять роботи з розбирання завалів та проливання конструкцій…",
@@ -55,24 +73,6 @@
    "en_mt": {
     "title": ": rescuers eliminate the consequences of enemy shelling",
     "body": "The enemy continues to constantly attack Kyivshchyna. As a result of the enemy shelling in the Vyshhorod district, a fire broke out in three warehouse premises. At this time, the fire has been localized. Rescuers are carrying out work on dismantling the rubble and pouring constructions…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-80468",
-   "title": ": внаслідок ворожих обстрілів травмовано 22 людини, серед них три дитини",
-   "body": "14 листопада, російські війська атакували обласний центр. За попередніми даними, двадцять дві людини отримали поранення, серед яких 6-місячне немовля, 2-річна дівчинка та 12-річний хлопчик. Їм надається уся необхідна медична допомога. Рятувальники провели…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/80468",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-14T14:40:48Z",
-   "expires_at": "2026-11-15T02:40:48Z",
-   "auto": true,
-   "en_mt": {
-    "title": ": as a result of enemy shelling 22 people were injured, among them three children",
-    "body": "On 14 November, Russian troops attacked the regional center. According to preliminary data, twenty-two people were injured, including a 6-month-old baby, a 2-year-old girl and a 12-year-old boy. They are being provided with all necessary medical care. Rescuers conducted…",
     "by": "m2m100"
    }
   },
