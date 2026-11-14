@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-14T13:36:42Z",
+ "generated_at": "2026-11-14T13:55:41Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -18,7 +18,7 @@
    "name": "Запорізька ОВА",
    "url": "https://t.me/s/zoda_gov_ua",
    "verified": "linked from zoda.gov.ua",
-   "status": "ok: kept 5 / dropped 4, showing 2"
+   "status": "ok: kept 6 / dropped 4, showing 2"
   },
   {
    "name": "Донецька ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-zoda_gov_ua-69036",
+   "title": "росіяни атакували селище Кушугум",
+   "body": "Ворог поцілив FPV-дроном по чоловіку, який їхав на скутері центральною дорогою селища. На жаль, 45-річний чоловік загинув. Щирі співчуття рідним і близьким загиблого.",
+   "source": "Запорізька ОВА",
+   "source_url": "https://t.me/zoda_gov_ua/69036",
+   "region": "Запоріжжя",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-14T13:54:39Z",
+   "expires_at": "2026-11-15T01:54:39Z",
+   "auto": true,
+   "en_mt": {
+    "title": "Russians attacked the village of Kushuhum",
+    "body": "The enemy hit a man who was riding a scooter on the central road of the village with an FPV drone. Unfortunately, the 45-year-old man died. Sincere condolences to the relatives and loved ones of the deceased.",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-zoda_gov_ua-69035",
    "title": "Кількість постраждалих унаслідок ворожої атаки на Вознесенівський район збільшилася до 15 Серед поранених…",
@@ -73,24 +91,6 @@
    "en_mt": {
     "title": ": as a result of Russian strikes in Dergachi, seven people were injured, including four children",
     "body": "This morning Russian troops attacked civilian facilities in three populated areas of Kharkiv region. In Derhachi as a result of shelling of the residential sector seven people were injured, among them four children. Private households and cars were damaged. Also…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-zoda_gov_ua-69034",
-   "title": "Кількість постраждалих унаслідок ворожої атаки на Вознесенівський район збільшилася до 15",
-   "body": "Серед поранених – двоє дітей, вісім жінок та п’ятеро чоловіків. Усі вони отримують необхідну медичну допомогу.",
-   "source": "Запорізька ОВА",
-   "source_url": "https://t.me/zoda_gov_ua/69034",
-   "region": "Запоріжжя",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-14T12:12:49Z",
-   "expires_at": "2026-11-15T00:12:49Z",
-   "auto": true,
-   "en_mt": {
-    "title": "The number of people injured as a result of the enemy attack on the Voyezdnyvskyi district has increased to 15",
-    "body": "Among the injured are two children, eight women and five men. All of them are receiving necessary medical assistance.",
     "by": "m2m100"
    }
   },
