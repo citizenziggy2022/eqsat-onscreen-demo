@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-14T13:35:41Z",
+ "generated_at": "2026-11-14T13:36:42Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -18,7 +18,7 @@
    "name": "Запорізька ОВА",
    "url": "https://t.me/s/zoda_gov_ua",
    "verified": "linked from zoda.gov.ua",
-   "status": "ok: kept 4 / dropped 4, showing 2"
+   "status": "ok: kept 5 / dropped 4, showing 2"
   },
   {
    "name": "Донецька ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-zoda_gov_ua-69035",
+   "title": "Кількість постраждалих унаслідок ворожої атаки на Вознесенівський район збільшилася до 15 Серед поранених…",
+   "body": "Усі вони отримують необхідну медичну допомогу.",
+   "source": "Запорізька ОВА",
+   "source_url": "https://t.me/zoda_gov_ua/69035",
+   "region": "Запоріжжя",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-14T13:36:20Z",
+   "expires_at": "2026-11-15T01:36:20Z",
+   "auto": true,
+   "en_mt": {
+    "title": "The number of people injured as a result of the enemy attack on the Voyezdnyvskyi district has increased to 15 Among the wounded…",
+    "body": "All of them are receiving the necessary medical assistance.",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-dsns_telegram-80459",
    "title": ": унаслідок російських ударів у Дергачах постраждали семеро людей, серед них — четверо дітей",
@@ -91,24 +109,6 @@
    "en_mt": {
     "title": "Carbon monoxide has no colour and smell, but is deadly dangerous.",
     "body": "It can form during the operation of generators, furnaces or faulty gas appliances. How to protect yourself and your loved ones from poisoning and why a carbon monoxide sensor should be in every dwelling where there is a furnace, gas boiler or column? Watch the video Materials were prepared…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-zoda_gov_ua-69024",
-   "title": "У Вознесенівському районі Запоріжжя внаслідок російського удару пошкоджені житловий будинок та вікна…",
-   "body": "Поранено четверо людей: троє жінок віком 74, 36 та 88 років і 86-річний чоловік. У травмованих уламкові поранення. Чоловіка госпіталізували, двом жінкам надають допомогу на місці, ще одна від госпіталізації відмовилася.",
-   "source": "Запорізька ОВА",
-   "source_url": "https://t.me/zoda_gov_ua/69024",
-   "region": "Запоріжжя",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-14T09:41:50Z",
-   "expires_at": "2026-11-14T21:41:50Z",
-   "auto": true,
-   "en_mt": {
-    "title": "In the Voynezensky district of Zaporizhzhia, as a result of the Russian strike, a residential building and windows were damaged…",
-    "body": "Four people were injured: three women aged 74, 36 and 88 years and an 86-year-old man. The injured have shrapnel wounds. The man was hospitalized, two women are being given assistance on the spot, and another one refused hospitalization.",
     "by": "m2m100"
    }
   }
