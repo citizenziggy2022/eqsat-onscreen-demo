@@ -55,14 +55,6 @@
     "url": "https://rferl-ingest.akamaized.net/hls/live/2121754/axia07/master.m3u8"
    },
    {
-    "enabled": false,
-    "id": "svoboda-ru",
-    "kind": "stream",
-    "uk": "Радіо Свобода · російською",
-    "en": "Radio Svoboda (Russian, RFE/RL)",
-    "url": "https://rferl-ingest.akamaized.net/hls/live/2121658/axia04abr/playlist.m3u8"
-   },
-   {
     "enabled": true,
     "id": "eqtv-uk",
     "kind": "eqtv",
@@ -73,6 +65,14 @@
      "live-eqtv-mw-4.prmt-eu.com"
     ],
     "track": "eQtv-eu__audio_ukr_mid.m3u8"
+   },
+   {
+    "enabled": false,
+    "id": "svoboda-ru",
+    "kind": "stream",
+    "uk": "Радіо Свобода · російською",
+    "en": "Radio Svoboda (Russian, RFE/RL)",
+    "url": "https://rferl-ingest.akamaized.net/hls/live/2121658/axia04abr/playlist.m3u8"
    },
    {
     "enabled": false,
@@ -816,7 +816,7 @@
   ]
  },
  "saved_at": {
-  "stations": "2026-11-14T16:18:20.921Z",
+  "stations": "2026-11-14T16:18:23.402Z",
   "theme": "2026-11-12T13:29:52.060Z",
   "sponsor": "2026-11-11T10:27:05.213Z",
   "news_sources": "2026-11-09T17:18:39.229Z",
