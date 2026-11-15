@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T05:43:24Z",
+  "updated": "2026-11-15T21:46:23Z",
   "note": "Extra emergency cards (Jason approved Nov 8 2026 4:37 PM). Shown in the main ticker's emergency rotation, after the cards in emergency.json. Edit freely: enabled=false hides a card; lines[] are number + uk/en label (+ optional value). Every item carries source_url + source_date. emoji: shown before the title; the TV font has no 📻/📡 glyphs, so radio uses 🆘 and the dish card a blank (the ticker's own satellite icon marks it).",
   "cards": [
     {
@@ -121,7 +121,7 @@
           "source_date": "HFCC B26 (2026-10-25 → 2027-03-28), file updated 2026-11-05",
           "utc": "16:00-16:30, 18:00-18:30",
           "cross_check": "EiBi sked-b26.csv",
-          "verified_at": "2026-11-14"
+          "verified_at": "2026-11-15"
         },
         {
           "uk": "Час київський · ukr.radio, HFCC · 08.11.2026",
@@ -295,12 +295,6 @@
       "source_date": "2026-11-08"
     }
   ],
-  "check_failed": [
-    {
-      "number": "5955 kHz КХ/SW",
-      "source_url": "http://www.hfcc.org/data/b26/b26allx2.zip",
-      "why": "number not found on page"
-    }
-  ],
-  "checked_at": "2026-11-15T01:45:34Z"
+  "check_failed": [],
+  "checked_at": "2026-11-15T21:46:23Z"
 }
