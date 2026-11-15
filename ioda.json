@@ -1,9 +1,11 @@
 {
- "fetched_at": "2026-11-15T23:34:03Z",
+ "fetched_at": "2026-11-15T23:39:04Z",
  "updated_at": "2026-11-15T23:20:00Z",
  "source": "IODA (Internet Outage Detection and Analysis), Georgia Tech, https://ioda.inetintel.cc.gatech.edu",
  "note": "Internet signal per oblast. score 0-100 vs the region's own 7-day median (BGP 40%, ping /24 60%); level critical while IODA's outage alert for the region is critical. The cause is unknown (power, damage or shutdown look the same).",
- "critical": [],
+ "critical": [
+  "kherson"
+ ],
  "regions": {
   "crimea": {
    "score": 100,
@@ -27,7 +29,7 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 1.0203,
+     "ratio": 1.0055,
      "score": 100
     }
    },
@@ -41,7 +43,7 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 1.0131,
+     "ratio": 1.0054,
      "score": 100
     }
    },
@@ -55,7 +57,7 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 1.0016,
+     "ratio": 1.0,
      "score": 100
     }
    },
@@ -83,7 +85,7 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 1.0004,
+     "ratio": 0.9989,
      "score": 100
     }
    },
@@ -97,7 +99,7 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 1.0033,
+     "ratio": 0.9988,
      "score": 100
     }
    },
@@ -111,7 +113,7 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 1.0149,
+     "ratio": 1.003,
      "score": 100
     }
    },
@@ -125,7 +127,7 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 1.0097,
+     "ratio": 0.9982,
      "score": 100
     }
    },
@@ -139,7 +141,7 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 1.0014,
+     "ratio": 0.9979,
      "score": 100
     }
    },
@@ -153,7 +155,7 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 1.0021,
+     "ratio": 1.0,
      "score": 100
     }
    },
@@ -167,7 +169,7 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 1.0115,
+     "ratio": 1.0027,
      "score": 100
     }
    },
@@ -203,7 +205,7 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 1.0012,
+     "ratio": 0.9996,
      "score": 100
     }
    },
@@ -217,7 +219,7 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 1.0017,
+     "ratio": 0.9995,
      "score": 100
     }
    },
@@ -231,7 +233,7 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 1.0252,
+     "ratio": 1.0096,
      "score": 100
     }
    },
@@ -245,7 +247,7 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 1.0036,
+     "ratio": 1.0,
      "score": 100
     }
    },
@@ -259,7 +261,7 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 1.0253,
+     "ratio": 1.0068,
      "score": 100
     }
    },
@@ -273,7 +275,7 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 0.9998,
+     "ratio": 0.9989,
      "score": 100
     }
    },
@@ -301,7 +303,7 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 1.0097,
+     "ratio": 1.0046,
      "score": 100
     }
    },
@@ -329,7 +331,7 @@
      "score": 97
     },
     "bgp": {
-     "ratio": 1.0047,
+     "ratio": 1.0009,
      "score": 100
     }
    },
@@ -365,7 +367,7 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 1.0085,
+     "ratio": 1.0026,
      "score": 100
     }
    },
@@ -379,16 +381,20 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 0.9965,
+     "ratio": 0.9948,
      "score": 100
     }
    },
-   "level": "normal",
+   "level": "critical",
+   "since": 1794783900,
+   "critical_sources": [
+    "bgp"
+   ],
    "alerts": {
     "bgp": {
-     "level": "normal",
-     "time": 1794783300,
-     "value": 576,
+     "level": "critical",
+     "time": 1794783900,
+     "value": 573,
      "history": 581
     }
    }
