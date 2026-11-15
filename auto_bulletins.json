@@ -1,18 +1,18 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-15T04:40:02Z",
+ "generated_at": "2026-11-15T04:43:02Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 1 / dropped 1, showing 1"
+   "status": "ok: kept 0 / dropped 1, showing 0"
   },
   {
    "name": "Херсонська ОВА",
    "url": "https://t.me/s/khersonskaODA",
    "verified": "linked from khoda.gov.ua; channel links back to khoda.gov.ua",
-   "status": "ok: kept 0 / dropped 14, showing 0"
+   "status": "ok: kept 0 / dropped 13, showing 0"
   },
   {
    "name": "Запорізька ОВА",
@@ -73,24 +73,6 @@
    "en_mt": {
     "title": "The enemy struck 8 blows to Zaporizhzhia",
     "body": "As a result of the attack, the glazing of a multi-apartment residential building and parked cars were damaged. A fire broke out at the site of the hit. Preliminarily, five people were injured, among them an 80-year-old woman. Other places of impact and the consequences of the enemy attack are being established.",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-80481",
-   "title": "Два брати, одна професія і незламний спільний шлях: історія Віталія та Владислава Радченків, сержантів…",
-   "body": "Вони зростали разом, ділили дитячі радощі й навіть справу життя обрали одну на двох. Вже 10 років Віталій та Владислав служать у ДСНС України – обидва працюють хіміками-рятувальниками. Чорнобиль, лісові пожежі під Ізюмом, ліквідація наслідків ворожих…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/80481",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-14T16:42:46Z",
-   "expires_at": "2026-11-15T04:42:46Z",
-   "auto": true,
-   "en_mt": {
-    "title": "Two brothers, one profession and an unbreakable common path: the story of Vitaliy and Vladyslav Radchenko, sergeants…",
-    "body": "They grew up together, shared childhood joys and even chose one life's work for the two of them. For 10 years already, Vitaliy and Vladyslav have been serving in the SES of Ukraine – both work as chemist-rescuers. Chornobyl, forest fires near Izium, elimination of the consequences of enemy…",
     "by": "m2m100"
    }
   }
