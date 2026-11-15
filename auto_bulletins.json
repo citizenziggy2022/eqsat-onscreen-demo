@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-15T19:56:07Z",
+ "generated_at": "2026-11-15T20:05:08Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -24,7 +24,7 @@
    "name": "Донецька ОВА",
    "url": "https://t.me/s/VadymFilashkin",
    "verified": "channel of the OVA head (dn.gov.ua/persons/vadim-filashkin), links to dn.gov.ua",
-   "status": "ok: kept 0 / dropped 4, showing 0"
+   "status": "ok: kept 1 / dropped 4, showing 1"
   },
   {
    "name": "Луганська ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-VadymFilashkin-19302",
+   "title": "Наші дороги. Якими ми ходили. Щодня. Роками",
+   "body": "Наші будинки. Де ми жили. Де посміхались. Де були щасливі. Де були ми. Де є зараз. Ми тут. У кожній цеглині, у кожній гілці рідного дерева. Наш прапор тут. Ми нікуди не пішли. У думках, мріях, спогадах, сподіваннях, зараз, у майбутньому. Це наша земля, це…",
+   "source": "Донецька ОВА",
+   "source_url": "https://t.me/VadymFilashkin/19302",
+   "region": "Донеччина",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-15T20:03:39Z",
+   "expires_at": "2026-11-16T08:03:39Z",
+   "auto": true,
+   "en_mt": {
+    "title": "Our roads. The ones we walked. Every day. For years",
+    "body": "Our homes. Where we lived. Where we smiled. Where we were happy. Where we were. Where we are now. We are here. In every brick, in every branch of our native tree. Our flag is here. We have not gone anywhere. In thoughts, dreams, memories, hopes, now, in the future. This is our land, this…",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-dsns_telegram-80560",
    "title": "Протягом дня офіцери-рятувальники громад надавали допомогу жителям Сумщини, які потерпають від перебоїв з…",
