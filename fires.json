@@ -3,30 +3,30 @@
   "source": "NASA FIRMS (VIIRS NOAA-20/21, MODIS)",
   "source_url": "https://firms.modaps.eosdis.nasa.gov/",
   "window_hours": 24,
-  "checked_at": "2026-11-15T05:14:09Z",
-  "updated": "2026-11-15T05:14:09Z",
-  "newest_detection": "2026-11-14T23:13:00Z",
-  "total": 16,
+  "checked_at": "2026-11-15T06:14:17Z",
+  "updated": "2026-11-15T06:14:17Z",
+  "newest_detection": "2026-11-15T00:54:00Z",
+  "total": 10,
   "counts": {
-    "odesa": 11,
-    "rivne": 1,
-    "ivano": 1,
-    "khmelnytskyi": 1,
+    "ivano": 3,
+    "rivne": 2,
+    "khmelnytskyi": 2,
     "kherson": 1,
-    "crimea": 1
+    "crimea": 1,
+    "odesa": 1
   },
   "satellites": [
     {
       "satellite": "VIIRS NOAA-20",
-      "rows": 783
+      "rows": 604
     },
     {
       "satellite": "VIIRS NOAA-21",
-      "rows": 768
+      "rows": 623
     },
     {
       "satellite": "MODIS",
-      "rows": 88
+      "rows": 29
     }
   ],
   "errors": []
