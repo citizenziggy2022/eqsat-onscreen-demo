@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-15T06:57:03Z",
+ "generated_at": "2026-11-15T07:00:04Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -12,7 +12,7 @@
    "name": "Херсонська ОВА",
    "url": "https://t.me/s/khersonskaODA",
    "verified": "linked from khoda.gov.ua; channel links back to khoda.gov.ua",
-   "status": "ok: kept 0 / dropped 12, showing 0"
+   "status": "ok: kept 0 / dropped 13, showing 0"
   },
   {
    "name": "Запорізька ОВА",
@@ -24,7 +24,7 @@
    "name": "Донецька ОВА",
    "url": "https://t.me/s/VadymFilashkin",
    "verified": "channel of the OVA head (dn.gov.ua/persons/vadim-filashkin), links to dn.gov.ua",
-   "status": "ok: kept 0 / dropped 2, showing 0"
+   "status": "ok: kept 1 / dropped 2, showing 1"
   },
   {
    "name": "Луганська ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-VadymFilashkin-19276",
+   "title": "Старший водій-сапер Максим Лизя загинув 12 грудня 2022 року під час розмінування у місті Костянтинівка.",
+   "body": "Йому назавжди 43. Максим народився 28 травня 1979 року у Слов'янську. Закінчив Слов’янський державний аграрний технікум, де опанував спеціальність «Механізація сільського господарства» та здобув кваліфікацію техніка-механіка. Усе його подальше життя було…",
+   "source": "Донецька ОВА",
+   "source_url": "https://t.me/VadymFilashkin/19276",
+   "region": "Донеччина",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-15T06:59:01Z",
+   "expires_at": "2026-11-15T18:59:01Z",
+   "auto": true,
+   "en_mt": {
+    "title": "Senior driver-sapper Maksym Liziya was killed on 12 December 2022 during demining in the city of Kostiantynivka.",
+    "body": "He is forever 43. Maksym was born on 28 May 1979 in Sloviansk. He graduated from Sloviansk State Agrarian Technicum, where he mastered the specialty \"Mechanization of Agriculture\" and received the qualification of a technician-mechanic. All his further life was…",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-dsns_telegram-80492",
    "title": ": внаслідок нічної атаки виникли пожежі на двох локаціях",
