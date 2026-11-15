@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-15T09:11:08Z",
+ "generated_at": "2026-11-15T09:39:08Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -30,7 +30,7 @@
    "name": "Луганська ОВА",
    "url": "https://t.me/s/luhanskaVTSA",
    "verified": "linked from lova.gov.ua (Luhansk OVA site)",
-   "status": "ok: kept 0 / dropped 3, showing 0"
+   "status": "ok: kept 0 / dropped 4, showing 0"
   },
   {
    "name": "Харківська ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-dsns_telegram-80514",
+   "title": "російський безпілотник завдав удару по приватному підприємству в Чугуєві на Харківщині.",
+   "body": "Внаслідок атаки загорілася будівля гаража. Рятувальники ліквідували пожежу. До робіт також залучався офіцер-рятувальник громади. На щастя, загиблих і постраждалих немає. Сайт • Fb • X • IG • YT • TT",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/80514",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-15T09:38:03Z",
+   "expires_at": "2026-11-15T21:38:03Z",
+   "auto": true,
+   "en_mt": {
+    "title": "a Russian drone struck a private enterprise in Chuhuiv in the Kharkiv region.",
+    "body": "As a result of the attack, the garage building caught fire. Rescuers extinguished the fire. A community rescue officer was also involved in the work. Fortunately, there are no dead or injured. Site • Fb • X • IG • YT • TT",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-dsns_telegram-80511",
    "title": "унаслідок повторного російського удару пошкоджено пожежний автомобіль",
@@ -91,24 +109,6 @@
    "en_mt": {
     "title": "Senior driver-sapper Maksym Liziya was killed on 12 December 2022 during demining in the city of Kostiantynivka.",
     "body": "He is forever 43. Maksym was born on 28 May 1979 in Sloviansk. He graduated from Sloviansk State Agrarian Technicum, where he mastered the specialty \"Mechanization of Agriculture\" and received the qualification of a technician-mechanic. All his further life was…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-80492",
-   "title": ": внаслідок нічної атаки виникли пожежі на двох локаціях",
-   "body": "Російські війська атакували об’єкт промислової інфраструктури. Внаслідок удару виникли пожежі на двох локаціях. Рятувальники ліквідували всі осередки займання. Загиблих і травмованих немає.",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/80492",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-15T06:19:38Z",
-   "expires_at": "2026-11-15T18:19:38Z",
-   "auto": true,
-   "en_mt": {
-    "title": ": as a result of the night attack fires broke out at two locations",
-    "body": "Russian troops attacked an industrial infrastructure facility. As a result of the strike, fires broke out at two locations. Rescuers eliminated all sources of ignition. There are no dead or injured.",
     "by": "m2m100"
    }
   },
