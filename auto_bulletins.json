@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-15T10:28:59Z",
+ "generated_at": "2026-11-15T11:16:18Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 3 / dropped 2, showing 2"
+   "status": "ok: kept 4 / dropped 1, showing 2"
   },
   {
    "name": "Херсонська ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-dsns_telegram-80523",
+   "title": "внаслідок російського удару травмовано 39-річного чоловіка. Йому надають необхідну медичну допомогу",
+   "body": "Також пошкоджено двоповерхову будівлю, виникла пожежа. Надзвичайники евакуювали 5 людей. На місці працювали всі екстрені служби.",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/80523",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-15T11:15:15Z",
+   "expires_at": "2026-11-15T23:15:15Z",
+   "auto": true,
+   "en_mt": {
+    "title": "as a result of the Russian strike a 39-year-old man was injured. He is being provided with the necessary medical assistance.",
+    "body": "A two-story building was also damaged, a fire broke out. Rescuers evacuated 5 people. All emergency services worked at the scene.",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-zoda_gov_ua-69051",
    "title": "росіяни атакували об’єкт інфраструктури у Хортицькому районі Запоріжжя",
@@ -91,24 +109,6 @@
    "en_mt": {
     "title": "a Russian drone struck a private enterprise in Chuhuiv in the Kharkiv region.",
     "body": "As a result of the attack, the garage building caught fire. Rescuers extinguished the fire. A community rescue officer was also involved in the work. Fortunately, there are no dead or injured. Site • Fb • X • IG • YT • TT",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-80511",
-   "title": "унаслідок повторного російського удару пошкоджено пожежний автомобіль",
-   "body": "Вранці росіяни атакували безпілотником Київський район Харкова. Коли на місце прибули рятувальники, росіяни завдали повторного удару FPV-дроном. Унаслідок атаки пошкоджено пожежний автомобіль. На щастя, особовий склад не постраждав – на момент удару…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/80511",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-15T08:43:00Z",
-   "expires_at": "2026-11-15T20:43:00Z",
-   "auto": true,
-   "en_mt": {
-    "title": "as a result of another Russian strike a fire truck was damaged",
-    "body": "In the morning, Russians attacked the Kyiv district of Kharkiv with a drone. When rescuers arrived at the scene, Russians struck again with an FPV drone. As a result of the attack, a fire truck was damaged. Fortunately, the personnel were not injured – at the time of the strike…",
     "by": "m2m100"
    }
   },
