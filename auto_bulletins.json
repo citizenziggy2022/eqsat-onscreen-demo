@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-15T09:52:08Z",
+ "generated_at": "2026-11-15T10:05:07Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -18,7 +18,7 @@
    "name": "Запорізька ОВА",
    "url": "https://t.me/s/zoda_gov_ua",
    "verified": "linked from zoda.gov.ua",
-   "status": "ok: kept 2 / dropped 1, showing 2"
+   "status": "ok: kept 3 / dropped 1, showing 2"
   },
   {
    "name": "Донецька ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-zoda_gov_ua-69051",
+   "title": "росіяни атакували об’єкт інфраструктури у Хортицькому районі Запоріжжя",
+   "body": "Внаслідок ворожого влучання травмований 39-річний чоловік. У нього уламкові поранення голови та тулуба. Попередньо, стан середньої тяжкості. Медики надають усю необхідну допомогу.",
+   "source": "Запорізька ОВА",
+   "source_url": "https://t.me/zoda_gov_ua/69051",
+   "region": "Запоріжжя",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-15T10:04:36Z",
+   "expires_at": "2026-11-15T22:04:36Z",
+   "auto": true,
+   "en_mt": {
+    "title": "Russians attacked an infrastructure facility in the Khortytskyi district of Zaporizhzhia",
+    "body": "As a result of the enemy strike, a 39-year-old man was injured. He has fragmentary injuries to the head and torso. Preliminarily, the condition is of moderate severity. Medics are providing all necessary assistance.",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-zoda_gov_ua-69050",
    "title": "У Дніпровському районі Запоріжжя внаслідок ворожого удару поранено 47-річного чоловіка",
@@ -127,24 +145,6 @@
    "en_mt": {
     "title": "Senior driver-sapper Maksym Liziya was killed on 12 December 2022 during demining in the city of Kostiantynivka.",
     "body": "He is forever 43. Maksym was born on 28 May 1979 in Sloviansk. He graduated from Sloviansk State Agrarian Technicum, where he mastered the specialty \"Mechanization of Agriculture\" and received the qualification of a technician-mechanic. All his further life was…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-zoda_gov_ua-69044",
-   "title": "Ворог завдав 8 ударів по Запоріжжю.",
-   "body": "Внаслідок атаки пошкоджено скління багатоквартирного житлового будинку та припарковані автомобілі. На місці влучання виникла пожежа. Попередньо, травмовано п’ятеро людей. Серед них — 80-річна жінка. Інші місця влучань…",
-   "source": "Запорізька ОВА",
-   "source_url": "https://t.me/zoda_gov_ua/69044",
-   "region": "Запоріжжя",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-14T23:25:06Z",
-   "expires_at": "2026-11-15T11:25:06Z",
-   "auto": true,
-   "en_mt": {
-    "title": "The enemy struck 8 blows at Zaporizhzhia.",
-    "body": "As a result of the attack, the glazing of a multi-apartment residential building and parked cars were damaged. A fire broke out at the site of the hit. Preliminarily, five people were injured, among them an 80-year-old woman. Other places of impact…",
     "by": "m2m100"
    }
   }
