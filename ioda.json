@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-16T14:54:17Z",
+ "fetched_at": "2026-11-16T15:00:47Z",
  "updated_at": "2026-11-16T14:40:00Z",
  "source": "IODA (Internet Outage Detection and Analysis), Georgia Tech, https://ioda.inetintel.cc.gatech.edu",
  "note": "Internet signal per oblast. score 0-100 vs the region's own 7-day median (BGP 40%, ping /24 60%); level critical while IODA's outage alert for the region is critical. The cause is unknown (power, damage or shutdown look the same).",
@@ -9,7 +9,7 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 1.0602,
+     "ratio": 1.0579,
      "score": 100
     },
     "bgp": {
@@ -41,7 +41,7 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 1.0236,
+     "ratio": 1.023,
      "score": 100
     }
    },
@@ -111,7 +111,7 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 1.0284,
+     "ratio": 1.0281,
      "score": 100
     }
    },
@@ -199,7 +199,7 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 1.0046,
+     "ratio": 1.0042,
      "score": 100
     },
     "bgp": {
@@ -231,7 +231,7 @@
      "score": 96
     },
     "bgp": {
-     "ratio": 1.0304,
+     "ratio": 1.03,
      "score": 100
     }
    },
@@ -241,7 +241,7 @@
    "score": 98,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9567,
+     "ratio": 0.9563,
      "score": 97
     },
     "bgp": {
@@ -263,7 +263,7 @@
    "score": 94,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9203,
+     "ratio": 0.9206,
      "score": 89
     },
     "bgp": {
@@ -291,8 +291,8 @@
    "score": 94,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9242,
-     "score": 90
+     "ratio": 0.9254,
+     "score": 91
     },
     "bgp": {
      "ratio": 1.0006,
@@ -309,7 +309,7 @@
      "score": 86
     },
     "bgp": {
-     "ratio": 1.0143,
+     "ratio": 1.0134,
      "score": 100
     }
    },
@@ -327,7 +327,7 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 1.055,
+     "ratio": 1.0563,
      "score": 100
     },
     "bgp": {
@@ -373,7 +373,7 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 1.0124,
+     "ratio": 1.0121,
      "score": 100
     }
    },
@@ -405,7 +405,7 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 1.0672,
+     "ratio": 1.0655,
      "score": 100
     },
     "bgp": {
