@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-16T13:50:53Z",
+ "generated_at": "2026-11-16T13:52:52Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -12,7 +12,7 @@
    "name": "Херсонська ОВА",
    "url": "https://t.me/s/khersonskaODA",
    "verified": "linked from khoda.gov.ua; channel links back to khoda.gov.ua",
-   "status": "ok: kept 1 / dropped 26, showing 1"
+   "status": "ok: kept 2 / dropped 26, showing 2"
   },
   {
    "name": "Запорізька ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-khersonskaODA-71521",
+   "title": "Учора зранку російські окупанти атакували безпілотником автівку у Білозерці",
+   "body": "Через ворожий удар постраждав 75-річний чоловік. Він отримав вибухову травму та струс головного мозку. Сьогодні потерпілий звернувся до лікарні. Його шпиталізували.",
+   "source": "Херсонська ОВА",
+   "source_url": "https://t.me/khersonskaODA/71521",
+   "region": "Херсонщина",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-16T13:52:06Z",
+   "expires_at": "2026-11-17T01:52:06Z",
+   "auto": true,
+   "en_mt": {
+    "title": "Yesterday morning Russian occupiers attacked a car with a drone in Bilozerka",
+    "body": "Through an enemy strike, a 75-year-old man was injured. He received a blast injury and a concussion. Today, the victim turned to the hospital. He was hospitalized.",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-khersonskaODA-71520",
    "title": "До лікарні звернулась жінка, яка вдень 13 листопада постраждала через атаку російського дрона у Корабельному…",
