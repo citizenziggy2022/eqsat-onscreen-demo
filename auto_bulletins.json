@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-16T10:28:19Z",
+ "generated_at": "2026-11-16T10:38:20Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-dsns_telegram-80587",
+   "title": "‼ російські війська атакували промислове підприємство",
+   "body": "Вранці ворог знову завдав ударів по Вишгородському району. Унаслідок двох влучань виникла пожежа. Рятувальники ліквідували займання. Наразі тривають роботи з розбирання завалів та прибирання пошкоджених конструкцій. Сайт • Fb • X • IG • YT • TT",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/80587",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-16T10:37:02Z",
+   "expires_at": "2026-11-16T22:37:02Z",
+   "auto": true,
+   "en_mt": {
+    "title": "‼ Russian troops attacked an industrial enterprise",
+    "body": "In the morning the enemy again struck the Vyshhorod district. As a result of two hits, a fire broke out. Rescuers extinguished the fire. Currently, work is underway to clear the rubble and clean up damaged structures. Site • Fb • X • IG • YT • TT",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-luhanskaVTSA-39328",
    "title": "СТАН ЕНЕРГОСИСТЕМИ",
@@ -91,24 +109,6 @@
    "en_mt": {
     "title": "The enemy attacked the Kosmichnyi district of Zaporizhzhia",
     "body": "An enemy FPV drone struck the building of the district administration. As a result of the attack, an office and windows of the building were damaged. A 22-year-old woman was injured.",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-80577",
-   "title": "вночі 4 російські FPV-дрони знову атакували пожежно-рятувальний підрозділ у Краматорську",
-   "body": "Один із них влучив у пожежний автомобіль, який раніше вже був пошкоджений під час обстрілу. На щастя, особовий склад не постраждав. Російські війська цілеспрямовано б'ють по рятувальниках, намагаючись перешкодити їхній роботі. Попри небезпеку, надзвичайники…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/80577",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-16T09:33:57Z",
-   "expires_at": "2026-11-16T21:33:57Z",
-   "auto": true,
-   "en_mt": {
-    "title": "at night 4 Russian FPV-drones again attacked the fire and rescue unit in Kramatorsk",
-    "body": "One of them hit a fire truck that had already been damaged during the shelling. Fortunately, the personnel were not injured. Russian troops are deliberately targeting rescuers, trying to hinder their work. Despite the danger, emergency workers…",
     "by": "m2m100"
    }
   },
