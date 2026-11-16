@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-16T10:45:19Z",
+ "generated_at": "2026-11-16T11:02:19Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 5 / dropped 1, showing 2"
+   "status": "ok: kept 4 / dropped 1, showing 2"
   },
   {
    "name": "Херсонська ОВА",
@@ -41,6 +41,24 @@
  ],
  "bulletins": [
   {
+   "id": "auto-dsns_telegram-80595",
+   "title": "Сигнал «Увага, оголошено повітряну тривогу!», звуки вибухів, повідомлення у медіа про загрози.",
+   "body": "На жаль, усе це стало нашою буденністю Ніхто не може почуватися у повній безпеці, проте у наших силах підготуватися до різних ситуацій, аби мати змогу допомогти собі та рідним. Дивіться та запам’ятовуйте, як діяти, якщо внаслідок обстрілу під завалом…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/80595",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-16T11:00:20Z",
+   "expires_at": "2026-11-16T23:00:20Z",
+   "auto": true,
+   "en_mt": {
+    "title": "Signal \"Attention, air alert announced!\", sounds of explosions, messages in media about threats.",
+    "body": "Unfortunately, all this has become our everyday life. Nobody can feel completely safe, however, it is in our power to prepare for different situations, in order to be able to help ourselves and our loved ones. Watch and remember how to act if as a result of shelling under the rubble…",
+    "by": "m2m100"
+   }
+  },
+  {
    "id": "auto-dsns_telegram-80587",
    "title": "‼ російські війська атакували промислове підприємство",
    "body": "Вранці ворог знову завдав ударів по Вишгородському району. Унаслідок двох влучань виникла пожежа. Рятувальники ліквідували займання. Наразі тривають роботи з розбирання завалів та прибирання пошкоджених конструкцій. Сайт • Fb • X • IG • YT • TT",
@@ -73,24 +91,6 @@
    "en_mt": {
     "title": "STATE OF THE ENERGY SYSTEM",
     "body": "The enemy continues to attack objects of the energy infrastructure. As a result of the shelling, as of the morning, there are power outages for consumers in Vinnytska, Dnipropetrovska, Kirovohradska, Odeska, Ternopilska and Cherkaska oblasts. Energy workers are working around the clock…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-80580",
-   "title": "російський БпЛА наніс удар по території приватного домоволодіння у селищі Золочів Богодухівського району…",
-   "body": "На щастя, обійшлося без постраждалих! До ліквідації наслідків ворожих ударів залучалися підрозділи ДСНС та офіцери-рятувальники громад. Сайт • Fb • X • IG • YT • TT",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/80580",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-16T09:52:15Z",
-   "expires_at": "2026-11-16T21:52:15Z",
-   "auto": true,
-   "en_mt": {
-    "title": "a Russian UAV struck the territory of a private homestead in the village of Zolochiv of Bohodukhiv district…",
-    "body": "Fortunately, there were no casualties. Units of the State Emergency Service and community rescue officers were involved in eliminating the consequences of enemy strikes. Site • Fb • X • IG • YT • TT",
     "by": "m2m100"
    }
   },
