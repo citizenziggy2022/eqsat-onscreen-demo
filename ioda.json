@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-16T07:55:03Z",
+ "fetched_at": "2026-11-16T08:01:10Z",
  "updated_at": "2026-11-16T07:40:00Z",
  "source": "IODA (Internet Outage Detection and Analysis), Georgia Tech, https://ioda.inetintel.cc.gatech.edu",
  "note": "Internet signal per oblast. score 0-100 vs the region's own 7-day median (BGP 40%, ping /24 60%); level critical while IODA's outage alert for the region is critical. The cause is unknown (power, damage or shutdown look the same).",
@@ -9,7 +9,7 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 1.037,
+     "ratio": 1.0354,
      "score": 100
     },
     "bgp": {
@@ -93,7 +93,7 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9879,
+     "ratio": 0.9877,
      "score": 100
     },
     "bgp": {
@@ -167,7 +167,7 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 1.0144,
+     "ratio": 1.0142,
      "score": 100
     }
    },
@@ -199,7 +199,7 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 1.0307,
+     "ratio": 1.03,
      "score": 100
     },
     "bgp": {
@@ -241,7 +241,7 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9969,
+     "ratio": 0.9965,
      "score": 100
     },
     "bgp": {
@@ -255,7 +255,7 @@
    "score": 95,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.932,
+     "ratio": 0.9323,
      "score": 92
     },
     "bgp": {
@@ -283,7 +283,7 @@
    "score": 90,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.8894,
+     "ratio": 0.8905,
      "score": 83
     },
     "bgp": {
@@ -397,7 +397,7 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 1.0322,
+     "ratio": 1.0302,
      "score": 100
     },
     "bgp": {
