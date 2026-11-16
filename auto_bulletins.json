@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-16T17:55:20Z",
+ "generated_at": "2026-11-16T17:59:20Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -18,7 +18,7 @@
    "name": "Запорізька ОВА",
    "url": "https://t.me/s/zoda_gov_ua",
    "verified": "linked from zoda.gov.ua",
-   "status": "ok: kept 5 / dropped 2, showing 2"
+   "status": "ok: kept 6 / dropped 2, showing 2"
   },
   {
    "name": "Донецька ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-zoda_gov_ua-69091",
+   "title": "В області скасовано аварійні відключення світла",
+   "body": "Водночас погодинні графіки продовжують діяти.",
+   "source": "Запорізька ОВА",
+   "source_url": "https://t.me/zoda_gov_ua/69091",
+   "region": "Запоріжжя",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-16T17:58:43Z",
+   "expires_at": "2026-11-17T05:58:43Z",
+   "auto": true,
+   "en_mt": {
+    "title": "Emergency power outages have been cancelled in the region",
+    "body": "At the same time hourly schedules continue to operate.",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-zoda_gov_ua-69090",
    "title": "У Запорізькому районі внаслідок ворожої атаки загинув чоловік",
@@ -91,24 +109,6 @@
    "en_mt": {
     "title": "Rescuers have eliminated the consequences of the Russian attack",
     "body": "In the Desnianskyi district, as a result of the fall of fragments of an enemy UAV, a fire broke out in the yard of a multi-storey residential building. Rescuers extinguished the fire. Fortunately, there are no dead or injured. Site • Fb • X • IG • YT • TT",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-zoda_gov_ua-69089",
-   "title": "У Запорізькій області запроваджені графіки аварійних відключень світла",
-   "body": "Через це за частиною адрес електроенергія може зникати поза оприлюдненими графіками. Причина - пошкодження енергетичного обладнання внаслідок російських атак. Усі відповідальні служби працюють над відновленням електроенергії. Усі життєво важливі об’єкти…",
-   "source": "Запорізька ОВА",
-   "source_url": "https://t.me/zoda_gov_ua/69089",
-   "region": "Запоріжжя",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-16T14:48:11Z",
-   "expires_at": "2026-11-17T02:48:11Z",
-   "auto": true,
-   "en_mt": {
-    "title": "In the Zaporizhzhia region, schedules of emergency power outages have been introduced",
-    "body": "Through this in part of the addresses electricity may disappear beyond the published schedules. The reason is damage to power equipment as a result of Russian attacks. All responsible services are working on the restoration of electricity. All vital facilities…",
     "by": "m2m100"
    }
   },
