@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-16T13:01:46Z",
+ "generated_at": "2026-11-16T13:02:45Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -41,6 +41,24 @@
  ],
  "bulletins": [
   {
+   "id": "auto-dsns_telegram-80625",
+   "title": "росія продовжує прицільно бити по критичній інфраструктурі, залишаючи після себе руйнування та масштабні…",
+   "body": "Серед суцільного полум’я, густого диму й шаленого жару першими опиняються наші рятувальники На цих кадрах — справжнє пекло. Саме туди бійці ДСНС заходять без вагань, попри постійну загрозу повторних ударів. Вони приборкують вогонь і виборюють для нас наше…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/80625",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-16T13:01:39Z",
+   "expires_at": "2026-11-17T01:01:39Z",
+   "auto": true,
+   "en_mt": {
+    "title": "Russia continues to target critical infrastructure, leaving destruction and large-scale…",
+    "body": "Among the complete flames, thick smoke and fierce heat, our rescuers are the first to appear. In these shots - real hell. It is there that the fighters of the DSNS enter without hesitation, despite the constant threat of repeated strikes. They tame the fire and win for us our…",
+    "by": "m2m100"
+   }
+  },
+  {
    "id": "auto-dsns_telegram-80609",
    "title": "внаслідок російської атаки виникла пожежа на території промислового підприємства у Кременчуцькому районі",
    "body": "Під час гасіння вогню неодноразово виникала загроза повторних ворожих ударів. На місці працювали підрозділи ДСНС Полтавщини. Сайт • Fb • X • IG • YT • TT",
@@ -73,24 +91,6 @@
    "en_mt": {
     "title": "Another group of children from Zaporizhzhia region has left for three weeks to the Carpathians",
     "body": "In total, during the second, autumn-winter wave of the Presidential Office project \"Carpathian Change\" more than 700 of our children will go on vacation and rehabilitation. I really want them to be able to distract themselves from worries and shelling, find new friends and…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-80595",
-   "title": "Сигнал «Увага, оголошено повітряну тривогу!», звуки вибухів, повідомлення у медіа про загрози.",
-   "body": "На жаль, усе це стало нашою буденністю Ніхто не може почуватися у повній безпеці, проте у наших силах підготуватися до різних ситуацій, аби мати змогу допомогти собі та рідним. Дивіться та запам’ятовуйте, як діяти, якщо внаслідок обстрілу під завалом…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/80595",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-16T11:00:20Z",
-   "expires_at": "2026-11-16T23:00:20Z",
-   "auto": true,
-   "en_mt": {
-    "title": "Signal \"Attention, air alert announced!\", sounds of explosions, messages in media about threats.",
-    "body": "Unfortunately, all this has become our everyday life. Nobody can feel completely safe, however, it is in our power to prepare for different situations, in order to be able to help ourselves and our loved ones. Watch and remember how to act if as a result of shelling under the rubble…",
     "by": "m2m100"
    }
   },
