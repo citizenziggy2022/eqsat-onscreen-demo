@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-16T11:02:19Z",
+ "generated_at": "2026-11-16T11:06:20Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 4 / dropped 1, showing 2"
+   "status": "ok: kept 6 / dropped 1, showing 2"
   },
   {
    "name": "Херсонська ОВА",
@@ -18,7 +18,7 @@
    "name": "Запорізька ОВА",
    "url": "https://t.me/s/zoda_gov_ua",
    "verified": "linked from zoda.gov.ua",
-   "status": "ok: kept 4 / dropped 2, showing 2"
+   "status": "ok: kept 5 / dropped 2, showing 2"
   },
   {
    "name": "Донецька ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-zoda_gov_ua-69079",
+   "title": "Ще одна група дітей із Запорізької області вирушила на три тижні в Карпати",
+   "body": "Загалом під час другої, осінньо-зимової хвилі проєкту Офісу Президента «Карпатська зміна» на відпочинок та оздоровлення поїдуть понад 700 наших дітей. Дуже хочу, щоб за ці три тижні вони змогли відволіктися від тривог і обстрілів, знайти нових друзів і…",
+   "source": "Запорізька ОВА",
+   "source_url": "https://t.me/zoda_gov_ua/69079",
+   "region": "Запоріжжя",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-16T11:05:42Z",
+   "expires_at": "2026-11-16T23:05:42Z",
+   "auto": true,
+   "en_mt": {
+    "title": "Another group of children from Zaporizhzhia region has left for three weeks to the Carpathians",
+    "body": "In total, during the second, autumn-winter wave of the Presidential Office project \"Carpathian Change\" more than 700 of our children will go on vacation and rehabilitation. I really want them to be able to distract themselves from worries and shelling, find new friends and…",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-dsns_telegram-80595",
    "title": "Сигнал «Увага, оголошено повітряну тривогу!», звуки вибухів, повідомлення у медіа про загрози.",
@@ -109,24 +127,6 @@
    "en_mt": {
     "title": "The enemy attacked the Kosmichnyi district of Zaporizhzhia",
     "body": "An enemy FPV drone struck the building of the district administration. As a result of the attack, an office and windows of the building were damaged. A 22-year-old woman was injured.",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-zoda_gov_ua-69077",
-   "title": "Рух мостом імені Преображенського повністю перекрито.",
-   "body": "Об’їхати можна через греблю ДніпроГЕС та Вантовий міст. Для вантажівок масою понад 3,5 тонни рух цими маршрутами заборонений. Будь ласка, враховуйте обмеження, плануючи поїздки. Про відновлення руху повідомимо…",
-   "source": "Запорізька ОВА",
-   "source_url": "https://t.me/zoda_gov_ua/69077",
-   "region": "Запоріжжя",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-16T09:20:47Z",
-   "expires_at": "2026-11-16T21:20:47Z",
-   "auto": true,
-   "en_mt": {
-    "title": "Movement across the Preobrazhensky Bridge is completely closed.",
-    "body": "You can bypass through the DniproGES dam and the Cable-Stayed Bridge. For trucks with a weight of over 3.5 tons, traffic on these routes is prohibited. Please consider the restrictions when planning your trips. We will report on the restoration of traffic…",
     "by": "m2m100"
    }
   },
