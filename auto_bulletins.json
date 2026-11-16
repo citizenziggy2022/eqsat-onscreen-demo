@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-16T09:47:19Z",
+ "generated_at": "2026-11-16T09:49:19Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -18,7 +18,7 @@
    "name": "Запорізька ОВА",
    "url": "https://t.me/s/zoda_gov_ua",
    "verified": "linked from zoda.gov.ua",
-   "status": "ok: kept 3 / dropped 2, showing 2"
+   "status": "ok: kept 4 / dropped 2, showing 2"
   },
   {
    "name": "Донецька ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-zoda_gov_ua-69078",
+   "title": "Ворог атакував Космічний район Запоріжжя",
+   "body": "Ворожий FPV-дрон вдарив по будівлі районної адміністрації. Внаслідок атаки пошкоджено службове приміщення та вікна будівлі. Поранення дістала 22-річна жінка.",
+   "source": "Запорізька ОВА",
+   "source_url": "https://t.me/zoda_gov_ua/69078",
+   "region": "Запоріжжя",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-16T09:48:43Z",
+   "expires_at": "2026-11-16T21:48:43Z",
+   "auto": true,
+   "en_mt": {
+    "title": "The enemy attacked the Kosmichnyi district of Zaporizhzhia",
+    "body": "An enemy FPV drone struck the building of the district administration. As a result of the attack, an office and windows of the building were damaged. A 22-year-old woman was injured.",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-dsns_telegram-80577",
    "title": "вночі 4 російські FPV-дрони знову атакували пожежно-рятувальний підрозділ у Краматорську",
@@ -145,24 +163,6 @@
    "en_mt": {
     "title": "Russia is killing civilians!",
     "body": "As of 15 November Russians killed 4 residents of Donetsk region: 3 in Druzhkivka and 1 in Livivka. Another 4 people in the region received injuries over the day. The total number of Russian victims in Donetsk region is given without taking into account Mariupol and Volnovakha.",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-zoda_gov_ua-69071",
-   "title": "Рух мостом імені Преображенського повністю перекрито",
-   "body": "Об’їхати можна через греблю ДніпроГЕС та Вантовий міст. Для вантажівок масою понад 3,5 тонни рух цими маршрутами заборонений. Будь ласка, враховуйте обмеження, плануючи поїздки. Про відновлення руху повідомимо окремо.",
-   "source": "Запорізька ОВА",
-   "source_url": "https://t.me/zoda_gov_ua/69071",
-   "region": "Запоріжжя",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-16T05:55:00Z",
-   "expires_at": "2026-11-16T17:55:00Z",
-   "auto": true,
-   "en_mt": {
-    "title": "Movement across the Preobrazhensky Bridge is completely closed",
-    "body": "You can bypass through the DniproHES dam and the Cable-Stayed Bridge. For trucks with a weight of over 3.5 tons, traffic on these routes is prohibited. Please consider the restrictions when planning your trips. We will inform you separately about the restoration of traffic.",
     "by": "m2m100"
    }
   }
