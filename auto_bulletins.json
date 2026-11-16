@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-16T14:36:11Z",
+ "generated_at": "2026-11-16T14:49:10Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-zoda_gov_ua-69089",
+   "title": "У Запорізькій області запроваджені графіки аварійних відключень світла",
+   "body": "Через це за частиною адрес електроенергія може зникати поза оприлюдненими графіками. Причина - пошкодження енергетичного обладнання внаслідок російських атак. Усі відповідальні служби працюють над відновленням електроенергії. Усі життєво важливі об’єкти…",
+   "source": "Запорізька ОВА",
+   "source_url": "https://t.me/zoda_gov_ua/69089",
+   "region": "Запоріжжя",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-16T14:48:11Z",
+   "expires_at": "2026-11-17T02:48:11Z",
+   "auto": true,
+   "en_mt": {
+    "title": "In the Zaporizhzhia region, schedules of emergency power outages have been introduced",
+    "body": "Through this in part of the addresses electricity may disappear beyond the published schedules. The reason is damage to power equipment as a result of Russian attacks. All responsible services are working on the restoration of electricity. All vital facilities…",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-dsns_telegram-80631",
    "title": "‼ в Ірпені під час пожежі в багатоповерхівці постраждав чоловік 1981 року народження, який намагався…",
@@ -145,24 +163,6 @@
    "en_mt": {
     "title": "STATE OF THE ENERGY SYSTEM",
     "body": "The enemy continues to attack objects of the energy infrastructure. As a result of the shelling, as of the morning, there are power outages for consumers in Vinnytska, Dnipropetrovska, Kirovohradska, Odeska, Ternopilska and Cherkaska oblasts. Energy workers are working around the clock…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-zoda_gov_ua-69078",
-   "title": "Ворог атакував Космічний район Запоріжжя",
-   "body": "Ворожий FPV-дрон вдарив по будівлі районної адміністрації. Внаслідок атаки пошкоджено службове приміщення та вікна будівлі. Поранення дістала 22-річна жінка.",
-   "source": "Запорізька ОВА",
-   "source_url": "https://t.me/zoda_gov_ua/69078",
-   "region": "Запоріжжя",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-16T09:48:43Z",
-   "expires_at": "2026-11-16T21:48:43Z",
-   "auto": true,
-   "en_mt": {
-    "title": "The enemy attacked the Kosmichnyi district of Zaporizhzhia",
-    "body": "An enemy FPV drone struck the building of the district administration. As a result of the attack, an office and windows of the building were damaged. A 22-year-old woman was injured.",
     "by": "m2m100"
    }
   }
