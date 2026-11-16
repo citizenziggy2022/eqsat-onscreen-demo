@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-16T13:52:52Z",
+ "generated_at": "2026-11-16T13:54:53Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 5 / dropped 1, showing 2"
+   "status": "ok: kept 6 / dropped 1, showing 2"
   },
   {
    "name": "Херсонська ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-dsns_telegram-80631",
+   "title": "‼ в Ірпені під час пожежі в багатоповерхівці постраждав чоловік 1981 року народження, який намагався…",
+   "body": "Під час гасіння пожежі рятувальники евакуювали 25 мешканців будинку. За попередньою інформацією, причиною займання стало коротке замикання акумулятора резервного джерела живлення, розташованого на балконі квартири. Вогнеборці ліквідували пожежу. Детальніше…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/80631",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-16T13:54:06Z",
+   "expires_at": "2026-11-17T01:54:06Z",
+   "auto": true,
+   "en_mt": {
+    "title": "‼ in Irpen, a man born in 1981 was injured during a fire in a high-rise building, who tried to…",
+    "body": "During the firefighting, rescuers evacuated 25 residents of the house. According to preliminary information, the cause of the ignition was a short circuit of the accumulator of the backup power source, located on the balcony of the apartment. Firefighters extinguished the fire. More…",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-khersonskaODA-71521",
    "title": "Учора зранку російські окупанти атакували безпілотником автівку у Білозерці",
@@ -91,24 +109,6 @@
    "en_mt": {
     "title": "Russia continues to target critical infrastructure, leaving destruction and large-scale…",
     "body": "Among the complete flames, thick smoke and fierce heat, our rescuers are the first to appear. In these shots - real hell. It is there that the fighters of the DSNS enter without hesitation, despite the constant threat of repeated strikes. They tame the fire and win for us our…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-80609",
-   "title": "внаслідок російської атаки виникла пожежа на території промислового підприємства у Кременчуцькому районі",
-   "body": "Під час гасіння вогню неодноразово виникала загроза повторних ворожих ударів. На місці працювали підрозділи ДСНС Полтавщини. Сайт • Fb • X • IG • YT • TT",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/80609",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-16T12:29:50Z",
-   "expires_at": "2026-11-17T00:29:50Z",
-   "auto": true,
-   "en_mt": {
-    "title": "as a result of the Russian attack a fire broke out on the territory of an industrial enterprise in the Kremenchutskyi district",
-    "body": "During the firefighting, the threat of repeated enemy strikes arose repeatedly. Units of the State Emergency Service of Poltavshchyna worked on the spot. Site • Fb • X • IG • YT • TT",
     "by": "m2m100"
    }
   },
