@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-16T15:38:39Z",
+ "generated_at": "2026-11-16T15:43:40Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-dsns_telegram-80646",
+   "title": "у Глухові російський БпЛА атакував приватне домоволодіння! Загорілися житловий будинок та господарча будівля",
+   "body": "Попри загрозу повторних ударів, рятувальники ліквідували пожежу. Інформація про травмованих не надходила. Сайт • Fb • X • IG • YT • TT",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/80646",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-16T15:42:39Z",
+   "expires_at": "2026-11-17T03:42:39Z",
+   "auto": true,
+   "en_mt": {
+    "title": "In Glukhov, a Russian UAV attacked a private residential building, a residential house and an outbuilding caught fire",
+    "body": "Despite the threat of repeated strikes, rescuers extinguished the fire. Information about the injured did not arrive. Site • Fb • X • IG • YT • TT",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-zoda_gov_ua-69089",
    "title": "У Запорізькій області запроваджені графіки аварійних відключень світла",
@@ -109,24 +127,6 @@
    "en_mt": {
     "title": "To the hospital a woman turned who during the day on 13 November was injured due to an attack by a Russian drone in Korabelne…",
     "body": "A 50-year-old Kherson resident was diagnosed with explosive injury and concussion. The victim will be treated on an outpatient basis.",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-80625",
-   "title": "росія продовжує прицільно бити по критичній інфраструктурі, залишаючи після себе руйнування та масштабні…",
-   "body": "Серед суцільного полум’я, густого диму й шаленого жару першими опиняються наші рятувальники На цих кадрах — справжнє пекло. Саме туди бійці ДСНС заходять без вагань, попри постійну загрозу повторних ударів. Вони приборкують вогонь і виборюють для нас наше…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/80625",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-16T13:01:39Z",
-   "expires_at": "2026-11-17T01:01:39Z",
-   "auto": true,
-   "en_mt": {
-    "title": "Russia continues to target critical infrastructure, leaving destruction and large-scale…",
-    "body": "Among the complete flames, thick smoke and fierce heat, our rescuers are the first to appear. In these shots - real hell. It is there that the fighters of the DSNS enter without hesitation, despite the constant threat of repeated strikes. They tame the fire and win for us our…",
     "by": "m2m100"
    }
   },
