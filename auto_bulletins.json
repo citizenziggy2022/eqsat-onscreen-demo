@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-16T09:30:19Z",
+ "generated_at": "2026-11-16T09:35:19Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 2 / dropped 1, showing 2"
+   "status": "ok: kept 3 / dropped 1, showing 2"
   },
   {
    "name": "Херсонська ОВА",
@@ -41,6 +41,24 @@
  ],
  "bulletins": [
   {
+   "id": "auto-dsns_telegram-80577",
+   "title": "вночі 4 російські FPV-дрони знову атакували пожежно-рятувальний підрозділ у Краматорську",
+   "body": "Один із них влучив у пожежний автомобіль, який раніше вже був пошкоджений під час обстрілу. На щастя, особовий склад не постраждав. Російські війська цілеспрямовано б'ють по рятувальниках, намагаючись перешкодити їхній роботі. Попри небезпеку, надзвичайники…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/80577",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-16T09:33:57Z",
+   "expires_at": "2026-11-16T21:33:57Z",
+   "auto": true,
+   "en_mt": {
+    "title": "at night 4 Russian FPV-drones again attacked the fire and rescue unit in Kramatorsk",
+    "body": "One of them hit a fire truck that had already been damaged during the shelling. Fortunately, the personnel were not injured. Russian troops are deliberately targeting rescuers, trying to hinder their work. Despite the danger, emergency workers…",
+    "by": "m2m100"
+   }
+  },
+  {
    "id": "auto-zoda_gov_ua-69077",
    "title": "Рух мостом імені Преображенського повністю перекрито.",
    "body": "Об’їхати можна через греблю ДніпроГЕС та Вантовий міст. Для вантажівок масою понад 3,5 тонни рух цими маршрутами заборонений. Будь ласка, враховуйте обмеження, плануючи поїздки. Про відновлення руху повідомимо…",
@@ -73,24 +91,6 @@
    "en_mt": {
     "title": "Rescuers saved a man from under the rubble of a high-rise building in Sloviansk!",
     "body": "Yesterday night Russian troops struck the city, as a result of which two residential fourteen-storey buildings were damaged. In the destroyed apartment on the ninth floor of one of the buildings, a person was trapped under the rubble. During emergency rescue work, rescuers…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-80566",
-   "title": "внаслідок російської атаки 1 людина загинула, ще 10 постраждали",
-   "body": "Зайнялися два легкові автомобілі, ще 10 - понівечені. Також пошкоджена контактна мережа тролейбуса та дорожнє полотно. Рятувальники оперативно ліквідували загоряння. Сайт • Fb • X • IG • YT • TT",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/80566",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-16T07:55:34Z",
-   "expires_at": "2026-11-16T19:55:34Z",
-   "auto": true,
-   "en_mt": {
-    "title": "as a result of the Russian attack 1 person was killed, another 10 were injured",
-    "body": "Two passenger cars were involved, another 10 were damaged. The trolleybus contact network and road surface were also damaged. Rescuers quickly extinguished the fire. Site • Fb • X • IG • YT • TT",
     "by": "m2m100"
    }
   },
