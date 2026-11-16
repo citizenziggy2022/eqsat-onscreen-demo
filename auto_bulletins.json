@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-16T07:27:31Z",
+ "generated_at": "2026-11-16T07:36:30Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -12,7 +12,7 @@
    "name": "Херсонська ОВА",
    "url": "https://t.me/s/khersonskaODA",
    "verified": "linked from khoda.gov.ua; channel links back to khoda.gov.ua",
-   "status": "ok: kept 0 / dropped 7, showing 0"
+   "status": "ok: kept 1 / dropped 7, showing 1"
   },
   {
    "name": "Запорізька ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-khersonskaODA-71473",
+   "title": "Шахраї розсилають електронні листи та повідомлення в месенджерах із фальшивими рахунками на оплату…",
+   "body": "Мета такої схеми — змусити людину перейти за посиланням, що веде на фішинговий сайт, ввести персональні, банківські дані або завантажити шкідливі файли. У результаті шахраї можуть отримати доступ до акаунтів, банківських рахунків, а також це може призвести…",
+   "source": "Херсонська ОВА",
+   "source_url": "https://t.me/khersonskaODA/71473",
+   "region": "Херсонщина",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-16T07:35:19Z",
+   "expires_at": "2026-11-16T19:35:19Z",
+   "auto": true,
+   "en_mt": {
+    "title": "Scammers send emails and messages in messengers with fake invoices for payment…",
+    "body": "The goal of such a scheme is to force a person to follow the link that leads to a phishing site, enter personal, banking data or download malicious files. As a result, scammers can gain access to accounts, bank accounts, and this can also lead…",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-VadymFilashkin-19305",
    "title": "44-річний майор поліції Федір Дженчако помер 22 березня 2022 року в Маріуполі.",
