@@ -1,9 +1,11 @@
 {
- "fetched_at": "2026-11-16T09:47:25Z",
+ "fetched_at": "2026-11-16T09:52:29Z",
  "updated_at": "2026-11-16T09:30:00Z",
  "source": "IODA (Internet Outage Detection and Analysis), Georgia Tech, https://ioda.inetintel.cc.gatech.edu",
  "note": "Internet signal per oblast. score 0-100 vs the region's own 7-day median (BGP 40%, ping /24 60%); level critical while IODA's outage alert for the region is critical. The cause is unknown (power, damage or shutdown look the same).",
- "critical": [],
+ "critical": [
+  "kharkiv"
+ ],
  "regions": {
   "crimea": {
    "score": 100,
@@ -305,7 +307,19 @@
      "score": 100
     }
    },
-   "level": "normal"
+   "level": "critical",
+   "since": 1794820800,
+   "critical_sources": [
+    "ping-slash24"
+   ],
+   "alerts": {
+    "ping-slash24": {
+     "level": "critical",
+     "time": 1794820800,
+     "value": 1069,
+     "history": 1347
+    }
+   }
   },
   "luhansk": {
    "score": 97,
