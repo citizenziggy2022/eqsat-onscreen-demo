@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-16T09:10:59+00:00",
+ "generated": "2026-11-16T10:12:04+00:00",
  "sources": {
   "censoredplanet": {
    "name": "Censored Planet (University of Michigan)",
@@ -40,7 +40,7 @@
     }
    },
    "rule": "confirmed = a known block page was returned; likely = >=20 measurements, >=50% unexpected and >=30 points above the country median",
-   "seconds": 19.3
+   "seconds": 17.3
   },
   "rkn": {
    "name": "Roskomnadzor registry (via antifilter.download)",
@@ -49,7 +49,7 @@
    "total_domains": 1803058,
    "well_known_listed": 56,
    "note": "Official RKN blocking registry. Rows are registry entries (incl. wildcard and mirror domains), not distinct sites.",
-   "seconds": 18.6
+   "seconds": 19.9
   }
  },
  "credit": "Censored Planet (U. Michigan) · RKN registry via antifilter.download",
@@ -244,7 +244,7 @@
    "status": "listed",
    "last_seen": "2026-11-14",
    "category": "news",
-   "new_vs_ooni": true,
+   "new_vs_ooni": false,
    "well_known": true
   },
   {
@@ -393,18 +393,6 @@
   },
   {
    "domain": "rferl.org",
-   "country": "BY",
-   "source": "censoredplanet",
-   "status": "likely",
-   "last_seen": "2026-11-15",
-   "rate": 0.75,
-   "measurements": 24,
-   "category": "news",
-   "new_vs_ooni": true,
-   "well_known": true
-  },
-  {
-   "domain": "rferl.org",
    "country": "RU",
    "source": "censoredplanet",
    "status": "likely",
@@ -415,7 +403,19 @@
    "also": [
     "rkn"
    ],
-   "new_vs_ooni": false,
+   "new_vs_ooni": true,
+   "well_known": true
+  },
+  {
+   "domain": "rferl.org",
+   "country": "BY",
+   "source": "censoredplanet",
+   "status": "likely",
+   "last_seen": "2026-11-15",
+   "rate": 0.75,
+   "measurements": 24,
+   "category": "news",
+   "new_vs_ooni": true,
    "well_known": true
   },
   {
