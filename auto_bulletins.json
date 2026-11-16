@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-16T12:29:45Z",
+ "generated_at": "2026-11-16T12:30:46Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -41,6 +41,24 @@
  ],
  "bulletins": [
   {
+   "id": "auto-dsns_telegram-80609",
+   "title": "внаслідок російської атаки виникла пожежа на території промислового підприємства у Кременчуцькому районі",
+   "body": "Під час гасіння вогню неодноразово виникала загроза повторних ворожих ударів. На місці працювали підрозділи ДСНС Полтавщини. Сайт • Fb • X • IG • YT • TT",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/80609",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-16T12:29:50Z",
+   "expires_at": "2026-11-17T00:29:50Z",
+   "auto": true,
+   "en_mt": {
+    "title": "as a result of the Russian attack a fire broke out on the territory of an industrial enterprise in the Kremenchutskyi district",
+    "body": "During the firefighting, the threat of repeated enemy strikes arose repeatedly. Units of the State Emergency Service of Poltavshchyna worked on the spot. Site • Fb • X • IG • YT • TT",
+    "by": "m2m100"
+   }
+  },
+  {
    "id": "auto-zoda_gov_ua-69079",
    "title": "Ще одна група дітей із Запорізької області вирушила на три тижні в Карпати",
    "body": "Загалом під час другої, осінньо-зимової хвилі проєкту Офісу Президента «Карпатська зміна» на відпочинок та оздоровлення поїдуть понад 700 наших дітей. Дуже хочу, щоб за ці три тижні вони змогли відволіктися від тривог і обстрілів, знайти нових друзів і…",
@@ -73,24 +91,6 @@
    "en_mt": {
     "title": "Signal \"Attention, air alert announced!\", sounds of explosions, messages in media about threats.",
     "body": "Unfortunately, all this has become our everyday life. Nobody can feel completely safe, however, it is in our power to prepare for different situations, in order to be able to help ourselves and our loved ones. Watch and remember how to act if as a result of shelling under the rubble…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-80587",
-   "title": "‼ російські війська атакували промислове підприємство",
-   "body": "Вранці ворог знову завдав ударів по Вишгородському району. Унаслідок двох влучань виникла пожежа. Рятувальники ліквідували займання. Наразі тривають роботи з розбирання завалів та прибирання пошкоджених конструкцій. Сайт • Fb • X • IG • YT • TT",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/80587",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-16T10:37:02Z",
-   "expires_at": "2026-11-16T22:37:02Z",
-   "auto": true,
-   "en_mt": {
-    "title": "‼ Russian troops attacked an industrial enterprise",
-    "body": "In the morning the enemy again struck the Vyshhorod district. As a result of two hits, a fire broke out. Rescuers extinguished the fire. Currently, work is underway to clear the rubble and clean up damaged structures. Site • Fb • X • IG • YT • TT",
     "by": "m2m100"
    }
   },
