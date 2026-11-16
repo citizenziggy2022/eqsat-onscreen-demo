@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-16T09:52:19Z",
+ "generated_at": "2026-11-16T09:53:18Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 3 / dropped 1, showing 2"
+   "status": "ok: kept 4 / dropped 0, showing 2"
   },
   {
    "name": "Херсонська ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-dsns_telegram-80580",
+   "title": "російський БпЛА наніс удар по території приватного домоволодіння у селищі Золочів Богодухівського району…",
+   "body": "На щастя, обійшлося без постраждалих! До ліквідації наслідків ворожих ударів залучалися підрозділи ДСНС та офіцери-рятувальники громад.",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/80580",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-16T09:52:15Z",
+   "expires_at": "2026-11-16T21:52:15Z",
+   "auto": true,
+   "en_mt": {
+    "title": "a Russian UAV struck the territory of a private homestead in the village of Zolochiv of Bohodukhiv district…",
+    "body": "Fortunately, there were no casualties. Units of the State Emergency Service and community rescue officers were involved in eliminating the consequences of enemy strikes.",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-zoda_gov_ua-69078",
    "title": "Ворог атакував Космічний район Запоріжжя",
@@ -91,24 +109,6 @@
    "en_mt": {
     "title": "Movement across the Preobrazhensky Bridge is completely closed.",
     "body": "You can bypass through the DniproGES dam and the Cable-Stayed Bridge. For trucks with a weight of over 3.5 tons, traffic on these routes is prohibited. Please consider the restrictions when planning your trips. We will report on the restoration of traffic…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-80572",
-   "title": "надзвичайники врятували чоловіка з-під завалів багатоповерхівки у Слов’янську!",
-   "body": "Вчора вночі російські війська завдали удару по місту, внаслідок чого пошкоджені дві житлові чотирнадцятиповерхівки. У зруйнованій квартирі на дев’ятому поверсі одного з будинків під завалами опинилася людина. Під час аварійно-рятувальних робіт надзвичайники…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/80572",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-16T08:50:32Z",
-   "expires_at": "2026-11-16T20:50:32Z",
-   "auto": true,
-   "en_mt": {
-    "title": "Rescuers saved a man from under the rubble of a high-rise building in Sloviansk!",
-    "body": "Yesterday night Russian troops struck the city, as a result of which two residential fourteen-storey buildings were damaged. In the destroyed apartment on the ninth floor of one of the buildings, a person was trapped under the rubble. During emergency rescue work, rescuers…",
     "by": "m2m100"
    }
   },
