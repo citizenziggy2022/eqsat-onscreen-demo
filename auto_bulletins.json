@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-17T11:46:45Z",
+ "generated_at": "2026-11-17T11:47:45Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 4 / dropped 1, showing 2"
+   "status": "ok: kept 5 / dropped 1, showing 2"
   },
   {
    "name": "Херсонська ОВА",
@@ -41,6 +41,24 @@
  ],
  "bulletins": [
   {
+   "id": "auto-dsns_telegram-80716",
+   "title": "область: внаслідок російської атаки пошкоджений об’єкт критичної інфраструктури",
+   "body": "На місці влучання виникла пожежа площею 250 кв. м. Рятувальники ліквідували загоряння. На щастя, загиблих і травмованих немає. Сайт • Fb • X • IG • YT • TT",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/80716",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-17T11:47:34Z",
+   "expires_at": "2026-11-17T23:47:34Z",
+   "auto": true,
+   "en_mt": {
+    "title": "region: as a result of the Russian attack, an object of critical infrastructure was damaged",
+    "body": "A fire broke out at the site of the hit with an area of 250 sq. m. Rescuers eliminated the fire. Fortunately, there are no dead or injured. Site • Fb • X • IG • YT • TT",
+    "by": "m2m100"
+   }
+  },
+  {
    "id": "auto-dsns_telegram-80706",
    "title": "‼У Вінниці внаслідок російської атаки загинула 51-річна жінка, ще одна – постраждала",
    "body": "Ворожий БпЛА влучив в автостоянку. Загорілися 4 автомобілі. Водійка пошкодженого легковика від отриманих травм загинула на місці. Її 23-річну пасажирку госпіталізували до лікарні. Також пошкоджена ще одна вантажівка. На щастя, її водій не постраждав.…",
@@ -55,24 +73,6 @@
    "en_mt": {
     "title": "‼In Vinnytsia, as a result of the Russian attack, a 51-year-old woman was killed, another one was injured",
     "body": "An enemy UAV hit a car park. 4 cars caught fire. The driver of the damaged car died on the spot from her injuries. Her 23-year-old passenger was hospitalized. Another truck was also damaged. Fortunately, its driver was not injured.",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-80699",
-   "title": "‼ внаслідок російського удару по підприємству 1 людина загинула, ще двоє — поранені",
-   "body": "На місці удару виникла пожежа. Упродовж усієї ночі фахівці ДСНС працювали над ліквідацією займання. Гасіння ускладнювалося постійною загрозою повторних обстрілів. Наразі рятувальники локалізували пожежу. Сайт • Fb • X • IG • YT • TT",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/80699",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-17T09:54:29Z",
-   "expires_at": "2026-11-17T21:54:29Z",
-   "auto": true,
-   "en_mt": {
-    "title": "‼ as a result of the Russian strike on the enterprise 1 person was killed, two more were injured",
-    "body": "A fire broke out at the site of the strike. Throughout the night, DSNs specialists worked to eliminate the fire. The extinguishing was complicated by the constant threat of repeated shelling. Currently, rescuers have localized the fire. Site • Fb • X • IG • YT • TT",
     "by": "m2m100"
    }
   },
