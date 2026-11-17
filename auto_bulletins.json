@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-17T14:33:34Z",
+ "generated_at": "2026-11-17T14:37:33Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -18,7 +18,7 @@
    "name": "Запорізька ОВА",
    "url": "https://t.me/s/zoda_gov_ua",
    "verified": "linked from zoda.gov.ua",
-   "status": "ok: kept 7 / dropped 4, showing 2"
+   "status": "ok: kept 8 / dropped 4, showing 2"
   },
   {
    "name": "Донецька ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-zoda_gov_ua-69109",
+   "title": "Кількість поранених від атаки ворога на Запоріжжя зросла до 38 людей.",
+   "body": "",
+   "source": "Запорізька ОВА",
+   "source_url": "https://t.me/zoda_gov_ua/69109",
+   "region": "Запоріжжя",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-17T14:35:54Z",
+   "expires_at": "2026-11-18T02:35:54Z",
+   "auto": true,
+   "en_mt": {
+    "title": "The number of wounded from the enemy's attack on Zaporizhzhia has increased to 38 people.",
+    "body": "",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-dsns_telegram-80731",
    "title": "‼ внаслідок російської атаки 2 людини загинули, ще одна постраждала в Оболонському районі На місці удару…",
@@ -91,24 +109,6 @@
    "en_mt": {
     "title": "Due to Russian strikes on the energy infrastructure, a significant number of residents of Zaporizhzhia and the region…",
     "body": "Energy workers are already working on restoring the power supply. The situation is under control, an emergency response plan for power grid accidents has been activated…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-zoda_gov_ua-69104",
-   "title": "Зросла кількість загиблих і постраждалих внаслідок ранкової атаки Стало відомо про ще одну загиблу жінку.",
-   "body": "Кількість поранених зросла до 18. Усім надають необхідну медичну допомогу.",
-   "source": "Запорізька ОВА",
-   "source_url": "https://t.me/zoda_gov_ua/69104",
-   "region": "Запоріжжя",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-17T09:48:31Z",
-   "expires_at": "2026-11-17T21:48:31Z",
-   "auto": true,
-   "en_mt": {
-    "title": "The number of dead and injured as a result of the morning attack has increased. It became known about another dead woman.",
-    "body": "The number of injured has increased to 18. Everyone is being provided with the necessary medical assistance.",
     "by": "m2m100"
    }
   },
