@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-17T17:03:17Z",
+ "generated_at": "2026-11-17T17:14:16Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 9 / dropped 0, showing 2"
+   "status": "ok: kept 10 / dropped 0, showing 2"
   },
   {
    "name": "Херсонська ОВА",
@@ -41,6 +41,24 @@
  ],
  "bulletins": [
   {
+   "id": "auto-dsns_telegram-80751",
+   "title": "росіяни атакували Чугуїв, троє жінок зазнали гострої реакції на стрес",
+   "body": "Одне з влучань ударного безпілотника зафіксовано у приватному секторі міста. Унаслідок атаки зруйновано житловий будинок, сталася пожежа на площі 200 кв. м. Також пошкоджено сусідні домоволодіння. На місці події працювали оперативні підрозділи ДСНС та…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/80751",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-17T17:12:51Z",
+   "expires_at": "2026-11-18T05:12:51Z",
+   "auto": true,
+   "en_mt": {
+    "title": "Russians attacked Chuhuiv, three women suffered acute stress reaction",
+    "body": "One of the strikes of a shock drone was recorded in the private sector of the city. As a result of the attack, a residential building was destroyed, a fire broke out on an area of 200 sq. m. Also, neighboring households were damaged. Operational units of the DSNs worked at the scene and…",
+    "by": "m2m100"
+   }
+  },
+  {
    "id": "auto-dsns_telegram-80746",
    "title": "рятувальники ліквідували пожежу на підприємстві після ворожої атаки",
    "body": "Понад добу рятувальники боролися з масштабною пожежею, що виникла 16 листопада внаслідок російського удару в Олександрійському районі. Попри значну площу займання та постійну загрозу повторних обстрілів, вогнеборцям вдалося повністю ліквідувати пожежу.",
@@ -55,24 +73,6 @@
    "en_mt": {
     "title": "Rescuers have extinguished the fire at the enterprise after the enemy attack",
     "body": "For over a day, rescuers fought a large-scale fire that broke out on November 16 as a result of a Russian strike in the Oleksandriisky district. Despite the significant area of ​​the fire and the constant threat of repeated shelling, the firefighters managed to completely extinguish the fire.",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-80742",
-   "title": "внаслідок російських ударів по складських будівлях постраждав чоловік",
-   "body": "Ворог атакував безпілотниками населені пункти Харківської області. У містах Лозова Лозівського району та Балаклія Ізюмського району виникли пожежі у складських будівлях. ▪До ліквідації наслідків ворожих атак, попри загрозу повторних обстрілів, залучені…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/80742",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-17T16:08:20Z",
-   "expires_at": "2026-11-18T04:08:20Z",
-   "auto": true,
-   "en_mt": {
-    "title": "as a result of Russian strikes on storage buildings a man was injured",
-    "body": "The enemy attacked with drones the populated areas of Kharkiv region. Fires broke out in storage buildings in the cities of Lozova in Lozivskyi district and Balaklia in Izium district. ·To eliminate the consequences of enemy attacks, despite the threat of repeated shelling, involved…",
     "by": "m2m100"
    }
   },
