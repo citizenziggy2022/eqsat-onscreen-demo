@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-17T14:32:33Z",
+ "generated_at": "2026-11-17T14:33:34Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -41,6 +41,24 @@
  ],
  "bulletins": [
   {
+   "id": "auto-dsns_telegram-80731",
+   "title": "‼ внаслідок російської атаки 2 людини загинули, ще одна постраждала в Оболонському районі На місці удару…",
+   "body": "Під час ліквідації наслідків атаки працівники ДСНС врятували людину, яка опинилася заблокованою під завалами. Постраждалого…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/80731",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-17T14:32:29Z",
+   "expires_at": "2026-11-18T02:32:29Z",
+   "auto": true,
+   "en_mt": {
+    "title": "‼ as a result of the Russian attack 2 people were killed, another one was injured in the Obolonskyi district At the scene of the strike…",
+    "body": "During the elimination of the consequences of the attack, the employees of the State Emergency Service rescued a person who was blocked under the rubble. The victim…",
+    "by": "m2m100"
+   }
+  },
+  {
    "id": "auto-dsns_telegram-80730",
    "title": "349 людей протягом минулого тижня евакуювали рятувальники разом із поліцейськими, волонтерами та…",
    "body": "Серед них – 32 дитини та 24 особи з інвалідністю. Сайт • Fb • X • IG • YT • TT",
@@ -55,24 +73,6 @@
    "en_mt": {
     "title": "349 people were evacuated last week by rescuers together with police officers, volunteers and…",
     "body": "Among them are 32 children and 24 people with disabilities. Site • Fb • X • IG • YT • TT",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-80729",
-   "title": "Навіть якщо здається, що боєприпаси давно втратили термін придатності, вони залишаються смертельно небезпечними",
-   "body": "Дивись відео та дізнайся, чому час не робить міни менш загрозливими і як діяти, щоб вижити. Стій! Не чіпай! Телефонуй 101! Сайт • Fb • X • IG • YT • TT",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/80729",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-17T13:06:13Z",
-   "expires_at": "2026-11-18T01:06:13Z",
-   "auto": true,
-   "en_mt": {
-    "title": "Even if it seems that ammunition has long been out of date, they remain mortally dangerous",
-    "body": "Watch the video and find out why time does not make mines less dangerous and how to act to survive. Stop! Do not touch! Call 101! Site • Fb • X • IG • YT • TT",
     "by": "m2m100"
    }
   },
