@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-17T14:51:47Z",
+ "generated_at": "2026-11-17T15:02:53Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 8 / dropped 0, showing 2"
+   "status": "ok: kept 9 / dropped 0, showing 2"
   },
   {
    "name": "Херсонська ОВА",
@@ -41,6 +41,24 @@
  ],
  "bulletins": [
   {
+   "id": "auto-dsns_telegram-80740",
+   "title": "П’ять днів працювали водолази ДСНС минулої зими на одній зі столичних ТЕЦ, коли через російський обстріл…",
+   "body": "Вони занурювалися в крижану воду, температура якої сягала всього 2 градусів, попри лютий мороз надворі. «Коли ми вже однією ногою наче вдома були, нам сказали повернутися на об’єкт. Довелося одягати спорядження та знову лізти у воду», – розповідає Денис…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/80740",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-17T15:01:56Z",
+   "expires_at": "2026-11-18T03:01:56Z",
+   "auto": true,
+   "en_mt": {
+    "title": "Five days the divers of the DSNs worked last winter at one of the capital's thermal power plants, when due to the Russian shelling…",
+    "body": "They dived into icy water, the temperature of which reached only 2 degrees, despite the fierce frost outside. When we already had one foot as if at home, we were told to return to the facility. We had to put on equipment and dive into the water again, – Denys tells…",
+    "by": "m2m100"
+   }
+  },
+  {
    "id": "auto-zoda_gov_ua-69109",
    "title": "Кількість поранених від атаки ворога на Запоріжжя зросла до 38 людей.",
    "body": "",
@@ -73,24 +91,6 @@
    "en_mt": {
     "title": "‼ as a result of the Russian attack 2 people were killed, another one was injured in the Obolonskyi district At the scene of the strike…",
     "body": "During the elimination of the consequences of the attack, the employees of the State Emergency Service rescued a person who was blocked under the rubble. The victim…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-80730",
-   "title": "349 людей протягом минулого тижня евакуювали рятувальники разом із поліцейськими, волонтерами та…",
-   "body": "Серед них – 32 дитини та 24 особи з інвалідністю. Сайт • Fb • X • IG • YT • TT",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/80730",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-17T14:11:49Z",
-   "expires_at": "2026-11-18T02:11:49Z",
-   "auto": true,
-   "en_mt": {
-    "title": "349 people were evacuated last week by rescuers together with police officers, volunteers and…",
-    "body": "Among them are 32 children and 24 people with disabilities. Site • Fb • X • IG • YT • TT",
     "by": "m2m100"
    }
   },
