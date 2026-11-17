@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-17T06:14:45Z",
+ "generated_at": "2026-11-17T06:25:45Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -18,7 +18,7 @@
    "name": "Запорізька ОВА",
    "url": "https://t.me/s/zoda_gov_ua",
    "verified": "linked from zoda.gov.ua",
-   "status": "ok: kept 4 / dropped 3, showing 2"
+   "status": "ok: kept 5 / dropped 3, showing 2"
   },
   {
    "name": "Донецька ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-zoda_gov_ua-69099",
+   "title": "Через російські удари по енергетичній інфраструктурі значна кількість жителів Запоріжжя та області…",
+   "body": "Енергетики вже працюють над відновленням електропостачання. Ситуація під контролем, задіяно план реагування на аварії в електромережах. Дякую енергетикам та всім відповідальним службам за роботу.",
+   "source": "Запорізька ОВА",
+   "source_url": "https://t.me/zoda_gov_ua/69099",
+   "region": "Запоріжжя",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-17T06:24:59Z",
+   "expires_at": "2026-11-17T18:24:59Z",
+   "auto": true,
+   "en_mt": {
+    "title": "Due to Russian strikes on the energy infrastructure, a significant number of residents of Zaporizhzhia and the region…",
+    "body": "Energy workers are already working on restoring the power supply. The situation is under control, an emergency response plan for power grids is being implemented. Thank you to energy workers and all responsible services for their work.",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-VadymFilashkin-19359",
    "title": "Росія вбиває цивільних!",
@@ -73,24 +91,6 @@
    "en_mt": {
     "title": "The enemy attacked Zaporizhzhia",
     "body": "An object of industrial infrastructure was hit. Preliminarily, there are wounded. The consequences of the attack are being clarified.",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-zoda_gov_ua-69096",
-   "title": "Ворог атакував Космічний район Запоріжжя.",
-   "body": "FPV-дрон влучив в автомобіль, який вибухнув. У салоні перебував водій. Інформація про його стан уточнюється. Наслідки атаки встановлюються.",
-   "source": "Запорізька ОВА",
-   "source_url": "https://t.me/zoda_gov_ua/69096",
-   "region": "Запоріжжя",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-16T22:01:51Z",
-   "expires_at": "2026-11-17T10:01:51Z",
-   "auto": true,
-   "en_mt": {
-    "title": "The enemy attacked the Kosmiy district of Zaporizhzhia.",
-    "body": "An FPV drone hit a car, which exploded. The driver was in the cabin. Information about his condition is being clarified. The consequences of the attack are being established.",
     "by": "m2m100"
    }
   }
