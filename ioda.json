@@ -1,9 +1,11 @@
 {
- "fetched_at": "2026-11-17T03:13:19Z",
+ "fetched_at": "2026-11-17T03:19:15Z",
  "updated_at": "2026-11-17T03:00:00Z",
  "source": "IODA (Internet Outage Detection and Analysis), Georgia Tech, https://ioda.inetintel.cc.gatech.edu",
  "note": "Internet signal per oblast. score 0-100 vs the region's own 7-day median (BGP 40%, ping /24 60%); level critical while IODA's outage alert for the region is critical. The cause is unknown (power, damage or shutdown look the same).",
- "critical": [],
+ "critical": [
+  "cherkasy"
+ ],
  "regions": {
   "crimea": {
    "score": 100,
@@ -27,7 +29,7 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 1.0125,
+     "ratio": 1.0011,
      "score": 100
     }
    },
@@ -41,7 +43,7 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 1.0171,
+     "ratio": 1.0135,
      "score": 100
     }
    },
@@ -97,7 +99,7 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 1.0085,
+     "ratio": 1.0073,
      "score": 100
     }
    },
@@ -111,7 +113,7 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 1.0185,
+     "ratio": 1.0129,
      "score": 100
     }
    },
@@ -167,16 +169,20 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 0.9922,
+     "ratio": 0.9868,
      "score": 100
     }
    },
-   "level": "normal",
+   "level": "critical",
+   "since": 1794882600,
+   "critical_sources": [
+    "bgp"
+   ],
    "alerts": {
     "bgp": {
-     "level": "normal",
-     "time": 1794873300,
-     "value": 982,
+     "level": "critical",
+     "time": 1794882600,
+     "value": 974,
      "history": 991
     }
    }
@@ -225,7 +231,7 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 1.0061,
+     "ratio": 1.0058,
      "score": 100
     }
    },
@@ -239,7 +245,7 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 1.0202,
+     "ratio": 1.0066,
      "score": 100
     }
    },
@@ -275,7 +281,7 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 1.0134,
+     "ratio": 1.0,
      "score": 100
     }
    },
@@ -289,7 +295,7 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 1.0009,
+     "ratio": 1.0007,
      "score": 100
     }
    },
@@ -325,7 +331,7 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 1.0069,
+     "ratio": 1.0023,
      "score": 100
     }
    },
@@ -361,7 +367,7 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 1.0018,
+     "ratio": 0.9987,
      "score": 100
     }
    },
@@ -389,7 +395,7 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 1.007,
+     "ratio": 1.0024,
      "score": 100
     }
    },
