@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-17T06:32:54Z",
+ "generated_at": "2026-11-17T06:36:54Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -18,7 +18,7 @@
    "name": "Запорізька ОВА",
    "url": "https://t.me/s/zoda_gov_ua",
    "verified": "linked from zoda.gov.ua",
-   "status": "ok: kept 5 / dropped 3, showing 2"
+   "status": "ok: kept 6 / dropped 3, showing 2"
   },
   {
    "name": "Донецька ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-zoda_gov_ua-69100",
+   "title": "Росіяни здійснили комбіновану атаку на Запоріжжя",
+   "body": "Під ударом опинилися промислові об’єкти в трьох районах міста. На жаль, загинув чоловік. Ще дев’ятеро людей постраждали. Внаслідок ударів пошкоджені виробничі та складські приміщення, виникли пожежі. Щирі співчуття рідним і близьким загиблого.",
+   "source": "Запорізька ОВА",
+   "source_url": "https://t.me/zoda_gov_ua/69100",
+   "region": "Запоріжжя",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-17T06:35:56Z",
+   "expires_at": "2026-11-17T18:35:56Z",
+   "auto": true,
+   "en_mt": {
+    "title": "The Russians carried out a combined attack on Zaporizhzhia",
+    "body": "Industrial facilities in three districts of the city were hit. Unfortunately, a man died. Nine more people were injured. As a result of the strikes, production and storage facilities were damaged, fires broke out. Sincere condolences to the relatives and loved ones of the deceased.",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-zoda_gov_ua-69099",
    "title": "Через російські удари по енергетичній інфраструктурі значна кількість жителів Запоріжжя та області…",
@@ -73,24 +91,6 @@
    "en_mt": {
     "title": "Russia is killing civilians!",
     "body": "On 16 November, Russians killed 1 resident of Donetchyna: in Kramatorsk. Another 9 people in the region received injuries per day. The total number of Russian victims in Donetchyna is given without taking into account Mariupol and Volnovakha.",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-zoda_gov_ua-69098",
-   "title": "Ворог атакував Запоріжжя",
-   "body": "Під ударом опинився об’єкт промислової інфраструктури. Попередньо, є поранені. Наслідки атаки уточнюються.",
-   "source": "Запорізька ОВА",
-   "source_url": "https://t.me/zoda_gov_ua/69098",
-   "region": "Запоріжжя",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-17T05:02:09Z",
-   "expires_at": "2026-11-17T17:02:09Z",
-   "auto": true,
-   "en_mt": {
-    "title": "The enemy attacked Zaporizhzhia",
-    "body": "An object of industrial infrastructure was hit. Preliminarily, there are wounded. The consequences of the attack are being clarified.",
     "by": "m2m100"
    }
   }
