@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-18T08:27:49Z",
+ "generated_at": "2026-11-18T08:28:49Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-dsns_telegram-80779",
+   "title": "‼ внаслідок російського удару по ринку постраждали 12 людей, серед них — 11-річний хлопчик",
+   "body": "Ворог атакував ударними безпілотниками місто Златопіль Лозівського району. Один із БпЛА влучив по території місцевого ринку. Унаслідок атаки виникла пожежа в торговельних павільйонах на площі 500 кв. м. Також пошкоджені інші торговельні об’єкти, магазини…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/80779",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-18T08:27:53Z",
+   "expires_at": "2026-11-18T20:27:53Z",
+   "auto": true,
+   "en_mt": {
+    "title": "as a result of the Russian strike on the market, 12 people were injured, including an 11-year-old boy",
+    "body": "The enemy attacked the city of Zlatopil in the Lozivskyi district with strike drones. One of the UAVs hit the territory of the local market. As a result of the attack, a fire broke out in the trading pavilions on an area of 500 sq. m. Other trading facilities, shops…",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-zoda_gov_ua-69113",
    "title": "У Кушугумі внаслідок атаки ворожого FPV-дрону загинула жінка, чоловік дістав поранення",
@@ -91,24 +109,6 @@
    "en_mt": {
     "title": "Due to the deterioration of the security situation, a decision was made on the mandatory evacuation of families with children from Balabino",
     "body": "It is about 85 children from 80 families. In total, the evacuation concerns 184 people. It is important not just to help people leave, but to take care of where they will live after evacuation and what support they will receive. We are currently resolving this issue together with the communities and partners.",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-80761",
-   "title": "внаслідок російських атак постраждали шестеро людей, серед них — дитина",
-   "body": "Внаслідок атак БПлА пошкоджені багатоквартирний та приватний будинки, гуртожиток, парк відпочинку та інфраструктура. Рятувальники ліквідували всі займання на місцях влучань.",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/80761",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-18T06:39:41Z",
-   "expires_at": "2026-11-18T18:39:41Z",
-   "auto": true,
-   "en_mt": {
-    "title": "as a result of Russian attacks six people were injured, including a child",
-    "body": "As a result of the BLA attacks, apartment buildings and private houses, a dormitory, a recreation park and infrastructure were damaged. Rescuers eliminated all fires at the impact sites.",
     "by": "m2m100"
    }
   }
