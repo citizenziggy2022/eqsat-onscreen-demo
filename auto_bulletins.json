@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-18T12:48:16Z",
+ "generated_at": "2026-11-18T12:53:16Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -12,7 +12,7 @@
    "name": "Херсонська ОВА",
    "url": "https://t.me/s/khersonskaODA",
    "verified": "linked from khoda.gov.ua; channel links back to khoda.gov.ua",
-   "status": "ok: kept 0 / dropped 27, showing 0"
+   "status": "ok: kept 1 / dropped 27, showing 1"
   },
   {
    "name": "Запорізька ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-khersonskaODA-71672",
+   "title": "Безоплатні експертні консультації для підприємців на порталі «Дія.Бізнес»",
+   "body": "Ведення власної справи завжди ставить перед управлінськими, фінансовими, юридичними та податковими викликами. Щоб розв'язувати ці завдання без додаткових витрат, національна платформа пропонує сервіс індивідуальної допомоги. На підприємців чекають…",
+   "source": "Херсонська ОВА",
+   "source_url": "https://t.me/khersonskaODA/71672",
+   "region": "Херсонщина",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-18T12:51:54Z",
+   "expires_at": "2026-11-19T00:51:54Z",
+   "auto": true,
+   "en_mt": {
+    "title": "Free expert consultations for entrepreneurs on the Diia.Business portal",
+    "body": "Running one's own business always poses managerial, financial, legal and tax challenges. To solve these tasks without additional expenses, the national platform offers a service of individual assistance. Entrepreneurs are waiting…",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-dsns_telegram-80838",
    "title": "Навіть коли немає світла, можна допомогти дитині почуватися затишно та спокійно",
