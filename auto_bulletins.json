@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-18T06:39:50Z",
+ "generated_at": "2026-11-18T06:40:49Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 0 / dropped 0, showing 0"
+   "status": "ok: kept 1 / dropped 0, showing 1"
   },
   {
    "name": "Херсонська ОВА",
@@ -39,5 +39,24 @@
    "status": "ok: kept 0 / dropped 0, showing 0"
   }
  ],
- "bulletins": []
+ "bulletins": [
+  {
+   "id": "auto-dsns_telegram-80761",
+   "title": "внаслідок російських атак постраждали шестеро людей, серед них — дитина",
+   "body": "Внаслідок атак БПлА пошкоджені багатоквартирний та приватний будинки, гуртожиток, парк відпочинку та інфраструктура. Рятувальники ліквідували всі займання на місцях влучань.",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/80761",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-18T06:39:41Z",
+   "expires_at": "2026-11-18T18:39:41Z",
+   "auto": true,
+   "en_mt": {
+    "title": "as a result of Russian attacks six people were injured, including a child",
+    "body": "As a result of the BLA attacks, apartment buildings and private houses, a dormitory, a recreation park and infrastructure were damaged. Rescuers eliminated all fires at the impact sites.",
+    "by": "m2m100"
+   }
+  }
+ ]
 }
