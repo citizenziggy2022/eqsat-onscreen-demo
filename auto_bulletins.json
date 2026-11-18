@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-18T15:11:06Z",
+ "generated_at": "2026-11-18T15:20:08Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -12,7 +12,7 @@
    "name": "Херсонська ОВА",
    "url": "https://t.me/s/khersonskaODA",
    "verified": "linked from khoda.gov.ua; channel links back to khoda.gov.ua",
-   "status": "ok: kept 1 / dropped 21, showing 1"
+   "status": "ok: kept 1 / dropped 20, showing 1"
   },
   {
    "name": "Запорізька ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-dsns_telegram-80864",
+   "title": "Втома після важких виїздів, сліди сажі на обличчях, серйозні погляди, а іноді - легка усмішка.",
+   "body": "Це наші рятувальники з Житомирщини: звичайні люди, які щодня виконують надзвичайну роботу. Дякуємо кожному за відданість своїй справі. Бережіть себе! Сайт • Fb • X • IG • YT • TT",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/80864",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-18T15:18:21Z",
+   "expires_at": "2026-11-19T03:18:21Z",
+   "auto": true,
+   "en_mt": {
+    "title": "Fatigue after hard trips, soot marks on faces, serious looks, and sometimes - a slight smile.",
+    "body": "These are our rescuers from Zhytomyr region: ordinary people who perform extraordinary work every day. Thank you to each of you for your dedication to your cause. Take care of yourselves. Site • Fb • X • IG • YT • TT",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-dsns_telegram-80854",
    "title": "четверо людей, серед них – дитина, травмовані внаслідок російської атаки у селі Нові Петрівці Вишгородського району!",
@@ -73,24 +91,6 @@
    "en_mt": {
     "title": "Free expert consultations for entrepreneurs on the Diia.Business portal",
     "body": "Running one's own business always poses managerial, financial, legal and tax challenges. To solve these tasks without additional expenses, the national platform offers a service of individual assistance. Entrepreneurs are waiting…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-80838",
-   "title": "Навіть коли немає світла, можна допомогти дитині почуватися затишно та спокійно",
-   "body": "Зберігайте готові ідеї, як розважити дитину під час знеструмлень від дитячої та сімейної психологині Світлани Ройз — з інструкціями, орієнтовним віком та екперними порадами з безпеки від ДСНС та ЮНІСЕФ, а також чекліст речей, які варто зібрати в «коробку…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/80838",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-18T12:29:17Z",
-   "expires_at": "2026-11-19T00:29:17Z",
-   "auto": true,
-   "en_mt": {
-    "title": "Even when there is no light, you can help a child feel cozy and calm",
-    "body": "Keep ready ideas on how to entertain a child during power outages from child and family psychologist Svitlana Roiz - with instructions, target age and expert safety tips from DSNs and UNICEF, as well as a checklist of things to collect in a \"box…",
     "by": "m2m100"
    }
   },
