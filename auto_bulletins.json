@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-18T11:27:08Z",
+ "generated_at": "2026-11-18T11:37:09Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -18,7 +18,7 @@
    "name": "Запорізька ОВА",
    "url": "https://t.me/s/zoda_gov_ua",
    "verified": "linked from zoda.gov.ua",
-   "status": "ok: kept 2 / dropped 2, showing 2"
+   "status": "ok: kept 3 / dropped 2, showing 2"
   },
   {
    "name": "Донецька ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-zoda_gov_ua-69125",
+   "title": "росіяни атакували FPV-дроном Космічний район Запоріжжя",
+   "body": "Поранений 70-річний чоловік. Його госпіталізовано до лікарні.",
+   "source": "Запорізька ОВА",
+   "source_url": "https://t.me/zoda_gov_ua/69125",
+   "region": "Запоріжжя",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-18T11:36:12Z",
+   "expires_at": "2026-11-18T23:36:12Z",
+   "auto": true,
+   "en_mt": {
+    "title": "Russians attacked the Space District of Zaporizhzhia with an FPV drone",
+    "body": "A 70-year-old man was injured. He was hospitalized in the hospital.",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-dsns_telegram-80801",
    "title": "росія вдарила по центру міста, є загиблі та постраждалі",
@@ -109,24 +127,6 @@
    "en_mt": {
     "title": "In Kushuhum, as a result of an attack by an enemy FPV drone, a woman died, a man was injured",
     "body": "The strike hit an open area of the terrain. The blast wave and debris damaged residential buildings. Condolences to the relatives and loved ones of the deceased. I wish the injured a speedy recovery.",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-zoda_gov_ua-69112",
-   "title": "Через погіршення безпекової ситуації ухвалили рішення про обов’язкову евакуацію родин із дітьми з Балабиного",
-   "body": "Йдеться про 85 дітей із 80 родин. Загалом евакуація стосується 184 людей. Важливо не просто допомогти людям виїхати, а подбати про те, де вони житимуть після евакуації та яку підтримку отримають. Це питання зараз вирішуємо разом із громадами та партнерами.…",
-   "source": "Запорізька ОВА",
-   "source_url": "https://t.me/zoda_gov_ua/69112",
-   "region": "Запоріжжя",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-18T07:35:32Z",
-   "expires_at": "2026-11-18T19:35:32Z",
-   "auto": true,
-   "en_mt": {
-    "title": "Due to the deterioration of the security situation, a decision was made on the mandatory evacuation of families with children from Balabino",
-    "body": "It is about 85 children from 80 families. In total, the evacuation concerns 184 people. It is important not just to help people leave, but to take care of where they will live after evacuation and what support they will receive. We are currently resolving this issue together with the communities and partners.",
     "by": "m2m100"
    }
   }
