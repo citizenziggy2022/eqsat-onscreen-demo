@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-18T09:32:55Z",
+ "generated_at": "2026-11-18T10:20:06Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -41,6 +41,24 @@
  ],
  "bulletins": [
   {
+   "id": "auto-dsns_telegram-80795",
+   "title": "На Кіровоградщині рятувальники зустріли 16 евакуйованих жителів міста Олешки, що на Херсонщині.",
+   "body": "Усі прибулі — люди літнього віку, серед них є й маломобільні. Разом із психологами ДСНС, медиками, волонтерами та представниками місцевої влади надзвичайники подбали про кожного: допомогли перенести речі, надали першу допомогу й підтримали тих, хто…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/80795",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-18T10:18:01Z",
+   "expires_at": "2026-11-18T22:18:01Z",
+   "auto": true,
+   "en_mt": {
+    "title": "In Kirovohrad Oblast, rescuers met 16 evacuated residents of the city of Oleshky, which is in Kherson Oblast.",
+    "body": "All the arrivals are elderly people, among them there are also people with limited mobility. Together with psychologists of the SES, medics, volunteers and representatives of local authorities, rescuers took care of each one: helped to carry things, provided first aid and supported those who…",
+    "by": "m2m100"
+   }
+  },
+  {
    "id": "auto-dsns_telegram-80779",
    "title": "‼ внаслідок російського удару по ринку постраждали 12 людей, серед них — 11-річний хлопчик",
    "body": "Ворог атакував ударними безпілотниками місто Златопіль Лозівського району. Один із БпЛА влучив по території місцевого ринку. Унаслідок атаки виникла пожежа в торговельних павільйонах на площі 500 кв. м. Також пошкоджені інші торговельні об’єкти, магазини…",
@@ -73,24 +91,6 @@
    "en_mt": {
     "title": "In Kushuhum, as a result of an attack by an enemy FPV drone, a woman died, a man was injured",
     "body": "The strike hit an open area of the terrain. The blast wave and debris damaged residential buildings. Condolences to the relatives and loved ones of the deceased. I wish the injured a speedy recovery.",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-80769",
-   "title": "вночі росіяни атакували об’єкт промислової інфраструктури, виникла пожежа",
-   "body": "Роботу вогнеборців ускладнювала постійна загроза повторних ударів. Пожежу ліквідували. На місці працювали 19 рятувальників та 5 одиниць техніки ДСНС. На щастя, обійшлося без постраждалих Сайт • Fb • X • IG • YT • TT",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/80769",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-18T07:41:27Z",
-   "expires_at": "2026-11-18T19:41:27Z",
-   "auto": true,
-   "en_mt": {
-    "title": "At night, Russians attacked an object of industrial infrastructure, a fire broke out",
-    "body": "The work of the firefighters was complicated by the constant threat of repeated strikes. The fire was extinguished. 19 rescuers and 5 units of the SES equipment worked at the scene. Fortunately, there were no casualties Site • Fb • X • IG • YT • TT",
     "by": "m2m100"
    }
   },
