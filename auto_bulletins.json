@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-18T12:16:09Z",
+ "generated_at": "2026-11-18T12:17:07Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 3 / dropped 1, showing 2"
+   "status": "ok: kept 4 / dropped 1, showing 2"
   },
   {
    "name": "Херсонська ОВА",
@@ -41,6 +41,24 @@
  ],
  "bulletins": [
   {
+   "id": "auto-dsns_telegram-80831",
+   "title": "‼ росія знову атакувала середмістя, 1 людина загинула, ще 2 постраждали",
+   "body": "Унаслідок російського удару пошкоджені житлові будинки та легкові автомобілі. На місці влучання загорянь не виникло. На місці події працювали психологи ДСНС. Сайт • Fb • X • IG • YT • TT",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/80831",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-18T12:15:53Z",
+   "expires_at": "2026-11-19T00:15:53Z",
+   "auto": true,
+   "en_mt": {
+    "title": "‼ Russia has again attacked the city center, 1 person died, 2 more were injured",
+    "body": "As a result of the Russian strike, residential buildings and passenger cars were damaged. No fires occurred at the site of the hit. Psychologists from the State Emergency Service worked at the scene of the incident. Site • Fb • X • IG • YT • TT",
+    "by": "m2m100"
+   }
+  },
+  {
    "id": "auto-dsns_telegram-80811",
    "title": "‼ 2 людей постраждали внаслідок російської атаки на цивільні підприємства Чугуївського району",
    "body": "Ворог завдав ударів безпілотниками по населених пунктах Чугуївської та Малинівської громад. Влучання зафіксували на територіях цивільних підприємств. Горіли складські та виробничі будівлі, а також автомобіль. ▪До ліквідації наслідків ударів рф, попри загрозу…",
@@ -73,24 +91,6 @@
    "en_mt": {
     "title": "Russians attacked the Space District of Zaporizhzhia with an FPV drone",
     "body": "A 70-year-old man was injured. He was hospitalized in the hospital.",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-80801",
-   "title": "росія вдарила по центру міста, є загиблі та постраждалі",
-   "body": "За однією адресою пошкоджене скління житлових будинків та приміщення кафе, сталося загоряння легкового авто. Під час обстеження пошкодженого будинку рятувальники виявили 3 людей, які опинились заблокованими у квартирах. Їм відчинили двері, вивели з будинку…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/80801",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-18T10:56:36Z",
-   "expires_at": "2026-11-18T22:56:36Z",
-   "auto": true,
-   "en_mt": {
-    "title": "Russia struck the city center, there are dead and injured",
-    "body": "At one address, the glazing of residential buildings and a cafe premises was damaged, a car caught fire. During the inspection of the damaged house, rescuers found 3 people who were blocked in the apartments. They opened the doors for them, took them out of the house…",
     "by": "m2m100"
    }
   },
