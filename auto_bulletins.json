@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-18T11:43:08Z",
+ "generated_at": "2026-11-18T11:45:08Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 4 / dropped 1, showing 2"
+   "status": "ok: kept 4 / dropped 0, showing 2"
   },
   {
    "name": "Херсонська ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-dsns_telegram-80811",
+   "title": "‼ 2 людей постраждали внаслідок російської атаки на цивільні підприємства Чугуївського району",
+   "body": "Ворог завдав ударів безпілотниками по населених пунктах Чугуївської та Малинівської громад. Влучання зафіксували на територіях цивільних підприємств. Горіли складські та виробничі будівлі, а також автомобіль. ▪До ліквідації наслідків ударів рф, попри загрозу…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/80811",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-18T11:44:33Z",
+   "expires_at": "2026-11-18T23:44:33Z",
+   "auto": true,
+   "en_mt": {
+    "title": "‼ 2 people were injured as a result of the Russian attack on civilian enterprises in the Chuhuiv district",
+    "body": "The enemy struck with drones at the settlements of Chuhuivska and Malyivska communities. Hits were recorded on the territory of civilian enterprises. Warehouse and production buildings were on fire, as well as a car. ▪To eliminate the consequences of the rf strikes, despite the threat…",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-zoda_gov_ua-69125",
    "title": "росіяни атакували FPV-дроном Космічний район Запоріжжя",
@@ -91,24 +109,6 @@
    "en_mt": {
     "title": "STATE OF THE ENERGY SYSTEM",
     "body": "Attacks by the enemy on Ukraine's energy infrastructure continue. As a result of the shelling, as of the morning, there are consumers without electricity in Dnipropetrovsk, Donetsk, Zhytomyr, Zaporizhzhia, Kharkiv, Sumy, Rivne and Cherkasy regions. The most difficult…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-80795",
-   "title": "На Кіровоградщині рятувальники зустріли 16 евакуйованих жителів міста Олешки, що на Херсонщині.",
-   "body": "Усі прибулі — люди літнього віку, серед них є й маломобільні. Разом із психологами ДСНС, медиками, волонтерами та представниками місцевої влади надзвичайники подбали про кожного: допомогли перенести речі, надали першу допомогу й підтримали тих, хто…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/80795",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-18T10:18:01Z",
-   "expires_at": "2026-11-18T22:18:01Z",
-   "auto": true,
-   "en_mt": {
-    "title": "In Kirovohrad Oblast, rescuers met 16 evacuated residents of the city of Oleshky, which is in Kherson Oblast.",
-    "body": "All the arrivals are elderly people, among them there are also people with limited mobility. Together with psychologists of the SES, medics, volunteers and representatives of local authorities, rescuers took care of each one: helped to carry things, provided first aid and supported those who…",
     "by": "m2m100"
    }
   },
