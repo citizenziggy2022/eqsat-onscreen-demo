@@ -2,7 +2,7 @@
  "note": "Air Force of Ukraine public threat warnings (t.me/s/kpszsu), word for word. The screen shows posts under 15 min old as a red line in the live news crawl. Written by scripts/fetch_airforce.py.",
  "source": "Повітряні Сили ЗС України",
  "source_url": "https://t.me/s/kpszsu",
- "status": "ok",
+ "status": "failed (HTTPSConnectionPool(host='t.me', port=443): Max retries exceeded with url: /s/kp), kept 7",
  "posts": [
   {
    "id": "kpszsu/97236",
@@ -45,14 +45,8 @@
    "text": "🏍 Реактивний БпЛА на Кременчук",
    "time": "2026-11-18T16:54:58Z",
    "url": "https://t.me/kpszsu/97230"
-  },
-  {
-   "id": "kpszsu/97229",
-   "text": "🏍 Реактивний БпЛА на півдні Одещини, курс на захід.",
-   "time": "2026-11-18T16:43:38Z",
-   "url": "https://t.me/kpszsu/97229"
   }
  ],
  "dropped": [],
- "generated_at": "2026-11-18T17:42:40Z"
+ "generated_at": "2026-11-18T17:43:38Z"
 }
