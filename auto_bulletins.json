@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-18T16:56:37Z",
+ "generated_at": "2026-11-18T16:58:37Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -18,7 +18,7 @@
    "name": "Запорізька ОВА",
    "url": "https://t.me/s/zoda_gov_ua",
    "verified": "linked from zoda.gov.ua",
-   "status": "ok: kept 3 / dropped 5, showing 2"
+   "status": "ok: kept 4 / dropped 5, showing 2"
   },
   {
    "name": "Донецька ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-zoda_gov_ua-69135",
+   "title": "Попри постійні атаки на промисловість, підприємства Запорізької області продовжують працювати й сплачувати податки",
+   "body": "За 10 місяців до місцевих бюджетів надійшло майже 12 млрд грн - більше, ніж за аналогічний період торік. Але темпи зростання доходів суттєво знизилися через руйнування підприємств. Наступного року місцеві бюджети можуть втратити щонайменше 230 млн грн. Це…",
+   "source": "Запорізька ОВА",
+   "source_url": "https://t.me/zoda_gov_ua/69135",
+   "region": "Запоріжжя",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-18T16:57:54Z",
+   "expires_at": "2026-11-19T04:57:54Z",
+   "auto": true,
+   "en_mt": {
+    "title": "Despite constant attacks on industry, enterprises of the Zaporizhzhia region continue to operate and pay taxes",
+    "body": "For 10 months local budgets received almost 12 billion hryvnias - more than for the same period last year. But the pace of revenue growth has decreased significantly due to the destruction of enterprises. Next year, local budgets may lose at least 230 million hryvnias. This…",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-dsns_telegram-80879",
    "title": "одна людина постраждала внаслідок чергової російської атаки",
@@ -127,24 +145,6 @@
    "en_mt": {
     "title": "STATE OF THE ENERGY SYSTEM",
     "body": "Attacks by the enemy on Ukraine's energy infrastructure continue. As a result of the shelling, as of the morning, there are consumers without electricity in Dnipropetrovsk, Donetsk, Zhytomyr, Zaporizhzhia, Kharkiv, Sumy, Rivne and Cherkasy regions. The most difficult…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-zoda_gov_ua-69113",
-   "title": "У Кушугумі внаслідок атаки ворожого FPV-дрону загинула жінка, чоловік дістав поранення",
-   "body": "Удар припав на відкриту ділянку місцевості. Вибуховою хвилею та уламками пошкоджено житлові будинки. Співчуття рідним і близьким загиблої. Постраждалому бажаю якнайшвидшого одужання.",
-   "source": "Запорізька ОВА",
-   "source_url": "https://t.me/zoda_gov_ua/69113",
-   "region": "Запоріжжя",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-18T07:52:53Z",
-   "expires_at": "2026-11-18T19:52:53Z",
-   "auto": true,
-   "en_mt": {
-    "title": "In Kushuhum, as a result of an attack by an enemy FPV drone, a woman died, a man was injured",
-    "body": "The strike hit an open area of the terrain. The blast wave and debris damaged residential buildings. Condolences to the relatives and loved ones of the deceased. I wish the injured a speedy recovery.",
     "by": "m2m100"
    }
   }
