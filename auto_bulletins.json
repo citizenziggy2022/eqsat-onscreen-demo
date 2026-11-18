@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-18T12:24:17Z",
+ "generated_at": "2026-11-18T12:30:17Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -41,6 +41,24 @@
  ],
  "bulletins": [
   {
+   "id": "auto-dsns_telegram-80838",
+   "title": "Навіть коли немає світла, можна допомогти дитині почуватися затишно та спокійно",
+   "body": "Зберігайте готові ідеї, як розважити дитину під час знеструмлень від дитячої та сімейної психологині Світлани Ройз — з інструкціями, орієнтовним віком та екперними порадами з безпеки від ДСНС та ЮНІСЕФ, а також чекліст речей, які варто зібрати в «коробку…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/80838",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-18T12:29:17Z",
+   "expires_at": "2026-11-19T00:29:17Z",
+   "auto": true,
+   "en_mt": {
+    "title": "Even when there is no light, you can help a child feel cozy and calm",
+    "body": "Keep ready ideas on how to entertain a child during power outages from child and family psychologist Svitlana Roiz - with instructions, target age and expert safety tips from DSNs and UNICEF, as well as a checklist of things to collect in a \"box…",
+    "by": "m2m100"
+   }
+  },
+  {
    "id": "auto-dsns_telegram-80831",
    "title": "‼ росія знову атакувала середмістя, 1 людина загинула, ще 2 постраждали",
    "body": "Унаслідок російського удару пошкоджені житлові будинки та легкові автомобілі. На місці влучання загорянь не виникло. На місці події працювали психологи ДСНС. Сайт • Fb • X • IG • YT • TT",
@@ -55,24 +73,6 @@
    "en_mt": {
     "title": "‼ Russia has again attacked the city center, 1 person died, 2 more were injured",
     "body": "As a result of the Russian strike, residential buildings and passenger cars were damaged. No fires occurred at the site of the hit. Psychologists from the State Emergency Service worked at the scene of the incident. Site • Fb • X • IG • YT • TT",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-80811",
-   "title": "‼ 2 людей постраждали внаслідок російської атаки на цивільні підприємства Чугуївського району",
-   "body": "Ворог завдав ударів безпілотниками по населених пунктах Чугуївської та Малинівської громад. Влучання зафіксували на територіях цивільних підприємств. Горіли складські та виробничі будівлі, а також автомобіль. ▪До ліквідації наслідків ударів рф, попри загрозу…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/80811",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-18T11:44:33Z",
-   "expires_at": "2026-11-18T23:44:33Z",
-   "auto": true,
-   "en_mt": {
-    "title": "‼ 2 people were injured as a result of the Russian attack on civilian enterprises in the Chuhuiv district",
-    "body": "The enemy struck with drones at the settlements of Chuhuivska and Malyivska communities. Hits were recorded on the territory of civilian enterprises. Warehouse and production buildings were on fire, as well as a car. ▪To eliminate the consequences of the rf strikes, despite the threat…",
     "by": "m2m100"
    }
   },
