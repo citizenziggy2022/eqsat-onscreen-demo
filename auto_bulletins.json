@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-19T14:28:15Z",
+ "generated_at": "2026-11-19T14:33:16Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 5 / dropped 3, showing 2"
+   "status": "ok: kept 4 / dropped 4, showing 2"
   },
   {
    "name": "Херсонська ОВА",
@@ -59,24 +59,6 @@
    }
   },
   {
-   "id": "auto-dsns_telegram-80931",
-   "title": "21 житловий будинок пошкоджений через російський авіаудар по селищу Мирне Слов’янської громади.",
-   "body": "Двоє людей опинилися заблокованими в одній із пошкоджених осель Спалахнули пожежі. Рятувальники розібрали 200 кг уламків будівельних конструкцій та вивільнили двох поранених, яких передали працівникам «швидкої». Вогнеборці локалізували загоряння у 2…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/80931",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-19T12:04:17Z",
-   "expires_at": "2026-11-20T00:04:17Z",
-   "auto": true,
-   "en_mt": {
-    "title": "21 residential building was damaged due to a Russian air strike on the village of Myrne of Slovyanska community.",
-    "body": "Two people were trapped in one of the damaged houses where fires broke out. Rescuers dismantled 200 kg of building structure debris and released the two injured, who were handed over to the emergency workers. Firefighters localized the fire in 2…",
-    "by": "m2m100"
-   }
-  },
-  {
    "id": "auto-khersonskaODA-71766",
    "title": "До лікарні звернувся чоловік, який вдень 16 листопада постраждав унаслідок атаки російського дрона у…",
    "body": "У 33-річного містянина діагностували контузію, струс головного мозку, вибухову та закриту черепно-мозкову травми. Після надання медичної допомоги потерпілому призначили амбулаторне лікування.",
@@ -91,6 +73,24 @@
    "en_mt": {
     "title": "To the hospital a man turned who during the day on 16 November was injured as a result of an attack by a Russian drone in…",
     "body": "A 33-year-old townsman was diagnosed with a contusion, concussion of the brain, explosive and closed craniocerebral injury. After providing medical care, the victim was prescribed outpatient treatment.",
+    "by": "m2m100"
+   }
+  },
+  {
+   "id": "auto-dsns_telegram-80921",
+   "title": "після чергового російського удару виникли пожежі у 3 районах столиці",
+   "body": "Подільський район: виникло загоряння мансарди 3-поверхової житлової будівлі. Пожежу локалізували. Голосіївський район: на парковці медичного закладу ДСНС загорівся легковий автомобіль. Пошкоджені фасад і скління будівлі пожежної частини. Пожежу ліквідували.…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/80921",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-19T11:04:25Z",
+   "expires_at": "2026-11-19T23:04:25Z",
+   "auto": true,
+   "en_mt": {
+    "title": "after another Russian strike fires broke out in 3 districts of the capital",
+    "body": "Podilskyi district: a fire broke out in the attic of a 3-storey residential building. The fire was localized. Holosiivskyi district: a car caught fire in the parking lot of a medical facility of the DSNS. The facade and glazing of the fire station building were damaged. The fire was extinguished.",
     "by": "m2m100"
    }
   },
