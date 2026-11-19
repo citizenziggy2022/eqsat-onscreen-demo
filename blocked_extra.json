@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-19T02:34:26+00:00",
+ "generated": "2026-11-19T03:35:28+00:00",
  "sources": {
   "censoredplanet": {
    "name": "Censored Planet (University of Michigan)",
@@ -21,7 +21,7 @@
     "RU": {
      "confirmed": 0,
      "likely": 76,
-     "measured": 829
+     "measured": 830
     },
     "UA": {
      "confirmed": 0,
@@ -40,7 +40,7 @@
     }
    },
    "rule": "confirmed = a known block page was returned; likely = >=20 measurements, >=50% unexpected and >=30 points above the country median",
-   "seconds": 20.4
+   "seconds": 17.3
   },
   "rkn": {
    "name": "Roskomnadzor registry (via antifilter.download)",
@@ -1026,18 +1026,6 @@
    "well_known": false
   },
   {
-   "domain": "messenger.com",
-   "country": "RU",
-   "source": "censoredplanet",
-   "status": "likely",
-   "last_seen": "2026-11-15",
-   "rate": 0.81,
-   "measurements": 388,
-   "category": "comt",
-   "new_vs_ooni": true,
-   "well_known": false
-  },
-  {
    "domain": "radiomarsho.com",
    "country": "RU",
    "source": "censoredplanet",
@@ -1082,6 +1070,18 @@
    "rate": 0.8,
    "measurements": 190,
    "category": "news",
+   "new_vs_ooni": true,
+   "well_known": false
+  },
+  {
+   "domain": "messenger.com",
+   "country": "RU",
+   "source": "censoredplanet",
+   "status": "likely",
+   "last_seen": "2026-11-15",
+   "rate": 0.8,
+   "measurements": 195,
+   "category": "comt",
    "new_vs_ooni": true,
    "well_known": false
   },
