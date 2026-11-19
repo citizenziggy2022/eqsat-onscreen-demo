@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-19T09:22:00+00:00",
+ "generated": "2026-11-19T10:23:08+00:00",
  "sources": {
   "censoredplanet": {
    "name": "Censored Planet (University of Michigan)",
@@ -49,13 +49,13 @@
    "total_domains": 1810616,
    "well_known_listed": 56,
    "note": "Official RKN blocking registry. Rows are registry entries (incl. wildcard and mirror domains), not distinct sites.",
-   "seconds": 21.9
+   "seconds": 22.9
   }
  },
  "credit": "Censored Planet (U. Michigan) · RKN registry via antifilter.download",
  "counts": {
   "items": 147,
-  "new_vs_ooni": 92,
+  "new_vs_ooni": 94,
   "by_source_country": {
    "rkn/RU": 45,
    "censoredplanet/RU": 76,
@@ -154,7 +154,7 @@
    "status": "listed",
    "last_seen": "2026-11-18",
    "category": "news",
-   "new_vs_ooni": true,
+   "new_vs_ooni": false,
    "well_known": true
   },
   {
@@ -214,7 +214,7 @@
    "status": "listed",
    "last_seen": "2026-11-18",
    "category": "news",
-   "new_vs_ooni": false,
+   "new_vs_ooni": true,
    "well_known": true
   },
   {
@@ -714,7 +714,7 @@
    "status": "listed",
    "last_seen": "2026-11-18",
    "category": "vpn",
-   "new_vs_ooni": false,
+   "new_vs_ooni": true,
    "well_known": true
   },
   {
@@ -1131,6 +1131,18 @@
    "rate": 0.83,
    "measurements": 393,
    "category": "grp",
+   "new_vs_ooni": true,
+   "well_known": false
+  },
+  {
+   "domain": "severreal.org",
+   "country": "RU",
+   "source": "censoredplanet",
+   "status": "likely",
+   "last_seen": "2026-11-18",
+   "rate": 0.83,
+   "measurements": 390,
+   "category": "news",
    "new_vs_ooni": true,
    "well_known": false
   },
@@ -1623,18 +1635,6 @@
    "rate": 0.83,
    "measurements": 389,
    "category": "grp",
-   "new_vs_ooni": false,
-   "well_known": false
-  },
-  {
-   "domain": "severreal.org",
-   "country": "RU",
-   "source": "censoredplanet",
-   "status": "likely",
-   "last_seen": "2026-11-18",
-   "rate": 0.83,
-   "measurements": 390,
-   "category": "news",
    "new_vs_ooni": false,
    "well_known": false
   },
