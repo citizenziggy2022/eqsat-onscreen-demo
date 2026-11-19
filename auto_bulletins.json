@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-19T10:45:24Z",
+ "generated_at": "2026-11-19T10:48:24Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -18,7 +18,7 @@
    "name": "Запорізька ОВА",
    "url": "https://t.me/s/zoda_gov_ua",
    "verified": "linked from zoda.gov.ua",
-   "status": "ok: kept 1 / dropped 1, showing 1"
+   "status": "ok: kept 0 / dropped 1, showing 0"
   },
   {
    "name": "Донецька ОВА",
@@ -127,24 +127,6 @@
    "en_mt": {
     "title": "Demining is ongoing in Kharkiv region",
     "body": "Today, 19 November, blasting work is planned: · from 10:00 to 14:00 near the settlement of Taranivka of Zmiivska community of Chuhuiv district. Possible sounds of explosions — planned disposal of UXO.",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-zoda_gov_ua-69139",
-   "title": "Ворог атакував Запоріжжя.",
-   "body": "Поранення отримала одна жінка. Їй надали допомогу на місці. Внаслідок ударів загорілися три приватні будинки та автомобіль.",
-   "source": "Запорізька ОВА",
-   "source_url": "https://t.me/zoda_gov_ua/69139",
-   "region": "Запоріжжя",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-18T22:47:40Z",
-   "expires_at": "2026-11-19T10:47:40Z",
-   "auto": true,
-   "en_mt": {
-    "title": "The enemy attacked Zaporizhzhia.",
-    "body": "One woman was injured. She was provided with assistance on the spot. As a result of the strikes, three private houses and a car caught fire.",
     "by": "m2m100"
    }
   }
