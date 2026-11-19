@@ -3,27 +3,28 @@
   "source": "NASA FIRMS (VIIRS NOAA-20/21, MODIS)",
   "source_url": "https://firms.modaps.eosdis.nasa.gov/",
   "window_hours": 24,
-  "checked_at": "2026-11-19T05:20:52Z",
-  "updated": "2026-11-19T05:20:52Z",
-  "newest_detection": "2026-11-18T23:37:00Z",
-  "total": 3,
+  "checked_at": "2026-11-19T06:22:53Z",
+  "updated": "2026-11-19T06:22:53Z",
+  "newest_detection": "2026-11-19T01:17:00Z",
+  "total": 4,
   "counts": {
     "crimea": 1,
-    "cherkasy": 1,
-    "khmelnytskyi": 1
+    "khmelnytskyi": 1,
+    "rivne": 1,
+    "ivano": 1
   },
   "satellites": [
     {
       "satellite": "VIIRS NOAA-20",
-      "rows": 426
+      "rows": 195
     },
     {
       "satellite": "VIIRS NOAA-21",
-      "rows": 356
+      "rows": 277
     },
     {
       "satellite": "MODIS",
-      "rows": 39
+      "rows": 21
     }
   ],
   "errors": []
