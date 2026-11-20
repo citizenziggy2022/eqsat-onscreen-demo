@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-20T14:27:57Z",
+ "generated_at": "2026-11-20T14:36:57Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -36,7 +36,7 @@
    "name": "Харківська ОВА",
    "url": "https://t.me/s/kharkivoda",
    "verified": "linked from kharkivoda.gov.ua",
-   "status": "ok: kept 1 / dropped 2, showing 1"
+   "status": "ok: kept 0 / dropped 3, showing 0"
   }
  ],
  "bulletins": [
@@ -109,24 +109,6 @@
    "en_mt": {
     "title": "In Kyiv a man was injured as a result of a morning strike by a Russian drone! He was handed over to medics!",
     "body": "Through the attack in the Podilskyi district, a car caught fire, the fire was extinguished. Also, a store was damaged, as well as buildings and 14 cars located nearby. Site • Fb • X • IG • YT • TT",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-kharkivoda-32971",
-   "title": "На Харківщині триває розмінування",
-   "body": "Сьогодні, 20 листопада, планується проведення підривних робіт: ▪ з 10:00 до 14:00 поблизу населеного пункту Таранівка Зміївської громади Чугуївського району; Можливі звуки вибухів — планове знешкодження ВНП.",
-   "source": "Харківська ОВА",
-   "source_url": "https://t.me/kharkivoda/32971",
-   "region": "Харківщина",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-20T07:24:06Z",
-   "expires_at": "2026-11-20T19:24:06Z",
-   "auto": true,
-   "en_mt": {
-    "title": "Demining is ongoing in Kharkiv region",
-    "body": "Today, 20 November, blasting work is planned: ▪ from 10:00 to 14:00 near the settlement of Taranivka of Zmiivska community of Chuhuiv district; Possible sounds of explosions — planned disposal of UXO.",
     "by": "m2m100"
    }
   },
