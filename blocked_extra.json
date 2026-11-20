@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-20T18:56:39+00:00",
+ "generated": "2026-11-20T19:57:51+00:00",
  "sources": {
   "censoredplanet": {
    "name": "Censored Planet (University of Michigan)",
@@ -21,12 +21,12 @@
     "RU": {
      "confirmed": 0,
      "likely": 75,
-     "measured": 828
+     "measured": 820
     },
     "UA": {
      "confirmed": 0,
      "likely": 0,
-     "measured": 828
+     "measured": 838
     },
     "BY": {
      "confirmed": 0,
@@ -45,11 +45,11 @@
   "rkn": {
    "name": "Roskomnadzor registry (via antifilter.download)",
    "endpoint": "https://antifilter.download/list/domains.lst",
-   "updated": "2026-11-20T07:38:46+00:00",
-   "total_domains": 1819145,
+   "updated": "2026-11-20T19:43:38+00:00",
+   "total_domains": 1822196,
    "well_known_listed": 56,
    "note": "Official RKN blocking registry. Rows are registry entries (incl. wildcard and mirror domains), not distinct sites.",
-   "seconds": 22.1
+   "seconds": 23.4
   }
  },
  "credit": "Censored Planet (U. Michigan) · RKN registry via antifilter.download",
@@ -785,8 +785,8 @@
    "source": "censoredplanet",
    "status": "likely",
    "last_seen": "2026-11-18",
-   "rate": 0.83,
-   "measurements": 789,
+   "rate": 0.82,
+   "measurements": 396,
    "category": "platform",
    "also": [
     "rkn"
@@ -1087,6 +1087,18 @@
    "well_known": false
   },
   {
+   "domain": "idelreal.org",
+   "country": "RU",
+   "source": "censoredplanet",
+   "status": "likely",
+   "last_seen": "2026-11-18",
+   "rate": 0.83,
+   "measurements": 389,
+   "category": "news",
+   "new_vs_ooni": true,
+   "well_known": false
+  },
+  {
    "domain": "lemonde.fr",
    "country": "RU",
    "source": "censoredplanet",
@@ -1155,18 +1167,6 @@
    "rate": 0.82,
    "measurements": 383,
    "category": "anon",
-   "new_vs_ooni": true,
-   "well_known": false
-  },
-  {
-   "domain": "kavkazr.com",
-   "country": "RU",
-   "source": "censoredplanet",
-   "status": "likely",
-   "last_seen": "2026-11-18",
-   "rate": 0.82,
-   "measurements": 388,
-   "category": "news",
    "new_vs_ooni": true,
    "well_known": false
   },
