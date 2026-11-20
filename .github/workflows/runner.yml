@@ -34,6 +34,7 @@ jobs:
           lastfeeds=0
           lastnews=0
           lastlineup=0
+          laststreams=0
           while [ "$(date +%s)" -lt "$end" ]; do
             t0=$(date +%s)
             python3 scripts/alerttypes.py || fail "alerttypes failed, keeping last file"
@@ -54,6 +55,11 @@ jobs:
               python3 scripts/fetch_lineup.py || fail "lineup failed, keeping last file"
               files="$files lineup.json"
               lastlineup=$(date +%s)
+            fi
+            if [ $(( $(date +%s) - laststreams )) -ge 86400 ]; then
+              python3 scripts/check_streams.py || fail "stream check failed, keeping last file"
+              files="$files stream_health.json"
+              laststreams=$(date +%s)
             fi
             git add $files 2>/dev/null || true
             if ! git diff --cached --quiet; then
