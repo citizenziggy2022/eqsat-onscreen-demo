@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-20T00:54:40Z",
+ "fetched_at": "2026-11-20T01:00:39Z",
  "updated_at": "2026-11-20T00:40:00Z",
  "source": "IODA (Internet Outage Detection and Analysis), Georgia Tech, https://ioda.inetintel.cc.gatech.edu",
  "note": "Internet signal per oblast. score 0-100 vs the region's own 7-day median (BGP 40%, ping /24 60%); level critical while IODA's outage alert for the region is critical. The cause is unknown (power, damage or shutdown look the same).",
@@ -53,7 +53,7 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9994,
+     "ratio": 0.9991,
      "score": 100
     },
     "bgp": {
@@ -113,7 +113,7 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 1.0088,
+     "ratio": 1.0081,
      "score": 100
     }
    },
@@ -123,7 +123,7 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9912,
+     "ratio": 0.9914,
      "score": 100
     },
     "bgp": {
@@ -165,11 +165,11 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 1.0071,
+     "ratio": 1.0069,
      "score": 100
     },
     "bgp": {
-     "ratio": 1.0121,
+     "ratio": 1.0117,
      "score": 100
     }
    },
@@ -179,11 +179,11 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9945,
+     "ratio": 0.9949,
      "score": 100
     },
     "bgp": {
-     "ratio": 0.9985,
+     "ratio": 0.9992,
      "score": 100
     }
    },
@@ -197,7 +197,7 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 1.002,
+     "ratio": 1.0019,
      "score": 100
     }
    },
@@ -249,11 +249,11 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 1.0338,
+     "ratio": 1.0327,
      "score": 100
     },
     "bgp": {
-     "ratio": 1.014,
+     "ratio": 1.0128,
      "score": 100
     }
    },
@@ -277,7 +277,7 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 1.0169,
+     "ratio": 1.0179,
      "score": 100
     },
     "bgp": {
@@ -359,7 +359,7 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 1.0076,
+     "ratio": 1.0073,
      "score": 100
     }
    },
