@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-20T15:58:19Z",
+ "fetched_at": "2026-11-20T16:00:27Z",
  "source": {
   "id": "saveecobot",
   "name": "SaveEcoBot",
@@ -67,7 +67,7 @@
    "sub_uk": "ЗАЕС, 16 км",
    "sub_en": "ZNPP area, 16 km",
    "nsv_h": 110,
-   "time": "2026-11-20T15:57:27Z",
+   "time": "2026-11-20T15:59:33Z",
    "oldest": "2026-11-20T15:27:11Z",
    "n": 2,
    "platforms": [
@@ -83,7 +83,7 @@
      "station": "вулиця Ворошилова, 1",
      "city": "Марганець",
      "nsv_h": 127.0,
-     "time": "2026-11-20T15:57:27Z",
+     "time": "2026-11-20T15:59:33Z",
      "fresh": true,
      "manual": false,
      "platform": "SaveDnipro & Greenpeace",
@@ -138,17 +138,15 @@
    "id": "chornobyl_town",
    "uk": "Чорнобиль",
    "en": "Chornobyl town",
-   "nsv_h": 188,
-   "time": "2026-11-20T15:57:51Z",
-   "oldest": "2026-11-20T10:00:00Z",
-   "n": 4,
+   "nsv_h": 161,
+   "time": "2026-11-20T15:59:51Z",
+   "oldest": "2026-11-20T14:50:23Z",
+   "n": 2,
    "platforms": [
     "SaveDnipro & Safecast",
-    "SaveDnipro & uRADMonitor",
-    "ДСП \"Екоцентр\""
+    "SaveDnipro & uRADMonitor"
    ],
    "notes": [
-    "Дані збираються через систему ЕкоЗагроза",
     "Онлайн-моніторинг радіаційного стану навколо Атомних Електростанцій України",
     "Онлайн-моніторинг радіаційного стану приладами Radnote від Safecast та Blues Inc"
    ],
@@ -159,7 +157,7 @@
      "city": "Чорнобиль",
      "nsv_h": 193.0,
      "time": "2026-11-20T10:00:00Z",
-     "fresh": true,
+     "fresh": false,
      "manual": false,
      "platform": "ДСП \"Екоцентр\"",
      "notes": "Дані збираються через систему ЕкоЗагроза"
@@ -170,7 +168,7 @@
      "city": "Чорнобиль",
      "nsv_h": 183.0,
      "time": "2026-11-20T10:00:00Z",
-     "fresh": true,
+     "fresh": false,
      "manual": false,
      "platform": "ДСП \"Екоцентр\"",
      "notes": "Дані збираються через систему ЕкоЗагроза"
@@ -180,7 +178,7 @@
      "station": "вулиця Богдана Хмельницького",
      "city": "Чорнобиль",
      "nsv_h": 203.0,
-     "time": "2026-11-20T15:57:51Z",
+     "time": "2026-11-20T15:59:51Z",
      "fresh": true,
      "manual": false,
      "platform": "SaveDnipro & uRADMonitor",
@@ -217,16 +215,12 @@
    "sub_uk": "зона відчуження — високі значення звичні",
    "sub_en": "exclusion zone — high values normal",
    "zone": true,
-   "nsv_h": 1760,
-   "time": "2026-11-20T10:00:00Z",
-   "oldest": "2026-11-20T10:00:00Z",
-   "n": 3,
-   "platforms": [
-    "ДСП \"Екоцентр\""
-   ],
-   "notes": [
-    "Дані збираються через систему ЕкоЗагроза"
-   ],
+   "nsv_h": null,
+   "time": null,
+   "oldest": null,
+   "n": 0,
+   "platforms": [],
+   "notes": [],
    "readings": [
     {
      "sensor_id": 3734,
@@ -234,7 +228,7 @@
      "city": "Прип'ять",
      "nsv_h": 1760.0,
      "time": "2026-11-20T10:00:00Z",
-     "fresh": true,
+     "fresh": false,
      "manual": false,
      "platform": "ДСП \"Екоцентр\"",
      "notes": "Дані збираються через систему ЕкоЗагроза"
@@ -245,7 +239,7 @@
      "city": null,
      "nsv_h": 2894.0,
      "time": "2026-11-20T10:00:00Z",
-     "fresh": true,
+     "fresh": false,
      "manual": false,
      "platform": "ДСП \"Екоцентр\"",
      "notes": "Дані збираються через систему ЕкоЗагроза"
@@ -256,7 +250,7 @@
      "city": "Прип'ять",
      "nsv_h": 374.0,
      "time": "2026-11-20T10:00:00Z",
-     "fresh": true,
+     "fresh": false,
      "manual": false,
      "platform": "ДСП \"Екоцентр\"",
      "notes": "Дані збираються через систему ЕкоЗагроза"
@@ -447,9 +441,9 @@
    "en": "Netishyn",
    "sub_uk": "Хмельницька АЕС",
    "sub_en": "Khmelnytskyi NPP",
-   "nsv_h": 150,
-   "time": "2026-11-20T15:57:49Z",
-   "oldest": "2026-11-20T15:57:49Z",
+   "nsv_h": 140,
+   "time": "2026-11-20T15:59:49Z",
+   "oldest": "2026-11-20T15:59:49Z",
    "n": 1,
    "platforms": [
     "SaveDnipro & uRADMonitor"
@@ -462,8 +456,8 @@
      "sensor_id": 22877,
      "station": "проспект Незалежності",
      "city": "Нетішин",
-     "nsv_h": 150.0,
-     "time": "2026-11-20T15:57:49Z",
+     "nsv_h": 140.0,
+     "time": "2026-11-20T15:59:49Z",
      "fresh": true,
      "manual": false,
      "platform": "SaveDnipro & uRADMonitor",
