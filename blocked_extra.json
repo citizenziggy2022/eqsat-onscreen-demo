@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-20T19:57:51+00:00",
+ "generated": "2026-11-20T20:58:56+00:00",
  "sources": {
   "censoredplanet": {
    "name": "Censored Planet (University of Michigan)",
@@ -10,7 +10,7 @@
     "endDate": "2026-11-20"
    },
    "domains_tested": 870,
-   "query_errors": 2,
+   "query_errors": 1,
    "baseline_unexpected_share": {
     "RU": 0.006,
     "UA": 0.0,
@@ -21,7 +21,7 @@
     "RU": {
      "confirmed": 0,
      "likely": 75,
-     "measured": 820
+     "measured": 828
     },
     "UA": {
      "confirmed": 0,
@@ -40,7 +40,7 @@
     }
    },
    "rule": "confirmed = a known block page was returned; likely = >=20 measurements, >=50% unexpected and >=30 points above the country median",
-   "seconds": 19.9
+   "seconds": 20.1
   },
   "rkn": {
    "name": "Roskomnadzor registry (via antifilter.download)",
@@ -49,13 +49,13 @@
    "total_domains": 1822196,
    "well_known_listed": 56,
    "note": "Official RKN blocking registry. Rows are registry entries (incl. wildcard and mirror domains), not distinct sites.",
-   "seconds": 23.4
+   "seconds": 20.4
   }
  },
  "credit": "Censored Planet (U. Michigan) · RKN registry via antifilter.download",
  "counts": {
   "items": 146,
-  "new_vs_ooni": 90,
+  "new_vs_ooni": 89,
   "by_source_country": {
    "rkn/RU": 45,
    "censoredplanet/RU": 75,
@@ -714,7 +714,7 @@
    "status": "listed",
    "last_seen": "2026-11-20",
    "category": "vpn",
-   "new_vs_ooni": true,
+   "new_vs_ooni": false,
    "well_known": true
   },
   {
@@ -785,8 +785,8 @@
    "source": "censoredplanet",
    "status": "likely",
    "last_seen": "2026-11-18",
-   "rate": 0.82,
-   "measurements": 396,
+   "rate": 0.83,
+   "measurements": 789,
    "category": "platform",
    "also": [
     "rkn"
@@ -1087,18 +1087,6 @@
    "well_known": false
   },
   {
-   "domain": "idelreal.org",
-   "country": "RU",
-   "source": "censoredplanet",
-   "status": "likely",
-   "last_seen": "2026-11-18",
-   "rate": 0.83,
-   "measurements": 389,
-   "category": "news",
-   "new_vs_ooni": true,
-   "well_known": false
-  },
-  {
    "domain": "lemonde.fr",
    "country": "RU",
    "source": "censoredplanet",
@@ -1167,6 +1155,18 @@
    "rate": 0.82,
    "measurements": 383,
    "category": "anon",
+   "new_vs_ooni": true,
+   "well_known": false
+  },
+  {
+   "domain": "kavkazr.com",
+   "country": "RU",
+   "source": "censoredplanet",
+   "status": "likely",
+   "last_seen": "2026-11-18",
+   "rate": 0.82,
+   "measurements": 388,
+   "category": "news",
    "new_vs_ooni": true,
    "well_known": false
   },
