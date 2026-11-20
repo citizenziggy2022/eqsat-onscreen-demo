@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-20T05:59:54Z",
+ "generated_at": "2026-11-20T06:03:55Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 0 / dropped 0, showing 0"
+   "status": "ok: kept 1 / dropped 0, showing 1"
   },
   {
    "name": "Херсонська ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-dsns_telegram-81011",
+   "title": "Полтавщина: рятувальники ліквідували пожежу на промисловому підприємстві після російської атаки",
+   "body": "У Кременчуцькому районі внаслідок ворожого удару виникла пожежа на території промислового підприємства. Рятувальники ДСНС ліквідували пожежу, працюючи під постійною загрозою повторних атак. Загиблих і постраждалих немає.",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/81011",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-20T06:02:35Z",
+   "expires_at": "2026-11-20T18:02:35Z",
+   "auto": true,
+   "en_mt": {
+    "title": "Poltavshchyna: rescuers extinguished a fire at an industrial enterprise after a Russian attack",
+    "body": "In the Kremenchuk district, as a result of the enemy strike, a fire broke out on the territory of an industrial enterprise. Rescuers of the DSNs eliminated the fire, working under the constant threat of repeated attacks. There are no dead or injured.",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-VadymFilashkin-19439",
    "title": "Росія вбиває цивільних!",
