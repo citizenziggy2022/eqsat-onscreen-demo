@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-20T17:30:00Z",
+ "generated_at": "2026-11-20T17:48:02Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -12,7 +12,7 @@
    "name": "Херсонська ОВА",
    "url": "https://t.me/s/khersonskaODA",
    "verified": "linked from khoda.gov.ua; channel links back to khoda.gov.ua",
-   "status": "ok: kept 0 / dropped 18, showing 0"
+   "status": "ok: kept 1 / dropped 18, showing 1"
   },
   {
    "name": "Запорізька ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-khersonskaODA-71860",
+   "title": "До лікарні звернулась 49-річна жителька Шевченівки, яка постраждала через російську дронову атаку 15 листопада",
+   "body": "Жінка отримала мінно-вибухову травму, а також поранення грудної клітини і плеча. Потерпілий призначили амбулаторне лікування.",
+   "source": "Херсонська ОВА",
+   "source_url": "https://t.me/khersonskaODA/71860",
+   "region": "Херсонщина",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-20T17:47:11Z",
+   "expires_at": "2026-11-21T05:47:11Z",
+   "auto": true,
+   "en_mt": {
+    "title": "To the hospital a 49-year-old resident of Shevchenkivka turned, who suffered due to the Russian drone attack on November 15",
+    "body": "The woman received a mine-explosive injury, as well as injuries to the chest and shoulder. The victim was prescribed outpatient treatment.",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-dsns_telegram-81129",
    "title": "‼ внаслідок російського удару травмовані 10 людей",
