@@ -177,6 +177,7 @@ def main():
             old = load("water.json", {})
             data = {
                 "updated": iso(),
+                "checked_at": iso(),
                 "kind": "power",
                 "source": "Укренерго / Ukrenergo" + (f" · пост / post {p['post_at'][11:16]} UTC" if p["post_at"] else ""),
                 "post_at": p["post_at"],
@@ -184,14 +185,22 @@ def main():
                 "note": "Відключення світла, не води: вода зазвичай зникає слідом / Power cuts, not water: water often follows",
                 "regions": p["regions"],
             }
-            # rewrite when anything but the read time changed, or every 10 min so the age on screen stays honest
-            same = {k: v for k, v in old.items() if k != "updated"} == {k: v for k, v in data.items() if k != "updated"}
-            if not same or now - st.get("power_written", 0) >= 600:
+            # rewrite when anything but the read/check times changed, or every 10 min so the age on screen stays honest
+            volatile = {"updated", "checked_at", "error"}
+            same = {k: v for k, v in old.items() if k not in volatile} == {k: v for k, v in data.items() if k not in volatile}
+            if not same or old.get("error") or now - st.get("power_written", 0) >= 600:
                 write("water.json", data)
                 st["power_written"] = now
             did.append(f"power: {len(p['regions'])} oblasts (post {p['post_at']})")
         except Exception as exc:
-            did.append(f"power failed, keeping last: {str(exc)[:100]}")
+            err = str(exc)[:100]
+            did.append(f"power failed, keeping last: {err}")
+            # failed-read evidence for the editor: stamp the attempt, never the data's "updated" (last success)
+            old = load("water.json", {})
+            if old:
+                if old.get("error") != err or now - st.get("power_err_written", 0) >= 600:
+                    write("water.json", {**old, "checked_at": iso(), "error": err})
+                    st["power_err_written"] = now
     if force or now - st.get("roads_at", 0) >= ROADS_EVERY_S:
         st["roads_at"] = now
         try:
@@ -199,17 +208,26 @@ def main():
             old = load("roads.json", {})
             data = {
                 "updated": iso(),
+                "checked_at": iso(),
                 "kind": "border",
                 "source": "єЧерга / eCherha · вантажівки / trucks",
                 "regions": q["regions"],
             }
-            same = {k: v for k, v in old.items() if k != "updated"} == {k: v for k, v in data.items() if k != "updated"}
-            if not same or now - st.get("roads_written", 0) >= 600:
+            volatile = {"updated", "checked_at", "error"}
+            same = {k: v for k, v in old.items() if k not in volatile} == {k: v for k, v in data.items() if k not in volatile}
+            if not same or old.get("error") or now - st.get("roads_written", 0) >= 600:
                 write("roads.json", data)
                 st["roads_written"] = now
             did.append(f"roads: {len(q['regions'])} oblasts from {q['crossings']} crossings" + (f", unmapped {q['unknown']}" if q["unknown"] else ""))
         except Exception as exc:
-            did.append(f"roads failed, keeping last: {str(exc)[:100]}")
+            err = str(exc)[:100]
+            did.append(f"roads failed, keeping last: {err}")
+            # failed-read evidence for the editor: stamp the attempt, never the data's "updated" (last success)
+            old = load("roads.json", {})
+            if old:
+                if old.get("error") != err or now - st.get("roads_err_written", 0) >= 600:
+                    write("roads.json", {**old, "checked_at": iso(), "error": err})
+                    st["roads_err_written"] = now
     os.makedirs(os.path.dirname(STATE), exist_ok=True)
     with open(STATE, "w", encoding="utf-8") as f:
         json.dump(st, f)
