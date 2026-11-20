@@ -143,6 +143,16 @@ for src,res,err in results:
         if k in seen: continue
         seen.add(k); items.append(r)
 items.sort(key=lambda r:r['published'],reverse=True)
+# failure streaks: carry each source's fail_since from the previous committed news.json so the editor can flag
+# sources dead for hours, not just this run; a source failing now without a stored fail_since starts one
+try:
+    _prev = {s.get("id"): s for s in json.load(open("news.json", encoding="utf-8")).get("sources", [])}
+except Exception:
+    _prev = {}
+for s in status:
+    if s["ok"] and s["count"]:
+        continue
+    s["fail_since"] = (_prev.get(s["id"]) or {}).get("fail_since") or NOW.isoformat().replace("+00:00", "Z")
 json.dump(dict(generated=NOW.isoformat().replace('+00:00','Z'),items=items[:300],sources=status),open('news.json','w'),ensure_ascii=False,indent=1)
 print(len(items),'items;',sum(s['ok'] for s in status),'/',len(status),'sources ok')
 for s in status:
