@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-20T07:41:38Z",
+ "generated_at": "2026-11-20T07:42:37Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 2 / dropped 2, showing 2"
+   "status": "ok: kept 3 / dropped 1, showing 2"
   },
   {
    "name": "Херсонська ОВА",
@@ -77,20 +77,20 @@
    }
   },
   {
-   "id": "auto-dsns_telegram-81011",
-   "title": "Полтавщина: рятувальники ліквідували пожежу на промисловому підприємстві після російської атаки",
-   "body": "У Кременчуцькому районі внаслідок ворожого удару виникла пожежа на території промислового підприємства. Рятувальники ДСНС ліквідували пожежу, працюючи під постійною загрозою повторних атак. Загиблих і постраждалих немає.",
+   "id": "auto-dsns_telegram-81016",
+   "title": "Дніпропетровщина: внаслідок нічних російських атак постраждали 5 людей",
+   "body": "Ворог атакував чотири райони області. У місті Жовті Води Кам’янського району виникла пожежа у п’ятиповерховому житловому будинку. Постраждали 5 людей, двох із них рятувальники винесли з охоплених вогнем приміщень. Пошкоджено багатоповерхівки, банк, магазини…",
    "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/81011",
+   "source_url": "https://t.me/dsns_telegram/81016",
    "region": "Україна",
    "category": "Офіційно / Official",
    "severity": "info",
-   "issued_at": "2026-11-20T06:02:35Z",
-   "expires_at": "2026-11-20T18:02:35Z",
+   "issued_at": "2026-11-20T06:29:13Z",
+   "expires_at": "2026-11-20T18:29:13Z",
    "auto": true,
    "en_mt": {
-    "title": "Poltavshchyna: rescuers extinguished a fire at an industrial enterprise after a Russian attack",
-    "body": "In the Kremenchuk district, as a result of the enemy strike, a fire broke out on the territory of an industrial enterprise. Rescuers of the DSNs eliminated the fire, working under the constant threat of repeated attacks. There are no dead or injured.",
+    "title": "Dnipropetrovshchyna: 5 people were injured as a result of Russian night attacks",
+    "body": "The enemy attacked four districts of the region. A fire broke out in a five-storey residential building in the city of Zhovti Vody, Kamianskyi district. 5 people were injured, two of them were rescued by rescuers from the fire-engulfed premises. High-rises, a bank, shops… were damaged.",
     "by": "m2m100"
    }
   },
