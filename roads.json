@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-21T06:27:36Z",
- "checked_at": "2026-11-21T06:27:36Z",
+ "updated": "2026-11-21T06:31:18Z",
+ "checked_at": "2026-11-21T06:31:18Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -12,17 +12,17 @@
    "status": "outage",
    "note": "Устилуг → PL: 648 вант. · 6 д 15 год"
   },
-  "zakarpattia": {
-   "status": "outage",
-   "note": "Дякове → RO: 613 вант. · 6 д 18 год"
-  },
   "chernivtsi": {
    "status": "ok",
    "note": "Дяківці → RO: 0 вант. · 0 год"
   },
   "odesa": {
    "status": "outage",
-   "note": "Орлівка → RO: 757 вант. · 6 д 17 год"
+   "note": "Орлівка → RO: 758 вант. · 6 д 18 год"
+  },
+  "zakarpattia": {
+   "status": "outage",
+   "note": "Чоп (Тиса) → HU: 1625 вант. · 6 д 15 год"
   }
  },
  "queue": [
@@ -59,7 +59,7 @@
    "name": "Угринів",
    "to": "PL",
    "hours": 0.0,
-   "trucks": 1
+   "trucks": 2
   },
   {
    "oblast": "lviv",
@@ -76,11 +76,11 @@
    "trucks": 648
   },
   {
-   "oblast": "zakarpattia",
-   "name": "Дякове",
-   "to": "RO",
-   "hours": 162,
-   "trucks": 613
+   "oblast": "lviv",
+   "name": "Шегині",
+   "to": "PL",
+   "hours": 136,
+   "trucks": 595
   },
   {
    "oblast": "chernivtsi",
@@ -100,8 +100,8 @@
    "oblast": "odesa",
    "name": "Орлівка",
    "to": "RO",
-   "hours": 161,
-   "trucks": 757
+   "hours": 162,
+   "trucks": 758
   },
   {
    "oblast": "chernivtsi",
@@ -150,7 +150,7 @@
    "name": "Чоп (Тиса)",
    "to": "HU",
    "hours": 159,
-   "trucks": 1627
+   "trucks": 1625
   }
  ]
 }
