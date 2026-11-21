@@ -1,16 +1,16 @@
 {
- "updated": "2026-11-21T16:54:05Z",
- "checked_at": "2026-11-21T16:54:05Z",
+ "updated": "2026-11-21T16:57:07Z",
+ "checked_at": "2026-11-21T16:57:07Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Шегині → PL: 546 вант. · 6 д 9 год"
+   "note": "Краківець → PL: 744 вант. · 9 д 5 год"
   },
   "volyn": {
    "status": "outage",
-   "note": "Устилуг → PL: 648 вант. · 6 д 15 год"
+   "note": "Ягодин → PL: 832 вант. · 9 д 1 год"
   },
   "zakarpattia": {
    "status": "outage",
@@ -18,11 +18,11 @@
   },
   "chernivtsi": {
    "status": "outage",
-   "note": "Порубне → RO: 1097 вант. · 5 д 4 год"
+   "note": "Порубне → RO: 1096 вант. · 5 д 4 год"
   },
   "odesa": {
    "status": "outage",
-   "note": "Орлівка → RO: 769 вант. · 6 д 20 год"
+   "note": "Орлівка → RO: 768 вант. · 6 д 20 год"
   },
   "vinnytsia": {
    "status": "ok",
@@ -43,6 +43,13 @@
    "to": "PL",
    "hours": 0.0,
    "trucks": 0
+  },
+  {
+   "oblast": "lviv",
+   "name": "Краківець",
+   "to": "PL",
+   "hours": 221,
+   "trucks": 744
   },
   {
    "oblast": "lviv",
@@ -76,8 +83,8 @@
    "oblast": "volyn",
    "name": "Устилуг",
    "to": "PL",
-   "hours": 159,
-   "trucks": 648
+   "hours": 158,
+   "trucks": 645
   },
   {
    "oblast": "lviv",
@@ -108,6 +115,13 @@
    "trucks": 5
   },
   {
+   "oblast": "volyn",
+   "name": "Ягодин",
+   "to": "PL",
+   "hours": 217,
+   "trucks": 832
+  },
+  {
    "oblast": "zakarpattia",
    "name": "Дякове",
    "to": "RO",
@@ -126,21 +140,21 @@
    "name": "Орлівка",
    "to": "RO",
    "hours": 164,
-   "trucks": 769
+   "trucks": 768
   },
   {
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
    "hours": 124,
-   "trucks": 1097
+   "trucks": 1096
   },
   {
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
    "hours": 0.0,
-   "trucks": 5
+   "trucks": 3
   },
   {
    "oblast": "chernivtsi",
@@ -181,15 +195,15 @@
    "oblast": "odesa",
    "name": "Старокозаче",
    "to": "MD",
-   "hours": 11.1,
-   "trucks": 48
+   "hours": 10.8,
+   "trucks": 46
   },
   {
    "oblast": "odesa",
    "name": "Табаки",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 0
+   "trucks": 1
   },
   {
    "oblast": "zakarpattia",
