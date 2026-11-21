@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-21T09:10:19Z",
- "checked_at": "2026-11-21T09:10:19Z",
+ "updated": "2026-11-21T09:13:19Z",
+ "checked_at": "2026-11-21T09:13:19Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Рава-Руська → PL: 643 вант. · 9 д 6 год"
+   "note": "Угринів → PL: 632 вант. · 6 д 1 год"
   },
   "volyn": {
    "status": "outage",
@@ -18,7 +18,7 @@
   },
   "chernivtsi": {
    "status": "limited",
-   "note": "Мамалига → MD: 115 вант. · 16 год"
+   "note": "Мамалига → MD: 112 вант. · 15 год"
   },
   "odesa": {
    "status": "outage",
@@ -42,20 +42,6 @@
   },
   {
    "oblast": "lviv",
-   "name": "Рава-Руська",
-   "to": "PL",
-   "hours": 134,
-   "trucks": 1021
-  },
-  {
-   "oblast": "lviv",
-   "name": "Рава-Руська",
-   "to": "PL",
-   "hours": 222,
-   "trucks": 643
-  },
-  {
-   "oblast": "lviv",
    "name": "Смільниця",
    "to": "PL",
    "hours": 0.0,
@@ -66,7 +52,7 @@
    "name": "Угринів",
    "to": "PL",
    "hours": 59,
-   "trucks": 280
+   "trucks": 282
   },
   {
    "oblast": "lviv",
@@ -79,8 +65,8 @@
    "oblast": "volyn",
    "name": "Устилуг",
    "to": "PL",
-   "hours": 71,
-   "trucks": 223
+   "hours": 72,
+   "trucks": 224
   },
   {
    "oblast": "lviv",
@@ -100,15 +86,15 @@
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
-   "hours": 152,
-   "trucks": 1061
+   "hours": 151,
+   "trucks": 1058
   },
   {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
-   "hours": 181,
-   "trucks": 1589
+   "hours": 182,
+   "trucks": 1593
   },
   {
    "oblast": "volyn",
@@ -139,13 +125,6 @@
    "trucks": 0
   },
   {
-   "oblast": "chernivtsi",
-   "name": "Красноїльськ",
-   "to": "RO",
-   "hours": 0.0,
-   "trucks": 2
-  },
-  {
    "oblast": "odesa",
    "name": "Орлівка",
    "to": "RO",
@@ -170,15 +149,22 @@
    "oblast": "odesa",
    "name": "Виноградівка",
    "to": "MD",
-   "hours": 0.2,
+   "hours": 0.0,
    "trucks": 1
   },
   {
    "oblast": "chernivtsi",
    "name": "Мамалига",
    "to": "MD",
-   "hours": 15.8,
-   "trucks": 115
+   "hours": 15.2,
+   "trucks": 112
+  },
+  {
+   "oblast": "odesa",
+   "name": "Рені",
+   "to": "MD",
+   "hours": 79,
+   "trucks": 250
   },
   {
    "oblast": "odesa",
