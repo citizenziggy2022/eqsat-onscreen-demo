@@ -2,6 +2,66 @@
   "note": "Every screen deploy, newest first: version 1.N (N + 1 per deploy), deploy time (UTC), one-line summary, build code. Read by the admin (History › Versions).",
   "versions": [
     {
+      "version": "2.51",
+      "at": "2026-11-21T21:23:43Z",
+      "summary": "Bulletins keep the Ukrainian text on every pass (English line only when it fits); editor top bar: Border queue renamed Truck waiting time, shows data age separately",
+      "build": "index-DJwrrN0P.js"
+    },
+    {
+      "version": "2.50",
+      "at": "2026-11-21T18:54:10Z",
+      "summary": "Cleanup: bundle rebuilt from the private source (source and live now match); fewer duplicate requests, polls and re-renders; no visible change",
+      "build": "index-BkuJ8iYg.js"
+    },
+    {
+      "version": "2.49",
+      "at": "2026-11-21T03:32:14Z",
+      "summary": "Fix: the opening station ident plays again when the screen opens (it was skipped by the previous fix)",
+      "build": "index-DHJcEp07.js"
+    },
+    {
+      "version": "2.48",
+      "at": "2026-11-21T03:19:25Z",
+      "summary": "Radio: opening ident waits for the saved ident list before playing",
+      "build": "index-99Vvk-qN.js"
+    },
+    {
+      "version": "2.47",
+      "at": "2026-11-21T03:10:58Z",
+      "summary": "Editor > Content > Station ident: order and random play controls",
+      "build": "index-Bnt8C_2I.js"
+    },
+    {
+      "version": "2.46",
+      "at": "2026-11-21T02:55:58Z",
+      "summary": "Editor > Content: border module with readings, crossing selection and warning thresholds",
+      "build": "index-CDogegW2.js"
+    },
+    {
+      "version": "2.45",
+      "at": "2026-11-20T22:27:46Z",
+      "summary": "Editor: wording fix for news source and radio stream failure flags",
+      "build": "index-Bl9mMmLU.js"
+    },
+    {
+      "version": "2.44",
+      "at": "2026-11-20T22:08:11Z",
+      "summary": "Editor: failure flags for news sources and radio streams; daily stream health check",
+      "build": "index-THdTJcvJ.js"
+    },
+    {
+      "version": "2.43",
+      "at": "2026-11-20T21:49:50Z",
+      "summary": "Editor top bar: border feed health",
+      "build": "index-CCyCFt4H.js"
+    },
+    {
+      "version": "2.42",
+      "at": "2026-11-20T21:27:24Z",
+      "summary": "Reliability fixes: unavailable and stale data states with staleness thresholds; editor save conflict protection",
+      "build": "index-k01B28qM.js"
+    },
+    {
       "version": "2.41",
       "at": "2026-11-12T16:06:40Z",
       "summary": "Defence today card in Bulletins: Air Force overnight launched/shot down + General Staff daily losses, numbers only",
