@@ -1,6 +1,6 @@
 {
  "updated": "2026-11-21T11:15:46Z",
- "checked_at": "2026-11-21T11:20:03Z",
+ "checked_at": "2026-11-21T11:29:42Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -199,5 +199,5 @@
    "trucks": 1
   }
  ],
- "error": "HTTPSConnectionPool(host='back.echerha.gov.ua', port=443): Read timed out. (read timeout=20)"
+ "error": "502 Server Error: Bad Gateway for url: https://back.echerha.gov.ua/api/v5/workload/1"
 }
