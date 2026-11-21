@@ -23,6 +23,20 @@ jobs:
       - uses: actions/checkout@v4
       - name: site files only
         run: rm -rf .git .github scripts
+      # regenerate the screen's self-update marker from the bundle this artifact actually serves, so a bundle deploy
+      # can never leave version.json naming an older build (Nov 21 2026: a stale marker looped screens into reloading
+      # every 2 minutes). Artifact-only: nothing is committed, so no race with live-runner data commits.
+      - name: version marker for screen self-update
+        run: |
+          BUNDLE=$(grep -o 'assets/index-[A-Za-z0-9_-]*\.js' index.html | head -1 | sed 's|assets/||')
+          VER=$(grep -o '"version": *"[^"]*"' version.json 2>/dev/null | head -1 | cut -d'"' -f4)
+          NOW=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+          if [ -n "$BUNDLE" ] && [ -n "$VER" ]; then
+            printf '{\n  "build": "%s",\n  "version": "%s",\n  "deployed_at": "%s"\n}\n' "$BUNDLE" "$VER" "$NOW" > version.json
+          elif [ -n "$BUNDLE" ]; then
+            printf '{\n  "build": "%s",\n  "deployed_at": "%s"\n}\n' "$BUNDLE" "$NOW" > version.json
+          fi
+          cat version.json
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .
