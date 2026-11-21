@@ -156,7 +156,7 @@ def border_queues():
         trucks = row.get("vehicle_in_active_queues_counts") or 0
         # per-crossing rows for the admin border module (Nov 21): the screen recomputes the card from these when the
         # module sets thresholds/selection; "regions" above stays the automatic default view
-        queue.append({"oblast": key, "name": side, "to": COUNTRY.get(row.get("country_id"), ""), "hours": int(round(hours)), "trucks": trucks})
+        queue.append({"oblast": key, "name": side, "to": COUNTRY.get(row.get("country_id"), ""), "hours": round(hours, 1), "trucks": trucks})
         if key not in worst or hours > worst[key]["hours"]:
             worst[key] = {"hours": hours, "trucks": trucks, "name": side, "to": COUNTRY.get(row.get("country_id"), "")}
     regions = {}
