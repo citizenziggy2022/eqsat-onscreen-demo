@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-21T19:14:16Z",
- "checked_at": "2026-11-21T19:14:16Z",
+ "updated": "2026-11-21T19:18:22Z",
+ "checked_at": "2026-11-21T19:18:22Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -11,10 +11,6 @@
   "volyn": {
    "status": "outage",
    "note": "Устилуг → PL: 638 вант. · 6 д 12 год"
-  },
-  "zakarpattia": {
-   "status": "outage",
-   "note": "Дякове → RO: 616 вант. · 6 д 18 год"
   },
   "chernivtsi": {
    "status": "outage",
@@ -27,6 +23,10 @@
   "vinnytsia": {
    "status": "ok",
    "note": "Могилів-Подільський → MD: 0 вант. · 0 год"
+  },
+  "zakarpattia": {
+   "status": "outage",
+   "note": "Ужгород → SK: 803 вант. · 6 д 12 год"
   }
  },
  "queue": [
@@ -34,8 +34,8 @@
    "oblast": "lviv",
    "name": "Краківець",
    "to": "PL",
-   "hours": 130,
-   "trucks": 1142
+   "hours": 129,
+   "trucks": 1136
   },
   {
    "oblast": "lviv",
@@ -49,7 +49,7 @@
    "name": "Рава-Руська",
    "to": "PL",
    "hours": 132,
-   "trucks": 1009
+   "trucks": 1008
   },
   {
    "oblast": "lviv",
@@ -62,8 +62,8 @@
    "oblast": "lviv",
    "name": "Смільниця",
    "to": "PL",
-   "hours": 0.3,
-   "trucks": 3
+   "hours": 0.0,
+   "trucks": 4
   },
   {
    "oblast": "lviv",
@@ -105,14 +105,14 @@
    "name": "Шегині",
    "to": "PL",
    "hours": 141,
-   "trucks": 614
+   "trucks": 615
   },
   {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
    "hours": 142,
-   "trucks": 999
+   "trucks": 996
   },
   {
    "oblast": "volyn",
@@ -120,13 +120,6 @@
    "to": "PL",
    "hours": 0.0,
    "trucks": 0
-  },
-  {
-   "oblast": "zakarpattia",
-   "name": "Дякове",
-   "to": "RO",
-   "hours": 162,
-   "trucks": 616
   },
   {
    "oblast": "chernivtsi",
@@ -161,7 +154,7 @@
    "name": "Маяки-Удобне",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 3
+   "trucks": 2
   },
   {
    "oblast": "vinnytsia",
@@ -203,14 +196,14 @@
    "name": "Ужгород",
    "to": "SK",
    "hours": 156,
-   "trucks": 804
+   "trucks": 803
   },
   {
    "oblast": "zakarpattia",
    "name": "Лужанка",
    "to": "HU",
-   "hours": 2.9,
-   "trucks": 16
+   "hours": 2.1,
+   "trucks": 12
   }
  ]
 }
