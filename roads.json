@@ -1,16 +1,16 @@
 {
- "updated": "2026-11-21T19:01:10Z",
- "checked_at": "2026-11-21T19:01:10Z",
+ "updated": "2026-11-21T19:04:19Z",
+ "checked_at": "2026-11-21T19:04:19Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Шегині → PL: 544 вант. · 6 д 9 год"
+   "note": "Шегині → PL: 545 вант. · 6 д 9 год"
   },
   "volyn": {
    "status": "outage",
-   "note": "Устилуг → PL: 644 вант. · 6 д 14 год"
+   "note": "Устилуг → PL: 643 вант. · 6 д 14 год"
   },
   "zakarpattia": {
    "status": "outage",
@@ -18,11 +18,11 @@
   },
   "chernivtsi": {
    "status": "outage",
-   "note": "Порубне → RO: 1100 вант. · 5 д 4 год"
+   "note": "Порубне → RO: 1101 вант. · 5 д 4 год"
   },
   "odesa": {
    "status": "ok",
-   "note": "Маяки-Удобне → MD: 3 вант. · 1 год"
+   "note": "Виноградівка → MD: 1 вант. · 0 год"
   },
   "vinnytsia": {
    "status": "ok",
@@ -30,6 +30,13 @@
   }
  },
  "queue": [
+  {
+   "oblast": "lviv",
+   "name": "Краківець",
+   "to": "PL",
+   "hours": 131,
+   "trucks": 1149
+  },
   {
    "oblast": "lviv",
    "name": "Краківець",
@@ -49,14 +56,14 @@
    "name": "Угринів",
    "to": "PL",
    "hours": 66,
-   "trucks": 312
+   "trucks": 311
   },
   {
    "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
-   "hours": 143,
-   "trucks": 617
+   "hours": 142,
+   "trucks": 616
   },
   {
    "oblast": "volyn",
@@ -70,14 +77,14 @@
    "name": "Устилуг",
    "to": "PL",
    "hours": 158,
-   "trucks": 644
+   "trucks": 643
   },
   {
    "oblast": "lviv",
    "name": "Шегині",
    "to": "PL",
    "hours": 153,
-   "trucks": 544
+   "trucks": 545
   },
   {
    "oblast": "lviv",
@@ -112,7 +119,7 @@
    "name": "Порубне",
    "to": "RO",
    "hours": 124,
-   "trucks": 1100
+   "trucks": 1101
   },
   {
    "oblast": "chernivtsi",
@@ -132,7 +139,7 @@
    "oblast": "odesa",
    "name": "Маяки-Удобне",
    "to": "MD",
-   "hours": 0.7,
+   "hours": 0.0,
    "trucks": 3
   },
   {
@@ -175,7 +182,7 @@
    "name": "Ужгород",
    "to": "SK",
    "hours": 157,
-   "trucks": 807
+   "trucks": 805
   }
  ]
 }
