@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-21T17:16:37Z",
+ "generated_at": "2026-11-21T17:22:37Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 3 / dropped 5, showing 2"
+   "status": "ok: kept 3 / dropped 6, showing 2"
   },
   {
    "name": "Херсонська ОВА",
@@ -95,20 +95,38 @@
    }
   },
   {
-   "id": "auto-dsns_telegram-81154",
-   "title": "‼ одна людина постраждала внаслідок ранкової атаки рф",
-   "body": "У Подільському районі столиці на місці удару сталася пожежа в 2-х приватних житлових будинках. Наразі пожежі рятувальники ліквідували. Сайт • Fb • X • IG • YT • TT",
+   "id": "auto-dsns_telegram-81171",
+   "title": "‼ рятувальники ліквідували пожежу на підприємстві після російської атаки",
+   "body": "Вранці російські війська завдали удару по одному з підприємств Чернігівського району. Внаслідок атаки загорілася двоповерхова будівля. Через постійні повітряні тривоги рятувальникам доводилося періодично призупиняти роботи та відходити в укриття. Попри…",
    "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/81154",
+   "source_url": "https://t.me/dsns_telegram/81171",
    "region": "Україна",
    "category": "Офіційно / Official",
    "severity": "info",
-   "issued_at": "2026-11-21T06:57:18Z",
-   "expires_at": "2026-11-21T18:57:18Z",
+   "issued_at": "2026-11-21T09:08:15Z",
+   "expires_at": "2026-11-21T21:08:15Z",
    "auto": true,
    "en_mt": {
-    "title": "‼ one person was injured as a result of the morning attack of the rf",
-    "body": "In the Podilskyi district of the capital, a fire broke out in 2 private residential buildings at the site of the strike. Currently, the fires have been extinguished by rescuers. Site • Fb • X • IG • YT • TT",
+    "title": "‼ rescuers have extinguished the fire at the enterprise after the Russian attack",
+    "body": "In the morning, Russian troops struck one of the enterprises in the Chernihiv district. As a result of the attack, a two-story building caught fire. Due to constant air alerts, rescuers had to periodically suspend work and take shelter. Despite…",
+    "by": "m2m100"
+   }
+  },
+  {
+   "id": "auto-dsns_telegram-81165",
+   "title": "‼ внаслідок російського обстрілу постраждали двоє людей",
+   "body": "Учора ввечері російські війська завдали удару по цивільній інфраструктурі в Коростенському районі. Внаслідок атаки виникла пожежа легкового та вантажних автомобілів. Також пошкоджено дві будівлі. Двоє людей постраждали та були госпіталізовані. Рятувальники…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/81165",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-21T08:25:25Z",
+   "expires_at": "2026-11-21T20:25:25Z",
+   "auto": true,
+   "en_mt": {
+    "title": "‼ as a result of Russian shelling, two people were injured",
+    "body": "Yesterday evening Russian troops struck the civilian infrastructure in Korosten district. As a result of the attack, a fire of a passenger and freight cars occurred. Also, two buildings were damaged. Two people were injured and hospitalized. Rescuers…",
     "by": "m2m100"
    }
   },
@@ -127,24 +145,6 @@
    "en_mt": {
     "title": "Sometimes history is changed by one short word — no",
     "body": "No to lies. No to humiliation. No to someone else's will, which is trying to be imposed by force. It is from such a \"no\" that Ukrainian Maidans were born. People took to the streets, not knowing what lay ahead. But they knew exactly what they would never agree with again. Today for…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-81149",
-   "title": "1 людина постраждала внаслідок російської атаки",
-   "body": "Сьогодні вночі росіяни завдали удару по цивільному підприємству. Внаслідок атаки зруйновано будівлю, виникла пожежа. На місце оперативно прибули підрозділи ДСНС спільно з іншими екстреними службами. Вогнеборці ліквідували загоряння. Наразі роботи з…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/81149",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-21T06:07:06Z",
-   "expires_at": "2026-11-21T18:07:06Z",
-   "auto": true,
-   "en_mt": {
-    "title": "1 person was injured as a result of the Russian attack",
-    "body": "Tonight Russians struck a civilian enterprise. As a result of the attack, the building was destroyed, a fire broke out. Units of the State Emergency Service arrived at the scene together with other emergency services. Firefighters extinguished the fire. Currently, work is underway with…",
     "by": "m2m100"
    }
   }
