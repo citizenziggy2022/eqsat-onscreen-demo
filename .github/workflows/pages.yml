@@ -16,7 +16,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
+      url: ${{ steps.deploy.outputs.page_url || steps.deploy_retry.outputs.page_url }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -27,4 +27,10 @@ jobs:
         with:
           path: .
       - id: deploy
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+      # deploy-pages intermittently fails to fetch the just-uploaded artifact metadata (transient GitHub-side
+      # error). One immediate retry absorbs the flake; the run goes red only if both attempts fail.
+      - id: deploy_retry
+        if: steps.deploy.outcome == 'failure'
         uses: actions/deploy-pages@v4
