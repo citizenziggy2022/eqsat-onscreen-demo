@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-21T11:24:05+00:00",
+ "generated": "2026-11-21T12:14:47+00:00",
  "sources": {
   "censoredplanet": {
    "name": "Censored Planet (University of Michigan)",
@@ -10,7 +10,7 @@
     "endDate": "2026-11-21"
    },
    "domains_tested": 870,
-   "query_errors": 2,
+   "query_errors": 0,
    "baseline_unexpected_share": {
     "RU": 0.006,
     "UA": 0.0,
@@ -21,12 +21,12 @@
     "RU": {
      "confirmed": 0,
      "likely": 76,
-     "measured": 830
+     "measured": 838
     },
     "UA": {
      "confirmed": 0,
      "likely": 0,
-     "measured": 830
+     "measured": 838
     },
     "BY": {
      "confirmed": 0,
@@ -40,16 +40,16 @@
     }
    },
    "rule": "confirmed = a known block page was returned; likely = >=20 measurements, >=50% unexpected and >=30 points above the country median",
-   "seconds": 17.0
+   "seconds": 17.7
   },
   "rkn": {
    "name": "Roskomnadzor registry (via antifilter.download)",
    "endpoint": "https://antifilter.download/list/domains.lst",
-   "updated": "2026-11-21T04:29:38+00:00",
+   "updated": "2026-11-21T11:37:32+00:00",
    "total_domains": 1823993,
    "well_known_listed": 56,
    "note": "Official RKN blocking registry. Rows are registry entries (incl. wildcard and mirror domains), not distinct sites.",
-   "seconds": 20.1
+   "seconds": 20.7
   }
  },
  "credit": "Censored Planet (U. Michigan) · RKN registry via antifilter.download",
@@ -1207,6 +1207,18 @@
    "well_known": false
   },
   {
+   "domain": "messenger.com",
+   "country": "RU",
+   "source": "censoredplanet",
+   "status": "likely",
+   "last_seen": "2026-11-18",
+   "rate": 0.82,
+   "measurements": 775,
+   "category": "comt",
+   "new_vs_ooni": true,
+   "well_known": false
+  },
+  {
    "domain": "radiomarsho.com",
    "country": "RU",
    "source": "censoredplanet",
@@ -1299,18 +1311,6 @@
    "rate": 0.81,
    "measurements": 389,
    "category": "news",
-   "new_vs_ooni": true,
-   "well_known": false
-  },
-  {
-   "domain": "messenger.com",
-   "country": "RU",
-   "source": "censoredplanet",
-   "status": "likely",
-   "last_seen": "2026-11-18",
-   "rate": 0.81,
-   "measurements": 393,
-   "category": "comt",
    "new_vs_ooni": true,
    "well_known": false
   },
