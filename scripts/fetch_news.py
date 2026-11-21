@@ -52,9 +52,11 @@ SOURCES=[
  ('dw','DW','rss','https://rss.dw.com/rdf/rss-en-all','en',True),
  ('aljazeera','Al Jazeera','rss','https://www.aljazeera.com/xml/rss/all.xml','en',True),
  ('euronews','Euronews','rss','https://www.euronews.com/rss?format=mrss&level=theme&name=news','en',True),
- ('cbc','CBC','rss','https://news.google.com/rss/search?q=Ukraine+site:cbc.ca+when:2d&hl=en-CA&gl=CA&ceid=CA:en','en',True),
- ('reuters','Reuters','rss','https://news.google.com/rss/search?q=Ukraine+site:reuters.com+when:1d&hl=en-US&gl=US&ceid=US:en','en',True),
- ('ap','AP','rss','https://news.google.com/rss/search?q=Ukraine+site:apnews.com+when:1d&hl=en-US&gl=US&ceid=US:en','en',True),
+ # Nov 21 2026 (owner: "let's avoid using google if there is a limit"): no Google News routes. CBC uses its
+ # official world feed (cbc.ca/webfeed, items marked "Syndication Allowed"); the Ukraine filter keeps the beat.
+ # Reuters and AP publish no verified direct feed, so they are off (kept, disabled, in the admin source list)
+ # rather than silently replaced by another outlet.
+ ('cbc','CBC','rss','https://www.cbc.ca/webfeed/rss/rss-world','en',True),
  # "Twitter-like" social posts
  ('bsky_kyivindependent','Kyiv Independent','bsky','kyivindependent.com','en',False),
  ('bsky_pravda','Ukrainska Pravda','bsky','pravda.ua','en',False),
@@ -111,29 +113,16 @@ def get(url,**kw):
         r=requests.get(url,headers=UA,timeout=20,**kw)
         if r.status_code==200: return r
     r.raise_for_status(); return r
-def gnews_url(feed_url,lang):
-    # same outlet through Google News, for official feeds whose CDN blocks datacenter IPs (Suspilne: Cloudflare 403)
-    host=re.sub(r'^www\.','',requests.utils.urlparse(feed_url).hostname or '')
-    hl,gl,ceid=('uk','UA','UA:uk') if lang=='uk' else ('en-US','US','US:en')
-    return f'https://news.google.com/rss/search?q=site:{host}+when:1d&hl={hl}&gl={gl}&ceid={ceid}'
-VIA={}
 def rss(src):
-    try:
-        t=get(src[3]).text
-        if not re.search(r'<(item|entry)[ >]',t): raise ValueError('no items in feed')
-    except Exception as e:
-        if 'news.google.com' in src[3]: raise
-        gu=gnews_url(src[3],src[4])
-        t=get(gu).text; VIA[src[0]]=f'google-news fallback ({str(e)[:60]})'
-        src=(src[0],src[1],src[2],gu,src[4],src[5])
+    # No aggregator fallback (owner, Nov 21 2026: avoid Google while it rate-limits): a direct feed that fails is
+    # reported as failed, never silently re-routed through Google News.
+    t=get(src[3]).text
+    if not re.search(r'<(item|entry)[ >]',t): raise ValueError('no items in feed')
     out=[]
     for m in re.finditer(r'<(item|entry)[ >].*?</(item|entry)>',t,re.S):
         b=m.group(0); title=clean(tag(b,'title'))
         link=clean(tag(b,'link')) or (re.search(r'<link[^>]*href="([^"]+)"',b) or [None,''])[1]
         d=pdate(clean(tag(b,'pubDate','dc:date','published','updated')))
-        if src[2]=='rss' and 'news.google.com' in src[3]: title=re.sub(r'\s+-\s+[^-]+$','',title)  # drop " - Reuters"
-        if src[0] in VIA and src[4]=='uk' and len(re.findall('[а-яіїєґА-ЯІЇЄҐ]',title))<len(re.findall('[A-Za-z]',title)): continue  # fallback: Ukrainian-language headlines only
-        if src[0] in VIA and re.search(r'Суспільне Спорт|розклад, наживо',title): continue  # schedule pages, not news
         out.append(dict(title=title,url=link,published=d,text=clean(tag(b,'description','summary'))[:280]))
     return out
 def bsky(src):
@@ -181,7 +170,7 @@ with cf.ThreadPoolExecutor(12) as ex: results=list(ex.map(run,SOURCES))
 # different punctuation or a daily report superseded by today's. Urgent alert channels keep every post.
 items_all,status=[],[]
 for src,res,err in results:
-    status.append(dict(id=src[0],source=src[1],kind=src[2],ok=err is None,count=len(res),error=err,**({'via':VIA[src[0]]} if src[0] in VIA else {})))
+    status.append(dict(id=src[0],source=src[1],kind=src[2],ok=err is None,count=len(res),error=err))
     items_all.extend(res)
 # When a story exists as both an article (rss) and a social repost (tg/bsky), keep the article: it links to the
 # full story and carries the original publish time. Within a kind, the newest copy wins.
