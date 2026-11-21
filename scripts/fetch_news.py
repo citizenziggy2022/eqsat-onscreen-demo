@@ -2,8 +2,40 @@
 """Build news.json for the eQsat screen. Runs in a GitHub Action every 5 min.
 Sources: RSS feeds, Bluesky public API, Telegram t.me/s previews. Stdlib + requests only."""
 import re, json, html, email.utils, datetime as dt, concurrent.futures as cf, requests
+from urllib.parse import urlparse, parse_qs
 UA={'User-Agent':'Mozilla/5.0 (eQsat OnScreen news bot; +https://citizenziggy2022.github.io/eqsat-onscreen-demo/)'}  # a browser-like UA got 403 from Suspilne; this one works
 UA_RE=re.compile(r'ukrain|kyiv|kiev|zelensk|kharkiv|odesa|donbas|crimea|україн|київ|зеленськ|харків|одес', re.I)
+# News hygiene (2026-11-21): clean the panel at the data level.
+# PROMO_RE drops commercial/promotional posts (gift guides, sales); keep the patterns specific so real
+# reporting ("peace deal", "strikes a deal") is never matched.
+PROMO_RE=re.compile(r'gift[ -]guide|gift ideas|gifts for|gift-giving|holiday gifts?|black friday|cyber monday|boxing day sale|promo codes?|coupons?|discount codes?|\d+\s?% off|\d+ percent off|sale is live|on sale now|best deals|deals of the day|deal of the day|shop now|sponsored content|affiliate links?', re.I)
+# SECTION_URL_RE drops section/index links instead of articles (checked on direct feed URLs; Google News
+# search URLs are opaque, so their stub headlines are caught by the two-word rule in run()).
+SECTION_URL_RE=re.compile(r'/(hub|hubs|topic|topics|section|sections|category|categories)(/|$)', re.I)
+# Urgent alert channels are exempt from near-duplicate merging: their repeated alerts are intentional.
+EXEMPT_DEDUP={'tg_kpszsu','tg_dsns'}
+def gnews_terms(url):
+    # Plain query terms of a Google News search feed (minus site:/when: operators). A saved admin config can
+    # drop the built-in Ukraine filter for these feeds, so enforce the feed's own query instead (2026-11-21:
+    # an AP Haiti story reached the panel through the "Ukraine site:apnews.com" feed without it).
+    if 'news.google.com/rss/search' not in url: return []
+    q=' '.join(parse_qs(urlparse(url).query).get('q',[]))
+    out=[]
+    for t in re.findall(r'"([^"]+)"|(\S+)',q):
+        t=(t[0] or t[1]).strip()
+        if not t or t.startswith('-'): continue
+        if re.match(r'(?i)^(site|when|before|after|intitle|inanchor|allintitle):',t): continue
+        if t.upper() in ('OR','AND'): continue
+        out.append(t)
+    return out
+def canon_url(u):
+    # Canonical article URL for cross-source dedup: no scheme/www/fragment/tracking params/trailing slash.
+    u=(u or '').strip().lower()
+    u=re.sub(r'^https?://(www\.)?','',u).split('#')[0]
+    u=re.sub(r'[?&](utm_[^=&]*|fbclid|gclid|oc)=[^&]*','',u)
+    return u.rstrip('/?&')
+def title_words(t): return set(re.sub(r'[^\w\s]','',t.lower()).split())
+def title_prefix(t,n=6): return ' '.join(re.sub(r'[^\w\s]','',t.lower()).split()[:n])
 NOW=dt.datetime.now(dt.timezone.utc)
 SOURCES=[
  # id, label, kind, url/handle, lang, filter_to_ukraine
@@ -126,22 +158,49 @@ def run(src):
         items={'rss':rss,'bsky':bsky,'tg':tg}[src[2]](src)
     except Exception as e:
         return src,[],str(e)[:120]
+    gterms=gnews_terms(src[3])
     res=[]
     for i in items:
         if not i['title'] or not i['published']: continue
         if (NOW-i['published']).total_seconds()>48*3600 or (i['published']-NOW).total_seconds()>3600: continue
-        if src[5] and not UA_RE.search(i['title']+' '+i.get('text','')): continue
+        hay=i['title']+' '+i.get('text','')
+        if gterms:  # Google News search feed: the item must fit the feed's own topic (Ukraine beat or its query terms)
+            if not UA_RE.search(hay) and not any(t.lower() in hay.lower() for t in gterms): continue
+        elif src[5] and not UA_RE.search(hay): continue
+        if PROMO_RE.search(i['title']): continue  # commercial/promotional post, not news
+        if src[2]=='rss':
+            path=re.sub(r'^https?://[^/]*','',i['url'] or '')
+            if SECTION_URL_RE.search(path): continue  # section/index page, not an article
+            if len(i['title'].split())<=2: continue  # stub headline, usually a section link
         res.append(dict(id=f"{src[0]}:{i['url']}",source=src[1],sourceId=src[0],kind=src[2],lang=src[4],title=i['title'],url=i['url'],published=i['published'].isoformat().replace('+00:00','Z')))
     return src,res[:15],None
 with cf.ThreadPoolExecutor(12) as ex: results=list(ex.map(run,SOURCES))
-items,status=[],[]
-seen=set()
+# Dedup, newest first. Drop: exact normalized title repeats, same canonical URL across sources, and
+# near-identical titles from the same outlet (word overlap >= 0.88, or the same 6-word opening of a recurring
+# daily report), e.g. a headline reposted with slightly
+# different punctuation or a daily report superseded by today's. Urgent alert channels keep every post.
+items_all,status=[],[]
 for src,res,err in results:
     status.append(dict(id=src[0],source=src[1],kind=src[2],ok=err is None,count=len(res),error=err,**({'via':VIA[src[0]]} if src[0] in VIA else {})))
-    for r in res:
-        k=re.sub(r'\W+','',r['title'].lower())[:60]
-        if k in seen: continue
-        seen.add(k); items.append(r)
+    items_all.extend(res)
+# When a story exists as both an article (rss) and a social repost (tg/bsky), keep the article: it links to the
+# full story and carries the original publish time. Within a kind, the newest copy wins.
+KIND_RANK={'rss':0,'tg':1,'bsky':2}
+items_all.sort(key=lambda r:r['published'],reverse=True)
+items_all.sort(key=lambda r:KIND_RANK.get(r['kind'],3))  # stable: newest first within each kind
+items=[]; seen_titles=set(); seen_urls=set(); kept=[]
+for r in items_all:
+    k=re.sub(r'\W+','',r['title'].lower())[:60]
+    cu=canon_url(r['url'])
+    if r['sourceId'] in EXEMPT_DEDUP:
+        if cu and cu in seen_urls: continue  # only the exact same post is a duplicate here
+    else:
+        if k in seen_titles or (cu and cu in seen_urls): continue
+        w=title_words(r['title']); pref=title_prefix(r['title'])
+        if len(w)>=4 and any(ks==r['source'] and (len(w&kw)/len(w|kw)>=0.88 or (len(w)>=6 and pref==kp)) for ks,kw,kp in kept): continue
+    seen_titles.add(k)
+    if cu: seen_urls.add(cu)
+    kept.append((r['source'],title_words(r['title']),title_prefix(r['title']))); items.append(r)
 items.sort(key=lambda r:r['published'],reverse=True)
 # failure streaks: carry each source's fail_since from the previous committed news.json so the editor can flag
 # sources dead for hours, not just this run; a source failing now without a stored fail_since starts one
