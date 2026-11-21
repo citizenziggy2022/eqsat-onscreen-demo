@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-21T17:24:41Z",
- "checked_at": "2026-11-21T17:24:41Z",
+ "updated": "2026-11-21T17:28:42Z",
+ "checked_at": "2026-11-21T17:28:42Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Шегині → PL: 545 вант. · 6 д 9 год"
+   "note": "Рава-Руська → PL: 647 вант. · 9 д 8 год"
   },
   "volyn": {
    "status": "outage",
@@ -22,17 +22,10 @@
   },
   "odesa": {
    "status": "outage",
-   "note": "Рені → MD: 275 вант. · 3 д 15 год"
+   "note": "Рені → MD: 271 вант. · 3 д 15 год"
   }
  },
  "queue": [
-  {
-   "oblast": "lviv",
-   "name": "Грушів",
-   "to": "PL",
-   "hours": 0.0,
-   "trucks": 2
-  },
   {
    "oblast": "lviv",
    "name": "Краківець",
@@ -42,9 +35,23 @@
   },
   {
    "oblast": "lviv",
+   "name": "Рава-Руська",
+   "to": "PL",
+   "hours": 132,
+   "trucks": 1011
+  },
+  {
+   "oblast": "lviv",
+   "name": "Рава-Руська",
+   "to": "PL",
+   "hours": 224,
+   "trucks": 647
+  },
+  {
+   "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
-   "hours": 66,
+   "hours": 67,
    "trucks": 316
   },
   {
@@ -79,7 +86,7 @@
    "oblast": "lviv",
    "name": "Шегині",
    "to": "PL",
-   "hours": 140,
+   "hours": 139,
    "trucks": 608
   },
   {
@@ -122,7 +129,7 @@
    "name": "Рені",
    "to": "MD",
    "hours": 87,
-   "trucks": 275
+   "trucks": 271
   },
   {
    "oblast": "odesa",
@@ -158,6 +165,13 @@
    "to": "HU",
    "hours": 1.3,
    "trucks": 10
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Лужанка",
+   "to": "HU",
+   "hours": 95,
+   "trucks": 339
   }
  ]
 }
