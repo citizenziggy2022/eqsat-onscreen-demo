@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-21T03:06:33Z",
- "checked_at": "2026-11-21T03:06:33Z",
+ "updated": "2026-11-21T03:10:34Z",
+ "checked_at": "2026-11-21T03:10:34Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -14,11 +14,11 @@
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Дякове → RO: 611 вант. · 6 д 16 год"
+   "note": "Чоп (Тиса) → HU: 1643 вант. · 6 д 17 год"
   },
   "chernivtsi": {
-   "status": "limited",
-   "note": "Мамалига → MD: 122 вант. · 16 год"
+   "status": "ok",
+   "note": "Дяківці → RO: 0 вант. · 0 год"
   },
   "odesa": {
    "status": "outage",
@@ -55,18 +55,18 @@
    "trucks": 2
   },
   {
-   "oblast": "volyn",
-   "name": "Устилуг",
+   "oblast": "lviv",
+   "name": "Угринів",
    "to": "PL",
-   "hours": 1,
-   "trucks": 9
+   "hours": 146,
+   "trucks": 634
   },
   {
    "oblast": "volyn",
-   "name": "Ягодин",
+   "name": "Устилуг",
    "to": "PL",
-   "hours": 165,
-   "trucks": 1135
+   "hours": 0.3,
+   "trucks": 8
   },
   {
    "oblast": "volyn",
@@ -132,11 +132,11 @@
    "trucks": 0
   },
   {
-   "oblast": "chernivtsi",
-   "name": "Мамалига",
+   "oblast": "odesa",
+   "name": "Рені",
    "to": "MD",
-   "hours": 16.5,
-   "trucks": 122
+   "hours": 77,
+   "trucks": 241
   },
   {
    "oblast": "chernivtsi",
@@ -144,6 +144,13 @@
    "to": "MD",
    "hours": 0.0,
    "trucks": 0
+  },
+  {
+   "oblast": "odesa",
+   "name": "Старокозаче",
+   "to": "MD",
+   "hours": 10.2,
+   "trucks": 49
   },
   {
    "oblast": "odesa",
@@ -164,7 +171,7 @@
    "name": "Ужгород",
    "to": "SK",
    "hours": 158,
-   "trucks": 812
+   "trucks": 811
   },
   {
    "oblast": "zakarpattia",
@@ -172,6 +179,20 @@
    "to": "SK",
    "hours": 0.0,
    "trucks": 0
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Лужанка",
+   "to": "HU",
+   "hours": 91,
+   "trucks": 329
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Чоп (Тиса)",
+   "to": "HU",
+   "hours": 161,
+   "trucks": 1643
   }
  ]
 }
