@@ -143,7 +143,7 @@ def border_queues():
     rows = r.json().get("data") or []
     if not rows:
         raise RuntimeError("eCherha: no rows")
-    worst, unknown = {}, []
+    worst, unknown, queue = {}, [], []
     for row in rows:
         side = re.split(r"\s+[–-]\s+", row.get("title", ""))[0].strip()
         key = next((v for k, v in CROSSING.items() if side.startswith(k)), None)
@@ -154,6 +154,9 @@ def border_queues():
         if hours is None or row.get("is_paused"):
             continue
         trucks = row.get("vehicle_in_active_queues_counts") or 0
+        # per-crossing rows for the admin border module (Nov 21): the screen recomputes the card from these when the
+        # module sets thresholds/selection; "regions" above stays the automatic default view
+        queue.append({"oblast": key, "name": side, "to": COUNTRY.get(row.get("country_id"), ""), "hours": int(round(hours)), "trucks": trucks})
         if key not in worst or hours > worst[key]["hours"]:
             worst[key] = {"hours": hours, "trucks": trucks, "name": side, "to": COUNTRY.get(row.get("country_id"), "")}
     regions = {}
@@ -162,7 +165,7 @@ def border_queues():
         h = int(round(w["hours"]))
         wait = f"{h // 24} д {h % 24} год" if h >= 24 else f"{h} год"
         regions[key] = {"status": status, "note": f"{w['name']} → {w['to']}: {w['trucks']} вант. · {wait}"}
-    return {"regions": regions, "crossings": len(rows), "unknown": sorted(set(unknown))}
+    return {"regions": regions, "crossings": len(rows), "queue": queue, "unknown": sorted(set(unknown))}
 
 
 def main():
@@ -212,6 +215,7 @@ def main():
                 "kind": "border",
                 "source": "єЧерга / eCherha · вантажівки / trucks",
                 "regions": q["regions"],
+                "queue": q["queue"],
             }
             volatile = {"updated", "checked_at", "error"}
             same = {k: v for k, v in old.items() if k not in volatile} == {k: v for k, v in data.items() if k not in volatile}
