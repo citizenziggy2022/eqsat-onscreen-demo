@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-21T23:06:42Z",
+ "generated_at": "2026-11-21T23:20:43Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -12,7 +12,7 @@
    "name": "Херсонська ОВА",
    "url": "https://t.me/s/khersonskaODA",
    "verified": "linked from khoda.gov.ua; channel links back to khoda.gov.ua",
-   "status": "ok: kept 2 / dropped 12, showing 2"
+   "status": "ok: kept 1 / dropped 12, showing 1"
   },
   {
    "name": "Запорізька ОВА",
@@ -145,24 +145,6 @@
    "en_mt": {
     "title": "This morning Russians launched an air strike on Bilozerka",
     "body": "As a result of the enemy attack, three people were injured — two women aged 57 and 58, as well as a 57-year-old man. All the victims were hospitalized with mine-explosive and closed craniocerebral injuries, as well as concussion of the brain.",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-khersonskaODA-71906",
-   "title": "До медиків по допомогу звернулась 53-річна жінка, яка сьогодні вранці потрапила під удар російського БпЛА у…",
-   "body": "Внаслідок атаки вона отримала вибухову травму та осколкові поранення ноги. Потерпіла лікуватиметься амбулаторно.",
-   "source": "Херсонська ОВА",
-   "source_url": "https://t.me/khersonskaODA/71906",
-   "region": "Херсонщина",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-21T11:19:44Z",
-   "expires_at": "2026-11-21T23:19:44Z",
-   "auto": true,
-   "en_mt": {
-    "title": "To medics for help turned a 53-year-old woman who this morning came under attack by a Russian UAV in…",
-    "body": "As a result of the attack, she received a blast injury and shrapnel wounds to her leg, the victim will be treated on an outpatient basis.",
     "by": "m2m100"
    }
   }
