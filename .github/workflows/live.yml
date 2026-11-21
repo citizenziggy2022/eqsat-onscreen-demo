@@ -13,6 +13,8 @@ jobs:
   live:
     runs-on: ubuntu-latest
     timeout-minutes: 5
+    env:
+      SAVEECOBOT_KEY: ${{ secrets.SAVEECOBOT_KEY }}
     steps:
       - uses: actions/checkout@v4
       - run: python3 scripts/alerttypes.py
@@ -24,12 +26,26 @@ jobs:
           git add alerttypes.json news.json radiation.json
           if git diff --cached --quiet; then
             echo "no changes"
-          else
-            git commit -m "live: alerts + news $(date -u +%H:%MZ)"
-            if git pull --rebase && git push; then
-              echo pushed
-            else
-              git rebase --abort 2>/dev/null || true
-              echo "push race with the every-minute live-runner: dropped this cycle's commit. No data lost - the runner rewrites these files every minute and the next scheduled run re-fetches."
-            fi
+            exit 0
           fi
+          git commit -m "live: alerts + news $(date -u +%H:%MZ)"
+          if git pull --rebase && git push; then
+            echo pushed
+            exit 0
+          fi
+          # Push raced the every-minute live-runner. Rebuild the cycle once on top of current main with fresh
+          # fetches, so nothing this run produced is silently dropped. If the retry also fails, the step and
+          # run go red instead of hiding the lost publication.
+          echo "push race with live-runner: rebuilding this cycle's commit on latest main and retrying once"
+          git rebase --abort 2>/dev/null || true
+          git fetch origin
+          git reset --hard origin/main
+          python3 scripts/alerttypes.py
+          python3 scripts/fetch_news.py || echo "news re-fetch failed, keeping last news.json"
+          git add alerttypes.json news.json radiation.json
+          if git diff --cached --quiet; then
+            echo "no changes after rebuild"
+            exit 0
+          fi
+          git commit -m "live: alerts + news $(date -u +%H:%MZ)"
+          git pull --rebase && git push
