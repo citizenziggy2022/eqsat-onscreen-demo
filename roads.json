@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-21T07:14:02Z",
- "checked_at": "2026-11-21T07:14:02Z",
+ "updated": "2026-11-21T07:18:00Z",
+ "checked_at": "2026-11-21T07:18:00Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -14,11 +14,11 @@
   },
   "chernivtsi": {
    "status": "outage",
-   "note": "Порубне → RO: 1120 вант. · 5 д 6 год"
+   "note": "Порубне → RO: 1119 вант. · 5 д 6 год"
   },
   "odesa": {
    "status": "outage",
-   "note": "Орлівка → RO: 754 вант. · 6 д 17 год"
+   "note": "Орлівка → RO: 756 вант. · 6 д 17 год"
   }
  },
  "queue": [
@@ -54,8 +54,8 @@
    "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
-   "hours": 0.4,
-   "trucks": 7
+   "hours": 0.9,
+   "trucks": 9
   },
   {
    "oblast": "lviv",
@@ -68,8 +68,8 @@
    "oblast": "lviv",
    "name": "Шегині",
    "to": "PL",
-   "hours": 144.2,
-   "trucks": 522
+   "hours": 144.5,
+   "trucks": 523
   },
   {
    "oblast": "lviv",
@@ -97,21 +97,28 @@
    "name": "Красноїльськ",
    "to": "RO",
    "hours": 0.0,
-   "trucks": 1
+   "trucks": 2
   },
   {
    "oblast": "odesa",
    "name": "Орлівка",
    "to": "RO",
    "hours": 161,
-   "trucks": 754
+   "trucks": 756
   },
   {
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
    "hours": 126,
-   "trucks": 1120
+   "trucks": 1119
+  },
+  {
+   "oblast": "chernivtsi",
+   "name": "Порубне",
+   "to": "RO",
+   "hours": 0.0,
+   "trucks": 6
   },
   {
    "oblast": "chernivtsi",
@@ -146,7 +153,7 @@
    "name": "Чоп (Тиса)",
    "to": "HU",
    "hours": 158,
-   "trucks": 1614
+   "trucks": 1612
   }
  ]
 }
