@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-21T07:21:58Z",
- "checked_at": "2026-11-21T07:21:58Z",
+ "updated": "2026-11-21T07:25:01Z",
+ "checked_at": "2026-11-21T07:25:01Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Краківець → PL: 747 вант. · 9 д 6 год"
+   "note": "Краківець → PL: 749 вант. · 9 д 6 год"
   },
   "zakarpattia": {
    "status": "outage",
@@ -14,11 +14,11 @@
   },
   "chernivtsi": {
    "status": "outage",
-   "note": "Порубне → RO: 1115 вант. · 5 д 6 год"
+   "note": "Порубне → RO: 1113 вант. · 5 д 5 год"
   },
   "odesa": {
    "status": "outage",
-   "note": "Орлівка → RO: 756 вант. · 6 д 17 год"
+   "note": "Орлівка → RO: 757 вант. · 6 д 17 год"
   }
  },
  "queue": [
@@ -26,22 +26,29 @@
    "oblast": "lviv",
    "name": "Грушів",
    "to": "PL",
-   "hours": 0.2,
+   "hours": 0.0,
    "trucks": 2
   },
   {
    "oblast": "lviv",
    "name": "Краківець",
    "to": "PL",
+   "hours": 138,
+   "trucks": 1209
+  },
+  {
+   "oblast": "lviv",
+   "name": "Краківець",
+   "to": "PL",
    "hours": 0.0,
-   "trucks": 1
+   "trucks": 0
   },
   {
    "oblast": "lviv",
    "name": "Краківець",
    "to": "PL",
    "hours": 222,
-   "trucks": 747
+   "trucks": 749
   },
   {
    "oblast": "lviv",
@@ -54,15 +61,15 @@
    "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
-   "hours": 1.9,
-   "trucks": 14
+   "hours": 2.6,
+   "trucks": 17
   },
   {
    "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
-   "hours": 145,
-   "trucks": 632
+   "hours": 144.9,
+   "trucks": 630
   },
   {
    "oblast": "lviv",
@@ -75,8 +82,8 @@
    "oblast": "lviv",
    "name": "Шегині",
    "to": "PL",
-   "hours": 136,
-   "trucks": 593
+   "hours": 137,
+   "trucks": 596
   },
   {
    "oblast": "zakarpattia",
@@ -93,32 +100,25 @@
    "trucks": 0
   },
   {
-   "oblast": "chernivtsi",
-   "name": "Красноїльськ",
-   "to": "RO",
-   "hours": 0.0,
-   "trucks": 2
-  },
-  {
    "oblast": "odesa",
    "name": "Орлівка",
    "to": "RO",
    "hours": 161,
-   "trucks": 756
+   "trucks": 757
   },
   {
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
-   "hours": 126,
-   "trucks": 1115
+   "hours": 125,
+   "trucks": 1113
   },
   {
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
    "hours": 0.0,
-   "trucks": 7
+   "trucks": 6
   },
   {
    "oblast": "chernivtsi",
