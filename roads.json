@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-21T07:00:59Z",
- "checked_at": "2026-11-21T07:00:59Z",
+ "updated": "2026-11-21T07:04:00Z",
+ "checked_at": "2026-11-21T07:04:00Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -13,12 +13,12 @@
    "note": "Дякове → RO: 611 вант. · 6 д 17 год"
   },
   "chernivtsi": {
-   "status": "ok",
-   "note": "Дяківці → RO: 0 вант. · 0 год"
+   "status": "outage",
+   "note": "Порубне → RO: 1123 вант. · 5 д 6 год"
   },
   "odesa": {
    "status": "outage",
-   "note": "Орлівка → RO: 753 вант. · 6 д 16 год"
+   "note": "Орлівка → RO: 754 вант. · 6 д 17 год"
   }
  },
  "queue": [
@@ -55,7 +55,7 @@
    "name": "Угринів",
    "to": "PL",
    "hours": 0.0,
-   "trucks": 3
+   "trucks": 4
   },
   {
    "oblast": "lviv",
@@ -103,8 +103,15 @@
    "oblast": "odesa",
    "name": "Орлівка",
    "to": "RO",
-   "hours": 160,
-   "trucks": 753
+   "hours": 161,
+   "trucks": 754
+  },
+  {
+   "oblast": "chernivtsi",
+   "name": "Порубне",
+   "to": "RO",
+   "hours": 126,
+   "trucks": 1123
   },
   {
    "oblast": "chernivtsi",
