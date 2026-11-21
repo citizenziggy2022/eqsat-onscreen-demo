@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-21T17:36:42Z",
- "checked_at": "2026-11-21T17:36:42Z",
+ "updated": "2026-11-21T17:40:41Z",
+ "checked_at": "2026-11-21T17:40:41Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Рава-Руська → PL: 647 вант. · 9 д 8 год"
+   "note": "Шегині → PL: 545 вант. · 6 д 9 год"
   },
   "volyn": {
    "status": "outage",
@@ -14,15 +14,15 @@
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Дякове → RO: 622 вант. · 6 д 20 год"
+   "note": "Дякове → RO: 619 вант. · 6 д 19 год"
   },
   "chernivtsi": {
-   "status": "ok",
-   "note": "Дяківці → RO: 0 вант. · 0 год"
+   "status": "limited",
+   "note": "Мамалига → MD: 93 вант. · 12 год"
   },
   "odesa": {
    "status": "outage",
-   "note": "Рені → MD: 270 вант. · 3 д 13 год"
+   "note": "Рені → MD: 265 вант. · 3 д 12 год"
   }
  },
  "queue": [
@@ -30,22 +30,15 @@
    "oblast": "lviv",
    "name": "Краківець",
    "to": "PL",
+   "hours": 131,
+   "trucks": 1155
+  },
+  {
+   "oblast": "lviv",
+   "name": "Краківець",
+   "to": "PL",
    "hours": 0.0,
    "trucks": 0
-  },
-  {
-   "oblast": "lviv",
-   "name": "Рава-Руська",
-   "to": "PL",
-   "hours": 132,
-   "trucks": 1010
-  },
-  {
-   "oblast": "lviv",
-   "name": "Рава-Руська",
-   "to": "PL",
-   "hours": 224,
-   "trucks": 647
   },
   {
    "oblast": "lviv",
@@ -86,7 +79,7 @@
    "oblast": "lviv",
    "name": "Шегині",
    "to": "PL",
-   "hours": 140,
+   "hours": 139,
    "trucks": 609
   },
   {
@@ -100,8 +93,8 @@
    "oblast": "zakarpattia",
    "name": "Дякове",
    "to": "RO",
-   "hours": 164,
-   "trucks": 622
+   "hours": 163,
+   "trucks": 619
   },
   {
    "oblast": "chernivtsi",
@@ -125,11 +118,18 @@
    "trucks": 2
   },
   {
+   "oblast": "chernivtsi",
+   "name": "Мамалига",
+   "to": "MD",
+   "hours": 12.2,
+   "trucks": 93
+  },
+  {
    "oblast": "odesa",
    "name": "Рені",
    "to": "MD",
-   "hours": 85,
-   "trucks": 270
+   "hours": 84,
+   "trucks": 265
   },
   {
    "oblast": "odesa",
