@@ -52,9 +52,9 @@ SOURCES=[
  ('dw','DW','rss','https://rss.dw.com/rdf/rss-en-all','en',True),
  ('aljazeera','Al Jazeera','rss','https://www.aljazeera.com/xml/rss/all.xml','en',True),
  ('euronews','Euronews','rss','https://www.euronews.com/rss?format=mrss&level=theme&name=news','en',True),
- # Nov 21 2026 (owner: "let's avoid using google if there is a limit"): no Google News routes. CBC uses its
+ # Nov 21 2026: Google News routes removed - the aggregator rate-limits runner traffic (429s). CBC uses its
  # official world feed (cbc.ca/webfeed, items marked "Syndication Allowed"); the Ukraine filter keeps the beat.
- # Reuters and AP publish no verified direct feed, so they are off (kept, disabled, in the admin source list)
+ # Reuters and AP have no verified direct feed, so they are off (kept, disabled, in the admin source list)
  # rather than silently replaced by another outlet.
  ('cbc','CBC','rss','https://www.cbc.ca/webfeed/rss/rss-world','en',True),
  # "Twitter-like" social posts
@@ -91,6 +91,12 @@ def config_sources():
         print('config sources unavailable, using built-in list:',str(e)[:120]); return None
 _cfg=config_sources()
 if _cfg: SOURCES=_cfg; print('sources from admin config:',len(SOURCES))
+# Google News routes are disabled (Nov 21 2026): the aggregator rate-limits runner traffic (429s). Any Google
+# News URL that reaches this list - from a saved admin config or an old built-in - is dropped here and reported
+# as blocked instead of fetched, so an editor save cannot silently bring the route back.
+BLOCKED=[s for s in SOURCES if 'news.google.com' in s[3]]
+SOURCES=[s for s in SOURCES if 'news.google.com' not in s[3]]
+if BLOCKED: print('blocked Google News routes:',[s[0] for s in BLOCKED])
 def clean(s):
     s=re.sub(r'<!\[CDATA\[|\]\]>','',s or '')
     s=html.unescape(s)  # some feeds escape their HTML
@@ -114,8 +120,8 @@ def get(url,**kw):
         if r.status_code==200: return r
     r.raise_for_status(); return r
 def rss(src):
-    # No aggregator fallback (owner, Nov 21 2026: avoid Google while it rate-limits): a direct feed that fails is
-    # reported as failed, never silently re-routed through Google News.
+    # No aggregator fallback (Nov 21 2026): a direct feed that fails is reported as failed, never silently
+    # re-routed through Google News.
     t=get(src[3]).text
     if not re.search(r'<(item|entry)[ >]',t): raise ValueError('no items in feed')
     out=[]
@@ -172,6 +178,8 @@ items_all,status=[],[]
 for src,res,err in results:
     status.append(dict(id=src[0],source=src[1],kind=src[2],ok=err is None,count=len(res),error=err))
     items_all.extend(res)
+for s in BLOCKED:
+    status.append(dict(id=s[0],source=s[1],kind=s[2],ok=False,count=0,blocked=True,error='blocked: Google News route disabled'))
 # When a story exists as both an article (rss) and a social repost (tg/bsky), keep the article: it links to the
 # full story and carries the original publish time. Within a kind, the newest copy wins.
 KIND_RANK={'rss':0,'tg':1,'bsky':2}
@@ -198,7 +206,7 @@ try:
 except Exception:
     _prev = {}
 for s in status:
-    if s["ok"] and s["count"]:
+    if s.get("blocked") or (s["ok"] and s["count"]):
         continue
     s["fail_since"] = (_prev.get(s["id"]) or {}).get("fail_since") or NOW.isoformat().replace("+00:00", "Z")
 json.dump(dict(generated=NOW.isoformat().replace('+00:00','Z'),items=items[:300],sources=status),open('news.json','w'),ensure_ascii=False,indent=1)
