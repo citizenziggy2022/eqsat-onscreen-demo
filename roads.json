@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-21T04:45:45Z",
- "checked_at": "2026-11-21T04:45:45Z",
+ "updated": "2026-11-21T04:49:41Z",
+ "checked_at": "2026-11-21T04:49:41Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -14,7 +14,7 @@
   },
   "chernivtsi": {
    "status": "limited",
-   "note": "Мамалига → MD: 118 вант. · 16 год"
+   "note": "Мамалига → MD: 117 вант. · 16 год"
   },
   "odesa": {
    "status": "outage",
@@ -22,7 +22,7 @@
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Ужгород → SK: 807 вант. · 6 д 13 год"
+   "note": "Ужгород → SK: 805 вант. · 6 д 13 год"
   }
  },
  "queue": [
@@ -45,7 +45,7 @@
    "name": "Угринів",
    "to": "PL",
    "hours": 0.0,
-   "trucks": 1
+   "trucks": 2
   },
   {
    "oblast": "lviv",
@@ -129,7 +129,7 @@
    "name": "Мамалига",
    "to": "MD",
    "hours": 15.8,
-   "trucks": 118
+   "trucks": 117
   },
   {
    "oblast": "chernivtsi",
@@ -157,7 +157,7 @@
    "name": "Ужгород",
    "to": "SK",
    "hours": 157,
-   "trucks": 807
+   "trucks": 805
   },
   {
    "oblast": "zakarpattia",
@@ -165,6 +165,13 @@
    "to": "SK",
    "hours": 0.0,
    "trucks": 0
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Лужанка",
+   "to": "HU",
+   "hours": 90,
+   "trucks": 325
   }
  ]
 }
