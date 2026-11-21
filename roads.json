@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-21T20:07:21Z",
- "checked_at": "2026-11-21T20:07:21Z",
+ "updated": "2026-11-21T20:11:22Z",
+ "checked_at": "2026-11-21T20:11:22Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -10,19 +10,19 @@
   },
   "volyn": {
    "status": "outage",
-   "note": "Устилуг → PL: 638 вант. · 6 д 12 год"
+   "note": "Ягодин → PL: 1583 вант. · 7 д 13 год"
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Дякове → RO: 607 вант. · 6 д 16 год"
+   "note": "Дякове → RO: 608 вант. · 6 д 16 год"
   },
   "chernivtsi": {
    "status": "outage",
-   "note": "Порубне → RO: 1088 вант. · 5 д 2 год"
+   "note": "Порубне → RO: 1086 вант. · 5 д 2 год"
   },
   "odesa": {
-   "status": "ok",
-   "note": "Виноградівка → MD: 1 вант. · 0 год"
+   "status": "outage",
+   "note": "Орлівка → RO: 768 вант. · 6 д 20 год"
   },
   "vinnytsia": {
    "status": "ok",
@@ -42,7 +42,7 @@
    "name": "Смільниця",
    "to": "PL",
    "hours": 0.0,
-   "trucks": 2
+   "trucks": 3
   },
   {
    "oblast": "lviv",
@@ -90,6 +90,13 @@
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
+   "hours": 181,
+   "trucks": 1583
+  },
+  {
+   "oblast": "volyn",
+   "name": "Ягодин",
+   "to": "PL",
    "hours": 0.0,
    "trucks": 3
   },
@@ -98,7 +105,7 @@
    "name": "Дякове",
    "to": "RO",
    "hours": 160,
-   "trucks": 607
+   "trucks": 608
   },
   {
    "oblast": "chernivtsi",
@@ -108,11 +115,18 @@
    "trucks": 0
   },
   {
+   "oblast": "odesa",
+   "name": "Орлівка",
+   "to": "RO",
+   "hours": 164,
+   "trucks": 768
+  },
+  {
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
    "hours": 122,
-   "trucks": 1088
+   "trucks": 1086
   },
   {
    "oblast": "chernivtsi",
@@ -181,15 +195,15 @@
    "oblast": "zakarpattia",
    "name": "Лужанка",
    "to": "HU",
-   "hours": 2.1,
-   "trucks": 13
+   "hours": 2.7,
+   "trucks": 15
   },
   {
    "oblast": "zakarpattia",
    "name": "Чоп (Тиса)",
    "to": "HU",
    "hours": 156,
-   "trucks": 1588
+   "trucks": 1585
   }
  ]
 }
