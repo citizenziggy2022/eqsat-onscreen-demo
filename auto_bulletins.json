@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-22T05:53:28Z",
+ "generated_at": "2026-11-22T06:21:27Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 2 / dropped 0, showing 2"
+   "status": "ok: kept 3 / dropped 0, showing 2"
   },
   {
    "name": "Херсонська ОВА",
@@ -36,10 +36,28 @@
    "name": "Харківська ОВА",
    "url": "https://t.me/s/kharkivoda",
    "verified": "linked from kharkivoda.gov.ua",
-   "status": "ok: kept 0 / dropped 1, showing 0"
+   "status": "ok: kept 0 / dropped 0, showing 0"
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-dsns_telegram-81222",
+   "title": "‼ через ворожу атаку виникла пожежа на підприємстві",
+   "body": "У Новгород-Сіверському районі російський удар спричинив займання на території приватного деревообробного підприємства. Рятувальники ліквідували пожежу. За попередньою інформацією, постраждалих немає.",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/81222",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-22T06:19:58Z",
+   "expires_at": "2026-11-22T18:19:58Z",
+   "auto": true,
+   "en_mt": {
+    "title": "‼ a fire broke out at the enterprise due to an enemy attack",
+    "body": "In the Novhorod-Siverskyi district, a Russian strike caused a fire on the territory of a private woodworking enterprise, rescuers extinguished the fire, according to preliminary information, there are no casualties.",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-dsns_telegram-81212",
    "title": "‼ в селищі Димер зруйновано житловий будинок, під завалами можуть перебувати 7 людей",
@@ -55,24 +73,6 @@
    "en_mt": {
     "title": "‼ in the settlement of Dimer a residential building was destroyed, 7 people may be under the rubble",
     "body": "As a result of the morning attack, the house from the first to the fifth floor was destroyed. Rescuers evacuated 9 people, including 1 child. Another child, born in 2010, was injured and hospitalized. Preliminarily, 7 people may be under the rubble. Information…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-81205",
-   "title": "‼ внаслідок комбінованого удару постраждало двоє людей, з них одна дитина",
-   "body": "Уночі 21 листопада російські війська завдали масованих ударів по обласному центру. За попередніми даними, травми отримали двоє людей, серед них - дитина. Кількість постраждалих уточнюється. За двома адресами виникли пожежі: горіли гараж і покрівля приватного…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/81205",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-21T21:22:12Z",
-   "expires_at": "2026-11-22T09:22:12Z",
-   "auto": true,
-   "en_mt": {
-    "title": "‼ as a result of the combined strike, two people were injured, including one child",
-    "body": "At night on November 21, Russian troops inflicted massive strikes on the regional center. According to preliminary data, two people were injured, including a child. The number of victims is being clarified. Fires broke out at two addresses: a garage and the roof of a private…",
     "by": "m2m100"
    }
   },
