@@ -1,16 +1,16 @@
 {
- "updated": "2026-11-22T17:20:51Z",
- "checked_at": "2026-11-22T17:20:51Z",
+ "updated": "2026-11-22T17:23:53Z",
+ "checked_at": "2026-11-22T17:23:53Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Шегині → PL: 490 вант. · 5 д 17 год"
+   "note": "Краківець → PL: 716 вант. · 8 д 9 год"
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 1644 вант. · 7 д 20 год"
+   "note": "Ягодин → PL: 1642 вант. · 7 д 20 год"
   },
   "zakarpattia": {
    "status": "outage",
@@ -18,7 +18,7 @@
   },
   "chernivtsi": {
    "status": "ok",
-   "note": "Мамалига → MD: 45 вант. · 6 год"
+   "note": "Мамалига → MD: 42 вант. · 6 год"
   },
   "odesa": {
    "status": "outage",
@@ -34,22 +34,29 @@
    "oblast": "lviv",
    "name": "Краківець",
    "to": "PL",
-   "hours": 108,
-   "trucks": 954
-  },
-  {
-   "oblast": "lviv",
-   "name": "Краківець",
-   "to": "PL",
    "hours": 0.0,
    "trucks": 1
   },
   {
    "oblast": "lviv",
+   "name": "Краківець",
+   "to": "PL",
+   "hours": 201,
+   "trucks": 716
+  },
+  {
+   "oblast": "lviv",
+   "name": "Рава-Руська",
+   "to": "PL",
+   "hours": 117,
+   "trucks": 898
+  },
+  {
+   "oblast": "lviv",
    "name": "Смільниця",
    "to": "PL",
-   "hours": 6.6,
-   "trucks": 27
+   "hours": 6.9,
+   "trucks": 28
   },
   {
    "oblast": "lviv",
@@ -91,14 +98,14 @@
    "name": "Ягодин",
    "to": "PL",
    "hours": 188,
-   "trucks": 1644
+   "trucks": 1642
   },
   {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
    "hours": 0.0,
-   "trucks": 5
+   "trucks": 4
   },
   {
    "oblast": "zakarpattia",
@@ -146,8 +153,8 @@
    "oblast": "chernivtsi",
    "name": "Мамалига",
    "to": "MD",
-   "hours": 5.8,
-   "trucks": 45
+   "hours": 5.5,
+   "trucks": 42
   },
   {
    "oblast": "vinnytsia",
@@ -155,13 +162,6 @@
    "to": "MD",
    "hours": 0.0,
    "trucks": 0
-  },
-  {
-   "oblast": "odesa",
-   "name": "Рені",
-   "to": "MD",
-   "hours": 62,
-   "trucks": 200
   },
   {
    "oblast": "odesa",
@@ -194,13 +194,6 @@
   {
    "oblast": "zakarpattia",
    "name": "Малий Березний",
-   "to": "SK",
-   "hours": 0.0,
-   "trucks": 0
-  },
-  {
-   "oblast": "zakarpattia",
-   "name": "Ужгород",
    "to": "SK",
    "hours": 0.0,
    "trucks": 0
