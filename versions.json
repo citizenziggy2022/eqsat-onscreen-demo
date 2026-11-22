@@ -2,6 +2,12 @@
   "note": "Every screen deploy, newest first: version 1.N (N + 1 per deploy), deploy time (UTC), one-line summary, build code. Read by the admin (History › Versions). Entries 2.42 to 2.51 were added afterwards from the repo deploy commits: their time is the commit time that switched the live page to that build, not a measured go-live time, and 2.46 to 2.51 were numbered at that point.",
   "versions": [
     {
+      "version": "2.60",
+      "at": "2026-11-22T19:55:00Z",
+      "summary": "Feed honesty: radiation shows each reading's own time and a no-reading label; rivers show when the hydrometeorological centre issued each list (no more 'today'); power map shows the latest Ukrenergo post, the dated planned-outage notice and 'status not confirmed'; admin Emergency tab lists source checks (confirmed / unverified / failed). Emergency strip unchanged.",
+      "build": "index-9wH2zdH5.js"
+    },
+    {
       "version": "2.59",
       "at": "2026-11-22T19:23:01Z",
       "summary": "Editor: the Radio audio intro text now matches the Random station order switch (random order while on, list order while off). Screen behaviour unchanged from 2.58.",
