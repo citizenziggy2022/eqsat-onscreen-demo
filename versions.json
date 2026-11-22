@@ -2,6 +2,12 @@
   "note": "Every screen deploy, newest first: version 1.N (N + 1 per deploy), deploy time (UTC), one-line summary, build code. Read by the admin (History › Versions). Entries 2.42 to 2.51 were added afterwards from the repo deploy commits: their time is the commit time that switched the live page to that build, not a measured go-live time, and 2.46 to 2.51 were numbered at that point.",
   "versions": [
     {
+      "version": "2.59",
+      "at": "2026-11-22T19:23:01Z",
+      "summary": "Editor: the Radio audio intro text now matches the Random station order switch (random order while on, list order while off). Screen behaviour unchanged from 2.58.",
+      "build": "index-J57ui6eg.js"
+    },
+    {
       "version": "2.58",
       "at": "2026-11-22T19:09:29Z",
       "summary": "Radio: Random station order switch (Editor > Content > Radio audio), on by default. Every enabled station plays once per round in random order, then reshuffles with no immediate repeat; random first station on load; the Next label shows the true next station. 30-minute slots, idents and station list unchanged. Off restores list order.",
