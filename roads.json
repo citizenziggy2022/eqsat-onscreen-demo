@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-22T14:46:59Z",
- "checked_at": "2026-11-22T14:46:59Z",
+ "updated": "2026-11-22T14:50:48Z",
+ "checked_at": "2026-11-22T14:50:48Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Угринів → PL: 576 вант. · 5 д 13 год"
+   "note": "Угринів → PL: 575 вант. · 5 д 13 год"
   },
   "volyn": {
    "status": "outage",
@@ -18,11 +18,11 @@
   },
   "chernivtsi": {
    "status": "outage",
-   "note": "Порубне → RO: 952 вант. · 4 д 12 год"
+   "note": "Порубне → RO: 951 вант. · 4 д 11 год"
   },
   "odesa": {
    "status": "outage",
-   "note": "Орлівка → RO: 707 вант. · 6 д 7 год"
+   "note": "Орлівка → RO: 707 вант. · 6 д 6 год"
   },
   "vinnytsia": {
    "status": "ok",
@@ -30,13 +30,6 @@
   }
  },
  "queue": [
-  {
-   "oblast": "lviv",
-   "name": "Краківець",
-   "to": "PL",
-   "hours": 112,
-   "trucks": 988
-  },
   {
    "oblast": "lviv",
    "name": "Краківець",
@@ -63,7 +56,7 @@
    "name": "Угринів",
    "to": "PL",
    "hours": 133,
-   "trucks": 576
+   "trucks": 575
   },
   {
    "oblast": "volyn",
@@ -78,6 +71,13 @@
    "to": "PL",
    "hours": 151,
    "trucks": 612
+  },
+  {
+   "oblast": "volyn",
+   "name": "Ягодин",
+   "to": "PL",
+   "hours": 187,
+   "trucks": 1639
   },
   {
    "oblast": "volyn",
@@ -104,22 +104,22 @@
    "oblast": "odesa",
    "name": "Орлівка",
    "to": "RO",
-   "hours": 151,
+   "hours": 150,
    "trucks": 707
   },
   {
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
-   "hours": 108,
-   "trucks": 952
+   "hours": 107,
+   "trucks": 951
   },
   {
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
-   "hours": 4.6,
-   "trucks": 30
+   "hours": 4,
+   "trucks": 27
   },
   {
    "oblast": "chernivtsi",
@@ -132,15 +132,15 @@
    "oblast": "odesa",
    "name": "Виноградівка",
    "to": "MD",
-   "hours": 0.0,
-   "trucks": 3
+   "hours": 0.3,
+   "trucks": 2
   },
   {
    "oblast": "odesa",
    "name": "Маяки-Удобне",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 1
+   "trucks": 0
   },
   {
    "oblast": "chernivtsi",
@@ -167,7 +167,7 @@
    "oblast": "chernivtsi",
    "name": "Росошани",
    "to": "MD",
-   "hours": 0.3,
+   "hours": 0.0,
    "trucks": 1
   },
   {
@@ -197,13 +197,6 @@
    "to": "SK",
    "hours": 0.0,
    "trucks": 0
-  },
-  {
-   "oblast": "zakarpattia",
-   "name": "Лужанка",
-   "to": "HU",
-   "hours": 11.7,
-   "trucks": 49
   }
  ]
 }
