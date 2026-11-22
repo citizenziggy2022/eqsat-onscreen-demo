@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-22T04:47:29Z",
+ "generated_at": "2026-11-22T05:05:35Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -24,7 +24,7 @@
    "name": "Донецька ОВА",
    "url": "https://t.me/s/VadymFilashkin",
    "verified": "channel of the OVA head (dn.gov.ua/persons/vadim-filashkin), links to dn.gov.ua",
-   "status": "ok: kept 1 / dropped 0, showing 1"
+   "status": "ok: kept 0 / dropped 0, showing 0"
   },
   {
    "name": "Луганська ОВА",
@@ -109,24 +109,6 @@
    "en_mt": {
     "title": "‼ as a result of Russian attacks 5 people were injured",
     "body": "Throughout the day, Russian troops attacked six districts of the region. In Dnipro, Nikopol, Kamianske and Synelnykove districts, five people were injured. An enterprise, infrastructure facilities, an educational institution, storage facilities, cars and…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-VadymFilashkin-19491",
-   "title": "Продовжуємо підтримувати жителів Донеччини разом з міжнародними партнерами",
-   "body": "Завдяки плідній співпраці з гуманітарною організацією «Людина в біді» та за фінансової підтримки чеського народу Краматорська громада отримала 500 теплих наборів для тих, хто найбільше потребує допомоги. Ця підтримка спрямована на соціально вразливі…",
-   "source": "Донецька ОВА",
-   "source_url": "https://t.me/VadymFilashkin/19491",
-   "region": "Донеччина",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-21T17:04:52Z",
-   "expires_at": "2026-11-22T05:04:52Z",
-   "auto": true,
-   "en_mt": {
-    "title": "We continue to support the residents of Donbas together with international partners",
-    "body": "Thanks to fruitful cooperation with the humanitarian organisation People in Need and with financial support from the Czech people, the Kramatorsk community received 500 warm sets for those who need help the most. This support is aimed at socially vulnerable…",
     "by": "m2m100"
    }
   }
