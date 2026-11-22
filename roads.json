@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-22T23:02:08Z",
- "checked_at": "2026-11-22T23:02:08Z",
+ "updated": "2026-11-22T23:05:47Z",
+ "checked_at": "2026-11-22T23:05:47Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Рава-Руська → PL: 602 вант. · 8 д 16 год"
+   "note": "Рава-Руська → PL: 599 вант. · 8 д 15 год"
   },
   "zakarpattia": {
    "status": "outage",
@@ -14,7 +14,7 @@
   },
   "chernivtsi": {
    "status": "outage",
-   "note": "Порубне → RO: 886 вант. · 4 д 3 год"
+   "note": "Порубне → RO: 884 вант. · 4 д 3 год"
   },
   "odesa": {
    "status": "outage",
@@ -26,6 +26,13 @@
   }
  },
  "queue": [
+  {
+   "oblast": "lviv",
+   "name": "Краківець",
+   "to": "PL",
+   "hours": 105,
+   "trucks": 925
+  },
   {
    "oblast": "lviv",
    "name": "Краківець",
@@ -51,14 +58,14 @@
    "oblast": "lviv",
    "name": "Рава-Руська",
    "to": "PL",
-   "hours": 208,
-   "trucks": 602
+   "hours": 207,
+   "trucks": 599
   },
   {
    "oblast": "lviv",
    "name": "Смільниця",
    "to": "PL",
-   "hours": 3.3,
+   "hours": 3,
    "trucks": 16
   },
   {
@@ -122,14 +129,14 @@
    "name": "Порубне",
    "to": "RO",
    "hours": 99,
-   "trucks": 886
+   "trucks": 884
   },
   {
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
    "hours": 0.0,
-   "trucks": 2
+   "trucks": 1
   },
   {
    "oblast": "chernivtsi",
@@ -182,13 +189,6 @@
   },
   {
    "oblast": "odesa",
-   "name": "Старокозаче",
-   "to": "MD",
-   "hours": 0.0,
-   "trucks": 5
-  },
-  {
-   "oblast": "odesa",
    "name": "Табаки",
    "to": "MD",
    "hours": 0.0,
@@ -205,8 +205,8 @@
    "oblast": "zakarpattia",
    "name": "Ужгород",
    "to": "SK",
-   "hours": 139,
-   "trucks": 709
+   "hours": 138,
+   "trucks": 707
   },
   {
    "oblast": "zakarpattia",
