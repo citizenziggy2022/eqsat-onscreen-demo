@@ -1,12 +1,16 @@
 {
- "updated": "2026-11-22T06:28:34Z",
- "checked_at": "2026-11-22T06:28:34Z",
+ "updated": "2026-11-22T06:32:40Z",
+ "checked_at": "2026-11-22T06:32:40Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
    "note": "Угринів → PL: 588 вант. · 5 д 15 год"
+  },
+  "volyn": {
+   "status": "outage",
+   "note": "Устилуг → PL: 257 вант. · 3 д 9 год"
   },
   "zakarpattia": {
    "status": "outage",
@@ -55,6 +59,13 @@
    "trucks": 588
   },
   {
+   "oblast": "volyn",
+   "name": "Устилуг",
+   "to": "PL",
+   "hours": 81,
+   "trucks": 257
+  },
+  {
    "oblast": "zakarpattia",
    "name": "Дякове",
    "to": "RO",
@@ -67,13 +78,6 @@
    "to": "RO",
    "hours": 0.0,
    "trucks": 0
-  },
-  {
-   "oblast": "chernivtsi",
-   "name": "Красноїльськ",
-   "to": "RO",
-   "hours": 0.0,
-   "trucks": 5
   },
   {
    "oblast": "odesa",
@@ -114,13 +118,6 @@
    "oblast": "odesa",
    "name": "Рені",
    "to": "MD",
-   "hours": 64,
-   "trucks": 211
-  },
-  {
-   "oblast": "odesa",
-   "name": "Рені",
-   "to": "MD",
    "hours": 0.0,
    "trucks": 0
   },
@@ -143,7 +140,7 @@
    "name": "Малий Березний",
    "to": "SK",
    "hours": 0.0,
-   "trucks": 1
+   "trucks": 0
   },
   {
    "oblast": "zakarpattia",
@@ -151,6 +148,20 @@
    "to": "SK",
    "hours": 0.0,
    "trucks": 0
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Лужанка",
+   "to": "HU",
+   "hours": 95,
+   "trucks": 342
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Чоп (Тиса)",
+   "to": "HU",
+   "hours": 151,
+   "trucks": 1536
   }
  ]
 }
