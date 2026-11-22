@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-22T18:34:34Z",
- "checked_at": "2026-11-22T18:34:34Z",
+ "updated": "2026-11-22T18:38:33Z",
+ "checked_at": "2026-11-22T18:38:33Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -14,15 +14,15 @@
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Дякове → RO: 552 вант. · 6 д 1 год"
+   "note": "Дякове → RO: 550 вант. · 6 д 1 год"
   },
   "chernivtsi": {
-   "status": "ok",
-   "note": "Дяківці → RO: 0 вант. · 0 год"
+   "status": "outage",
+   "note": "Порубне → RO: 937 вант. · 4 д 10 год"
   },
   "odesa": {
    "status": "ok",
-   "note": "Старокозаче → MD: 14 вант. · 1 год"
+   "note": "Виноградівка → MD: 2 вант. · 0 год"
   },
   "vinnytsia": {
    "status": "ok",
@@ -49,7 +49,7 @@
    "name": "Угринів",
    "to": "PL",
    "hours": 63,
-   "trucks": 300
+   "trucks": 299
   },
   {
    "oblast": "lviv",
@@ -119,7 +119,7 @@
    "name": "Дякове",
    "to": "RO",
    "hours": 145,
-   "trucks": 552
+   "trucks": 550
   },
   {
    "oblast": "chernivtsi",
@@ -133,7 +133,21 @@
    "name": "Красноїльськ",
    "to": "RO",
    "hours": 0.0,
-   "trucks": 9
+   "trucks": 5
+  },
+  {
+   "oblast": "chernivtsi",
+   "name": "Порубне",
+   "to": "RO",
+   "hours": 106,
+   "trucks": 937
+  },
+  {
+   "oblast": "chernivtsi",
+   "name": "Порубне",
+   "to": "RO",
+   "hours": 2.2,
+   "trucks": 17
   },
   {
    "oblast": "chernivtsi",
@@ -185,13 +199,6 @@
    "trucks": 0
   },
   {
-   "oblast": "odesa",
-   "name": "Старокозаче",
-   "to": "MD",
-   "hours": 1.2,
-   "trucks": 14
-  },
-  {
    "oblast": "zakarpattia",
    "name": "Малий Березний",
    "to": "SK",
@@ -207,17 +214,10 @@
   },
   {
    "oblast": "zakarpattia",
-   "name": "Лужанка",
-   "to": "HU",
-   "hours": 96.6,
-   "trucks": 345
-  },
-  {
-   "oblast": "zakarpattia",
    "name": "Чоп (Тиса)",
    "to": "HU",
-   "hours": 144.4,
-   "trucks": 1463
+   "hours": 144.2,
+   "trucks": 1462
   }
  ]
 }
