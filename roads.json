@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-22T12:24:22Z",
- "checked_at": "2026-11-22T12:24:22Z",
+ "updated": "2026-11-22T12:27:23Z",
+ "checked_at": "2026-11-22T12:27:23Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -14,15 +14,15 @@
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Чоп (Тиса) → HU: 1506 вант. · 6 д 4 год"
+   "note": "Чоп (Тиса) → HU: 1505 вант. · 6 д 4 год"
   },
   "chernivtsi": {
-   "status": "outage",
-   "note": "Порубне → RO: 951 вант. · 4 д 11 год"
+   "status": "ok",
+   "note": "Мамалига → MD: 49 вант. · 6 год"
   },
   "odesa": {
    "status": "outage",
-   "note": "Орлівка → RO: 712 вант. · 6 д 7 год"
+   "note": "Орлівка → RO: 710 вант. · 6 д 7 год"
   },
   "vinnytsia": {
    "status": "ok",
@@ -30,6 +30,13 @@
   }
  },
  "queue": [
+  {
+   "oblast": "lviv",
+   "name": "Краківець",
+   "to": "PL",
+   "hours": 115,
+   "trucks": 1007
+  },
   {
    "oblast": "lviv",
    "name": "Краківець",
@@ -66,13 +73,6 @@
    "trucks": 582
   },
   {
-   "oblast": "volyn",
-   "name": "Устилуг",
-   "to": "PL",
-   "hours": 151,
-   "trucks": 615
-  },
-  {
    "oblast": "lviv",
    "name": "Шегині",
    "to": "PL",
@@ -84,28 +84,14 @@
    "name": "Шегині",
    "to": "PL",
    "hours": 137,
-   "trucks": 593
-  },
-  {
-   "oblast": "volyn",
-   "name": "Ягодин",
-   "to": "PL",
-   "hours": 121,
-   "trucks": 846
+   "trucks": 592
   },
   {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
    "hours": 185,
-   "trucks": 1620
-  },
-  {
-   "oblast": "volyn",
-   "name": "Ягодин",
-   "to": "PL",
-   "hours": 0.0,
-   "trucks": 12
+   "trucks": 1621
   },
   {
    "oblast": "volyn",
@@ -133,21 +119,7 @@
    "name": "Орлівка",
    "to": "RO",
    "hours": 151,
-   "trucks": 712
-  },
-  {
-   "oblast": "chernivtsi",
-   "name": "Порубне",
-   "to": "RO",
-   "hours": 107,
-   "trucks": 951
-  },
-  {
-   "oblast": "chernivtsi",
-   "name": "Порубне",
-   "to": "RO",
-   "hours": 4.4,
-   "trucks": 29
+   "trucks": 710
   },
   {
    "oblast": "chernivtsi",
@@ -169,6 +141,13 @@
    "to": "MD",
    "hours": 0.0,
    "trucks": 2
+  },
+  {
+   "oblast": "chernivtsi",
+   "name": "Мамалига",
+   "to": "MD",
+   "hours": 5.8,
+   "trucks": 49
   },
   {
    "oblast": "vinnytsia",
@@ -217,7 +196,7 @@
    "name": "Чоп (Тиса)",
    "to": "HU",
    "hours": 148,
-   "trucks": 1506
+   "trucks": 1505
   }
  ]
 }
