@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-22T06:10:32Z",
- "checked_at": "2026-11-22T06:10:32Z",
+ "updated": "2026-11-22T06:13:32Z",
+ "checked_at": "2026-11-22T06:13:32Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -8,28 +8,31 @@
    "status": "outage",
    "note": "Угринів → PL: 590 вант. · 5 д 16 год"
   },
-  "volyn": {
+  "zakarpattia": {
    "status": "outage",
-   "note": "Устилуг → PL: 622 вант. · 6 д 9 год"
+   "note": "Дякове → RO: 579 вант. · 6 д 10 год"
   },
   "chernivtsi": {
-   "status": "outage",
-   "note": "Порубне → RO: 968 вант. · 4 д 10 год"
+   "status": "ok",
+   "note": "Дяківці → RO: 0 вант. · 0 год"
   },
   "odesa": {
    "status": "outage",
-   "note": "Орлівка → RO: 727 вант. · 6 д 11 год"
+   "note": "Орлівка → RO: 728 вант. · 6 д 11 год"
   },
   "vinnytsia": {
    "status": "ok",
    "note": "Могилів-Подільський → MD: 0 вант. · 0 год"
-  },
-  "zakarpattia": {
-   "status": "ok",
-   "note": "Малий Березний → SK: 1 вант. · 0 год"
   }
  },
  "queue": [
+  {
+   "oblast": "lviv",
+   "name": "Краківець",
+   "to": "PL",
+   "hours": 120.6,
+   "trucks": 1055
+  },
   {
    "oblast": "lviv",
    "name": "Краківець",
@@ -59,18 +62,11 @@
    "trucks": 590
   },
   {
-   "oblast": "volyn",
-   "name": "Устилуг",
-   "to": "PL",
-   "hours": 81,
-   "trucks": 256
-  },
-  {
-   "oblast": "volyn",
-   "name": "Устилуг",
-   "to": "PL",
-   "hours": 153,
-   "trucks": 622
+   "oblast": "zakarpattia",
+   "name": "Дякове",
+   "to": "RO",
+   "hours": 154,
+   "trucks": 579
   },
   {
    "oblast": "chernivtsi",
@@ -91,20 +87,13 @@
    "name": "Орлівка",
    "to": "RO",
    "hours": 155,
-   "trucks": 727
+   "trucks": 728
   },
   {
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
-   "hours": 106,
-   "trucks": 968
-  },
-  {
-   "oblast": "chernivtsi",
-   "name": "Порубне",
-   "to": "RO",
-   "hours": 0.2,
+   "hours": 0.0,
    "trucks": 2
   },
   {
