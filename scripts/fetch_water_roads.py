@@ -32,7 +32,7 @@ OBLAST = [
     ("вінницьк", "vinnytsia"), ("волинськ", "volyn"), ("дніпропетровськ", "dnipro"), ("донецьк", "donetsk"),
     ("житомирськ", "zhytomyr"), ("закарпатськ", "zakarpattia"), ("запорізьк", "zaporizhzhia"), ("івано-франківськ", "ivano"),
     ("київськ", "kyivobl"), ("кіровоградськ", "kirovohrad"), ("луганськ", "luhansk"), ("львівськ", "lviv"),
-    ("миколаївськ", "mykolaiv"), ("одеськ", "odesa"), ("полтавськ", "poltava"), ("рівненськ", "rivne"), ("сумськ", "sumy"),
+    ("миколаївськ", "mykolaiv"), ("одеськ", "odesa"), ("одеси ", "odesa"), ("одесі", "odesa"), ("полтавськ", "poltava"), ("рівненськ", "rivne"), ("сумськ", "sumy"),
     ("тернопільськ", "ternopil"), ("харківськ", "kharkiv"), ("херсонськ", "kherson"), ("хмельницьк", "khmelnytskyi"),
     ("черкаськ", "cherkasy"), ("чернівецьк", "chernivtsi"), ("чернігівськ", "chernihiv"),
     # "-щина" forms
@@ -47,6 +47,17 @@ OCCUPIED_ONLY = {"crimea", "sevastopol"}  # never coloured from a live feed
 TG_MSG = re.compile(r'<div class="tgme_widget_message_wrap.*?(?=<div class="tgme_widget_message_wrap|\Z)', re.S)
 CUT = re.compile(r"знеструм|аварійн\w* відключ", re.I)
 EMERGENCY = re.compile(r"аварійн\w* відключ", re.I)
+# Situation reports (Nov 22 2026 repair): Ukrenergo also writes "ситуація ... на Одещині залишається складною / вкрай складною"
+# and "масштабні знеструмлення" posts; the old reader coloured only the cut sentences and missed these.
+SITUATION = re.compile(r"(вкрай\s+)?склад\w+|масштабн\w*\s+знеструм|значн\w*\s+пошкодж", re.I)
+SEVERE = re.compile(r"вкрай\s+склад|масштабн\w*\s+знеструм", re.I)
+# Planned-outage notices ("Завтра, 23 листопада, ... планові відключення ... від 1 до 3.5 черг") name no oblast and carry their own date
+PLANNED = re.compile(r"планов\w*\s+відключ", re.I)
+PLAN_DATE = re.compile(r"(сьогодні|завтра)[,\s]+(\d{1,2})\s+(січня|лютого|березня|квітня|травня|червня|липня|серпня|вересня|жовтня|листопада|грудня)", re.I)
+MONTHS = {"січня": 1, "лютого": 2, "березня": 3, "квітня": 4, "травня": 5, "червня": 6, "липня": 7, "серпня": 8, "вересня": 9, "жовтня": 10, "листопада": 11, "грудня": 12}
+PLAN_Q = re.compile(r"від\s+([\d.,]+)\s+до\s+([\d.,]+)\s+черг", re.I)
+COLOUR_WINDOW_S = 30 * 3600   # a post older than this no longer colours the map (as before)
+REPORT_WINDOW_S = 72 * 3600   # ...but stays listed as "latest known report" with its own age, never as "normal"
 
 
 def iso(t=None):
@@ -79,13 +90,47 @@ def oblasts_in(sentence):
     return found
 
 
+def kyiv_today(now):
+    try:
+        from zoneinfo import ZoneInfo
+        return now.astimezone(ZoneInfo("Europe/Kyiv")).date()
+    except Exception:
+        return now.date()
+
+
+def planned_notice(posts, now):
+    """Newest planned-outage notice with its own date. expired = that date has passed in Kyiv. Never says power is on."""
+    today = kyiv_today(now)
+    for at, pid, text in sorted(posts, reverse=True):
+        if not PLANNED.search(text):
+            continue
+        m = PLAN_DATE.search(text)
+        if not m:
+            continue
+        day, mon = int(m.group(2)), MONTHS[m.group(3).lower()]
+        try:
+            from datetime import date
+            base = kyiv_today(at)
+            d = date(base.year, mon, day)
+        except Exception:
+            continue
+        q = PLAN_Q.search(text)
+        return {"for_date": d.isoformat(), "expired": d < today, "post_at": iso(at.timestamp()), "post_url": f"https://t.me/{pid}",
+                "queues": f"{q.group(1)}-{q.group(2)}" if q else None}
+    return None
+
+
 def power_cuts():
     r = requests.get("https://t.me/s/Ukrenergo", headers=UA, timeout=20)
     if r.status_code == 429:
         raise RuntimeError("Telegram 429")
     r.raise_for_status()
+    return parse_power(r.text, datetime.now(timezone.utc))
+
+
+def parse_power(page, now):
     posts = []
-    for block in TG_MSG.findall(r.text):
+    for block in TG_MSG.findall(page):
         when = re.search(r'<time datetime="([^"]+)"', block)
         body = re.search(r'<div class="tgme_widget_message_text[^"]*"[^>]*>(.*?)</div>', block, re.S)
         post = re.search(r'data-post="([^"]+)"', block)
@@ -95,21 +140,35 @@ def power_cuts():
         posts.append((datetime.fromisoformat(when.group(1)).astimezone(timezone.utc), post.group(1), text))
     if not posts:
         raise RuntimeError("no posts in the preview")
-    now = datetime.now(timezone.utc)
+    regions, reports, colour_post = {}, {}, None
     for at, pid, text in sorted(posts, reverse=True):
-        if (now - at).total_seconds() > 30 * 3600:
+        age = (now - at).total_seconds()
+        if age > REPORT_WINDOW_S:
             break
-        regions = {}
         for sentence in re.split(r"(?<=[.!?])\s+|\n+", text):
-            if not CUT.search(sentence):
+            cut, sit = CUT.search(sentence), SITUATION.search(sentence)
+            if not (cut or sit):
                 continue
             status = "outage" if EMERGENCY.search(sentence) else "limited"
+            kind = "cut" if cut else "situation"
             for key in oblasts_in(sentence):
-                if regions.get(key, {}).get("status") != "outage":
-                    regions[key] = {"status": status, "note": "аварійні відключення / emergency cuts" if status == "outage" else "знеструмлення / partial cuts"}
-        if regions:
-            return {"post_at": iso(at.timestamp()), "post_url": f"https://t.me/{pid}", "regions": regions}
-    return {"post_at": None, "post_url": None, "regions": {}}  # no oblast named in the last 30 h: nothing coloured
+                # the newest post that mentions a region speaks for it; an older mention never overrides it
+                rep = reports.get(key)
+                if rep is None:
+                    word = "emergency cuts" if status == "outage" and cut else "very difficult situation" if SEVERE.search(sentence) else "difficult situation" if sit and not cut else "power cuts"
+                    reports[key] = {"post_at": iso(at.timestamp()), "post_url": f"https://t.me/{pid}", "what": word, "kind": kind, "status": status}
+                if age <= COLOUR_WINDOW_S and key not in regions and key == key and (rep is None or reports[key]["post_url"] == f"https://t.me/{pid}"):
+                    regions[key] = {"status": status if (cut or SEVERE.search(sentence)) else "limited",
+                                    "note": ("аварійні відключення / emergency cuts" if status == "outage" and cut else "дуже складна ситуація / very difficult situation" if SEVERE.search(sentence) else "складна ситуація / difficult situation" if not cut else "знеструмлення / partial cuts"),
+                                    "post_at": iso(at.timestamp()), "post_url": f"https://t.me/{pid}"}
+                elif age <= COLOUR_WINDOW_S and key in regions and regions[key].get("post_url") == f"https://t.me/{pid}" and status == "outage" and cut and regions[key]["status"] != "outage":
+                    regions[key].update(status="outage", note="аварійні відключення / emergency cuts")
+        if regions and colour_post is None:
+            colour_post = (at, pid)
+    out = {"post_at": iso(colour_post[0].timestamp()) if colour_post else None, "post_url": f"https://t.me/{colour_post[1]}" if colour_post else None,
+           "regions": regions, "reports": reports,
+           "latest_post_at": iso(max(p[0] for p in posts).timestamp()), "planned": planned_notice(posts, now)}
+    return out
 
 
 # Ukrainian side of each crossing (the title's first part) -> oblast; checked against eCherha's own lat/lng (Nov 11 2026)
@@ -187,6 +246,11 @@ def main():
                 "post_url": p["post_url"],
                 "note": "Відключення світла, не води: вода зазвичай зникає слідом / Power cuts, not water: water often follows",
                 "regions": p["regions"],
+                # Nov 22 2026 repair: every region any Ukrenergo report in the last 72 h named, each with its own post time (a
+                # "latest known report", never proof of current status), plus the newest dated planned-outage notice
+                "reports": p["reports"],
+                "latest_post_at": p["latest_post_at"],
+                "planned": p["planned"],
             }
             # rewrite when anything but the read/check times changed, or every 10 min so the age on screen stays honest
             volatile = {"updated", "checked_at", "error"}
