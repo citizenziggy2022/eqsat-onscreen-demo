@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-22T13:54:25Z",
+ "generated_at": "2026-11-22T13:55:25Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -18,7 +18,7 @@
    "name": "Запорізька ОВА",
    "url": "https://t.me/s/zoda_gov_ua",
    "verified": "linked from zoda.gov.ua",
-   "status": "ok: kept 2 / dropped 3, showing 2"
+   "status": "ok: kept 3 / dropped 3, showing 2"
   },
   {
    "name": "Донецька ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-zoda_gov_ua-69230",
+   "title": "У Запорізькій області запроваджено спеціальні графіки аварійних відключень електроенергії",
+   "body": "Це означає, що за деякими адресами світло можуть вимикати поза звичними графіками погодинних відключень. Прошу з розумінням поставитися до тимчасових обмежень. Вони необхідні для стабільної роботи енергосистеми.",
+   "source": "Запорізька ОВА",
+   "source_url": "https://t.me/zoda_gov_ua/69230",
+   "region": "Запоріжжя",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-22T13:54:40Z",
+   "expires_at": "2026-11-23T01:54:40Z",
+   "auto": true,
+   "en_mt": {
+    "title": "In the Zaporizhzhia region, special schedules of emergency power outages have been introduced",
+    "body": "This means that at some addresses the light may be turned off outside the usual schedules of hourly outages. I ask you to treat the temporary restrictions with understanding. They are necessary for the stable operation of the energy system.",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-zoda_gov_ua-69229",
    "title": "росіяни атакували FPV-дроном цивільний автомобіль у Шевченківському районі Запоріжжя",
@@ -73,24 +91,6 @@
    "en_mt": {
     "title": "Rescue operations are ongoing at the site of the Russian attack, 8 people may be under the rubble…",
     "body": "9 people have been evacuated, 2 more have been injured. Rescuers are conducting…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-zoda_gov_ua-69218",
-   "title": "Ворог атакував Запоріжжя",
-   "body": "Внаслідок атаки по Заводському району загинув чоловік. Щирі співчуття рідним і близьким загиблого.",
-   "source": "Запорізька ОВА",
-   "source_url": "https://t.me/zoda_gov_ua/69218",
-   "region": "Запоріжжя",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-22T10:21:00Z",
-   "expires_at": "2026-11-22T22:21:00Z",
-   "auto": true,
-   "en_mt": {
-    "title": "The enemy attacked Zaporizhzhia",
-    "body": "As a result of the attack on the Zavodskyi district, a man died. Sincere condolences to the relatives and loved ones of the deceased.",
     "by": "m2m100"
    }
   },
