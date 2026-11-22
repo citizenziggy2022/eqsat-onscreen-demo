@@ -295,6 +295,14 @@ try:
 except Exception as _e10:
     print('fires skipped:', _e10)
 
+# MAP CHANGE SUMMARIES (v2.53): fetch_changes.py keeps a short history of real fires / internet / power readings in
+# changes.json (at most every 30 min; stages it) for the screen's "what changed" strips.
+try:
+    import subprocess as _sp12, sys as _sys12
+    _sp12.run([_sys12.executable, 'scripts/fetch_changes.py'], timeout=60, check=False)
+except Exception as _e12:
+    print('changes skipped:', _e12)
+
 # EARTHQUAKES (v2.34): fetch_quakes.py writes quakes.json (EMSC, 30 days, M2.5+), at most every 10 min; stages it.
 try:
     import subprocess as _sp11, sys as _sys11
