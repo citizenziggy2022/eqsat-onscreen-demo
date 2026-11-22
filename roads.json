@@ -1,16 +1,16 @@
 {
- "updated": "2026-11-22T09:54:14Z",
- "checked_at": "2026-11-22T09:54:14Z",
+ "updated": "2026-11-22T09:57:15Z",
+ "checked_at": "2026-11-22T09:57:15Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Краківець → PL: 706 вант. · 8 д 17 год"
+   "note": "Краківець → PL: 705 вант. · 8 д 17 год"
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 790 вант. · 8 д 13 год"
+   "note": "Ягодин → PL: 791 вант. · 8 д 14 год"
   },
   "zakarpattia": {
    "status": "outage",
@@ -26,7 +26,7 @@
   },
   "vinnytsia": {
    "status": "ok",
-   "note": "Могилів-Подільський → MD: 1 вант. · 0 год"
+   "note": "Могилів-Подільський → MD: 0 вант. · 0 год"
   }
  },
  "queue": [
@@ -34,8 +34,8 @@
    "oblast": "lviv",
    "name": "Грушів",
    "to": "PL",
-   "hours": 19.7,
-   "trucks": 80
+   "hours": 19.2,
+   "trucks": 77
   },
   {
    "oblast": "lviv",
@@ -56,7 +56,7 @@
    "name": "Краківець",
    "to": "PL",
    "hours": 209,
-   "trucks": 706
+   "trucks": 705
   },
   {
    "oblast": "lviv",
@@ -69,15 +69,15 @@
    "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
-   "hours": 58,
-   "trucks": 280
+   "hours": 59,
+   "trucks": 281
   },
   {
    "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
-   "hours": 135,
-   "trucks": 586
+   "hours": 134,
+   "trucks": 584
   },
   {
    "oblast": "lviv",
@@ -104,8 +104,8 @@
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
-   "hours": 205,
-   "trucks": 790
+   "hours": 206,
+   "trucks": 791
   },
   {
    "oblast": "zakarpattia",
@@ -126,7 +126,7 @@
    "name": "Красноїльськ",
    "to": "RO",
    "hours": 0.0,
-   "trucks": 10
+   "trucks": 9
   },
   {
    "oblast": "odesa",
@@ -168,14 +168,7 @@
    "name": "Могилів-Подільський",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 1
-  },
-  {
-   "oblast": "odesa",
-   "name": "Рені",
-   "to": "MD",
-   "hours": 64,
-   "trucks": 210
+   "trucks": 0
   },
   {
    "oblast": "odesa",
@@ -211,6 +204,13 @@
    "to": "SK",
    "hours": 0.0,
    "trucks": 0
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Лужанка",
+   "to": "HU",
+   "hours": 96.0,
+   "trucks": 344
   }
  ]
 }
