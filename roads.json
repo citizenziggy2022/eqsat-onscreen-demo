@@ -1,16 +1,16 @@
 {
- "updated": "2026-11-22T03:16:23Z",
- "checked_at": "2026-11-22T03:16:23Z",
+ "updated": "2026-11-22T03:19:24Z",
+ "checked_at": "2026-11-22T03:19:24Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Рава-Руська → PL: 618 вант. · 8 д 21 год"
+   "note": "Рава-Руська → PL: 617 вант. · 8 д 21 год"
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Дякове → RO: 585 вант. · 6 д 9 год"
+   "note": "Дякове → RO: 585 вант. · 6 д 10 год"
   },
   "chernivtsi": {
    "status": "outage",
@@ -18,7 +18,7 @@
   },
   "odesa": {
    "status": "ok",
-   "note": "Виноградівка → MD: 0 вант. · 0 год"
+   "note": "Старокозаче → MD: 27 вант. · 5 год"
   },
   "vinnytsia": {
    "status": "ok",
@@ -30,8 +30,8 @@
    "oblast": "lviv",
    "name": "Грушів",
    "to": "PL",
-   "hours": 17.9,
-   "trucks": 73
+   "hours": 17.6,
+   "trucks": 71
   },
   {
    "oblast": "lviv",
@@ -45,14 +45,21 @@
    "name": "Рава-Руська",
    "to": "PL",
    "hours": 125,
-   "trucks": 958
+   "trucks": 956
   },
   {
    "oblast": "lviv",
    "name": "Рава-Руська",
    "to": "PL",
    "hours": 213,
-   "trucks": 618
+   "trucks": 617
+  },
+  {
+   "oblast": "lviv",
+   "name": "Смільниця",
+   "to": "PL",
+   "hours": 0.0,
+   "trucks": 2
   },
   {
    "oblast": "lviv",
@@ -72,7 +79,7 @@
    "oblast": "zakarpattia",
    "name": "Дякове",
    "to": "RO",
-   "hours": 153,
+   "hours": 154,
    "trucks": 585
   },
   {
@@ -130,6 +137,13 @@
    "to": "MD",
    "hours": 0.0,
    "trucks": 0
+  },
+  {
+   "oblast": "odesa",
+   "name": "Старокозаче",
+   "to": "MD",
+   "hours": 4.8,
+   "trucks": 27
   },
   {
    "oblast": "odesa",
