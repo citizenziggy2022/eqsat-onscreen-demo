@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-22T09:23:10Z",
+ "generated_at": "2026-11-22T09:34:11Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 4 / dropped 0, showing 2"
+   "status": "ok: kept 5 / dropped 0, showing 2"
   },
   {
    "name": "Херсонська ОВА",
@@ -41,6 +41,24 @@
  ],
  "bulletins": [
   {
+   "id": "auto-dsns_telegram-81247",
+   "title": "Після кожної масованої російської атаки наші міста та села втрачають свої барви, і навколо залишаються лише…",
+   "body": "Та погляньте на це фото: серед руїн стоять двоє, і над ними – яскрава помаранчева парасолька. Така проста буденна річ, яка раптом стає чимось значно більшим. Вона – про надію, яку неможливо розбити ракетами. Про вміння знаходити світло, підтримувати одне…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/81247",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-22T09:33:05Z",
+   "expires_at": "2026-11-22T21:33:05Z",
+   "auto": true,
+   "en_mt": {
+    "title": "After each massive Russian attack our cities and villages lose their colors, and only…",
+    "body": "And look at this photo: among the ruins stand two, and above them - a bright orange umbrella. Such a simple everyday thing that suddenly becomes something much bigger. It is about hope that cannot be broken by rockets. About the ability to find light, to support each other…",
+    "by": "m2m100"
+   }
+  },
+  {
    "id": "auto-VadymFilashkin-19507",
    "title": "Справжній командний дух, жага до перемоги та море позитивних емоцій!",
    "body": "Діти Донеччини продовжують активно відпочивати, відкривати нові таланти та наповнювати свої дні яскравими враженнями в межах президентської ініціативи «Карпатська зміна». Цього разу на дітей чекав запальний танцювальний батл між загонами! Кожна команда мала…",
@@ -73,24 +91,6 @@
    "en_mt": {
     "title": "Rescue operations are ongoing at the site of the Russian attack, 8 people may be under the rubble",
     "body": "As a result of the strike, the entrance to the residential building from the first to the fifth floor was destroyed. 9 people were evacuated, 2 more were injured. Rescuers are carrying out demolition of structures and searching for people. The canine and pyrotechnic services of the DSNs, as well as the engineering…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-81226",
-   "title": "‼ внаслідок російської атаки на Лозову виникли пожежі, постраждала жінка",
-   "body": "Уночі російські війська атакували реактивними безпілотниками приватний сектор і територію цивільного підприємства в Лозовій. За однією адресою горіли житловий будинок, господарчі споруди та торгівельний об’єкт на загальній площі 400 кв. м. Також пошкоджено…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/81226",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-22T06:51:45Z",
-   "expires_at": "2026-11-22T18:51:45Z",
-   "auto": true,
-   "en_mt": {
-    "title": "‼ as a result of the Russian attack on Lozova, fires broke out, a woman was injured",
-    "body": "At night, Russian troops attacked the private sector and the territory of a civilian enterprise in Lozova with reactive drones. At one address, a residential building, outbuildings and a commercial facility with a total area of 400 sq. m were on fire. Also damaged…",
     "by": "m2m100"
    }
   }
