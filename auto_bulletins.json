@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-22T06:43:31Z",
+ "generated_at": "2026-11-22T06:53:31Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -41,6 +41,24 @@
  ],
  "bulletins": [
   {
+   "id": "auto-dsns_telegram-81226",
+   "title": "‼ внаслідок російської атаки на Лозову виникли пожежі, постраждала жінка",
+   "body": "Уночі російські війська атакували реактивними безпілотниками приватний сектор і територію цивільного підприємства в Лозовій. За однією адресою горіли житловий будинок, господарчі споруди та торгівельний об’єкт на загальній площі 400 кв. м. Також пошкоджено…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/81226",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-22T06:51:45Z",
+   "expires_at": "2026-11-22T18:51:45Z",
+   "auto": true,
+   "en_mt": {
+    "title": "‼ as a result of the Russian attack on Lozova, fires broke out, a woman was injured",
+    "body": "At night, Russian troops attacked the private sector and the territory of a civilian enterprise in Lozova with reactive drones. At one address, a residential building, outbuildings and a commercial facility with a total area of 400 sq. m were on fire. Also damaged…",
+    "by": "m2m100"
+   }
+  },
+  {
    "id": "auto-dsns_telegram-81222",
    "title": "‼ через ворожу атаку виникла пожежа на підприємстві",
    "body": "У Новгород-Сіверському районі російський удар спричинив займання на території приватного деревообробного підприємства. Рятувальники ліквідували пожежу. За попередньою інформацією, постраждалих немає.",
@@ -55,24 +73,6 @@
    "en_mt": {
     "title": "‼ a fire broke out at the enterprise due to an enemy attack",
     "body": "In the Novhorod-Siverskyi district, a Russian strike caused a fire on the territory of a private woodworking enterprise, rescuers extinguished the fire, according to preliminary information, there are no casualties.",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-81212",
-   "title": "‼ в селищі Димер зруйновано житловий будинок, під завалами можуть перебувати 7 людей",
-   "body": "Унаслідок ранкової атаки зруйновано будинок із першого по п’ятий поверх. Рятувальники евакуювали 9 людей, серед них 1 дитину. Ще одна дитина, 2010 року народження, постраждала та госпіталізована. Попередньо 7 людей можуть перебувати під завалами. Інформація…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/81212",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-22T05:48:14Z",
-   "expires_at": "2026-11-22T17:48:14Z",
-   "auto": true,
-   "en_mt": {
-    "title": "‼ in the settlement of Dimer a residential building was destroyed, 7 people may be under the rubble",
-    "body": "As a result of the morning attack, the house from the first to the fifth floor was destroyed. Rescuers evacuated 9 people, including 1 child. Another child, born in 2010, was injured and hospitalized. Preliminarily, 7 people may be under the rubble. Information…",
     "by": "m2m100"
    }
   },
