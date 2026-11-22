@@ -1,28 +1,28 @@
 {
- "updated": "2026-11-22T13:03:26Z",
- "checked_at": "2026-11-22T13:03:26Z",
+ "updated": "2026-11-22T13:06:28Z",
+ "checked_at": "2026-11-22T13:06:28Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Шегині → PL: 494 вант. · 5 д 18 год"
+   "note": "Шегині → PL: 495 вант. · 5 д 18 год"
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 1610 вант. · 7 д 16 год"
+   "note": "Ягодин → PL: 1609 вант. · 7 д 16 год"
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Дякове → RO: 555 вант. · 6 д 2 год"
+   "note": "Чоп (Тиса) → HU: 1495 вант. · 6 д 3 год"
   },
   "chernivtsi": {
    "status": "ok",
-   "note": "Дяківці → RO: 1 вант. · 0 год"
+   "note": "Дяківці → RO: 0 вант. · 0 год"
   },
   "odesa": {
-   "status": "outage",
-   "note": "Орлівка → RO: 709 вант. · 6 д 7 год"
+   "status": "ok",
+   "note": "Табаки → MD: 4 вант. · 0 год"
   },
   "vinnytsia": {
    "status": "ok",
@@ -63,42 +63,35 @@
    "name": "Шегині",
    "to": "PL",
    "hours": 138,
-   "trucks": 494
+   "trucks": 495
   },
   {
    "oblast": "lviv",
    "name": "Шегині",
    "to": "PL",
    "hours": 136,
-   "trucks": 590
+   "trucks": 589
   },
   {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
    "hours": 184,
-   "trucks": 1610
+   "trucks": 1609
   },
   {
    "oblast": "zakarpattia",
    "name": "Дякове",
    "to": "RO",
    "hours": 146,
-   "trucks": 555
+   "trucks": 556
   },
   {
    "oblast": "chernivtsi",
    "name": "Дяківці",
    "to": "RO",
    "hours": 0.0,
-   "trucks": 1
-  },
-  {
-   "oblast": "odesa",
-   "name": "Орлівка",
-   "to": "RO",
-   "hours": 151,
-   "trucks": 709
+   "trucks": 0
   },
   {
    "oblast": "chernivtsi",
@@ -162,6 +155,20 @@
    "to": "SK",
    "hours": 0.0,
    "trucks": 1
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Ужгород",
+   "to": "SK",
+   "hours": 0.0,
+   "trucks": 1
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Чоп (Тиса)",
+   "to": "HU",
+   "hours": 147,
+   "trucks": 1495
   }
  ]
 }
