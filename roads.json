@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-22T03:02:27Z",
- "checked_at": "2026-11-22T03:02:27Z",
+ "updated": "2026-11-22T03:06:23Z",
+ "checked_at": "2026-11-22T03:06:23Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Шегині → PL: 522 вант. · 6 д 2 год"
+   "note": "Рава-Руська → PL: 619 вант. · 8 д 22 год"
   },
   "zakarpattia": {
    "status": "outage",
@@ -31,7 +31,7 @@
    "name": "Краківець",
    "to": "PL",
    "hours": 124,
-   "trucks": 1092
+   "trucks": 1086
   },
   {
    "oblast": "lviv",
@@ -39,6 +39,27 @@
    "to": "PL",
    "hours": 0.0,
    "trucks": 0
+  },
+  {
+   "oblast": "lviv",
+   "name": "Рава-Руська",
+   "to": "PL",
+   "hours": 126,
+   "trucks": 963
+  },
+  {
+   "oblast": "lviv",
+   "name": "Рава-Руська",
+   "to": "PL",
+   "hours": 214,
+   "trucks": 619
+  },
+  {
+   "oblast": "lviv",
+   "name": "Смільниця",
+   "to": "PL",
+   "hours": 0.6,
+   "trucks": 4
   },
   {
    "oblast": "lviv",
@@ -58,15 +79,8 @@
    "oblast": "lviv",
    "name": "Шегині",
    "to": "PL",
-   "hours": 146,
-   "trucks": 522
-  },
-  {
-   "oblast": "lviv",
-   "name": "Шегині",
-   "to": "PL",
-   "hours": 136,
-   "trucks": 593
+   "hours": 137,
+   "trucks": 595
   },
   {
    "oblast": "zakarpattia",
@@ -84,6 +98,13 @@
   },
   {
    "oblast": "chernivtsi",
+   "name": "Красноїльськ",
+   "to": "RO",
+   "hours": 0.0,
+   "trucks": 5
+  },
+  {
+   "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
    "hours": 109,
@@ -94,7 +115,7 @@
    "name": "Порубне",
    "to": "RO",
    "hours": 0.0,
-   "trucks": 0
+   "trucks": 1
   },
   {
    "oblast": "odesa",
@@ -158,13 +179,6 @@
    "to": "SK",
    "hours": 0.0,
    "trucks": 0
-  },
-  {
-   "oblast": "zakarpattia",
-   "name": "Лужанка",
-   "to": "HU",
-   "hours": 1.3,
-   "trucks": 10
   }
  ]
 }
