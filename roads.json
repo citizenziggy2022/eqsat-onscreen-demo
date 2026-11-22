@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-22T04:10:15Z",
- "checked_at": "2026-11-22T04:10:15Z",
+ "updated": "2026-11-22T04:14:14Z",
+ "checked_at": "2026-11-22T04:14:14Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -17,12 +17,12 @@
    "note": "Дякове → RO: 582 вант. · 6 д 9 год"
   },
   "chernivtsi": {
-   "status": "ok",
-   "note": "Дяківці → RO: 0 вант. · 0 год"
+   "status": "outage",
+   "note": "Порубне → RO: 996 вант. · 4 д 13 год"
   },
   "odesa": {
-   "status": "limited",
-   "note": "Рені → MD: 219 вант. · 2 д 20 год"
+   "status": "ok",
+   "note": "Виноградівка → MD: 1 вант. · 0 год"
   },
   "vinnytsia": {
    "status": "ok",
@@ -35,7 +35,7 @@
    "name": "Краківець",
    "to": "PL",
    "hours": 0.0,
-   "trucks": 0
+   "trucks": 1
   },
   {
    "oblast": "lviv",
@@ -49,7 +49,7 @@
    "name": "Рава-Руська",
    "to": "PL",
    "hours": 124,
-   "trucks": 955
+   "trucks": 951
   },
   {
    "oblast": "lviv",
@@ -125,6 +125,13 @@
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
+   "hours": 109,
+   "trucks": 996
+  },
+  {
+   "oblast": "chernivtsi",
+   "name": "Порубне",
+   "to": "RO",
    "hours": 0.0,
    "trucks": 0
   },
@@ -148,13 +155,6 @@
    "to": "MD",
    "hours": 0.0,
    "trucks": 0
-  },
-  {
-   "oblast": "odesa",
-   "name": "Рені",
-   "to": "MD",
-   "hours": 68,
-   "trucks": 219
   },
   {
    "oblast": "odesa",
@@ -189,7 +189,7 @@
    "name": "Ужгород",
    "to": "SK",
    "hours": 148,
-   "trucks": 755
+   "trucks": 753
   },
   {
    "oblast": "zakarpattia",
