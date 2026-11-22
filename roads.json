@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-22T12:54:24Z",
- "checked_at": "2026-11-22T12:54:24Z",
+ "updated": "2026-11-22T12:57:25Z",
+ "checked_at": "2026-11-22T12:57:25Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -14,11 +14,11 @@
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Чоп (Тиса) → HU: 1496 вант. · 6 д 3 год"
+   "note": "Дякове → RO: 554 вант. · 6 д 2 год"
   },
   "chernivtsi": {
    "status": "ok",
-   "note": "Дяківці → RO: 0 вант. · 0 год"
+   "note": "Дяківці → RO: 1 вант. · 0 год"
   },
   "odesa": {
    "status": "outage",
@@ -26,7 +26,7 @@
   },
   "vinnytsia": {
    "status": "ok",
-   "note": "Могилів-Подільський → MD: 3 вант. · 0 год"
+   "note": "Могилів-Подільський → MD: 4 вант. · 0 год"
   }
  },
  "queue": [
@@ -77,7 +77,7 @@
    "name": "Ягодин",
    "to": "PL",
    "hours": 184,
-   "trucks": 1614
+   "trucks": 1612
   },
   {
    "oblast": "volyn",
@@ -98,21 +98,14 @@
    "name": "Дякове",
    "to": "RO",
    "hours": 146,
-   "trucks": 556
+   "trucks": 554
   },
   {
    "oblast": "chernivtsi",
    "name": "Дяківці",
    "to": "RO",
    "hours": 0.0,
-   "trucks": 0
-  },
-  {
-   "oblast": "chernivtsi",
-   "name": "Красноїльськ",
-   "to": "RO",
-   "hours": 0.0,
-   "trucks": 11
+   "trucks": 1
   },
   {
    "oblast": "odesa",
@@ -139,22 +132,22 @@
    "oblast": "odesa",
    "name": "Маяки-Удобне",
    "to": "MD",
-   "hours": 0.0,
-   "trucks": 2
+   "hours": 0.2,
+   "trucks": 3
   },
   {
    "oblast": "vinnytsia",
    "name": "Могилів-Подільський",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 3
+   "trucks": 4
   },
   {
    "oblast": "odesa",
    "name": "Рені",
    "to": "MD",
-   "hours": 64,
-   "trucks": 205
+   "hours": 63,
+   "trucks": 203
   },
   {
    "oblast": "odesa",
@@ -172,6 +165,13 @@
   },
   {
    "oblast": "odesa",
+   "name": "Старокозаче",
+   "to": "MD",
+   "hours": 0.0,
+   "trucks": 7
+  },
+  {
+   "oblast": "odesa",
    "name": "Табаки",
    "to": "MD",
    "hours": 0.3,
@@ -183,13 +183,6 @@
    "to": "SK",
    "hours": 0.0,
    "trucks": 0
-  },
-  {
-   "oblast": "zakarpattia",
-   "name": "Чоп (Тиса)",
-   "to": "HU",
-   "hours": 147,
-   "trucks": 1496
   }
  ]
 }
