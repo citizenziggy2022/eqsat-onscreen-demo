@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-22T07:54:17Z",
- "checked_at": "2026-11-22T07:54:17Z",
+ "updated": "2026-11-22T07:58:15Z",
+ "checked_at": "2026-11-22T07:58:15Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -10,7 +10,7 @@
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 1551 вант. · 7 д 8 год"
+   "note": "Ягодин → PL: 1550 вант. · 7 д 8 год"
   },
   "zakarpattia": {
    "status": "outage",
@@ -18,11 +18,11 @@
   },
   "chernivtsi": {
    "status": "outage",
-   "note": "Порубне → RO: 963 вант. · 4 д 10 год"
+   "note": "Порубне → RO: 960 вант. · 4 д 10 год"
   },
   "odesa": {
    "status": "outage",
-   "note": "Орлівка → RO: 719 вант. · 6 д 9 год"
+   "note": "Орлівка → RO: 717 вант. · 6 д 8 год"
   },
   "vinnytsia": {
    "status": "ok",
@@ -66,6 +66,13 @@
    "trucks": 588
   },
   {
+   "oblast": "volyn",
+   "name": "Устилуг",
+   "to": "PL",
+   "hours": 83,
+   "trucks": 259
+  },
+  {
    "oblast": "lviv",
    "name": "Шегині",
    "to": "PL",
@@ -77,21 +84,28 @@
    "name": "Шегині",
    "to": "PL",
    "hours": 137,
-   "trucks": 593
+   "trucks": 595
+  },
+  {
+   "oblast": "volyn",
+   "name": "Ягодин",
+   "to": "PL",
+   "hours": 130,
+   "trucks": 901
   },
   {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
    "hours": 176,
-   "trucks": 1551
+   "trucks": 1550
   },
   {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
-   "hours": 0.2,
-   "trucks": 12
+   "hours": 0.0,
+   "trucks": 11
   },
   {
    "oblast": "zakarpattia",
@@ -108,32 +122,25 @@
    "trucks": 0
   },
   {
-   "oblast": "chernivtsi",
-   "name": "Красноїльськ",
-   "to": "RO",
-   "hours": 0.0,
-   "trucks": 11
-  },
-  {
    "oblast": "odesa",
    "name": "Орлівка",
    "to": "RO",
-   "hours": 153,
-   "trucks": 719
+   "hours": 152,
+   "trucks": 717
   },
   {
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
    "hours": 106,
-   "trucks": 963
+   "trucks": 960
   },
   {
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
    "hours": 3.6,
-   "trucks": 25
+   "trucks": 24
   },
   {
    "oblast": "chernivtsi",
