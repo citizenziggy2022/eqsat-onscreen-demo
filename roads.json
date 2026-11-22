@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-22T21:54:35Z",
- "checked_at": "2026-11-22T21:54:35Z",
+ "updated": "2026-11-22T21:58:04Z",
+ "checked_at": "2026-11-22T21:58:04Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -10,23 +10,23 @@
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 1642 вант. · 7 д 19 год"
+   "note": "Ягодин → PL: 1637 вант. · 7 д 19 год"
+  },
+  "zakarpattia": {
+   "status": "outage",
+   "note": "Дякове → RO: 538 вант. · 5 д 22 год"
   },
   "chernivtsi": {
    "status": "ok",
-   "note": "Мамалига → MD: 26 вант. · 3 год"
+   "note": "Мамалига → MD: 23 вант. · 2 год"
   },
   "odesa": {
    "status": "outage",
-   "note": "Орлівка → RO: 708 вант. · 6 д 7 год"
+   "note": "Орлівка → RO: 707 вант. · 6 д 6 год"
   },
   "vinnytsia": {
    "status": "ok",
    "note": "Могилів-Подільський → MD: 0 вант. · 0 год"
-  },
-  "zakarpattia": {
-   "status": "ok",
-   "note": "Малий Березний → SK: 0 вант. · 0 год"
   }
  },
  "queue": [
@@ -63,7 +63,7 @@
    "name": "Угринів",
    "to": "PL",
    "hours": 132,
-   "trucks": 573
+   "trucks": 574
   },
   {
    "oblast": "volyn",
@@ -77,7 +77,7 @@
    "name": "Устилуг",
    "to": "PL",
    "hours": 153,
-   "trucks": 623
+   "trucks": 624
   },
   {
    "oblast": "lviv",
@@ -105,7 +105,7 @@
    "name": "Ягодин",
    "to": "PL",
    "hours": 187,
-   "trucks": 1642
+   "trucks": 1637
   },
   {
    "oblast": "volyn",
@@ -113,6 +113,13 @@
    "to": "PL",
    "hours": 0.0,
    "trucks": 3
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Дякове",
+   "to": "RO",
+   "hours": 142,
+   "trucks": 538
   },
   {
    "oblast": "chernivtsi",
@@ -132,8 +139,8 @@
    "oblast": "odesa",
    "name": "Орлівка",
    "to": "RO",
-   "hours": 151,
-   "trucks": 708
+   "hours": 150,
+   "trucks": 707
   },
   {
    "oblast": "chernivtsi",
@@ -160,8 +167,8 @@
    "oblast": "chernivtsi",
    "name": "Мамалига",
    "to": "MD",
-   "hours": 2.7,
-   "trucks": 26
+   "hours": 2.3,
+   "trucks": 23
   },
   {
    "oblast": "vinnytsia",
