@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-22T09:39:14Z",
- "checked_at": "2026-11-22T09:39:14Z",
+ "updated": "2026-11-22T09:43:14Z",
+ "checked_at": "2026-11-22T09:43:14Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -10,7 +10,7 @@
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 787 вант. · 8 д 13 год"
+   "note": "Ягодин → PL: 789 вант. · 8 д 13 год"
   },
   "zakarpattia": {
    "status": "outage",
@@ -22,14 +22,21 @@
   },
   "odesa": {
    "status": "outage",
-   "note": "Орлівка → RO: 714 вант. · 6 д 8 год"
+   "note": "Орлівка → RO: 712 вант. · 6 д 7 год"
   },
   "vinnytsia": {
    "status": "ok",
-   "note": "Могилів-Подільський → MD: 3 вант. · 0 год"
+   "note": "Могилів-Подільський → MD: 2 вант. · 0 год"
   }
  },
  "queue": [
+  {
+   "oblast": "lviv",
+   "name": "Грушів",
+   "to": "PL",
+   "hours": 20.3,
+   "trucks": 82
+  },
   {
    "oblast": "lviv",
    "name": "Краківець",
@@ -62,15 +69,15 @@
    "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
-   "hours": 59,
-   "trucks": 281
+   "hours": 58,
+   "trucks": 279
   },
   {
    "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
    "hours": 135,
-   "trucks": 587
+   "trucks": 585
   },
   {
    "oblast": "lviv",
@@ -84,28 +91,28 @@
    "name": "Шегині",
    "to": "PL",
    "hours": 139,
-   "trucks": 602
+   "trucks": 601
   },
   {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
-   "hours": 126,
-   "trucks": 873
+   "hours": 125,
+   "trucks": 870
   },
   {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
    "hours": 180,
-   "trucks": 1582
+   "trucks": 1586
   },
   {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
    "hours": 205,
-   "trucks": 787
+   "trucks": 789
   },
   {
    "oblast": "zakarpattia",
@@ -125,8 +132,8 @@
    "oblast": "odesa",
    "name": "Орлівка",
    "to": "RO",
-   "hours": 152,
-   "trucks": 714
+   "hours": 151,
+   "trucks": 712
   },
   {
    "oblast": "chernivtsi",
@@ -140,7 +147,7 @@
    "name": "Виноградівка",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 2
+   "trucks": 1
   },
   {
    "oblast": "odesa",
@@ -161,7 +168,7 @@
    "name": "Могилів-Подільський",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 3
+   "trucks": 2
   },
   {
    "oblast": "odesa",
@@ -176,13 +183,6 @@
    "to": "MD",
    "hours": 0.0,
    "trucks": 0
-  },
-  {
-   "oblast": "odesa",
-   "name": "Старокозаче",
-   "to": "MD",
-   "hours": 0.0,
-   "trucks": 9
   },
   {
    "oblast": "odesa",
