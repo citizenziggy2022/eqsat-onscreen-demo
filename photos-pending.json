@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-22T11:51:31Z",
+ "fetched_at": "2026-11-22T12:03:43Z",
  "every_s": 600,
  "note": "Conflict photo candidates, NOT on air. Fetched by scripts/fetch_conflict_photos.py in the live-runner every 10 min. An item goes on air only when the Editor's Approve moves it to photos-conflict.json.",
  "check": "none in the runner (no vision model): nothing is approved automatically",
@@ -439,12 +439,6 @@
   }
  ],
  "fetch_rejects": [
-  {
-   "source": "commons",
-   "title": "File:Department of Musical Art of Rivne State University of the Humanities after Russian attack, 2026-10-13 (04).jpg",
-   "reason": "taken 2026-10-13, older than 7 days",
-   "stage": "fetch"
-  },
   {
    "source": "commons",
    "title": "File:Department of Musical Art of Rivne State University of the Humanities after Russian attack, 2026-10-13 (03).jpg",
@@ -915,9 +909,16 @@
   },
   {
    "source": "undp",
-   "reason": "source failed: ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='www.flickr.com', port=443): Read timed out. (read timeout=20)\"))",
+   "title": "https://www.flickr.com/photos/undpukraine/55663907189/",
+   "reason": "off-topic (no war/recovery words in caption or tags): ",
+   "stage": "fetch"
+  },
+  {
+   "source": "undp",
+   "title": "https://www.flickr.com/photos/undpukraine/55662737017/",
+   "reason": "off-topic (no war/recovery words in caption or tags): ",
    "stage": "fetch"
   }
  ],
- "took_s": 29.1
+ "took_s": 9.4
 }
