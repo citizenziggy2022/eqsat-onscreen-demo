@@ -1,16 +1,16 @@
 {
- "updated": "2026-11-22T17:55:59Z",
- "checked_at": "2026-11-22T17:55:59Z",
+ "updated": "2026-11-22T17:59:58Z",
+ "checked_at": "2026-11-22T17:59:58Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Угринів → PL: 574 вант. · 5 д 13 год"
+   "note": "Угринів → PL: 575 вант. · 5 д 13 год"
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 766 вант. · 8 д 8 год"
+   "note": "Ягодин → PL: 765 вант. · 8 д 8 год"
   },
   "zakarpattia": {
    "status": "outage",
@@ -21,8 +21,8 @@
    "note": "Мамалига → MD: 37 вант. · 4 год"
   },
   "odesa": {
-   "status": "outage",
-   "note": "Орлівка → RO: 704 вант. · 6 д 6 год"
+   "status": "ok",
+   "note": "Виноградівка → MD: 0 вант. · 0 год"
   },
   "vinnytsia": {
    "status": "ok",
@@ -49,21 +49,21 @@
    "name": "Угринів",
    "to": "PL",
    "hours": 64,
-   "trucks": 302
+   "trucks": 303
   },
   {
    "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
    "hours": 133,
-   "trucks": 574
+   "trucks": 575
   },
   {
    "oblast": "volyn",
    "name": "Устилуг",
    "to": "PL",
    "hours": 75,
-   "trucks": 233
+   "trucks": 234
   },
   {
    "oblast": "volyn",
@@ -84,7 +84,7 @@
    "name": "Ягодин",
    "to": "PL",
    "hours": 188,
-   "trucks": 1639
+   "trucks": 1641
   },
   {
    "oblast": "volyn",
@@ -98,7 +98,7 @@
    "name": "Ягодин",
    "to": "PL",
    "hours": 200,
-   "trucks": 766
+   "trucks": 765
   },
   {
    "oblast": "zakarpattia",
@@ -113,13 +113,6 @@
    "to": "RO",
    "hours": 0.0,
    "trucks": 0
-  },
-  {
-   "oblast": "odesa",
-   "name": "Орлівка",
-   "to": "RO",
-   "hours": 150,
-   "trucks": 704
   },
   {
    "oblast": "chernivtsi",
@@ -182,7 +175,7 @@
    "name": "Табаки",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 0
+   "trucks": 1
   },
   {
    "oblast": "zakarpattia",
@@ -195,7 +188,7 @@
    "oblast": "zakarpattia",
    "name": "Лужанка",
    "to": "HU",
-   "hours": 10.4,
+   "hours": 10.1,
    "trucks": 43
   }
  ]
