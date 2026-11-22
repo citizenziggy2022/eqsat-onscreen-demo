@@ -2,6 +2,12 @@
   "note": "Every screen deploy, newest first: version 1.N (N + 1 per deploy), deploy time (UTC), one-line summary, build code. Read by the admin (History › Versions). Entries 2.42 to 2.51 were added afterwards from the repo deploy commits: their time is the commit time that switched the live page to that build, not a measured go-live time, and 2.46 to 2.51 were numbered at that point.",
   "versions": [
     {
+      "version": "2.56",
+      "at": "2026-11-22T17:54:53Z",
+      "summary": "Editor: Conflict photos gains an Approve-all button showing the waiting count, with an inline confirm step before anything goes on air; one save approves every waiting photo. Opening the page approves nothing, and single-photo Approve/Reject is unchanged.",
+      "build": "index-VkQDzQoy.js"
+    },
+    {
       "version": "2.55",
       "at": "2026-11-22T15:49:10Z",
       "summary": "Editor: distinguish loading photo review from unavailable data, and state that feed freshness covers the files already checked. Follow-up to the v2.54 admin workspaces and navigation release.",
