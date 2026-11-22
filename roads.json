@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-22T11:00:43Z",
- "checked_at": "2026-11-22T11:00:43Z",
+ "updated": "2026-11-22T11:03:56Z",
+ "checked_at": "2026-11-22T11:03:56Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -17,8 +17,8 @@
    "note": "Дякове → RO: 562 вант. · 6 д 4 год"
   },
   "chernivtsi": {
-   "status": "ok",
-   "note": "Мамалига → MD: 57 вант. · 7 год"
+   "status": "outage",
+   "note": "Порубне → RO: 971 вант. · 4 д 13 год"
   },
   "odesa": {
    "status": "outage",
@@ -26,7 +26,7 @@
   },
   "vinnytsia": {
    "status": "ok",
-   "note": "Могилів-Подільський → MD: 1 вант. · 0 год"
+   "note": "Могилів-Подільський → MD: 2 вант. · 0 год"
   }
  },
  "queue": [
@@ -77,7 +77,7 @@
    "name": "Ягодин",
    "to": "PL",
    "hours": 184,
-   "trucks": 1611
+   "trucks": 1612
   },
   {
    "oblast": "volyn",
@@ -125,8 +125,22 @@
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
+   "hours": 109,
+   "trucks": 971
+  },
+  {
+   "oblast": "chernivtsi",
+   "name": "Порубне",
+   "to": "RO",
+   "hours": 7.6,
+   "trucks": 45
+  },
+  {
+   "oblast": "chernivtsi",
+   "name": "Порубне",
+   "to": "RO",
    "hours": 0.0,
-   "trucks": 12
+   "trucks": 11
   },
   {
    "oblast": "odesa",
@@ -153,8 +167,8 @@
    "oblast": "vinnytsia",
    "name": "Могилів-Подільський",
    "to": "MD",
-   "hours": 0.0,
-   "trucks": 1
+   "hours": 0.3,
+   "trucks": 2
   },
   {
    "oblast": "odesa",
@@ -190,13 +204,6 @@
    "to": "SK",
    "hours": 0.0,
    "trucks": 0
-  },
-  {
-   "oblast": "zakarpattia",
-   "name": "Чоп (Тиса)",
-   "to": "HU",
-   "hours": 148,
-   "trucks": 1505
   }
  ]
 }
