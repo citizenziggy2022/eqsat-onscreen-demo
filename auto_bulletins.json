@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-22T22:03:20Z",
+ "generated_at": "2026-11-22T22:07:51Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -12,7 +12,7 @@
    "name": "Херсонська ОВА",
    "url": "https://t.me/s/khersonskaODA",
    "verified": "linked from khoda.gov.ua; channel links back to khoda.gov.ua",
-   "status": "ok: kept 1 / dropped 6, showing 1"
+   "status": "ok: kept 0 / dropped 6, showing 0"
   },
   {
    "name": "Запорізька ОВА",
@@ -109,24 +109,6 @@
    "en_mt": {
     "title": "Russians attacked a civilian car with an FPV drone in the Shevchenkivskyi district of Zaporizhzhia",
     "body": "A 68-year-old driver was injured. Medics assess his condition as moderate. The man was taken to the hospital, where he is being provided with the necessary assistance.",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-khersonskaODA-71957",
-   "title": "До лікарні звернувся ще один чоловік, який постраждав внаслідок вчорашнього російського авіаудару по Білозерці",
-   "body": "У 51-річного потерпілого діагностували мінно-вибухову та закриту черепно-мозкову травми, а також контузію. Чоловіка ушпиталили для надання подальшої допомоги.",
-   "source": "Херсонська ОВА",
-   "source_url": "https://t.me/khersonskaODA/71957",
-   "region": "Херсонщина",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-22T10:07:41Z",
-   "expires_at": "2026-11-22T22:07:41Z",
-   "auto": true,
-   "en_mt": {
-    "title": "Another man who was injured as a result of yesterday's Russian air strike on Bilozerka has applied to the hospital",
-    "body": "The 51-year-old victim was diagnosed with mine-explosive and closed craniocerebral injuries, as well as a concussion. The man was hospitalized to provide further assistance.",
     "by": "m2m100"
    }
   }
