@@ -114,11 +114,24 @@ def tag(block,*names):
         m=re.search(r'<%s[^>]*>(.*?)</%s>'%(n,n),block,re.S)
         if m: return m.group(1)
     return ''
+BROWSER_UA={'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36','Accept':'application/rss+xml, application/xml, text/xml, */*'}
+# Nov 22 2026 repair: same publisher, different official feed URL, tried only after the primary fails (never an aggregator)
+ALT={'https://www.euronews.com/rss?format=mrss&level=theme&name=news':['https://www.euronews.com/rss?level=theme&name=news'],
+     'https://www.cbc.ca/webfeed/rss/rss-world':['https://www.cbc.ca/cmlink/rss-world']}
 def get(url,**kw):
-    for _ in range(2):  # one retry: Suspilne sometimes answers 403 for a moment
-        r=requests.get(url,headers=UA,timeout=20,**kw)
-        if r.status_code==200: return r
-    r.raise_for_status(); return r
+    import time
+    err=None
+    # bot UA first (Suspilne answers a browser UA with 403), then backoff retries, then a browser UA, then the publisher's alternate URL
+    for u in [url]+ALT.get(url,[]):
+        for i,h in enumerate((UA,UA,BROWSER_UA)):
+            if i: time.sleep(2*i)
+            try:
+                r=requests.get(u,headers=h,timeout=20,**kw)
+                if r.status_code==200: return r
+                err=f'HTTP {r.status_code}'
+            except requests.RequestException as e:
+                err=type(e).__name__
+    raise RuntimeError(f'{err} after retries (UA variants + alternate URL)')
 def rss(src):
     # No aggregator fallback (Nov 21 2026): a direct feed that fails is reported as failed, never silently
     # re-routed through Google News.
