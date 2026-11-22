@@ -2,6 +2,12 @@
   "note": "Every screen deploy, newest first: version 1.N (N + 1 per deploy), deploy time (UTC), one-line summary, build code. Read by the admin (History › Versions). Entries 2.42 to 2.51 were added afterwards from the repo deploy commits: their time is the commit time that switched the live page to that build, not a measured go-live time, and 2.46 to 2.51 were numbered at that point.",
   "versions": [
     {
+      "version": "2.63",
+      "at": "2026-11-22T20:38:00Z",
+      "summary": "Readable reading-time list fits at 720p (wider, names no longer cut); same fixes as 2.62.",
+      "build": "index-Bc-rQbWU.js"
+    },
+    {
       "version": "2.62",
       "at": "2026-11-22T20:30:00Z",
       "summary": "Readability and attribution: power map pages the latest Ukrenergo post and planned-cuts notice at 12 px (caveat always visible); radiation map shows each site's own reading time, age and oldest sensor, or 'no reading'; admin source checks group failed sources into one plain sentence with details collapsed.",
