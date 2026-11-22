@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-22T03:26:24Z",
- "checked_at": "2026-11-22T03:26:24Z",
+ "updated": "2026-11-22T03:28:40Z",
+ "checked_at": "2026-11-22T03:28:40Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -17,8 +17,8 @@
    "note": "Порубне → RO: 996 вант. · 4 д 13 год"
   },
   "odesa": {
-   "status": "ok",
-   "note": "Старокозаче → MD: 25 вант. · 4 год"
+   "status": "outage",
+   "note": "Рені → MD: 234 вант. · 3 д 2 год"
   },
   "vinnytsia": {
    "status": "ok",
@@ -107,6 +107,13 @@
    "oblast": "odesa",
    "name": "Рені",
    "to": "MD",
+   "hours": 74,
+   "trucks": 234
+  },
+  {
+   "oblast": "odesa",
+   "name": "Рені",
+   "to": "MD",
    "hours": 0.0,
    "trucks": 0
   },
@@ -121,8 +128,8 @@
    "oblast": "odesa",
    "name": "Старокозаче",
    "to": "MD",
-   "hours": 4.2,
-   "trucks": 25
+   "hours": 3.6,
+   "trucks": 22
   },
   {
    "oblast": "odesa",
