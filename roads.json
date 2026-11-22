@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-22T22:55:41Z",
- "checked_at": "2026-11-22T22:55:41Z",
+ "updated": "2026-11-22T22:58:58Z",
+ "checked_at": "2026-11-22T22:58:58Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Краківець → PL: 684 вант. · 7 д 22 год"
+   "note": "Рава-Руська → PL: 603 вант. · 8 д 16 год"
   },
   "zakarpattia": {
    "status": "outage",
@@ -14,7 +14,7 @@
   },
   "chernivtsi": {
    "status": "outage",
-   "note": "Порубне → RO: 890 вант. · 4 д 4 год"
+   "note": "Порубне → RO: 888 вант. · 4 д 3 год"
   },
   "odesa": {
    "status": "outage",
@@ -38,14 +38,21 @@
    "name": "Краківець",
    "to": "PL",
    "hours": 190,
-   "trucks": 684
+   "trucks": 682
   },
   {
    "oblast": "lviv",
    "name": "Рава-Руська",
    "to": "PL",
-   "hours": 113,
-   "trucks": 868
+   "hours": 112,
+   "trucks": 867
+  },
+  {
+   "oblast": "lviv",
+   "name": "Рава-Руська",
+   "to": "PL",
+   "hours": 208,
+   "trucks": 603
   },
   {
    "oblast": "lviv",
@@ -73,7 +80,7 @@
    "name": "Шегині",
    "to": "PL",
    "hours": 134,
-   "trucks": 580
+   "trucks": 579
   },
   {
    "oblast": "zakarpattia",
@@ -107,8 +114,8 @@
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
-   "hours": 100,
-   "trucks": 890
+   "hours": 99,
+   "trucks": 888
   },
   {
    "oblast": "chernivtsi",
@@ -149,13 +156,6 @@
    "oblast": "odesa",
    "name": "Рені",
    "to": "MD",
-   "hours": 61,
-   "trucks": 194
-  },
-  {
-   "oblast": "odesa",
-   "name": "Рені",
-   "to": "MD",
    "hours": 0.0,
    "trucks": 0
   },
@@ -177,8 +177,8 @@
    "oblast": "odesa",
    "name": "Старокозаче",
    "to": "MD",
-   "hours": 0.3,
-   "trucks": 9
+   "hours": 0.0,
+   "trucks": 6
   },
   {
    "oblast": "odesa",
@@ -192,14 +192,14 @@
    "name": "Малий Березний",
    "to": "SK",
    "hours": 0.0,
-   "trucks": 0
+   "trucks": 1
   },
   {
    "oblast": "zakarpattia",
    "name": "Ужгород",
    "to": "SK",
    "hours": 139,
-   "trucks": 711
+   "trucks": 710
   },
   {
    "oblast": "zakarpattia",
