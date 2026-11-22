@@ -2,6 +2,12 @@
  "note": "Every screen deploy, newest first: version 1.N (N + 1 per deploy), deploy time (UTC), one-line summary, build code. Read by the admin (History › Versions). Entries 2.42 to 2.51 were added afterwards from the repo deploy commits: their time is the commit time that switched the live page to that build, not a measured go-live time, and 2.46 to 2.51 were numbered at that point.",
  "versions": [
   {
+   "version": "2.53",
+   "at": "2026-11-22T14:52:02Z",
+   "summary": "Maps: Fires, Internet and Power cuts show a ЗМІНИ / CHANGES strip under the map (what moved since an earlier real reading, with both measurement times; stale Ukrenergo posts labelled, counts only for fires). History kept in changes.json by scripts/fetch_changes.py",
+   "build": "index-DSGgsGaW.js"
+  },
+  {
    "version": "2.52",
    "at": "2026-11-22T07:04:56Z",
    "summary": "Editor: the four status-map rows (water, power cuts, roads, border) show live data status - file fetch age, usable readings for the row's own kind, and the source measurement time (n/a when the file carries another kind, unknown when none is recorded)",
