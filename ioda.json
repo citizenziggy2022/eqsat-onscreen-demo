@@ -1,6 +1,6 @@
 {
- "fetched_at": "2026-11-22T19:46:28Z",
- "updated_at": "2026-11-22T19:30:00Z",
+ "fetched_at": "2026-11-22T19:53:10Z",
+ "updated_at": "2026-11-22T19:35:00Z",
  "source": "IODA (Internet Outage Detection and Analysis), Georgia Tech, https://ioda.inetintel.cc.gatech.edu",
  "note": "Internet signal per oblast. score 0-100 vs the region's own 7-day median (BGP 40%, ping /24 60%); level critical while IODA's outage alert for the region is critical. The cause is unknown (power, damage or shutdown look the same).",
  "critical": [
@@ -285,7 +285,7 @@
      "score": 96
     },
     "bgp": {
-     "ratio": 0.9899,
+     "ratio": 0.9896,
      "score": 100
     }
    },
