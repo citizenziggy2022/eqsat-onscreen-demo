@@ -1,24 +1,24 @@
 {
- "updated": "2026-11-22T13:30:30Z",
- "checked_at": "2026-11-22T13:30:30Z",
+ "updated": "2026-11-22T13:34:29Z",
+ "checked_at": "2026-11-22T13:34:29Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Рава-Руська → PL: 616 вант. · 8 д 21 год"
+   "note": "Рава-Руська → PL: 615 вант. · 8 д 20 год"
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 784 вант. · 8 д 12 год"
+   "note": "Ягодин → PL: 783 вант. · 8 д 12 год"
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Дякове → RO: 555 вант. · 6 д 2 год"
+   "note": "Дякове → RO: 556 вант. · 6 д 2 год"
   },
   "chernivtsi": {
    "status": "ok",
-   "note": "Росошани → MD: 1 вант. · 0 год"
+   "note": "Дяківці → RO: 0 вант. · 0 год"
   },
   "odesa": {
    "status": "limited",
@@ -26,7 +26,7 @@
   },
   "vinnytsia": {
    "status": "ok",
-   "note": "Могилів-Подільський → MD: 3 вант. · 0 год"
+   "note": "Могилів-Подільський → MD: 2 вант. · 0 год"
   }
  },
  "queue": [
@@ -48,15 +48,22 @@
    "oblast": "lviv",
    "name": "Рава-Руська",
    "to": "PL",
-   "hours": 121,
-   "trucks": 927
+   "hours": 120.5,
+   "trucks": 921
   },
   {
    "oblast": "lviv",
    "name": "Рава-Руська",
    "to": "PL",
-   "hours": 213,
-   "trucks": 616
+   "hours": 212,
+   "trucks": 615
+  },
+  {
+   "oblast": "lviv",
+   "name": "Смільниця",
+   "to": "PL",
+   "hours": 7.8,
+   "trucks": 31
   },
   {
    "oblast": "lviv",
@@ -76,8 +83,8 @@
    "oblast": "lviv",
    "name": "Шегині",
    "to": "PL",
-   "hours": 136,
-   "trucks": 590
+   "hours": 137,
+   "trucks": 591
   },
   {
    "oblast": "volyn",
@@ -91,14 +98,14 @@
    "name": "Ягодин",
    "to": "PL",
    "hours": 204,
-   "trucks": 784
+   "trucks": 783
   },
   {
    "oblast": "zakarpattia",
    "name": "Дякове",
    "to": "RO",
    "hours": 146,
-   "trucks": 555
+   "trucks": 556
   },
   {
    "oblast": "chernivtsi",
@@ -119,7 +126,7 @@
    "name": "Виноградівка",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 2
+   "trucks": 3
   },
   {
    "oblast": "odesa",
@@ -133,7 +140,7 @@
    "name": "Могилів-Подільський",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 3
+   "trucks": 2
   },
   {
    "oblast": "odesa",
@@ -153,7 +160,7 @@
    "oblast": "chernivtsi",
    "name": "Росошани",
    "to": "MD",
-   "hours": 0.3,
+   "hours": 0.0,
    "trucks": 1
   },
   {
