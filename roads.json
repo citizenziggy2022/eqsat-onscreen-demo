@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-22T02:59:25Z",
- "checked_at": "2026-11-22T02:59:25Z",
+ "updated": "2026-11-22T03:02:27Z",
+ "checked_at": "2026-11-22T03:02:27Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -14,7 +14,7 @@
   },
   "chernivtsi": {
    "status": "outage",
-   "note": "Порубне → RO: 998 вант. · 4 д 13 год"
+   "note": "Порубне → RO: 996 вант. · 4 д 13 год"
   },
   "odesa": {
    "status": "ok",
@@ -26,6 +26,13 @@
   }
  },
  "queue": [
+  {
+   "oblast": "lviv",
+   "name": "Краківець",
+   "to": "PL",
+   "hours": 124,
+   "trucks": 1092
+  },
   {
    "oblast": "lviv",
    "name": "Краківець",
@@ -80,7 +87,7 @@
    "name": "Порубне",
    "to": "RO",
    "hours": 109,
-   "trucks": 998
+   "trucks": 996
   },
   {
    "oblast": "chernivtsi",
@@ -156,8 +163,8 @@
    "oblast": "zakarpattia",
    "name": "Лужанка",
    "to": "HU",
-   "hours": 1.6,
-   "trucks": 11
+   "hours": 1.3,
+   "trucks": 10
   }
  ]
 }
