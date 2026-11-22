@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-22T02:11:51Z",
- "checked_at": "2026-11-22T02:11:51Z",
+ "updated": "2026-11-22T02:15:52Z",
+ "checked_at": "2026-11-22T02:15:52Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Рава-Руська → PL: 619 вант. · 8 д 22 год"
+   "note": "Шегині → PL: 522 вант. · 6 д 2 год"
   },
   "volyn": {
    "status": "outage",
@@ -17,8 +17,8 @@
    "note": "Дякове → RO: 590 вант. · 6 д 11 год"
   },
   "chernivtsi": {
-   "status": "ok",
-   "note": "Дяківці → RO: 0 вант. · 0 год"
+   "status": "outage",
+   "note": "Порубне → RO: 1019 вант. · 4 д 16 год"
   },
   "odesa": {
    "status": "outage",
@@ -39,20 +39,6 @@
   },
   {
    "oblast": "lviv",
-   "name": "Рава-Руська",
-   "to": "PL",
-   "hours": 125,
-   "trucks": 962
-  },
-  {
-   "oblast": "lviv",
-   "name": "Рава-Руська",
-   "to": "PL",
-   "hours": 214,
-   "trucks": 619
-  },
-  {
-   "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
    "hours": 58,
@@ -62,7 +48,7 @@
    "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
-   "hours": 139,
+   "hours": 138,
    "trucks": 601
   },
   {
@@ -106,6 +92,13 @@
    "to": "RO",
    "hours": 0.0,
    "trucks": 0
+  },
+  {
+   "oblast": "chernivtsi",
+   "name": "Порубне",
+   "to": "RO",
+   "hours": 112,
+   "trucks": 1019
   },
   {
    "oblast": "chernivtsi",
