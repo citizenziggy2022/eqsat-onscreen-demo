@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-22T08:08:21+00:00",
+ "updated": "2026-11-22T08:36:27+00:00",
  "since": "2026-11-15",
  "source": "OONI (ooni.org) web_connectivity, last 7 days; confirmed = block page seen, anomaly = >=60% of >=5 tests anomalous",
  "totals": {
   "RU": {
    "confirmed": 840,
-   "anomaly": 504
+   "anomaly": 505
   },
   "UA": {
    "confirmed": 20,
@@ -17,57 +17,57 @@
    "domain": "www.facebook.com",
    "cc": "RU",
    "kind": "confirmed",
-   "confirmed": 907,
-   "anomaly": 10770,
-   "measurements": 14611
+   "confirmed": 908,
+   "anomaly": 10795,
+   "measurements": 14647
   },
   {
    "domain": "www.instagram.com",
    "cc": "RU",
    "kind": "confirmed",
-   "confirmed": 892,
-   "anomaly": 11236,
-   "measurements": 14753
+   "confirmed": 893,
+   "anomaly": 11265,
+   "measurements": 14790
   },
   {
    "domain": "twitter.com",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 776,
-   "anomaly": 10098,
-   "measurements": 14305
+   "anomaly": 10122,
+   "measurements": 14341
   },
   {
    "domain": "imrussia.org",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 376,
-   "anomaly": 1393,
-   "measurements": 2082
+   "anomaly": 1396,
+   "measurements": 2086
   },
   {
    "domain": "www.omct.org",
    "cc": "RU",
    "kind": "confirmed",
-   "confirmed": 280,
+   "confirmed": 281,
    "anomaly": 832,
-   "measurements": 1330
+   "measurements": 1333
+  },
+  {
+   "domain": "www.hrw.org",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 208,
+   "anomaly": 758,
+   "measurements": 1233
   },
   {
    "domain": "www.bbc.com",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 208,
-   "anomaly": 541,
-   "measurements": 860
-  },
-  {
-   "domain": "www.hrw.org",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 207,
-   "anomaly": 754,
-   "measurements": 1228
+   "anomaly": 542,
+   "measurements": 861
   },
   {
    "domain": "www.shram.kiev.ua",
@@ -81,9 +81,17 @@
    "domain": "anonymouse.org",
    "cc": "RU",
    "kind": "confirmed",
-   "confirmed": 197,
+   "confirmed": 198,
    "anomaly": 357,
-   "measurements": 823
+   "measurements": 824
+  },
+  {
+   "domain": "lib.rus.ec",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 196,
+   "anomaly": 324,
+   "measurements": 665
   },
   {
    "domain": "nnmclub.to",
@@ -91,7 +99,7 @@
    "kind": "confirmed",
    "confirmed": 195,
    "anomaly": 363,
-   "measurements": 691
+   "measurements": 693
   },
   {
    "domain": "www.xvideos.com",
@@ -100,14 +108,6 @@
    "confirmed": 193,
    "anomaly": 359,
    "measurements": 669
-  },
-  {
-   "domain": "lib.rus.ec",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 193,
-   "anomaly": 322,
-   "measurements": 659
   },
   {
    "domain": "www.ej.ru",
@@ -122,32 +122,32 @@
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 188,
-   "anomaly": 369,
-   "measurements": 676
+   "anomaly": 370,
+   "measurements": 677
   },
   {
    "domain": "www.humanrightsfirst.org",
    "cc": "RU",
    "kind": "confirmed",
-   "confirmed": 185,
-   "anomaly": 265,
-   "measurements": 575
+   "confirmed": 186,
+   "anomaly": 266,
+   "measurements": 578
   },
   {
    "domain": "lambdalegal.org",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 184,
-   "anomaly": 384,
-   "measurements": 677
+   "anomaly": 385,
+   "measurements": 678
   },
   {
    "domain": "pressorg24.com",
    "cc": "RU",
    "kind": "confirmed",
-   "confirmed": 181,
-   "anomaly": 363,
-   "measurements": 644
+   "confirmed": 182,
+   "anomaly": 364,
+   "measurements": 646
   },
   {
    "domain": "seedoff.zannn.top",
@@ -155,15 +155,15 @@
    "kind": "confirmed",
    "confirmed": 178,
    "anomaly": 337,
-   "measurements": 625
+   "measurements": 628
   },
   {
    "domain": "ru-news.us",
    "cc": "RU",
    "kind": "confirmed",
-   "confirmed": 173,
+   "confirmed": 174,
    "anomaly": 24,
-   "measurements": 625
+   "measurements": 629
   },
   {
    "domain": "www.xgay.ru",
@@ -171,15 +171,15 @@
    "kind": "confirmed",
    "confirmed": 170,
    "anomaly": 364,
-   "measurements": 878
+   "measurements": 881
   },
   {
    "domain": "www.hrc.org",
    "cc": "RU",
    "kind": "confirmed",
-   "confirmed": 160,
+   "confirmed": 161,
    "anomaly": 327,
-   "measurements": 566
+   "measurements": 567
   },
   {
    "domain": "nomer-org.website",
@@ -193,9 +193,9 @@
    "domain": "www.hizb-ut-tahrir.org",
    "cc": "RU",
    "kind": "confirmed",
-   "confirmed": 156,
+   "confirmed": 157,
    "anomaly": 314,
-   "measurements": 565
+   "measurements": 566
   },
   {
    "domain": "www.medinkur.ru",
@@ -211,23 +211,23 @@
    "kind": "confirmed",
    "confirmed": 139,
    "anomaly": 295,
-   "measurements": 542
+   "measurements": 544
   },
   {
    "domain": "fbcdn.net",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 138,
-   "anomaly": 768,
-   "measurements": 1117
+   "anomaly": 769,
+   "measurements": 1119
   },
   {
    "domain": "kinozal.tv",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 138,
-   "anomaly": 285,
-   "measurements": 620
+   "anomaly": 288,
+   "measurements": 625
   },
   {
    "domain": "www.dw.com",
@@ -242,80 +242,88 @@
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 134,
-   "anomaly": 796,
-   "measurements": 1127
+   "anomaly": 797,
+   "measurements": 1129
+  },
+  {
+   "domain": "upload.twitter.com",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 134,
+   "anomaly": 758,
+   "measurements": 1090
+  },
+  {
+   "domain": "libgen.lc",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 134,
+   "anomaly": 107,
+   "measurements": 392
   },
   {
    "domain": "ntc.party",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 133,
-   "anomaly": 1047,
-   "measurements": 1270
+   "anomaly": 1049,
+   "measurements": 1272
   },
   {
    "domain": "edge-mqtt.facebook.com",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 133,
-   "anomaly": 797,
-   "measurements": 1156
+   "anomaly": 798,
+   "measurements": 1158
   },
   {
    "domain": "lookaside.facebook.com",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 133,
-   "anomaly": 782,
-   "measurements": 1136
+   "anomaly": 783,
+   "measurements": 1138
   },
   {
-   "domain": "upload.twitter.com",
+   "domain": "scontent.cdninstagram.com",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 133,
-   "anomaly": 757,
-   "measurements": 1087
-  },
-  {
-   "domain": "libgen.lc",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 133,
-   "anomaly": 107,
-   "measurements": 390
+   "anomaly": 735,
+   "measurements": 1088
   },
   {
    "domain": "i.instagram.com",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 132,
-   "anomaly": 747,
-   "measurements": 1078
+   "anomaly": 749,
+   "measurements": 1081
   },
   {
-   "domain": "scontent.cdninstagram.com",
+   "domain": "static.cdninstagram.com",
    "cc": "RU",
    "kind": "confirmed",
-   "confirmed": 132,
-   "anomaly": 734,
-   "measurements": 1084
+   "confirmed": 131,
+   "anomaly": 756,
+   "measurements": 1102
   },
   {
    "domain": "cdn.fbsbx.com",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 130,
-   "anomaly": 797,
-   "measurements": 1156
+   "anomaly": 799,
+   "measurements": 1159
   },
   {
-   "domain": "static.cdninstagram.com",
+   "domain": "edge-chat.instagram.com",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 130,
-   "anomaly": 755,
-   "measurements": 1099
+   "anomaly": 797,
+   "measurements": 1152
   },
   {
    "domain": "hotgaylist.com",
@@ -323,7 +331,7 @@
    "kind": "confirmed",
    "confirmed": 130,
    "anomaly": 200,
-   "measurements": 366
+   "measurements": 367
   },
   {
    "domain": "scontent-frt3-2.cdninstagram.com",
@@ -331,31 +339,39 @@
    "kind": "confirmed",
    "confirmed": 130,
    "anomaly": 64,
-   "measurements": 1342
+   "measurements": 1345
   },
   {
    "domain": "bsky.app",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 129,
-   "anomaly": 845,
-   "measurements": 1157
-  },
-  {
-   "domain": "edge-chat.instagram.com",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 129,
-   "anomaly": 796,
-   "measurements": 1148
+   "anomaly": 846,
+   "measurements": 1159
   },
   {
    "domain": "external.xx.fbcdn.net",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 129,
-   "anomaly": 758,
-   "measurements": 1088
+   "anomaly": 759,
+   "measurements": 1090
+  },
+  {
+   "domain": "www.betfair.com",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 129,
+   "anomaly": 175,
+   "measurements": 379
+  },
+  {
+   "domain": "anime-portal.ru",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 129,
+   "anomaly": 54,
+   "measurements": 382
   },
   {
    "domain": "web.facebook.com",
@@ -366,52 +382,36 @@
    "measurements": 1070
   },
   {
-   "domain": "www.betfair.com",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 128,
-   "anomaly": 175,
-   "measurements": 377
-  },
-  {
-   "domain": "anime-portal.ru",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 128,
-   "anomaly": 54,
-   "measurements": 381
-  },
-  {
    "domain": "staticxx.facebook.com",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 127,
-   "anomaly": 762,
-   "measurements": 1097
+   "anomaly": 763,
+   "measurements": 1099
   },
   {
    "domain": "scontent.xx.fbcdn.net",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 127,
-   "anomaly": 757,
-   "measurements": 1100
+   "anomaly": 758,
+   "measurements": 1102
   },
   {
    "domain": "static.xx.fbcdn.net",
    "cc": "RU",
    "kind": "confirmed",
-   "confirmed": 126,
-   "anomaly": 755,
-   "measurements": 1083
+   "confirmed": 127,
+   "anomaly": 756,
+   "measurements": 1086
   },
   {
    "domain": "video.cdninstagram.com",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 126,
-   "anomaly": 747,
-   "measurements": 1076
+   "anomaly": 748,
+   "measurements": 1078
   },
   {
    "domain": "kmoun.info",
@@ -419,23 +419,31 @@
    "kind": "confirmed",
    "confirmed": 125,
    "anomaly": 174,
-   "measurements": 339
+   "measurements": 340
   },
   {
    "domain": "scontent-ams4-1.cdninstagram.com",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 124,
-   "anomaly": 835,
-   "measurements": 1187
+   "anomaly": 836,
+   "measurements": 1190
   },
   {
    "domain": "www.quora.com",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 122,
+   "anomaly": 767,
+   "measurements": 1093
+  },
+  {
+   "domain": "scontent-vie1-1.cdninstagram.com",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 120,
    "anomaly": 765,
-   "measurements": 1091
+   "measurements": 1130
   },
   {
    "domain": "www.sportsinteraction.com",
@@ -451,15 +459,7 @@
    "kind": "confirmed",
    "confirmed": 120,
    "anomaly": 162,
-   "measurements": 357
-  },
-  {
-   "domain": "scontent-vie1-1.cdninstagram.com",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 119,
-   "anomaly": 764,
-   "measurements": 1127
+   "measurements": 358
   },
   {
    "domain": "baskino.me",
@@ -482,32 +482,32 @@
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 118,
-   "anomaly": 199,
-   "measurements": 344
+   "anomaly": 200,
+   "measurements": 345
   },
   {
    "domain": "www.sportingbet.com",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 117,
-   "anomaly": 186,
-   "measurements": 357
+   "anomaly": 187,
+   "measurements": 358
   },
   {
    "domain": "pflag.org",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 116,
-   "anomaly": 441,
-   "measurements": 679
+   "anomaly": 442,
+   "measurements": 681
   },
   {
    "domain": "www.amnesty.org",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 116,
-   "anomaly": 427,
-   "measurements": 651
+   "anomaly": 428,
+   "measurements": 652
   },
   {
    "domain": "www.sex.com",
@@ -530,8 +530,8 @@
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 114,
-   "anomaly": 733,
-   "measurements": 1117
+   "anomaly": 735,
+   "measurements": 1119
   },
   {
    "domain": "www.casinotropez.com",
@@ -539,23 +539,23 @@
    "kind": "confirmed",
    "confirmed": 113,
    "anomaly": 179,
-   "measurements": 349
+   "measurements": 350
   },
   {
    "domain": "censorship.no",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 112,
-   "anomaly": 662,
-   "measurements": 875
+   "anomaly": 664,
+   "measurements": 877
   },
   {
    "domain": "antivigilancia.org",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 112,
-   "anomaly": 658,
-   "measurements": 891
+   "anomaly": 659,
+   "measurements": 892
   },
   {
    "domain": "www.spinpalace.com",
@@ -566,12 +566,20 @@
    "measurements": 349
   },
   {
+   "domain": "www.gotgayporn.com",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 112,
+   "anomaly": 169,
+   "measurements": 337
+  },
+  {
    "domain": "www.anonymizer.ru",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 112,
    "anomaly": 7,
-   "measurements": 673
+   "measurements": 675
   },
   {
    "domain": "cryptpad.fr",
@@ -582,12 +590,12 @@
    "measurements": 877
   },
   {
-   "domain": "www.gotgayporn.com",
+   "domain": "i2pd.website",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 111,
-   "anomaly": 168,
-   "measurements": 335
+   "anomaly": 488,
+   "measurements": 773
   },
   {
    "domain": "milli-mejlis.blogspot.com",
@@ -595,23 +603,15 @@
    "kind": "confirmed",
    "confirmed": 111,
    "anomaly": 92,
-   "measurements": 641
+   "measurements": 642
   },
   {
    "domain": "forum.torproject.org",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 110,
-   "anomaly": 666,
-   "measurements": 957
-  },
-  {
-   "domain": "i2pd.website",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 110,
-   "anomaly": 488,
-   "measurements": 771
+   "anomaly": 667,
+   "measurements": 959
   },
   {
    "domain": "freedomhouse.org",
@@ -626,32 +626,32 @@
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 110,
-   "anomaly": 165,
-   "measurements": 334
+   "anomaly": 167,
+   "measurements": 336
   },
   {
    "domain": "allthefallen.moe",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 109,
-   "anomaly": 626,
-   "measurements": 888
+   "anomaly": 627,
+   "measurements": 889
   },
   {
    "domain": "cpj.org",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 109,
-   "anomaly": 514,
-   "measurements": 809
+   "anomaly": 515,
+   "measurements": 810
   },
   {
    "domain": "hide.me",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 109,
-   "anomaly": 512,
-   "measurements": 757
+   "anomaly": 513,
+   "measurements": 758
   },
   {
    "domain": "flibusta.is",
@@ -662,28 +662,36 @@
    "measurements": 291
   },
   {
+   "domain": "donbass.ua",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 108,
+   "anomaly": 646,
+   "measurements": 823
+  },
+  {
+   "domain": "ikhwanonline.com",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 108,
+   "anomaly": 490,
+   "measurements": 736
+  },
+  {
    "domain": "www.daymohk.org",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 108,
-   "anomaly": 175,
-   "measurements": 340
-  },
-  {
-   "domain": "donbass.ua",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 107,
-   "anomaly": 646,
-   "measurements": 822
+   "anomaly": 176,
+   "measurements": 341
   },
   {
    "domain": "cherta.media",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 107,
-   "anomaly": 628,
-   "measurements": 876
+   "anomaly": 629,
+   "measurements": 877
   },
   {
    "domain": "ilga.org",
@@ -691,14 +699,6 @@
    "kind": "confirmed",
    "confirmed": 107,
    "anomaly": 522,
-   "measurements": 732
-  },
-  {
-   "domain": "ikhwanonline.com",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 107,
-   "anomaly": 488,
    "measurements": 733
   },
   {
@@ -706,8 +706,8 @@
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 107,
-   "anomaly": 368,
-   "measurements": 616
+   "anomaly": 370,
+   "measurements": 618
   },
   {
    "domain": "megatfile.cc",
@@ -715,7 +715,15 @@
    "kind": "confirmed",
    "confirmed": 107,
    "anomaly": 69,
-   "measurements": 279
+   "measurements": 280
+  },
+  {
+   "domain": "equalitie.org",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 106,
+   "anomaly": 532,
+   "measurements": 750
   },
   {
    "domain": "itgetsbetter.org",
@@ -734,6 +742,14 @@
    "measurements": 723
   },
   {
+   "domain": "bi.org",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 106,
+   "anomaly": 461,
+   "measurements": 804
+  },
+  {
    "domain": "hornet.com",
    "cc": "RU",
    "kind": "confirmed",
@@ -746,32 +762,32 @@
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 106,
-   "anomaly": 410,
-   "measurements": 654
+   "anomaly": 412,
+   "measurements": 656
   },
   {
    "domain": "transequality.org",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 106,
-   "anomaly": 392,
-   "measurements": 652
+   "anomaly": 394,
+   "measurements": 655
   },
   {
    "domain": "www.lgbtqnation.com",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 106,
-   "anomaly": 327,
-   "measurements": 588
+   "anomaly": 328,
+   "measurements": 591
   },
   {
    "domain": "libgen.li",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 106,
-   "anomaly": 236,
-   "measurements": 399
+   "anomaly": 238,
+   "measurements": 401
   },
   {
    "domain": "donpress.com",
@@ -794,40 +810,32 @@
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 105,
-   "anomaly": 569,
-   "measurements": 845
+   "anomaly": 570,
+   "measurements": 846
   },
   {
    "domain": "chronicles.media",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 105,
-   "anomaly": 555,
-   "measurements": 777
-  },
-  {
-   "domain": "equalitie.org",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 105,
-   "anomaly": 532,
-   "measurements": 749
-  },
-  {
-   "domain": "bi.org",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 105,
-   "anomaly": 461,
-   "measurements": 802
+   "anomaly": 556,
+   "measurements": 778
   },
   {
    "domain": "lgbt.foundation",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 105,
-   "anomaly": 432,
-   "measurements": 687
+   "anomaly": 433,
+   "measurements": 688
+  },
+  {
+   "domain": "www.kavkazcenter.com",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 105,
+   "anomaly": 368,
+   "measurements": 586
   },
   {
    "domain": "www.uniongang.net",
@@ -836,6 +844,14 @@
    "confirmed": 105,
    "anomaly": 144,
    "measurements": 274
+  },
+  {
+   "domain": "d2dj0qptshsals.cloudfront.net",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 104,
+   "anomaly": 843,
+   "measurements": 995
   },
   {
    "domain": "dossier.center",
@@ -850,8 +866,16 @@
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 104,
-   "anomaly": 502,
-   "measurements": 763
+   "anomaly": 503,
+   "measurements": 764
+  },
+  {
+   "domain": "avtozak.info",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 104,
+   "anomaly": 501,
+   "measurements": 818
   },
   {
    "domain": "www.access-unlocked.org",
@@ -866,8 +890,8 @@
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 104,
-   "anomaly": 447,
-   "measurements": 710
+   "anomaly": 449,
+   "measurements": 712
   },
   {
    "domain": "www.azattyqasia.org",
@@ -882,16 +906,16 @@
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 104,
-   "anomaly": 418,
-   "measurements": 640
+   "anomaly": 420,
+   "measurements": 642
   },
   {
-   "domain": "d2dj0qptshsals.cloudfront.net",
+   "domain": "www.lostfilm.tv",
    "cc": "RU",
    "kind": "confirmed",
-   "confirmed": 103,
-   "anomaly": 842,
-   "measurements": 993
+   "confirmed": 104,
+   "anomaly": 129,
+   "measurements": 280
   },
   {
    "domain": "doxa.team",
@@ -906,40 +930,40 @@
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 103,
-   "anomaly": 517,
-   "measurements": 784
+   "anomaly": 520,
+   "measurements": 787
   },
   {
-   "domain": "avtozak.info",
+   "domain": "kaleidoscopetrust.com",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 103,
-   "anomaly": 499,
-   "measurements": 815
+   "anomaly": 497,
+   "measurements": 687
   },
   {
    "domain": "www.deti-404.com",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 103,
-   "anomaly": 481,
-   "measurements": 602
+   "anomaly": 482,
+   "measurements": 603
   },
   {
    "domain": "amnezia.org",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 103,
-   "anomaly": 476,
-   "measurements": 822
+   "anomaly": 477,
+   "measurements": 823
   },
   {
    "domain": "glavred.info",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 103,
-   "anomaly": 464,
-   "measurements": 728
+   "anomaly": 466,
+   "measurements": 730
   },
   {
    "domain": "vpn-api.proton.me",
@@ -962,16 +986,8 @@
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 103,
-   "anomaly": 372,
-   "measurements": 628
-  },
-  {
-   "domain": "www.kavkazcenter.com",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 103,
-   "anomaly": 365,
-   "measurements": 581
+   "anomaly": 373,
+   "measurements": 629
   },
   {
    "domain": "www.familyequality.org",
@@ -982,36 +998,20 @@
    "measurements": 591
   },
   {
-   "domain": "www.lostfilm.tv",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 103,
-   "anomaly": 129,
-   "measurements": 279
-  },
-  {
    "domain": "allout.org",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 102,
-   "anomaly": 595,
-   "measurements": 928
+   "anomaly": 596,
+   "measurements": 929
   },
   {
    "domain": "gijn.org",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 102,
-   "anomaly": 511,
-   "measurements": 777
-  },
-  {
-   "domain": "kaleidoscopetrust.com",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 102,
-   "anomaly": 496,
-   "measurements": 685
+   "anomaly": 512,
+   "measurements": 778
   },
   {
    "domain": "dev.ua",
@@ -1026,8 +1026,8 @@
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 102,
-   "anomaly": 436,
-   "measurements": 719
+   "anomaly": 441,
+   "measurements": 724
   },
   {
    "domain": "www.stonewall.org.uk",
@@ -1042,8 +1042,8 @@
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 102,
-   "anomaly": 386,
-   "measurements": 624
+   "anomaly": 387,
+   "measurements": 625
   },
   {
    "domain": "www.expressvpn.com",
@@ -1054,12 +1054,28 @@
    "measurements": 611
   },
   {
+   "domain": "www.colta.ru",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 102,
+   "anomaly": 366,
+   "measurements": 593
+  },
+  {
    "domain": "medium.com",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 102,
-   "anomaly": 290,
-   "measurements": 495
+   "anomaly": 291,
+   "measurements": 496
+  },
+  {
+   "domain": "ddosecrets.com",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 101,
+   "anomaly": 692,
+   "measurements": 827
   },
   {
    "domain": "ehorussia.com",
@@ -1070,52 +1086,60 @@
    "measurements": 789
   },
   {
+   "domain": "agentura.ru",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 101,
+   "anomaly": 564,
+   "measurements": 794
+  },
+  {
    "domain": "avtonom.org",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 101,
-   "anomaly": 558,
-   "measurements": 838
+   "anomaly": 559,
+   "measurements": 839
   },
   {
    "domain": "crimea-news.info",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 101,
-   "anomaly": 557,
-   "measurements": 829
+   "anomaly": 559,
+   "measurements": 831
   },
   {
    "domain": "hola.org",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 101,
-   "anomaly": 557,
-   "measurements": 752
+   "anomaly": 559,
+   "measurements": 754
   },
   {
    "domain": "dennikn.sk",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 101,
-   "anomaly": 546,
-   "measurements": 818
+   "anomaly": 548,
+   "measurements": 820
   },
   {
    "domain": "day.kyiv.ua",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 101,
-   "anomaly": 536,
-   "measurements": 816
+   "anomaly": 537,
+   "measurements": 817
   },
   {
    "domain": "www.rfi.fr",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 101,
-   "anomaly": 514,
-   "measurements": 713
+   "anomaly": 515,
+   "measurements": 714
   },
   {
    "domain": "fortanga.org",
@@ -1130,72 +1154,64 @@
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 101,
-   "anomaly": 447,
-   "measurements": 662
+   "anomaly": 448,
+   "measurements": 663
   },
   {
-   "domain": "www.colta.ru",
+   "domain": "gubernia.media",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 101,
-   "anomaly": 364,
-   "measurements": 590
-  },
-  {
-   "domain": "ddosecrets.com",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 100,
-   "anomaly": 690,
-   "measurements": 824
+   "anomaly": 445,
+   "measurements": 703
   },
   {
    "domain": "baikal-journal.ru",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 100,
-   "anomaly": 596,
-   "measurements": 831
+   "anomaly": 597,
+   "measurements": 832
   },
   {
-   "domain": "agentura.ru",
+   "domain": "bok-o-bok.com",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 100,
-   "anomaly": 564,
-   "measurements": 793
+   "anomaly": 513,
+   "measurements": 777
   },
   {
    "domain": "www.voanews.com",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 100,
-   "anomaly": 488,
-   "measurements": 694
+   "anomaly": 489,
+   "measurements": 695
   },
   {
    "domain": "fbk.info",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 100,
-   "anomaly": 477,
-   "measurements": 708
+   "anomaly": 479,
+   "measurements": 710
   },
   {
    "domain": "getoutline.org",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 100,
-   "anomaly": 467,
-   "measurements": 745
+   "anomaly": 471,
+   "measurements": 749
   },
   {
    "domain": "proton.me",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 100,
-   "anomaly": 458,
-   "measurements": 679
+   "anomaly": 459,
+   "measurements": 680
   },
   {
    "domain": "freemedia.io",
@@ -1204,14 +1220,6 @@
    "confirmed": 100,
    "anomaly": 452,
    "measurements": 737
-  },
-  {
-   "domain": "gubernia.media",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 100,
-   "anomaly": 444,
-   "measurements": 701
   },
   {
    "domain": "ultrasurf.us",
@@ -1226,8 +1234,8 @@
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 100,
-   "anomaly": 400,
-   "measurements": 649
+   "anomaly": 402,
+   "measurements": 651
   },
   {
    "domain": "www.transparency.org",
@@ -1246,36 +1254,36 @@
    "measurements": 863
   },
   {
+   "domain": "cool.bbsgayru17.com",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 100,
+   "anomaly": 17,
+   "measurements": 998
+  },
+  {
    "domain": "antikor.com.ua",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 99,
-   "anomaly": 529,
-   "measurements": 803
+   "anomaly": 530,
+   "measurements": 804
   },
   {
    "domain": "atr.ua",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 99,
-   "anomaly": 527,
-   "measurements": 862
+   "anomaly": 528,
+   "measurements": 863
   },
   {
    "domain": "caucasustimes.com",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 99,
-   "anomaly": 513,
-   "measurements": 795
-  },
-  {
-   "domain": "bok-o-bok.com",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 99,
-   "anomaly": 512,
-   "measurements": 775
+   "anomaly": 515,
+   "measurements": 797
   },
   {
    "domain": "editorials.voa.gov",
@@ -1290,24 +1298,24 @@
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 99,
-   "anomaly": 392,
-   "measurements": 621
+   "anomaly": 393,
+   "measurements": 622
   },
   {
    "domain": "www.compromat.ru",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 99,
-   "anomaly": 263,
-   "measurements": 605
+   "anomaly": 265,
+   "measurements": 607
   },
   {
    "domain": "team29.org",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 99,
-   "anomaly": 110,
-   "measurements": 707
+   "anomaly": 111,
+   "measurements": 710
   },
   {
    "domain": "tushkan.club",
@@ -1315,23 +1323,15 @@
    "kind": "confirmed",
    "confirmed": 99,
    "anomaly": 102,
-   "measurements": 238
-  },
-  {
-   "domain": "cool.bbsgayru17.com",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 99,
-   "anomaly": 17,
-   "measurements": 995
+   "measurements": 239
   },
   {
    "domain": "belsat.eu",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 98,
-   "anomaly": 605,
-   "measurements": 794
+   "anomaly": 606,
+   "measurements": 795
   },
   {
    "domain": "activatica.org",
@@ -1342,12 +1342,20 @@
    "measurements": 846
   },
   {
+   "domain": "dron.media",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 98,
+   "anomaly": 574,
+   "measurements": 803
+  },
+  {
    "domain": "protonvpn.com",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 98,
-   "anomaly": 483,
-   "measurements": 675
+   "anomaly": 486,
+   "measurements": 678
   },
   {
    "domain": "euroradio.fm",
@@ -1362,16 +1370,16 @@
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 98,
-   "anomaly": 451,
-   "measurements": 714
+   "anomaly": 452,
+   "measurements": 715
   },
   {
    "domain": "www.ndi.org",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 98,
-   "anomaly": 439,
-   "measurements": 660
+   "anomaly": 440,
+   "measurements": 661
   },
   {
    "domain": "www.torproject.org",
@@ -1386,8 +1394,16 @@
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 98,
-   "anomaly": 432,
-   "measurements": 655
+   "anomaly": 433,
+   "measurements": 656
+  },
+  {
+   "domain": "substack.com",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 98,
+   "anomaly": 433,
+   "measurements": 660
   },
   {
    "domain": "www.occrp.org",
@@ -1396,6 +1412,14 @@
    "confirmed": 98,
    "anomaly": 414,
    "measurements": 641
+  },
+  {
+   "domain": "www.hotspotshield.com",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 98,
+   "anomaly": 399,
+   "measurements": 589
   },
   {
    "domain": "golos-kubani.ru",
@@ -1410,24 +1434,48 @@
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 97,
-   "anomaly": 848,
-   "measurements": 997
+   "anomaly": 852,
+   "measurements": 1001
   },
   {
-   "domain": "dron.media",
+   "domain": "blackseatv.com",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 97,
-   "anomaly": 574,
-   "measurements": 802
+   "anomaly": 516,
+   "measurements": 821
+  },
+  {
+   "domain": "riseup.net",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 97,
+   "anomaly": 500,
+   "measurements": 687
   },
   {
    "domain": "carnegieendowment.org",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 97,
-   "anomaly": 479,
-   "measurements": 773
+   "anomaly": 480,
+   "measurements": 774
+  },
+  {
+   "domain": "ichkeria.info",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 97,
+   "anomaly": 471,
+   "measurements": 717
+  },
+  {
+   "domain": "holod.media",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 97,
+   "anomaly": 449,
+   "measurements": 713
   },
   {
    "domain": "iditelesom.org",
@@ -1446,12 +1494,20 @@
    "measurements": 654
   },
   {
-   "domain": "substack.com",
+   "domain": "freevpnplanet.com",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 97,
-   "anomaly": 428,
-   "measurements": 653
+   "anomaly": 422,
+   "measurements": 709
+  },
+  {
+   "domain": "takiedela.ru",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 97,
+   "anomaly": 418,
+   "measurements": 642
   },
   {
    "domain": "www.dovod.online",
@@ -1462,20 +1518,12 @@
    "measurements": 596
   },
   {
-   "domain": "www.hotspotshield.com",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 97,
-   "anomaly": 398,
-   "measurements": 587
-  },
-  {
    "domain": "www.cpj.org",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 97,
-   "anomaly": 368,
-   "measurements": 607
+   "anomaly": 369,
+   "measurements": 608
   },
   {
    "domain": "www.thetrevorproject.org",
@@ -1490,72 +1538,56 @@
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 97,
-   "anomaly": 208,
-   "measurements": 389
-  },
-  {
-   "domain": "blackseatv.com",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 96,
-   "anomaly": 515,
-   "measurements": 819
-  },
-  {
-   "domain": "riseup.net",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 96,
-   "anomaly": 498,
-   "measurements": 683
+   "anomaly": 209,
+   "measurements": 391
   },
   {
    "domain": "helpdesk.media",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 96,
-   "anomaly": 481,
-   "measurements": 721
+   "anomaly": 482,
+   "measurements": 723
   },
   {
-   "domain": "ichkeria.info",
+   "domain": "liveuamap.com",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 96,
-   "anomaly": 469,
-   "measurements": 714
+   "anomaly": 468,
+   "measurements": 697
   },
   {
    "domain": "www.ned.org",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 96,
-   "anomaly": 459,
-   "measurements": 684
+   "anomaly": 460,
+   "measurements": 685
   },
   {
    "domain": "glasnaya.media",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 96,
-   "anomaly": 452,
-   "measurements": 711
-  },
-  {
-   "domain": "holod.media",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 96,
-   "anomaly": 448,
-   "measurements": 711
+   "anomaly": 457,
+   "measurements": 716
   },
   {
    "domain": "surfshark.com",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 96,
-   "anomaly": 432,
-   "measurements": 659
+   "anomaly": 435,
+   "measurements": 663
+  },
+  {
+   "domain": "www.freecity.lv",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 96,
+   "anomaly": 430,
+   "measurements": 586
   },
   {
    "domain": "www.out.com",
@@ -1566,28 +1598,12 @@
    "measurements": 650
   },
   {
-   "domain": "freevpnplanet.com",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 96,
-   "anomaly": 419,
-   "measurements": 704
-  },
-  {
-   "domain": "takiedela.ru",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 96,
-   "anomaly": 413,
-   "measurements": 636
-  },
-  {
    "domain": "www.opensocietyfoundations.org",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 96,
-   "anomaly": 409,
-   "measurements": 638
+   "anomaly": 410,
+   "measurements": 639
   },
   {
    "domain": "www.telegraph.co.uk",
@@ -1606,6 +1622,14 @@
    "measurements": 603
   },
   {
+   "domain": "tjournal.ru",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 96,
+   "anomaly": 395,
+   "measurements": 663
+  },
+  {
    "domain": "line.me",
    "cc": "RU",
    "kind": "confirmed",
@@ -1614,20 +1638,28 @@
    "measurements": 547
   },
   {
+   "domain": "briarproject.org",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 96,
+   "anomaly": 369,
+   "measurements": 567
+  },
+  {
    "domain": "vpnproxymaster.com",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 96,
-   "anomaly": 342,
-   "measurements": 596
+   "anomaly": 343,
+   "measurements": 597
   },
   {
    "domain": "www.cia.gov",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 96,
-   "anomaly": 251,
-   "measurements": 414
+   "anomaly": 252,
+   "measurements": 415
   },
   {
    "domain": "200rf.com",
@@ -1642,32 +1674,32 @@
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 95,
-   "anomaly": 551,
-   "measurements": 844
+   "anomaly": 553,
+   "measurements": 846
   },
   {
    "domain": "boingboing.net",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 95,
-   "anomaly": 539,
-   "measurements": 845
+   "anomaly": 540,
+   "measurements": 846
   },
   {
    "domain": "censortracker.org",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 95,
-   "anomaly": 533,
-   "measurements": 803
+   "anomaly": 535,
+   "measurements": 805
   },
   {
    "domain": "adguard-vpn.com",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 95,
-   "anomaly": 532,
-   "measurements": 826
+   "anomaly": 533,
+   "measurements": 827
   },
   {
    "domain": "newtimes.ru",
@@ -1682,48 +1714,32 @@
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 95,
-   "anomaly": 471,
-   "measurements": 662
+   "anomaly": 472,
+   "measurements": 663
   },
   {
-   "domain": "liveuamap.com",
+   "domain": "krymsos.com",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 95,
-   "anomaly": 466,
-   "measurements": 694
-  },
-  {
-   "domain": "www.freecity.lv",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 95,
-   "anomaly": 430,
-   "measurements": 585
+   "anomaly": 470,
+   "measurements": 683
   },
   {
    "domain": "tayga.info",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 95,
-   "anomaly": 405,
-   "measurements": 664
-  },
-  {
-   "domain": "tjournal.ru",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 95,
-   "anomaly": 394,
-   "measurements": 660
+   "anomaly": 410,
+   "measurements": 670
   },
   {
    "domain": "www.hidemyass.com",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 95,
-   "anomaly": 394,
-   "measurements": 588
+   "anomaly": 395,
+   "measurements": 589
   },
   {
    "domain": "war.hvylya.net",
@@ -1740,14 +1756,6 @@
    "confirmed": 95,
    "anomaly": 379,
    "measurements": 603
-  },
-  {
-   "domain": "briarproject.org",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 95,
-   "anomaly": 369,
-   "measurements": 563
   },
   {
    "domain": "www.proton.me",
@@ -1770,8 +1778,16 @@
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 95,
-   "anomaly": 192,
-   "measurements": 635
+   "anomaly": 193,
+   "measurements": 637
+  },
+  {
+   "domain": "www.y2mate.com",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 95,
+   "anomaly": 14,
+   "measurements": 612
   },
   {
    "domain": "www.ust-kut24.com",
@@ -1779,7 +1795,7 @@
    "kind": "confirmed",
    "confirmed": 95,
    "anomaly": 13,
-   "measurements": 636
+   "measurements": 637
   },
   {
    "domain": "kamikadze-d.net",
@@ -1794,15 +1810,23 @@
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 94,
-   "anomaly": 523,
-   "measurements": 706
+   "anomaly": 524,
+   "measurements": 707
   },
   {
    "domain": "kuzpress.ru",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 94,
-   "anomaly": 514,
+   "anomaly": 515,
+   "measurements": 689
+  },
+  {
+   "domain": "mullvad.net",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 94,
+   "anomaly": 511,
    "measurements": 688
   },
   {
@@ -1810,24 +1834,16 @@
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 94,
-   "anomaly": 505,
-   "measurements": 693
+   "anomaly": 506,
+   "measurements": 694
   },
   {
    "domain": "golosinfo.org",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 94,
-   "anomaly": 495,
-   "measurements": 712
-  },
-  {
-   "domain": "krymsos.com",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 94,
-   "anomaly": 469,
-   "measurements": 681
+   "anomaly": 499,
+   "measurements": 716
   },
   {
    "domain": "www.rferl.org",
@@ -1835,7 +1851,7 @@
    "kind": "confirmed",
    "confirmed": 94,
    "anomaly": 461,
-   "measurements": 660
+   "measurements": 661
   },
   {
    "domain": "inforeactor.ru",
@@ -1858,8 +1874,8 @@
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 94,
-   "anomaly": 428,
-   "measurements": 673
+   "anomaly": 430,
+   "measurements": 675
   },
   {
    "domain": "ovdinfo.org",
@@ -1875,23 +1891,47 @@
    "kind": "confirmed",
    "confirmed": 94,
    "anomaly": 416,
-   "measurements": 640
+   "measurements": 641
+  },
+  {
+   "domain": "www.glsen.org",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 94,
+   "anomaly": 395,
+   "measurements": 589
+  },
+  {
+   "domain": "torontovka.com",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 94,
+   "anomaly": 393,
+   "measurements": 619
   },
   {
    "domain": "utro02.tv",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 94,
-   "anomaly": 388,
-   "measurements": 654
+   "anomaly": 389,
+   "measurements": 655
   },
   {
    "domain": "account.proton.me",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 94,
-   "anomaly": 368,
-   "measurements": 568
+   "anomaly": 370,
+   "measurements": 570
+  },
+  {
+   "domain": "vpnredcat.com",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 94,
+   "anomaly": 370,
+   "measurements": 606
   },
   {
    "domain": "www.blackberry.com",
@@ -1899,7 +1939,7 @@
    "kind": "confirmed",
    "confirmed": 94,
    "anomaly": 324,
-   "measurements": 529
+   "measurements": 531
   },
   {
    "domain": "miro.medium.com",
@@ -1914,8 +1954,8 @@
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 94,
-   "anomaly": 197,
-   "measurements": 661
+   "anomaly": 198,
+   "measurements": 663
   },
   {
    "domain": "nation-news.ru",
@@ -1923,7 +1963,7 @@
    "kind": "confirmed",
    "confirmed": 94,
    "anomaly": 162,
-   "measurements": 644
+   "measurements": 645
   },
   {
    "domain": "schwingen.net",
@@ -1931,15 +1971,15 @@
    "kind": "confirmed",
    "confirmed": 94,
    "anomaly": 18,
-   "measurements": 781
+   "measurements": 788
   },
   {
-   "domain": "www.y2mate.com",
+   "domain": "o-zine.ru",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 94,
-   "anomaly": 14,
-   "measurements": 609
+   "anomaly": 16,
+   "measurements": 717
   },
   {
    "domain": "www.listock.ru",
@@ -1947,31 +1987,23 @@
    "kind": "confirmed",
    "confirmed": 94,
    "anomaly": 6,
-   "measurements": 589
+   "measurements": 591
   },
   {
    "domain": "allrus.news",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 93,
-   "anomaly": 596,
-   "measurements": 798
-  },
-  {
-   "domain": "mullvad.net",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 93,
-   "anomaly": 510,
-   "measurements": 686
+   "anomaly": 597,
+   "measurements": 799
   },
   {
    "domain": "story.te-st.org",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 93,
-   "anomaly": 489,
-   "measurements": 663
+   "anomaly": 492,
+   "measurements": 667
   },
   {
    "domain": "nordvpn.com",
@@ -1994,48 +2026,56 @@
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 93,
-   "anomaly": 468,
-   "measurements": 674
+   "anomaly": 469,
+   "measurements": 675
   },
   {
    "domain": "poligon.media",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 93,
-   "anomaly": 467,
-   "measurements": 670
+   "anomaly": 468,
+   "measurements": 671
   },
   {
    "domain": "thenewtab.io",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 93,
-   "anomaly": 452,
-   "measurements": 646
+   "anomaly": 455,
+   "measurements": 650
   },
   {
    "domain": "mbk.news",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 93,
+   "anomaly": 431,
+   "measurements": 657
+  },
+  {
+   "domain": "www.agents.media",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 93,
    "anomaly": 430,
-   "measurements": 656
+   "measurements": 626
   },
   {
    "domain": "romb.tv",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 93,
-   "anomaly": 420,
-   "measurements": 630
+   "anomaly": 422,
+   "measurements": 632
   },
   {
    "domain": "newsmaker.md",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 93,
-   "anomaly": 409,
-   "measurements": 651
+   "anomaly": 412,
+   "measurements": 654
   },
   {
    "domain": "www.the-village.ru",
@@ -2046,44 +2086,36 @@
    "measurements": 567
   },
   {
+   "domain": "te-st.org",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 93,
+   "anomaly": 400,
+   "measurements": 667
+  },
+  {
    "domain": "www.15min.lt",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 93,
-   "anomaly": 397,
-   "measurements": 628
-  },
-  {
-   "domain": "www.glsen.org",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 93,
-   "anomaly": 394,
-   "measurements": 587
-  },
-  {
-   "domain": "torontovka.com",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 93,
-   "anomaly": 390,
-   "measurements": 615
+   "anomaly": 398,
+   "measurements": 629
   },
   {
    "domain": "www.vice.com",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 93,
-   "anomaly": 388,
-   "measurements": 575
+   "anomaly": 389,
+   "measurements": 576
   },
   {
    "domain": "www.bellingcat.com",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 93,
-   "anomaly": 383,
-   "measurements": 595
+   "anomaly": 384,
+   "measurements": 596
   },
   {
    "domain": "weareukraine.info",
@@ -2094,12 +2126,12 @@
    "measurements": 622
   },
   {
-   "domain": "vpnredcat.com",
+   "domain": "vlasti.net",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 93,
-   "anomaly": 369,
-   "measurements": 604
+   "anomaly": 375,
+   "measurements": 605
   },
   {
    "domain": "www.sibreal.org",
@@ -2118,12 +2150,20 @@
    "measurements": 550
   },
   {
+   "domain": "www.unfe.org",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 93,
+   "anomaly": 346,
+   "measurements": 563
+  },
+  {
    "domain": "www.wearerepost.com",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 93,
-   "anomaly": 345,
-   "measurements": 555
+   "anomaly": 346,
+   "measurements": 556
   },
   {
    "domain": "eu-objective.online",
@@ -2131,7 +2171,7 @@
    "kind": "confirmed",
    "confirmed": 93,
    "anomaly": 40,
-   "measurements": 796
+   "measurements": 799
   },
   {
    "domain": "www.segodnya.ua",
@@ -2142,20 +2182,12 @@
    "measurements": 666
   },
   {
-   "domain": "o-zine.ru",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 93,
-   "anomaly": 16,
-   "measurements": 715
-  },
-  {
    "domain": "thepolitics.ru",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 93,
    "anomaly": 16,
-   "measurements": 724
+   "measurements": 727
   },
   {
    "domain": "vitk.com.ua",
@@ -2166,20 +2198,28 @@
    "measurements": 622
   },
   {
-   "domain": "lgbtru.com",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 92,
-   "anomaly": 477,
-   "measurements": 664
-  },
-  {
    "domain": "notvpn.io",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 92,
-   "anomaly": 477,
-   "measurements": 671
+   "anomaly": 479,
+   "measurements": 673
+  },
+  {
+   "domain": "lgbtru.com",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 92,
+   "anomaly": 478,
+   "measurements": 666
+  },
+  {
+   "domain": "news.liga.net",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 92,
+   "anomaly": 462,
+   "measurements": 666
   },
   {
    "domain": "is.fi",
@@ -2190,36 +2230,20 @@
    "measurements": 686
   },
   {
-   "domain": "news.liga.net",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 92,
-   "anomaly": 459,
-   "measurements": 663
-  },
-  {
-   "domain": "www.agents.media",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 92,
-   "anomaly": 429,
-   "measurements": 624
-  },
-  {
    "domain": "www.ilga-europe.org",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 92,
-   "anomaly": 429,
-   "measurements": 578
+   "anomaly": 432,
+   "measurements": 581
   },
   {
    "domain": "teachers-union.ru",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 92,
-   "anomaly": 423,
-   "measurements": 671
+   "anomaly": 427,
+   "measurements": 676
   },
   {
    "domain": "itsmycity.ru",
@@ -2242,40 +2266,56 @@
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 92,
-   "anomaly": 416,
-   "measurements": 674
+   "anomaly": 417,
+   "measurements": 675
   },
   {
    "domain": "protokol.band",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 92,
-   "anomaly": 409,
-   "measurements": 646
+   "anomaly": 411,
+   "measurements": 648
   },
   {
    "domain": "svtv.org",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 92,
-   "anomaly": 405,
-   "measurements": 628
+   "anomaly": 409,
+   "measurements": 633
   },
   {
-   "domain": "te-st.org",
+   "domain": "world.comments.ua",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 92,
-   "anomaly": 397,
-   "measurements": 662
+   "anomaly": 395,
+   "measurements": 598
   },
   {
-   "domain": "vlasti.net",
+   "domain": "www.24chasa.bg",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 92,
-   "anomaly": 375,
-   "measurements": 604
+   "anomaly": 395,
+   "measurements": 603
+  },
+  {
+   "domain": "risk-inform.com",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 92,
+   "anomaly": 390,
+   "measurements": 627
+  },
+  {
+   "domain": "www.factograph.info",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 92,
+   "anomaly": 385,
+   "measurements": 555
   },
   {
    "domain": "www.unian.info",
@@ -2283,7 +2323,7 @@
    "kind": "confirmed",
    "confirmed": 92,
    "anomaly": 369,
-   "measurements": 557
+   "measurements": 558
   },
   {
    "domain": "www.epravda.com.ua",
@@ -2294,28 +2334,28 @@
    "measurements": 580
   },
   {
-   "domain": "www.unfe.org",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 92,
-   "anomaly": 346,
-   "measurements": 561
-  },
-  {
    "domain": "zaxid.net",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 92,
    "anomaly": 325,
-   "measurements": 558
+   "measurements": 559
+  },
+  {
+   "domain": "namba.kz",
+   "cc": "RU",
+   "kind": "confirmed",
+   "confirmed": 92,
+   "anomaly": 103,
+   "measurements": 286
   },
   {
    "domain": "blackseango.org",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 91,
-   "anomaly": 596,
-   "measurements": 783
+   "anomaly": 597,
+   "measurements": 784
   },
   {
    "domain": "glavpost.com",
@@ -2338,80 +2378,40 @@
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 91,
-   "anomaly": 437,
-   "measurements": 682
+   "anomaly": 438,
+   "measurements": 683
   },
   {
-   "domain": "politros.com",
+   "domain": "proxify.com",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 91,
-   "anomaly": 408,
-   "measurements": 655
+   "anomaly": 431,
+   "measurements": 679
   },
   {
-   "domain": "thebell.io",
+   "domain": "polit.ru",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 91,
-   "anomaly": 403,
-   "measurements": 619
+   "anomaly": 421,
+   "measurements": 710
   },
   {
-   "domain": "thetruestory.news",
+   "domain": "myc.news",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 91,
-   "anomaly": 398,
-   "measurements": 648
+   "anomaly": 419,
+   "measurements": 654
   },
   {
-   "domain": "world.comments.ua",
+   "domain": "www.radiomarsho.com",
    "cc": "RU",
    "kind": "confirmed",
    "confirmed": 91,
-   "anomaly": 394,
-   "measurements": 596
-  },
-  {
-   "domain": "www.24chasa.bg",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 91,
-   "anomaly": 394,
-   "measurements": 601
-  },
-  {
-   "domain": "risk-inform.com",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 91,
-   "anomaly": 389,
-   "measurements": 625
-  },
-  {
-   "domain": "www.20khvylyn.com",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 91,
-   "anomaly": 389,
-   "measurements": 600
-  },
-  {
-   "domain": "www.factograph.info",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 91,
-   "anomaly": 385,
-   "measurements": 554
-  },
-  {
-   "domain": "vesma.today",
-   "cc": "RU",
-   "kind": "confirmed",
-   "confirmed": 91,
-   "anomaly": 384,
-   "measurements": 663
+   "anomaly": 411,
+   "measurements": 603
   },
   {
    "domain": "www.partypoker.com",
@@ -2450,24 +2450,24 @@
    "cc": "UA",
    "kind": "confirmed",
    "confirmed": 1,
-   "anomaly": 37,
-   "measurements": 53
+   "anomaly": 38,
+   "measurements": 54
   },
   {
    "domain": "www.nashe.ru",
    "cc": "UA",
    "kind": "confirmed",
    "confirmed": 1,
-   "anomaly": 35,
-   "measurements": 52
+   "anomaly": 36,
+   "measurements": 53
   },
   {
    "domain": "www.poehali.tv",
    "cc": "UA",
    "kind": "confirmed",
    "confirmed": 1,
-   "anomaly": 35,
-   "measurements": 49
+   "anomaly": 36,
+   "measurements": 50
   },
   {
    "domain": "allcrimea.net",
@@ -2578,24 +2578,24 @@
    "cc": "UA",
    "kind": "anomaly",
    "confirmed": 0,
-   "anomaly": 80,
-   "measurements": 94
+   "anomaly": 81,
+   "measurements": 95
   },
   {
    "domain": "mstdn.jp",
    "cc": "UA",
    "kind": "anomaly",
    "confirmed": 0,
-   "anomaly": 71,
-   "measurements": 86
+   "anomaly": 72,
+   "measurements": 87
   },
   {
    "domain": "vk.com",
    "cc": "UA",
    "kind": "anomaly",
    "confirmed": 0,
-   "anomaly": 62,
-   "measurements": 83
+   "anomaly": 63,
+   "measurements": 84
   },
   {
    "domain": "justicewomen.com",
@@ -2846,6 +2846,14 @@
    "measurements": 48
   },
   {
+   "domain": "ok.ru",
+   "cc": "UA",
+   "kind": "anomaly",
+   "confirmed": 0,
+   "anomaly": 32,
+   "measurements": 52
+  },
+  {
    "domain": "sevastopol.press",
    "cc": "UA",
    "kind": "anomaly",
@@ -2884,14 +2892,6 @@
    "confirmed": 0,
    "anomaly": 31,
    "measurements": 47
-  },
-  {
-   "domain": "ok.ru",
-   "cc": "UA",
-   "kind": "anomaly",
-   "confirmed": 0,
-   "anomaly": 31,
-   "measurements": 51
   },
   {
    "domain": "sev.tv",
@@ -2990,12 +2990,28 @@
    "measurements": 30
   },
   {
+   "domain": "www.frc.org",
+   "cc": "UA",
+   "kind": "anomaly",
+   "confirmed": 0,
+   "anomaly": 29,
+   "measurements": 29
+  },
+  {
    "domain": "xanga.com",
    "cc": "UA",
    "kind": "anomaly",
    "confirmed": 0,
    "anomaly": 29,
    "measurements": 30
+  },
+  {
+   "domain": "yaltatv.ru",
+   "cc": "UA",
+   "kind": "anomaly",
+   "confirmed": 0,
+   "anomaly": 29,
+   "measurements": 38
   },
   {
    "domain": "otr-online.ru",
@@ -3014,20 +3030,12 @@
    "measurements": 46
   },
   {
-   "domain": "www.frc.org",
+   "domain": "yalta-tv.ru",
    "cc": "UA",
    "kind": "anomaly",
    "confirmed": 0,
    "anomaly": 28,
-   "measurements": 28
-  },
-  {
-   "domain": "yaltatv.ru",
-   "cc": "UA",
-   "kind": "anomaly",
-   "confirmed": 0,
-   "anomaly": 28,
-   "measurements": 37
+   "measurements": 39
   },
   {
    "domain": "riarating.ru",
@@ -3054,12 +3062,12 @@
    "measurements": 36
   },
   {
-   "domain": "yalta-tv.ru",
+   "domain": "www.politnavigator.net",
    "cc": "UA",
    "kind": "anomaly",
    "confirmed": 0,
    "anomaly": 27,
-   "measurements": 38
+   "measurements": 40
   },
   {
    "domain": "life.ru",
@@ -3076,14 +3084,6 @@
    "confirmed": 0,
    "anomaly": 26,
    "measurements": 43
-  },
-  {
-   "domain": "www.politnavigator.net",
-   "cc": "UA",
-   "kind": "anomaly",
-   "confirmed": 0,
-   "anomaly": 26,
-   "measurements": 39
   },
   {
    "domain": "www.sobytiya.info",
@@ -3114,8 +3114,8 @@
    "cc": "UA",
    "kind": "anomaly",
    "confirmed": 0,
-   "anomaly": 23,
-   "measurements": 32
+   "anomaly": 24,
+   "measurements": 33
   },
   {
    "domain": "minjust-dnr.ru",
@@ -3132,6 +3132,14 @@
    "confirmed": 0,
    "anomaly": 21,
    "measurements": 35
+  },
+  {
+   "domain": "www.dishisvobodno.ru",
+   "cc": "UA",
+   "kind": "anomaly",
+   "confirmed": 0,
+   "anomaly": 21,
+   "measurements": 30
   },
   {
    "domain": "www.mchost.ru",
@@ -3156,14 +3164,6 @@
    "confirmed": 0,
    "anomaly": 20,
    "measurements": 30
-  },
-  {
-   "domain": "www.dishisvobodno.ru",
-   "cc": "UA",
-   "kind": "anomaly",
-   "confirmed": 0,
-   "anomaly": 20,
-   "measurements": 29
   },
   {
    "domain": "genocid.net",
