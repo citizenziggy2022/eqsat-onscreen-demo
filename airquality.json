@@ -1,6 +1,6 @@
 {
- "fetched_at": "2026-11-22T08:10:44Z",
- "updated_at": "2026-11-22T08:00:00Z",
+ "fetched_at": "2026-11-22T09:07:52Z",
+ "updated_at": "2026-11-22T09:00:00Z",
  "source": {
   "id": "saveecobot",
   "name": "SaveEcoBot",
@@ -66,7 +66,7 @@
     "ЛУН Місто",
     "SaveDnipro"
    ],
-   "updated_at": "2026-11-22T08:00:00Z"
+   "updated_at": "2026-11-22T09:00:00Z"
   },
   {
    "id": "kharkiv",
@@ -83,7 +83,7 @@
     "SaveDnipro",
     "luftdaten.info"
    ],
-   "updated_at": "2026-11-22T08:00:00Z"
+   "updated_at": "2026-11-22T09:00:00Z"
   },
   {
    "id": "dnipro",
@@ -92,7 +92,7 @@
    "lat": 48.465,
    "lon": 35.046,
    "rad_site": false,
-   "aqi": 38,
+   "aqi": 32,
    "band": "good",
    "stations": 6,
    "stations_listed": 110,
@@ -102,7 +102,7 @@
     "ЛУН Місто",
     "luftdaten.info"
    ],
-   "updated_at": "2026-11-22T08:00:00Z"
+   "updated_at": "2026-11-22T09:00:00Z"
   },
   {
    "id": "zaporizhzhia",
@@ -118,7 +118,7 @@
    "networks": [
     "SaveDnipro"
    ],
-   "updated_at": "2026-11-22T08:00:00Z"
+   "updated_at": "2026-11-22T09:00:00Z"
   },
   {
    "id": "odesa",
@@ -127,12 +127,14 @@
    "lat": 46.482,
    "lon": 30.723,
    "rad_site": false,
-   "aqi": null,
-   "band": null,
-   "stations": 0,
+   "aqi": 40,
+   "band": "good",
+   "stations": 1,
    "stations_listed": 43,
-   "networks": [],
-   "updated_at": null
+   "networks": [
+    "ЛУН Місто"
+   ],
+   "updated_at": "2026-11-22T09:00:00Z"
   },
   {
    "id": "mykolaiv",
@@ -141,15 +143,14 @@
    "lat": 46.975,
    "lon": 31.995,
    "rad_site": false,
-   "aqi": 38,
-   "band": "good",
-   "stations": 4,
+   "aqi": 55,
+   "band": "moderate",
+   "stations": 3,
    "stations_listed": 26,
    "networks": [
-    "Smart Citizen",
-    "SaveDnipro"
+    "Smart Citizen"
    ],
-   "updated_at": "2026-11-22T08:00:00Z"
+   "updated_at": "2026-11-22T09:00:00Z"
   },
   {
    "id": "kherson",
@@ -182,7 +183,7 @@
     "SaveDnipro",
     "luftdaten.info"
    ],
-   "updated_at": "2026-11-22T08:00:00Z"
+   "updated_at": "2026-11-22T09:00:00Z"
   },
   {
    "id": "nikopol",
@@ -212,7 +213,7 @@
    "networks": [
     "SaveDnipro & uRADMonitor"
    ],
-   "updated_at": "2026-11-22T08:00:00Z"
+   "updated_at": "2026-11-22T09:00:00Z"
   },
   {
    "id": "chornobyl",
@@ -228,7 +229,7 @@
    "networks": [
     "SaveDnipro"
    ],
-   "updated_at": "2026-11-22T08:00:00Z"
+   "updated_at": "2026-11-22T09:00:00Z"
   },
   {
    "id": "yuzhnoukrainsk",
@@ -244,7 +245,7 @@
    "networks": [
     "SaveDnipro"
    ],
-   "updated_at": "2026-11-22T08:00:00Z"
+   "updated_at": "2026-11-22T09:00:00Z"
   },
   {
    "id": "varash",
@@ -267,14 +268,14 @@
    "lat": 50.34,
    "lon": 26.64,
    "rad_site": true,
-   "aqi": 9,
+   "aqi": 8,
    "band": "good",
    "stations": 1,
    "stations_listed": 1,
    "networks": [
     "SaveDnipro"
    ],
-   "updated_at": "2026-11-22T08:00:00Z"
+   "updated_at": "2026-11-22T09:00:00Z"
   }
  ]
 }
