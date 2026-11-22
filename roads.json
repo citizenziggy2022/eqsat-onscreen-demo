@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-22T06:52:37Z",
- "checked_at": "2026-11-22T06:52:37Z",
+ "updated": "2026-11-22T06:56:36Z",
+ "checked_at": "2026-11-22T06:56:36Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Шегині → PL: 518 вант. · 6 д 1 год"
+   "note": "Краківець → PL: 718 вант. · 8 д 22 год"
   },
   "zakarpattia": {
    "status": "outage",
@@ -14,11 +14,11 @@
   },
   "chernivtsi": {
    "status": "ok",
-   "note": "Порубне → RO: 6 вант. · 0 год"
+   "note": "Порубне → RO: 9 вант. · 0 год"
   },
   "odesa": {
    "status": "outage",
-   "note": "Орлівка → RO: 722 вант. · 6 д 10 год"
+   "note": "Орлівка → RO: 722 вант. · 6 д 9 год"
   },
   "vinnytsia": {
    "status": "ok",
@@ -35,10 +35,17 @@
   },
   {
    "oblast": "lviv",
+   "name": "Краківець",
+   "to": "PL",
+   "hours": 214,
+   "trucks": 718
+  },
+  {
+   "oblast": "lviv",
    "name": "Смільниця",
    "to": "PL",
-   "hours": 0.3,
-   "trucks": 1
+   "hours": 0.0,
+   "trucks": 2
   },
   {
    "oblast": "lviv",
@@ -66,7 +73,7 @@
    "name": "Шегині",
    "to": "PL",
    "hours": 136,
-   "trucks": 591
+   "trucks": 592
   },
   {
    "oblast": "zakarpattia",
@@ -86,7 +93,7 @@
    "oblast": "odesa",
    "name": "Орлівка",
    "to": "RO",
-   "hours": 154,
+   "hours": 153,
    "trucks": 722
   },
   {
@@ -94,7 +101,7 @@
    "name": "Порубне",
    "to": "RO",
    "hours": 0.2,
-   "trucks": 6
+   "trucks": 9
   },
   {
    "oblast": "odesa",
@@ -156,13 +163,6 @@
    "oblast": "zakarpattia",
    "name": "Ужгород",
    "to": "SK",
-   "hours": 147,
-   "trucks": 750
-  },
-  {
-   "oblast": "zakarpattia",
-   "name": "Ужгород",
-   "to": "SK",
    "hours": 0.0,
    "trucks": 0
   },
@@ -177,7 +177,7 @@
    "oblast": "zakarpattia",
    "name": "Лужанка",
    "to": "HU",
-   "hours": 95,
+   "hours": 94,
    "trucks": 340
   },
   {
@@ -185,7 +185,7 @@
    "name": "Чоп (Тиса)",
    "to": "HU",
    "hours": 151,
-   "trucks": 1532
+   "trucks": 1530
   }
  ]
 }
