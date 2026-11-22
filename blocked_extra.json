@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T11:18:56+00:00",
+ "generated": "2026-11-22T12:19:59+00:00",
  "sources": {
   "censoredplanet": {
    "name": "Censored Planet (University of Michigan)",
@@ -20,8 +20,8 @@
    "totals": {
     "RU": {
      "confirmed": 0,
-     "likely": 75,
-     "measured": 828
+     "likely": 76,
+     "measured": 829
     },
     "UA": {
      "confirmed": 0,
@@ -54,11 +54,11 @@
  },
  "credit": "Censored Planet (U. Michigan) · RKN registry via antifilter.download",
  "counts": {
-  "items": 146,
-  "new_vs_ooni": 89,
+  "items": 147,
+  "new_vs_ooni": 90,
   "by_source_country": {
    "rkn/RU": 45,
-   "censoredplanet/RU": 75,
+   "censoredplanet/RU": 76,
    "censoredplanet/BY": 26
   }
  },
@@ -1106,6 +1106,18 @@
    "last_seen": "2026-11-18",
    "rate": 0.83,
    "measurements": 389,
+   "category": "news",
+   "new_vs_ooni": true,
+   "well_known": false
+  },
+  {
+   "domain": "lemonde.fr",
+   "country": "RU",
+   "source": "censoredplanet",
+   "status": "likely",
+   "last_seen": "2026-11-18",
+   "rate": 0.83,
+   "measurements": 393,
    "category": "news",
    "new_vs_ooni": true,
    "well_known": false
