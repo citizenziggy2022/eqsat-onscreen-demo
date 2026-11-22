@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-22T02:56:24Z",
- "checked_at": "2026-11-22T02:56:24Z",
+ "updated": "2026-11-22T02:59:25Z",
+ "checked_at": "2026-11-22T02:59:25Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -10,15 +10,15 @@
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Дякове → RO: 585 вант. · 6 д 10 год"
+   "note": "Дякове → RO: 585 вант. · 6 д 9 год"
   },
   "chernivtsi": {
    "status": "outage",
-   "note": "Порубне → RO: 997 вант. · 4 д 13 год"
+   "note": "Порубне → RO: 998 вант. · 4 д 13 год"
   },
   "odesa": {
-   "status": "outage",
-   "note": "Орлівка → RO: 745 вант. · 6 д 15 год"
+   "status": "ok",
+   "note": "Виноградівка → MD: 0 вант. · 0 год"
   },
   "vinnytsia": {
    "status": "ok",
@@ -65,7 +65,7 @@
    "oblast": "zakarpattia",
    "name": "Дякове",
    "to": "RO",
-   "hours": 154,
+   "hours": 153,
    "trucks": 585
   },
   {
@@ -76,18 +76,11 @@
    "trucks": 0
   },
   {
-   "oblast": "odesa",
-   "name": "Орлівка",
-   "to": "RO",
-   "hours": 159,
-   "trucks": 745
-  },
-  {
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
    "hours": 109,
-   "trucks": 997
+   "trucks": 998
   },
   {
    "oblast": "chernivtsi",
@@ -149,7 +142,7 @@
    "oblast": "zakarpattia",
    "name": "Ужгород",
    "to": "SK",
-   "hours": 149,
+   "hours": 148,
    "trucks": 758
   },
   {
@@ -158,6 +151,13 @@
    "to": "SK",
    "hours": 0.0,
    "trucks": 0
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Лужанка",
+   "to": "HU",
+   "hours": 1.6,
+   "trucks": 11
   }
  ]
 }
