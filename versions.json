@@ -2,6 +2,12 @@
   "note": "Every screen deploy, newest first: version 1.N (N + 1 per deploy), deploy time (UTC), one-line summary, build code. Read by the admin (History › Versions). Entries 2.42 to 2.51 were added afterwards from the repo deploy commits: their time is the commit time that switched the live page to that build, not a measured go-live time, and 2.46 to 2.51 were numbered at that point.",
   "versions": [
     {
+      "version": "2.62",
+      "at": "2026-11-22T20:30:00Z",
+      "summary": "Readability and attribution: power map pages the latest Ukrenergo post and planned-cuts notice at 12 px (caveat always visible); radiation map shows each site's own reading time, age and oldest sensor, or 'no reading'; admin source checks group failed sources into one plain sentence with details collapsed.",
+      "build": "index-a3e1xomG.js"
+    },
+    {
       "version": "2.61",
       "at": "2026-11-22T19:58:00Z",
       "summary": "Fix: the Radiation map view crashed on load in 2.60 (a stray line); no other change from 2.60.",
