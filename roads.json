@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-22T01:31:23Z",
- "checked_at": "2026-11-22T01:31:23Z",
+ "updated": "2026-11-22T01:35:22Z",
+ "checked_at": "2026-11-22T01:35:22Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -21,8 +21,8 @@
    "note": "Дяківці → RO: 0 вант. · 0 год"
   },
   "odesa": {
-   "status": "ok",
-   "note": "Старокозаче → MD: 31 вант. · 7 год"
+   "status": "outage",
+   "note": "Рені → MD: 240 вант. · 3 д 4 год"
   },
   "vinnytsia": {
    "status": "ok",
@@ -83,15 +83,15 @@
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
-   "hours": 176,
-   "trucks": 1549
+   "hours": 136,
+   "trucks": 950
   },
   {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
-   "hours": 0.0,
-   "trucks": 4
+   "hours": 175,
+   "trucks": 1545
   },
   {
    "oblast": "volyn",
@@ -153,6 +153,13 @@
    "oblast": "odesa",
    "name": "Рені",
    "to": "MD",
+   "hours": 76,
+   "trucks": 240
+  },
+  {
+   "oblast": "odesa",
+   "name": "Рені",
+   "to": "MD",
    "hours": 0.0,
    "trucks": 0
   },
@@ -162,13 +169,6 @@
    "to": "MD",
    "hours": 0.0,
    "trucks": 0
-  },
-  {
-   "oblast": "odesa",
-   "name": "Старокозаче",
-   "to": "MD",
-   "hours": 6.6,
-   "trucks": 31
   },
   {
    "oblast": "odesa",
