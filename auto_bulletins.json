@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-22T19:21:00Z",
+ "generated_at": "2026-11-22T19:46:01Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -41,6 +41,24 @@
  ],
  "bulletins": [
   {
+   "id": "auto-dsns_telegram-81280",
+   "title": "внаслідок російської атаки загинув чоловік, ще одну людину врятували",
+   "body": "У Саливонках, що на Білоцерківщині, внаслідок атаки виникла пожежа у приватному житловому будинку. Під час ліквідації наслідків надзвичайники врятували жінку 1984 року народження. Із травмами середнього ступеня тяжкості її передали медикам. На жаль, чоловік…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/81280",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-22T19:45:23Z",
+   "expires_at": "2026-11-23T07:45:23Z",
+   "auto": true,
+   "en_mt": {
+    "title": "as a result of the Russian attack, a man died, another person was rescued",
+    "body": "In Salivonki, which is in Bilotserkivshchyna, a fire broke out in a private residential house as a result of the attack. During the elimination of the consequences, rescuers saved a woman born in 1984. With injuries of moderate severity, she was handed over to medics. Unfortunately, the man…",
+    "by": "m2m100"
+   }
+  },
+  {
    "id": "auto-dsns_telegram-81271",
    "title": "внаслідок атак рф загинула жінка, ще 9 людей постраждали",
    "body": "Протягом дня ворог понад 40 разів атакував 5 районів області. ▪У Дніпрі пошкоджені житлові будинки та інфраструктура. Загинула жінка. Ще двоє чоловіків отримали поранення, один із них — у тяжкому стані. ▪На Нікопольщині під ударами перебували районний центр…",
@@ -55,24 +73,6 @@
    "en_mt": {
     "title": "as a result of rf attacks a woman died, 9 more people were injured",
     "body": "Throughout the day, the enemy attacked 5 districts of the region more than 40 times. ·In Dnipro, residential buildings and infrastructure were damaged. A woman died. Two more men were injured, one of them in serious condition. ·In Nikopol, the district center was under attack…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-81259",
-   "title": "UPD: внаслідок російського удару по п’ятиповерхівці на Київщині загинули 2 людини, серед них 18-річний юнак…",
-   "body": "Наразі рятувальники розшукують 11 людей, зокрема 2 дітей, які не виходять на зв’язок. На місці російського…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/81259",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-22T16:07:01Z",
-   "expires_at": "2026-11-23T04:07:01Z",
-   "auto": true,
-   "en_mt": {
-    "title": "UPD: as a result of the Russian strike on a five-story building in Kyiv region 2 people were killed, including an 18-year-old young man…",
-    "body": "Currently rescuers are searching for 11 people, including 2 children, who are not in contact. At the site of the Russian…",
     "by": "m2m100"
    }
   },
