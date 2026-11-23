@@ -1,9 +1,10 @@
 {
- "updated": "2026-11-23T20:38:28Z",
+ "updated": "2026-11-23T20:39:55Z",
  "source": "siren.pp.ua (UkraineAlarm)",
  "types": {
   "AIR": {
    "regions": [
+    "chernihiv",
     "crimea",
     "dnipro",
     "donetsk",
@@ -11,7 +12,6 @@
     "luhansk",
     "mykolaiv",
     "poltava",
-    "sumy",
     "zaporizhzhia"
    ],
    "areas": 25
@@ -58,13 +58,16 @@
      },
      "poltava": {
       "AIR": 1
+     },
+     "chernihiv": {
+      "AIR": 1
      }
     },
     "partial": true,
     "first_at": "2026-11-23T19:39:03Z",
     "gap_count": 0,
-    "samples": 53,
-    "last_at": "2026-11-23T20:38:28Z",
+    "samples": 54,
+    "last_at": "2026-11-23T20:39:55Z",
     "covered_oblasts": [
      "cherkasy",
      "chernihiv",
@@ -95,8 +98,9 @@
     ]
    }
   },
-  "last_at": "2026-11-23T20:38:28Z",
+  "last_at": "2026-11-23T20:39:55Z",
   "active": [
+   "chernihiv:AIR",
    "crimea:AIR",
    "dnipro:AIR",
    "dnipro:ARTILLERY",
@@ -107,7 +111,6 @@
    "luhansk:AIR",
    "mykolaiv:AIR",
    "poltava:AIR",
-   "sumy:AIR",
    "zaporizhzhia:AIR"
   ],
   "coverage_from": "2026-11-23T19:39:03Z",
