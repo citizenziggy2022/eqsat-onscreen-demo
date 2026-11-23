@@ -1,18 +1,18 @@
 {
- "fetched_at": "2026-11-23T12:45:18Z",
- "updated_at": "2026-11-23T12:30:00Z",
+ "fetched_at": "2026-11-23T12:52:04Z",
+ "updated_at": "2026-11-23T12:40:00Z",
  "source": "IODA (Internet Outage Detection and Analysis), Georgia Tech, https://ioda.inetintel.cc.gatech.edu",
  "note": "Internet signal per oblast. score 0-100 vs the region's own 7-day median (BGP 40%, ping /24 60%); level critical while IODA's outage alert for the region is critical. The cause is unknown (power, damage or shutdown look the same).",
  "critical": [
-  "cherkasy",
-  "ternopil"
+  "ternopil",
+  "zaporizhzhia"
  ],
  "regions": {
   "crimea": {
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 1.0129,
+     "ratio": 1.0113,
      "score": 100
     },
     "bgp": {
@@ -23,11 +23,11 @@
    "level": "normal"
   },
   "mykolaiv": {
-   "score": 97,
+   "score": 94,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9474,
-     "score": 95
+     "ratio": 0.9195,
+     "score": 89
     },
     "bgp": {
      "ratio": 1.0147,
@@ -40,7 +40,7 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9814,
+     "ratio": 0.9888,
      "score": 100
     },
     "bgp": {
@@ -54,7 +54,7 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9911,
+     "ratio": 0.9854,
      "score": 100
     },
     "bgp": {
@@ -68,7 +68,7 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9911,
+     "ratio": 0.9861,
      "score": 100
     },
     "bgp": {
@@ -79,11 +79,11 @@
    "level": "normal"
   },
   "ivano": {
-   "score": 85,
+   "score": 84,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.8523,
-     "score": 75
+     "ratio": 0.8432,
+     "score": 73
     },
     "bgp": {
      "ratio": 1.0012,
@@ -93,11 +93,11 @@
    "level": "normal"
   },
   "khmelnytskyi": {
-   "score": 90,
+   "score": 89,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.8894,
-     "score": 83
+     "ratio": 0.8849,
+     "score": 82
     },
     "bgp": {
      "ratio": 1.0352,
@@ -110,7 +110,7 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9914,
+     "ratio": 0.9909,
      "score": 100
     },
     "bgp": {
@@ -121,14 +121,14 @@
    "level": "normal"
   },
   "ternopil": {
-   "score": 84,
+   "score": 85,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.8428,
-     "score": 73
+     "ratio": 0.849,
+     "score": 74
     },
     "bgp": {
-     "ratio": 1.0053,
+     "ratio": 1.0047,
      "score": 100
     }
    },
@@ -150,7 +150,7 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 1.011,
+     "ratio": 1.0195,
      "score": 100
     },
     "bgp": {
@@ -164,7 +164,7 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 1.0236,
+     "ratio": 1.0064,
      "score": 100
     },
     "bgp": {
@@ -175,27 +175,23 @@
    "level": "normal"
   },
   "cherkasy": {
-   "score": 77,
+   "score": 78,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.7924,
-     "score": 62
+     "ratio": 0.7955,
+     "score": 63
     },
     "bgp": {
      "ratio": 1.009,
      "score": 100
     }
    },
-   "level": "critical",
-   "since": 1795435800,
-   "critical_sources": [
-    "ping-slash24"
-   ],
+   "level": "normal",
    "alerts": {
     "ping-slash24": {
-     "level": "critical",
-     "time": 1795435800,
-     "value": 434,
+     "level": "normal",
+     "time": 1795437600,
+     "value": 439,
      "history": 543
     }
    }
@@ -204,7 +200,7 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9814,
+     "ratio": 0.9797,
      "score": 100
     },
     "bgp": {
@@ -215,11 +211,11 @@
    "level": "normal"
   },
   "kyivobl": {
-   "score": 96,
+   "score": 97,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9412,
-     "score": 94
+     "ratio": 0.9463,
+     "score": 95
     },
     "bgp": {
      "ratio": 1.0048,
@@ -232,8 +228,8 @@
    "score": 92,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9044,
-     "score": 86
+     "ratio": 0.9095,
+     "score": 87
     },
     "bgp": {
      "ratio": 1.004,
@@ -260,8 +256,8 @@
    "score": 94,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9248,
-     "score": 90
+     "ratio": 0.9197,
+     "score": 89
     },
     "bgp": {
      "ratio": 1.002,
@@ -282,8 +278,8 @@
    "score": 96,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9417,
-     "score": 94
+     "ratio": 0.9383,
+     "score": 93
     },
     "bgp": {
      "ratio": 1.006,
@@ -293,11 +289,11 @@
    "level": "normal"
   },
   "sumy": {
-   "score": 96,
+   "score": 97,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.938,
-     "score": 93
+     "ratio": 0.9472,
+     "score": 95
     },
     "bgp": {
      "ratio": 1.0052,
@@ -307,11 +303,11 @@
    "level": "normal"
   },
   "dnipro": {
-   "score": 100,
+   "score": 99,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9666,
-     "score": 99
+     "ratio": 0.9609,
+     "score": 98
     },
     "bgp": {
      "ratio": 0.994,
@@ -324,11 +320,11 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 1.0068,
+     "ratio": 1.0056,
      "score": 100
     },
     "bgp": {
-     "ratio": 0.9996,
+     "ratio": 0.9973,
      "score": 100
     }
    },
@@ -346,7 +342,7 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9975,
+     "ratio": 0.9945,
      "score": 100
     },
     "bgp": {
@@ -360,7 +356,7 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 1.0603,
+     "ratio": 1.0468,
      "score": 100
     },
     "bgp": {
@@ -382,8 +378,8 @@
    "score": 96,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9407,
-     "score": 94
+     "ratio": 0.9357,
+     "score": 93
     },
     "bgp": {
      "ratio": 1.0027,
@@ -396,20 +392,24 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 1.0037,
+     "ratio": 1.009,
      "score": 100
     },
     "bgp": {
-     "ratio": 0.9932,
+     "ratio": 0.9924,
      "score": 100
     }
    },
-   "level": "normal",
+   "level": "critical",
+   "since": 1795435200,
+   "critical_sources": [
+    "bgp"
+   ],
    "alerts": {
     "bgp": {
-     "level": "normal",
-     "time": 1795409100,
-     "value": 1576,
+     "level": "critical",
+     "time": 1795435200,
+     "value": 1563,
      "history": 1580
     }
    }
@@ -418,11 +418,11 @@
    "score": 96,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9376,
+     "ratio": 0.9377,
      "score": 93
     },
     "bgp": {
-     "ratio": 1.0147,
+     "ratio": 1.0148,
      "score": 100
     }
    },
@@ -432,7 +432,7 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.988,
+     "ratio": 0.9915,
      "score": 100
     },
     "bgp": {
@@ -446,7 +446,7 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 1.0019,
+     "ratio": 1.0073,
      "score": 100
     },
     "bgp": {
