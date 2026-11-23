@@ -34,13 +34,44 @@ NATIONAL = {
 NATIONAL_LINE_LABEL = {"112": r"all services|усі служби", "101": r"rescue|fire|рятувальн|пожеж", "102": r"police|поліці", "103": r"ambulance|швидка", "104": r"gas|газов"}
 HFCC_ZIP = "http://www.hfcc.org/data/b26/b26allx2.zip"
 
+# Sources are verifier configuration, never edits to the broadcast card numbers.
+# Every rule is scoped to the card and its own displayed service label.
+CONTACT_RULES = {
+    ("HOTLINES", "1548"): ("https://1548.gov.ua/about/", r"криз|евакуац|crisis", r"Адреса Гарячої лінії", r"Телефони"),
+    ("HOW TO LEAVE OCCUPIED AREAS", "1548"): ("https://1548.gov.ua/about/", r"дзвоніть|call", r"Адреса Гарячої лінії", r"Телефони"),
+    ("FROM OCCUPIED AREAS OR ABROAD", "+380 96 078 84 33"): ("https://1548.gov.ua/about/", r"1548", r"Адреса Гарячої лінії", r"WhatsApp,?\s*Telegram,?\s*Viber"),
+    ("HOTLINES", "1678"): ("https://ombudsman.gov.ua/", r"Омбудсман|Ombudsman", r"Уповноважений Верховної Ради України з прав людини", r"Гаряча лінія"),
+    ("FROM OCCUPIED AREAS OR ABROAD", "+380 44 299 74 08"): ("https://ombudsman.gov.ua/", r"Омбудсман|Ombudsman", r"Уповноважений Верховної Ради України з прав людини", r"Для дзвінків з-за кордону"),
+    ("HOTLINES", "0 800 332 656"): ("https://redcross.org.ua/contacts/", r"Червоний Хрест|Red Cross", r"Товариство Червоного Хреста України", r"Телефон"),
+}
+
+
+def contact_rule(card_id, line):
+    rule = CONTACT_RULES.get((card_id, str(line.get("number") or "").strip()))
+    if not rule:
+        return None
+    url, own_label, identity, source_label = rule
+    if not re.search(own_label, f"{line.get('en', '')} {line.get('uk', '')}", re.I):
+        return None
+    return url, identity, source_label
+
+
+def contact_bound(text, number, label_re):
+    # Permit phone formatting only between digits. Never flatten a whole page,
+    # cross another number or list boundary, or accept a substring of a number.
+    digits = re.sub(r"\D", "", number)
+    phone = r"[\s().+\-]*".join(map(re.escape, digits))
+    match = re.search(rf"(?:{label_re})[^;\d]{{0,80}}?(?<!\d){phone}(?![\s().+\-]*\d)", text, re.I)
+    return match.group(0)[:180] if match else None
+
 
 def now():
     return dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
 def visible_text(raw):
-    t = re.sub(r"(?is)<(script|style)[^>]*>.*?</\1>", " ", raw or "")
+    t = re.sub(r"(?s)<!--.*?-->", " ", raw or "")
+    t = re.sub(r"(?is)<(script|style)[^>]*>.*?</\1>", " ", t)
     t = html.unescape(re.sub(r"<[^>]+>", " ", t))
     return re.sub(r"\s+", " ", t)
 
@@ -119,6 +150,19 @@ def check_line(card_id, line):
         if got:
             return "confirmed", url, got, None
         return "unverified", url, "source loads but does not show this number beside its service label", None
+    rule = contact_rule(card_id, line)
+    if rule:
+        url, identity, source_label = rule
+        body, why = fetch(url)
+        if body is None:
+            return "failed", url, f"source page did not load ({why})", None
+        text = visible_text(body.decode("utf-8", "ignore"))
+        if not re.search(identity, text, re.I):
+            return "unverified", url, "source loads but its expected service identity is missing", None
+        got = contact_bound(text, num, source_label)
+        if got:
+            return "confirmed", url, got, None
+        return "unverified", url, "source loads but does not show this number beside its contact label; review required, not evidence of a changed number", None
     url = line.get("source_url")
     if url and digits:
         body, why = fetch(url)
