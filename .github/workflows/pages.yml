@@ -21,6 +21,22 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+      - name: canonical power and border feeds
+        run: |
+          python3 - <<'PYDATA'
+          import json, pathlib, datetime
+          def load(path):
+              try: return json.loads(path.read_text())
+              except Exception: return {}
+          def stamp(data):
+              try: return datetime.datetime.fromisoformat(data.get("updated","").replace("Z","+00:00")).timestamp()
+              except Exception: return 0
+          for legacy, canonical, kind in [("water.json","power-cuts.json","power"),("roads.json","border-queues.json","border")]:
+              source=pathlib.Path(legacy); target=pathlib.Path(canonical)
+              old=load(source); new=load(target)
+              if old.get("kind")==kind and (new.get("kind")!=kind or stamp(old)>stamp(new) or (stamp(old)==stamp(new) and old!=new)):
+                  target.write_bytes(source.read_bytes())
+          PYDATA
       - name: site files only
         run: rm -rf .git .github scripts
       # regenerate the screen's self-update marker from the bundle this artifact actually serves, so a bundle deploy
