@@ -73,6 +73,9 @@ def load(path, default):
 
 
 def write(path, data):
+    canonical={"water.json":("power-cuts.json","power"),"roads.json":("border-queues.json","border")}.get(path)
+    if canonical and data.get("kind")==canonical[1]:
+        write(canonical[0],data)
     tmp = path + ".tmp"
     with open(tmp, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=1)
@@ -228,6 +231,11 @@ def border_queues():
 
 
 def main():
+    for legacy, canonical, kind in [("water.json","power-cuts.json","power"),("roads.json","border-queues.json","border")]:
+        current=load(legacy,{})
+        if current.get("kind")==kind and load(canonical,{})!=current:
+            write(canonical,current)
+
     force = "--force" in sys.argv
     st = load(STATE, {})
     now = time.time()
