@@ -2,6 +2,12 @@
   "note": "Every screen deploy, newest first: version 1.N (N + 1 per deploy), deploy time (UTC), one-line summary, build code. Read by the admin (History › Versions). Entries 2.42 to 2.51 were added afterwards from the repo deploy commits: their time is the commit time that switched the live page to that build, not a measured go-live time, and 2.46 to 2.51 were numbered at that point.",
   "versions": [
     {
+      "version": "2.72",
+      "at": "2026-11-23T15:02:33.425211+00:00",
+      "summary": "Ukraine news: slow continuous upward crawl, no pauses, all eligible headlines newest to oldest then loop. New arrivals join the next full round so older items are not starved.",
+      "build": "index-news272.js"
+    },
+    {
       "version": "2.71",
       "at": "2026-11-23T13:22:18.550865+00:00",
       "summary": "Ukraine news scrolls upward with reading pauses, full supplied headlines, row-aligned looping and anchored updates. Other panels and settings unchanged.",
