@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-23T21:56:12Z",
- "checked_at": "2026-11-23T21:56:12Z",
+ "updated": "2026-11-23T21:59:20Z",
+ "checked_at": "2026-11-23T21:59:20Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -20,9 +20,13 @@
    "status": "outage",
    "note": "Орлівка → RO: 719 вант. · 6 д 8 год"
   },
+  "vinnytsia": {
+   "status": "ok",
+   "note": "Могилів-Подільський → MD: 12 вант. · 0 год"
+  },
   "zakarpattia": {
    "status": "outage",
-   "note": "Ужгород → SK: 747 вант. · 6 д 3 год"
+   "note": "Ужгород → SK: 747 вант. · 6 д 2 год"
   }
  },
  "queue": [
@@ -31,14 +35,14 @@
    "name": "Краківець",
    "to": "PL",
    "hours": 91,
-   "trucks": 808
+   "trucks": 809
   },
   {
    "oblast": "lviv",
    "name": "Краківець",
    "to": "PL",
    "hours": 0.0,
-   "trucks": 2
+   "trucks": 1
   },
   {
    "oblast": "lviv",
@@ -101,7 +105,7 @@
    "name": "Ягодин",
    "to": "PL",
    "hours": 189,
-   "trucks": 1662
+   "trucks": 1663
   },
   {
    "oblast": "volyn",
@@ -153,6 +157,13 @@
    "trucks": 0
   },
   {
+   "oblast": "vinnytsia",
+   "name": "Могилів-Подільський",
+   "to": "MD",
+   "hours": 0.0,
+   "trucks": 12
+  },
+  {
    "oblast": "odesa",
    "name": "Рені",
    "to": "MD",
@@ -177,7 +188,7 @@
    "oblast": "odesa",
    "name": "Старокозаче",
    "to": "MD",
-   "hours": 6.6,
+   "hours": 6.9,
    "trucks": 34
   },
   {
@@ -198,7 +209,7 @@
    "oblast": "zakarpattia",
    "name": "Ужгород",
    "to": "SK",
-   "hours": 147,
+   "hours": 146,
    "trucks": 747
   },
   {
