@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-23T22:23:44Z",
- "checked_at": "2026-11-23T22:23:44Z",
+ "updated": "2026-11-23T22:26:59Z",
+ "checked_at": "2026-11-23T22:26:59Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -23,6 +23,10 @@
   "odesa": {
    "status": "outage",
    "note": "Орлівка → RO: 722 вант. · 6 д 9 год"
+  },
+  "vinnytsia": {
+   "status": "ok",
+   "note": "Могилів-Подільський → MD: 10 вант. · 0 год"
   }
  },
  "queue": [
@@ -30,8 +34,8 @@
    "oblast": "lviv",
    "name": "Грушів",
    "to": "PL",
-   "hours": 5,
-   "trucks": 25
+   "hours": 4.8,
+   "trucks": 23
   },
   {
    "oblast": "lviv",
@@ -87,7 +91,7 @@
    "name": "Устилуг",
    "to": "PL",
    "hours": 151,
-   "trucks": 620
+   "trucks": 621
   },
   {
    "oblast": "lviv",
@@ -167,11 +171,18 @@
    "trucks": 0
   },
   {
+   "oblast": "vinnytsia",
+   "name": "Могилів-Подільський",
+   "to": "MD",
+   "hours": 0.3,
+   "trucks": 10
+  },
+  {
    "oblast": "odesa",
    "name": "Рені",
    "to": "MD",
    "hours": 55,
-   "trucks": 180
+   "trucks": 178
   },
   {
    "oblast": "odesa",
