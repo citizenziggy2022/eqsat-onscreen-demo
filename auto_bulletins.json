@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-23T13:33:22Z",
+ "generated_at": "2026-11-23T13:37:39Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-dsns_telegram-81360",
+   "title": "Три людини поранені, ще одна – травмована внаслідок російської атаки по Запоріжжю!",
+   "body": "Ворог завдав удару по нежитловій чотириповерховій будівлі, виникла пожежа на третьому поверсі. Рятувальники ліквідували займання на площі 100 кв.м. Під час аварійно-рятувальних робіт надзвичайники врятували двох людей із верхніх поверхів. На місці триває…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/81360",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-23T13:36:30Z",
+   "expires_at": "2026-11-24T01:36:30Z",
+   "auto": true,
+   "en_mt": {
+    "title": "Three people were injured, another one was traumatized as a result of the Russian attack on Zaporizhzhia!",
+    "body": "The enemy struck a non-residential four-story building, a fire broke out on the third floor. Rescuers extinguished the fire on an area of 100 sq.m. During emergency rescue work, rescuers saved two people from the upper floors. The work at the site continues…",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-dsns_telegram-81349",
    "title": "На відео гора Піп Іван 23 листопада.",
@@ -91,24 +109,6 @@
    "en_mt": {
     "title": "STATE OF THE ENERGY SYSTEM",
     "body": "All night long, restoration work continued in Odeschyna and Dnipropetrovshchyna, where the energy infrastructure was significantly damaged as a result of Russian attacks. In Odesa, the power supply to critical infrastructure has been restored. In Dnipropetrovshchyna, the situation remains…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-81339",
-   "title": "‼ російські війська атакували безпілотниками місто Лозова, постраждали 7 людей",
-   "body": "Одне з влучань ударного БпЛА сталося у дворі біля 9-поверхового житлового будинку в центрі міста. Унаслідок удару загорілися автомобілі та квартира на 6-му поверсі. За іншою адресою сталася пожежа на території приватного сектору. Пошкоджені житлові будинки.…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/81339",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-23T09:59:17Z",
-   "expires_at": "2026-11-23T21:59:17Z",
-   "auto": true,
-   "en_mt": {
-    "title": "‼ Russian troops attacked the city of Lozova with drones, 7 people were injured",
-    "body": "One of the strikes by the strike UAV occurred in the yard near a 9-story residential building in the city center. As a result of the strike, cars and an apartment on the 6th floor caught fire. At another address, a fire broke out on the territory of a private sector. Residential buildings were damaged….",
     "by": "m2m100"
    }
   },
