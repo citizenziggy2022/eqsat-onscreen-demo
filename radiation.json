@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-23T03:10:51Z",
+ "fetched_at": "2026-11-23T03:15:57Z",
  "source": {
   "id": "safecast",
   "name": "Safecast (backup)",
@@ -7,7 +7,7 @@
   "credit_uk": "Safecast (резервне джерело) · CC0",
   "url": "https://safecast.org",
   "short_url": "safecast.org",
-  "why": "ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='www.saveecobot.com', port=443): Read timed out. (read timeout=50)\"))"
+  "why": "HTTPError('502 Server Error: Bad Gateway for url: https://www.saveecobot.com/api/v1/radiation-ukraine/sensors-last-data')"
  },
  "unit": "nSv/h",
  "normal_nsv_h": [
@@ -234,9 +234,9 @@
    "en": "Varash",
    "sub_uk": "Рівненська АЕС",
    "sub_en": "Rivne NPP",
-   "nsv_h": 95,
-   "time": "2026-11-23T02:15:03Z",
-   "oldest": "2026-11-23T02:15:03Z",
+   "nsv_h": 101,
+   "time": "2026-11-23T03:15:03Z",
+   "oldest": "2026-11-23T03:15:03Z",
    "n": 1,
    "platforms": [
     "Safecast"
@@ -246,8 +246,8 @@
     {
      "device": "note:dev:867648049105958",
      "station": "Varash",
-     "nsv_h": 94.6,
-     "time": "2026-11-23T02:15:03Z",
+     "nsv_h": 101.1,
+     "time": "2026-11-23T03:15:03Z",
      "fresh": true,
      "manual": false,
      "platform": "Safecast",
