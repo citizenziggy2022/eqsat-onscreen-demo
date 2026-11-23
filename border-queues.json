@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-23T23:20:12Z",
- "checked_at": "2026-11-23T23:20:12Z",
+ "updated": "2026-11-23T23:23:31Z",
+ "checked_at": "2026-11-23T23:23:31Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -14,7 +14,7 @@
   },
   "chernivtsi": {
    "status": "outage",
-   "note": "Порубне → RO: 831 вант. · 3 д 21 год"
+   "note": "Порубне → RO: 830 вант. · 3 д 21 год"
   },
   "odesa": {
    "status": "ok",
@@ -22,7 +22,7 @@
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Лужанка → HU: 309 вант. · 3 д 9 год"
+   "note": "Лужанка → HU: 308 вант. · 3 д 9 год"
   }
  },
  "queue": [
@@ -52,7 +52,7 @@
    "name": "Смільниця",
    "to": "PL",
    "hours": 11.5,
-   "trucks": 48
+   "trucks": 47
   },
   {
    "oblast": "lviv",
@@ -101,7 +101,7 @@
    "name": "Ягодин",
    "to": "PL",
    "hours": 101,
-   "trucks": 708
+   "trucks": 704
   },
   {
    "oblast": "volyn",
@@ -122,7 +122,7 @@
    "name": "Порубне",
    "to": "RO",
    "hours": 93,
-   "trucks": 831
+   "trucks": 830
   },
   {
    "oblast": "chernivtsi",
@@ -156,8 +156,8 @@
    "oblast": "chernivtsi",
    "name": "Мамалига",
    "to": "MD",
-   "hours": 6.2,
-   "trucks": 47
+   "hours": 5.7,
+   "trucks": 44
   },
   {
    "oblast": "odesa",
@@ -205,8 +205,15 @@
    "oblast": "zakarpattia",
    "name": "Лужанка",
    "to": "HU",
+   "hours": 5.6,
+   "trucks": 27
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Лужанка",
+   "to": "HU",
    "hours": 81,
-   "trucks": 309
+   "trucks": 308
   }
  ]
 }
