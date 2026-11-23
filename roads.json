@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-23T17:51:31Z",
- "checked_at": "2026-11-23T17:51:31Z",
+ "updated": "2026-11-23T17:54:38Z",
+ "checked_at": "2026-11-23T17:54:38Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Рава-Руська → PL: 600 вант. · 8 д 14 год"
+   "note": "Рава-Руська → PL: 602 вант. · 8 д 15 год"
   },
   "volyn": {
    "status": "outage",
@@ -22,7 +22,7 @@
   },
   "zakarpattia": {
    "status": "ok",
-   "note": "Малий Березний → SK: 0 вант. · 0 год"
+   "note": "Лужанка → HU: 32 вант. · 7 год"
   }
  },
  "queue": [
@@ -37,15 +37,15 @@
    "oblast": "lviv",
    "name": "Рава-Руська",
    "to": "PL",
-   "hours": 206,
-   "trucks": 600
+   "hours": 207,
+   "trucks": 602
   },
   {
    "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
    "hours": 54,
-   "trucks": 256
+   "trucks": 257
   },
   {
    "oblast": "lviv",
@@ -58,8 +58,8 @@
    "oblast": "volyn",
    "name": "Устилуг",
    "to": "PL",
-   "hours": 55,
-   "trucks": 173
+   "hours": 54,
+   "trucks": 172
   },
   {
    "oblast": "volyn",
@@ -128,14 +128,14 @@
    "oblast": "odesa",
    "name": "Старокозаче",
    "to": "MD",
-   "hours": 6,
-   "trucks": 30
+   "hours": 5.7,
+   "trucks": 29
   },
   {
    "oblast": "odesa",
    "name": "Табаки",
    "to": "MD",
-   "hours": 0.3,
+   "hours": 0.0,
    "trucks": 2
   },
   {
@@ -144,6 +144,13 @@
    "to": "SK",
    "hours": 0.0,
    "trucks": 0
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Лужанка",
+   "to": "HU",
+   "hours": 6.9,
+   "trucks": 32
   }
  ]
 }
