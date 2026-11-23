@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-23T14:36:07Z",
+ "generated_at": "2026-11-23T14:45:05Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -24,7 +24,7 @@
    "name": "Донецька ОВА",
    "url": "https://t.me/s/VadymFilashkin",
    "verified": "channel of the OVA head (dn.gov.ua/persons/vadim-filashkin), links to dn.gov.ua",
-   "status": "ok: kept 1 / dropped 3, showing 1"
+   "status": "ok: kept 2 / dropped 3, showing 2"
   },
   {
    "name": "Луганська ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-VadymFilashkin-19531",
+   "title": "До повномасштабного вторгнення в Удачненській громаді проживали близько 3500 людей.",
+   "body": "Через війну більшість із них була змушена залишити свої домівки. Чимало мешканців переїхали до Кам’янського на Дніпровщині. Тут зараз працюють гуманітарний хаб і фахівці військової адміністрації громади. Переселенці можуть отримати гуманітарну допомогу…",
+   "source": "Донецька ОВА",
+   "source_url": "https://t.me/VadymFilashkin/19531",
+   "region": "Донеччина",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-23T14:44:24Z",
+   "expires_at": "2026-11-24T02:44:24Z",
+   "auto": true,
+   "en_mt": {
+    "title": "Before the full-scale invasion, about 3500 people lived in the Udachna community.",
+    "body": "Through the war, most of them were forced to leave their homes. Many residents moved to Kamianske in Dnipropetrovsk region. A humanitarian hub and specialists of the military administration of the community are currently working here. IDPs can receive humanitarian aid…",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-dsns_telegram-81369",
    "title": "Минулий тиждень знову був для українських рятувальників тижнем боротьби за людські життя після російських…",
