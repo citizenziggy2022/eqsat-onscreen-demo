@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-23T22:30:36Z",
- "checked_at": "2026-11-23T22:30:36Z",
+ "updated": "2026-11-23T22:33:50Z",
+ "checked_at": "2026-11-23T22:33:50Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -10,11 +10,11 @@
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 779 вант. · 8 д 13 год"
+   "note": "Ягодин → PL: 777 вант. · 8 д 13 год"
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Дякове → RO: 491 вант. · 5 д 8 год"
+   "note": "Чоп (Тиса) → HU: 1427 вант. · 5 д 20 год"
   },
   "chernivtsi": {
    "status": "ok",
@@ -26,13 +26,6 @@
   }
  },
  "queue": [
-  {
-   "oblast": "lviv",
-   "name": "Грушів",
-   "to": "PL",
-   "hours": 4.2,
-   "trucks": 22
-  },
   {
    "oblast": "lviv",
    "name": "Краківець",
@@ -66,7 +59,7 @@
    "name": "Угринів",
    "to": "PL",
    "hours": 53,
-   "trucks": 250
+   "trucks": 249
   },
   {
    "oblast": "lviv",
@@ -108,7 +101,7 @@
    "name": "Ягодин",
    "to": "PL",
    "hours": 189,
-   "trucks": 1664
+   "trucks": 1663
   },
   {
    "oblast": "volyn",
@@ -122,7 +115,7 @@
    "name": "Ягодин",
    "to": "PL",
    "hours": 205,
-   "trucks": 779
+   "trucks": 777
   },
   {
    "oblast": "zakarpattia",
@@ -214,6 +207,13 @@
    "to": "SK",
    "hours": 0.0,
    "trucks": 0
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Чоп (Тиса)",
+   "to": "HU",
+   "hours": 140,
+   "trucks": 1427
   }
  ]
 }
