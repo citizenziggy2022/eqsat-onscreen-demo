@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-23T18:59:15Z",
+ "generated_at": "2026-11-23T19:14:58Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -41,6 +41,24 @@
  ],
  "bulletins": [
   {
+   "id": "auto-dsns_telegram-81399",
+   "title": "сьогодні ввечері росіяни завдали удару по автостоянці в Ковельському районі!",
+   "body": "Загорілися три вантажні причепи, рятувальники оперативно ліквідували пожежу. На щастя, обійшлося без постраждалих. Сайт •Fb •X •IG •YT •TT",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/81399",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-23T19:13:22Z",
+   "expires_at": "2026-11-24T07:13:22Z",
+   "auto": true,
+   "en_mt": {
+    "title": "today this evening Russians struck a car park in Kovel district!",
+    "body": "Three cargo trailers caught fire, rescuers quickly extinguished the fire. Fortunately, there were no casualties. Site •Fb •X •IG •YT •TT",
+    "by": "m2m100"
+   }
+  },
+  {
    "id": "auto-dsns_telegram-81390",
    "title": "Ввечері, 23 листопада, росіяни атакували Запоріжжя: внаслідок авіаударів, попередньо, травмовані 6 людей.",
    "body": "Їм надається уся необхідна медична допомога. Одна з авіабомб влучила поруч з дев’ятиповерхівкою. Внаслідок обстрілу пошкоджені більш ніж 30 автомобілів на території гаражного кооперативу. За іншою адресою удар прийшовся по садовому товариству - спалахнула…",
@@ -55,24 +73,6 @@
    "en_mt": {
     "title": "In the evening, 23 November, Russians attacked Zaporizhzhia: as a result of the air strikes, preliminary, 6 people were injured.",
     "body": "They are provided with all necessary medical assistance. One of the aerial bombs hit near a nine-story building. As a result of the shelling, more than 30 cars were damaged on the territory of the garage cooperative. At another address, the strike hit a gardening association - a fire broke out…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-81384",
-   "title": "Понад 40 разів російські війська атакували шість районів Дніпропетровської області!",
-   "body": "Двоє людей загинули, ще троє постраждали! ◾На Нікопольщині під ударом опинилися багатоповерхові та приватні будинки, складське приміщення, інфраструктура та автомобілі. Загинуло двоє людей, ще двоє постраждали. ◾У Софіївській громаді Криворізького району…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/81384",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-23T17:32:20Z",
-   "expires_at": "2026-11-24T05:32:20Z",
-   "auto": true,
-   "en_mt": {
-    "title": "More than 40 times Russian troops attacked six districts of Dnipropetrovsk region!",
-    "body": "Two people were killed, three more were injured! ◾In Nikopol, high-rise and private houses, a warehouse, infrastructure and cars were under attack. Two people were killed, two more were injured. ◾In the Sofiyivka community of the Kryvyi Rih district…",
     "by": "m2m100"
    }
   },
