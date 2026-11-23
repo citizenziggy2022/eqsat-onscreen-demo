@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-23T02:16:47Z",
- "checked_at": "2026-11-23T02:16:47Z",
+ "updated": "2026-11-23T02:20:01Z",
+ "checked_at": "2026-11-23T02:20:01Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Краківець → PL: 676 вант. · 7 д 20 год"
+   "note": "Краківець → PL: 675 вант. · 7 д 20 год"
   },
   "zakarpattia": {
    "status": "outage",
@@ -18,7 +18,7 @@
   },
   "odesa": {
    "status": "outage",
-   "note": "Орлівка → RO: 694 вант. · 6 д 4 год"
+   "note": "Орлівка → RO: 693 вант. · 6 д 3 год"
   },
   "vinnytsia": {
    "status": "ok",
@@ -38,14 +38,21 @@
    "name": "Краківець",
    "to": "PL",
    "hours": 188,
-   "trucks": 676
+   "trucks": 675
+  },
+  {
+   "oblast": "lviv",
+   "name": "Смільниця",
+   "to": "PL",
+   "hours": 0.0,
+   "trucks": 6
   },
   {
    "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
    "hours": 60,
-   "trucks": 286
+   "trucks": 285
   },
   {
    "oblast": "lviv",
@@ -59,7 +66,7 @@
    "name": "Шегині",
    "to": "PL",
    "hours": 130,
-   "trucks": 463
+   "trucks": 462
   },
   {
    "oblast": "lviv",
@@ -93,8 +100,8 @@
    "oblast": "odesa",
    "name": "Орлівка",
    "to": "RO",
-   "hours": 148,
-   "trucks": 694
+   "hours": 147,
+   "trucks": 693
   },
   {
    "oblast": "chernivtsi",
@@ -123,13 +130,6 @@
    "to": "MD",
    "hours": 0.0,
    "trucks": 0
-  },
-  {
-   "oblast": "chernivtsi",
-   "name": "Мамалига",
-   "to": "MD",
-   "hours": 0.0,
-   "trucks": 3
   },
   {
    "oblast": "vinnytsia",
@@ -186,13 +186,6 @@
    "to": "SK",
    "hours": 0.0,
    "trucks": 0
-  },
-  {
-   "oblast": "zakarpattia",
-   "name": "Чоп (Тиса)",
-   "to": "HU",
-   "hours": 137,
-   "trucks": 1389
   }
  ]
 }
