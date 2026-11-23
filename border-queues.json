@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-23T21:25:55Z",
- "checked_at": "2026-11-23T21:25:55Z",
+ "updated": "2026-11-23T21:29:08Z",
+ "checked_at": "2026-11-23T21:29:08Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -10,7 +10,7 @@
   },
   "volyn": {
    "status": "outage",
-   "note": "Устилуг → PL: 623 вант. · 6 д 9 год"
+   "note": "Ягодин → PL: 1666 вант. · 7 д 22 год"
   },
   "chernivtsi": {
    "status": "ok",
@@ -18,11 +18,11 @@
   },
   "odesa": {
    "status": "outage",
-   "note": "Орлівка → RO: 720 вант. · 6 д 8 год"
+   "note": "Орлівка → RO: 718 вант. · 6 д 8 год"
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Чоп (Тиса) → HU: 1429 вант. · 5 д 21 год"
+   "note": "Чоп (Тиса) → HU: 1426 вант. · 5 д 20 год"
   }
  },
  "queue": [
@@ -31,7 +31,7 @@
    "name": "Краківець",
    "to": "PL",
    "hours": 93,
-   "trucks": 826
+   "trucks": 825
   },
   {
    "oblast": "lviv",
@@ -65,29 +65,36 @@
    "oblast": "volyn",
    "name": "Устилуг",
    "to": "PL",
-   "hours": 53,
-   "trucks": 165
+   "hours": 50,
+   "trucks": 160
   },
   {
    "oblast": "volyn",
    "name": "Устилуг",
    "to": "PL",
    "hours": 153,
-   "trucks": 623
+   "trucks": 624
   },
   {
    "oblast": "lviv",
    "name": "Шегині",
    "to": "PL",
    "hours": 149,
-   "trucks": 531
+   "trucks": 530
   },
   {
    "oblast": "lviv",
    "name": "Шегині",
    "to": "PL",
    "hours": 140,
-   "trucks": 610
+   "trucks": 608
+  },
+  {
+   "oblast": "volyn",
+   "name": "Ягодин",
+   "to": "PL",
+   "hours": 190,
+   "trucks": 1666
   },
   {
    "oblast": "volyn",
@@ -108,7 +115,7 @@
    "name": "Орлівка",
    "to": "RO",
    "hours": 152,
-   "trucks": 720
+   "trucks": 718
   },
   {
    "oblast": "chernivtsi",
@@ -171,14 +178,14 @@
    "name": "Ужгород",
    "to": "SK",
    "hours": 0.0,
-   "trucks": 1
+   "trucks": 0
   },
   {
    "oblast": "zakarpattia",
    "name": "Чоп (Тиса)",
    "to": "HU",
-   "hours": 141,
-   "trucks": 1429
+   "hours": 140,
+   "trucks": 1426
   }
  ]
 }
