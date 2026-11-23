@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-23T00:42:17Z",
- "checked_at": "2026-11-23T00:42:17Z",
+ "updated": "2026-11-23T00:45:35Z",
+ "checked_at": "2026-11-23T00:45:35Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -10,15 +10,15 @@
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 1634 вант. · 7 д 18 год"
+   "note": "Ягодин → PL: 1632 вант. · 7 д 18 год"
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Дякове → RO: 531 вант. · 5 д 19 год"
+   "note": "Дякове → RO: 530 вант. · 5 д 19 год"
   },
   "chernivtsi": {
-   "status": "ok",
-   "note": "Мамалига → MD: 18 вант. · 2 год"
+   "status": "outage",
+   "note": "Порубне → RO: 870 вант. · 4 д 1 год"
   },
   "odesa": {
    "status": "outage",
@@ -60,6 +60,13 @@
   },
   {
    "oblast": "lviv",
+   "name": "Смільниця",
+   "to": "PL",
+   "hours": 1.2,
+   "trucks": 10
+  },
+  {
+   "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
    "hours": 60,
@@ -84,7 +91,7 @@
    "name": "Устилуг",
    "to": "PL",
    "hours": 151,
-   "trucks": 615
+   "trucks": 616
   },
   {
    "oblast": "lviv",
@@ -112,7 +119,7 @@
    "name": "Ягодин",
    "to": "PL",
    "hours": 186,
-   "trucks": 1634
+   "trucks": 1632
   },
   {
    "oblast": "volyn",
@@ -126,7 +133,7 @@
    "name": "Дякове",
    "to": "RO",
    "hours": 139,
-   "trucks": 531
+   "trucks": 530
   },
   {
    "oblast": "chernivtsi",
@@ -153,8 +160,15 @@
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
+   "hours": 97,
+   "trucks": 870
+  },
+  {
+   "oblast": "chernivtsi",
+   "name": "Порубне",
+   "to": "RO",
    "hours": 0.0,
-   "trucks": 0
+   "trucks": 1
   },
   {
    "oblast": "chernivtsi",
@@ -181,8 +195,8 @@
    "oblast": "chernivtsi",
    "name": "Мамалига",
    "to": "MD",
-   "hours": 1.5,
-   "trucks": 18
+   "hours": 1.3,
+   "trucks": 17
   },
   {
    "oblast": "vinnytsia",
@@ -239,13 +253,6 @@
    "to": "SK",
    "hours": 0.0,
    "trucks": 0
-  },
-  {
-   "oblast": "zakarpattia",
-   "name": "Лужанка",
-   "to": "HU",
-   "hours": 6.4,
-   "trucks": 30
   }
  ]
 }
