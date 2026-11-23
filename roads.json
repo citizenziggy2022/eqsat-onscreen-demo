@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-23T10:04:04Z",
- "checked_at": "2026-11-23T10:04:04Z",
+ "updated": "2026-11-23T10:07:12Z",
+ "checked_at": "2026-11-23T10:07:12Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Краківець → PL: 654 вант. · 7 д 15 год"
+   "note": "Краківець → PL: 652 вант. · 7 д 14 год"
   },
   "volyn": {
    "status": "outage",
@@ -14,7 +14,7 @@
   },
   "chernivtsi": {
    "status": "ok",
-   "note": "Дяківці → RO: 0 вант. · 0 год"
+   "note": "Красноїльськ → RO: 1 вант. · 0 год"
   },
   "odesa": {
    "status": "outage",
@@ -22,11 +22,11 @@
   },
   "vinnytsia": {
    "status": "ok",
-   "note": "Могилів-Подільський → MD: 1 вант. · 0 год"
+   "note": "Могилів-Подільський → MD: 0 вант. · 0 год"
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Чоп (Тиса) → HU: 1334 вант. · 5 д 11 год"
+   "note": "Чоп (Тиса) → HU: 1330 вант. · 5 д 11 год"
   }
  },
  "queue": [
@@ -48,22 +48,22 @@
    "oblast": "lviv",
    "name": "Краківець",
    "to": "PL",
-   "hours": 183,
-   "trucks": 654
+   "hours": 182,
+   "trucks": 652
   },
   {
    "oblast": "lviv",
    "name": "Смільниця",
    "to": "PL",
    "hours": 0.0,
-   "trucks": 2
+   "trucks": 1
   },
   {
    "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
-   "hours": 56,
-   "trucks": 266
+   "hours": 55,
+   "trucks": 264
   },
   {
    "oblast": "lviv",
@@ -112,7 +112,7 @@
    "name": "Ягодин",
    "to": "PL",
    "hours": 0.0,
-   "trucks": 12
+   "trucks": 10
   },
   {
    "oblast": "chernivtsi",
@@ -125,8 +125,8 @@
    "oblast": "chernivtsi",
    "name": "Красноїльськ",
    "to": "RO",
-   "hours": 0.0,
-   "trucks": 0
+   "hours": 0.3,
+   "trucks": 1
   },
   {
    "oblast": "odesa",
@@ -146,7 +146,7 @@
    "oblast": "odesa",
    "name": "Виноградівка",
    "to": "MD",
-   "hours": 0.3,
+   "hours": 0.0,
    "trucks": 1
   },
   {
@@ -161,7 +161,7 @@
    "name": "Могилів-Подільський",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 1
+   "trucks": 0
   },
   {
    "oblast": "odesa",
@@ -210,7 +210,7 @@
    "name": "Чоп (Тиса)",
    "to": "HU",
    "hours": 131,
-   "trucks": 1334
+   "trucks": 1330
   }
  ]
 }
