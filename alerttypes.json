@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T20:11:33Z",
+ "updated": "2026-11-23T20:13:03Z",
  "source": "siren.pp.ua (UkraineAlarm)",
  "types": {
   "AIR": {
@@ -15,9 +15,10 @@
     "luhansk",
     "poltava",
     "sumy",
-    "zaporizhzhia"
+    "zaporizhzhia",
+    "zhytomyr"
    ],
-   "areas": 53
+   "areas": 54
   },
   "ARTILLERY": {
    "regions": [
@@ -52,13 +53,16 @@
      },
      "kherson": {
       "AIR": 1
+     },
+     "zhytomyr": {
+      "AIR": 1
      }
     },
     "partial": true,
     "first_at": "2026-11-23T19:39:03Z",
     "gap_count": 0,
-    "samples": 29,
-    "last_at": "2026-11-23T20:11:33Z",
+    "samples": 30,
+    "last_at": "2026-11-23T20:13:03Z",
     "covered_oblasts": [
      "cherkasy",
      "chernihiv",
@@ -89,7 +93,7 @@
     ]
    }
   },
-  "last_at": "2026-11-23T20:11:33Z",
+  "last_at": "2026-11-23T20:13:03Z",
   "active": [
    "chernihiv:AIR",
    "crimea:AIR",
@@ -105,7 +109,8 @@
    "luhansk:AIR",
    "poltava:AIR",
    "sumy:AIR",
-   "zaporizhzhia:AIR"
+   "zaporizhzhia:AIR",
+   "zhytomyr:AIR"
   ],
   "coverage_from": "2026-11-23T19:39:03Z",
   "covered_oblasts": [
