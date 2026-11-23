@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T19:54:27Z",
+ "updated": "2026-11-23T19:55:27Z",
  "source": "siren.pp.ua (UkraineAlarm)",
  "types": {
   "AIR": {
@@ -9,15 +9,14 @@
     "dnipro",
     "donetsk",
     "kharkiv",
+    "kyivcity",
     "kyivobl",
     "luhansk",
     "poltava",
-    "rivne",
     "sumy",
-    "zaporizhzhia",
-    "zhytomyr"
+    "zaporizhzhia"
    ],
-   "areas": 44
+   "areas": 43
   },
   "ARTILLERY": {
    "regions": [
@@ -46,12 +45,16 @@
   "schema": 1,
   "days": {
    "2026-11-23": {
-    "counts": {},
+    "counts": {
+     "kyivcity": {
+      "AIR": 1
+     }
+    },
     "partial": true,
     "first_at": "2026-11-23T19:39:03Z",
     "gap_count": 0,
-    "samples": 14,
-    "last_at": "2026-11-23T19:54:27Z",
+    "samples": 15,
+    "last_at": "2026-11-23T19:55:27Z",
     "covered_oblasts": [
      "cherkasy",
      "chernihiv",
@@ -82,7 +85,7 @@
     ]
    }
   },
-  "last_at": "2026-11-23T19:54:27Z",
+  "last_at": "2026-11-23T19:55:27Z",
   "active": [
    "chernihiv:AIR",
    "crimea:AIR",
@@ -92,13 +95,12 @@
    "kharkiv:AIR",
    "kharkiv:ARTILLERY",
    "kharkiv:URBAN_FIGHTS",
+   "kyivcity:AIR",
    "kyivobl:AIR",
    "luhansk:AIR",
    "poltava:AIR",
-   "rivne:AIR",
    "sumy:AIR",
-   "zaporizhzhia:AIR",
-   "zhytomyr:AIR"
+   "zaporizhzhia:AIR"
   ],
   "coverage_from": "2026-11-23T19:39:03Z",
   "covered_oblasts": [
