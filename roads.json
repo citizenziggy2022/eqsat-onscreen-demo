@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-23T06:31:54Z",
- "checked_at": "2026-11-23T06:31:54Z",
+ "updated": "2026-11-23T06:35:07Z",
+ "checked_at": "2026-11-23T06:35:07Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -10,7 +10,7 @@
   },
   "chernivtsi": {
    "status": "ok",
-   "note": "Дяківці → RO: 0 вант. · 0 год"
+   "note": "Дяківці → RO: 1 вант. · 0 год"
   },
   "odesa": {
    "status": "outage",
@@ -22,7 +22,7 @@
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Чоп (Тиса) → HU: 1367 вант. · 5 д 14 год"
+   "note": "Чоп (Тиса) → HU: 1364 вант. · 5 д 14 год"
   }
  },
  "queue": [
@@ -59,14 +59,14 @@
    "name": "Угринів",
    "to": "PL",
    "hours": 138,
-   "trucks": 601
+   "trucks": 600
   },
   {
    "oblast": "chernivtsi",
    "name": "Дяківці",
    "to": "RO",
-   "hours": 0.0,
-   "trucks": 0
+   "hours": 0.2,
+   "trucks": 1
   },
   {
    "oblast": "chernivtsi",
@@ -150,7 +150,7 @@
    "name": "Чоп (Тиса)",
    "to": "HU",
    "hours": 134,
-   "trucks": 1367
+   "trucks": 1364
   }
  ]
 }
