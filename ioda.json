@@ -1,10 +1,9 @@
 {
- "fetched_at": "2026-11-23T01:43:04Z",
+ "fetched_at": "2026-11-23T01:49:29Z",
  "updated_at": "2026-11-23T01:30:00Z",
  "source": "IODA (Internet Outage Detection and Analysis), Georgia Tech, https://ioda.inetintel.cc.gatech.edu",
  "note": "Internet signal per oblast. score 0-100 vs the region's own 7-day median (BGP 40%, ping /24 60%); level critical while IODA's outage alert for the region is critical. The cause is unknown (power, damage or shutdown look the same).",
  "critical": [
-  "luhansk",
   "zaporizhzhia"
  ],
  "regions": {
@@ -198,7 +197,7 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 0.9941,
+     "ratio": 0.9942,
      "score": 100
     }
    },
@@ -296,7 +295,7 @@
      "score": 68
     },
     "bgp": {
-     "ratio": 0.9984,
+     "ratio": 0.9986,
      "score": 100
     }
    },
@@ -324,20 +323,16 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 0.969,
+     "ratio": 0.9787,
      "score": 100
     }
    },
-   "level": "critical",
-   "since": 1795378500,
-   "critical_sources": [
-    "bgp"
-   ],
+   "level": "normal",
    "alerts": {
     "bgp": {
-     "level": "critical",
-     "time": 1795378500,
-     "value": 501,
+     "level": "normal",
+     "time": 1795396500,
+     "value": 515,
      "history": 516
     }
    }
@@ -350,7 +345,7 @@
      "score": 100
     },
     "bgp": {
-     "ratio": 0.9991,
+     "ratio": 0.9989,
      "score": 100
     }
    },
