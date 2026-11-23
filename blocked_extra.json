@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-23T02:52:45+00:00",
+ "generated": "2026-11-23T03:46:56+00:00",
  "sources": {
   "censoredplanet": {
    "name": "Censored Planet (University of Michigan)",
@@ -10,7 +10,7 @@
     "endDate": "2026-11-23"
    },
    "domains_tested": 870,
-   "query_errors": 1,
+   "query_errors": 0,
    "baseline_unexpected_share": {
     "RU": 0.0,
     "UA": 0.0,
@@ -26,7 +26,7 @@
     "UA": {
      "confirmed": 0,
      "likely": 0,
-     "measured": 829
+     "measured": 838
     },
     "BY": {
      "confirmed": 0,
@@ -40,22 +40,22 @@
     }
    },
    "rule": "confirmed = a known block page was returned; likely = >=20 measurements, >=50% unexpected and >=30 points above the country median",
-   "seconds": 22.7
+   "seconds": 19.3
   },
   "rkn": {
    "name": "Roskomnadzor registry (via antifilter.download)",
    "endpoint": "https://antifilter.download/list/domains.lst",
-   "updated": "2026-11-22T04:30:44+00:00",
+   "updated": "2026-11-23T03:38:38+00:00",
    "total_domains": 1823993,
    "well_known_listed": 56,
    "note": "Official RKN blocking registry. Rows are registry entries (incl. wildcard and mirror domains), not distinct sites.",
-   "seconds": 19.4
+   "seconds": 23.7
   }
  },
  "credit": "Censored Planet (U. Michigan) · RKN registry via antifilter.download",
  "counts": {
   "items": 122,
-  "new_vs_ooni": 63,
+  "new_vs_ooni": 62,
   "by_source_country": {
    "rkn/RU": 45,
    "censoredplanet/RU": 77
@@ -67,7 +67,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "news",
    "new_vs_ooni": true,
    "well_known": true
@@ -77,7 +77,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "news",
    "new_vs_ooni": true,
    "well_known": true
@@ -87,7 +87,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "news",
    "new_vs_ooni": true,
    "well_known": true
@@ -127,7 +127,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "news",
    "new_vs_ooni": true,
    "well_known": true
@@ -137,7 +137,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "news",
    "new_vs_ooni": false,
    "well_known": true
@@ -147,7 +147,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "news",
    "new_vs_ooni": true,
    "well_known": true
@@ -157,7 +157,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "news",
    "new_vs_ooni": true,
    "well_known": true
@@ -167,7 +167,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "news",
    "new_vs_ooni": false,
    "well_known": true
@@ -177,9 +177,9 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "news",
-   "new_vs_ooni": true,
+   "new_vs_ooni": false,
    "well_known": true
   },
   {
@@ -187,7 +187,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "news",
    "new_vs_ooni": true,
    "well_known": true
@@ -197,7 +197,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "news",
    "new_vs_ooni": true,
    "well_known": true
@@ -207,7 +207,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "news",
    "new_vs_ooni": true,
    "well_known": true
@@ -217,7 +217,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "news",
    "new_vs_ooni": false,
    "well_known": true
@@ -227,7 +227,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "news",
    "new_vs_ooni": true,
    "well_known": true
@@ -237,7 +237,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "news",
    "new_vs_ooni": true,
    "well_known": true
@@ -247,7 +247,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "news",
    "new_vs_ooni": true,
    "well_known": true
@@ -257,7 +257,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "news",
    "new_vs_ooni": true,
    "well_known": true
@@ -267,7 +267,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "news",
    "new_vs_ooni": true,
    "well_known": true
@@ -277,7 +277,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "news",
    "new_vs_ooni": true,
    "well_known": true
@@ -287,7 +287,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "news",
    "new_vs_ooni": true,
    "well_known": true
@@ -297,7 +297,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "news",
    "new_vs_ooni": true,
    "well_known": true
@@ -307,7 +307,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "news",
    "new_vs_ooni": true,
    "well_known": true
@@ -377,7 +377,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "news",
    "new_vs_ooni": false,
    "well_known": true
@@ -387,7 +387,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "news",
    "new_vs_ooni": false,
    "well_known": true
@@ -397,7 +397,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "news",
    "new_vs_ooni": false,
    "well_known": true
@@ -407,7 +407,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "rights",
    "new_vs_ooni": false,
    "well_known": true
@@ -417,7 +417,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "rights",
    "new_vs_ooni": false,
    "well_known": true
@@ -427,7 +427,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "rights",
    "new_vs_ooni": false,
    "well_known": true
@@ -437,7 +437,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "rights",
    "new_vs_ooni": false,
    "well_known": true
@@ -447,7 +447,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "rights",
    "new_vs_ooni": false,
    "well_known": true
@@ -472,7 +472,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "rights",
    "new_vs_ooni": false,
    "well_known": true
@@ -482,7 +482,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "rights",
    "new_vs_ooni": false,
    "well_known": true
@@ -492,7 +492,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "rights",
    "new_vs_ooni": true,
    "well_known": true
@@ -502,7 +502,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "rights",
    "new_vs_ooni": false,
    "well_known": true
@@ -512,7 +512,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "rights",
    "new_vs_ooni": false,
    "well_known": true
@@ -537,7 +537,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "vpn",
    "new_vs_ooni": false,
    "well_known": true
@@ -547,7 +547,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "vpn",
    "new_vs_ooni": false,
    "well_known": true
@@ -557,7 +557,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "vpn",
    "new_vs_ooni": false,
    "well_known": true
@@ -567,7 +567,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "vpn",
    "new_vs_ooni": false,
    "well_known": true
@@ -577,7 +577,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "vpn",
    "new_vs_ooni": false,
    "well_known": true
@@ -602,7 +602,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "vpn",
    "new_vs_ooni": true,
    "well_known": true
@@ -642,7 +642,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "platform",
    "new_vs_ooni": false,
    "well_known": true
@@ -652,7 +652,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "platform",
    "new_vs_ooni": false,
    "well_known": true
@@ -662,7 +662,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "platform",
    "new_vs_ooni": true,
    "well_known": true
@@ -672,7 +672,7 @@
    "country": "RU",
    "source": "rkn",
    "status": "listed",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-23",
    "category": "platform",
    "new_vs_ooni": false,
    "well_known": true
