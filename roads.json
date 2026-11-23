@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-23T19:34:11Z",
- "checked_at": "2026-11-23T19:34:11Z",
+ "updated": "2026-11-23T19:37:43Z",
+ "checked_at": "2026-11-23T19:37:43Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -14,25 +14,22 @@
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Ужгород → SK: 762 вант. · 6 д 5 год"
+   "note": "Ужгород → SK: 760 вант. · 6 д 5 год"
   },
   "chernivtsi": {
    "status": "outage",
-   "note": "Порубне → RO: 864 вант. · 4 д 0 год"
+   "note": "Порубне → RO: 860 вант. · 4 д 0 год"
   },
   "odesa": {
    "status": "outage",
    "note": "Орлівка → RO: 727 вант. · 6 д 10 год"
+  },
+  "vinnytsia": {
+   "status": "ok",
+   "note": "Могилів-Подільський → MD: 23 вант. · 2 год"
   }
  },
  "queue": [
-  {
-   "oblast": "lviv",
-   "name": "Краківець",
-   "to": "PL",
-   "hours": 95,
-   "trucks": 843
-  },
   {
    "oblast": "lviv",
    "name": "Краківець",
@@ -79,8 +76,8 @@
    "oblast": "volyn",
    "name": "Устилуг",
    "to": "PL",
-   "hours": 55,
-   "trucks": 172
+   "hours": 54,
+   "trucks": 171
   },
   {
    "oblast": "volyn",
@@ -135,22 +132,22 @@
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
-   "hours": 96.5,
-   "trucks": 864
+   "hours": 96.1,
+   "trucks": 860
   },
   {
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
-   "hours": 3.2,
-   "trucks": 23
+   "hours": 3,
+   "trucks": 22
   },
   {
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
    "hours": 0.0,
-   "trucks": 1
+   "trucks": 0
   },
   {
    "oblast": "odesa",
@@ -167,10 +164,17 @@
    "trucks": 0
   },
   {
+   "oblast": "vinnytsia",
+   "name": "Могилів-Подільський",
+   "to": "MD",
+   "hours": 2.1,
+   "trucks": 23
+  },
+  {
    "oblast": "odesa",
    "name": "Рені",
    "to": "MD",
-   "hours": 53,
+   "hours": 52,
    "trucks": 170
   },
   {
@@ -185,7 +189,7 @@
    "name": "Росошани",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 0
+   "trucks": 1
   },
   {
    "oblast": "odesa",
@@ -213,7 +217,7 @@
    "name": "Ужгород",
    "to": "SK",
    "hours": 149,
-   "trucks": 762
+   "trucks": 760
   },
   {
    "oblast": "zakarpattia",
