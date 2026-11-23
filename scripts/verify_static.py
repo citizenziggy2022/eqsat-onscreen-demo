@@ -23,7 +23,7 @@ EVERY_S = 20 * 3600
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36 eQsat-daily-check"
 # Official numbering plan: Ministry of Transport and Communications order of 24.09.2008 No. 1178 (Verkhovna Rada legal base).
 # Its clause 4.2.48 lists each emergency number against the service it belongs to.
-PLAN = "https://zakon.rada.gov.ua/go/z0976-08"
+PLAN = "https://bezpeka.dsns.gov.ua/contacts"
 NATIONAL = {
     "112": (PLAN, r"екстреної допомоги населенню"),
     "101": (PLAN, r"пожежн"),
