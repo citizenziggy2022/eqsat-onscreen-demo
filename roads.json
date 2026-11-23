@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-23T18:28:07Z",
- "checked_at": "2026-11-23T18:28:07Z",
+ "updated": "2026-11-23T18:31:10Z",
+ "checked_at": "2026-11-23T18:31:10Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -10,11 +10,11 @@
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 1674 вант. · 7 д 23 год"
+   "note": "Ягодин → PL: 1675 вант. · 7 д 23 год"
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Чоп (Тиса) → HU: 1460 вант. · 6 д 0 год"
+   "note": "Чоп (Тиса) → HU: 1458 вант. · 6 д 0 год"
   },
   "chernivtsi": {
    "status": "ok",
@@ -22,10 +22,17 @@
   },
   "odesa": {
    "status": "outage",
-   "note": "Орлівка → RO: 725 вант. · 6 д 10 год"
+   "note": "Орлівка → RO: 724 вант. · 6 д 10 год"
   }
  },
  "queue": [
+  {
+   "oblast": "lviv",
+   "name": "Грушів",
+   "to": "PL",
+   "hours": 6.9,
+   "trucks": 32
+  },
   {
    "oblast": "lviv",
    "name": "Краківець",
@@ -58,7 +65,7 @@
    "oblast": "volyn",
    "name": "Устилуг",
    "to": "PL",
-   "hours": 150,
+   "hours": 149,
    "trucks": 609
   },
   {
@@ -66,7 +73,7 @@
    "name": "Шегині",
    "to": "PL",
    "hours": 152,
-   "trucks": 539
+   "trucks": 540
   },
   {
    "oblast": "lviv",
@@ -79,15 +86,15 @@
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
-   "hours": 106,
-   "trucks": 733
+   "hours": 105,
+   "trucks": 730
   },
   {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
    "hours": 191,
-   "trucks": 1674
+   "trucks": 1675
   },
   {
    "oblast": "volyn",
@@ -115,7 +122,7 @@
    "name": "Орлівка",
    "to": "RO",
    "hours": 154,
-   "trucks": 725
+   "trucks": 724
   },
   {
    "oblast": "chernivtsi",
@@ -191,15 +198,15 @@
    "oblast": "zakarpattia",
    "name": "Лужанка",
    "to": "HU",
-   "hours": 7.5,
-   "trucks": 34
+   "hours": 84,
+   "trucks": 318
   },
   {
    "oblast": "zakarpattia",
    "name": "Чоп (Тиса)",
    "to": "HU",
-   "hours": 144.3,
-   "trucks": 1460
+   "hours": 144.1,
+   "trucks": 1458
   }
  ]
 }
