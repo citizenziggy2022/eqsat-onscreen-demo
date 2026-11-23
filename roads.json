@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-23T01:50:13Z",
- "checked_at": "2026-11-23T01:50:13Z",
+ "updated": "2026-11-23T01:53:17Z",
+ "checked_at": "2026-11-23T01:53:17Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -10,7 +10,7 @@
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 746 вант. · 8 д 4 год"
+   "note": "Ягодин → PL: 744 вант. · 8 д 3 год"
   },
   "zakarpattia": {
    "status": "outage",
@@ -18,7 +18,7 @@
   },
   "chernivtsi": {
    "status": "ok",
-   "note": "Дяківці → RO: 0 вант. · 0 год"
+   "note": "Росошани → MD: 2 вант. · 1 год"
   },
   "odesa": {
    "status": "outage",
@@ -70,7 +70,7 @@
    "name": "Устилуг",
    "to": "PL",
    "hours": 151,
-   "trucks": 617
+   "trucks": 615
   },
   {
    "oblast": "lviv",
@@ -97,8 +97,8 @@
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
-   "hours": 196,
-   "trucks": 746
+   "hours": 195,
+   "trucks": 744
   },
   {
    "oblast": "zakarpattia",
@@ -167,6 +167,13 @@
    "oblast": "odesa",
    "name": "Рені",
    "to": "MD",
+   "hours": 61,
+   "trucks": 192
+  },
+  {
+   "oblast": "odesa",
+   "name": "Рені",
+   "to": "MD",
    "hours": 0.0,
    "trucks": 0
   },
@@ -174,8 +181,8 @@
    "oblast": "chernivtsi",
    "name": "Росошани",
    "to": "MD",
-   "hours": 0.0,
-   "trucks": 0
+   "hours": 0.5,
+   "trucks": 2
   },
   {
    "oblast": "odesa",
@@ -216,8 +223,8 @@
    "oblast": "zakarpattia",
    "name": "Чоп (Тиса)",
    "to": "HU",
-   "hours": 138,
-   "trucks": 1400
+   "hours": 137,
+   "trucks": 1398
   }
  ]
 }
