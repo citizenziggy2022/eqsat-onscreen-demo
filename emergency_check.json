@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-22T19:53:19Z",
+ "checked_at": "2026-11-23T15:53:35Z",
  "method": "label-bound; see scripts/verify_static.py",
  "lines": [
   {
@@ -7,40 +7,40 @@
    "card": "EMERGENCY NUMBERS · UKRAINE",
    "number": "112",
    "state": "failed",
-   "source_url": "https://zakon.rada.gov.ua/go/z0976-08",
-   "evidence": "source page did not load (ConnectTimeout(MaxRetryError(\"HTTPSConnectionPool(host='zakon.rada.gov.ua', port=443): Max retries e)"
+   "source_url": "https://bezpeka.dsns.gov.ua/contacts",
+   "evidence": "source page did not load (HTTP 403)"
   },
   {
    "file": "emergency.json",
    "card": "EMERGENCY NUMBERS · UKRAINE",
    "number": "101",
    "state": "failed",
-   "source_url": "https://zakon.rada.gov.ua/go/z0976-08",
-   "evidence": "source page did not load (ConnectTimeout(MaxRetryError(\"HTTPSConnectionPool(host='zakon.rada.gov.ua', port=443): Max retries e)"
+   "source_url": "https://bezpeka.dsns.gov.ua/contacts",
+   "evidence": "source page did not load (HTTP 403)"
   },
   {
    "file": "emergency.json",
    "card": "EMERGENCY NUMBERS · UKRAINE",
    "number": "102",
    "state": "failed",
-   "source_url": "https://zakon.rada.gov.ua/go/z0976-08",
-   "evidence": "source page did not load (ConnectTimeout(MaxRetryError(\"HTTPSConnectionPool(host='zakon.rada.gov.ua', port=443): Max retries e)"
+   "source_url": "https://bezpeka.dsns.gov.ua/contacts",
+   "evidence": "source page did not load (HTTP 403)"
   },
   {
    "file": "emergency.json",
    "card": "EMERGENCY NUMBERS · UKRAINE",
    "number": "103",
    "state": "failed",
-   "source_url": "https://zakon.rada.gov.ua/go/z0976-08",
-   "evidence": "source page did not load (ConnectTimeout(MaxRetryError(\"HTTPSConnectionPool(host='zakon.rada.gov.ua', port=443): Max retries e)"
+   "source_url": "https://bezpeka.dsns.gov.ua/contacts",
+   "evidence": "source page did not load (HTTP 403)"
   },
   {
    "file": "emergency.json",
    "card": "EMERGENCY NUMBERS · UKRAINE",
    "number": "104",
    "state": "failed",
-   "source_url": "https://zakon.rada.gov.ua/go/z0976-08",
-   "evidence": "source page did not load (ConnectTimeout(MaxRetryError(\"HTTPSConnectionPool(host='zakon.rada.gov.ua', port=443): Max retries e)"
+   "source_url": "https://bezpeka.dsns.gov.ua/contacts",
+   "evidence": "source page did not load (HTTP 403)"
   },
   {
    "file": "emergency.json",
@@ -241,7 +241,7 @@
    "state": "confirmed",
    "source_url": "http://www.hfcc.org/data/b26/b26allx2.zip",
    "evidence": "5955 1600 1630 29SW                           TIG  100 30        0 812 1234567 251026 280327 D       Ukr        ROU RRO ",
-   "confirmed_at": "2026-11-22T19:54:33Z",
+   "confirmed_at": "2026-11-23T15:53:52Z",
    "source_note": "; B26 ALL 22-nov-2026"
   }
  ],
