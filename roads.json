@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-23T17:54:38Z",
- "checked_at": "2026-11-23T17:54:38Z",
+ "updated": "2026-11-23T17:58:04Z",
+ "checked_at": "2026-11-23T17:58:04Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -10,19 +10,19 @@
   },
   "volyn": {
    "status": "outage",
-   "note": "Устилуг → PL: 612 вант. · 6 д 6 год"
+   "note": "Ягодин → PL: 1684 вант. · 8 д 1 год"
+  },
+  "zakarpattia": {
+   "status": "outage",
+   "note": "Дякове → RO: 499 вант. · 5 д 11 год"
   },
   "chernivtsi": {
    "status": "ok",
-   "note": "Дяківці → RO: 0 вант. · 0 год"
+   "note": "Росошани → MD: 1 вант. · 0 год"
   },
   "odesa": {
    "status": "outage",
    "note": "Орлівка → RO: 724 вант. · 6 д 10 год"
-  },
-  "zakarpattia": {
-   "status": "ok",
-   "note": "Лужанка → HU: 32 вант. · 7 год"
   }
  },
  "queue": [
@@ -44,8 +44,8 @@
    "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
-   "hours": 54,
-   "trucks": 257
+   "hours": 55,
+   "trucks": 258
   },
   {
    "oblast": "lviv",
@@ -67,6 +67,27 @@
    "to": "PL",
    "hours": 150,
    "trucks": 612
+  },
+  {
+   "oblast": "volyn",
+   "name": "Ягодин",
+   "to": "PL",
+   "hours": 193,
+   "trucks": 1684
+  },
+  {
+   "oblast": "volyn",
+   "name": "Ягодин",
+   "to": "PL",
+   "hours": 0.0,
+   "trucks": 1
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Дякове",
+   "to": "RO",
+   "hours": 131,
+   "trucks": 499
   },
   {
    "oblast": "chernivtsi",
@@ -114,8 +135,8 @@
    "oblast": "chernivtsi",
    "name": "Росошани",
    "to": "MD",
-   "hours": 0.0,
-   "trucks": 0
+   "hours": 0.2,
+   "trucks": 1
   },
   {
    "oblast": "odesa",
@@ -128,8 +149,8 @@
    "oblast": "odesa",
    "name": "Старокозаче",
    "to": "MD",
-   "hours": 5.7,
-   "trucks": 29
+   "hours": 6.6,
+   "trucks": 32
   },
   {
    "oblast": "odesa",
@@ -144,13 +165,6 @@
    "to": "SK",
    "hours": 0.0,
    "trucks": 0
-  },
-  {
-   "oblast": "zakarpattia",
-   "name": "Лужанка",
-   "to": "HU",
-   "hours": 6.9,
-   "trucks": 32
   }
  ]
 }
