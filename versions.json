@@ -2,6 +2,12 @@
   "note": "Every screen deploy, newest first: version 1.N (N + 1 per deploy), deploy time (UTC), one-line summary, build code. Read by the admin (History › Versions). Entries 2.42 to 2.51 were added afterwards from the repo deploy commits: their time is the commit time that switched the live page to that build, not a measured go-live time, and 2.46 to 2.51 were numbered at that point.",
   "versions": [
     {
+      "version": "2.81",
+      "build": "index-content281.js",
+      "at": "2026-11-23T19:44:19.864632+00:00",
+      "summary": "Consistent collapsed Content frames, titles and spacing. Switches/counts retained; photo playback controls fold without unmounting drafts."
+    },
+    {
       "version": "2.80",
       "build": "index-types280.js",
       "at": "2026-11-23T19:36:43.657276+00:00",
