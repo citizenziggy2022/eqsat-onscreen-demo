@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-23T17:37:31Z",
- "checked_at": "2026-11-23T17:37:31Z",
+ "updated": "2026-11-23T17:41:20Z",
+ "checked_at": "2026-11-23T17:41:20Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -10,7 +10,7 @@
   },
   "volyn": {
    "status": "outage",
-   "note": "Устилуг → PL: 615 вант. · 6 д 7 год"
+   "note": "Устилуг → PL: 613 вант. · 6 д 6 год"
   },
   "chernivtsi": {
    "status": "ok",
@@ -18,11 +18,11 @@
   },
   "odesa": {
    "status": "outage",
-   "note": "Орлівка → RO: 728 вант. · 6 д 10 год"
+   "note": "Орлівка → RO: 726 вант. · 6 д 10 год"
   },
   "zakarpattia": {
-   "status": "ok",
-   "note": "Малий Березний → SK: 0 вант. · 0 год"
+   "status": "outage",
+   "note": "Лужанка → HU: 320 вант. · 3 д 12 год"
   }
  },
  "queue": [
@@ -58,15 +58,15 @@
    "oblast": "volyn",
    "name": "Устилуг",
    "to": "PL",
-   "hours": 55,
-   "trucks": 173
+   "hours": 54,
+   "trucks": 171
   },
   {
    "oblast": "volyn",
    "name": "Устилуг",
    "to": "PL",
-   "hours": 151,
-   "trucks": 615
+   "hours": 150,
+   "trucks": 613
   },
   {
    "oblast": "lviv",
@@ -80,7 +80,7 @@
    "name": "Шегині",
    "to": "PL",
    "hours": 143,
-   "trucks": 618
+   "trucks": 619
   },
   {
    "oblast": "chernivtsi",
@@ -94,7 +94,7 @@
    "name": "Орлівка",
    "to": "RO",
    "hours": 154,
-   "trucks": 728
+   "trucks": 726
   },
   {
    "oblast": "chernivtsi",
@@ -151,6 +151,20 @@
    "to": "SK",
    "hours": 0.0,
    "trucks": 0
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Лужанка",
+   "to": "HU",
+   "hours": 6.9,
+   "trucks": 31
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Лужанка",
+   "to": "HU",
+   "hours": 84,
+   "trucks": 320
   }
  ]
 }
