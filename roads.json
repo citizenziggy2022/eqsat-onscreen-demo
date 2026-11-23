@@ -1,16 +1,16 @@
 {
- "updated": "2026-11-23T12:13:50Z",
- "checked_at": "2026-11-23T12:13:50Z",
+ "updated": "2026-11-23T12:16:56Z",
+ "checked_at": "2026-11-23T12:16:56Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Угринів → PL: 659 вант. · 6 д 8 год"
+   "note": "Краківець → PL: 656 вант. · 7 д 15 год"
   },
   "volyn": {
-   "status": "limited",
-   "note": "Устилуг → PL: 188 вант. · 2 д 11 год"
+   "status": "outage",
+   "note": "Ягодин → PL: 1691 вант. · 8 д 1 год"
   },
   "zakarpattia": {
    "status": "outage",
@@ -18,7 +18,7 @@
   },
   "chernivtsi": {
    "status": "outage",
-   "note": "Порубне → RO: 779 вант. · 3 д 14 год"
+   "note": "Порубне → RO: 780 вант. · 3 д 14 год"
   },
   "odesa": {
    "status": "outage",
@@ -34,8 +34,15 @@
    "oblast": "lviv",
    "name": "Краківець",
    "to": "PL",
-   "hours": 0.0,
-   "trucks": 0
+   "hours": 0.3,
+   "trucks": 1
+  },
+  {
+   "oblast": "lviv",
+   "name": "Краківець",
+   "to": "PL",
+   "hours": 183,
+   "trucks": 656
   },
   {
    "oblast": "lviv",
@@ -56,14 +63,21 @@
    "name": "Угринів",
    "to": "PL",
    "hours": 152,
-   "trucks": 659
+   "trucks": 660
   },
   {
    "oblast": "volyn",
    "name": "Устилуг",
    "to": "PL",
-   "hours": 59,
-   "trucks": 188
+   "hours": 150,
+   "trucks": 612
+  },
+  {
+   "oblast": "lviv",
+   "name": "Шегині",
+   "to": "PL",
+   "hours": 129,
+   "trucks": 459
   },
   {
    "oblast": "lviv",
@@ -71,6 +85,20 @@
    "to": "PL",
    "hours": 134,
    "trucks": 582
+  },
+  {
+   "oblast": "volyn",
+   "name": "Ягодин",
+   "to": "PL",
+   "hours": 193.0,
+   "trucks": 1691
+  },
+  {
+   "oblast": "volyn",
+   "name": "Ягодин",
+   "to": "PL",
+   "hours": 0.0,
+   "trucks": 8
   },
   {
    "oblast": "zakarpattia",
@@ -105,7 +133,7 @@
    "name": "Порубне",
    "to": "RO",
    "hours": 86,
-   "trucks": 779
+   "trucks": 780
   },
   {
    "oblast": "chernivtsi",
@@ -146,6 +174,13 @@
    "oblast": "odesa",
    "name": "Рені",
    "to": "MD",
+   "hours": 55,
+   "trucks": 177
+  },
+  {
+   "oblast": "odesa",
+   "name": "Рені",
+   "to": "MD",
    "hours": 0.0,
    "trucks": 0
   },
@@ -167,7 +202,7 @@
    "oblast": "odesa",
    "name": "Старокозаче",
    "to": "MD",
-   "hours": 0.3,
+   "hours": 0.0,
    "trucks": 5
   },
   {
