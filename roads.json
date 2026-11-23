@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-23T13:07:50Z",
- "checked_at": "2026-11-23T13:07:50Z",
+ "updated": "2026-11-23T13:10:58Z",
+ "checked_at": "2026-11-23T13:10:58Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -10,19 +10,19 @@
   },
   "volyn": {
    "status": "outage",
-   "note": "Устилуг → PL: 609 вант. · 6 д 6 год"
+   "note": "Устилуг → PL: 610 вант. · 6 д 6 год"
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Дякове → RO: 497 вант. · 5 д 10 год"
+   "note": "Дякове → RO: 496 вант. · 5 д 10 год"
   },
   "chernivtsi": {
    "status": "ok",
-   "note": "Дяківці → RO: 1 вант. · 0 год"
+   "note": "Мамалига → MD: 27 вант. · 3 год"
   },
   "odesa": {
    "status": "outage",
-   "note": "Орлівка → RO: 700 вант. · 6 д 5 год"
+   "note": "Орлівка → RO: 703 вант. · 6 д 5 год"
   },
   "vinnytsia": {
    "status": "ok",
@@ -30,13 +30,6 @@
   }
  },
  "queue": [
-  {
-   "oblast": "lviv",
-   "name": "Грушів",
-   "to": "PL",
-   "hours": 7.5,
-   "trucks": 36
-  },
   {
    "oblast": "lviv",
    "name": "Краківець",
@@ -77,14 +70,28 @@
    "name": "Устилуг",
    "to": "PL",
    "hours": 150,
-   "trucks": 609
+   "trucks": 610
+  },
+  {
+   "oblast": "lviv",
+   "name": "Шегині",
+   "to": "PL",
+   "hours": 132,
+   "trucks": 468
+  },
+  {
+   "oblast": "lviv",
+   "name": "Шегині",
+   "to": "PL",
+   "hours": 135,
+   "trucks": 583
   },
   {
    "oblast": "zakarpattia",
    "name": "Дякове",
    "to": "RO",
    "hours": 130,
-   "trucks": 497
+   "trucks": 496
   },
   {
    "oblast": "chernivtsi",
@@ -97,15 +104,15 @@
    "oblast": "chernivtsi",
    "name": "Красноїльськ",
    "to": "RO",
-   "hours": 0.0,
-   "trucks": 0
+   "hours": 0.3,
+   "trucks": 1
   },
   {
    "oblast": "odesa",
    "name": "Орлівка",
    "to": "RO",
    "hours": 149,
-   "trucks": 700
+   "trucks": 703
   },
   {
    "oblast": "chernivtsi",
@@ -127,6 +134,13 @@
    "to": "MD",
    "hours": 0.0,
    "trucks": 0
+  },
+  {
+   "oblast": "chernivtsi",
+   "name": "Мамалига",
+   "to": "MD",
+   "hours": 2.8,
+   "trucks": 27
   },
   {
    "oblast": "vinnytsia",
@@ -190,20 +204,6 @@
    "to": "SK",
    "hours": 0.0,
    "trucks": 2
-  },
-  {
-   "oblast": "zakarpattia",
-   "name": "Лужанка",
-   "to": "HU",
-   "hours": 1.9,
-   "trucks": 12
-  },
-  {
-   "oblast": "zakarpattia",
-   "name": "Лужанка",
-   "to": "HU",
-   "hours": 88,
-   "trucks": 337
   }
  ]
 }
