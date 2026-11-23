@@ -1,12 +1,16 @@
 {
- "updated": "2026-11-23T02:26:57Z",
- "checked_at": "2026-11-23T02:26:57Z",
+ "updated": "2026-11-23T02:30:16Z",
+ "checked_at": "2026-11-23T02:30:16Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Краківець → PL: 676 вант. · 7 д 20 год"
+   "note": "Рава-Руська → PL: 594 вант. · 8 д 13 год"
+  },
+  "volyn": {
+   "status": "outage",
+   "note": "Ягодин → PL: 1630 вант. · 7 д 18 год"
   },
   "zakarpattia": {
    "status": "outage",
@@ -42,6 +46,20 @@
   },
   {
    "oblast": "lviv",
+   "name": "Рава-Руська",
+   "to": "PL",
+   "hours": 109,
+   "trucks": 845
+  },
+  {
+   "oblast": "lviv",
+   "name": "Рава-Руська",
+   "to": "PL",
+   "hours": 205,
+   "trucks": 594
+  },
+  {
+   "oblast": "lviv",
    "name": "Смільниця",
    "to": "PL",
    "hours": 0.0,
@@ -74,6 +92,13 @@
    "to": "PL",
    "hours": 132,
    "trucks": 569
+  },
+  {
+   "oblast": "volyn",
+   "name": "Ягодин",
+   "to": "PL",
+   "hours": 186,
+   "trucks": 1630
   },
   {
    "oblast": "zakarpattia",
