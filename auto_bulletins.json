@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-23T07:57:55Z",
+ "generated_at": "2026-11-23T08:13:10Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 0 / dropped 4, showing 0"
+   "status": "ok: kept 1 / dropped 3, showing 1"
   },
   {
    "name": "Херсонська ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-dsns_telegram-81318",
+   "title": "в Краснопільській громаді російський FPV-дрон на оптоволокні атакував автомобіль, який доставляв людям продукти та хліб",
+   "body": "Удар стався саме під час розвантаження товару. Авто загорілося. Через близьке розташування до магазину існувала загроза поширення вогню на будівлю. Рятувальники ліквідували пожежу та не допустили перекидання полум’я на магазин. За попередньою інформацією…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/81318",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-23T08:12:11Z",
+   "expires_at": "2026-11-23T20:12:11Z",
+   "auto": true,
+   "en_mt": {
+    "title": "In Krasnopilska community a Russian FPV-drone on fiber optic attacked a car that was delivering products and bread to people",
+    "body": "The strike occurred during the unloading of goods. The car caught fire. Due to the close proximity to the store, there was a threat of the fire spreading to the building. Rescuers extinguished the fire and did not allow the flames to spread to the store. According to preliminary information…",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-VadymFilashkin-19518",
    "title": "Росія вбиває цивільних!",
