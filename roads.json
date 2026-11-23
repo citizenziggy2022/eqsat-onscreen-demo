@@ -1,28 +1,28 @@
 {
- "updated": "2026-11-23T19:24:07Z",
- "checked_at": "2026-11-23T19:24:07Z",
+ "updated": "2026-11-23T19:27:20Z",
+ "checked_at": "2026-11-23T19:27:20Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Краківець → PL: 665 вант. · 7 д 18 год"
+   "note": "Краківець → PL: 663 вант. · 7 д 17 год"
   },
   "volyn": {
    "status": "outage",
    "note": "Ягодин → PL: 778 вант. · 8 д 12 год"
   },
-  "zakarpattia": {
-   "status": "outage",
-   "note": "Дякове → RO: 494 вант. · 5 д 9 год"
-  },
   "chernivtsi": {
-   "status": "ok",
-   "note": "Дяківці → RO: 0 вант. · 0 год"
+   "status": "outage",
+   "note": "Порубне → RO: 868 вант. · 4 д 1 год"
   },
   "odesa": {
    "status": "outage",
    "note": "Орлівка → RO: 727 вант. · 6 д 10 год"
+  },
+  "zakarpattia": {
+   "status": "outage",
+   "note": "Лужанка → HU: 315 вант. · 3 д 10 год"
   }
  },
  "queue": [
@@ -44,28 +44,28 @@
    "oblast": "lviv",
    "name": "Краківець",
    "to": "PL",
-   "hours": 186,
-   "trucks": 665
+   "hours": 185,
+   "trucks": 663
   },
   {
    "oblast": "lviv",
    "name": "Смільниця",
    "to": "PL",
-   "hours": 13.3,
-   "trucks": 52
+   "hours": 13.0,
+   "trucks": 51
   },
   {
    "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
    "hours": 153,
-   "trucks": 662
+   "trucks": 661
   },
   {
    "oblast": "volyn",
    "name": "Устилуг",
    "to": "PL",
-   "hours": 56,
+   "hours": 55,
    "trucks": 175
   },
   {
@@ -87,7 +87,7 @@
    "name": "Шегині",
    "to": "PL",
    "hours": 141,
-   "trucks": 612
+   "trucks": 613
   },
   {
    "oblast": "volyn",
@@ -104,13 +104,6 @@
    "trucks": 778
   },
   {
-   "oblast": "zakarpattia",
-   "name": "Дякове",
-   "to": "RO",
-   "hours": 129,
-   "trucks": 494
-  },
-  {
    "oblast": "chernivtsi",
    "name": "Дяківці",
    "to": "RO",
@@ -123,6 +116,13 @@
    "to": "RO",
    "hours": 154,
    "trucks": 727
+  },
+  {
+   "oblast": "chernivtsi",
+   "name": "Порубне",
+   "to": "RO",
+   "hours": 96.8,
+   "trucks": 868
   },
   {
    "oblast": "chernivtsi",
@@ -175,6 +175,13 @@
   },
   {
    "oblast": "odesa",
+   "name": "Старокозаче",
+   "to": "MD",
+   "hours": 9.9,
+   "trucks": 44
+  },
+  {
+   "oblast": "odesa",
    "name": "Табаки",
    "to": "MD",
    "hours": 0.0,
@@ -193,6 +200,13 @@
    "to": "SK",
    "hours": 0.0,
    "trucks": 0
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Лужанка",
+   "to": "HU",
+   "hours": 82,
+   "trucks": 315
   }
  ]
 }
