@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-23T19:37:43Z",
- "checked_at": "2026-11-23T19:37:43Z",
+ "updated": "2026-11-23T19:41:11Z",
+ "checked_at": "2026-11-23T19:41:11Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Рава-Руська → PL: 600 вант. · 8 д 14 год"
+   "note": "Рава-Руська → PL: 599 вант. · 8 д 14 год"
   },
   "volyn": {
    "status": "outage",
@@ -18,15 +18,11 @@
   },
   "chernivtsi": {
    "status": "outage",
-   "note": "Порубне → RO: 860 вант. · 4 д 0 год"
+   "note": "Порубне → RO: 858 вант. · 3 д 23 год"
   },
   "odesa": {
    "status": "outage",
    "note": "Орлівка → RO: 727 вант. · 6 д 10 год"
-  },
-  "vinnytsia": {
-   "status": "ok",
-   "note": "Могилів-Подільський → MD: 23 вант. · 2 год"
   }
  },
  "queue": [
@@ -49,14 +45,14 @@
    "name": "Рава-Руська",
    "to": "PL",
    "hours": 106,
-   "trucks": 820
+   "trucks": 817
   },
   {
    "oblast": "lviv",
    "name": "Рава-Руська",
    "to": "PL",
    "hours": 206,
-   "trucks": 600
+   "trucks": 599
   },
   {
    "oblast": "lviv",
@@ -90,15 +86,22 @@
    "oblast": "lviv",
    "name": "Шегині",
    "to": "PL",
-   "hours": 151,
-   "trucks": 537
+   "hours": 152,
+   "trucks": 539
   },
   {
    "oblast": "lviv",
    "name": "Шегині",
    "to": "PL",
    "hours": 141,
-   "trucks": 613
+   "trucks": 612
+  },
+  {
+   "oblast": "volyn",
+   "name": "Ягодин",
+   "to": "PL",
+   "hours": 105,
+   "trucks": 732
   },
   {
    "oblast": "volyn",
@@ -132,8 +135,8 @@
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
-   "hours": 96.1,
-   "trucks": 860
+   "hours": 95,
+   "trucks": 858
   },
   {
    "oblast": "chernivtsi",
@@ -162,13 +165,6 @@
    "to": "MD",
    "hours": 0.0,
    "trucks": 0
-  },
-  {
-   "oblast": "vinnytsia",
-   "name": "Могилів-Подільський",
-   "to": "MD",
-   "hours": 2.1,
-   "trucks": 23
   },
   {
    "oblast": "odesa",
