@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-23T16:13:02Z",
+ "generated_at": "2026-11-23T16:42:47Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 5 / dropped 2, showing 2"
+   "status": "ok: kept 6 / dropped 1, showing 2"
   },
   {
    "name": "Херсонська ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-dsns_telegram-81377",
+   "title": "5 людей постраждали внаслідок російської атаки 23 листопада, двох надзвичайники врятували",
+   "body": "Під ворожий удар потрапили одразу декілька районів столиці. ◾У Печерському районі загорілося 2 автомобіля, вогонь розповсюдився на балкон житлової п'ятиповерхівки. Також відбулося руйнування балконів з 2 по 4 поверхи. На свіже повітря рятувальники вивели 2…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/81377",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-23T16:42:06Z",
+   "expires_at": "2026-11-24T04:42:06Z",
+   "auto": true,
+   "en_mt": {
+    "title": "5 people were injured as a result of the Russian attack on November 23, two rescuers saved them",
+    "body": "Under enemy fire, several districts of the capital were hit at once. ◾In the Pecherskyi district, 2 cars caught fire, the fire spread to the balcony of a residential five-story building. There was also destruction of balconies from the 2nd to the 4th floors. In the fresh air, rescuers took out 2…",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-dsns_telegram-81370",
    "title": "Інструктори з мінної безпеки та чотирилапа помічниця Енні з Мобільного рятувального центру швидкого…",
@@ -91,24 +109,6 @@
    "en_mt": {
     "title": "Before the full-scale invasion, about 3500 people lived in the Udachna community.",
     "body": "Through the war, most of them were forced to leave their homes. Many residents moved to Kamianske in Dnipropetrovsk region. A humanitarian hub and specialists of the military administration of the community are currently working here. IDPs can receive humanitarian aid…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-81369",
-   "title": "Минулий тиждень знову був для українських рятувальників тижнем боротьби за людські життя після російських…",
-   "body": "Під прицілом ворога опинилися Київ та область, Харківщина, Дніпропетровщина, Кіровоградщина, Вінниччина, Житомирщина, Одещина, Полтавщина, Чернігівщина, Прикарпаття, Буковина, Рівненщина, Донеччина, Запоріжжя… За кожною з цих атак - понівечені будинки…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/81369",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-23T14:34:37Z",
-   "expires_at": "2026-11-24T02:34:37Z",
-   "auto": true,
-   "en_mt": {
-    "title": "The last week was again for Ukrainian rescuers a week of struggle for human lives after Russian…",
-    "body": "Under enemy fire were Kyiv and the region, Kharkivshchyna, Dnipropetrovshchyna, Kirovohradshchyna, Vinnychchyna, Zhytomyrshchyna, Odeschina, Poltavshchyna, Chernihivshchyna, Prykarpattia, Bukovina, Rivnenshchyna, Donetschina, Zaporizhzhia… Behind each of these attacks - mangled houses…",
     "by": "m2m100"
    }
   },
