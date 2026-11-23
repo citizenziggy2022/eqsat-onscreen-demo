@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-23T23:53:49Z",
- "checked_at": "2026-11-23T23:53:49Z",
+ "updated": "2026-11-23T23:57:11Z",
+ "checked_at": "2026-11-23T23:57:11Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -14,7 +14,7 @@
   },
   "chernivtsi": {
    "status": "outage",
-   "note": "Порубне → RO: 817 вант. · 3 д 20 год"
+   "note": "Порубне → RO: 815 вант. · 3 д 20 год"
   },
   "odesa": {
    "status": "ok",
@@ -26,7 +26,7 @@
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Ужгород → SK: 739 вант. · 6 д 1 год"
+   "note": "Ужгород → SK: 738 вант. · 6 д 1 год"
   }
  },
  "queue": [
@@ -35,7 +35,7 @@
    "name": "Краківець",
    "to": "PL",
    "hours": 91,
-   "trucks": 801
+   "trucks": 802
   },
   {
    "oblast": "lviv",
@@ -70,7 +70,7 @@
    "name": "Шегині",
    "to": "PL",
    "hours": 147,
-   "trucks": 523
+   "trucks": 522
   },
   {
    "oblast": "lviv",
@@ -91,7 +91,7 @@
    "name": "Ягодин",
    "to": "PL",
    "hours": 0.0,
-   "trucks": 0
+   "trucks": 1
   },
   {
    "oblast": "chernivtsi",
@@ -105,14 +105,14 @@
    "name": "Порубне",
    "to": "RO",
    "hours": 92,
-   "trucks": 817
+   "trucks": 815
   },
   {
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
    "hours": 0.0,
-   "trucks": 1
+   "trucks": 0
   },
   {
    "oblast": "chernivtsi",
@@ -134,6 +134,13 @@
    "to": "MD",
    "hours": 0.0,
    "trucks": 0
+  },
+  {
+   "oblast": "chernivtsi",
+   "name": "Мамалига",
+   "to": "MD",
+   "hours": 4.5,
+   "trucks": 38
   },
   {
    "oblast": "vinnytsia",
@@ -182,7 +189,7 @@
    "name": "Ужгород",
    "to": "SK",
    "hours": 145,
-   "trucks": 739
+   "trucks": 738
   },
   {
    "oblast": "zakarpattia",
@@ -190,20 +197,6 @@
    "to": "SK",
    "hours": 0.0,
    "trucks": 0
-  },
-  {
-   "oblast": "zakarpattia",
-   "name": "Лужанка",
-   "to": "HU",
-   "hours": 4.3,
-   "trucks": 22
-  },
-  {
-   "oblast": "zakarpattia",
-   "name": "Лужанка",
-   "to": "HU",
-   "hours": 81,
-   "trucks": 308
   }
  ]
 }
