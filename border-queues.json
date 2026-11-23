@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-23T20:28:25Z",
- "checked_at": "2026-11-23T20:28:25Z",
+ "updated": "2026-11-23T20:31:39Z",
+ "checked_at": "2026-11-23T20:31:39Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -10,7 +10,7 @@
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 1678 вант. · 7 д 23 год"
+   "note": "Ягодин → PL: 1676 вант. · 7 д 23 год"
   },
   "zakarpattia": {
    "status": "outage",
@@ -18,7 +18,7 @@
   },
   "chernivtsi": {
    "status": "outage",
-   "note": "Порубне → RO: 847 вант. · 3 д 22 год"
+   "note": "Порубне → RO: 849 вант. · 3 д 22 год"
   },
   "odesa": {
    "status": "outage",
@@ -26,6 +26,13 @@
   }
  },
  "queue": [
+  {
+   "oblast": "lviv",
+   "name": "Грушів",
+   "to": "PL",
+   "hours": 6,
+   "trucks": 29
+  },
   {
    "oblast": "lviv",
    "name": "Краківець",
@@ -38,7 +45,7 @@
    "name": "Краківець",
    "to": "PL",
    "hours": 0.0,
-   "trucks": 2
+   "trucks": 1
   },
   {
    "oblast": "lviv",
@@ -87,14 +94,14 @@
    "name": "Ягодин",
    "to": "PL",
    "hours": 103,
-   "trucks": 721
+   "trucks": 719
   },
   {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
    "hours": 191,
-   "trucks": 1678
+   "trucks": 1676
   },
   {
    "oblast": "volyn",
@@ -129,14 +136,14 @@
    "name": "Порубне",
    "to": "RO",
    "hours": 94,
-   "trucks": 847
+   "trucks": 849
   },
   {
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
-   "hours": 2.2,
-   "trucks": 18
+   "hours": 1.8,
+   "trucks": 16
   },
   {
    "oblast": "chernivtsi",
@@ -163,8 +170,8 @@
    "oblast": "chernivtsi",
    "name": "Мамалига",
    "to": "MD",
-   "hours": 8.5,
-   "trucks": 60
+   "hours": 8.2,
+   "trucks": 58
   },
   {
    "oblast": "odesa",
@@ -178,7 +185,7 @@
    "name": "Росошани",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 2
+   "trucks": 1
   },
   {
    "oblast": "odesa",
@@ -198,8 +205,8 @@
    "oblast": "zakarpattia",
    "name": "Малий Березний",
    "to": "SK",
-   "hours": 0.0,
-   "trucks": 0
+   "hours": 0.2,
+   "trucks": 1
   },
   {
    "oblast": "zakarpattia",
