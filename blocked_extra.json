@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-23T01:51:49+00:00",
+ "generated": "2026-11-23T02:52:45+00:00",
  "sources": {
   "censoredplanet": {
    "name": "Censored Planet (University of Michigan)",
@@ -10,7 +10,7 @@
     "endDate": "2026-11-23"
    },
    "domains_tested": 870,
-   "query_errors": 0,
+   "query_errors": 1,
    "baseline_unexpected_share": {
     "RU": 0.0,
     "UA": 0.0,
@@ -26,7 +26,7 @@
     "UA": {
      "confirmed": 0,
      "likely": 0,
-     "measured": 838
+     "measured": 829
     },
     "BY": {
      "confirmed": 0,
@@ -40,7 +40,7 @@
     }
    },
    "rule": "confirmed = a known block page was returned; likely = >=20 measurements, >=50% unexpected and >=30 points above the country median",
-   "seconds": 17.2
+   "seconds": 22.7
   },
   "rkn": {
    "name": "Roskomnadzor registry (via antifilter.download)",
@@ -49,13 +49,13 @@
    "total_domains": 1823993,
    "well_known_listed": 56,
    "note": "Official RKN blocking registry. Rows are registry entries (incl. wildcard and mirror domains), not distinct sites.",
-   "seconds": 23.2
+   "seconds": 19.4
   }
  },
  "credit": "Censored Planet (U. Michigan) · RKN registry via antifilter.download",
  "counts": {
   "items": 122,
-  "new_vs_ooni": 61,
+  "new_vs_ooni": 63,
   "by_source_country": {
    "rkn/RU": 45,
    "censoredplanet/RU": 77
@@ -179,7 +179,7 @@
    "status": "listed",
    "last_seen": "2026-11-22",
    "category": "news",
-   "new_vs_ooni": false,
+   "new_vs_ooni": true,
    "well_known": true
   },
   {
@@ -189,7 +189,7 @@
    "status": "listed",
    "last_seen": "2026-11-22",
    "category": "news",
-   "new_vs_ooni": false,
+   "new_vs_ooni": true,
    "well_known": true
   },
   {
