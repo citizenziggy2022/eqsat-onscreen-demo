@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-23T11:36:49Z",
+ "fetched_at": "2026-11-23T11:46:30Z",
  "every_s": 600,
  "note": "Conflict photo candidates, NOT on air. Fetched by scripts/fetch_conflict_photos.py in the live-runner every 10 min. An item goes on air only when the Editor's Approve moves it to photos-conflict.json.",
  "check": "none in the runner (no vision model): nothing is approved automatically",
@@ -482,9 +482,10 @@
   },
   {
    "source": "undp",
-   "reason": "source failed: ReadTimeout(ReadTimeoutError(\"HTTPSConnectionPool(host='www.flickr.com', port=443): Read timed out. (read timeout=20)\"))",
+   "title": "https://www.flickr.com/photos/undpukraine/55662737017/",
+   "reason": "off-topic (no war/recovery words in caption or tags): ",
    "stage": "fetch"
   }
  ],
- "took_s": 29.9
+ "took_s": 5.2
 }
