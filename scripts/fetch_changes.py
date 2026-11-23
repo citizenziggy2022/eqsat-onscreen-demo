@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Map change summaries (Nov 22 2026): keeps a short history of REAL readings so the screen can say what changed.
-Reads fires.json, ioda.json and water.json (Ukrenergo power cuts, kind "power" only) as they are now and appends one
+Reads fires.json, ioda.json and power-cuts.json (Ukrenergo power cuts, kind "power" only) as they are now and appends one
 snapshot to changes.json at most every 30 minutes; snapshots older than 26 h are dropped. Counts and statuses only: no
 coordinates, no text from sources. A source that is missing, empty or of another kind is left out of that snapshot
 (nothing is invented, and zero readings are never treated as "no incidents"). Runs inside fetch_news.py's loop."""
@@ -28,7 +28,8 @@ def snapshot():
         scores = {k: v["score"] for k, v in regs.items() if isinstance(v, dict) and isinstance(v.get("score"), (int, float))}
         crit = sorted(k for k, v in regs.items() if isinstance(v, dict) and v.get("level") == "critical")
         snap["ioda"] = {"at": i["updated_at"], "scores": scores, "critical": crit}
-    w = load("water.json")
+    candidates=[v for v in [load("power-cuts.json"),load("water.json")] if isinstance(v,dict) and v.get("kind")=="power"]
+    w=max(candidates,key=lambda v:parse(v.get("updated")) or dt.datetime.min.replace(tzinfo=dt.timezone.utc),default=None)
     if w and w.get("kind") == "power" and parse(w.get("post_at")) and isinstance(w.get("regions"), dict):
         snap["power"] = {"at": w["post_at"], "regions": {k: v.get("status") for k, v in w["regions"].items() if isinstance(v, dict) and v.get("status")}}
     return snap if len(snap) > 1 else None
