@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-23T09:28:45Z",
- "checked_at": "2026-11-23T09:28:45Z",
+ "updated": "2026-11-23T09:31:59Z",
+ "checked_at": "2026-11-23T09:31:59Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -10,11 +10,11 @@
   },
   "volyn": {
    "status": "outage",
-   "note": "Устилуг → PL: 611 вант. · 6 д 6 год"
+   "note": "Устилуг → PL: 614 вант. · 6 д 7 год"
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Чоп (Тиса) → HU: 1348 вант. · 5 д 12 год"
+   "note": "Чоп (Тиса) → HU: 1345 вант. · 5 д 12 год"
   },
   "chernivtsi": {
    "status": "outage",
@@ -83,8 +83,22 @@
    "oblast": "volyn",
    "name": "Устилуг",
    "to": "PL",
-   "hours": 150,
-   "trucks": 611
+   "hours": 151,
+   "trucks": 614
+  },
+  {
+   "oblast": "lviv",
+   "name": "Шегині",
+   "to": "PL",
+   "hours": 127,
+   "trucks": 454
+  },
+  {
+   "oblast": "lviv",
+   "name": "Шегині",
+   "to": "PL",
+   "hours": 133,
+   "trucks": 577
   },
   {
    "oblast": "zakarpattia",
@@ -98,7 +112,7 @@
    "name": "Дяківці",
    "to": "RO",
    "hours": 0.0,
-   "trucks": 0
+   "trucks": 1
   },
   {
    "oblast": "chernivtsi",
@@ -120,13 +134,6 @@
    "to": "RO",
    "hours": 87,
    "trucks": 783
-  },
-  {
-   "oblast": "chernivtsi",
-   "name": "Порубне",
-   "to": "RO",
-   "hours": 0.0,
-   "trucks": 2
   },
   {
    "oblast": "chernivtsi",
@@ -185,13 +192,6 @@
    "trucks": 0
   },
   {
-   "oblast": "odesa",
-   "name": "Старокозаче",
-   "to": "MD",
-   "hours": 0.0,
-   "trucks": 0
-  },
-  {
    "oblast": "zakarpattia",
    "name": "Малий Березний",
    "to": "SK",
@@ -203,7 +203,7 @@
    "name": "Ужгород",
    "to": "SK",
    "hours": 131,
-   "trucks": 675
+   "trucks": 674
   },
   {
    "oblast": "zakarpattia",
@@ -217,7 +217,7 @@
    "name": "Чоп (Тиса)",
    "to": "HU",
    "hours": 132,
-   "trucks": 1348
+   "trucks": 1345
   }
  ]
 }
