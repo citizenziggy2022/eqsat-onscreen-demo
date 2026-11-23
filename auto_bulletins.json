@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-23T14:34:09Z",
+ "generated_at": "2026-11-23T14:35:08Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -41,6 +41,24 @@
  ],
  "bulletins": [
   {
+   "id": "auto-dsns_telegram-81369",
+   "title": "Минулий тиждень знову був для українських рятувальників тижнем боротьби за людські життя після російських…",
+   "body": "Під прицілом ворога опинилися Київ та область, Харківщина, Дніпропетровщина, Кіровоградщина, Вінниччина, Житомирщина, Одещина, Полтавщина, Чернігівщина, Прикарпаття, Буковина, Рівненщина, Донеччина, Запоріжжя… За кожною з цих атак - понівечені будинки…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/81369",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-23T14:34:37Z",
+   "expires_at": "2026-11-24T02:34:37Z",
+   "auto": true,
+   "en_mt": {
+    "title": "The last week was again for Ukrainian rescuers a week of struggle for human lives after Russian…",
+    "body": "Under enemy fire were Kyiv and the region, Kharkivshchyna, Dnipropetrovshchyna, Kirovohradshchyna, Vinnychchyna, Zhytomyrshchyna, Odeschina, Poltavshchyna, Chernihivshchyna, Prykarpattia, Bukovina, Rivnenshchyna, Donetschina, Zaporizhzhia… Behind each of these attacks - mangled houses…",
+    "by": "m2m100"
+   }
+  },
+  {
    "id": "auto-dsns_telegram-81360",
    "title": "Троє людей загинули, ще одна – травмована внаслідок російської атаки по Запоріжжю!",
    "body": "Ворог завдав удару по нежитловій чотириповерховій будівлі, виникла пожежа на третьому поверсі. Рятувальники ліквідували займання на площі 100 кв.м. Під час аварійно-рятувальних робіт надзвичайники врятували двох людей із верхніх поверхів. На місці триває…",
@@ -55,24 +73,6 @@
    "en_mt": {
     "title": "Three people were killed, another one was injured as a result of the Russian attack on Zaporizhzhia!",
     "body": "The enemy struck a non-residential four-story building, a fire broke out on the third floor. Rescuers extinguished the fire on an area of 100 sq.m. During emergency rescue work, rescuers saved two people from the upper floors. The work at the site continues…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-81349",
-   "title": "На відео гора Піп Іван 23 листопада.",
-   "body": "У високогір’ї Карпат хмарно, сніг, температура повітря −11 °C, вітер північно-східний, 5 м/с. Плануєте похід у гори? Подбайте про безпеку заздалегідь! Вітер посилює відчуття холоду, а короткий світловий день скорочує час для повернення. Тому перед виходом…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/81349",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-23T10:51:20Z",
-   "expires_at": "2026-11-23T22:51:20Z",
-   "auto": true,
-   "en_mt": {
-    "title": "On the video Mount Pip Ivan on November 23.",
-    "body": "In the Carpathian highlands it is cloudy, snow, air temperature −11 °C, wind northeast, 5 m/s. Are you planning a hike in the mountains? Take care of safety in advance! The wind enhances the feeling of cold, and the short daylight hours reduce the time for return. So before leaving…",
     "by": "m2m100"
    }
   },
