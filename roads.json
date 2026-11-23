@@ -1,16 +1,16 @@
 {
- "updated": "2026-11-23T15:08:52Z",
- "checked_at": "2026-11-23T15:08:52Z",
+ "updated": "2026-11-23T15:12:24Z",
+ "checked_at": "2026-11-23T15:12:24Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Краківець → PL: 655 вант. · 7 д 15 год"
+   "note": "Краківець → PL: 656 вант. · 7 д 15 год"
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 710 вант. · 4 д 6 год"
+   "note": "Ягодин → PL: 708 вант. · 4 д 5 год"
   },
   "zakarpattia": {
    "status": "outage",
@@ -18,7 +18,7 @@
   },
   "chernivtsi": {
    "status": "outage",
-   "note": "Порубне → RO: 800 вант. · 3 д 16 год"
+   "note": "Порубне → RO: 801 вант. · 3 д 16 год"
   },
   "odesa": {
    "status": "outage",
@@ -42,21 +42,21 @@
    "name": "Краківець",
    "to": "PL",
    "hours": 183,
-   "trucks": 655
+   "trucks": 656
   },
   {
    "oblast": "lviv",
    "name": "Смільниця",
    "to": "PL",
    "hours": 0.0,
-   "trucks": 5
+   "trucks": 6
   },
   {
    "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
-   "hours": 56,
-   "trucks": 264
+   "hours": 55,
+   "trucks": 263
   },
   {
    "oblast": "lviv",
@@ -73,25 +73,11 @@
    "trucks": 179
   },
   {
-   "oblast": "lviv",
-   "name": "Шегині",
-   "to": "PL",
-   "hours": 141,
-   "trucks": 500
-  },
-  {
-   "oblast": "lviv",
-   "name": "Шегині",
-   "to": "PL",
-   "hours": 140,
-   "trucks": 603
-  },
-  {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
-   "hours": 102,
-   "trucks": 710
+   "hours": 101,
+   "trucks": 708
   },
   {
    "oblast": "volyn",
@@ -133,14 +119,14 @@
    "name": "Порубне",
    "to": "RO",
    "hours": 88,
-   "trucks": 800
+   "trucks": 801
   },
   {
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
    "hours": 0.0,
-   "trucks": 6
+   "trucks": 5
   },
   {
    "oblast": "chernivtsi",
@@ -161,7 +147,7 @@
    "name": "Маяки-Удобне",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 0
+   "trucks": 1
   },
   {
    "oblast": "vinnytsia",
@@ -204,6 +190,13 @@
    "to": "SK",
    "hours": 0.0,
    "trucks": 0
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Ужгород",
+   "to": "SK",
+   "hours": 0.5,
+   "trucks": 4
   }
  ]
 }
