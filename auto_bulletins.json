@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-24T12:54:39Z",
+ "generated_at": "2026-11-24T12:56:26Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -12,7 +12,7 @@
    "name": "Херсонська ОВА",
    "url": "https://t.me/s/khersonskaODA",
    "verified": "linked from khoda.gov.ua; channel links back to khoda.gov.ua",
-   "status": "ok: kept 1 / dropped 19, showing 1"
+   "status": "ok: kept 2 / dropped 18, showing 2"
   },
   {
    "name": "Запорізька ОВА",
@@ -109,6 +109,24 @@
    "en_mt": {
     "title": "We support the mobility and well-being of family-type children's homes in Kharkiv region, – Oleg Synegubov",
     "body": "Within the initiative of the Olena Zelenska Foundation and with the support of the Central Project Management Agency of Lithuania, two family-type children's homes in Kharkiv region received new vehicles. The cars will help families in their daily affairs, in particular ensure…",
+    "by": "m2m100"
+   }
+  },
+  {
+   "id": "auto-khersonskaODA-72069",
+   "title": "Криворізький координаційний центр «Вільні разом» системно та всебічно допомагає ВПО з Херсонщини",
+   "body": "Протягом тижня фахівці працювали за такими напрямами: ▪Гуманітарна допомога. Видали допоміжні засоби реабілітації. ▪Юридична та психологічна допомога. Представники БФ «Право на захист», ГО «Десяте квітня», БО «Схід SOS» та ГМ «Проліска» надали допомогу 14…",
+   "source": "Херсонська ОВА",
+   "source_url": "https://t.me/khersonskaODA/72069",
+   "region": "Херсонщина",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-24T08:19:23Z",
+   "expires_at": "2026-11-24T20:19:23Z",
+   "auto": true,
+   "en_mt": {
+    "title": "Kryvyi Rih Coordination Center \"Vilni Razom\" systematically and comprehensively helps IDPs from Kherson region",
+    "body": "Throughout the week, specialists worked in the following areas: ▪Humanitarian aid. Issued rehabilitation aids. ▪Legal and psychological assistance. Representatives of the CF \"Right to Protection\", NGO \"Tenth of April\", VO \"East SOS\" and GM \"Prolyska\" provided assistance to 14…",
     "by": "m2m100"
    }
   },
