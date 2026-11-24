@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24T21:41:12Z",
- "checked_at": "2026-11-24T21:41:12Z",
+ "updated": "2026-11-24T21:44:30Z",
+ "checked_at": "2026-11-24T21:44:30Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -8,13 +8,17 @@
    "status": "outage",
    "note": "Рава-Руська → PL: 597 вант. · 8 д 3 год"
   },
+  "volyn": {
+   "status": "outage",
+   "note": "Ягодин → PL: 1691 вант. · 6 д 22 год"
+  },
   "zakarpattia": {
    "status": "outage",
    "note": "Дякове → RO: 522 вант. · 5 д 8 год"
   },
   "chernivtsi": {
    "status": "ok",
-   "note": "Мамалига → MD: 42 вант. · 6 год"
+   "note": "Мамалига → MD: 40 вант. · 5 год"
   },
   "odesa": {
    "status": "ok",
@@ -26,8 +30,8 @@
    "oblast": "lviv",
    "name": "Грушів",
    "to": "PL",
-   "hours": 8.6,
-   "trucks": 42
+   "hours": 8.4,
+   "trucks": 41
   },
   {
    "oblast": "lviv",
@@ -35,13 +39,6 @@
    "to": "PL",
    "hours": 0.0,
    "trucks": 1
-  },
-  {
-   "oblast": "lviv",
-   "name": "Рава-Руська",
-   "to": "PL",
-   "hours": 119,
-   "trucks": 911
   },
   {
    "oblast": "lviv",
@@ -62,7 +59,7 @@
    "name": "Угринів",
    "to": "PL",
    "hours": 143,
-   "trucks": 621
+   "trucks": 620
   },
   {
    "oblast": "lviv",
@@ -77,6 +74,13 @@
    "to": "PL",
    "hours": 145,
    "trucks": 628
+  },
+  {
+   "oblast": "volyn",
+   "name": "Ягодин",
+   "to": "PL",
+   "hours": 166,
+   "trucks": 1691
   },
   {
    "oblast": "zakarpattia",
@@ -117,8 +121,8 @@
    "oblast": "chernivtsi",
    "name": "Мамалига",
    "to": "MD",
-   "hours": 5.7,
-   "trucks": 42
+   "hours": 5.3,
+   "trucks": 40
   },
   {
    "oblast": "odesa",
@@ -146,14 +150,14 @@
    "name": "Табаки",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 1
+   "trucks": 0
   },
   {
    "oblast": "zakarpattia",
    "name": "Малий Березний",
    "to": "SK",
    "hours": 0.0,
-   "trucks": 0
+   "trucks": 1
   },
   {
    "oblast": "zakarpattia",
