@@ -1,16 +1,16 @@
 {
- "updated": "2026-11-24T10:55:16Z",
- "checked_at": "2026-11-24T10:55:16Z",
+ "updated": "2026-11-24T10:58:18Z",
+ "checked_at": "2026-11-24T10:58:18Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Угринів → PL: 637 вант. · 6 д 3 год"
+   "note": "Рава-Руська → PL: 577 вант. · 7 д 22 год"
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 741 вант. · 8 д 2 год"
+   "note": "Ягодин → PL: 742 вант. · 8 д 2 год"
   },
   "zakarpattia": {
    "status": "outage",
@@ -22,7 +22,7 @@
   },
   "odesa": {
    "status": "outage",
-   "note": "Орлівка → RO: 685 вант. · 6 д 1 год"
+   "note": "Орлівка → RO: 686 вант. · 6 д 1 год"
   }
  },
  "queue": [
@@ -45,7 +45,14 @@
    "name": "Рава-Руська",
    "to": "PL",
    "hours": 111,
-   "trucks": 855
+   "trucks": 853
+  },
+  {
+   "oblast": "lviv",
+   "name": "Рава-Руська",
+   "to": "PL",
+   "hours": 190,
+   "trucks": 577
   },
   {
    "oblast": "lviv",
@@ -59,7 +66,7 @@
    "name": "Угринів",
    "to": "PL",
    "hours": 147,
-   "trucks": 637
+   "trucks": 638
   },
   {
    "oblast": "volyn",
@@ -72,8 +79,8 @@
    "oblast": "lviv",
    "name": "Шегині",
    "to": "PL",
-   "hours": 141,
-   "trucks": 504
+   "hours": 142,
+   "trucks": 505
   },
   {
    "oblast": "lviv",
@@ -87,14 +94,14 @@
    "name": "Ягодин",
    "to": "PL",
    "hours": 81,
-   "trucks": 638
+   "trucks": 639
   },
   {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
    "hours": 159,
-   "trucks": 1628
+   "trucks": 1630
   },
   {
    "oblast": "volyn",
@@ -108,7 +115,7 @@
    "name": "Ягодин",
    "to": "PL",
    "hours": 194,
-   "trucks": 741
+   "trucks": 742
   },
   {
    "oblast": "zakarpattia",
@@ -136,7 +143,7 @@
    "name": "Орлівка",
    "to": "RO",
    "hours": 145,
-   "trucks": 685
+   "trucks": 686
   },
   {
    "oblast": "chernivtsi",
@@ -157,7 +164,7 @@
    "name": "Виноградівка",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 4
+   "trucks": 3
   },
   {
    "oblast": "odesa",
@@ -171,7 +178,7 @@
    "name": "Рені",
    "to": "MD",
    "hours": 50,
-   "trucks": 163
+   "trucks": 162
   },
   {
    "oblast": "odesa",
@@ -206,7 +213,7 @@
    "name": "Ужгород",
    "to": "SK",
    "hours": 0.0,
-   "trucks": 1
+   "trucks": 0
   }
  ]
 }
