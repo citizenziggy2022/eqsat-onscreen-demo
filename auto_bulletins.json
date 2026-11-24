@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-24T12:08:52Z",
+ "generated_at": "2026-11-24T12:15:16Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 3 / dropped 2, showing 2"
+   "status": "ok: kept 4 / dropped 2, showing 2"
   },
   {
    "name": "Херсонська ОВА",
@@ -41,6 +41,24 @@
  ],
  "bulletins": [
   {
+   "id": "auto-dsns_telegram-81434",
+   "title": "Міни та інші боєприпаси не стають безпечними з роками. Міф про те, що вони «застарівають», може коштувати життя",
+   "body": "Дивіться відео, щоб дізнатися більше про цей міф і чому він настільки небезпечний. Та пам’ятай: Стій! Не чіпай! Телефонуй 101 Сайт • Fb • X • IG • YT • TT",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/81434",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-24T12:15:01Z",
+   "expires_at": "2026-11-25T00:15:01Z",
+   "auto": true,
+   "en_mt": {
+    "title": "Mines and other ammunition do not become safe with years. The myth that they are \"aging\" can cost lives.",
+    "body": "Watch the video to learn more about this myth and why it is so dangerous. And remember: Stop! Do not touch! Call 101 Site • Fb • X • IG • YT • TT",
+    "by": "m2m100"
+   }
+  },
+  {
    "id": "auto-dsns_telegram-81429",
    "title": "Важливі поради, які рятують життя!",
    "body": "Сигнал повітряної тривоги може застати вас де завгодно, але не завжди є можливість та час добігти до укриття. Зібрали поради, як діяти в такій ситуації та зменшити ризики для себе Збережіть цей допис та поділіться з рідними! Сайт • Fb • X • IG • YT • TT",
@@ -73,24 +91,6 @@
    "en_mt": {
     "title": "An enemy FPV drone attacked the Voznesenivskyi district of Zaporizhzhia",
     "body": "A 39-year-old woman was injured. She received a blast injury. The woman was hospitalized in a serious condition.",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-81422",
-   "title": "289 людей евакуювали минулого тижня з небезпечних районів Харківщини!",
-   "body": "Серед них — 24 дитини та 35 осіб з інвалідністю. Щодня рятувальники, поліцейські, волонтери та представники місцевої влади працюють разом, аби вчасно вивезти людей із-під загрози ворожих обстрілів та зберегти найцінніше — життя. Сайт •Fb •X •IG •YT •TT",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/81422",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-24T08:33:40Z",
-   "expires_at": "2026-11-24T20:33:40Z",
-   "auto": true,
-   "en_mt": {
-    "title": "289 people were evacuated last week from dangerous areas of Kharkivshchyna!",
-    "body": "Among them are 24 children and 35 people with disabilities. Every day, rescuers, police officers, volunteers and representatives of local authorities work together to evacuate people from the threat of enemy shelling in a timely manner and preserve the most valuable thing - life. Site •Fb •X •IG •YT •TT",
     "by": "m2m100"
    }
   },
