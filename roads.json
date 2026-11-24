@@ -1,20 +1,20 @@
 {
- "updated": "2026-11-24T18:51:00Z",
- "checked_at": "2026-11-24T18:51:00Z",
+ "updated": "2026-11-24T18:54:10Z",
+ "checked_at": "2026-11-24T18:54:10Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Краківець → PL: 672 вант. · 7 д 20 год"
+   "note": "Краківець → PL: 671 вант. · 7 д 20 год"
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 1671 вант. · 6 д 20 год"
+   "note": "Ягодин → PL: 1672 вант. · 6 д 20 год"
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Чоп (Тиса) → HU: 1556 вант. · 6 д 9 год"
+   "note": "Чоп (Тиса) → HU: 1553 вант. · 6 д 9 год"
   },
   "chernivtsi": {
    "status": "ok",
@@ -23,6 +23,10 @@
   "odesa": {
    "status": "ok",
    "note": "Виноградівка → MD: 0 вант. · 0 год"
+  },
+  "vinnytsia": {
+   "status": "ok",
+   "note": "Могилів-Подільський → MD: 16 вант. · 0 год"
   }
  },
  "queue": [
@@ -38,7 +42,7 @@
    "name": "Краківець",
    "to": "PL",
    "hours": 188,
-   "trucks": 672
+   "trucks": 671
   },
   {
    "oblast": "lviv",
@@ -59,7 +63,7 @@
    "name": "Угринів",
    "to": "PL",
    "hours": 145,
-   "trucks": 628
+   "trucks": 629
   },
   {
    "oblast": "lviv",
@@ -80,7 +84,7 @@
    "name": "Ягодин",
    "to": "PL",
    "hours": 164,
-   "trucks": 1671
+   "trucks": 1672
   },
   {
    "oblast": "zakarpattia",
@@ -116,6 +120,13 @@
    "to": "MD",
    "hours": 0.0,
    "trucks": 2
+  },
+  {
+   "oblast": "vinnytsia",
+   "name": "Могилів-Подільський",
+   "to": "MD",
+   "hours": 0.3,
+   "trucks": 16
   },
   {
    "oblast": "odesa",
@@ -164,7 +175,7 @@
    "name": "Чоп (Тиса)",
    "to": "HU",
    "hours": 153,
-   "trucks": 1556
+   "trucks": 1553
   }
  ]
 }
