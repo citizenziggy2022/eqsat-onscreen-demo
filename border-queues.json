@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24T01:33:07Z",
- "checked_at": "2026-11-24T01:33:07Z",
+ "updated": "2026-11-24T01:36:23Z",
+ "checked_at": "2026-11-24T01:36:23Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -10,7 +10,11 @@
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 761 вант. · 8 д 7 год"
+   "note": "Устилуг → PL: 614 вант. · 6 д 6 год"
+  },
+  "zakarpattia": {
+   "status": "outage",
+   "note": "Ужгород → SK: 726 вант. · 5 д 23 год"
   },
   "chernivtsi": {
    "status": "ok",
@@ -18,15 +22,11 @@
   },
   "odesa": {
    "status": "outage",
-   "note": "Орлівка → RO: 712 вант. · 6 д 7 год"
+   "note": "Орлівка → RO: 711 вант. · 6 д 6 год"
   },
   "vinnytsia": {
    "status": "ok",
    "note": "Могилів-Подільський → MD: 0 вант. · 0 год"
-  },
-  "zakarpattia": {
-   "status": "outage",
-   "note": "Ужгород → SK: 727 вант. · 5 д 23 год"
   }
  },
  "queue": [
@@ -35,7 +35,7 @@
    "name": "Грушів",
    "to": "PL",
    "hours": 2.5,
-   "trucks": 16
+   "trucks": 14
   },
   {
    "oblast": "lviv",
@@ -55,8 +55,8 @@
    "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
-   "hours": 50,
-   "trucks": 236
+   "hours": 49,
+   "trucks": 235
   },
   {
    "oblast": "lviv",
@@ -76,8 +76,8 @@
    "oblast": "volyn",
    "name": "Устилуг",
    "to": "PL",
-   "hours": 149,
-   "trucks": 613
+   "hours": 150,
+   "trucks": 614
   },
   {
    "oblast": "lviv",
@@ -101,11 +101,11 @@
    "trucks": 1
   },
   {
-   "oblast": "volyn",
-   "name": "Ягодин",
-   "to": "PL",
-   "hours": 199,
-   "trucks": 761
+   "oblast": "zakarpattia",
+   "name": "Дякове",
+   "to": "RO",
+   "hours": 126,
+   "trucks": 484
   },
   {
    "oblast": "chernivtsi",
@@ -118,8 +118,8 @@
    "oblast": "odesa",
    "name": "Орлівка",
    "to": "RO",
-   "hours": 151,
-   "trucks": 712
+   "hours": 150,
+   "trucks": 711
   },
   {
    "oblast": "chernivtsi",
@@ -189,7 +189,7 @@
    "name": "Ужгород",
    "to": "SK",
    "hours": 143,
-   "trucks": 727
+   "trucks": 726
   },
   {
    "oblast": "zakarpattia",
