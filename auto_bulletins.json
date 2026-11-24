@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-24T09:39:56Z",
+ "generated_at": "2026-11-24T09:42:07Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -18,7 +18,7 @@
    "name": "Запорізька ОВА",
    "url": "https://t.me/s/zoda_gov_ua",
    "verified": "linked from zoda.gov.ua",
-   "status": "ok: kept 2 / dropped 5, showing 2"
+   "status": "ok: kept 3 / dropped 5, showing 2"
   },
   {
    "name": "Донецька ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-zoda_gov_ua-69284",
+   "title": "Ворожий FPV-дрон атакував Вознесенівський район Запоріжжя",
+   "body": "Поранена 39-річна жінка. Вона отримала вибухову травму. Жінку госпіталізовано до лікарні у тяжкому стані.",
+   "source": "Запорізька ОВА",
+   "source_url": "https://t.me/zoda_gov_ua/69284",
+   "region": "Запоріжжя",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-24T09:41:39Z",
+   "expires_at": "2026-11-24T21:41:39Z",
+   "auto": true,
+   "en_mt": {
+    "title": "An enemy FPV drone attacked the Voznesenivskyi district of Zaporizhzhia",
+    "body": "A 39-year-old woman was injured. She received a blast injury. The woman was hospitalized in a serious condition.",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-dsns_telegram-81422",
    "title": "289 людей евакуювали минулого тижня з небезпечних районів Харківщини!",
@@ -163,24 +181,6 @@
    "en_mt": {
     "title": "To the hospital a woman turned who at night on 16 November suffered due to a strike of a Russian drone on…",
     "body": "At the moment of the attack by an enemy UAV of the \"Molniya\" type, a 65-year-old woman from Kherson was at home. Preliminarily, she received a mine-explosive injury. Currently, medics are conducting an examination and providing assistance to the victim.",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-zoda_gov_ua-69275",
-   "title": "До 11 зросла кількість поранених внаслідок російської атаки на Запоріжжя.",
-   "body": "Одна з постраждалих - жінка - у тяжкому стані. У неї мінно-вибухова та черепно-мозкова травми. Медики надають постраждалим усю необхідну допомогу.",
-   "source": "Запорізька ОВА",
-   "source_url": "https://t.me/zoda_gov_ua/69275",
-   "region": "Запоріжжя",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-24T03:57:56Z",
-   "expires_at": "2026-11-24T15:57:56Z",
-   "auto": true,
-   "en_mt": {
-    "title": "The number of wounded has increased to 11 as a result of the Russian attack on Zaporizhzhia.",
-    "body": "One of the victims - a woman - is in serious condition, she has mine-explosive and craniocerebral injuries, medics are providing the victims with all necessary assistance.",
     "by": "m2m100"
    }
   }
