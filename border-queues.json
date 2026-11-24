@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24T02:52:22Z",
- "checked_at": "2026-11-24T02:52:22Z",
+ "updated": "2026-11-24T02:55:40Z",
+ "checked_at": "2026-11-24T02:55:40Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -13,8 +13,8 @@
    "note": "Устилуг → PL: 612 вант. · 6 д 5 год"
   },
   "chernivtsi": {
-   "status": "ok",
-   "note": "Дяківці → RO: 0 вант. · 0 год"
+   "status": "outage",
+   "note": "Порубне → RO: 774 вант. · 3 д 15 год"
   },
   "odesa": {
    "status": "ok",
@@ -84,7 +84,7 @@
    "name": "Шегині",
    "to": "PL",
    "hours": 143,
-   "trucks": 509
+   "trucks": 508
   },
   {
    "oblast": "lviv",
@@ -104,6 +104,13 @@
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
+   "hours": 87,
+   "trucks": 774
+  },
+  {
+   "oblast": "chernivtsi",
+   "name": "Порубне",
+   "to": "RO",
    "hours": 0.0,
    "trucks": 0
   },
@@ -112,7 +119,7 @@
    "name": "Порубне",
    "to": "RO",
    "hours": 0.0,
-   "trucks": 4
+   "trucks": 2
   },
   {
    "oblast": "odesa",
@@ -175,14 +182,7 @@
    "name": "Ужгород",
    "to": "SK",
    "hours": 0.0,
-   "trucks": 1
-  },
-  {
-   "oblast": "zakarpattia",
-   "name": "Лужанка",
-   "to": "HU",
-   "hours": 3.5,
-   "trucks": 18
+   "trucks": 0
   },
   {
    "oblast": "zakarpattia",
