@@ -1,28 +1,28 @@
 {
- "updated": "2026-11-24T12:22:42Z",
- "checked_at": "2026-11-24T18:02:00Z",
+ "updated": "2026-11-24T18:10:49Z",
+ "checked_at": "2026-11-24T18:10:49Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Угринів → PL: 642 вант. · 6 д 4 год"
+   "note": "Шегині → PL: 604 вант. · 7 д 2 год"
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 755 вант. · 8 д 6 год"
+   "note": "Ягодин → PL: 797 вант. · 8 д 17 год"
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Ужгород → SK: 710 вант. · 5 д 19 год"
+   "note": "Дякове → RO: 527 вант. · 5 д 10 год"
   },
   "chernivtsi": {
-   "status": "outage",
-   "note": "Порубне → RO: 769 вант. · 3 д 1 год"
+   "status": "ok",
+   "note": "Мамалига → MD: 62 вант. · 9 год"
   },
   "odesa": {
    "status": "outage",
-   "note": "Орлівка → RO: 692 вант. · 6 д 2 год"
+   "note": "Орлівка → RO: 736 вант. · 6 д 13 год"
   }
  },
  "queue": [
@@ -30,50 +30,64 @@
    "oblast": "lviv",
    "name": "Краківець",
    "to": "PL",
-   "hours": 84,
-   "trucks": 747
-  },
-  {
-   "oblast": "lviv",
-   "name": "Краківець",
-   "to": "PL",
    "hours": 0.0,
-   "trucks": 2
+   "trucks": 0
+  },
+  {
+   "oblast": "lviv",
+   "name": "Смільниця",
+   "to": "PL",
+   "hours": 6.9,
+   "trucks": 31
   },
   {
    "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
-   "hours": 43,
-   "trucks": 207
+   "hours": 41,
+   "trucks": 197
   },
   {
    "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
-   "hours": 148,
-   "trucks": 642
+   "hours": 145,
+   "trucks": 628
+  },
+  {
+   "oblast": "lviv",
+   "name": "Шегині",
+   "to": "PL",
+   "hours": 170,
+   "trucks": 604
+  },
+  {
+   "oblast": "lviv",
+   "name": "Шегині",
+   "to": "PL",
+   "hours": 143,
+   "trucks": 620
   },
   {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
-   "hours": 159,
-   "trucks": 1628
+   "hours": 59,
+   "trucks": 620
   },
   {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
-   "hours": 198,
-   "trucks": 755
+   "hours": 209,
+   "trucks": 797
   },
   {
    "oblast": "zakarpattia",
    "name": "Дякове",
    "to": "RO",
-   "hours": 121,
-   "trucks": 492
+   "hours": 130,
+   "trucks": 527
   },
   {
    "oblast": "chernivtsi",
@@ -83,32 +97,11 @@
    "trucks": 0
   },
   {
-   "oblast": "chernivtsi",
-   "name": "Красноїльськ",
-   "to": "RO",
-   "hours": 0.0,
-   "trucks": 4
-  },
-  {
    "oblast": "odesa",
    "name": "Орлівка",
    "to": "RO",
-   "hours": 146,
-   "trucks": 692
-  },
-  {
-   "oblast": "chernivtsi",
-   "name": "Порубне",
-   "to": "RO",
-   "hours": 73,
-   "trucks": 769
-  },
-  {
-   "oblast": "chernivtsi",
-   "name": "Порубне",
-   "to": "RO",
-   "hours": 2.2,
-   "trucks": 18
+   "hours": 157,
+   "trucks": 736
   },
   {
    "oblast": "chernivtsi",
@@ -122,28 +115,28 @@
    "name": "Виноградівка",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 2
+   "trucks": 1
   },
   {
    "oblast": "odesa",
    "name": "Маяки-Удобне",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 0
+   "trucks": 1
+  },
+  {
+   "oblast": "chernivtsi",
+   "name": "Мамалига",
+   "to": "MD",
+   "hours": 9.2,
+   "trucks": 62
   },
   {
    "oblast": "odesa",
    "name": "Рені",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 0
-  },
-  {
-   "oblast": "chernivtsi",
-   "name": "Росошани",
-   "to": "MD",
-   "hours": 0.0,
-   "trucks": 0
+   "trucks": 1
   },
   {
    "oblast": "odesa",
@@ -164,14 +157,7 @@
    "name": "Малий Березний",
    "to": "SK",
    "hours": 0.0,
-   "trucks": 0
-  },
-  {
-   "oblast": "zakarpattia",
-   "name": "Ужгород",
-   "to": "SK",
-   "hours": 139,
-   "trucks": 710
+   "trucks": 1
   },
   {
    "oblast": "zakarpattia",
@@ -179,7 +165,13 @@
    "to": "SK",
    "hours": 0.0,
    "trucks": 0
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Лужанка",
+   "to": "HU",
+   "hours": 8.8,
+   "trucks": 36
   }
- ],
- "error": "403 Client Error: Forbidden for url: https://back.echerha.gov.ua/api/v5/workload/1"
+ ]
 }
