@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-24T01:20:16Z",
- "checked_at": "2026-11-24T01:20:16Z",
+ "updated": "2026-11-24T01:23:28Z",
+ "checked_at": "2026-11-24T01:23:28Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Рава-Руська → PL: 585 вант. · 8 д 9 год"
+   "note": "Рава-Руська → PL: 584 вант. · 8 д 9 год"
   },
   "volyn": {
    "status": "outage",
@@ -25,8 +25,8 @@
    "note": "Могилів-Подільський → MD: 0 вант. · 0 год"
   },
   "zakarpattia": {
-   "status": "ok",
-   "note": "Малий Березний → SK: 0 вант. · 0 год"
+   "status": "outage",
+   "note": "Лужанка → HU: 308 вант. · 3 д 9 год"
   }
  },
  "queue": [
@@ -42,14 +42,14 @@
    "name": "Рава-Руська",
    "to": "PL",
    "hours": 101,
-   "trucks": 781
+   "trucks": 780
   },
   {
    "oblast": "lviv",
    "name": "Рава-Руська",
    "to": "PL",
    "hours": 201,
-   "trucks": 585
+   "trucks": 584
   },
   {
    "oblast": "lviv",
@@ -98,7 +98,7 @@
    "name": "Шегині",
    "to": "PL",
    "hours": 140,
-   "trucks": 607
+   "trucks": 606
   },
   {
    "oblast": "volyn",
@@ -204,6 +204,13 @@
    "to": "SK",
    "hours": 0.0,
    "trucks": 0
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Лужанка",
+   "to": "HU",
+   "hours": 81,
+   "trucks": 308
   }
  ]
 }
