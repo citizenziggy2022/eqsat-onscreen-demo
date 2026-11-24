@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24T03:09:21Z",
- "checked_at": "2026-11-24T03:09:21Z",
+ "updated": "2026-11-24T03:12:49Z",
+ "checked_at": "2026-11-24T03:12:49Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -17,8 +17,8 @@
    "note": "Дяківці → RO: 0 вант. · 0 год"
   },
   "odesa": {
-   "status": "ok",
-   "note": "Виноградівка → MD: 0 вант. · 0 год"
+   "status": "outage",
+   "note": "Орлівка → RO: 708 вант. · 6 д 6 год"
   },
   "vinnytsia": {
    "status": "ok",
@@ -26,7 +26,7 @@
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Ужгород → SK: 711 вант. · 5 д 19 год"
+   "note": "Чоп (Тиса) → HU: 1366 вант. · 5 д 14 год"
   }
  },
  "queue": [
@@ -48,6 +48,13 @@
    "oblast": "lviv",
    "name": "Рава-Руська",
    "to": "PL",
+   "hours": 102,
+   "trucks": 787
+  },
+  {
+   "oblast": "lviv",
+   "name": "Рава-Руська",
+   "to": "PL",
    "hours": 201,
    "trucks": 584
   },
@@ -57,13 +64,6 @@
    "to": "PL",
    "hours": 6.9,
    "trucks": 32
-  },
-  {
-   "oblast": "lviv",
-   "name": "Угринів",
-   "to": "PL",
-   "hours": 49.0,
-   "trucks": 231
   },
   {
    "oblast": "lviv",
@@ -91,7 +91,7 @@
    "name": "Шегині",
    "to": "PL",
    "hours": 140,
-   "trucks": 607
+   "trucks": 606
   },
   {
    "oblast": "chernivtsi",
@@ -99,6 +99,13 @@
    "to": "RO",
    "hours": 0.0,
    "trucks": 0
+  },
+  {
+   "oblast": "odesa",
+   "name": "Орлівка",
+   "to": "RO",
+   "hours": 150,
+   "trucks": 708
   },
   {
    "oblast": "chernivtsi",
@@ -174,15 +181,15 @@
    "oblast": "zakarpattia",
    "name": "Ужгород",
    "to": "SK",
-   "hours": 139,
-   "trucks": 711
+   "hours": 0.0,
+   "trucks": 0
   },
   {
    "oblast": "zakarpattia",
-   "name": "Ужгород",
-   "to": "SK",
-   "hours": 0.0,
-   "trucks": 0
+   "name": "Лужанка",
+   "to": "HU",
+   "hours": 2.7,
+   "trucks": 16
   },
   {
    "oblast": "zakarpattia",
@@ -196,7 +203,7 @@
    "name": "Чоп (Тиса)",
    "to": "HU",
    "hours": 134,
-   "trucks": 1367
+   "trucks": 1366
   }
  ]
 }
