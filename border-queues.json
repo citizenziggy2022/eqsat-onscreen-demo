@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24T18:27:54Z",
- "checked_at": "2026-11-24T18:27:54Z",
+ "updated": "2026-11-24T18:31:22Z",
+ "checked_at": "2026-11-24T18:31:22Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -10,7 +10,7 @@
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 1682 вант. · 6 д 21 год"
+   "note": "Ягодин → PL: 1679 вант. · 6 д 21 год"
   },
   "zakarpattia": {
    "status": "outage",
@@ -22,10 +22,17 @@
   },
   "odesa": {
    "status": "ok",
-   "note": "Виноградівка → MD: 0 вант. · 0 год"
+   "note": "Виноградівка → MD: 1 вант. · 0 год"
   }
  },
  "queue": [
+  {
+   "oblast": "lviv",
+   "name": "Грушів",
+   "to": "PL",
+   "hours": 9.8,
+   "trucks": 47
+  },
   {
    "oblast": "lviv",
    "name": "Краківець",
@@ -52,28 +59,28 @@
    "name": "Устилуг",
    "to": "PL",
    "hours": 38,
-   "trucks": 132
+   "trucks": 130
   },
   {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
    "hours": 59,
-   "trucks": 620
+   "trucks": 621
   },
   {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
    "hours": 165,
-   "trucks": 1682
+   "trucks": 1679
   },
   {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
    "hours": 0.0,
-   "trucks": 12
+   "trucks": 11
   },
   {
    "oblast": "zakarpattia",
@@ -100,8 +107,8 @@
    "oblast": "odesa",
    "name": "Виноградівка",
    "to": "MD",
-   "hours": 0.0,
-   "trucks": 0
+   "hours": 0.2,
+   "trucks": 1
   },
   {
    "oblast": "odesa",
