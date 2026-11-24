@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24T07:31:37Z",
- "checked_at": "2026-11-24T07:31:37Z",
+ "updated": "2026-11-24T07:34:51Z",
+ "checked_at": "2026-11-24T07:34:51Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -10,19 +10,19 @@
   },
   "volyn": {
    "status": "outage",
-   "note": "Устилуг → PL: 621 вант. · 6 д 8 год"
+   "note": "Ягодин → PL: 744 вант. · 8 д 3 год"
   },
   "zakarpattia": {
    "status": "outage",
    "note": "Дякове → RO: 483 вант. · 5 д 6 год"
   },
   "chernivtsi": {
-   "status": "ok",
-   "note": "Дяківці → RO: 0 вант. · 0 год"
+   "status": "outage",
+   "note": "Порубне → RO: 753 вант. · 3 д 13 год"
   },
   "odesa": {
    "status": "outage",
-   "note": "Орлівка → RO: 686 вант. · 6 д 2 год"
+   "note": "Орлівка → RO: 685 вант. · 6 д 2 год"
   },
   "vinnytsia": {
    "status": "ok",
@@ -43,6 +43,13 @@
    "to": "PL",
    "hours": 175,
    "trucks": 629
+  },
+  {
+   "oblast": "lviv",
+   "name": "Смільниця",
+   "to": "PL",
+   "hours": 4.3,
+   "trucks": 22
   },
   {
    "oblast": "lviv",
@@ -76,8 +83,15 @@
    "oblast": "lviv",
    "name": "Шегині",
    "to": "PL",
-   "hours": 140,
-   "trucks": 605
+   "hours": 141,
+   "trucks": 608
+  },
+  {
+   "oblast": "volyn",
+   "name": "Ягодин",
+   "to": "PL",
+   "hours": 195,
+   "trucks": 744
   },
   {
    "oblast": "zakarpattia",
@@ -98,7 +112,14 @@
    "name": "Орлівка",
    "to": "RO",
    "hours": 146,
-   "trucks": 686
+   "trucks": 685
+  },
+  {
+   "oblast": "chernivtsi",
+   "name": "Порубне",
+   "to": "RO",
+   "hours": 85,
+   "trucks": 753
   },
   {
    "oblast": "chernivtsi",
@@ -111,8 +132,8 @@
    "oblast": "odesa",
    "name": "Виноградівка",
    "to": "MD",
-   "hours": 0.0,
-   "trucks": 0
+   "hours": 0.3,
+   "trucks": 1
   },
   {
    "oblast": "odesa",
@@ -148,13 +169,6 @@
    "to": "MD",
    "hours": 0.0,
    "trucks": 0
-  },
-  {
-   "oblast": "odesa",
-   "name": "Старокозаче",
-   "to": "MD",
-   "hours": 0.0,
-   "trucks": 7
   },
   {
    "oblast": "odesa",
