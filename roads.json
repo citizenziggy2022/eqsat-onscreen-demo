@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24T06:27:58Z",
- "checked_at": "2026-11-24T06:27:58Z",
+ "updated": "2026-11-24T06:31:51Z",
+ "checked_at": "2026-11-24T06:31:51Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -18,7 +18,7 @@
   },
   "odesa": {
    "status": "outage",
-   "note": "Орлівка → RO: 686 вант. · 6 д 2 год"
+   "note": "Орлівка → RO: 684 вант. · 6 д 1 год"
   },
   "vinnytsia": {
    "status": "ok",
@@ -26,7 +26,7 @@
   },
   "zakarpattia": {
    "status": "ok",
-   "note": "Лужанка → HU: 18 вант. · 3 год"
+   "note": "Лужанка → HU: 17 вант. · 3 год"
   }
  },
  "queue": [
@@ -63,14 +63,14 @@
    "name": "Шегині",
    "to": "PL",
    "hours": 139,
-   "trucks": 496
+   "trucks": 494
   },
   {
    "oblast": "lviv",
    "name": "Шегині",
    "to": "PL",
    "hours": 139,
-   "trucks": 601
+   "trucks": 600
   },
   {
    "oblast": "chernivtsi",
@@ -83,8 +83,8 @@
    "oblast": "odesa",
    "name": "Орлівка",
    "to": "RO",
-   "hours": 146,
-   "trucks": 686
+   "hours": 145,
+   "trucks": 684
   },
   {
    "oblast": "chernivtsi",
@@ -98,7 +98,7 @@
    "name": "Виноградівка",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 0
+   "trucks": 1
   },
   {
    "oblast": "odesa",
@@ -113,13 +113,6 @@
    "to": "MD",
    "hours": 0.0,
    "trucks": 4
-  },
-  {
-   "oblast": "odesa",
-   "name": "Рені",
-   "to": "MD",
-   "hours": 42,
-   "trucks": 143
   },
   {
    "oblast": "odesa",
@@ -141,6 +134,13 @@
    "to": "MD",
    "hours": 0.0,
    "trucks": 0
+  },
+  {
+   "oblast": "odesa",
+   "name": "Старокозаче",
+   "to": "MD",
+   "hours": 0.9,
+   "trucks": 5
   },
   {
    "oblast": "odesa",
@@ -167,8 +167,8 @@
    "oblast": "zakarpattia",
    "name": "Лужанка",
    "to": "HU",
-   "hours": 3.2,
-   "trucks": 18
+   "hours": 2.9,
+   "trucks": 17
   }
  ]
 }
