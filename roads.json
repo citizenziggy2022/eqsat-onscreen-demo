@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-24T21:30:54Z",
- "checked_at": "2026-11-24T21:30:54Z",
+ "updated": "2026-11-24T21:34:07Z",
+ "checked_at": "2026-11-24T21:34:07Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Рава-Руська → PL: 599 вант. · 8 д 4 год"
+   "note": "Рава-Руська → PL: 598 вант. · 8 д 3 год"
   },
   "zakarpattia": {
    "status": "outage",
@@ -14,11 +14,15 @@
   },
   "chernivtsi": {
    "status": "ok",
-   "note": "Мамалига → MD: 50 вант. · 7 год"
+   "note": "Мамалига → MD: 49 вант. · 7 год"
   },
   "odesa": {
    "status": "ok",
    "note": "Виноградівка → MD: 0 вант. · 0 год"
+  },
+  "vinnytsia": {
+   "status": "ok",
+   "note": "Могилів-Подільський → MD: 19 вант. · 1 год"
   }
  },
  "queue": [
@@ -34,21 +38,21 @@
    "name": "Краківець",
    "to": "PL",
    "hours": 0.0,
-   "trucks": 0
+   "trucks": 1
   },
   {
    "oblast": "lviv",
    "name": "Рава-Руська",
    "to": "PL",
-   "hours": 120.5,
-   "trucks": 921
+   "hours": 120.4,
+   "trucks": 919
   },
   {
    "oblast": "lviv",
    "name": "Рава-Руська",
    "to": "PL",
-   "hours": 196,
-   "trucks": 599
+   "hours": 195,
+   "trucks": 598
   },
   {
    "oblast": "lviv",
@@ -97,7 +101,7 @@
    "name": "Порубне",
    "to": "RO",
    "hours": 0.0,
-   "trucks": 1
+   "trucks": 2
   },
   {
    "oblast": "odesa",
@@ -118,7 +122,14 @@
    "name": "Мамалига",
    "to": "MD",
    "hours": 7.0,
-   "trucks": 50
+   "trucks": 49
+  },
+  {
+   "oblast": "vinnytsia",
+   "name": "Могилів-Подільський",
+   "to": "MD",
+   "hours": 1.1,
+   "trucks": 19
   },
   {
    "oblast": "odesa",
@@ -153,7 +164,7 @@
    "name": "Малий Березний",
    "to": "SK",
    "hours": 0.0,
-   "trucks": 2
+   "trucks": 0
   },
   {
    "oblast": "zakarpattia",
