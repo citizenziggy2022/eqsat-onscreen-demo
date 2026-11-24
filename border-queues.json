@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24T02:36:08Z",
- "checked_at": "2026-11-24T02:36:08Z",
+ "updated": "2026-11-24T02:39:19Z",
+ "checked_at": "2026-11-24T02:39:19Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -10,11 +10,11 @@
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 755 вант. · 8 д 6 год"
+   "note": "Ягодин → PL: 754 вант. · 8 д 6 год"
   },
   "chernivtsi": {
    "status": "outage",
-   "note": "Порубне → RO: 779 вант. · 3 д 15 год"
+   "note": "Порубне → RO: 778 вант. · 3 д 15 год"
   },
   "odesa": {
    "status": "ok",
@@ -25,8 +25,8 @@
    "note": "Могилів-Подільський → MD: 0 вант. · 0 год"
   },
   "zakarpattia": {
-   "status": "ok",
-   "note": "Малий Березний → SK: 0 вант. · 0 год"
+   "status": "outage",
+   "note": "Лужанка → HU: 303 вант. · 3 д 7 год"
   }
  },
  "queue": [
@@ -112,7 +112,7 @@
    "name": "Ягодин",
    "to": "PL",
    "hours": 198,
-   "trucks": 755
+   "trucks": 754
   },
   {
    "oblast": "chernivtsi",
@@ -126,7 +126,7 @@
    "name": "Порубне",
    "to": "RO",
    "hours": 87,
-   "trucks": 779
+   "trucks": 778
   },
   {
    "oblast": "chernivtsi",
@@ -204,6 +204,20 @@
    "to": "SK",
    "hours": 0.0,
    "trucks": 0
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Лужанка",
+   "to": "HU",
+   "hours": 4,
+   "trucks": 20
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Лужанка",
+   "to": "HU",
+   "hours": 79,
+   "trucks": 303
   }
  ]
 }
