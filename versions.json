@@ -1,6 +1,12 @@
 {
- "note": "Every screen deploy, newest first: version 1.N (N + 1 per deploy), deploy time (UTC), one-line summary, build code. Read by the admin (History › Versions). Entries 2.42 to 2.51 were added afterwards from the repo deploy commits: their time is the commit time that switched the live page to that build, not a measured go-live time, and 2.46 to 2.51 were numbered at that point.",
+ "note": "Every screen deploy, newest first: version 1.N (N + 1 per deploy), deploy time (UTC), one-line summary, build code. Read by the admin (History \u203a Versions). Entries 2.42 to 2.51 were added afterwards from the repo deploy commits: their time is the commit time that switched the live page to that build, not a measured go-live time, and 2.46 to 2.51 were numbered at that point.",
  "versions": [
+  {
+   "version": "2.91",
+   "build": "index-payload291.js",
+   "at": "2026-11-24T23:15:00Z",
+   "summary": "Admin beta tab Payload queue: the data-track queue mock, admin-side simulation only (no encoder, uplink or broadcast connection), embedded unchanged as a static page."
+  },
   {
    "version": "2.90",
    "build": "index-alerts290.js",
@@ -130,7 +136,7 @@
   {
    "version": "2.64",
    "at": "2026-11-22T22:33:00Z",
-   "summary": "Top bar: logo plus 'Hotbird 13°E', no repeated eQsat. Admin: technical performance first on the Dashboard with details opening in place (full view still in Stats), channel details merged into channel status, Sponsor tab moved into Content.",
+   "summary": "Top bar: logo plus 'Hotbird 13\u00b0E', no repeated eQsat. Admin: technical performance first on the Dashboard with details opening in place (full view still in Stats), channel details merged into channel status, Sponsor tab moved into Content.",
    "build": "index-CSk0bkHP.js"
   },
   {
@@ -196,7 +202,7 @@
   {
    "version": "2.53",
    "at": "2026-11-22T14:52:02Z",
-   "summary": "Maps: Fires, Internet and Power cuts show a ЗМІНИ / CHANGES strip under the map (what moved since an earlier real reading, with both measurement times; stale Ukrenergo posts labelled, counts only for fires). History kept in changes.json by scripts/fetch_changes.py",
+   "summary": "Maps: Fires, Internet and Power cuts show a \u0417\u041c\u0406\u041d\u0418 / CHANGES strip under the map (what moved since an earlier real reading, with both measurement times; stale Ukrenergo posts labelled, counts only for fires). History kept in changes.json by scripts/fetch_changes.py",
    "build": "index-DSGgsGaW.js"
   },
   {
@@ -292,7 +298,7 @@
   {
    "version": "2.37",
    "at": "2026-11-12T14:51:00Z",
-   "summary": "Radio: ident rotates 4 versions (male/female × EN/UA); Editor › Content › Station ident to switch, reorder, set volume",
+   "summary": "Radio: ident rotates 4 versions (male/female \u00d7 EN/UA); Editor \u203a Content \u203a Station ident to switch, reorder, set volume",
    "build": "index-CibmOHm8.js"
   },
   {
@@ -310,13 +316,13 @@
   {
    "version": "2.34",
    "at": "2026-11-12T13:54:30Z",
-   "summary": "Map: ЗЕМЛЕТРУСИ / EARTHQUAKES view (EMSC, 30 days, M2.5+)",
+   "summary": "Map: \u0417\u0415\u041c\u041b\u0415\u0422\u0420\u0423\u0421\u0418 / EARTHQUAKES view (EMSC, 30 days, M2.5+)",
    "build": "index-C-BBOkU1.js"
   },
   {
    "version": "2.33",
    "at": "2026-11-12T13:48:28Z",
-   "summary": "Map: ПОЖЕЖІ / FIRES view (NASA FIRMS, count per oblast, no dots)",
+   "summary": "Map: \u041f\u041e\u0416\u0415\u0416\u0406 / FIRES view (NASA FIRMS, count per oblast, no dots)",
    "build": "index-BmI3BVXo.js"
   },
   {
@@ -340,31 +346,31 @@
   {
    "version": "2.29",
    "at": "2026-11-12T01:28:34Z",
-   "summary": "Air + radiation maps: thin dashed outline around the sites with a fresh reading (“Area with sensors”), no fill; legend line",
+   "summary": "Air + radiation maps: thin dashed outline around the sites with a fresh reading (\u201cArea with sensors\u201d), no fill; legend line",
    "build": "index-T63raM-O.js"
   },
   {
    "version": "2.28",
    "at": "2026-11-11T23:41:21Z",
-   "summary": "Dish setup box 194→168 px (26 px slack reclaimed), eQtv 260→286 px; eQtv bottom unchanged, no other rect moves",
+   "summary": "Dish setup box 194\u2192168 px (26 px slack reclaimed), eQtv 260\u2192286 px; eQtv bottom unchanged, no other rect moves",
    "build": "index-CO_VKo8D.js"
   },
   {
    "version": "2.27",
    "at": "2026-11-11T23:26:06Z",
-   "summary": "Photos: one resized WebP per on-air photo from photos-cache/ (≤1280 px, q75, never cropped); credits/licences unchanged; ~1.43 → ~0.74 MB/min",
+   "summary": "Photos: one resized WebP per on-air photo from photos-cache/ (\u22641280 px, q75, never cropped); credits/licences unchanged; ~1.43 \u2192 ~0.74 MB/min",
    "build": "index-z_6MyYXe.js"
   },
   {
    "version": "2.26",
    "at": "2026-11-11T23:14:36Z",
-   "summary": "ПОВІТРЯ / AIR QUALITY: named-city dots, median US EPA AQI (PM2.5) from the SaveEcoBot API, hourly, server side; replaces the per-oblast air fill",
+   "summary": "\u041f\u041e\u0412\u0406\u0422\u0420\u042f / AIR QUALITY: named-city dots, median US EPA AQI (PM2.5) from the SaveEcoBot API, hourly, server side; replaces the per-oblast air fill",
    "build": "index-VfYuGpys.js"
   },
   {
    "version": "2.25",
    "at": "2026-11-11T22:57:39Z",
-   "summary": "Map views: Water/Roads show water/roads; Power cuts + Border queues get own rows. POW line in Live News crawl (blue), bulletins strip gone. Look → Themes. Settings: Stats/Live screen rows removed (still on tab/↗)",
+   "summary": "Map views: Water/Roads show water/roads; Power cuts + Border queues get own rows. POW line in Live News crawl (blue), bulletins strip gone. Look \u2192 Themes. Settings: Stats/Live screen rows removed (still on tab/\u2197)",
    "build": "index-Kej3yKmn.js"
   },
   {
@@ -382,31 +388,31 @@
   {
    "version": "2.22",
    "at": "2026-11-11T21:32:34Z",
-   "summary": "Bulletins: ГАРЯЧІ ЛІНІЇ / HOTLINES card, 2 pages (1648, 1698, 1678, 1548 · POW HQ lines, Helping to Leave), QR to nib.gov.ua / helpingtoleave.org",
+   "summary": "Bulletins: \u0413\u0410\u0420\u042f\u0427\u0406 \u041b\u0406\u041d\u0406\u0407 / HOTLINES card, 2 pages (1648, 1698, 1678, 1548 \u00b7 POW HQ lines, Helping to Leave), QR to nib.gov.ua / helpingtoleave.org",
    "build": "index-DUNZWCIM.js"
   },
   {
    "version": "2.20",
    "at": "2026-11-11T21:22:40Z",
-   "summary": "Editor: Preview (eye) on every map view row, live map card in a sheet with ‹ › through all views; screen ?mapview for the preview frame only",
+   "summary": "Editor: Preview (eye) on every map view row, live map card in a sheet with \u2039 \u203a through all views; screen ?mapview for the preview frame only",
    "build": "index-BEuY7mVN.js"
   },
   {
    "version": "2.19",
    "at": "2026-11-11T20:53:33Z",
-   "summary": "Editor top bar: AIR RAID off, logo back on phones, fps · kbps/Mbps (measured); Stats alert types now; ★ default box order (editor-layout.json); screen reads alerttypes/news/weather/airforce from Pages + repo, newer wins",
+   "summary": "Editor top bar: AIR RAID off, logo back on phones, fps \u00b7 kbps/Mbps (measured); Stats alert types now; \u2605 default box order (editor-layout.json); screen reads alerttypes/news/weather/airforce from Pages + repo, newer wins",
    "build": "index-BoSnWIma.js"
   },
   {
    "version": "2.18",
    "at": "2026-11-11T20:25:42Z",
-   "summary": "РАДІАЦІЯ: full-size map only (table view retired, Jason 5:19 PM); each named site coloured by its reading level (calm 4-step scale, no red) with a 4-swatch legend",
+   "summary": "\u0420\u0410\u0414\u0406\u0410\u0426\u0406\u042f: full-size map only (table view retired, Jason 5:19 PM); each named site coloured by its reading level (calm 4-step scale, no red) with a 4-swatch legend",
    "build": "index-fWV-NqIb.js"
   },
   {
    "version": "2.17",
    "at": "2026-11-11T20:14:10Z",
-   "summary": "РАДІАЦІЯ split into two views: A = full-size map with each named site's value (same size as the other maps), B = the table; A plays right before B",
+   "summary": "\u0420\u0410\u0414\u0406\u0410\u0426\u0406\u042f split into two views: A = full-size map with each named site's value (same size as the other maps), B = the table; A plays right before B",
    "build": "index-DAPx6cs7.js"
   },
   {
@@ -418,25 +424,25 @@
   {
    "version": "2.15",
    "at": "2026-11-11T20:03:19Z",
-   "summary": "РАДІАЦІЯ view: site list on the left, small map + SaveEcoBot credit / QR on the right (Jason 4:58 PM); bigger QR",
+   "summary": "\u0420\u0410\u0414\u0406\u0410\u0426\u0406\u042f view: site list on the left, small map + SaveEcoBot credit / QR on the right (Jason 4:58 PM); bigger QR",
    "build": "index-CplQrPFK.js"
   },
   {
    "version": "2.14",
    "at": "2026-11-11T19:52:38Z",
-   "summary": "РАДІАЦІЯ / Radiation map view: gamma dose rate at the ZNPP area (Nikopol, Marhanets, IAEA daily on-site), Chornobyl town, ChNPP site, Kyiv, the South Ukraine / Rivne / Khmelnytskyi NPP towns and Rozdilna, from SaveEcoBot (Safecast backup), with credit + QR and the normal background",
+   "summary": "\u0420\u0410\u0414\u0406\u0410\u0426\u0406\u042f / Radiation map view: gamma dose rate at the ZNPP area (Nikopol, Marhanets, IAEA daily on-site), Chornobyl town, ChNPP site, Kyiv, the South Ukraine / Rivne / Khmelnytskyi NPP towns and Rozdilna, from SaveEcoBot (Safecast backup), with credit + QR and the normal background",
    "build": "index-CHx2IT1T.js"
   },
   {
    "version": "2.13",
    "at": "2026-11-11T19:12:02Z",
-   "summary": "ПОГОДА cards now join the bulletins (after manual and auto ones) instead of the family/dish/radio rotation, so every page of weather warnings is shown once per bulletin cycle",
+   "summary": "\u041f\u041e\u0413\u041e\u0414\u0410 cards now join the bulletins (after manual and auto ones) instead of the family/dish/radio rotation, so every page of weather warnings is shown once per bulletin cycle",
    "build": "index-BvOv4yGa.js"
   },
   {
    "version": "2.12",
    "at": "2026-11-11T18:56:10Z",
-   "summary": "ПОГОДА: official weather and sea warnings (Meteoalarm / Укргідрометцентр, CC BY 4.0; Moldova when it has warnings), fetched by the live-runner every 10 min, one line per warning in the issuer's words, newest first, as cards in the bulletin box rotation",
+   "summary": "\u041f\u041e\u0413\u041e\u0414\u0410: official weather and sea warnings (Meteoalarm / \u0423\u043a\u0440\u0433\u0456\u0434\u0440\u043e\u043c\u0435\u0442\u0446\u0435\u043d\u0442\u0440, CC BY 4.0; Moldova when it has warnings), fetched by the live-runner every 10 min, one line per warning in the issuer's words, newest first, as cards in the bulletin box rotation",
    "build": "index-B1AXo4du.js"
   },
   {
@@ -454,7 +460,7 @@
   {
    "version": "2.09",
    "at": "2026-11-11T18:19:39Z",
-   "summary": "Editor: ↗ open-screen back on the top bar, Stats moved to ⚙ Settings; ON AIR shows uptime; last update always shown; Stats cards start folded to their top block",
+   "summary": "Editor: \u2197 open-screen back on the top bar, Stats moved to \u2699 Settings; ON AIR shows uptime; last update always shown; Stats cards start folded to their top block",
    "build": "index-SzDa3kbM.js"
   },
   {
@@ -502,7 +508,7 @@
   {
    "version": "2.01",
    "at": "2026-11-11T16:07:27Z",
-   "summary": "Editor language: EN / УКР / РУС (bundled) or another language by machine translation (labelled)",
+   "summary": "Editor language: EN / \u0423\u041a\u0420 / \u0420\u0423\u0421 (bundled) or another language by machine translation (labelled)",
    "build": "index-B2376PG1.js"
   },
   {
@@ -520,7 +526,7 @@
   {
    "version": "1.98",
    "at": "2026-11-11T15:13:08Z",
-   "summary": "Auto bulletins: English line under the Ukrainian, labelled \"EN · machine translation\" (UK/EN alternate if both do not fit)",
+   "summary": "Auto bulletins: English line under the Ukrainian, labelled \"EN \u00b7 machine translation\" (UK/EN alternate if both do not fit)",
    "build": "index-D9nqxJAo.js"
   },
   {
@@ -586,7 +592,7 @@
   {
    "version": "1.87",
    "at": "2026-11-11T13:04:27Z",
-   "summary": "On-air sign: НАЖИВО = fresh data + station reachable, not this tab playing sound",
+   "summary": "On-air sign: \u041d\u0410\u0416\u0418\u0412\u041e = fresh data + station reachable, not this tab playing sound",
    "build": "index-5iYKh62X.js"
   },
   {
@@ -748,7 +754,7 @@
   {
    "version": "1.60",
    "at": "2026-11-10T19:01:04Z",
-   "summary": "Hotbird 13°E naming",
+   "summary": "Hotbird 13\u00b0E naming",
    "build": null
   },
   {
