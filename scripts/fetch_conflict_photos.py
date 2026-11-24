@@ -769,7 +769,8 @@ def runner_main(force=False):
     except Exception:
         do_sweep = True
     try:
-        items, log = fetch_all(("commons", "undp", "npu"), days=7, min_width=1280, existing_urls=existing, limit=60, sweep=do_sweep)
+        # npu.gov.ua answers the runner with HTTP 403 (terminal, no workaround): not fetched automatically until an allowed route is verified. fetch_npu stays in place.
+        items, log = fetch_all(("commons", "undp"), days=7, min_width=1280, existing_urls=existing, limit=60, sweep=do_sweep)
     except Exception as e:  # keep the last good file
         print("conflict photos: fetch failed, keeping the last file:", repr(e))
         return
