@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24T02:29:44Z",
- "checked_at": "2026-11-24T02:29:44Z",
+ "updated": "2026-11-24T02:32:51Z",
+ "checked_at": "2026-11-24T02:32:51Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -25,8 +25,8 @@
    "note": "Могилів-Подільський → MD: 0 вант. · 0 год"
   },
   "zakarpattia": {
-   "status": "ok",
-   "note": "Малий Березний → SK: 0 вант. · 0 год"
+   "status": "outage",
+   "note": "Ужгород → SK: 712 вант. · 5 д 20 год"
   }
  },
  "queue": [
@@ -76,8 +76,8 @@
    "oblast": "volyn",
    "name": "Устилуг",
    "to": "PL",
-   "hours": 149,
-   "trucks": 611
+   "hours": 150,
+   "trucks": 612
   },
   {
    "oblast": "lviv",
@@ -97,15 +97,15 @@
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
-   "hours": 96,
-   "trucks": 671
+   "hours": 95,
+   "trucks": 670
   },
   {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
-   "hours": 0.0,
-   "trucks": 7
+   "hours": 0.5,
+   "trucks": 9
   },
   {
    "oblast": "volyn",
@@ -197,6 +197,13 @@
    "to": "SK",
    "hours": 0.0,
    "trucks": 0
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Ужгород",
+   "to": "SK",
+   "hours": 140,
+   "trucks": 712
   },
   {
    "oblast": "zakarpattia",
