@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-24T23:34:51Z",
- "checked_at": "2026-11-24T23:34:51Z",
+ "updated": "2026-11-24T23:38:08Z",
+ "checked_at": "2026-11-24T23:38:08Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Краківець → PL: 660 вант. · 7 д 17 год"
+   "note": "Шегині → PL: 581 вант. · 6 д 18 год"
   },
   "volyn": {
    "status": "outage",
@@ -42,17 +42,17 @@
   },
   {
    "oblast": "lviv",
-   "name": "Краківець",
+   "name": "Смільниця",
    "to": "PL",
-   "hours": 185,
-   "trucks": 660
+   "hours": 0.5,
+   "trucks": 8
   },
   {
    "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
    "hours": 37,
-   "trucks": 179
+   "trucks": 178
   },
   {
    "oblast": "lviv",
@@ -101,14 +101,14 @@
    "name": "Ягодин",
    "to": "PL",
    "hours": 166,
-   "trucks": 1693
+   "trucks": 1692
   },
   {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
    "hours": 0.0,
-   "trucks": 4
+   "trucks": 3
   },
   {
    "oblast": "volyn",
@@ -143,14 +143,14 @@
    "name": "Порубне",
    "to": "RO",
    "hours": 0.0,
-   "trucks": 6
+   "trucks": 5
   },
   {
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
    "hours": 0.0,
-   "trucks": 1
+   "trucks": 0
   },
   {
    "oblast": "odesa",
@@ -207,6 +207,13 @@
    "to": "SK",
    "hours": 0.0,
    "trucks": 1
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Лужанка",
+   "to": "HU",
+   "hours": 10.5,
+   "trucks": 42
   }
  ]
 }
