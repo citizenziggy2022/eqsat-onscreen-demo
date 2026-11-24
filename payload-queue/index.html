@@ -1,0 +1,203 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EQSat admin: data-track queue (MOCK)</title>
+<style>
+:root{--bg:#0f1419;--panel:#171e26;--line:#2a3441;--tx:#e6edf3;--mut:#8b98a7;--acc:#4cc2ff;--ok:#3fb950;--bad:#f85149;--warn:#d29922}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:14px/1.45 system-ui,-apple-system,Segoe UI,sans-serif}
+header{padding:14px 18px;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+h1{font-size:16px;margin:0}.tag{font-size:11px;letter-spacing:.06em;text-transform:uppercase;background:#3a2e0b;color:#f2cc60;border:1px solid #6b5412;padding:2px 8px;border-radius:99px}
+.banner{margin:12px 18px 0;padding:10px 12px;border:1px solid #6b5412;background:#241d08;color:#f2cc60;border-radius:8px;font-size:13px}
+main{display:grid;grid-template-columns:1.1fr 1fr;gap:14px;padding:14px 18px 28px}
+@media(max-width:820px){main{grid-template-columns:1fr}}
+section{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;min-width:0}
+h2{font-size:13px;margin:0 0 10px;text-transform:uppercase;letter-spacing:.05em;color:var(--mut)}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+button,select,input[type=text]{background:#202a35;color:var(--tx);border:1px solid var(--line);border-radius:6px;padding:6px 10px;font:inherit}
+button{cursor:pointer;min-height:32px}button:hover{border-color:var(--acc)}button.primary{background:#0b4a6b;border-color:#1b7aa8}button:disabled{opacity:.4;cursor:default}
+.item{display:grid;grid-template-columns:28px 1fr auto;gap:8px;align-items:center;padding:8px 6px;border-top:1px solid var(--line)}
+.item:first-child{border-top:0}.n{color:var(--mut);text-align:center}.nm{overflow-wrap:anywhere}.sub{color:var(--mut);font-size:12px}
+.chip{font-size:11px;padding:1px 7px;border-radius:99px;border:1px solid var(--line);margin-left:6px}.chip.live{color:var(--acc);border-color:var(--acc)}.chip.done{color:var(--ok);border-color:var(--ok)}
+.bar{height:6px;background:#202a35;border-radius:3px;margin-top:4px;overflow:hidden}.bar i{display:block;height:100%;background:var(--acc);width:0}
+canvas{width:100%;height:auto;background:#0b0f14;border:1px solid var(--line);border-radius:6px;image-rendering:pixelated;display:block}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:8px;margin-top:10px}.stat{background:#11171d;border:1px solid var(--line);border-radius:8px;padding:6px 8px}.stat b{display:block;font-size:16px}.stat span{font-size:11px;color:var(--mut)}
+table{width:100%;border-collapse:collapse;font-size:13px}th,td{text-align:left;padding:5px 6px;border-top:1px solid var(--line);vertical-align:top}th{color:var(--mut);font-weight:500;border-top:0}
+.ok{color:var(--ok)}.bad{color:var(--bad)}code{font-family:ui-monospace,Menlo,monospace;font-size:12px}
+label{font-size:12px;color:var(--mut)}input[type=range]{vertical-align:middle;width:110px}
+ul.k{margin:6px 0 0;padding-left:18px}ul.k li{margin:3px 0}.mut{color:var(--mut)}
+</style></head><body>
+<header><h1>EQSat admin &middot; data-track queue</h1><span class="tag">Mock</span><span class="mut" style="font-size:12px">admin preview only</span></header>
+<div class="banner">Simulation. Nothing here touches the broadcast, the uplink or any account. The wire format is the v1 layout seen in one 2023 sample recording; it is not confirmed to match your live receivers.</div>
+<main>
+<div style="display:grid;gap:14px;align-content:start">
+<section><h2>Queue</h2>
+<div class="row" style="margin-bottom:8px"><input type="text" id="nm" placeholder="name e.g. news-pack.zip" style="flex:1;min-width:130px"><select id="sz"><option value="6">6 KB</option><option value="24">24 KB</option><option value="60" selected>60 KB</option><option value="150">150 KB</option></select><button id="add">Add mock file</button></div>
+<div class="row" style="margin-bottom:6px"><label>or a local file (read in this page only): <input type="file" id="fl" style="max-width:190px"></label></div>
+<div id="q"></div><div class="sub" id="qnote" style="margin-top:8px">Reordering affects only files that have not started. The file being sent is locked until it ends.</div></section>
+<section><h2>Simulated link</h2>
+<div class="row"><button class="primary" id="go">Start</button><button id="rs">Reset</button><label>speed <select id="sp"><option value="4">slow</option><option value="14" selected>normal</option><option value="50">fast</option></select></label></div>
+<div class="row" style="margin-top:8px"><label>packet loss <input type="range" id="lo" min="0" max="5" step="0.5" value="0"> <b id="lov">0%</b></label><label>corruption <input type="range" id="co" min="0" max="5" step="0.5" value="0"> <b id="cov">0%</b></label></div>
+<div class="sub" style="margin:6px 0">Loss and corruption are applied to data packets after sending, only on the simulated link.</div>
+<canvas id="cv" width="640" height="120" aria-label="packet strip"></canvas>
+<div class="stats"><div class="stat"><b id="s1">0</b><span>packets sent</span></div><div class="stat"><b id="s2">0</b><span>data packets</span></div><div class="stat"><b id="s3">0</b><span>programme packets</span></div><div class="stat"><b id="s4">0</b><span>files started</span></div></div></section>
+</div>
+<div style="display:grid;gap:14px;align-content:start">
+<section><h2>Receiver check</h2>
+<div class="row" style="margin-bottom:8px"><button id="chk">Check what a receiver gets</button><span class="sub" id="chkn">uses everything sent so far</span></div>
+<div id="res" class="sub">Press check. Bytes are rebuilt from the simulated link, then compared with each file's SHA-256.</div></section>
+<section><h2>What is real and what is placeholder</h2><ul class="k">
+<li><b class="ok">Working locally:</b> record framing (magic, version, size, data), per-packet sequence + CRC-32, a queue that picks the next file at a file boundary, a receiver that rebuilds and verifies bytes. A Python copy produces the same bytes (tested).</li>
+<li><b class="warn" style="color:var(--warn)">Placeholder:</b> video and audio packets are dummy filler; the programme is never decoded or changed. Zero padding of the last packet is a mock choice.</li>
+<li><b class="bad">Not here:</b> FFmpeg, TSDuck, SRT, PES/AC-3 wrapping, any error correction, the live receivers. Sequence and CRC only detect loss; nothing repairs it.</li></ul></section>
+</div></main>
+<script>// MOCK data-PID writer/extractor core. Mirrors py/mockenc.py byte for byte.
+// Framing is based on what was OBSERVED in one 2023 sample.ts (v1): record = magic + ver + flags + u64 LE size + data,
+// carried in TS packets as [u32 LE seq][u32 LE crc32(data)][data]. It is NOT proven to match any live feed.
+(function (root) {
+  const MAGIC = Uint8Array.from([0xCA,0xFE,0xC0,0xDE,0xF0,0x0D,0xCA,0xFE,0xC0,0xDE,0xF0,0x0D]);
+  const DATA_PID = 1003, VIDEO_PID = 1001, AUDIO_PID = 1002, CHUNK = 176, HDR = 22;
+  const CRC_T = (() => { const t = new Uint32Array(256); for (let n = 0; n < 256; n++) { let c = n; for (let k = 0; k < 8; k++) c = c & 1 ? 0xEDB88320 ^ (c >>> 1) : c >>> 1; t[n] = c >>> 0; } return t; })();
+  function crc32(u8) { let c = 0xFFFFFFFF; for (let i = 0; i < u8.length; i++) c = CRC_T[(c ^ u8[i]) & 255] ^ (c >>> 8); return (c ^ 0xFFFFFFFF) >>> 0; }
+  const K = new Uint32Array([0x428a2f98,0x71374491,0xb5c0fbcf,0xe9b5dba5,0x3956c25b,0x59f111f1,0x923f82a4,0xab1c5ed5,0xd807aa98,0x12835b01,0x243185be,0x550c7dc3,0x72be5d74,0x80deb1fe,0x9bdc06a7,0xc19bf174,0xe49b69c1,0xefbe4786,0x0fc19dc6,0x240ca1cc,0x2de92c6f,0x4a7484aa,0x5cb0a9dc,0x76f988da,0x983e5152,0xa831c66d,0xb00327c8,0xbf597fc7,0xc6e00bf3,0xd5a79147,0x06ca6351,0x14292967,0x27b70a85,0x2e1b2138,0x4d2c6dfc,0x53380d13,0x650a7354,0x766a0abb,0x81c2c92e,0x92722c85,0xa2bfe8a1,0xa81a664b,0xc24b8b70,0xc76c51a3,0xd192e819,0xd6990624,0xf40e3585,0x106aa070,0x19a4c116,0x1e376c08,0x2748774c,0x34b0bcb5,0x391c0cb3,0x4ed8aa4a,0x5b9cca4f,0x682e6ff3,0x748f82ee,0x78a5636f,0x84c87814,0x8cc70208,0x90befffa,0xa4506ceb,0xbef9a3f7,0xc67178f2]);
+  function sha256hex(m) {
+    const l = m.length, n = ((l + 9 + 63) >> 6) << 6, p = new Uint8Array(n); p.set(m); p[l] = 0x80;
+    const dv = new DataView(p.buffer); dv.setUint32(n - 4, (l * 8) >>> 0); dv.setUint32(n - 8, Math.floor(l / 0x20000000));
+    let h = [0x6a09e667,0xbb67ae85,0x3c6ef372,0xa54ff53a,0x510e527f,0x9b05688c,0x1f83d9ab,0x5be0cd19]; const w = new Uint32Array(64);
+    const rr = (x, k) => (x >>> k) | (x << (32 - k));
+    for (let o = 0; o < n; o += 64) {
+      for (let i = 0; i < 16; i++) w[i] = dv.getUint32(o + i * 4);
+      for (let i = 16; i < 64; i++) { const a = rr(w[i-15],7)^rr(w[i-15],18)^(w[i-15]>>>3), b = rr(w[i-2],17)^rr(w[i-2],19)^(w[i-2]>>>10); w[i] = (w[i-16]+a+w[i-7]+b) | 0; }
+      let [a,b,c,d,e,f,g,hh] = h;
+      for (let i = 0; i < 64; i++) { const t1 = (hh + (rr(e,6)^rr(e,11)^rr(e,25)) + ((e&f)^(~e&g)) + K[i] + w[i]) | 0, t2 = ((rr(a,2)^rr(a,13)^rr(a,22)) + ((a&b)^(a&c)^(b&c))) | 0; hh=g; g=f; f=e; e=(d+t1)|0; d=c; c=b; b=a; a=(t1+t2)|0; }
+      h = [h[0]+a,h[1]+b,h[2]+c,h[3]+d,h[4]+e,h[5]+f,h[6]+g,h[7]+hh].map(x => x | 0);
+    }
+    return h.map(x => (x >>> 0).toString(16).padStart(8, '0')).join('');
+  }
+  function buildRecord(data) {
+    const r = new Uint8Array(HDR + data.length); r.set(MAGIC, 0); r[12] = 1; r[13] = 1;
+    const dv = new DataView(r.buffer); dv.setUint32(14, data.length >>> 0, true); dv.setUint32(18, Math.floor(data.length / 4294967296), true);
+    r.set(data, HDR); return r;
+  }
+  function tsPacket(pid, cc, payload) {
+    const p = new Uint8Array(188).fill(0xFF); p[0] = 0x47; p[1] = (pid >> 8) & 0x1f; p[2] = pid & 255; p[3] = 0x10 | (cc & 15);
+    p.set(payload.subarray(0, 184), 4); return p;
+  }
+  // Data-PID packetizer. Last chunk of a record is zero padded (MOCK choice; the real sample's tail handling is unknown).
+  function dataPackets(record, state) {
+    const out = [];
+    for (let o = 0; o < record.length; o += CHUNK) {
+      const chunk = new Uint8Array(CHUNK); chunk.set(record.subarray(o, o + CHUNK));
+      const pl = new Uint8Array(184), dv = new DataView(pl.buffer);
+      dv.setUint32(0, state.seq >>> 0, true); dv.setUint32(4, crc32(chunk), true); pl.set(chunk, 8);
+      out.push(tsPacket(DATA_PID, state.cc, pl)); state.seq++; state.cc = (state.cc + 1) & 15;
+    }
+    return out;
+  }
+  function programmePacket(kind, i) { // PLACEHOLDER programme packet: deterministic filler, stands in for FFmpeg's video/audio
+    const pl = new Uint8Array(184); for (let k = 0; k < 184; k++) pl[k] = (i * 31 + k * 7 + (kind === 'v' ? 3 : 5)) & 255;
+    return tsPacket(kind === 'v' ? VIDEO_PID : AUDIO_PID, i, pl);
+  }
+  // Injector: owns the queue. The record in flight is locked; reorder only affects records not yet started.
+  class Injector {
+    constructor() { this.queue = []; this.cur = null; this.curPk = []; this.state = { seq: 0, cc: 0 }; this.sent = []; this.n = 0; this.pg = 0; this.nextId = 1; }
+    add(name, data) { const it = { id: this.nextId++, name, data, sha: sha256hex(data), size: data.length }; this.queue.push(it); return it; }
+    move(id, delta) { const i = this.queue.findIndex(x => x.id === id); const j = i + delta; if (i < 0 || j < 0 || j >= this.queue.length) return false; [this.queue[i], this.queue[j]] = [this.queue[j], this.queue[i]]; return true; }
+    remove(id) { const i = this.queue.findIndex(x => x.id === id); if (i < 0) return false; this.queue.splice(i, 1); return true; }
+    idle() { return !this.cur && this.queue.length === 0; }
+    // returns {pkt, kind:'data'|'video'|'audio'|'idle', item}. Pattern: 5 data : 1 video : 1 audio (placeholder ratio)
+    step() {
+      this.n++; const slot = this.n % 7;
+      if (slot === 6) { const p = programmePacket('v', this.pg++); this.sent.push(p); return { pkt: p, kind: 'video' }; }
+      if (slot === 0) { const p = programmePacket('a', this.pg++); this.sent.push(p); return { pkt: p, kind: 'audio' }; }
+      if (!this.cur || this.curPk.length === 0) {
+        if (this.queue.length === 0) { this.cur = null; return { pkt: null, kind: 'idle' }; }
+        this.cur = this.queue.shift(); this.curPk = dataPackets(buildRecord(this.cur.data), this.state).reverse(); this.cur.total = this.curPk.length;
+      }
+      const p = this.curPk.pop(); this.sent.push(p); return { pkt: p, kind: 'data', item: this.cur, last: this.curPk.length === 0 };
+    }
+  }
+  // Simulated channel: drops / corrupts DATA packets only (so programme-untouched check is about the writer, not the channel).
+  function channel(packets, lossPct, corruptPct, seed) {
+    let s = seed >>> 0 || 1; const rnd = () => { s ^= s << 13; s >>>= 0; s ^= s >> 17; s ^= s << 5; s >>>= 0; return s / 4294967296; };
+    const out = []; let dropped = 0, corrupted = 0;
+    for (const p of packets) {
+      const pid = ((p[1] & 0x1f) << 8) | p[2];
+      if (pid === DATA_PID) {
+        const r = rnd();
+        if (r < lossPct / 100) { dropped++; continue; }
+        if (r < (lossPct + corruptPct) / 100) { const q = p.slice(); q[20 + Math.floor(rnd() * 150)] ^= 0x55; out.push(q); corrupted++; continue; }
+      }
+      out.push(p);
+    }
+    return { packets: out, dropped, corrupted };
+  }
+  // Extractor: keeps CRC-valid packets, rebuilds by seq, walks records, resyncs on magic. No FEC, no repair.
+  function extract(packets) {
+    const got = new Map(); let bad = 0, maxSeq = -1;
+    for (const p of packets) {
+      if ((((p[1] & 0x1f) << 8) | p[2]) !== DATA_PID) continue;
+      const dv = new DataView(p.buffer, p.byteOffset, 188), seq = dv.getUint32(4, true), crc = dv.getUint32(8, true), d = p.subarray(12, 188);
+      if (crc32(d) !== crc) { bad++; continue; } got.set(seq, d); if (seq > maxSeq) maxSeq = seq;
+    }
+    const total = maxSeq + 1, buf = new Uint8Array(total * CHUNK), ok = new Uint8Array(total); let missing = 0;
+    for (let s = 0; s < total; s++) { const d = got.get(s); if (d) { buf.set(d, s * CHUNK); ok[s] = 1; } else missing++; }
+    const present = (a, b) => { for (let s = Math.floor(a / CHUNK); s <= Math.floor((b - 1) / CHUNK); s++) if (!ok[s]) return false; return true; };
+    const isMagic = o => { if (o + 12 > buf.length) return false; for (let i = 0; i < 12; i++) if (buf[o + i] !== MAGIC[i]) return false; return true; };
+    const recs = []; let o = 0;
+    while (o + HDR <= buf.length) {
+      if (!(isMagic(o) && present(o, o + HDR))) { o++; continue; }
+      const dv = new DataView(buf.buffer), size = dv.getUint32(o + 14, true) + dv.getUint32(o + 18, true) * 4294967296;
+      const end = o + HDR + size; if (end > buf.length) { recs.push({ offset: o, size, complete: false, sha: null, why: 'stream ends before record ends' }); break; }
+      if (present(o, end)) { recs.push({ offset: o, size, complete: true, sha: sha256hex(buf.subarray(o + HDR, end)) }); o = end; }
+      else { recs.push({ offset: o, size, complete: false, sha: null, why: 'missing or corrupt packets inside record' }); o = end; }
+    }
+    return { records: recs, rejectedCrc: bad, missingSeq: missing, seqRange: total };
+  }
+  function programmeHash(packets) { // hash of video+audio packets in order
+    const parts = []; for (const p of packets) { const pid = ((p[1] & 0x1f) << 8) | p[2]; if (pid !== DATA_PID) parts.push(p); }
+    const all = new Uint8Array(parts.length * 188); parts.forEach((p, i) => all.set(p, i * 188)); return sha256hex(all);
+  }
+  const api = { MAGIC, DATA_PID, VIDEO_PID, AUDIO_PID, CHUNK, HDR, crc32, sha256hex, buildRecord, tsPacket, dataPackets, programmePacket, Injector, channel, extract, programmeHash };
+  if (typeof module !== 'undefined') module.exports = api; else root.MockCore = api;
+})(typeof window !== 'undefined' ? window : globalThis);
+</script>
+<script>
+const C=window.MockCore;let inj,sentItems,timer=null,seed=1,cellN=0;
+const $=id=>document.getElementById(id),el=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e};
+const fmt=n=>n>=1024?(n/1024).toFixed(n>=10240?0:1)+' KB':n+' B';
+function rnd(n,s){const d=new Uint8Array(n);let x=s>>>0||1;for(let i=0;i<n;i++){x=(Math.imul(x,1103515245)+12345)>>>0;d[i]=x>>>16&255}return d}
+let cnt=0;function addMock(name,kb){cnt++;inj.add(name||('mock-'+cnt+'.zip'),rnd(Math.round(kb*1024),cnt*977))}
+function reset(){stop();inj=new C.Injector();sentItems=[];cellN=0;cnt=0;seed=1;draw0();[['news-pack.zip',60],['alerts.zip',24],['maps-region.zip',150],['notice.zip',6]].forEach(([n,k])=>addMock(n,k));render();stats();$('res').textContent='Press check. Bytes are rebuilt from the simulated link, then compared with each file\u2019s SHA-256.';$('go').textContent='Start'}
+function render(){const q=$('q');q.textContent='';const rows=[];
+ sentItems.forEach(it=>{const cur=inj.cur===it&&inj.curPk.length>0;rows.push({it,st:cur?'live':'done'})});
+ inj.queue.forEach(it=>rows.push({it,st:'queued'}));
+ if(!rows.length){q.appendChild(el('div','sub','Queue is empty.'));return}
+ rows.forEach((r,i)=>{const d=el('div','item');d.appendChild(el('div','n',r.st==='queued'?String(i+1-sentItems.length):'\u2022'));
+  const m=el('div');const t=el('div','nm',r.it.name);if(r.st==='live')t.appendChild(el('span','chip live','sending, locked'));if(r.st==='done')t.appendChild(el('span','chip done','sent'));m.appendChild(t);m.appendChild(el('div','sub',fmt(r.it.size)+' \u00b7 sha '+r.it.sha.slice(0,10)));
+  if(r.st==='live'){const b=el('div','bar'),f=el('i');f.style.width=(100*(1-inj.curPk.length/r.it.total))+'%';b.appendChild(f);m.appendChild(b)}
+  d.appendChild(m);const a=el('div','row');
+  if(r.st==='queued'){const qi=inj.queue.indexOf(r.it);[['\u25b2',-1],['\u25bc',1]].forEach(([s,dl])=>{const b=el('button',null,s);b.setAttribute('aria-label',dl<0?'move up':'move down');b.disabled=(dl<0&&qi===0)||(dl>0&&qi===inj.queue.length-1);b.onclick=()=>{inj.move(r.it.id,dl);render()};a.appendChild(b)});const x=el('button',null,'\u2715');x.setAttribute('aria-label','remove');x.onclick=()=>{inj.remove(r.it.id);render()};a.appendChild(x)}
+  d.appendChild(a);q.appendChild(d)})}
+const cv=$('cv'),cx=cv.getContext('2d'),COLS=['#4cc2ff','#a371f7','#3fb950','#f0883e','#ff7b9c','#d2a8ff'],W=4,GAP=1,PER=Math.floor(640/(W+GAP));
+function draw0(){cx.fillStyle='#0b0f14';cx.fillRect(0,0,640,120)}
+function cell(kind,idx){const i=cellN++,x=(i%PER)*(W+GAP),y=Math.floor(i/PER)*(W+GAP);if(y>115)return;cx.fillStyle=kind==='data'?COLS[idx%COLS.length]:'#2a3441';cx.fillRect(x,y,W,W)}
+function stats(){let d=0,p=0;inj.sent.forEach(k=>{(((k[1]&31)<<8|k[2])===C.DATA_PID)?d++:p++});$('s1').textContent=inj.sent.length;$('s2').textContent=d;$('s3').textContent=p;$('s4').textContent=sentItems.length}
+function tick(){const n=+$('sp').value;for(let i=0;i<n;i++){const wasCur=inj.cur;const r=inj.step();
+  if(r.kind==='idle'){stop();$('go').textContent='Start';break}
+  if(r.kind==='data'&&r.item&&sentItems.indexOf(r.item)<0)sentItems.push(r.item);
+  cell(r.kind,r.kind==='data'?sentItems.indexOf(r.item):0)}
+ render();stats()}
+function stop(){if(timer){clearInterval(timer);timer=null}}
+$('go').onclick=()=>{if(timer){stop();$('go').textContent='Resume';return}if(inj.idle()&&!inj.curPk.length)return;timer=setInterval(tick,60);$('go').textContent='Pause'};
+$('rs').onclick=reset;
+$('lo').oninput=()=>$('lov').textContent=$('lo').value+'%';$('co').oninput=()=>$('cov').textContent=$('co').value+'%';
+$('add').onclick=()=>{addMock($('nm').value.trim(),+$('sz').value);$('nm').value='';render();if(!timer&&!inj.idle())$('go').textContent=inj.sent.length?'Resume':'Start'};
+$('fl').onchange=async e=>{const f=e.target.files[0];if(!f)return;if(f.size>2e6){alert('Mock limit 2 MB per file');return}inj.add(f.name,new Uint8Array(await f.arrayBuffer()));e.target.value='';render()};
+$('chk').onclick=()=>{const ch=C.channel(inj.sent,+$('lo').value,+$('co').value,seed++);const r=C.extract(ch.packets);const res=$('res');res.textContent='';
+ const done=sentItems.filter(it=>!(inj.cur===it&&inj.curPk.length>0));
+ const t=el('table');t.innerHTML='<tr><th>File</th><th>Size</th><th>Result</th></tr>';
+ done.forEach((it,i)=>{const rc=r.records[i];const tr=el('tr');tr.appendChild(el('td',null,it.name));tr.appendChild(el('td',null,fmt(it.size)));
+  const ok=rc&&rc.complete&&rc.sha===it.sha;const td=el('td',ok?'ok':'bad',ok?'bytes identical (SHA-256 match)':(rc?'incomplete or damaged: not recovered':'not found: not recovered'));tr.appendChild(td);t.appendChild(tr)});
+ if(!done.length)res.appendChild(el('div','sub','No file has finished sending yet.'));else res.appendChild(t);
+ const g=el('div','stats');[['dropped by link',ch.dropped],['corrupted by link',ch.corrupted],['packets rejected (CRC)',r.rejectedCrc],['sequence gaps',r.missingSeq]].forEach(([k,v])=>{const s=el('div','stat');s.appendChild(el('b',null,String(v)));s.appendChild(el('span',null,k));g.appendChild(s)});res.appendChild(g);
+ const ph=C.programmeHash(inj.sent),ph2=C.programmeHash(ch.packets);const p=el('div','sub','Programme packets: writer output hash '+ph.slice(0,12)+', after link '+ph2.slice(0,12)+(ph===ph2?' (same, link did not touch them)':' (differs)'));p.style.marginTop='8px';res.appendChild(p)};
+reset();
+</script></body></html>
