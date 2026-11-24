@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-24T10:44:42Z",
+ "generated_at": "2026-11-24T11:00:54Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-dsns_telegram-81429",
+   "title": "Важливі поради, які рятують життя!",
+   "body": "Сигнал повітряної тривоги може застати вас де завгодно, але не завжди є можливість та час добігти до укриття. Зібрали поради, як діяти в такій ситуації та зменшити ризики для себе Збережіть цей допис та поділіться з рідними! Сайт • Fb • X • IG • YT • TT",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/81429",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-24T11:00:36Z",
+   "expires_at": "2026-11-24T23:00:36Z",
+   "auto": true,
+   "en_mt": {
+    "title": "Important tips that save lives!",
+    "body": "The air alarm signal can catch you anywhere, but there is not always the opportunity and time to run to a shelter. We have collected tips on how to act in such a situation and reduce the risks for yourself. Save this post and share it with your loved ones. Site • Fb • X • IG • YT • TT",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-zoda_gov_ua-69284",
    "title": "Ворожий FPV-дрон атакував Вознесенівський район Запоріжжя",
@@ -109,24 +127,6 @@
    "en_mt": {
     "title": "Kryvyi Rih Coordination Center \"Vilni Razom\" systematically and comprehensively helps IDPs from Kherson region",
     "body": "Throughout the week, specialists worked in the following areas: ▪Humanitarian aid. Issued rehabilitation aids. ▪Legal and psychological assistance. Representatives of the CF \"Right to Protection\", NGO \"Tenth of April\", VO \"East SOS\" and GM \"Prolyska\" provided assistance to 14…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-81403",
-   "title": "росія знову атакувала Житомирщину: постраждали 6 людей!",
-   "body": "Минулої доби під ворожими ударами опинилися кілька районів області. Внаслідок атак виникли пожежі на об’єкті критичної інфраструктури, у складській будівлі та легкових автомобілях. Також пошкоджені приватні житлові будинки, автобус і вантажні автомобілі.…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/81403",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-24T06:18:49Z",
-   "expires_at": "2026-11-24T18:18:49Z",
-   "auto": true,
-   "en_mt": {
-    "title": "Russia again attacked Zhytomyr region: 6 people were injured!",
-    "body": "Yesterday several districts of the region came under enemy attacks. As a result of the attacks, fires broke out at a critical infrastructure facility, in a warehouse building and in passenger cars. Also damaged are private residential houses, a bus and trucks.…",
     "by": "m2m100"
    }
   },
