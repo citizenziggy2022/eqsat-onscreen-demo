@@ -499,6 +499,512 @@
       "summary": "Hotfix: radio and eQtv photo panel share one eQtv session (the second socket killed the radio and the on-air sign)",
       "build": "index-Binsie2N.js"
     },
+  "note": "Every screen deploy, newest first: version 1.N (N + 1 per deploy), deploy time (UTC), one-line summary, build code. Read by the admin (History › Versions). Entries 2.42 to 2.51 were added afterwards from the repo deploy commits: their time is the commit time that switched the live page to that build, not a measured go-live time, and 2.46 to 2.51 were numbered at that point.",
+  "versions": [
+    {
+      "version": "2.88",
+      "build": "index-leads288.js",
+      "at": "2026-11-24T11:04:43Z",
+      "summary": "Air-raid alert Stats show only data that exists: no unavailable labels, blank missing days, no 'no starts' text, no empty expanders."
+    },
+    {
+      "version": "2.87",
+      "build": "index-leads287.js",
+      "at": "2026-11-24T09:19:37Z",
+      "summary": "Photo review: National Police photos show page publication date and headline place; Commons discovery leads shown in a separate research list outside Approve all."
+    },
+    {
+      "version": "2.86",
+      "build": "index-nav286.js",
+      "at": "2026-11-23T20:34:21.501716+00:00",
+      "summary": "Icons on every Stats navigation section and selected mobile workspace labels; text labels preserved."
+    },
+    {
+      "version": "2.85",
+      "build": "index-controls285.js",
+      "at": "2026-11-23T20:25:22.894685+00:00",
+      "summary": "Independent admin and broadcast theme dropdowns with separate saves; initial admin palette preserved."
+    },
+    {
+      "version": "2.84",
+      "build": "index-inverted284.js",
+      "at": "2026-11-23T20:20:19.435790+00:00",
+      "summary": "Added Classic inverted and Hi-fi Classic inverted palette choices; original themes and current selection preserved."
+    },
+    {
+      "version": "2.83",
+      "build": "index-statssidebar283.js",
+      "at": "2026-11-23T20:06:18.004147+00:00",
+      "summary": "Stats section sidebar and mobile section selector; Content collapse triangles moved left of switches."
+    },
+    {
+      "version": "2.82",
+      "build": "index-contrast282.js",
+      "at": "2026-11-23T19:56:50.007828+00:00",
+      "summary": "Broadcast section contrast across all themes: darker title bars, lighter content bodies. Admin and safety palettes preserved."
+    },
+    {
+      "version": "2.81",
+      "build": "index-content281.js",
+      "at": "2026-11-23T19:44:19.864632+00:00",
+      "summary": "Consistent collapsed Content frames, titles and spacing. Switches/counts retained; photo playback controls fold without unmounting drafts."
+    },
+    {
+      "version": "2.80",
+      "build": "index-types280.js",
+      "at": "2026-11-23T19:36:43.657276+00:00",
+      "summary": "Daily oblast alert-type icons and observed-start counts with pipe separators; explicit unavailable and partial history, no retroactive type counts."
+    },
+    {
+      "version": "2.79",
+      "build": "index-feeds279.js",
+      "at": "2026-11-23T19:25:43.210307+00:00",
+      "summary": "Admin tab order: Channel Status, Content, Stats, Themes, Logs. Power and border canonical feed names with kind-checked compatibility; static water/road slots unchanged."
+    },
+    {
+      "version": "2.78",
+      "build": "index-sponsor278.js",
+      "at": "2026-11-23T16:27:18.303880+00:00",
+      "summary": "Sponsor title matches broadcast panel headers; Now on screen status tile shows only theme."
+    },
+    {
+      "version": "2.77",
+      "at": "2026-11-23T16:12:36.722428+00:00",
+      "build": "index-news277.js",
+      "summary": "News tables rank by today's headline count descending, with aligned date columns and shared mobile scrolling."
+    },
+    {
+      "version": "2.76",
+      "at": "2026-11-23T16:05:59.384302+00:00",
+      "build": "index-mini276.js",
+      "summary": "Technical performance starts minimized by default. Icon summary and expand control retained; other settings unchanged."
+    },
+    {
+      "version": "2.75",
+      "at": "2026-11-23T15:49:10.150732+00:00",
+      "build": "index-note275.js",
+      "summary": "Technical performance: removed the requested summary footer. Metric icons, labels, values and settings unchanged."
+    },
+    {
+      "version": "2.74",
+      "at": "2026-11-23T15:39:26.533867+00:00",
+      "build": "index-icons274.js",
+      "summary": "Collapsed technical performance: matching outline icons beside each metric. Existing labels, values, settings and broadcast behavior preserved."
+    },
+    {
+      "version": "2.73",
+      "at": "2026-11-23T15:24:08.026436+00:00",
+      "summary": "Approved admin controls: collapsed performance stats, reorderable Logs, theme-card Save, Tune-in in Content, radio interval presets/custom and eQtv source/audio/canvas controls. Saved settings and continuous news preserved.",
+      "build": "index-admin273.js"
+    },
+    {
+      "version": "2.72",
+      "at": "2026-11-23T15:02:33.425211+00:00",
+      "summary": "Ukraine news: slow continuous upward crawl, no pauses, all eligible headlines newest to oldest then loop. New arrivals join the next full round so older items are not starved.",
+      "build": "index-news272.js"
+    },
+    {
+      "version": "2.71",
+      "at": "2026-11-23T13:22:18.550865+00:00",
+      "summary": "Ukraine news scrolls upward with reading pauses, full supplied headlines, row-aligned looping and anchored updates. Other panels and settings unchanged.",
+      "build": "index-news271.js"
+    },
+    {
+      "version": "2.65",
+      "at": "2026-11-22T23:47:30Z",
+      "summary": "Admin: Now on screen tile is the same size as the other Dashboard tiles, right after Last admin login. Emergency tab items moved into Content as a workspace, and the Source checks box collapses.",
+      "build": "index-Dul--b2e.js"
+    },
+    {
+      "version": "2.64",
+      "at": "2026-11-22T22:33:00Z",
+      "summary": "Top bar: logo plus 'Hotbird 13°E', no repeated eQsat. Admin: technical performance first on the Dashboard with details opening in place (full view still in Stats), channel details merged into channel status, Sponsor tab moved into Content.",
+      "build": "index-CSk0bkHP.js"
+    },
+    {
+      "version": "2.63",
+      "at": "2026-11-22T20:38:00Z",
+      "summary": "Readable reading-time list fits at 720p (wider, names no longer cut); same fixes as 2.62.",
+      "build": "index-Bc-rQbWU.js"
+    },
+    {
+      "version": "2.62",
+      "at": "2026-11-22T20:30:00Z",
+      "summary": "Readability and attribution: power map pages the latest Ukrenergo post and planned-cuts notice at 12 px (caveat always visible); radiation map shows each site's own reading time, age and oldest sensor, or 'no reading'; admin source checks group failed sources into one plain sentence with details collapsed.",
+      "build": "index-a3e1xomG.js"
+    },
+    {
+      "version": "2.61",
+      "at": "2026-11-22T19:58:00Z",
+      "summary": "Fix: the Radiation map view crashed on load in 2.60 (a stray line); no other change from 2.60.",
+      "build": "index-Dycnl7sM.js"
+    },
+    {
+      "version": "2.60",
+      "at": "2026-11-22T19:55:00Z",
+      "summary": "Feed honesty: radiation shows each reading's own time and a no-reading label; rivers show when the hydrometeorological centre issued each list (no more 'today'); power map shows the latest Ukrenergo post, the dated planned-outage notice and 'status not confirmed'; admin Emergency tab lists source checks (confirmed / unverified / failed). Emergency strip unchanged.",
+      "build": "index-9wH2zdH5.js"
+    },
+    {
+      "version": "2.59",
+      "at": "2026-11-22T19:23:01Z",
+      "summary": "Editor: the Radio audio intro text now matches the Random station order switch (random order while on, list order while off). Screen behaviour unchanged from 2.58.",
+      "build": "index-J57ui6eg.js"
+    },
+    {
+      "version": "2.58",
+      "at": "2026-11-22T19:09:29Z",
+      "summary": "Radio: Random station order switch (Editor > Content > Radio audio), on by default. Every enabled station plays once per round in random order, then reshuffles with no immediate repeat; random first station on load; the Next label shows the true next station. 30-minute slots, idents and station list unchanged. Off restores list order.",
+      "build": "index-BXDoIrwW.js"
+    },
+    {
+      "version": "2.57",
+      "at": "2026-11-22T18:29:52Z",
+      "summary": "720p readability: larger paged news and TV listings, larger Ukrainian bulletins with protected sources/times, paged reference/hotline details, larger photo credits. Layout, maps, data and editor controls preserved.",
+      "build": "index-CS-GicY2.js"
+    },
+    {
+      "version": "2.56",
+      "at": "2026-11-22T17:54:53Z",
+      "summary": "Editor: Conflict photos gains an Approve-all button showing the waiting count, with an inline confirm step before anything goes on air; one save approves every waiting photo. Opening the page approves nothing, and single-photo Approve/Reject is unchanged.",
+      "build": "index-VkQDzQoy.js"
+    },
+    {
+      "version": "2.55",
+      "at": "2026-11-22T15:49:10Z",
+      "summary": "Editor: distinguish loading photo review from unavailable data, and state that feed freshness covers the files already checked. Follow-up to the v2.54 admin workspaces and navigation release.",
+      "build": "index-KYoGUzjF.js"
+    },
+    {
+      "version": "2.54",
+      "at": "2026-11-22T15:45:10Z",
+      "summary": "Editor: operational-first dashboard, task-based Content workspaces, labelled navigation icons, mobile feed health, clearer save/unsaved/error states and draft-navigation warnings. Existing controls and save behavior retained.",
+      "build": "index-CL6NSOzO.js"
+    },
+    {
+      "version": "2.53",
+      "at": "2026-11-22T14:52:02Z",
+      "summary": "Maps: Fires, Internet and Power cuts show a ЗМІНИ / CHANGES strip under the map (what moved since an earlier real reading, with both measurement times; stale Ukrenergo posts labelled, counts only for fires). History kept in changes.json by scripts/fetch_changes.py",
+      "build": "index-DSGgsGaW.js"
+    },
+    {
+      "version": "2.52",
+      "at": "2026-11-22T07:04:56Z",
+      "summary": "Editor: the four status-map rows (water, power cuts, roads, border) show live data status - file fetch age, usable readings for the row's own kind, and the source measurement time (n/a when the file carries another kind, unknown when none is recorded)",
+      "build": "index-CLb8l0ar.js"
+    },
+    {
+      "version": "2.51",
+      "at": "2026-11-21T21:23:43Z",
+      "summary": "Numbered later from deploy commits: Bulletins keep the Ukrainian text on every pass (English line only when it fits); editor top bar: Border queue renamed Truck waiting time, shows data age separately",
+      "build": "index-DJwrrN0P.js"
+    },
+    {
+      "version": "2.50",
+      "at": "2026-11-21T18:54:10Z",
+      "summary": "Numbered later from deploy commits: Cleanup: bundle rebuilt from the private source (source and live now match); fewer duplicate requests, polls and re-renders; no visible change",
+      "build": "index-BkuJ8iYg.js"
+    },
+    {
+      "version": "2.49",
+      "at": "2026-11-21T03:32:14Z",
+      "summary": "Numbered later from deploy commits: Fix: the opening station ident plays again when the screen opens (it was skipped by the previous fix)",
+      "build": "index-DHJcEp07.js"
+    },
+    {
+      "version": "2.48",
+      "at": "2026-11-21T03:19:25Z",
+      "summary": "Numbered later from deploy commits: Radio: opening ident waits for the saved ident list before playing",
+      "build": "index-99Vvk-qN.js"
+    },
+    {
+      "version": "2.47",
+      "at": "2026-11-21T03:10:58Z",
+      "summary": "Numbered later from deploy commits: Editor > Content > Station ident: order and random play controls",
+      "build": "index-Bnt8C_2I.js"
+    },
+    {
+      "version": "2.46",
+      "at": "2026-11-21T02:55:58Z",
+      "summary": "Numbered later from deploy commits: Editor > Content: border module with readings, crossing selection and warning thresholds",
+      "build": "index-CDogegW2.js"
+    },
+    {
+      "version": "2.45",
+      "at": "2026-11-20T22:27:46Z",
+      "summary": "Logged later (version number was used in the deploy commit): Editor: wording fix for news source and radio stream failure flags",
+      "build": "index-Bl9mMmLU.js"
+    },
+    {
+      "version": "2.44",
+      "at": "2026-11-20T22:08:11Z",
+      "summary": "Logged later (version number was used in the deploy commit): Editor: failure flags for news sources and radio streams; daily stream health check",
+      "build": "index-THdTJcvJ.js"
+    },
+    {
+      "version": "2.43",
+      "at": "2026-11-20T21:49:50Z",
+      "summary": "Logged later (version number was used in the deploy commit): Editor top bar: border feed health",
+      "build": "index-CCyCFt4H.js"
+    },
+    {
+      "version": "2.42",
+      "at": "2026-11-20T21:27:24Z",
+      "summary": "Logged later (version number was used in the deploy commit): Reliability fixes: unavailable and stale data states with staleness thresholds; editor save conflict protection",
+      "build": "index-k01B28qM.js"
+    },
+    {
+      "version": "2.41",
+      "at": "2026-11-12T16:06:40Z",
+      "summary": "Defence today card in Bulletins: Air Force overnight launched/shot down + General Staff daily losses, numbers only",
+      "build": "index-BQyBa3og.js"
+    },
+    {
+      "version": "2.40",
+      "at": "2026-11-12T15:48:37Z",
+      "summary": "New map: Rivers & Dnipro reservoirs, official UkrHMC hydrological warnings (every 30 min)",
+      "build": "index-Cf0_3b05.js"
+    },
+    {
+      "version": "2.39",
+      "at": "2026-11-12T15:26:46Z",
+      "summary": "Radio: the eQsat ident plays first when the screen opens, then the first station",
+      "build": "index-BMu5OWY9.js"
+    },
+    {
+      "version": "2.38",
+      "at": "2026-11-12T15:09:44Z",
+      "summary": "Editor top bar: Feed health replaces Power cuts",
+      "build": "index-B-cM1jjl.js"
+    },
+    {
+      "version": "2.37",
+      "at": "2026-11-12T14:51:00Z",
+      "summary": "Radio: ident rotates 4 versions (male/female × EN/UA); Editor › Content › Station ident to switch, reorder, set volume",
+      "build": "index-CibmOHm8.js"
+    },
+    {
+      "version": "2.36",
+      "at": "2026-11-12T14:41:57Z",
+      "summary": "Radio: eQsat station ident (chime + voice, EN/UA alternating) between scheduled station switches",
+      "build": "index-DIueBYl5.js"
+    },
+    {
+      "version": "2.35",
+      "at": "2026-11-12T13:58:33Z",
+      "summary": "Radio: HLS streams play (Radio Svoboda Ukrainian); eQtv Ukrainian + Russian tracks in playlist",
+      "build": "index-BA0b2sSv.js"
+    },
+    {
+      "version": "2.34",
+      "at": "2026-11-12T13:54:30Z",
+      "summary": "Map: ЗЕМЛЕТРУСИ / EARTHQUAKES view (EMSC, 30 days, M2.5+)",
+      "build": "index-C-BBOkU1.js"
+    },
+    {
+      "version": "2.33",
+      "at": "2026-11-12T13:48:28Z",
+      "summary": "Map: ПОЖЕЖІ / FIRES view (NASA FIRMS, count per oblast, no dots)",
+      "build": "index-BmI3BVXo.js"
+    },
+    {
+      "version": "2.32",
+      "at": "2026-11-12T13:17:21Z",
+      "summary": "Radiation map: zoom boxes beside ChNPP and ZNPP zones; Varash label moved left",
+      "build": "index-CBE1OvxZ.js"
+    },
+    {
+      "version": "2.31",
+      "at": "2026-11-12T13:07:52Z",
+      "summary": "Editor: audio meter uses on-air rate (48 kbps); Ukrainian Radio 128 kbps source",
+      "build": "index-d1KrOJd4.js"
+    },
+    {
+      "version": "2.30",
+      "at": "2026-11-12T03:30:55Z",
+      "summary": "Radiation map: official zones as thin solid outlines (ChNPP exclusion zone, OSM; ZNPP 30 km observation zone), labels + key",
+      "build": "index-CVSulbso.js"
+    },
+    {
+      "version": "2.29",
+      "at": "2026-11-12T01:28:34Z",
+      "summary": "Air + radiation maps: thin dashed outline around the sites with a fresh reading (“Area with sensors”), no fill; legend line",
+      "build": "index-T63raM-O.js"
+    },
+    {
+      "version": "2.28",
+      "at": "2026-11-11T23:41:21Z",
+      "summary": "Dish setup box 194→168 px (26 px slack reclaimed), eQtv 260→286 px; eQtv bottom unchanged, no other rect moves",
+      "build": "index-CO_VKo8D.js"
+    },
+    {
+      "version": "2.27",
+      "at": "2026-11-11T23:26:06Z",
+      "summary": "Photos: one resized WebP per on-air photo from photos-cache/ (≤1280 px, q75, never cropped); credits/licences unchanged; ~1.43 → ~0.74 MB/min",
+      "build": "index-z_6MyYXe.js"
+    },
+    {
+      "version": "2.26",
+      "at": "2026-11-11T23:14:36Z",
+      "summary": "ПОВІТРЯ / AIR QUALITY: named-city dots, median US EPA AQI (PM2.5) from the SaveEcoBot API, hourly, server side; replaces the per-oblast air fill",
+      "build": "index-VfYuGpys.js"
+    },
+    {
+      "version": "2.25",
+      "at": "2026-11-11T22:57:39Z",
+      "summary": "Map views: Water/Roads show water/roads; Power cuts + Border queues get own rows. POW line in Live News crawl (blue), bulletins strip gone. Look → Themes. Settings: Stats/Live screen rows removed (still on tab/↗)",
+      "build": "index-Kej3yKmn.js"
+    },
+    {
+      "version": "2.24",
+      "at": "2026-11-11T21:58:17Z",
+      "summary": "POW exchange banner: yellow strip under the bulletins title for 24 h after Koord_shtab reports an exchange (pow.json, fetch_pow.py)",
+      "build": "index-DiiiuPR6.js"
+    },
+    {
+      "version": "2.23",
+      "at": "2026-11-11T21:39:45Z",
+      "summary": "Live News title box: eQsat logo blue (#096690, the logo's hue darkened for AA; white text 6.3:1) in every theme incl. colour-blind",
+      "build": "index-Vf-BhlxV.js"
+    },
+    {
+      "version": "2.22",
+      "at": "2026-11-11T21:32:34Z",
+      "summary": "Bulletins: ГАРЯЧІ ЛІНІЇ / HOTLINES card, 2 pages (1648, 1698, 1678, 1548 · POW HQ lines, Helping to Leave), QR to nib.gov.ua / helpingtoleave.org",
+      "build": "index-DUNZWCIM.js"
+    },
+    {
+      "version": "2.20",
+      "at": "2026-11-11T21:22:40Z",
+      "summary": "Editor: Preview (eye) on every map view row, live map card in a sheet with ‹ › through all views; screen ?mapview for the preview frame only",
+      "build": "index-BEuY7mVN.js"
+    },
+    {
+      "version": "2.19",
+      "at": "2026-11-11T20:53:33Z",
+      "summary": "Editor top bar: AIR RAID off, logo back on phones, fps · kbps/Mbps (measured); Stats alert types now; ★ default box order (editor-layout.json); screen reads alerttypes/news/weather/airforce from Pages + repo, newer wins",
+      "build": "index-BoSnWIma.js"
+    },
+    {
+      "version": "2.18",
+      "at": "2026-11-11T20:25:42Z",
+      "summary": "РАДІАЦІЯ: full-size map only (table view retired, Jason 5:19 PM); each named site coloured by its reading level (calm 4-step scale, no red) with a 4-swatch legend",
+      "build": "index-fWV-NqIb.js"
+    },
+    {
+      "version": "2.17",
+      "at": "2026-11-11T20:14:10Z",
+      "summary": "РАДІАЦІЯ split into two views: A = full-size map with each named site's value (same size as the other maps), B = the table; A plays right before B",
+      "build": "index-DAPx6cs7.js"
+    },
+    {
+      "version": "2.16",
+      "at": "2026-11-11T20:07:19Z",
+      "summary": "Air Force line: the Air Force's own drone / missile warnings (t.me/s/kpszsu) under 15 min old, word for word, in red in the live news crawl (one after every 4 headlines); no map",
+      "build": "index-Bm82qqbI.js"
+    },
+    {
+      "version": "2.15",
+      "at": "2026-11-11T20:03:19Z",
+      "summary": "РАДІАЦІЯ view: site list on the left, small map + SaveEcoBot credit / QR on the right (Jason 4:58 PM); bigger QR",
+      "build": "index-CplQrPFK.js"
+    },
+    {
+      "version": "2.14",
+      "at": "2026-11-11T19:52:38Z",
+      "summary": "РАДІАЦІЯ / Radiation map view: gamma dose rate at the ZNPP area (Nikopol, Marhanets, IAEA daily on-site), Chornobyl town, ChNPP site, Kyiv, the South Ukraine / Rivne / Khmelnytskyi NPP towns and Rozdilna, from SaveEcoBot (Safecast backup), with credit + QR and the normal background",
+      "build": "index-CHx2IT1T.js"
+    },
+    {
+      "version": "2.13",
+      "at": "2026-11-11T19:12:02Z",
+      "summary": "ПОГОДА cards now join the bulletins (after manual and auto ones) instead of the family/dish/radio rotation, so every page of weather warnings is shown once per bulletin cycle",
+      "build": "index-BvOv4yGa.js"
+    },
+    {
+      "version": "2.12",
+      "at": "2026-11-11T18:56:10Z",
+      "summary": "ПОГОДА: official weather and sea warnings (Meteoalarm / Укргідрометцентр, CC BY 4.0; Moldova when it has warnings), fetched by the live-runner every 10 min, one line per warning in the issuer's words, newest first, as cards in the bulletin box rotation",
+      "build": "index-B1AXo4du.js"
+    },
+    {
+      "version": "2.11",
+      "at": "2026-11-11T18:37:53Z",
+      "summary": "Internet signal per oblast (IODA, Georgia Tech) now fetched in the live-runner every 5 min (ioda.json); oblasts with an IODA critical alert drawn red and listed first with the start time; header counts critical oblasts",
+      "build": "index-DhQWa1Kx.js"
+    },
+    {
+      "version": "2.10",
+      "at": "2026-11-11T18:29:05Z",
+      "summary": "Live conflict photos: 18 approved Commons photos first in the photo rotation; runner fetches candidates every 10 min (pending, never auto-approved); Editor: approve / reject / one-tap pull off air",
+      "build": "index-BAeWN4Cd.js"
+    },
+    {
+      "version": "2.09",
+      "at": "2026-11-11T18:19:39Z",
+      "summary": "Editor: ↗ open-screen back on the top bar, Stats moved to ⚙ Settings; ON AIR shows uptime; last update always shown; Stats cards start folded to their top block",
+      "build": "index-SzDa3kbM.js"
+    },
+    {
+      "version": "2.08",
+      "at": "2026-11-11T17:57:56Z",
+      "summary": "eQtv photo panel: 360p picture (about 430 kbps instead of 3,450) and eQtv sound on the channel in the chosen language; radio pauses, resumes if eQtv drops",
+      "build": "index-BRmbbvLY.js"
+    },
+    {
+      "version": "2.07",
+      "at": "2026-11-11T17:34:28Z",
+      "summary": "QR scan counter: on-air QR codes go through the logger short link (counts only); Stats > QR scans; switch in Tune-in",
+      "build": "index-CcwHmHbf.js"
+    },
+    {
+      "version": "2.06",
+      "at": "2026-11-11T17:29:51Z",
+      "summary": "Load meter, measured: screen downloads (kbps, MB/hour, GB/day), frames per second, 10-min and 24-h graphs with the safety band, time in safe range",
+      "build": "index-C8a6DcTe.js"
+    },
+    {
+      "version": "2.05",
+      "at": "2026-11-11T17:21:23Z",
+      "summary": "Editor: language, Basic | Live and version move into Settings; info bar keeps ON AIR, air raid, LOAD then live stats; tighter Dish box; eQtv language (UK/EN/RU)",
+      "build": "index-BqzAbpiE.js"
+    },
+    {
+      "version": "2.04",
+      "at": "2026-11-11T17:08:19Z",
+      "summary": "Hotfix: map panels never cut text at the border (power-cuts list fits whole rows, source line one row, map clear of the bottom edge)",
+      "build": "index-B5gxaE-P.js"
+    },
+    {
+      "version": "2.03",
+      "at": "2026-11-11T16:48:09Z",
+      "summary": "Screen motion load meter: Dashboard, Stats and an info-bar LOAD segment (estimate from the silent preview; never kbps)",
+      "build": "index-Dqe7m2_z.js"
+    },
+    {
+      "version": "2.02",
+      "at": "2026-11-11T16:29:25Z",
+      "summary": "Editor: one top bar in Basic and Live (Basic design + Stats), Basic | Live switch keeps your place; Tune-in boxes fold like the rest",
+      "build": "index-BLh98x7g.js"
+    },
+    {
+      "version": "2.01",
+      "at": "2026-11-11T16:07:27Z",
+      "summary": "Editor language: EN / УКР / РУС (bundled) or another language by machine translation (labelled)",
+      "build": "index-B2376PG1.js"
+    },
+    {
+      "version": "2.00",
+      "at": "2026-11-11T15:56:48Z",
+      "summary": "Live Editor: wider slide-over (about 1.5x, max 60%), iPhone sheet 75%; top right is only Stats + Settings, the rest moved into Settings",
+      "build": "index-yy1vOcUr.js"
+    },
+    {
+      "version": "1.99",
+      "at": "2026-11-11T15:48:24Z",
+      "summary": "Hotfix: radio and eQtv photo panel share one eQtv session (the second socket killed the radio and the on-air sign)",
+      "build": "index-Binsie2N.js"
+    },
     {
       "version": "1.98",
       "at": "2026-11-11T15:13:08Z",
@@ -1088,4 +1594,4 @@
       "build": null
     }
   ]
-}
+    }
