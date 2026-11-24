@@ -1,20 +1,20 @@
 {
- "updated": "2026-11-24T10:02:00Z",
- "checked_at": "2026-11-24T10:02:00Z",
+ "updated": "2026-11-24T10:05:15Z",
+ "checked_at": "2026-11-24T10:05:15Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Угринів → PL: 640 вант. · 6 д 3 год"
+   "note": "Угринів → PL: 639 вант. · 6 д 3 год"
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 738 вант. · 8 д 1 год"
+   "note": "Ягодин → PL: 736 вант. · 8 д 1 год"
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Дякове → RO: 500 вант. · 5 д 3 год"
+   "note": "Дякове → RO: 499 вант. · 5 д 3 год"
   },
   "chernivtsi": {
    "status": "ok",
@@ -22,7 +22,7 @@
   },
   "odesa": {
    "status": "ok",
-   "note": "Виноградівка → MD: 4 вант. · 0 год"
+   "note": "Виноградівка → MD: 5 вант. · 0 год"
   }
  },
  "queue": [
@@ -52,21 +52,42 @@
    "name": "Угринів",
    "to": "PL",
    "hours": 147,
-   "trucks": 640
+   "trucks": 639
+  },
+  {
+   "oblast": "volyn",
+   "name": "Устилуг",
+   "to": "PL",
+   "hours": 38,
+   "trucks": 135
+  },
+  {
+   "oblast": "lviv",
+   "name": "Шегині",
+   "to": "PL",
+   "hours": 140,
+   "trucks": 500
+  },
+  {
+   "oblast": "lviv",
+   "name": "Шегині",
+   "to": "PL",
+   "hours": 140,
+   "trucks": 609
   },
   {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
    "hours": 81,
-   "trucks": 637
+   "trucks": 640
   },
   {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
    "hours": 159,
-   "trucks": 1637
+   "trucks": 1636
   },
   {
    "oblast": "volyn",
@@ -80,14 +101,14 @@
    "name": "Ягодин",
    "to": "PL",
    "hours": 193,
-   "trucks": 738
+   "trucks": 736
   },
   {
    "oblast": "zakarpattia",
    "name": "Дякове",
    "to": "RO",
    "hours": 123,
-   "trucks": 500
+   "trucks": 499
   },
   {
    "oblast": "chernivtsi",
@@ -115,7 +136,7 @@
    "name": "Виноградівка",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 4
+   "trucks": 5
   },
   {
    "oblast": "odesa",
