@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24T04:27:09Z",
- "checked_at": "2026-11-24T04:27:09Z",
+ "updated": "2026-11-24T04:30:35Z",
+ "checked_at": "2026-11-24T04:30:35Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -10,11 +10,11 @@
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 747 вант. · 8 д 4 год"
+   "note": "Ягодин → PL: 746 вант. · 8 д 3 год"
   },
   "chernivtsi": {
    "status": "ok",
-   "note": "Мамалига → MD: 32 вант. · 4 год"
+   "note": "Мамалига → MD: 33 вант. · 4 год"
   },
   "odesa": {
    "status": "outage",
@@ -25,18 +25,11 @@
    "note": "Могилів-Подільський → MD: 1 вант. · 0 год"
   },
   "zakarpattia": {
-   "status": "ok",
-   "note": "Малий Березний → SK: 0 вант. · 0 год"
+   "status": "outage",
+   "note": "Лужанка → HU: 299 вант. · 3 д 6 год"
   }
  },
  "queue": [
-  {
-   "oblast": "lviv",
-   "name": "Краківець",
-   "to": "PL",
-   "hours": 87,
-   "trucks": 775
-  },
   {
    "oblast": "lviv",
    "name": "Краківець",
@@ -98,7 +91,7 @@
    "name": "Ягодин",
    "to": "PL",
    "hours": 181,
-   "trucks": 1603
+   "trucks": 1604
   },
   {
    "oblast": "volyn",
@@ -111,8 +104,8 @@
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
-   "hours": 196,
-   "trucks": 747
+   "hours": 195,
+   "trucks": 746
   },
   {
    "oblast": "chernivtsi",
@@ -153,8 +146,8 @@
    "oblast": "chernivtsi",
    "name": "Мамалига",
    "to": "MD",
-   "hours": 3.7,
-   "trucks": 32
+   "hours": 3.8,
+   "trucks": 33
   },
   {
    "oblast": "vinnytsia",
@@ -196,7 +189,7 @@
    "name": "Старокозаче",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 7
+   "trucks": 6
   },
   {
    "oblast": "odesa",
@@ -218,6 +211,13 @@
    "to": "SK",
    "hours": 0.0,
    "trucks": 0
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Лужанка",
+   "to": "HU",
+   "hours": 78,
+   "trucks": 299
   }
  ]
 }
