@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-24T22:37:32Z",
- "checked_at": "2026-11-24T22:37:32Z",
+ "updated": "2026-11-24T22:40:53Z",
+ "checked_at": "2026-11-24T22:40:53Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Шегині → PL: 587 вант. · 6 д 20 год"
+   "note": "Шегині → PL: 586 вант. · 6 д 20 год"
   },
   "volyn": {
    "status": "limited",
@@ -14,7 +14,7 @@
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Чоп (Тиса) → HU: 1542 вант. · 6 д 8 год"
+   "note": "Чоп (Тиса) → HU: 1540 вант. · 6 д 8 год"
   },
   "chernivtsi": {
    "status": "ok",
@@ -22,7 +22,7 @@
   },
   "odesa": {
    "status": "outage",
-   "note": "Орлівка → RO: 739 вант. · 6 д 13 год"
+   "note": "Орлівка → RO: 738 вант. · 6 д 13 год"
   }
  },
  "queue": [
@@ -37,29 +37,29 @@
    "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
-   "hours": 39,
-   "trucks": 185
+   "hours": 38,
+   "trucks": 184
   },
   {
    "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
    "hours": 143,
-   "trucks": 619
+   "trucks": 618
   },
   {
    "oblast": "lviv",
    "name": "Шегині",
    "to": "PL",
    "hours": 164,
-   "trucks": 587
+   "trucks": 586
   },
   {
    "oblast": "lviv",
    "name": "Шегині",
    "to": "PL",
-   "hours": 145,
-   "trucks": 626
+   "hours": 144.9,
+   "trucks": 625
   },
   {
    "oblast": "volyn",
@@ -72,7 +72,7 @@
    "oblast": "zakarpattia",
    "name": "Дякове",
    "to": "RO",
-   "hours": 127,
+   "hours": 126,
    "trucks": 515
   },
   {
@@ -87,14 +87,14 @@
    "name": "Орлівка",
    "to": "RO",
    "hours": 157,
-   "trucks": 739
+   "trucks": 738
   },
   {
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
    "hours": 0.0,
-   "trucks": 3
+   "trucks": 4
   },
   {
    "oblast": "odesa",
@@ -154,17 +154,10 @@
   },
   {
    "oblast": "zakarpattia",
-   "name": "Лужанка",
-   "to": "HU",
-   "hours": 82,
-   "trucks": 314
-  },
-  {
-   "oblast": "zakarpattia",
    "name": "Чоп (Тиса)",
    "to": "HU",
    "hours": 152,
-   "trucks": 1542
+   "trucks": 1540
   }
  ]
 }
