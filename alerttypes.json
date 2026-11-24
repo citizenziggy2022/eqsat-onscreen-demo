@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T23:55:56Z",
+ "updated": "2026-11-24T23:58:03Z",
  "source": "siren.pp.ua (UkraineAlarm)",
  "types": {
   "AIR": {
@@ -9,10 +9,11 @@
     "donetsk",
     "kharkiv",
     "luhansk",
+    "mykolaiv",
     "poltava",
     "sumy"
    ],
-   "areas": 31
+   "areas": 32
   },
   "ARTILLERY": {
    "regions": [
@@ -204,7 +205,7 @@
    "2026-11-25": {
     "counts": {
      "mykolaiv": {
-      "AIR": 1
+      "AIR": 2
      },
      "odesa": {
       "AIR": 1
@@ -215,8 +216,8 @@
     },
     "partial": false,
     "first_at": "2026-11-24T22:00:48Z",
-    "samples": 103,
-    "last_at": "2026-11-24T23:55:56Z",
+    "samples": 104,
+    "last_at": "2026-11-24T23:58:03Z",
     "covered_oblasts": [
      "cherkasy",
      "chernihiv",
@@ -247,7 +248,7 @@
     ]
    }
   },
-  "last_at": "2026-11-24T23:55:56Z",
+  "last_at": "2026-11-24T23:58:03Z",
   "active": [
    "crimea:AIR",
    "dnipro:AIR",
@@ -257,6 +258,7 @@
    "kharkiv:ARTILLERY",
    "kharkiv:URBAN_FIGHTS",
    "luhansk:AIR",
+   "mykolaiv:AIR",
    "poltava:AIR",
    "sumy:AIR"
   ],
