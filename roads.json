@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-24T21:51:11Z",
- "checked_at": "2026-11-24T21:51:11Z",
+ "updated": "2026-11-24T21:54:20Z",
+ "checked_at": "2026-11-24T21:54:20Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Шегині → PL: 590 вант. · 6 д 21 год"
+   "note": "Шегині → PL: 589 вант. · 6 д 21 год"
   },
   "volyn": {
    "status": "outage",
@@ -22,17 +22,10 @@
   },
   "odesa": {
    "status": "ok",
-   "note": "Виноградівка → MD: 0 вант. · 0 год"
+   "note": "Старокозаче → MD: 17 вант. · 2 год"
   }
  },
  "queue": [
-  {
-   "oblast": "lviv",
-   "name": "Грушів",
-   "to": "PL",
-   "hours": 7.5,
-   "trucks": 37
-  },
   {
    "oblast": "lviv",
    "name": "Краківець",
@@ -65,15 +58,15 @@
    "oblast": "volyn",
    "name": "Устилуг",
    "to": "PL",
-   "hours": 37,
-   "trucks": 125
+   "hours": 36,
+   "trucks": 122
   },
   {
    "oblast": "lviv",
    "name": "Шегині",
    "to": "PL",
    "hours": 165,
-   "trucks": 590
+   "trucks": 589
   },
   {
    "oblast": "lviv",
@@ -147,6 +140,13 @@
   },
   {
    "oblast": "odesa",
+   "name": "Старокозаче",
+   "to": "MD",
+   "hours": 1.8,
+   "trucks": 17
+  },
+  {
+   "oblast": "odesa",
    "name": "Табаки",
    "to": "MD",
    "hours": 0.0,
@@ -157,7 +157,7 @@
    "name": "Малий Березний",
    "to": "SK",
    "hours": 0.0,
-   "trucks": 1
+   "trucks": 0
   },
   {
    "oblast": "zakarpattia",
