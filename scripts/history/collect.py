@@ -411,6 +411,7 @@ def nightly_rebuild(db, db_path, rawdir, clone):
 def monthly_report(db, clone):
     month = datetime.now(timezone.utc).strftime("%Y-%m")
     path = os.path.join(clone, "reports", "size.csv")
+    os.makedirs(os.path.dirname(path), exist_ok=True)
     if os.path.exists(path):
         existing = open(path).read()
     else:
