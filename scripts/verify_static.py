@@ -43,17 +43,34 @@ CONTACT_RULES = {
     ("HOTLINES", "1678"): ("https://ombudsman.gov.ua/", r"Омбудсман|Ombudsman", r"Уповноважений Верховної Ради України з прав людини", r"Гаряча лінія"),
     ("FROM OCCUPIED AREAS OR ABROAD", "+380 44 299 74 08"): ("https://ombudsman.gov.ua/", r"Омбудсман|Ombudsman", r"Уповноважений Верховної Ради України з прав людини", r"Для дзвінків з-за кордону"),
     ("HOTLINES", "0 800 332 656"): ("https://redcross.org.ua/contacts/", r"Червоний Хрест|Red Cross", r"Товариство Червоного Хреста України", r"Телефон"),
+    # Added Nov 24 2026. A rule may list several official pages: they are tried in order and the first page that LOADS decides.
+    # A page that loads without the number beside its label is "unverified" and never shopped around for a pass.
+    ("HOTLINES", "0 800 300 529"): [
+        ("https://koordshtab.gov.ua", r"Coordination|Коордштаб", r"Координаційний штаб з питань поводження з військовополоненими", r"Координаційний штаб"),
+        ("https://www.ombudsman.gov.ua/uk/voyennij-stan/koordinacijnij-shtab-z-pitan-povodzhennya-z-vijskovopolonenimi", r"Coordination|Коордштаб", r"Координаційний штаб з питань поводження з військовополоненими", r"Телефон"),
+    ],
+    ("FROM OCCUPIED AREAS OR ABROAD", "+380 44 390 43 90"): ("https://koordshtab.gov.ua/contacts", r"Coordination|Коордштаб", r"Координаційний штаб з питань поводження з військовополоненими", r"Для дзвінків з-за кордону"),
+    ("FROM OCCUPIED AREAS OR ABROAD", "+380 93 406 80 17"): ("https://ombudsman.gov.ua/uk/news_details/41-ukrayinec-povernuvsya-z-okupaciyi-cherez-volin", r"Ombudsman|Омбудсман", r"Уповноважений Верховної Ради України з прав людини", r"тимчасово окупованих територій"),
+    ("MINES & AIR RAIDS", "101"): ("https://bezpeka.dsns.gov.ua/materials/shcho-robyty-yakshcho-vyyavyly-minu-abo-inshyy-vybukhonebezpechnyy-predmet", r"Back away|same way", r"вибухонебезпечн", r"тим самим шляхом"),
+    # Moldova's 112 identity is the Republic of Moldova service (112.md). Transnistria coverage is NOT claimed by this rule.
+    ("MOLDOVA · TRANSNISTRIA", "112"): ("https://112.md/", r"Moldova", r"SERVICIUL NAȚIONAL UNIC PENTRU APELURILE DE URGENȚĂ 112 AL REPUBLICII MOLDOVA", r"numărul unic pentru apeluri(?:le)? de urgență", "either"),
+    ("MOLDOVA · TRANSNISTRIA", "+373 69 64 99 76"): ("https://moldova.mfa.gov.ua/", r"hotline|24/7", r"Посольство України в Республіці Молдова", r"24/7 телефон"),
+    ("MOLDOVA · TRANSNISTRIA", "+373 22 58 22 84"): ("https://moldova.mfa.gov.ua/", r"Consular|Консуль", r"Посольство України в Республіці Молдова", r"КОНСУЛЬСЬКИЙ ВІДДІЛ"),
 }
+# 112 only: if the DSNS page is blocked, the Interior Ministry's 112 page may stand in (number beside its own description).
+NATIONAL_FALLBACK = {"112": ("https://mvs.gov.ua/mvs-specprojekti/sluzba-112-usi-ekstreni-sluzbi-za-jedinim-nomerom", r"номер для звернення")}
 
 
 def contact_rule(card_id, line):
     rule = CONTACT_RULES.get((card_id, str(line.get("number") or "").strip()))
     if not rule:
         return None
-    url, own_label, identity, source_label = rule
-    if not re.search(own_label, f"{line.get('en', '')} {line.get('uk', '')}", re.I):
-        return None
-    return url, identity, source_label
+    out = []
+    for url, own_label, identity, source_label, *mode in (rule if isinstance(rule, list) else [rule]):
+        if not re.search(own_label, f"{line.get('en', '')} {line.get('uk', '')}", re.I):
+            return None
+        out.append((url, identity, source_label, bool(mode and mode[0] == "either")))
+    return out
 
 
 def contact_bound(text, number, label_re):
@@ -143,6 +160,15 @@ def check_line(card_id, line):
     if rule:
         url, label_re = rule
         body, why = fetch(url)
+        if body is None and num in NATIONAL_FALLBACK:
+            fb_url, fb_label = NATIONAL_FALLBACK[num]
+            fb_body, fb_why = fetch(fb_url)
+            if fb_body is not None:
+                got = label_bound(visible_text(fb_body.decode("utf-8", "ignore")), num, fb_label)
+                note = f"primary source blocked ({why}); fallback page used"
+                if got:
+                    return "confirmed", fb_url, got, note
+                return "unverified", fb_url, "fallback page loads but does not show this number beside its description", note
         if body is None:
             return "failed", url, f"source page did not load ({why})", None
         text = visible_text(body.decode("utf-8", "ignore"))
@@ -150,19 +176,23 @@ def check_line(card_id, line):
         if got:
             return "confirmed", url, got, None
         return "unverified", url, "source loads but does not show this number beside its service label", None
-    rule = contact_rule(card_id, line)
-    if rule:
-        url, identity, source_label = rule
-        body, why = fetch(url)
-        if body is None:
-            return "failed", url, f"source page did not load ({why})", None
-        text = visible_text(body.decode("utf-8", "ignore"))
-        if not re.search(identity, text, re.I):
-            return "unverified", url, "source loads but its expected service identity is missing", None
-        got = contact_bound(text, num, source_label)
-        if got:
-            return "confirmed", url, got, None
-        return "unverified", url, "source loads but does not show this number beside its contact label; review required, not evidence of a changed number", None
+    rules = contact_rule(card_id, line)
+    if rules:
+        blocked = []
+        for url, identity, source_label, either in rules:
+            body, why = fetch(url)
+            if body is None:
+                blocked.append(f"{url} ({why})")
+                continue
+            note = ("earlier source blocked: " + "; ".join(blocked)) if blocked else None
+            text = visible_text(body.decode("utf-8", "ignore"))
+            if not re.search(identity, text, re.I):
+                return "unverified", url, "source loads but its expected service identity is missing", note
+            got = label_bound(text, num, source_label) if either else contact_bound(text, num, source_label)
+            if got:
+                return "confirmed", url, got, note
+            return "unverified", url, "source loads but does not show this number beside its contact label; review required, not evidence of a changed number", note
+        return "failed", rules[0][0], "source page did not load (" + "; ".join(blocked)[:160] + ")", None
     url = line.get("source_url")
     if url and digits:
         body, why = fetch(url)
