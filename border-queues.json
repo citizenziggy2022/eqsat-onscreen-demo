@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-24T19:44:32Z",
- "checked_at": "2026-11-24T19:44:32Z",
+ "updated": "2026-11-24T19:47:43Z",
+ "checked_at": "2026-11-24T19:47:43Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Шегині → PL: 600 вант. · 7 д 1 год"
+   "note": "Шегині → PL: 599 вант. · 7 д 1 год"
   },
   "volyn": {
    "status": "outage",
@@ -17,8 +17,8 @@
    "note": "Дяківці → RO: 0 вант. · 0 год"
   },
   "odesa": {
-   "status": "outage",
-   "note": "Орлівка → RO: 737 вант. · 6 д 13 год"
+   "status": "ok",
+   "note": "Маяки-Удобне → MD: 2 вант. · 0 год"
   },
   "zakarpattia": {
    "status": "outage",
@@ -31,7 +31,7 @@
    "name": "Краківець",
    "to": "PL",
    "hours": 111,
-   "trucks": 977
+   "trucks": 972
   },
   {
    "oblast": "lviv",
@@ -44,7 +44,7 @@
    "oblast": "lviv",
    "name": "Смільниця",
    "to": "PL",
-   "hours": 4.8,
+   "hours": 4.5,
    "trucks": 22
   },
   {
@@ -66,7 +66,7 @@
    "name": "Шегині",
    "to": "PL",
    "hours": 168.6,
-   "trucks": 600
+   "trucks": 599
   },
   {
    "oblast": "lviv",
@@ -97,13 +97,6 @@
    "trucks": 0
   },
   {
-   "oblast": "odesa",
-   "name": "Орлівка",
-   "to": "RO",
-   "hours": 157,
-   "trucks": 737
-  },
-  {
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
@@ -112,17 +105,10 @@
   },
   {
    "oblast": "odesa",
-   "name": "Виноградівка",
-   "to": "MD",
-   "hours": 0.0,
-   "trucks": 2
-  },
-  {
-   "oblast": "odesa",
    "name": "Маяки-Удобне",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 3
+   "trucks": 2
   },
   {
    "oblast": "odesa",
@@ -130,6 +116,13 @@
    "to": "MD",
    "hours": 0.0,
    "trucks": 0
+  },
+  {
+   "oblast": "chernivtsi",
+   "name": "Росошани",
+   "to": "MD",
+   "hours": 0.0,
+   "trucks": 2
   },
   {
    "oblast": "odesa",
@@ -156,8 +149,8 @@
    "oblast": "zakarpattia",
    "name": "Лужанка",
    "to": "HU",
-   "hours": 9.1,
-   "trucks": 37
+   "hours": 8.5,
+   "trucks": 35
   },
   {
    "oblast": "zakarpattia",
