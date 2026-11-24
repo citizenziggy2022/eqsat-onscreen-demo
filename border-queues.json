@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24T00:56:43Z",
- "checked_at": "2026-11-24T00:56:43Z",
+ "updated": "2026-11-24T00:59:59Z",
+ "checked_at": "2026-11-24T00:59:59Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -14,7 +14,7 @@
   },
   "chernivtsi": {
    "status": "outage",
-   "note": "Порубне → RO: 791 вант. · 3 д 16 год"
+   "note": "Порубне → RO: 792 вант. · 3 д 16 год"
   },
   "odesa": {
    "status": "limited",
@@ -25,8 +25,8 @@
    "note": "Могилів-Подільський → MD: 0 вант. · 0 год"
   },
   "zakarpattia": {
-   "status": "outage",
-   "note": "Чоп (Тиса) → HU: 1383 вант. · 5 д 16 год"
+   "status": "ok",
+   "note": "Малий Березний → SK: 0 вант. · 0 год"
   }
  },
  "queue": [
@@ -84,14 +84,14 @@
    "name": "Шегині",
    "to": "PL",
    "hours": 140,
-   "trucks": 604
+   "trucks": 606
   },
   {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
    "hours": 0.0,
-   "trucks": 1
+   "trucks": 2
   },
   {
    "oblast": "volyn",
@@ -112,7 +112,7 @@
    "name": "Порубне",
    "to": "RO",
    "hours": 88,
-   "trucks": 791
+   "trucks": 792
   },
   {
    "oblast": "chernivtsi",
@@ -197,13 +197,6 @@
    "to": "SK",
    "hours": 0.0,
    "trucks": 0
-  },
-  {
-   "oblast": "zakarpattia",
-   "name": "Чоп (Тиса)",
-   "to": "HU",
-   "hours": 136,
-   "trucks": 1383
   }
  ]
 }
