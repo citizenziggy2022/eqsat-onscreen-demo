@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-24T01:23:28Z",
- "checked_at": "2026-11-24T01:23:28Z",
+ "updated": "2026-11-24T01:26:42Z",
+ "checked_at": "2026-11-24T01:26:42Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Рава-Руська → PL: 584 вант. · 8 д 9 год"
+   "note": "Угринів → PL: 656 вант. · 6 д 7 год"
   },
   "volyn": {
    "status": "outage",
@@ -17,8 +17,8 @@
    "note": "Дяківці → RO: 0 вант. · 0 год"
   },
   "odesa": {
-   "status": "ok",
-   "note": "Виноградівка → MD: 0 вант. · 0 год"
+   "status": "outage",
+   "note": "Орлівка → RO: 715 вант. · 6 д 7 год"
   },
   "vinnytsia": {
    "status": "ok",
@@ -26,7 +26,7 @@
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Лужанка → HU: 308 вант. · 3 д 9 год"
+   "note": "Лужанка → HU: 305 вант. · 3 д 8 год"
   }
  },
  "queue": [
@@ -39,24 +39,10 @@
   },
   {
    "oblast": "lviv",
-   "name": "Рава-Руська",
-   "to": "PL",
-   "hours": 101,
-   "trucks": 780
-  },
-  {
-   "oblast": "lviv",
-   "name": "Рава-Руська",
-   "to": "PL",
-   "hours": 201,
-   "trucks": 584
-  },
-  {
-   "oblast": "lviv",
    "name": "Смільниця",
    "to": "PL",
-   "hours": 8.5,
-   "trucks": 38
+   "hours": 8.3,
+   "trucks": 37
   },
   {
    "oblast": "lviv",
@@ -104,13 +90,6 @@
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
-   "hours": 185,
-   "trucks": 1627
-  },
-  {
-   "oblast": "volyn",
-   "name": "Ягодин",
-   "to": "PL",
    "hours": 0.0,
    "trucks": 1
   },
@@ -127,6 +106,13 @@
    "to": "RO",
    "hours": 0.0,
    "trucks": 0
+  },
+  {
+   "oblast": "odesa",
+   "name": "Орлівка",
+   "to": "RO",
+   "hours": 151,
+   "trucks": 715
   },
   {
    "oblast": "chernivtsi",
@@ -209,8 +195,15 @@
    "oblast": "zakarpattia",
    "name": "Лужанка",
    "to": "HU",
-   "hours": 81,
-   "trucks": 308
+   "hours": 4.5,
+   "trucks": 22
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Лужанка",
+   "to": "HU",
+   "hours": 80,
+   "trucks": 305
   }
  ]
 }
