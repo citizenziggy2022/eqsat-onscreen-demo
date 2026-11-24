@@ -308,6 +308,21 @@ def main():
         add_english(out[:MAX_ITEMS], old.get("bulletins", []))
     except Exception as exc:  # the Ukrainian bulletins never wait on the translation
         print("translation skipped:", str(exc)[:100])
+    # One reviewed manual bulletin, approved by the owner on 24 Nov 2026 (single card, not a feed). Added after the
+    # translation step so no machine English is attached. It expires by itself and this block can then be deleted.
+    reviewed = [{'id': 'gov-roads-reviewed-498',
+      'title': 'Зимове утримання доріг державного значення: 498 одиниць спецтехніки, 616 працівників',
+      'body': 'Дорожні служби продовжують працювати в посиленому режимі через складні погодні умови.',
+      'source': 'Агентство відновлення · CC BY 4.0',
+      'source_url': 'https://restoration.gov.ua/blog/498-odynycz-specztehniky-ta-616-praczivnykiv-zabezpechuyut-zymove-utrymannya-dorig-derzhavnogo-znachennya/',
+      'region': 'Україна · дороги',
+      'category': 'Офіційно / Official',
+      'severity': 'info',
+      'auto': True,
+      'issued_at': '2026-11-24T05:57:26Z',
+      'expires_at': '2026-11-24T17:57:26Z'}]
+    now_s = now.strftime("%Y-%m-%dT%H:%M:%SZ")
+    out = [dict(r) for r in reviewed if r["expires_at"] > now_s] + out
     data = {
         "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
         "generated_at": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
