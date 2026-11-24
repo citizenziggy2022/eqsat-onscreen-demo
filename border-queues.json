@@ -1,16 +1,20 @@
 {
- "updated": "2026-11-24T01:59:11Z",
- "checked_at": "2026-11-24T01:59:11Z",
+ "updated": "2026-11-24T02:02:56Z",
+ "checked_at": "2026-11-24T02:02:56Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Краківець → PL: 642 вант. · 7 д 12 год"
+   "note": "Краківець → PL: 639 вант. · 7 д 11 год"
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 1620 вант. · 7 д 16 год"
+   "note": "Ягодин → PL: 1617 вант. · 7 д 15 год"
+  },
+  "zakarpattia": {
+   "status": "outage",
+   "note": "Ужгород → SK: 717 вант. · 5 д 21 год"
   },
   "chernivtsi": {
    "status": "ok",
@@ -23,10 +27,6 @@
   "vinnytsia": {
    "status": "ok",
    "note": "Могилів-Подільський → MD: 0 вант. · 0 год"
-  },
-  "zakarpattia": {
-   "status": "outage",
-   "note": "Ужгород → SK: 717 вант. · 5 д 21 год"
   }
  },
  "queue": [
@@ -41,15 +41,15 @@
    "oblast": "lviv",
    "name": "Краківець",
    "to": "PL",
-   "hours": 180,
-   "trucks": 642
+   "hours": 179,
+   "trucks": 639
   },
   {
    "oblast": "lviv",
    "name": "Смільниця",
    "to": "PL",
-   "hours": 8.3,
-   "trucks": 37
+   "hours": 8,
+   "trucks": 36
   },
   {
    "oblast": "lviv",
@@ -63,7 +63,7 @@
    "name": "Угринів",
    "to": "PL",
    "hours": 151,
-   "trucks": 653
+   "trucks": 654
   },
   {
    "oblast": "volyn",
@@ -71,13 +71,6 @@
    "to": "PL",
    "hours": 45,
    "trucks": 145
-  },
-  {
-   "oblast": "volyn",
-   "name": "Устилуг",
-   "to": "PL",
-   "hours": 150,
-   "trucks": 614
   },
   {
    "oblast": "lviv",
@@ -91,14 +84,14 @@
    "name": "Шегині",
    "to": "PL",
    "hours": 140,
-   "trucks": 604
+   "trucks": 606
   },
   {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
-   "hours": 184,
-   "trucks": 1620
+   "hours": 183,
+   "trucks": 1617
   },
   {
    "oblast": "volyn",
@@ -106,6 +99,13 @@
    "to": "PL",
    "hours": 0.0,
    "trucks": 1
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Дякове",
+   "to": "RO",
+   "hours": 126,
+   "trucks": 484
   },
   {
    "oblast": "chernivtsi",
