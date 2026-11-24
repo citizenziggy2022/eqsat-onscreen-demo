@@ -1,24 +1,24 @@
 {
- "updated": "2026-11-24T20:57:21Z",
- "checked_at": "2026-11-24T20:57:21Z",
+ "updated": "2026-11-24T21:00:40Z",
+ "checked_at": "2026-11-24T21:00:40Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Шегині → PL: 594 вант. · 6 д 22 год"
+   "note": "Шегині → PL: 593 вант. · 6 д 22 год"
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 796 вант. · 8 д 17 год"
+   "note": "Устилуг → PL: 586 вант. · 6 д 0 год"
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Чоп (Тиса) → HU: 1545 вант. · 6 д 8 год"
+   "note": "Чоп (Тиса) → HU: 1543 вант. · 6 д 8 год"
   },
   "chernivtsi": {
    "status": "outage",
-   "note": "Порубне → RO: 870 вант. · 3 д 12 год"
+   "note": "Порубне → RO: 869 вант. · 3 д 12 год"
   },
   "odesa": {
    "status": "ok",
@@ -26,13 +26,6 @@
   }
  },
  "queue": [
-  {
-   "oblast": "lviv",
-   "name": "Краківець",
-   "to": "PL",
-   "hours": 113,
-   "trucks": 991
-  },
   {
    "oblast": "lviv",
    "name": "Краківець",
@@ -73,7 +66,7 @@
    "name": "Шегині",
    "to": "PL",
    "hours": 166,
-   "trucks": 594
+   "trucks": 593
   },
   {
    "oblast": "lviv",
@@ -87,21 +80,7 @@
    "name": "Ягодин",
    "to": "PL",
    "hours": 57,
-   "trucks": 608
-  },
-  {
-   "oblast": "volyn",
-   "name": "Ягодин",
-   "to": "PL",
-   "hours": 164,
-   "trucks": 1679
-  },
-  {
-   "oblast": "volyn",
-   "name": "Ягодин",
-   "to": "PL",
-   "hours": 209,
-   "trucks": 796
+   "trucks": 607
   },
   {
    "oblast": "zakarpattia",
@@ -122,7 +101,7 @@
    "name": "Порубне",
    "to": "RO",
    "hours": 84,
-   "trucks": 870
+   "trucks": 869
   },
   {
    "oblast": "chernivtsi",
@@ -191,13 +170,6 @@
    "oblast": "zakarpattia",
    "name": "Ужгород",
    "to": "SK",
-   "hours": 149,
-   "trucks": 765
-  },
-  {
-   "oblast": "zakarpattia",
-   "name": "Ужгород",
-   "to": "SK",
    "hours": 0.0,
    "trucks": 1
   },
@@ -206,7 +178,7 @@
    "name": "Чоп (Тиса)",
    "to": "HU",
    "hours": 152,
-   "trucks": 1545
+   "trucks": 1543
   }
  ]
 }
