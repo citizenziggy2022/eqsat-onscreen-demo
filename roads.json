@@ -1,20 +1,20 @@
 {
- "updated": "2026-11-24T02:39:19Z",
- "checked_at": "2026-11-24T02:39:19Z",
+ "updated": "2026-11-24T02:42:32Z",
+ "checked_at": "2026-11-24T02:42:32Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Угринів → PL: 653 вант. · 6 д 6 год"
+   "note": "Угринів → PL: 650 вант. · 6 д 6 год"
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 754 вант. · 8 д 6 год"
+   "note": "Ягодин → PL: 754 вант. · 8 д 5 год"
   },
   "chernivtsi": {
    "status": "outage",
-   "note": "Порубне → RO: 778 вант. · 3 д 15 год"
+   "note": "Порубне → RO: 776 вант. · 3 д 15 год"
   },
   "odesa": {
    "status": "ok",
@@ -26,7 +26,7 @@
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Лужанка → HU: 303 вант. · 3 д 7 год"
+   "note": "Чоп (Тиса) → HU: 1380 вант. · 5 д 16 год"
   }
  },
  "queue": [
@@ -63,7 +63,7 @@
    "name": "Угринів",
    "to": "PL",
    "hours": 150,
-   "trucks": 653
+   "trucks": 650
   },
   {
    "oblast": "volyn",
@@ -76,7 +76,7 @@
    "oblast": "volyn",
    "name": "Устилуг",
    "to": "PL",
-   "hours": 150,
+   "hours": 149,
    "trucks": 612
   },
   {
@@ -111,7 +111,7 @@
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
-   "hours": 198,
+   "hours": 197,
    "trucks": 754
   },
   {
@@ -126,21 +126,21 @@
    "name": "Порубне",
    "to": "RO",
    "hours": 87,
-   "trucks": 778
+   "trucks": 776
   },
   {
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
    "hours": 0.0,
-   "trucks": 1
+   "trucks": 0
   },
   {
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
    "hours": 0.0,
-   "trucks": 2
+   "trucks": 3
   },
   {
    "oblast": "odesa",
@@ -209,15 +209,22 @@
    "oblast": "zakarpattia",
    "name": "Лужанка",
    "to": "HU",
-   "hours": 4,
-   "trucks": 20
+   "hours": 3.7,
+   "trucks": 19
   },
   {
    "oblast": "zakarpattia",
    "name": "Лужанка",
    "to": "HU",
    "hours": 79,
-   "trucks": 303
+   "trucks": 301
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Чоп (Тиса)",
+   "to": "HU",
+   "hours": 136,
+   "trucks": 1380
   }
  ]
 }
