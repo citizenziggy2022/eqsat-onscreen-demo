@@ -4,6 +4,8 @@ name: live-runner
 #   every 3 h lineup.json (eQtv schedule; a failed fetch keeps the last good file); every 5 min stats.json (admin Stats
 #   tab rollup, run through fetch_news.py); failures are logged to $RUNNER_LOG for stats.json's "last errors"
 #   a changed file is committed and Pages is deployed through Actions (pages.yml, no hourly cap)
+#   every 1 min history archive: all feeds snapshotted to the PRIVATE eqsat-history repo (history branch,
+#   requires the HISTORY_TOKEN secret; missing secret skips the step silently, failures only log)
 # then it dispatches itself again. Cancel the run (Actions tab) to stop the chain.
 on:
   workflow_dispatch: {}
@@ -25,6 +27,8 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           # SaveEcoBot API key (radiation.json, v2.14): only scripts/fetch_radiation.py reads it; never printed or written
           SAVEECOBOT_KEY: ${{ secrets.SAVEECOBOT_KEY }}
+          # fine-grained PAT, repo eqsat-history only, Contents RW: only scripts/history/collect.py uses it; never printed or written
+          HISTORY_TOKEN: ${{ secrets.HISTORY_TOKEN }}
         run: |
           git config user.name "eqsat-live-bot"
           git config user.email "actions@users.noreply.github.com"
@@ -66,6 +70,10 @@ jobs:
               git commit -q -m "live: data $(date -u +%H:%MZ)"
               for i in 1 2 3; do git pull -q --rebase -X ours origin main && git push -q && break; sleep 5; done
               gh workflow run pages.yml --ref main -R "$GITHUB_REPOSITORY" || fail "pages dispatch failed"
+            fi
+            if [ -n "$HISTORY_TOKEN" ]; then
+              git fetch -q origin main || true
+              python3 scripts/history/collect.py --src . --clone /tmp/eqsat-hist --repo citizenziggy2022/eqsat-history || fail "history collect failed"
             fi
             sleep $(( 60 - ( $(date +%s) - t0 ) > 5 ? 60 - ( $(date +%s) - t0 ) : 5 ))
           done
