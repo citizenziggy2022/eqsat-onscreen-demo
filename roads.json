@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24T05:06:00Z",
- "checked_at": "2026-11-24T05:06:00Z",
+ "updated": "2026-11-24T05:09:19Z",
+ "checked_at": "2026-11-24T05:09:19Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -12,9 +12,13 @@
    "status": "outage",
    "note": "Ягодин → PL: 742 вант. · 8 д 2 год"
   },
+  "zakarpattia": {
+   "status": "outage",
+   "note": "Дякове → RO: 476 вант. · 5 д 5 год"
+  },
   "chernivtsi": {
    "status": "outage",
-   "note": "Порубне → RO: 757 вант. · 3 д 13 год"
+   "note": "Порубне → RO: 756 вант. · 3 д 13 год"
   },
   "odesa": {
    "status": "outage",
@@ -22,11 +26,7 @@
   },
   "vinnytsia": {
    "status": "ok",
-   "note": "Могилів-Подільський → MD: 2 вант. · 0 год"
-  },
-  "zakarpattia": {
-   "status": "ok",
-   "note": "Малий Березний → SK: 0 вант. · 0 год"
+   "note": "Могилів-Подільський → MD: 3 вант. · 0 год"
   }
  },
  "queue": [
@@ -34,8 +34,8 @@
    "oblast": "lviv",
    "name": "Краківець",
    "to": "PL",
-   "hours": 87,
-   "trucks": 771
+   "hours": 86,
+   "trucks": 768
   },
   {
    "oblast": "lviv",
@@ -55,8 +55,8 @@
    "oblast": "lviv",
    "name": "Смільниця",
    "to": "PL",
-   "hours": 4.5,
-   "trucks": 23
+   "hours": 4.3,
+   "trucks": 22
   },
   {
    "oblast": "lviv",
@@ -77,7 +77,7 @@
    "name": "Устилуг",
    "to": "PL",
    "hours": 149,
-   "trucks": 607
+   "trucks": 606
   },
   {
    "oblast": "lviv",
@@ -122,6 +122,13 @@
    "trucks": 742
   },
   {
+   "oblast": "zakarpattia",
+   "name": "Дякове",
+   "to": "RO",
+   "hours": 125,
+   "trucks": 476
+  },
+  {
    "oblast": "chernivtsi",
    "name": "Дяківці",
    "to": "RO",
@@ -140,13 +147,13 @@
    "name": "Порубне",
    "to": "RO",
    "hours": 85,
-   "trucks": 757
+   "trucks": 756
   },
   {
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
-   "hours": 0.0,
+   "hours": 0.2,
    "trucks": 5
   },
   {
@@ -174,8 +181,8 @@
    "oblast": "vinnytsia",
    "name": "Могилів-Подільський",
    "to": "MD",
-   "hours": 0.0,
-   "trucks": 2
+   "hours": 0.3,
+   "trucks": 3
   },
   {
    "oblast": "odesa",
