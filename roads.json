@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24T20:44:19Z",
- "checked_at": "2026-11-24T20:44:19Z",
+ "updated": "2026-11-24T20:47:30Z",
+ "checked_at": "2026-11-24T20:47:30Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -14,15 +14,15 @@
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Чоп (Тиса) → HU: 1555 вант. · 6 д 9 год"
+   "note": "Чоп (Тиса) → HU: 1553 вант. · 6 д 9 год"
   },
   "chernivtsi": {
    "status": "outage",
-   "note": "Порубне → RO: 871 вант. · 3 д 12 год"
+   "note": "Порубне → RO: 869 вант. · 3 д 12 год"
   },
   "odesa": {
    "status": "ok",
-   "note": "Виноградівка → MD: 4 вант. · 0 год"
+   "note": "Виноградівка → MD: 2 вант. · 0 год"
   }
  },
  "queue": [
@@ -37,15 +37,22 @@
    "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
-   "hours": 144.9,
-   "trucks": 625
+   "hours": 40,
+   "trucks": 191
+  },
+  {
+   "oblast": "lviv",
+   "name": "Угринів",
+   "to": "PL",
+   "hours": 144.7,
+   "trucks": 623
   },
   {
    "oblast": "volyn",
    "name": "Устилуг",
    "to": "PL",
-   "hours": 144.8,
-   "trucks": 589
+   "hours": 144,
+   "trucks": 586
   },
   {
    "oblast": "lviv",
@@ -58,7 +65,7 @@
    "oblast": "lviv",
    "name": "Шегині",
    "to": "PL",
-   "hours": 146,
+   "hours": 145,
    "trucks": 629
   },
   {
@@ -101,7 +108,7 @@
    "name": "Порубне",
    "to": "RO",
    "hours": 84,
-   "trucks": 871
+   "trucks": 869
   },
   {
    "oblast": "chernivtsi",
@@ -122,7 +129,7 @@
    "name": "Виноградівка",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 4
+   "trucks": 2
   },
   {
    "oblast": "odesa",
@@ -171,7 +178,7 @@
    "name": "Ужгород",
    "to": "SK",
    "hours": 150,
-   "trucks": 768
+   "trucks": 767
   },
   {
    "oblast": "zakarpattia",
@@ -185,7 +192,7 @@
    "name": "Чоп (Тиса)",
    "to": "HU",
    "hours": 153,
-   "trucks": 1555
+   "trucks": 1553
   }
  ]
 }
