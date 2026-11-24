@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24T19:24:52Z",
- "checked_at": "2026-11-24T19:24:52Z",
+ "updated": "2026-11-24T19:28:06Z",
+ "checked_at": "2026-11-24T19:28:06Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -10,19 +10,19 @@
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 1679 вант. · 6 д 21 год"
+   "note": "Ягодин → PL: 802 вант. · 8 д 19 год"
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Дякове → RO: 527 вант. · 5 д 9 год"
+   "note": "Дякове → RO: 526 вант. · 5 д 9 год"
   },
   "chernivtsi": {
    "status": "ok",
-   "note": "Дяківці → RO: 0 вант. · 0 год"
+   "note": "Мамалига → MD: 60 вант. · 9 год"
   },
   "odesa": {
    "status": "outage",
-   "note": "Орлівка → RO: 738 вант. · 6 д 13 год"
+   "note": "Орлівка → RO: 737 вант. · 6 д 13 год"
   },
   "vinnytsia": {
    "status": "ok",
@@ -34,8 +34,8 @@
    "oblast": "lviv",
    "name": "Краківець",
    "to": "PL",
-   "hours": 0.0,
-   "trucks": 0
+   "hours": 0.3,
+   "trucks": 3
   },
   {
    "oblast": "lviv",
@@ -98,14 +98,21 @@
    "name": "Ягодин",
    "to": "PL",
    "hours": 165,
-   "trucks": 1679
+   "trucks": 1680
+  },
+  {
+   "oblast": "volyn",
+   "name": "Ягодин",
+   "to": "PL",
+   "hours": 211,
+   "trucks": 802
   },
   {
    "oblast": "zakarpattia",
    "name": "Дякове",
    "to": "RO",
    "hours": 129,
-   "trucks": 527
+   "trucks": 526
   },
   {
    "oblast": "chernivtsi",
@@ -119,7 +126,7 @@
    "name": "Орлівка",
    "to": "RO",
    "hours": 157,
-   "trucks": 738
+   "trucks": 737
   },
   {
    "oblast": "chernivtsi",
@@ -143,6 +150,13 @@
    "trucks": 1
   },
   {
+   "oblast": "chernivtsi",
+   "name": "Мамалига",
+   "to": "MD",
+   "hours": 9.0,
+   "trucks": 60
+  },
+  {
    "oblast": "vinnytsia",
    "name": "Могилів-Подільський",
    "to": "MD",
@@ -157,18 +171,18 @@
    "trucks": 0
   },
   {
-   "oblast": "chernivtsi",
-   "name": "Росошани",
-   "to": "MD",
-   "hours": 0.0,
-   "trucks": 3
-  },
-  {
    "oblast": "odesa",
    "name": "Серпневе 1",
    "to": "MD",
    "hours": 0.0,
    "trucks": 0
+  },
+  {
+   "oblast": "odesa",
+   "name": "Старокозаче",
+   "to": "MD",
+   "hours": 2.7,
+   "trucks": 20
   },
   {
    "oblast": "odesa",
@@ -188,7 +202,7 @@
    "oblast": "zakarpattia",
    "name": "Ужгород",
    "to": "SK",
-   "hours": 0.2,
+   "hours": 0.0,
    "trucks": 1
   }
  ]
