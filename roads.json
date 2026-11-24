@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-24T03:02:52Z",
- "checked_at": "2026-11-24T03:02:52Z",
+ "updated": "2026-11-24T03:06:00Z",
+ "checked_at": "2026-11-24T03:06:00Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -13,8 +13,8 @@
    "note": "Устилуг → PL: 612 вант. · 6 д 5 год"
   },
   "chernivtsi": {
-   "status": "outage",
-   "note": "Порубне → RO: 771 вант. · 3 д 14 год"
+   "status": "ok",
+   "note": "Дяківці → RO: 0 вант. · 0 год"
   },
   "odesa": {
    "status": "ok",
@@ -26,7 +26,7 @@
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Ужгород → SK: 712 вант. · 5 д 20 год"
+   "note": "Чоп (Тиса) → HU: 1369 вант. · 5 д 15 год"
   }
  },
  "queue": [
@@ -92,13 +92,6 @@
    "to": "RO",
    "hours": 0.0,
    "trucks": 0
-  },
-  {
-   "oblast": "chernivtsi",
-   "name": "Порубне",
-   "to": "RO",
-   "hours": 86,
-   "trucks": 771
   },
   {
    "oblast": "chernivtsi",
@@ -174,13 +167,6 @@
    "oblast": "zakarpattia",
    "name": "Ужгород",
    "to": "SK",
-   "hours": 140,
-   "trucks": 712
-  },
-  {
-   "oblast": "zakarpattia",
-   "name": "Ужгород",
-   "to": "SK",
    "hours": 0.0,
    "trucks": 0
   },
@@ -189,7 +175,7 @@
    "name": "Чоп (Тиса)",
    "to": "HU",
    "hours": 135,
-   "trucks": 1371
+   "trucks": 1369
   }
  ]
 }
