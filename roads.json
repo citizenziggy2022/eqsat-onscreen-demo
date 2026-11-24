@@ -1,16 +1,16 @@
 {
- "updated": "2026-11-24T10:58:18Z",
- "checked_at": "2026-11-24T10:58:18Z",
+ "updated": "2026-11-24T11:01:58Z",
+ "checked_at": "2026-11-24T11:01:58Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Рава-Руська → PL: 577 вант. · 7 д 22 год"
+   "note": "Рава-Руська → PL: 575 вант. · 7 д 21 год"
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 742 вант. · 8 д 2 год"
+   "note": "Ягодин → PL: 745 вант. · 8 д 3 год"
   },
   "zakarpattia": {
    "status": "outage",
@@ -23,6 +23,10 @@
   "odesa": {
    "status": "outage",
    "note": "Орлівка → RO: 686 вант. · 6 д 1 год"
+  },
+  "vinnytsia": {
+   "status": "ok",
+   "note": "Могилів-Подільський → MD: 5 вант. · 1 год"
   }
  },
  "queue": [
@@ -51,8 +55,8 @@
    "oblast": "lviv",
    "name": "Рава-Руська",
    "to": "PL",
-   "hours": 190,
-   "trucks": 577
+   "hours": 189,
+   "trucks": 575
   },
   {
    "oblast": "lviv",
@@ -66,7 +70,7 @@
    "name": "Угринів",
    "to": "PL",
    "hours": 147,
-   "trucks": 638
+   "trucks": 639
   },
   {
    "oblast": "volyn",
@@ -80,14 +84,14 @@
    "name": "Шегині",
    "to": "PL",
    "hours": 142,
-   "trucks": 505
+   "trucks": 507
   },
   {
    "oblast": "lviv",
    "name": "Шегині",
    "to": "PL",
    "hours": 141,
-   "trucks": 608
+   "trucks": 609
   },
   {
    "oblast": "volyn",
@@ -101,7 +105,7 @@
    "name": "Ягодин",
    "to": "PL",
    "hours": 159,
-   "trucks": 1630
+   "trucks": 1629
   },
   {
    "oblast": "volyn",
@@ -114,8 +118,8 @@
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
-   "hours": 194,
-   "trucks": 742
+   "hours": 195,
+   "trucks": 745
   },
   {
    "oblast": "zakarpattia",
@@ -163,8 +167,8 @@
    "oblast": "odesa",
    "name": "Виноградівка",
    "to": "MD",
-   "hours": 0.0,
-   "trucks": 3
+   "hours": 0.3,
+   "trucks": 4
   },
   {
    "oblast": "odesa",
@@ -172,6 +176,13 @@
    "to": "MD",
    "hours": 0.0,
    "trucks": 0
+  },
+  {
+   "oblast": "vinnytsia",
+   "name": "Могилів-Подільський",
+   "to": "MD",
+   "hours": 0.8,
+   "trucks": 5
   },
   {
    "oblast": "odesa",
