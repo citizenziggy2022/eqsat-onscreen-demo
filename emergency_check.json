@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-23T15:53:35Z",
+ "checked_at": "2026-11-24T11:55:28Z",
  "method": "label-bound; see scripts/verify_static.py",
  "lines": [
   {
@@ -46,17 +46,19 @@
    "file": "emergency.json",
    "card": "HOTLINES",
    "number": "1548",
-   "state": "unverified",
-   "source_url": null,
-   "evidence": "hand-entered, no source named"
+   "state": "confirmed",
+   "source_url": "https://1548.gov.ua/about/",
+   "evidence": "Телефони 1548",
+   "confirmed_at": "2026-11-24T11:55:32Z"
   },
   {
    "file": "emergency.json",
    "card": "HOTLINES",
    "number": "1678",
-   "state": "unverified",
-   "source_url": null,
-   "evidence": "hand-entered, no source named"
+   "state": "confirmed",
+   "source_url": "https://ombudsman.gov.ua/",
+   "evidence": "Гаряча лінія: 1678",
+   "confirmed_at": "2026-11-24T11:55:34Z"
   },
   {
    "file": "emergency.json",
@@ -70,17 +72,19 @@
    "file": "emergency.json",
    "card": "HOTLINES",
    "number": "0 800 332 656",
-   "state": "unverified",
-   "source_url": null,
-   "evidence": "hand-entered, no source named"
+   "state": "confirmed",
+   "source_url": "https://redcross.org.ua/contacts/",
+   "evidence": "Телефон: 0800332656",
+   "confirmed_at": "2026-11-24T11:55:35Z"
   },
   {
    "file": "emergency.json",
    "card": "FROM OCCUPIED AREAS OR ABROAD",
    "number": "+380 96 078 84 33",
-   "state": "unverified",
-   "source_url": null,
-   "evidence": "hand-entered, no source named"
+   "state": "confirmed",
+   "source_url": "https://1548.gov.ua/about/",
+   "evidence": "WhatsApp, Telegram, Viber +38(096) 078 84 33",
+   "confirmed_at": "2026-11-24T11:55:35Z"
   },
   {
    "file": "emergency.json",
@@ -94,9 +98,10 @@
    "file": "emergency.json",
    "card": "FROM OCCUPIED AREAS OR ABROAD",
    "number": "+380 44 299 74 08",
-   "state": "unverified",
-   "source_url": null,
-   "evidence": "hand-entered, no source named"
+   "state": "confirmed",
+   "source_url": "https://ombudsman.gov.ua/",
+   "evidence": "Для дзвінків з-за кордону: +380442997408",
+   "confirmed_at": "2026-11-24T11:55:35Z"
   },
   {
    "file": "emergency.json",
@@ -110,9 +115,10 @@
    "file": "emergency.json",
    "card": "HOW TO LEAVE OCCUPIED AREAS",
    "number": "1548",
-   "state": "unverified",
-   "source_url": null,
-   "evidence": "hand-entered, no source named"
+   "state": "confirmed",
+   "source_url": "https://1548.gov.ua/about/",
+   "evidence": "Телефони 1548",
+   "confirmed_at": "2026-11-24T11:55:35Z"
   },
   {
    "file": "emergency.json",
@@ -241,13 +247,13 @@
    "state": "confirmed",
    "source_url": "http://www.hfcc.org/data/b26/b26allx2.zip",
    "evidence": "5955 1600 1630 29SW                           TIG  100 30        0 812 1234567 251026 280327 D       Ukr        ROU RRO ",
-   "confirmed_at": "2026-11-23T15:53:52Z",
-   "source_note": "; B26 ALL 22-nov-2026"
+   "confirmed_at": "2026-11-24T11:55:44Z",
+   "source_note": "; B26 ALL 24-nov-2026"
   }
  ],
  "counts": {
-  "confirmed": 1,
-  "unverified": 24,
+  "confirmed": 7,
+  "unverified": 18,
   "failed": 5
  }
 }
