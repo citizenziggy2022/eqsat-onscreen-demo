@@ -1,16 +1,16 @@
 {
- "updated": "2026-11-25T13:14:47Z",
- "checked_at": "2026-11-25T13:14:47Z",
+ "updated": "2026-11-25T13:18:37Z",
+ "checked_at": "2026-11-25T13:18:37Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Шегині → PL: 579 вант. · 6 д 19 год"
+   "note": "Шегині → PL: 580 вант. · 6 д 19 год"
   },
   "volyn": {
    "status": "outage",
-   "note": "Устилуг → PL: 580 вант. · 5 д 20 год"
+   "note": "Устилуг → PL: 582 вант. · 5 д 21 год"
   },
   "zakarpattia": {
    "status": "outage",
@@ -22,11 +22,11 @@
   },
   "odesa": {
    "status": "outage",
-   "note": "Орлівка → RO: 721 вант. · 6 д 9 год"
+   "note": "Орлівка → RO: 723 вант. · 6 д 10 год"
   },
   "vinnytsia": {
    "status": "ok",
-   "note": "Могилів-Подільський → MD: 2 вант. · 0 год"
+   "note": "Могилів-Подільський → MD: 3 вант. · 0 год"
   }
  },
  "queue": [
@@ -35,21 +35,14 @@
    "name": "Краківець",
    "to": "PL",
    "hours": 0.0,
-   "trucks": 2
-  },
-  {
-   "oblast": "lviv",
-   "name": "Смільниця",
-   "to": "PL",
-   "hours": 2.1,
-   "trucks": 13
+   "trucks": 1
   },
   {
    "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
    "hours": 27,
-   "trucks": 133
+   "trucks": 134
   },
   {
    "oblast": "lviv",
@@ -69,22 +62,22 @@
    "oblast": "volyn",
    "name": "Устилуг",
    "to": "PL",
-   "hours": 140,
-   "trucks": 580
+   "hours": 141,
+   "trucks": 582
   },
   {
    "oblast": "lviv",
    "name": "Шегині",
    "to": "PL",
    "hours": 163,
-   "trucks": 579
+   "trucks": 580
   },
   {
    "oblast": "lviv",
    "name": "Шегині",
    "to": "PL",
    "hours": 143,
-   "trucks": 618
+   "trucks": 620
   },
   {
    "oblast": "zakarpattia",
@@ -105,14 +98,14 @@
    "name": "Красноїльськ",
    "to": "RO",
    "hours": 0.0,
-   "trucks": 4
+   "trucks": 5
   },
   {
    "oblast": "odesa",
    "name": "Орлівка",
    "to": "RO",
-   "hours": 153,
-   "trucks": 721
+   "hours": 154,
+   "trucks": 723
   },
   {
    "oblast": "chernivtsi",
@@ -147,7 +140,7 @@
    "name": "Могилів-Подільський",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 2
+   "trucks": 3
   },
   {
    "oblast": "odesa",
@@ -183,20 +176,6 @@
    "to": "SK",
    "hours": 0.0,
    "trucks": 0
-  },
-  {
-   "oblast": "zakarpattia",
-   "name": "Лужанка",
-   "to": "HU",
-   "hours": 7.9,
-   "trucks": 33
-  },
-  {
-   "oblast": "zakarpattia",
-   "name": "Лужанка",
-   "to": "HU",
-   "hours": 89,
-   "trucks": 321
   }
  ]
 }
