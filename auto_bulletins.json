@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-25T10:59:26Z",
+ "generated_at": "2026-11-25T11:02:43Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 5 / dropped 0, showing 2"
+   "status": "ok: kept 4 / dropped 0, showing 2"
   },
   {
    "name": "Херсонська ОВА",
@@ -41,6 +41,24 @@
  ],
  "bulletins": [
   {
+   "id": "auto-dsns_telegram-81535",
+   "title": "1 людина загинула, 5 - постраждали, 1 - врятували надзвичайники з палаючої кабіни вантажівки після…",
+   "body": "Через постійні повітряні тривоги рятувальникам доводилося періодично призупиняти роботи та переходити в безпечні місця. Наразі триває ліквідація наслідків обстрілів. Інформація уточнюється. Сайт • Fb • X • IG • YT • TT",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/81535",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-25T11:00:49Z",
+   "expires_at": "2026-11-25T23:00:49Z",
+   "auto": true,
+   "en_mt": {
+    "title": "1 person died, 5 were injured, 1 was rescued by rescuers from a burning truck cabin after…",
+    "body": "Through constant air alerts, rescuers had to periodically suspend work and move to safe places. Currently, the elimination of the consequences of shelling is ongoing. Information is being clarified. Site • Fb • X • IG • YT • TT",
+    "by": "m2m100"
+   }
+  },
+  {
    "id": "auto-luhanskaVTSA-39569",
    "title": "СТАН ЕНЕРГОСИСТЕМИ",
    "body": "росія продовжує атакувати енергетичну інфраструктуру України. Протягом останньої доби внаслідок ворожих ударів пошкоджено значну кількість енергооб’єктів, важливих для електропостачання регіонів. Через атаки ворога є знеструмлені споживачі у…",
@@ -73,24 +91,6 @@
    "en_mt": {
     "title": "6 people, including two children, were injured as a result of the morning Russian strike on Zaporizhzhia!",
     "body": "Among the victims are three men aged 32, 71 and 74 years, an 88-year-old woman and two children aged 5 and 11 years. They are being provided with all necessary assistance. Information about the exact number of injured is being clarified. Rescuers have extinguished the fire in the garage and two…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-81525",
-   "title": "Два врятовані життя серед вогню та руїн",
-   "body": "На Чернігівщині під час ліквідації наслідків російської атаки рятувальники помітили серед руїн двох наляканих пухнастиків — маленьке кошеня та його маму Надзвичайники обережно дістали тварин із небезпеки. Тепер у них є найголовніше - шанс жити Сайт • Fb • X…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/81525",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-25T08:39:15Z",
-   "expires_at": "2026-11-25T20:39:15Z",
-   "auto": true,
-   "en_mt": {
-    "title": "Two rescued lives amidst fire and ruins",
-    "body": "In Chernihiv region during the elimination of the consequences of the Russian attack rescuers noticed among the ruins two frightened fluffy creatures - a small kitten and its mom. Emergency responders carefully removed the animals from danger. Now they have the most important thing - a chance to live Site • Fb • X…",
     "by": "m2m100"
    }
   },
