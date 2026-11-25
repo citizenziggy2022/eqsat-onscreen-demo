@@ -6,8 +6,7 @@
 header{padding:14px 18px;border-bottom:1px solid var(--line);display:flex;gap:12px;align-items:center;flex-wrap:wrap}
 h1{font-size:16px;margin:0}.tag{font-size:11px;letter-spacing:.06em;text-transform:uppercase;background:#3a2e0b;color:#f2cc60;border:1px solid #6b5412;padding:2px 8px;border-radius:99px}
 .banner{margin:12px 18px 0;padding:10px 12px;border:1px solid #6b5412;background:#241d08;color:#f2cc60;border-radius:8px;font-size:13px}
-main{display:grid;grid-template-columns:1.1fr 1fr;gap:14px;padding:14px 18px 28px}
-@media(max-width:820px){main{grid-template-columns:1fr}}
+main{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;padding:14px 18px 28px}
 section{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px;min-width:0}
 h2{font-size:13px;margin:0 0 10px;text-transform:uppercase;letter-spacing:.05em;color:var(--mut)}
 .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
@@ -23,33 +22,31 @@ table{width:100%;border-collapse:collapse;font-size:13px}th,td{text-align:left;p
 .ok{color:var(--ok)}.bad{color:var(--bad)}code{font-family:ui-monospace,Menlo,monospace;font-size:12px}
 label{font-size:12px;color:var(--mut)}input[type=range]{vertical-align:middle;width:110px}
 ul.k{margin:6px 0 0;padding-left:18px}ul.k li{margin:3px 0}.mut{color:var(--mut)}
+.sh{display:flex;align-items:baseline;gap:8px;width:100%;text-align:left;background:none;border:0;padding:2px 0;min-height:0;color:inherit;cursor:pointer}.sh:hover{border:0}.sh:hover h2{color:var(--tx)}.sh h2{margin:0}.chev{display:inline-block;width:14px;color:var(--mut);font-size:13px}.bd{margin-top:10px}.sec.closed .bd{display:none}
 </style></head><body>
 <header><h1>EQSat admin &middot; data-track queue</h1><span class="tag">Mock</span><span class="mut" style="font-size:12px">admin preview only</span></header>
 <div class="banner">Simulation. Nothing here touches the broadcast, the uplink or any account. The wire format is the v1 layout seen in one 2023 sample recording; it is not confirmed to match your live receivers. Intended design: one live queue, fed continuously by a fixed FTP watch directory; admin can reorder it or load files into the same queue. That connection is not wired up in this beta.</div>
 <main>
-<div style="display:grid;gap:14px;align-content:start">
-<section><h2>Queue</h2>
+<section class="sec" data-sec="info"><button type="button" class="sh" aria-expanded="true"><span class="chev" aria-hidden="true">▾</span><h2>What is real and what is placeholder</h2></button><div class="bd"><ul class="k">
+<li><b class="ok">Real metadata:</b> the 15 sample entries in the queue carry the actual names, sizes, SHA-256 hashes and ZIP structure checks of the supplied samples. Entries marked "metadata only" hold no bytes: the simulated encoder skips them, and they can never show a byte check, until you attach the real ZIP (which stays in this browser tab).</li>
+<li><b class="ok">Working locally:</b> record framing (magic, version, size, data), per-packet sequence + CRC-32, a queue that picks the next file at a file boundary, a receiver that rebuilds and verifies bytes. A Python copy produces the same bytes (tested).</li>
+<li><b class="warn" style="color:var(--warn)">Placeholder:</b> video and audio packets are dummy filler; the programme is never decoded or changed. Zero padding of the last packet is a mock choice.</li>
+<li><b class="bad">Not here:</b> FFmpeg, TSDuck, SRT, PES/AC-3 wrapping, any error correction, the live receivers, and the FTP watch-directory connection (location not set yet). Sequence and CRC only detect loss; nothing repairs it.</li></ul></div></section>
+<section class="sec" data-sec="queue"><button type="button" class="sh" aria-expanded="true"><span class="chev" aria-hidden="true">▾</span><h2>Queue</h2></button><div class="bd">
 <div class="sub" style="margin-bottom:8px"><span class="chip warn">watch directory: not connected</span> Normal intake: a fixed FTP watch directory feeds this one queue continuously; admin can reorder it or load files into the same queue. The 15 supplied samples sit in the queue below as real metadata (names, sizes, SHA-256 and ZIP structure checks captured locally Nov 24). Their bytes are never hosted or sent by this page; attach a matching ZIP to run one through the simulated link.</div>
 <div class="row" style="margin-bottom:8px"><input type="text" id="nm" placeholder="name e.g. news-pack.zip" style="flex:1;min-width:130px"><select id="sz"><option value="6">6 KB</option><option value="24">24 KB</option><option value="60" selected>60 KB</option><option value="150">150 KB</option></select><button id="add">Add mock file</button></div>
 <div class="row" style="margin-bottom:6px"><label>Load files into the queue by hand (occasional; normal intake is the watch directory). Payload ZIPs, or one container ZIP holding several, are read in this browser tab only, never uploaded. A file whose SHA-256 matches a queued sample fills that entry with its real bytes: <input type="file" id="fl" multiple accept=".zip,.bin,application/zip" style="max-width:100%"></label></div><div class="sub" id="imp" style="margin-bottom:6px"></div>
-<div id="q"></div><div class="sub" id="qnote" style="margin-top:8px">Reordering affects only files that have not started. The file being sent is locked until it ends.</div></section>
-<section><h2>Simulated link</h2>
+<div id="q"></div><div class="sub" id="qnote" style="margin-top:8px">Reordering affects only files that have not started. The file being sent is locked until it ends.</div></div></section>
+<section class="sec" data-sec="link"><button type="button" class="sh" aria-expanded="true"><span class="chev" aria-hidden="true">▾</span><h2>Simulated link</h2></button><div class="bd">
 <div class="row"><button class="primary" id="go">Start</button><button id="rs">Reset</button><label>speed <select id="sp"><option value="4">slow</option><option value="14" selected>normal</option><option value="50">fast</option><option value="1000">turbo</option></select></label></div>
 <div class="row" style="margin-top:8px"><label>packet loss <input type="range" id="lo" min="0" max="5" step="0.5" value="0"> <b id="lov">0%</b></label><label>corruption <input type="range" id="co" min="0" max="5" step="0.5" value="0"> <b id="cov">0%</b></label></div>
 <div class="sub" style="margin:6px 0">Loss and corruption are applied to data packets after sending, only on the simulated link.</div>
 <canvas id="cv" width="640" height="120" aria-label="packet strip"></canvas>
-<div class="stats"><div class="stat"><b id="s1">0</b><span>packets sent</span></div><div class="stat"><b id="s2">0</b><span>data packets</span></div><div class="stat"><b id="s3">0</b><span>programme packets</span></div><div class="stat"><b id="s4">0</b><span>files started</span></div></div></section>
-</div>
-<div style="display:grid;gap:14px;align-content:start">
-<section><h2>Receiver check</h2>
+<div class="stats"><div class="stat"><b id="s1">0</b><span>packets sent</span></div><div class="stat"><b id="s2">0</b><span>data packets</span></div><div class="stat"><b id="s3">0</b><span>programme packets</span></div><div class="stat"><b id="s4">0</b><span>files started</span></div></div></div></section>
+<section class="sec" data-sec="check"><button type="button" class="sh" aria-expanded="true"><span class="chev" aria-hidden="true">▾</span><h2>Receiver check</h2></button><div class="bd">
 <div class="row" style="margin-bottom:8px"><button id="chk">Check what a receiver gets</button><span class="sub" id="chkn">uses everything sent so far</span></div>
-<div id="res" class="sub">Press check. Bytes are rebuilt from the simulated link, then compared with each file's SHA-256.</div></section>
-<section><h2>What is real and what is placeholder</h2><ul class="k">
-<li><b class="ok">Real metadata:</b> the 15 sample entries in the queue carry the actual names, sizes, SHA-256 hashes and ZIP structure checks of the supplied samples. Entries marked "metadata only" hold no bytes: the simulated encoder skips them, and they can never show a byte check, until you attach the real ZIP (which stays in this browser tab).</li>
-<li><b class="ok">Working locally:</b> record framing (magic, version, size, data), per-packet sequence + CRC-32, a queue that picks the next file at a file boundary, a receiver that rebuilds and verifies bytes. A Python copy produces the same bytes (tested).</li>
-<li><b class="warn" style="color:var(--warn)">Placeholder:</b> video and audio packets are dummy filler; the programme is never decoded or changed. Zero padding of the last packet is a mock choice.</li>
-<li><b class="bad">Not here:</b> FFmpeg, TSDuck, SRT, PES/AC-3 wrapping, any error correction, the live receivers, and the FTP watch-directory connection (location not set yet). Sequence and CRC only detect loss; nothing repairs it.</li></ul></section>
-</div></main>
+<div id="res" class="sub">Press check. Bytes are rebuilt from the simulated link, then compared with each file's SHA-256.</div></div></section>
+</main>
 <script>// MOCK data-PID writer/extractor core. Mirrors py/mockenc.py byte for byte.
 // Framing is based on what was OBSERVED in one 2023 sample.ts (v1): record = magic + ver + flags + u64 LE size + data,
 // carried in TS packets as [u32 LE seq][u32 LE crc32(data)][data]. It is NOT proven to match any live feed.
@@ -260,4 +257,7 @@ $('chk').onclick=()=>{const ch=C.channel(inj.sent,+$('lo').value,+$('co').value,
  const g=el('div','stats');[['dropped by link',ch.dropped],['corrupted by link',ch.corrupted],['packets rejected (CRC)',r.rejectedCrc],['sequence gaps',r.missingSeq]].forEach(([k,v])=>{const s=el('div','stat');s.appendChild(el('b',null,String(v)));s.appendChild(el('span',null,k));g.appendChild(s)});res.appendChild(g);
  const ph=C.programmeHash(inj.sent),ph2=C.programmeHash(ch.packets);const p=el('div','sub','Programme packets: writer output hash '+ph.slice(0,12)+', after link '+ph2.slice(0,12)+(ph===ph2?' (same, link did not touch them)':' (differs)'));p.style.marginTop='8px';res.appendChild(p)};
 reset();
-</script></body></html>
+</script><script>(function(){var K="eqsat-payload-queue-closed",c=[];try{c=JSON.parse(localStorage.getItem(K)||"[]")}catch(e){}if(!Array.isArray(c))c=[];
+function set(sec,closed){sec.classList.toggle("closed",closed);var b=sec.querySelector(".sh");b.setAttribute("aria-expanded",closed?"false":"true");b.querySelector(".chev").textContent=closed?"\u25B8":"\u25BE"}
+document.querySelectorAll(".sec").forEach(function(sec){var id=sec.getAttribute("data-sec");set(sec,c.indexOf(id)>=0);sec.querySelector(".sh").addEventListener("click",function(){var cl=!sec.classList.contains("closed");set(sec,cl);var i=c.indexOf(id);if(cl&&i<0)c.push(id);if(!cl&&i>=0)c.splice(i,1);try{localStorage.setItem(K,JSON.stringify(c))}catch(e){}})})})();</script>
+</body></html>
