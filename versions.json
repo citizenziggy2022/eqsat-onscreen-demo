@@ -2,6 +2,12 @@
  "note": "Every screen deploy, newest first: version 1.N (N + 1 per deploy), deploy time (UTC), one-line summary, build code. Read by the admin (History \u203a Versions). Entries 2.42 to 2.51 were added afterwards from the repo deploy commits: their time is the commit time that switched the live page to that build, not a measured go-live time, and 2.46 to 2.51 were numbered at that point.",
  "versions": [
   {
+   "version": "2.92",
+   "build": "index-payload292.js",
+   "at": "2026-11-25T05:34:17Z",
+   "summary": "Ukraine news box: tighter spacing between stories (more stories visible, text size and speed unchanged). Admin: a refresh keeps the same tab, Content workspace and scroll position, and the address bar follows the tab."
+  },
+  {
    "version": "2.91",
    "build": "index-payload291.js",
    "at": "2026-11-24T23:15:00Z",
