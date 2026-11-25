@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25T18:19:00Z",
- "checked_at": "2026-11-25T18:19:00Z",
+ "updated": "2026-11-25T18:22:13Z",
+ "checked_at": "2026-11-25T18:22:13Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -25,8 +25,8 @@
    "note": "Могилів-Подільський → MD: 7 вант. · 0 год"
   },
   "zakarpattia": {
-   "status": "ok",
-   "note": "Ужгород → SK: 2 вант. · 0 год"
+   "status": "outage",
+   "note": "Лужанка → HU: 319 вант. · 3 д 17 год"
   }
  },
  "queue": [
@@ -35,7 +35,7 @@
    "name": "Краківець",
    "to": "PL",
    "hours": 0.0,
-   "trucks": 2
+   "trucks": 0
   },
   {
    "oblast": "lviv",
@@ -70,7 +70,7 @@
    "name": "Ягодин",
    "to": "PL",
    "hours": 41,
-   "trucks": 448
+   "trucks": 443
   },
   {
    "oblast": "volyn",
@@ -154,7 +154,7 @@
    "name": "Табаки",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 2
+   "trucks": 3
   },
   {
    "oblast": "zakarpattia",
@@ -167,8 +167,15 @@
    "oblast": "zakarpattia",
    "name": "Ужгород",
    "to": "SK",
-   "hours": 0.5,
+   "hours": 0.0,
    "trucks": 2
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Лужанка",
+   "to": "HU",
+   "hours": 89,
+   "trucks": 319
   }
  ]
 }
