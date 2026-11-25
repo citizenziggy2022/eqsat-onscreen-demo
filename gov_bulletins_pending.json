@@ -1,29 +1,10 @@
 {
  "note": "Official road/water notice CANDIDATES, NOT on air. Written by scripts/fetch_gov_review.py. Nothing is merged into auto_bulletins.json; an item airs only if the owner approves that single card and it is added by hand with an expiry.",
  "every_s": 600,
- "fetched_at": "2026-11-25T18:25:56Z",
+ "fetched_at": "2026-11-25T22:03:25Z",
  "on_air": false,
  "auto_approved": 0,
- "items": [
-  {
-   "id": "gov-water-infoxvodokanal-1288",
-   "title": "Аварійне відключення води у частині Одеської області 25 листопада",
-   "body": "Заплановано 25.11, 10:00–24:00 · без води: Фонтанка-3, Вапнярка, Нова Дофінівка, Чорноморське, Григорівка",
-   "source": "Інфоксводоканал (Одеса)",
-   "source_url": "https://t.me/infoxvodokanal/1288",
-   "region": "Одеська область · окремі пункти / localities",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "auto": true,
-   "issued_at": "2026-11-24T16:23:51Z",
-   "expires_at": "2026-11-25T22:00:00Z",
-   "channel_verified": true,
-   "scope": "planned-localities",
-   "starts_at": "2026-11-25T08:00:00Z",
-   "status": "pending_review",
-   "on_air": false
-  }
- ],
+ "items": [],
  "needs_review": [
   "needs review (planned/partial outage not fully parsed): infoxvodokanal/1271",
   "needs review (planned/partial outage not fully parsed): infoxvodokanal/1272",
