@@ -111,6 +111,13 @@ def bulletins():
         subprocess.run([_s.executable, 'scripts/fetch_pow.py'], timeout=60, check=False)
     except Exception as e:
         print('pow skipped:', str(e)[:120])
+    # official road/water notice CANDIDATES (REVIEW ONLY, never on air): fetch_gov_review.py throttles itself to 10 min and
+    # writes gov_bulletins_pending.json; it never touches auto_bulletins.json. A card airs only by the owner's single-card approval.
+    try:
+        import subprocess, sys as _s
+        subprocess.run([_s.executable, 'scripts/fetch_gov_review.py'], timeout=60, check=False)
+    except Exception as e:
+        print('gov review skipped:', str(e)[:120])
     # power cuts (Ukrenergo, every 2.5 min) + border queues (eCherha, every 3 min) for the WATER / ROADS maps (Nov 11 2026)
     try:
         import subprocess, sys as _s
