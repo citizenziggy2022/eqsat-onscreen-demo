@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25T17:10:03Z",
- "checked_at": "2026-11-25T17:10:03Z",
+ "updated": "2026-11-25T17:13:39Z",
+ "checked_at": "2026-11-25T17:13:39Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -10,7 +10,7 @@
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 1726 вант. · 7 д 1 год"
+   "note": "Ягодин → PL: 1724 вант. · 7 д 1 год"
   },
   "zakarpattia": {
    "status": "outage",
@@ -26,6 +26,13 @@
   }
  },
  "queue": [
+  {
+   "oblast": "lviv",
+   "name": "Краківець",
+   "to": "PL",
+   "hours": 133,
+   "trucks": 1168
+  },
   {
    "oblast": "lviv",
    "name": "Краківець",
@@ -66,14 +73,21 @@
    "name": "Шегині",
    "to": "PL",
    "hours": 150,
-   "trucks": 649
+   "trucks": 650
   },
   {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
    "hours": 169,
-   "trucks": 1726
+   "trucks": 1724
+  },
+  {
+   "oblast": "volyn",
+   "name": "Ягодин",
+   "to": "PL",
+   "hours": 0.0,
+   "trucks": 3
   },
   {
    "oblast": "zakarpattia",
@@ -108,7 +122,7 @@
    "name": "Виноградівка",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 5
+   "trucks": 6
   },
   {
    "oblast": "odesa",
@@ -136,7 +150,7 @@
    "name": "Росошани",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 0
+   "trucks": 1
   },
   {
    "oblast": "odesa",
@@ -150,7 +164,7 @@
    "name": "Табаки",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 0
+   "trucks": 2
   },
   {
    "oblast": "zakarpattia",
