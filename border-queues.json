@@ -1,12 +1,16 @@
 {
- "updated": "2026-11-25T07:04:18Z",
- "checked_at": "2026-11-25T07:04:18Z",
+ "updated": "2026-11-25T07:07:37Z",
+ "checked_at": "2026-11-25T07:07:37Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Краківець → PL: 637 вант. · 7 д 10 год"
+   "note": "Краківець → PL: 638 вант. · 7 д 11 год"
+  },
+  "zakarpattia": {
+   "status": "outage",
+   "note": "Ужгород → SK: 722 вант. · 5 д 21 год"
   },
   "chernivtsi": {
    "status": "ok",
@@ -15,10 +19,6 @@
   "odesa": {
    "status": "outage",
    "note": "Орлівка → RO: 710 вант. · 6 д 7 год"
-  },
-  "zakarpattia": {
-   "status": "ok",
-   "note": "Малий Березний → SK: 0 вант. · 0 год"
   }
  },
  "queue": [
@@ -33,8 +33,8 @@
    "oblast": "lviv",
    "name": "Краківець",
    "to": "PL",
-   "hours": 178,
-   "trucks": 637
+   "hours": 179,
+   "trucks": 638
   },
   {
    "oblast": "lviv",
@@ -48,7 +48,7 @@
    "name": "Угринів",
    "to": "PL",
    "hours": 32,
-   "trucks": 153
+   "trucks": 154
   },
   {
    "oblast": "lviv",
@@ -56,6 +56,13 @@
    "to": "PL",
    "hours": 142,
    "trucks": 616
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Дякове",
+   "to": "RO",
+   "hours": 124,
+   "trucks": 505
   },
   {
    "oblast": "chernivtsi",
@@ -132,7 +139,28 @@
    "name": "Малий Березний",
    "to": "SK",
    "hours": 0.0,
-   "trucks": 0
+   "trucks": 1
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Ужгород",
+   "to": "SK",
+   "hours": 141,
+   "trucks": 722
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Лужанка",
+   "to": "HU",
+   "hours": 7.1,
+   "trucks": 30
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Лужанка",
+   "to": "HU",
+   "hours": 88,
+   "trucks": 314
   }
  ]
 }
