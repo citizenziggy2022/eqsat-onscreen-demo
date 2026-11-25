@@ -1,20 +1,20 @@
 {
- "updated": "2026-11-25T09:31:34Z",
- "checked_at": "2026-11-25T09:31:34Z",
+ "updated": "2026-11-25T09:34:49Z",
+ "checked_at": "2026-11-25T09:34:49Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Рава-Руська → PL: 591 вант. · 8 д 3 год"
+   "note": "Рава-Руська → PL: 589 вант. · 8 д 2 год"
   },
   "volyn": {
    "status": "outage",
-   "note": "Устилуг → PL: 565 вант. · 5 д 17 год"
+   "note": "Устилуг → PL: 564 вант. · 5 д 17 год"
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Ужгород → SK: 754 вант. · 6 д 4 год"
+   "note": "Ужгород → SK: 752 вант. · 6 д 3 год"
   },
   "chernivtsi": {
    "status": "ok",
@@ -22,7 +22,7 @@
   },
   "odesa": {
    "status": "outage",
-   "note": "Орлівка → RO: 708 вант. · 6 д 7 год"
+   "note": "Орлівка → RO: 709 вант. · 6 д 7 год"
   },
   "vinnytsia": {
    "status": "ok",
@@ -42,14 +42,21 @@
    "name": "Рава-Руська",
    "to": "PL",
    "hours": 119,
-   "trucks": 910
+   "trucks": 911
   },
   {
    "oblast": "lviv",
    "name": "Рава-Руська",
    "to": "PL",
-   "hours": 195,
-   "trucks": 591
+   "hours": 194,
+   "trucks": 589
+  },
+  {
+   "oblast": "lviv",
+   "name": "Смільниця",
+   "to": "PL",
+   "hours": 0.5,
+   "trucks": 4
   },
   {
    "oblast": "lviv",
@@ -77,14 +84,14 @@
    "name": "Устилуг",
    "to": "PL",
    "hours": 137,
-   "trucks": 565
+   "trucks": 564
   },
   {
    "oblast": "zakarpattia",
    "name": "Дякове",
    "to": "RO",
    "hours": 125,
-   "trucks": 507
+   "trucks": 509
   },
   {
    "oblast": "chernivtsi",
@@ -105,14 +112,14 @@
    "name": "Орлівка",
    "to": "RO",
    "hours": 151,
-   "trucks": 708
+   "trucks": 709
   },
   {
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
    "hours": 0.0,
-   "trucks": 3
+   "trucks": 0
   },
   {
    "oblast": "odesa",
@@ -174,8 +181,8 @@
    "oblast": "zakarpattia",
    "name": "Ужгород",
    "to": "SK",
-   "hours": 148,
-   "trucks": 754
+   "hours": 147,
+   "trucks": 752
   },
   {
    "oblast": "zakarpattia",
