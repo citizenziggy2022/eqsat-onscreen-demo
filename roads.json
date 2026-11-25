@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25T06:54:31Z",
- "checked_at": "2026-11-25T06:54:31Z",
+ "updated": "2026-11-25T06:57:54Z",
+ "checked_at": "2026-11-25T06:57:54Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -16,13 +16,9 @@
    "status": "outage",
    "note": "Орлівка → RO: 710 вант. · 6 д 7 год"
   },
-  "vinnytsia": {
-   "status": "ok",
-   "note": "Могилів-Подільський → MD: 2 вант. · 0 год"
-  },
   "zakarpattia": {
-   "status": "outage",
-   "note": "Чоп (Тиса) → HU: 1463 вант. · 6 д 1 год"
+   "status": "ok",
+   "note": "Малий Березний → SK: 0 вант. · 0 год"
   }
  },
  "queue": [
@@ -30,15 +26,15 @@
    "oblast": "lviv",
    "name": "Грушів",
    "to": "PL",
-   "hours": 4.4,
+   "hours": 4.2,
    "trucks": 25
   },
   {
    "oblast": "lviv",
    "name": "Краківець",
    "to": "PL",
-   "hours": 0.3,
-   "trucks": 1
+   "hours": 0.0,
+   "trucks": 2
   },
   {
    "oblast": "lviv",
@@ -51,7 +47,7 @@
    "oblast": "lviv",
    "name": "Смільниця",
    "to": "PL",
-   "hours": 0.3,
+   "hours": 0.0,
    "trucks": 2
   },
   {
@@ -66,7 +62,7 @@
    "name": "Угринів",
    "to": "PL",
    "hours": 142,
-   "trucks": 614
+   "trucks": 615
   },
   {
    "oblast": "chernivtsi",
@@ -93,7 +89,7 @@
    "oblast": "odesa",
    "name": "Виноградівка",
    "to": "MD",
-   "hours": 0.2,
+   "hours": 0.0,
    "trucks": 3
   },
   {
@@ -102,13 +98,6 @@
    "to": "MD",
    "hours": 0.0,
    "trucks": 1
-  },
-  {
-   "oblast": "vinnytsia",
-   "name": "Могилів-Подільський",
-   "to": "MD",
-   "hours": 0.0,
-   "trucks": 2
   },
   {
    "oblast": "odesa",
@@ -144,27 +133,6 @@
    "to": "SK",
    "hours": 0.0,
    "trucks": 0
-  },
-  {
-   "oblast": "zakarpattia",
-   "name": "Ужгород",
-   "to": "SK",
-   "hours": 141,
-   "trucks": 723
-  },
-  {
-   "oblast": "zakarpattia",
-   "name": "Лужанка",
-   "to": "HU",
-   "hours": 7.7,
-   "trucks": 32
-  },
-  {
-   "oblast": "zakarpattia",
-   "name": "Чоп (Тиса)",
-   "to": "HU",
-   "hours": 144.6,
-   "trucks": 1463
   }
  ]
 }
