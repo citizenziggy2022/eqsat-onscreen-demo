@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-25T07:02:16Z",
+ "generated_at": "2026-11-25T07:09:50Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -18,7 +18,7 @@
    "name": "Запорізька ОВА",
    "url": "https://t.me/s/zoda_gov_ua",
    "verified": "linked from zoda.gov.ua",
-   "status": "ok: kept 2 / dropped 1, showing 2"
+   "status": "ok: kept 3 / dropped 1, showing 2"
   },
   {
    "name": "Донецька ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-zoda_gov_ua-69318",
+   "title": "Попередньо, одну людину поранено внаслідок російської атаки на Запоріжжя.",
+   "body": "Ворог атакував Шевченківський район міста. Пошкоджені багатоповерхівки та автомобілі. Наслідки атаки уточнюються.",
+   "source": "Запорізька ОВА",
+   "source_url": "https://t.me/zoda_gov_ua/69318",
+   "region": "Запоріжжя",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-25T07:08:09Z",
+   "expires_at": "2026-11-25T19:08:09Z",
+   "auto": true,
+   "en_mt": {
+    "title": "Previously, one person was injured as a result of the Russian attack on Zaporizhzhia.",
+    "body": "The enemy attacked the Shevchenkivskyi district of the city. High-rise buildings and cars were damaged. The consequences of the attack are being clarified.",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-zoda_gov_ua-69317",
    "title": "Попередньо, одну людину поранено внаслідок російської атаки на Запоріжжя",
@@ -109,24 +127,6 @@
    "en_mt": {
     "title": "At about 06:00 Russian invaders attacked the Korabelnyi district of Kherson with a drone",
     "body": "Through an enemy strike, a 67-year-old man was injured. Preliminarily, he received a blast injury. The victim was taken to the hospital. Currently, doctors are conducting an examination and providing him with assistance.",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-zoda_gov_ua-69316",
-   "title": "Через пошкодження енергетичної інфраструктури внаслідок російських обстрілів частина жителів Запорізької…",
-   "body": "Енергетики працюють над відновленням електропостачання та роблять усе можливе, щоб якнайшвидше повернути світло в домівки людей. Прошу всіх із розумінням поставитися до ситуації. Про відновлення електропостачання інформуватиму додатково.",
-   "source": "Запорізька ОВА",
-   "source_url": "https://t.me/zoda_gov_ua/69316",
-   "region": "Запоріжжя",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-25T04:56:09Z",
-   "expires_at": "2026-11-25T16:56:09Z",
-   "auto": true,
-   "en_mt": {
-    "title": "Due to damage to the energy infrastructure as a result of Russian shelling, part of the residents of Zaporizhzhia…",
-    "body": "Energetics are working on the restoration of electricity supply and are doing everything possible to return the light to people's homes as soon as possible. I ask everyone to treat the situation with understanding. I will inform about the restoration of electricity supply additionally.",
     "by": "m2m100"
    }
   }
