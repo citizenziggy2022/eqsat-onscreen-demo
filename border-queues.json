@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25T20:16:03Z",
- "checked_at": "2026-11-25T20:16:03Z",
+ "updated": "2026-11-25T20:19:23Z",
+ "checked_at": "2026-11-25T20:19:23Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -10,19 +10,19 @@
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 1726 вант. · 7 д 1 год"
+   "note": "Ягодин → PL: 1723 вант. · 7 д 1 год"
+  },
+  "zakarpattia": {
+   "status": "outage",
+   "note": "Дякове → RO: 521 вант. · 5 д 7 год"
   },
   "chernivtsi": {
    "status": "outage",
-   "note": "Порубне → RO: 1022 вант. · 4 д 3 год"
+   "note": "Порубне → RO: 1021 вант. · 4 д 3 год"
   },
   "odesa": {
    "status": "outage",
    "note": "Орлівка → RO: 769 вант. · 6 д 20 год"
-  },
-  "zakarpattia": {
-   "status": "ok",
-   "note": "Малий Березний → SK: 0 вант. · 0 год"
   }
  },
  "queue": [
@@ -37,15 +37,15 @@
    "oblast": "lviv",
    "name": "Смільниця",
    "to": "PL",
-   "hours": 8.5,
-   "trucks": 37
+   "hours": 8.3,
+   "trucks": 36
   },
   {
    "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
    "hours": 140,
-   "trucks": 612
+   "trucks": 611
   },
   {
    "oblast": "volyn",
@@ -73,14 +73,14 @@
    "name": "Ягодин",
    "to": "PL",
    "hours": 40,
-   "trucks": 441
+   "trucks": 440
   },
   {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
    "hours": 169,
-   "trucks": 1726
+   "trucks": 1723
   },
   {
    "oblast": "volyn",
@@ -88,6 +88,13 @@
    "to": "PL",
    "hours": 0.0,
    "trucks": 3
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Дякове",
+   "to": "RO",
+   "hours": 127,
+   "trucks": 521
   },
   {
    "oblast": "chernivtsi",
@@ -108,14 +115,14 @@
    "name": "Порубне",
    "to": "RO",
    "hours": 99,
-   "trucks": 1022
+   "trucks": 1021
   },
   {
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
-   "hours": 4.4,
-   "trucks": 30
+   "hours": 4.6,
+   "trucks": 31
   },
   {
    "oblast": "chernivtsi",
@@ -178,7 +185,7 @@
    "name": "Ужгород",
    "to": "SK",
    "hours": 0.0,
-   "trucks": 1
+   "trucks": 0
   }
  ]
 }
