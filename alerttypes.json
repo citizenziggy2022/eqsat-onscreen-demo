@@ -1,9 +1,10 @@
 {
- "updated": "2026-11-25T15:25:58Z",
+ "updated": "2026-11-25T15:26:58Z",
  "source": "siren.pp.ua (UkraineAlarm)",
  "types": {
   "AIR": {
    "regions": [
+    "cherkasy",
     "chernihiv",
     "crimea",
     "dnipro",
@@ -15,7 +16,7 @@
     "sumy",
     "zaporizhzhia"
    ],
-   "areas": 31
+   "areas": 34
   },
   "ARTILLERY": {
    "regions": [
@@ -219,7 +220,7 @@
       "AIR": 4
      },
      "cherkasy": {
-      "AIR": 2
+      "AIR": 3
      },
      "zaporizhzhia": {
       "AIR": 6
@@ -251,8 +252,8 @@
     },
     "partial": true,
     "first_at": "2026-11-24T22:00:48Z",
-    "samples": 909,
-    "last_at": "2026-11-25T15:25:58Z",
+    "samples": 910,
+    "last_at": "2026-11-25T15:26:58Z",
     "covered_oblasts": [
      "cherkasy",
      "chernihiv",
@@ -284,8 +285,9 @@
     "gap_count": 2
    }
   },
-  "last_at": "2026-11-25T15:25:58Z",
+  "last_at": "2026-11-25T15:26:58Z",
   "active": [
+   "cherkasy:AIR",
    "chernihiv:AIR",
    "crimea:AIR",
    "dnipro:AIR",
