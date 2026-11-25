@@ -2,6 +2,12 @@
  "note": "Every screen deploy, newest first: version 1.N (N + 1 per deploy), deploy time (UTC), one-line summary, build code. Read by the admin (History \u203a Versions). Entries 2.42 to 2.51 were added afterwards from the repo deploy commits: their time is the commit time that switched the live page to that build, not a measured go-live time, and 2.46 to 2.51 were numbered at that point.",
  "versions": [
   {
+   "version": "2.93",
+   "build": "index-payload293.js",
+   "at": "2026-11-25T10:12:00Z",
+   "summary": "Admin motion meter: the Ukraine News crawl is now measured, so Motion load shows real values. Time in safe range now counts only valid seconds (measured motion or a static screen), shows a dash when there are none, and starts empty after this update. The 1.5x line is a rough, untested guideline, not an encoder limit."
+  },
+  {
    "version": "2.92",
    "build": "index-payload292.js",
    "at": "2026-11-25T05:34:17Z",
