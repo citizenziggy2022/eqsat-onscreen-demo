@@ -1,20 +1,20 @@
 {
- "updated": "2026-11-25T04:34:03Z",
- "checked_at": "2026-11-25T04:34:03Z",
+ "updated": "2026-11-25T04:37:24Z",
+ "checked_at": "2026-11-25T04:37:24Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Рава-Руська → PL: 580 вант. · 7 д 23 год"
+   "note": "Рава-Руська → PL: 579 вант. · 7 д 23 год"
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 773 вант. · 8 д 11 год"
+   "note": "Ягодин → PL: 769 вант. · 8 д 9 год"
   },
   "chernivtsi": {
-   "status": "ok",
-   "note": "Дяківці → RO: 0 вант. · 0 год"
+   "status": "outage",
+   "note": "Порубне → RO: 803 вант. · 3 д 6 год"
   },
   "odesa": {
    "status": "ok",
@@ -39,24 +39,17 @@
   },
   {
    "oblast": "lviv",
-   "name": "Краківець",
-   "to": "PL",
-   "hours": 180,
-   "trucks": 643
-  },
-  {
-   "oblast": "lviv",
    "name": "Рава-Руська",
    "to": "PL",
    "hours": 113,
-   "trucks": 877
+   "trucks": 874
   },
   {
    "oblast": "lviv",
    "name": "Рава-Руська",
    "to": "PL",
    "hours": 191,
-   "trucks": 580
+   "trucks": 579
   },
   {
    "oblast": "lviv",
@@ -118,15 +111,8 @@
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
-   "hours": 0.0,
-   "trucks": 5
-  },
-  {
-   "oblast": "volyn",
-   "name": "Ягодин",
-   "to": "PL",
-   "hours": 203,
-   "trucks": 773
+   "hours": 201,
+   "trucks": 769
   },
   {
    "oblast": "chernivtsi",
@@ -134,6 +120,27 @@
    "to": "RO",
    "hours": 0.0,
    "trucks": 0
+  },
+  {
+   "oblast": "chernivtsi",
+   "name": "Красноїльськ",
+   "to": "RO",
+   "hours": 1.7,
+   "trucks": 10
+  },
+  {
+   "oblast": "chernivtsi",
+   "name": "Порубне",
+   "to": "RO",
+   "hours": 78,
+   "trucks": 803
+  },
+  {
+   "oblast": "chernivtsi",
+   "name": "Порубне",
+   "to": "RO",
+   "hours": 0.0,
+   "trucks": 3
   },
   {
    "oblast": "chernivtsi",
@@ -155,6 +162,13 @@
    "to": "MD",
    "hours": 0.0,
    "trucks": 0
+  },
+  {
+   "oblast": "chernivtsi",
+   "name": "Мамалига",
+   "to": "MD",
+   "hours": 2.2,
+   "trucks": 22
   },
   {
    "oblast": "vinnytsia",
