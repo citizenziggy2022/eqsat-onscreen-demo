@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25T05:11:24Z",
- "checked_at": "2026-11-25T05:11:24Z",
+ "updated": "2026-11-25T05:14:46Z",
+ "checked_at": "2026-11-25T05:14:46Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -10,11 +10,11 @@
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 767 вант. · 8 д 8 год"
+   "note": "Ягодин → PL: 1655 вант. · 6 д 18 год"
   },
   "chernivtsi": {
    "status": "outage",
-   "note": "Порубне → RO: 781 вант. · 3 д 4 год"
+   "note": "Порубне → RO: 780 вант. · 3 д 3 год"
   },
   "odesa": {
    "status": "ok",
@@ -26,7 +26,7 @@
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Лужанка → HU: 312 вант. · 3 д 15 год"
+   "note": "Лужанка → HU: 311 вант. · 3 д 14 год"
   }
  },
  "queue": [
@@ -42,7 +42,7 @@
    "name": "Смільниця",
    "to": "PL",
    "hours": 0.0,
-   "trucks": 3
+   "trucks": 4
   },
   {
    "oblast": "lviv",
@@ -55,8 +55,8 @@
    "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
-   "hours": 141,
-   "trucks": 612
+   "hours": 142,
+   "trucks": 613
   },
   {
    "oblast": "volyn",
@@ -70,7 +70,7 @@
    "name": "Устилуг",
    "to": "PL",
    "hours": 138,
-   "trucks": 567
+   "trucks": 568
   },
   {
    "oblast": "lviv",
@@ -101,20 +101,6 @@
    "trucks": 1655
   },
   {
-   "oblast": "volyn",
-   "name": "Ягодин",
-   "to": "PL",
-   "hours": 0.0,
-   "trucks": 3
-  },
-  {
-   "oblast": "volyn",
-   "name": "Ягодин",
-   "to": "PL",
-   "hours": 200,
-   "trucks": 767
-  },
-  {
    "oblast": "chernivtsi",
    "name": "Дяківці",
    "to": "RO",
@@ -125,8 +111,8 @@
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
-   "hours": 76,
-   "trucks": 781
+   "hours": 75,
+   "trucks": 780
   },
   {
    "oblast": "chernivtsi",
@@ -209,8 +195,15 @@
    "oblast": "zakarpattia",
    "name": "Лужанка",
    "to": "HU",
-   "hours": 87,
-   "trucks": 312
+   "hours": 8.5,
+   "trucks": 35
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Лужанка",
+   "to": "HU",
+   "hours": 86,
+   "trucks": 311
   }
  ]
 }
