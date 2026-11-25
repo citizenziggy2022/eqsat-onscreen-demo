@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-25T18:17:32+00:00",
+ "generated": "2026-11-25T19:19:48+00:00",
  "sources": {
   "censoredplanet": {
    "name": "Censored Planet (University of Michigan)",
@@ -26,7 +26,7 @@
     "UA": {
      "confirmed": 0,
      "likely": 0,
-     "measured": 830
+     "measured": 828
     },
     "BY": {
      "confirmed": 0,
@@ -40,7 +40,7 @@
     }
    },
    "rule": "confirmed = a known block page was returned; likely = >=20 measurements, >=50% unexpected and >=30 points above the country median",
-   "seconds": 17.4
+   "seconds": 20.0
   },
   "rkn": {
    "name": "Roskomnadzor registry (via antifilter.download)",
@@ -49,7 +49,7 @@
    "total_domains": 1833407,
    "well_known_listed": 56,
    "note": "Official RKN blocking registry. Rows are registry entries (incl. wildcard and mirror domains), not distinct sites.",
-   "seconds": 20.8
+   "seconds": 22.3
   }
  },
  "credit": "Censored Planet (U. Michigan) · RKN registry via antifilter.download",
@@ -791,7 +791,7 @@
    "status": "likely",
    "last_seen": "2026-11-22",
    "rate": 0.8,
-   "measurements": 756,
+   "measurements": 379,
    "category": "platform",
    "also": [
     "rkn"
@@ -1116,18 +1116,6 @@
    "well_known": false
   },
   {
-   "domain": "nytimes.com",
-   "country": "RU",
-   "source": "censoredplanet",
-   "status": "likely",
-   "last_seen": "2026-11-22",
-   "rate": 0.8,
-   "measurements": 381,
-   "category": "news",
-   "new_vs_ooni": true,
-   "well_known": false
-  },
-  {
    "domain": "ru.krymr.com",
    "country": "RU",
    "source": "censoredplanet",
@@ -1448,6 +1436,18 @@
    "rate": 0.71,
    "measurements": 21,
    "category": "comt",
+   "new_vs_ooni": true,
+   "well_known": false
+  },
+  {
+   "domain": "nytimes.com",
+   "country": "RU",
+   "source": "censoredplanet",
+   "status": "likely",
+   "last_seen": "2026-11-22",
+   "rate": 0.56,
+   "measurements": 548,
+   "category": "news",
    "new_vs_ooni": true,
    "well_known": false
   },
