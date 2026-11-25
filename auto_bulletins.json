@@ -1,18 +1,18 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-25T06:00:40Z",
+ "generated_at": "2026-11-25T06:08:11Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 1 / dropped 3, showing 1"
+   "status": "ok: kept 2 / dropped 3, showing 2"
   },
   {
    "name": "Херсонська ОВА",
    "url": "https://t.me/s/khersonskaODA",
    "verified": "linked from khoda.gov.ua; channel links back to khoda.gov.ua",
-   "status": "ok: kept 0 / dropped 3, showing 0"
+   "status": "ok: kept 1 / dropped 3, showing 1"
   },
   {
    "name": "Запорізька ОВА",
@@ -40,6 +40,42 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-dsns_telegram-81502",
+   "title": "рф уночі атакувала область — є загиблий",
+   "body": "Цієї ночі ворог завдав ударів по Білоцерківському району. Унаслідок влучань виникли пожежі на території підприємства та гіпермаркету. Також загорілися два вантажні автомобілі. На жаль, одна людина загинула — її особу встановлюють фахівці. Рятувальники…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/81502",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-25T06:07:19Z",
+   "expires_at": "2026-11-25T18:07:19Z",
+   "auto": true,
+   "en_mt": {
+    "title": "RF attacked the region at night — there is a dead person",
+    "body": "This night the enemy struck the Bilozerka district. As a result of the hits, fires broke out on the territory of the enterprise and the hypermarket. Also, two trucks caught fire. Unfortunately, one person died — their identity is being established by experts. Rescuers…",
+    "by": "m2m100"
+   }
+  },
+  {
+   "id": "auto-khersonskaODA-72133",
+   "title": "Близько 06:00 російські загарбники атакували безпілотником Корабельний район Херсона",
+   "body": "Через ворожий удар постраждав 67-річний чоловік. Попередньо, він отримав вибухову травму. Потерпілого доставили до лікарні. Наразі медики проводять обстеження та надають йому допомогу.",
+   "source": "Херсонська ОВА",
+   "source_url": "https://t.me/khersonskaODA/72133",
+   "region": "Херсонщина",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-25T06:06:57Z",
+   "expires_at": "2026-11-25T18:06:57Z",
+   "auto": true,
+   "en_mt": {
+    "title": "At about 06:00 Russian invaders attacked the Korabelnyi district of Kherson with a drone",
+    "body": "Through an enemy strike, a 67-year-old man was injured. Preliminarily, he received a blast injury. The victim was taken to the hospital. Currently, doctors are conducting an examination and providing him with assistance.",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-zoda_gov_ua-69316",
    "title": "Через пошкодження енергетичної інфраструктури внаслідок російських обстрілів частина жителів Запорізької…",
