@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-25T19:55:52Z",
- "checked_at": "2026-11-25T19:55:52Z",
+ "updated": "2026-11-25T19:59:22Z",
+ "checked_at": "2026-11-25T19:59:22Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Шегині → PL: 617 вант. · 7 д 5 год"
+   "note": "Шегині → PL: 616 вант. · 7 д 5 год"
   },
   "volyn": {
    "status": "outage",
@@ -14,7 +14,7 @@
   },
   "chernivtsi": {
    "status": "outage",
-   "note": "Порубне → RO: 1025 вант. · 4 д 4 год"
+   "note": "Порубне → RO: 1024 вант. · 4 д 4 год"
   },
   "odesa": {
    "status": "outage",
@@ -22,7 +22,7 @@
   },
   "zakarpattia": {
    "status": "ok",
-   "note": "Лужанка → HU: 42 вант. · 11 год"
+   "note": "Малий Березний → SK: 1 вант. · 0 год"
   }
  },
  "queue": [
@@ -59,7 +59,7 @@
    "name": "Шегині",
    "to": "PL",
    "hours": 173,
-   "trucks": 617
+   "trucks": 616
   },
   {
    "oblast": "lviv",
@@ -94,7 +94,7 @@
    "name": "Порубне",
    "to": "RO",
    "hours": 100,
-   "trucks": 1025
+   "trucks": 1024
   },
   {
    "oblast": "chernivtsi",
@@ -108,20 +108,20 @@
    "name": "Порубне",
    "to": "RO",
    "hours": 0.0,
-   "trucks": 2
+   "trucks": 0
   },
   {
    "oblast": "odesa",
    "name": "Виноградівка",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 5
+   "trucks": 3
   },
   {
    "oblast": "odesa",
    "name": "Маяки-Удобне",
    "to": "MD",
-   "hours": 0.2,
+   "hours": 0.0,
    "trucks": 2
   },
   {
@@ -142,8 +142,8 @@
    "oblast": "chernivtsi",
    "name": "Росошани",
    "to": "MD",
-   "hours": 0.3,
-   "trucks": 3
+   "hours": 0.0,
+   "trucks": 1
   },
   {
    "oblast": "odesa",
@@ -157,7 +157,7 @@
    "name": "Табаки",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 0
+   "trucks": 1
   },
   {
    "oblast": "zakarpattia",
@@ -171,14 +171,7 @@
    "name": "Ужгород",
    "to": "SK",
    "hours": 0.0,
-   "trucks": 3
-  },
-  {
-   "oblast": "zakarpattia",
-   "name": "Лужанка",
-   "to": "HU",
-   "hours": 10.8,
-   "trucks": 42
+   "trucks": 2
   }
  ]
 }
