@@ -1,20 +1,20 @@
 {
- "updated": "2026-11-25T12:44:32Z",
- "checked_at": "2026-11-25T12:44:32Z",
+ "updated": "2026-11-25T12:47:47Z",
+ "checked_at": "2026-11-25T12:47:47Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Шегині → PL: 574 вант. · 6 д 18 год"
+   "note": "Рава-Руська → PL: 589 вант. · 8 д 2 год"
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 1697 вант. · 6 д 22 год"
+   "note": "Ягодин → PL: 1698 вант. · 6 д 22 год"
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Ужгород → SK: 768 вант. · 6 д 7 год"
+   "note": "Ужгород → SK: 766 вант. · 6 д 6 год"
   },
   "chernivtsi": {
    "status": "outage",
@@ -39,6 +39,20 @@
   },
   {
    "oblast": "lviv",
+   "name": "Рава-Руська",
+   "to": "PL",
+   "hours": 119,
+   "trucks": 914
+  },
+  {
+   "oblast": "lviv",
+   "name": "Рава-Руська",
+   "to": "PL",
+   "hours": 194,
+   "trucks": 589
+  },
+  {
+   "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
    "hours": 27,
@@ -49,14 +63,14 @@
    "name": "Угринів",
    "to": "PL",
    "hours": 143,
-   "trucks": 619
+   "trucks": 620
   },
   {
    "oblast": "volyn",
    "name": "Устилуг",
    "to": "PL",
-   "hours": 22.5,
-   "trucks": 83
+   "hours": 21.9,
+   "trucks": 80
   },
   {
    "oblast": "volyn",
@@ -69,8 +83,8 @@
    "oblast": "lviv",
    "name": "Шегині",
    "to": "PL",
-   "hours": 162,
-   "trucks": 574
+   "hours": 161,
+   "trucks": 573
   },
   {
    "oblast": "lviv",
@@ -83,15 +97,15 @@
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
-   "hours": 41,
-   "trucks": 445
+   "hours": 40,
+   "trucks": 444
   },
   {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
    "hours": 166,
-   "trucks": 1697
+   "trucks": 1698
   },
   {
    "oblast": "volyn",
@@ -193,10 +207,17 @@
   },
   {
    "oblast": "odesa",
+   "name": "Старокозаче",
+   "to": "MD",
+   "hours": 6.3,
+   "trucks": 30
+  },
+  {
+   "oblast": "odesa",
    "name": "Табаки",
    "to": "MD",
-   "hours": 1.8,
-   "trucks": 10
+   "hours": 1.5,
+   "trucks": 9
   },
   {
    "oblast": "zakarpattia",
@@ -209,8 +230,8 @@
    "oblast": "zakarpattia",
    "name": "Ужгород",
    "to": "SK",
-   "hours": 151,
-   "trucks": 768
+   "hours": 150,
+   "trucks": 766
   },
   {
    "oblast": "zakarpattia",
