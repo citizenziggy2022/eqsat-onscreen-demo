@@ -1,20 +1,20 @@
 {
- "updated": "2026-11-25T21:27:49Z",
- "checked_at": "2026-11-25T21:27:49Z",
+ "updated": "2026-11-25T21:31:18Z",
+ "checked_at": "2026-11-25T21:31:18Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Рава-Руська → PL: 596 вант. · 8 д 4 год"
+   "note": "Шегині → PL: 609 вант. · 7 д 3 год"
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 1709 вант. · 6 д 23 год"
+   "note": "Ягодин → PL: 1706 вант. · 6 д 23 год"
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Чоп (Тиса) → HU: 1655 вант. · 6 д 19 год"
+   "note": "Дякове → RO: 521 вант. · 5 д 8 год"
   },
   "chernivtsi": {
    "status": "outage",
@@ -22,7 +22,7 @@
   },
   "odesa": {
    "status": "ok",
-   "note": "Виноградівка → MD: 1 вант. · 0 год"
+   "note": "Виноградівка → MD: 2 вант. · 0 год"
   }
  },
  "queue": [
@@ -35,20 +35,6 @@
   },
   {
    "oblast": "lviv",
-   "name": "Рава-Руська",
-   "to": "PL",
-   "hours": 120.4,
-   "trucks": 921
-  },
-  {
-   "oblast": "lviv",
-   "name": "Рава-Руська",
-   "to": "PL",
-   "hours": 196,
-   "trucks": 596
-  },
-  {
-   "oblast": "lviv",
    "name": "Смільниця",
    "to": "PL",
    "hours": 7.2,
@@ -58,8 +44,8 @@
    "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
-   "hours": 22.8,
-   "trucks": 109
+   "hours": 22.3,
+   "trucks": 107
   },
   {
    "oblast": "lviv",
@@ -93,29 +79,29 @@
    "oblast": "lviv",
    "name": "Шегині",
    "to": "PL",
-   "hours": 150,
-   "trucks": 649
+   "hours": 151,
+   "trucks": 650
   },
   {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
    "hours": 167,
-   "trucks": 1709
+   "trucks": 1706
   },
   {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
    "hours": 0.0,
-   "trucks": 1
+   "trucks": 0
   },
   {
    "oblast": "zakarpattia",
    "name": "Дякове",
    "to": "RO",
    "hours": 128,
-   "trucks": 523
+   "trucks": 521
   },
   {
    "oblast": "chernivtsi",
@@ -150,7 +136,7 @@
    "name": "Виноградівка",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 1
+   "trucks": 2
   },
   {
    "oblast": "odesa",
@@ -185,7 +171,7 @@
    "name": "Табаки",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 1
+   "trucks": 0
   },
   {
    "oblast": "zakarpattia",
@@ -200,20 +186,6 @@
    "to": "SK",
    "hours": 0.0,
    "trucks": 0
-  },
-  {
-   "oblast": "zakarpattia",
-   "name": "Лужанка",
-   "to": "HU",
-   "hours": 88,
-   "trucks": 317
-  },
-  {
-   "oblast": "zakarpattia",
-   "name": "Чоп (Тиса)",
-   "to": "HU",
-   "hours": 163,
-   "trucks": 1655
   }
  ]
 }
