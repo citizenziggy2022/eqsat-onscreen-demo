@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-25T05:08:04Z",
- "checked_at": "2026-11-25T05:08:04Z",
+ "updated": "2026-11-25T05:11:24Z",
+ "checked_at": "2026-11-25T05:11:24Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Краківець → PL: 641 вант. · 7 д 12 год"
+   "note": "Шегині → PL: 563 вант. · 6 д 14 год"
   },
   "volyn": {
    "status": "outage",
@@ -14,11 +14,11 @@
   },
   "chernivtsi": {
    "status": "outage",
-   "note": "Порубне → RO: 782 вант. · 3 д 4 год"
+   "note": "Порубне → RO: 781 вант. · 3 д 4 год"
   },
   "odesa": {
-   "status": "limited",
-   "note": "Рені → MD: 164 вант. · 2 д 3 год"
+   "status": "ok",
+   "note": "Виноградівка → MD: 0 вант. · 0 год"
   },
   "vinnytsia": {
    "status": "ok",
@@ -26,30 +26,16 @@
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Лужанка → HU: 313 вант. · 3 д 15 год"
+   "note": "Лужанка → HU: 312 вант. · 3 д 15 год"
   }
  },
  "queue": [
-  {
-   "oblast": "lviv",
-   "name": "Грушів",
-   "to": "PL",
-   "hours": 4.9,
-   "trucks": 26
-  },
   {
    "oblast": "lviv",
    "name": "Краківець",
    "to": "PL",
    "hours": 0.0,
    "trucks": 0
-  },
-  {
-   "oblast": "lviv",
-   "name": "Краківець",
-   "to": "PL",
-   "hours": 180,
-   "trucks": 641
   },
   {
    "oblast": "lviv",
@@ -84,7 +70,7 @@
    "name": "Устилуг",
    "to": "PL",
    "hours": 138,
-   "trucks": 568
+   "trucks": 567
   },
   {
    "oblast": "lviv",
@@ -112,7 +98,7 @@
    "name": "Ягодин",
    "to": "PL",
    "hours": 162,
-   "trucks": 1658
+   "trucks": 1655
   },
   {
    "oblast": "volyn",
@@ -140,7 +126,7 @@
    "name": "Порубне",
    "to": "RO",
    "hours": 76,
-   "trucks": 782
+   "trucks": 781
   },
   {
    "oblast": "chernivtsi",
@@ -181,13 +167,6 @@
    "oblast": "odesa",
    "name": "Рені",
    "to": "MD",
-   "hours": 51,
-   "trucks": 164
-  },
-  {
-   "oblast": "odesa",
-   "name": "Рені",
-   "to": "MD",
    "hours": 0.0,
    "trucks": 0
   },
@@ -204,13 +183,6 @@
    "to": "MD",
    "hours": 0.0,
    "trucks": 0
-  },
-  {
-   "oblast": "odesa",
-   "name": "Старокозаче",
-   "to": "MD",
-   "hours": 0.0,
-   "trucks": 5
   },
   {
    "oblast": "odesa",
@@ -238,7 +210,7 @@
    "name": "Лужанка",
    "to": "HU",
    "hours": 87,
-   "trucks": 313
+   "trucks": 312
   }
  ]
 }
