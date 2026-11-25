@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-25T03:32:40Z",
+ "fetched_at": "2026-11-25T03:36:01Z",
  "source": {
   "id": "saveecobot",
   "name": "SaveEcoBot",
@@ -137,16 +137,18 @@
    "id": "chornobyl_town",
    "uk": "Чорнобиль",
    "en": "Chornobyl town",
-   "nsv_h": 162,
-   "time": "2026-11-25T02:50:22Z",
+   "nsv_h": 168,
+   "time": "2026-11-25T03:34:35Z",
    "oldest": "2026-11-25T01:00:00Z",
-   "n": 3,
+   "n": 4,
    "platforms": [
     "SaveDnipro & Safecast",
+    "SaveDnipro & uRADMonitor",
     "ДСП \"Екоцентр\""
    ],
    "notes": [
     "Дані збираються через систему ЕкоЗагроза",
+    "Онлайн-моніторинг радіаційного стану навколо Атомних Електростанцій України",
     "Онлайн-моніторинг радіаційного стану приладами Radnote від Safecast та Blues Inc"
    ],
    "readings": [
@@ -177,8 +179,8 @@
      "station": "вулиця Богдана Хмельницького",
      "city": "Чорнобиль",
      "nsv_h": 190.0,
-     "time": "2026-11-25T03:10:06Z",
-     "fresh": false,
+     "time": "2026-11-25T03:34:35Z",
+     "fresh": true,
      "manual": false,
      "platform": "SaveDnipro & uRADMonitor",
      "notes": "Онлайн-моніторинг радіаційного стану навколо Атомних Електростанцій України"
@@ -445,8 +447,8 @@
    "sub_uk": "Хмельницька АЕС",
    "sub_en": "Khmelnytskyi NPP",
    "nsv_h": 100,
-   "time": "2026-11-25T03:31:36Z",
-   "oldest": "2026-11-25T03:31:36Z",
+   "time": "2026-11-25T03:34:36Z",
+   "oldest": "2026-11-25T03:34:36Z",
    "n": 1,
    "platforms": [
     "SaveDnipro & uRADMonitor"
@@ -460,7 +462,7 @@
      "station": "проспект Незалежності",
      "city": "Нетішин",
      "nsv_h": 100.0,
-     "time": "2026-11-25T03:31:36Z",
+     "time": "2026-11-25T03:34:36Z",
      "fresh": true,
      "manual": false,
      "platform": "SaveDnipro & uRADMonitor",
