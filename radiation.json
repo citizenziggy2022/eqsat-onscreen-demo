@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-25T00:13:47Z",
+ "fetched_at": "2026-11-25T00:17:08Z",
  "source": {
   "id": "saveecobot",
   "name": "SaveEcoBot",
@@ -66,11 +66,12 @@
    "en": "Marhanets",
    "sub_uk": "ЗАЕС, 16 км",
    "sub_en": "ZNPP area, 16 km",
-   "nsv_h": 90,
-   "time": "2026-11-24T23:27:11Z",
+   "nsv_h": 115,
+   "time": "2026-11-25T00:15:09Z",
    "oldest": "2026-11-24T23:27:11Z",
-   "n": 1,
+   "n": 2,
    "platforms": [
+    "SaveDnipro & Greenpeace",
     "SaveDnipro & Safecast"
    ],
    "notes": [
@@ -81,9 +82,9 @@
      "sensor_id": 24050,
      "station": "вулиця Ворошилова, 1",
      "city": "Марганець",
-     "nsv_h": 133.0,
-     "time": "2026-11-25T00:00:05Z",
-     "fresh": false,
+     "nsv_h": 139.0,
+     "time": "2026-11-25T00:15:09Z",
+     "fresh": true,
      "manual": false,
      "platform": "SaveDnipro & Greenpeace",
      "notes": null
@@ -137,16 +138,18 @@
    "id": "chornobyl_town",
    "uk": "Чорнобиль",
    "en": "Chornobyl town",
-   "nsv_h": 167,
-   "time": "2026-11-24T23:50:18Z",
+   "nsv_h": 172,
+   "time": "2026-11-25T00:15:09Z",
    "oldest": "2026-11-24T22:00:00Z",
-   "n": 3,
+   "n": 4,
    "platforms": [
     "SaveDnipro & Safecast",
+    "SaveDnipro & uRADMonitor",
     "ДСП \"Екоцентр\""
    ],
    "notes": [
     "Дані збираються через систему ЕкоЗагроза",
+    "Онлайн-моніторинг радіаційного стану навколо Атомних Електростанцій України",
     "Онлайн-моніторинг радіаційного стану приладами Radnote від Safecast та Blues Inc"
    ],
    "readings": [
@@ -176,9 +179,9 @@
      "sensor_id": 22415,
      "station": "вулиця Богдана Хмельницького",
      "city": "Чорнобиль",
-     "nsv_h": 203.0,
-     "time": "2026-11-25T00:00:35Z",
-     "fresh": false,
+     "nsv_h": 215.0,
+     "time": "2026-11-25T00:15:09Z",
+     "fresh": true,
      "manual": false,
      "platform": "SaveDnipro & uRADMonitor",
      "notes": "Онлайн-моніторинг радіаційного стану навколо Атомних Електростанцій України"
@@ -392,9 +395,9 @@
    "en": "Varash",
    "sub_uk": "Рівненська АЕС",
    "sub_en": "Rivne NPP",
-   "nsv_h": 121,
-   "time": "2026-11-24T23:04:20Z",
-   "oldest": "2026-11-24T23:04:20Z",
+   "nsv_h": 90,
+   "time": "2026-11-25T00:04:20Z",
+   "oldest": "2026-11-25T00:04:20Z",
    "n": 1,
    "platforms": [
     "SaveDnipro & Safecast"
@@ -407,8 +410,8 @@
      "sensor_id": 24717,
      "station": "майдан Незалежності",
      "city": "Вараш",
-     "nsv_h": 120.6,
-     "time": "2026-11-24T23:04:20Z",
+     "nsv_h": 90.4,
+     "time": "2026-11-25T00:04:20Z",
      "fresh": true,
      "manual": false,
      "platform": "SaveDnipro & Safecast",
@@ -444,26 +447,24 @@
    "en": "Netishyn",
    "sub_uk": "Хмельницька АЕС",
    "sub_en": "Khmelnytskyi NPP",
-   "nsv_h": 105,
-   "time": "2026-11-24T07:00:00Z",
-   "oldest": "2026-11-24T06:00:00Z",
-   "n": 2,
+   "nsv_h": 110,
+   "time": "2026-11-25T00:15:43Z",
+   "oldest": "2026-11-25T00:15:43Z",
+   "n": 1,
    "platforms": [
-    "АТ «НАЕК «Енергоатом»",
-    "Міністерство охорони здоров'я України"
+    "SaveDnipro & uRADMonitor"
    ],
    "notes": [
-    "ДУ «Хмельницький обласний центр контролю та профілактики хвороб МОЗ України»",
-    "Це щодобові дані. «Енергоатом» має онлайн моніторинг, але не відкриває його."
+    "Онлайн-моніторинг радіаційного стану навколо Атомних Електростанцій України"
    ],
    "readings": [
     {
      "sensor_id": 22877,
      "station": "проспект Незалежності",
      "city": "Нетішин",
-     "nsv_h": 130.0,
-     "time": "2026-11-24T23:59:43Z",
-     "fresh": false,
+     "nsv_h": 110.0,
+     "time": "2026-11-25T00:15:43Z",
+     "fresh": true,
      "manual": false,
      "platform": "SaveDnipro & uRADMonitor",
      "notes": "Онлайн-моніторинг радіаційного стану навколо Атомних Електростанцій України"
