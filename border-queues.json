@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-25T16:32:56Z",
- "checked_at": "2026-11-25T16:32:56Z",
+ "updated": "2026-11-25T16:36:01Z",
+ "checked_at": "2026-11-25T16:36:01Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Шегині → PL: 615 вант. · 7 д 5 год"
+   "note": "Шегині → PL: 616 вант. · 7 д 5 год"
   },
   "volyn": {
    "status": "limited",
@@ -14,11 +14,11 @@
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Ужгород → SK: 817 вант. · 6 д 16 год"
+   "note": "Ужгород → SK: 816 вант. · 6 д 16 год"
   },
   "chernivtsi": {
-   "status": "outage",
-   "note": "Порубне → RO: 951 вант. · 3 д 21 год"
+   "status": "limited",
+   "note": "Мамалига → MD: 72 вант. · 12 год"
   },
   "odesa": {
    "status": "outage",
@@ -37,8 +37,8 @@
    "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
-   "hours": 26,
-   "trucks": 125
+   "hours": 25,
+   "trucks": 123
   },
   {
    "oblast": "volyn",
@@ -52,7 +52,7 @@
    "name": "Шегині",
    "to": "PL",
    "hours": 173,
-   "trucks": 615
+   "trucks": 616
   },
   {
    "oblast": "lviv",
@@ -86,13 +86,6 @@
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
-   "hours": 93,
-   "trucks": 951
-  },
-  {
-   "oblast": "chernivtsi",
-   "name": "Порубне",
-   "to": "RO",
    "hours": 0.0,
    "trucks": 0
   },
@@ -107,15 +100,15 @@
    "oblast": "odesa",
    "name": "Маяки-Удобне",
    "to": "MD",
-   "hours": 0.2,
-   "trucks": 4
+   "hours": 0.0,
+   "trucks": 3
   },
   {
    "oblast": "chernivtsi",
    "name": "Мамалига",
    "to": "MD",
-   "hours": 12.6,
-   "trucks": 73
+   "hours": 12.4,
+   "trucks": 72
   },
   {
    "oblast": "odesa",
@@ -157,7 +150,7 @@
    "name": "Ужгород",
    "to": "SK",
    "hours": 160,
-   "trucks": 817
+   "trucks": 816
   }
  ]
 }
