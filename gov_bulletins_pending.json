@@ -1,0 +1,60 @@
+{
+ "note": "Official road/water notice CANDIDATES, NOT on air. Written by scripts/fetch_gov_review.py. Nothing is merged into auto_bulletins.json; an item airs only if the owner approves that single card and it is added by hand with an expiry.",
+ "every_s": 600,
+ "fetched_at": "2026-11-25T13:12:50Z",
+ "on_air": false,
+ "auto_approved": 0,
+ "items": [
+  {
+   "id": "gov-roads-proyizd-usima-dorogamy-derzhavnogo-znach",
+   "title": "Проїзд усіма дорогами державного значення забезпечено. Обмежень руху немає.",
+   "body": "Через снігопади та ожеледицю дорожні служби працюють у посиленому режимі.",
+   "source": "Агентство відновлення · CC BY 4.0",
+   "source_url": "https://restoration.gov.ua/blog/proyizd-usima-dorogamy-derzhavnogo-znachennya-zabezpecheno-obmezhen-ruhu-nemaye/",
+   "region": "Україна · дороги",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "auto": true,
+   "issued_at": "2026-11-25T06:18:21Z",
+   "expires_at": "2026-11-25T18:18:21Z",
+   "licence": "CC BY 4.0",
+   "status": "pending_review",
+   "on_air": false
+  },
+  {
+   "id": "gov-water-infoxvodokanal-1288",
+   "title": "Аварійне відключення води у частині Одеської області 25 листопада",
+   "body": "Заплановано 25.11, 10:00–24:00 · без води: Фонтанка-3, Вапнярка, Нова Дофінівка, Чорноморське, Григорівка",
+   "source": "Інфоксводоканал (Одеса)",
+   "source_url": "https://t.me/infoxvodokanal/1288",
+   "region": "Одеська область · окремі пункти / localities",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "auto": true,
+   "issued_at": "2026-11-24T16:23:51Z",
+   "expires_at": "2026-11-25T22:00:00Z",
+   "channel_verified": true,
+   "scope": "planned-localities",
+   "starts_at": "2026-11-25T08:00:00Z",
+   "status": "pending_review",
+   "on_air": false
+  }
+ ],
+ "needs_review": [
+  "needs review (title 98 chars > 90, not auto-shortened): 498 одиниць спецтехніки та 616 працівників забезпечують зимове утримання доріг державного значення",
+  "needs review (planned/partial outage not fully parsed): infoxvodokanal/1271",
+  "needs review (planned/partial outage not fully parsed): infoxvodokanal/1272",
+  "needs review (planned/partial outage not fully parsed): infoxvodokanal/1273",
+  "needs review (planned/partial outage not fully parsed): infoxvodokanal/1274",
+  "needs review (planned/partial outage not fully parsed): infoxvodokanal/1285",
+  "needs review (title > 90 chars, not auto-shortened): kvk20/196",
+  "needs review (title > 90 chars, not auto-shortened): kvk20/198",
+  "needs review (title > 90 chars, not auto-shortened): kvk20/200",
+  "needs review (title > 90 chars, not auto-shortened): kvk20/201",
+  "needs review (title > 90 chars, not auto-shortened): kvk20/202",
+  "needs review (planned/partial outage not fully parsed): kvk20/206",
+  "needs review (planned/partial outage not fully parsed): kvk20/207",
+  "needs review (planned/partial outage not fully parsed): kvk20/209",
+  "needs review (title > 90 chars, not auto-shortened): kvk20/210"
+ ]
+}
