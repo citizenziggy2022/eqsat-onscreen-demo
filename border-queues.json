@@ -1,20 +1,20 @@
 {
- "updated": "2026-11-25T12:21:41Z",
- "checked_at": "2026-11-25T12:21:41Z",
+ "updated": "2026-11-25T12:24:59Z",
+ "checked_at": "2026-11-25T12:24:59Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Шегині → PL: 576 вант. · 6 д 18 год"
+   "note": "Шегині → PL: 575 вант. · 6 д 18 год"
   },
   "volyn": {
    "status": "outage",
-   "note": "Устилуг → PL: 583 вант. · 5 д 21 год"
+   "note": "Ягодин → PL: 1702 вант. · 6 д 23 год"
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Чоп (Тиса) → HU: 1532 вант. · 6 д 7 год"
+   "note": "Ужгород → SK: 778 вант. · 6 д 9 год"
   },
   "chernivtsi": {
    "status": "outage",
@@ -31,7 +31,7 @@
    "name": "Краківець",
    "to": "PL",
    "hours": 0.0,
-   "trucks": 0
+   "trucks": 1
   },
   {
    "oblast": "lviv",
@@ -44,15 +44,15 @@
    "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
-   "hours": 143,
-   "trucks": 619
+   "hours": 142,
+   "trucks": 618
   },
   {
    "oblast": "volyn",
    "name": "Устилуг",
    "to": "PL",
-   "hours": 21.3,
-   "trucks": 79
+   "hours": 21.6,
+   "trucks": 80
   },
   {
    "oblast": "volyn",
@@ -66,7 +66,7 @@
    "name": "Шегині",
    "to": "PL",
    "hours": 162,
-   "trucks": 576
+   "trucks": 575
   },
   {
    "oblast": "lviv",
@@ -74,6 +74,20 @@
    "to": "PL",
    "hours": 143,
    "trucks": 617
+  },
+  {
+   "oblast": "volyn",
+   "name": "Ягодин",
+   "to": "PL",
+   "hours": 167,
+   "trucks": 1702
+  },
+  {
+   "oblast": "volyn",
+   "name": "Ягодин",
+   "to": "PL",
+   "hours": 0.4,
+   "trucks": 7
   },
   {
    "oblast": "zakarpattia",
@@ -122,7 +136,7 @@
    "name": "Порубне",
    "to": "RO",
    "hours": 0.0,
-   "trucks": 1
+   "trucks": 0
   },
   {
    "oblast": "odesa",
@@ -160,13 +174,6 @@
    "trucks": 0
   },
   {
-   "oblast": "odesa",
-   "name": "Табаки",
-   "to": "MD",
-   "hours": 0.8,
-   "trucks": 6
-  },
-  {
    "oblast": "zakarpattia",
    "name": "Малий Березний",
    "to": "SK",
@@ -177,15 +184,22 @@
    "oblast": "zakarpattia",
    "name": "Ужгород",
    "to": "SK",
+   "hours": 153,
+   "trucks": 778
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Ужгород",
+   "to": "SK",
    "hours": 0.0,
-   "trucks": 1
+   "trucks": 0
   },
   {
    "oblast": "zakarpattia",
    "name": "Чоп (Тиса)",
    "to": "HU",
    "hours": 151,
-   "trucks": 1532
+   "trucks": 1531
   }
  ]
 }
