@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-25T06:02:40Z",
+ "fetched_at": "2026-11-25T06:05:53Z",
  "source": {
   "id": "saveecobot",
   "name": "SaveEcoBot",
@@ -66,11 +66,12 @@
    "en": "Marhanets",
    "sub_uk": "ЗАЕС, 16 км",
    "sub_en": "ZNPP area, 16 km",
-   "nsv_h": 84,
-   "time": "2026-11-25T05:27:11Z",
+   "nsv_h": 105,
+   "time": "2026-11-25T06:04:05Z",
    "oldest": "2026-11-25T05:27:11Z",
-   "n": 1,
+   "n": 2,
    "platforms": [
+    "SaveDnipro & Greenpeace",
     "SaveDnipro & Safecast"
    ],
    "notes": [
@@ -82,8 +83,8 @@
      "station": "вулиця Ворошилова, 1",
      "city": "Марганець",
      "nsv_h": 127.0,
-     "time": "2026-11-25T05:49:04Z",
-     "fresh": false,
+     "time": "2026-11-25T06:04:05Z",
+     "fresh": true,
      "manual": false,
      "platform": "SaveDnipro & Greenpeace",
      "notes": null
@@ -137,16 +138,18 @@
    "id": "chornobyl_town",
    "uk": "Чорнобиль",
    "en": "Chornobyl town",
-   "nsv_h": 157,
-   "time": "2026-11-25T05:50:22Z",
+   "nsv_h": 170,
+   "time": "2026-11-25T06:04:45Z",
    "oldest": "2026-11-25T04:00:00Z",
-   "n": 3,
+   "n": 4,
    "platforms": [
     "SaveDnipro & Safecast",
+    "SaveDnipro & uRADMonitor",
     "ДСП \"Екоцентр\""
    ],
    "notes": [
     "Дані збираються через систему ЕкоЗагроза",
+    "Онлайн-моніторинг радіаційного стану навколо Атомних Електростанцій України",
     "Онлайн-моніторинг радіаційного стану приладами Radnote від Safecast та Blues Inc"
    ],
    "readings": [
@@ -176,9 +179,9 @@
      "sensor_id": 22415,
      "station": "вулиця Богдана Хмельницького",
      "city": "Чорнобиль",
-     "nsv_h": 215.0,
-     "time": "2026-11-25T05:47:31Z",
-     "fresh": false,
+     "nsv_h": 190.0,
+     "time": "2026-11-25T06:04:45Z",
+     "fresh": true,
      "manual": false,
      "platform": "SaveDnipro & uRADMonitor",
      "notes": "Онлайн-моніторинг радіаційного стану навколо Атомних Електростанцій України"
@@ -444,9 +447,9 @@
    "en": "Netishyn",
    "sub_uk": "Хмельницька АЕС",
    "sub_en": "Khmelnytskyi NPP",
-   "nsv_h": 130,
-   "time": "2026-11-25T06:01:31Z",
-   "oldest": "2026-11-25T06:01:31Z",
+   "nsv_h": 120,
+   "time": "2026-11-25T06:04:31Z",
+   "oldest": "2026-11-25T06:04:31Z",
    "n": 1,
    "platforms": [
     "SaveDnipro & uRADMonitor"
@@ -459,8 +462,8 @@
      "sensor_id": 22877,
      "station": "проспект Незалежності",
      "city": "Нетішин",
-     "nsv_h": 130.0,
-     "time": "2026-11-25T06:01:31Z",
+     "nsv_h": 120.0,
+     "time": "2026-11-25T06:04:31Z",
      "fresh": true,
      "manual": false,
      "platform": "SaveDnipro & uRADMonitor",
