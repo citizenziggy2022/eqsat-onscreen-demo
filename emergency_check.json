@@ -1,14 +1,16 @@
 {
- "checked_at": "2026-11-24T11:55:28Z",
+ "checked_at": "2026-11-25T07:56:26Z",
  "method": "label-bound; see scripts/verify_static.py",
  "lines": [
   {
    "file": "emergency.json",
    "card": "EMERGENCY NUMBERS · UKRAINE",
    "number": "112",
-   "state": "failed",
-   "source_url": "https://bezpeka.dsns.gov.ua/contacts",
-   "evidence": "source page did not load (HTTP 403)"
+   "state": "confirmed",
+   "source_url": "https://mvs.gov.ua/mvs-specprojekti/sluzba-112-usi-ekstreni-sluzbi-za-jedinim-nomerom",
+   "evidence": "112 - це номер для звернення",
+   "confirmed_at": "2026-11-25T07:56:30Z",
+   "source_note": "primary source blocked (HTTP 403); fallback page used"
   },
   {
    "file": "emergency.json",
@@ -49,7 +51,7 @@
    "state": "confirmed",
    "source_url": "https://1548.gov.ua/about/",
    "evidence": "Телефони 1548",
-   "confirmed_at": "2026-11-24T11:55:32Z"
+   "confirmed_at": "2026-11-25T07:56:31Z"
   },
   {
    "file": "emergency.json",
@@ -58,15 +60,17 @@
    "state": "confirmed",
    "source_url": "https://ombudsman.gov.ua/",
    "evidence": "Гаряча лінія: 1678",
-   "confirmed_at": "2026-11-24T11:55:34Z"
+   "confirmed_at": "2026-11-25T07:56:33Z"
   },
   {
    "file": "emergency.json",
    "card": "HOTLINES",
    "number": "0 800 300 529",
-   "state": "unverified",
-   "source_url": null,
-   "evidence": "hand-entered, no source named"
+   "state": "confirmed",
+   "source_url": "https://www.ombudsman.gov.ua/uk/voyennij-stan/koordinacijnij-shtab-z-pitan-povodzhennya-z-vijskovopolonenimi",
+   "evidence": "Телефон: 0 800 300 529",
+   "confirmed_at": "2026-11-25T07:56:37Z",
+   "source_note": "earlier source blocked: https://koordshtab.gov.ua (HTTP 403)"
   },
   {
    "file": "emergency.json",
@@ -75,7 +79,7 @@
    "state": "confirmed",
    "source_url": "https://redcross.org.ua/contacts/",
    "evidence": "Телефон: 0800332656",
-   "confirmed_at": "2026-11-24T11:55:35Z"
+   "confirmed_at": "2026-11-25T07:56:39Z"
   },
   {
    "file": "emergency.json",
@@ -84,15 +88,16 @@
    "state": "confirmed",
    "source_url": "https://1548.gov.ua/about/",
    "evidence": "WhatsApp, Telegram, Viber +38(096) 078 84 33",
-   "confirmed_at": "2026-11-24T11:55:35Z"
+   "confirmed_at": "2026-11-25T07:56:39Z"
   },
   {
    "file": "emergency.json",
    "card": "FROM OCCUPIED AREAS OR ABROAD",
    "number": "+380 93 406 80 17",
-   "state": "unverified",
-   "source_url": null,
-   "evidence": "hand-entered, no source named"
+   "state": "confirmed",
+   "source_url": "https://ombudsman.gov.ua/uk/news_details/41-ukrayinec-povernuvsya-z-okupaciyi-cherez-volin",
+   "evidence": "тимчасово окупованих територій: +38 093 406 80 17",
+   "confirmed_at": "2026-11-25T07:56:41Z"
   },
   {
    "file": "emergency.json",
@@ -101,15 +106,15 @@
    "state": "confirmed",
    "source_url": "https://ombudsman.gov.ua/",
    "evidence": "Для дзвінків з-за кордону: +380442997408",
-   "confirmed_at": "2026-11-24T11:55:35Z"
+   "confirmed_at": "2026-11-25T07:56:41Z"
   },
   {
    "file": "emergency.json",
    "card": "FROM OCCUPIED AREAS OR ABROAD",
    "number": "+380 44 390 43 90",
-   "state": "unverified",
-   "source_url": null,
-   "evidence": "hand-entered, no source named"
+   "state": "failed",
+   "source_url": "https://koordshtab.gov.ua/contacts",
+   "evidence": "source page did not load (https://koordshtab.gov.ua/contacts (HTTP 403))"
   },
   {
    "file": "emergency.json",
@@ -118,39 +123,40 @@
    "state": "confirmed",
    "source_url": "https://1548.gov.ua/about/",
    "evidence": "Телефони 1548",
-   "confirmed_at": "2026-11-24T11:55:35Z"
+   "confirmed_at": "2026-11-25T07:56:44Z"
   },
   {
    "file": "emergency.json",
    "card": "MINES & AIR RAIDS",
    "number": "101",
-   "state": "unverified",
-   "source_url": null,
-   "evidence": "hand-entered, no source named"
+   "state": "failed",
+   "source_url": "https://bezpeka.dsns.gov.ua/materials/shcho-robyty-yakshcho-vyyavyly-minu-abo-inshyy-vybukhonebezpechnyy-predmet",
+   "evidence": "source page did not load (https://bezpeka.dsns.gov.ua/materials/shcho-robyty-yakshcho-vyyavyly-minu-abo-inshyy-vybukhonebezpechnyy-predmet (HTTP 403))"
   },
   {
    "file": "emergency.json",
    "card": "MOLDOVA · TRANSNISTRIA",
    "number": "112",
-   "state": "unverified",
-   "source_url": null,
-   "evidence": "hand-entered, no source named"
+   "state": "confirmed",
+   "source_url": "https://112.md/",
+   "evidence": "numărul unic pentru apeluri de urgență disponibil gratuit la nivelul întregii țări 112",
+   "confirmed_at": "2026-11-25T07:56:48Z"
   },
   {
    "file": "emergency.json",
    "card": "MOLDOVA · TRANSNISTRIA",
    "number": "+373 22 58 22 84",
-   "state": "unverified",
-   "source_url": null,
-   "evidence": "hand-entered, no source named"
+   "state": "failed",
+   "source_url": "https://moldova.mfa.gov.ua/",
+   "evidence": "source page did not load (https://moldova.mfa.gov.ua/ (HTTP 403))"
   },
   {
    "file": "emergency.json",
    "card": "MOLDOVA · TRANSNISTRIA",
    "number": "+373 69 64 99 76",
-   "state": "unverified",
-   "source_url": null,
-   "evidence": "hand-entered, no source named"
+   "state": "failed",
+   "source_url": "https://moldova.mfa.gov.ua/",
+   "evidence": "source page did not load (https://moldova.mfa.gov.ua/ (HTTP 403))"
   },
   {
    "file": "emergency_extra.json",
@@ -247,13 +253,13 @@
    "state": "confirmed",
    "source_url": "http://www.hfcc.org/data/b26/b26allx2.zip",
    "evidence": "5955 1600 1630 29SW                           TIG  100 30        0 812 1234567 251026 280327 D       Ukr        ROU RRO ",
-   "confirmed_at": "2026-11-24T11:55:44Z",
+   "confirmed_at": "2026-11-25T07:56:59Z",
    "source_note": "; B26 ALL 24-nov-2026"
   }
  ],
  "counts": {
-  "confirmed": 7,
-  "unverified": 18,
-  "failed": 5
+  "confirmed": 11,
+  "unverified": 11,
+  "failed": 8
  }
 }
