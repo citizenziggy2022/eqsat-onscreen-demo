@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-25T00:03:50Z",
+ "fetched_at": "2026-11-25T00:07:13Z",
  "source": {
   "id": "saveecobot",
   "name": "SaveEcoBot",
@@ -66,12 +66,11 @@
    "en": "Marhanets",
    "sub_uk": "ЗАЕС, 16 км",
    "sub_en": "ZNPP area, 16 km",
-   "nsv_h": 112,
-   "time": "2026-11-25T00:00:05Z",
+   "nsv_h": 90,
+   "time": "2026-11-24T23:27:11Z",
    "oldest": "2026-11-24T23:27:11Z",
-   "n": 2,
+   "n": 1,
    "platforms": [
-    "SaveDnipro & Greenpeace",
     "SaveDnipro & Safecast"
    ],
    "notes": [
@@ -84,7 +83,7 @@
      "city": "Марганець",
      "nsv_h": 133.0,
      "time": "2026-11-25T00:00:05Z",
-     "fresh": true,
+     "fresh": false,
      "manual": false,
      "platform": "SaveDnipro & Greenpeace",
      "notes": null
@@ -447,15 +446,17 @@
    "en": "Netishyn",
    "sub_uk": "Хмельницька АЕС",
    "sub_en": "Khmelnytskyi NPP",
-   "nsv_h": 130,
-   "time": "2026-11-24T23:59:43Z",
-   "oldest": "2026-11-24T23:59:43Z",
-   "n": 1,
+   "nsv_h": 105,
+   "time": "2026-11-24T07:00:00Z",
+   "oldest": "2026-11-24T06:00:00Z",
+   "n": 2,
    "platforms": [
-    "SaveDnipro & uRADMonitor"
+    "АТ «НАЕК «Енергоатом»",
+    "Міністерство охорони здоров'я України"
    ],
    "notes": [
-    "Онлайн-моніторинг радіаційного стану навколо Атомних Електростанцій України"
+    "ДУ «Хмельницький обласний центр контролю та профілактики хвороб МОЗ України»",
+    "Це щодобові дані. «Енергоатом» має онлайн моніторинг, але не відкриває його."
    ],
    "readings": [
     {
@@ -464,7 +465,7 @@
      "city": "Нетішин",
      "nsv_h": 130.0,
      "time": "2026-11-24T23:59:43Z",
-     "fresh": true,
+     "fresh": false,
      "manual": false,
      "platform": "SaveDnipro & uRADMonitor",
      "notes": "Онлайн-моніторинг радіаційного стану навколо Атомних Електростанцій України"
