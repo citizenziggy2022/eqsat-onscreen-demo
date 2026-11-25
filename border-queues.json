@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-25T00:19:29Z",
- "checked_at": "2026-11-25T00:19:29Z",
+ "updated": "2026-11-25T00:22:48Z",
+ "checked_at": "2026-11-25T00:22:48Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Шегині → PL: 581 вант. · 6 д 18 год"
+   "note": "Шегині → PL: 580 вант. · 6 д 18 год"
   },
   "volyn": {
    "status": "outage",
@@ -14,7 +14,7 @@
   },
   "chernivtsi": {
    "status": "outage",
-   "note": "Порубне → RO: 835 вант. · 3 д 8 год"
+   "note": "Порубне → RO: 834 вант. · 3 д 8 год"
   },
   "odesa": {
    "status": "ok",
@@ -26,7 +26,7 @@
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Чоп (Тиса) → HU: 1524 вант. · 6 д 6 год"
+   "note": "Чоп (Тиса) → HU: 1522 вант. · 6 д 6 год"
   }
  },
  "queue": [
@@ -34,8 +34,8 @@
    "oblast": "lviv",
    "name": "Грушів",
    "to": "PL",
-   "hours": 7.2,
-   "trucks": 35
+   "hours": 6.5,
+   "trucks": 33
   },
   {
    "oblast": "lviv",
@@ -43,6 +43,13 @@
    "to": "PL",
    "hours": 0.0,
    "trucks": 0
+  },
+  {
+   "oblast": "lviv",
+   "name": "Смільниця",
+   "to": "PL",
+   "hours": 0.8,
+   "trucks": 7
   },
   {
    "oblast": "lviv",
@@ -77,7 +84,7 @@
    "name": "Шегині",
    "to": "PL",
    "hours": 162,
-   "trucks": 581
+   "trucks": 580
   },
   {
    "oblast": "lviv",
@@ -125,22 +132,22 @@
    "oblast": "chernivtsi",
    "name": "Красноїльськ",
    "to": "RO",
-   "hours": 0.0,
-   "trucks": 4
+   "hours": 0.3,
+   "trucks": 5
   },
   {
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
    "hours": 80,
-   "trucks": 835
+   "trucks": 834
   },
   {
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
    "hours": 0.0,
-   "trucks": 3
+   "trucks": 2
   },
   {
    "oblast": "chernivtsi",
@@ -162,13 +169,6 @@
    "to": "MD",
    "hours": 0.0,
    "trucks": 0
-  },
-  {
-   "oblast": "chernivtsi",
-   "name": "Мамалига",
-   "to": "MD",
-   "hours": 2.4,
-   "trucks": 24
   },
   {
    "oblast": "vinnytsia",
@@ -200,13 +200,6 @@
   },
   {
    "oblast": "odesa",
-   "name": "Старокозаче",
-   "to": "MD",
-   "hours": 0.0,
-   "trucks": 6
-  },
-  {
-   "oblast": "odesa",
    "name": "Табаки",
    "to": "MD",
    "hours": 0.0,
@@ -231,7 +224,7 @@
    "name": "Чоп (Тиса)",
    "to": "HU",
    "hours": 150,
-   "trucks": 1524
+   "trucks": 1522
   }
  ]
 }
