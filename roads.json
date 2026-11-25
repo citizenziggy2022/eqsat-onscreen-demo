@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25T16:46:07Z",
- "checked_at": "2026-11-25T16:46:07Z",
+ "updated": "2026-11-25T16:49:36Z",
+ "checked_at": "2026-11-25T16:49:36Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -10,7 +10,7 @@
   },
   "volyn": {
    "status": "limited",
-   "note": "Устилуг → PL: 73 вант. · 20 год"
+   "note": "Ягодин → PL: 455 вант. · 1 д 18 год"
   },
   "zakarpattia": {
    "status": "outage",
@@ -22,7 +22,7 @@
   },
   "odesa": {
    "status": "outage",
-   "note": "Орлівка → RO: 751 вант. · 6 д 16 год"
+   "note": "Орлівка → RO: 753 вант. · 6 д 16 год"
   }
  },
  "queue": [
@@ -52,14 +52,14 @@
    "name": "Угринів",
    "to": "PL",
    "hours": 25,
-   "trucks": 123
+   "trucks": 122
   },
   {
    "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
-   "hours": 142,
-   "trucks": 616
+   "hours": 143,
+   "trucks": 618
   },
   {
    "oblast": "volyn",
@@ -83,11 +83,18 @@
    "trucks": 650
   },
   {
+   "oblast": "volyn",
+   "name": "Ягодин",
+   "to": "PL",
+   "hours": 42,
+   "trucks": 455
+  },
+  {
    "oblast": "zakarpattia",
    "name": "Дякове",
    "to": "RO",
    "hours": 127,
-   "trucks": 521
+   "trucks": 522
   },
   {
    "oblast": "chernivtsi",
@@ -101,7 +108,7 @@
    "name": "Орлівка",
    "to": "RO",
    "hours": 160,
-   "trucks": 751
+   "trucks": 753
   },
   {
    "oblast": "chernivtsi",
@@ -122,7 +129,7 @@
    "name": "Маяки-Удобне",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 4
+   "trucks": 3
   },
   {
    "oblast": "chernivtsi",
@@ -165,13 +172,6 @@
    "to": "SK",
    "hours": 159,
    "trucks": 811
-  },
-  {
-   "oblast": "zakarpattia",
-   "name": "Ужгород",
-   "to": "SK",
-   "hours": 0.0,
-   "trucks": 1
   }
  ]
 }
