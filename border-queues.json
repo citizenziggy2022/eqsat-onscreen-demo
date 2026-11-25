@@ -1,28 +1,28 @@
 {
- "updated": "2026-11-25T23:22:37Z",
- "checked_at": "2026-11-25T23:22:37Z",
+ "updated": "2026-11-25T23:25:57Z",
+ "checked_at": "2026-11-25T23:25:57Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Шегині → PL: 604 вант. · 7 д 2 год"
+   "note": "Шегині → PL: 603 вант. · 7 д 2 год"
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 1691 вант. · 6 д 22 год"
+   "note": "Ягодин → PL: 1689 вант. · 6 д 21 год"
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Дякове → RO: 518 вант. · 5 д 7 год"
+   "note": "Дякове → RO: 517 вант. · 5 д 7 год"
   },
   "chernivtsi": {
    "status": "outage",
    "note": "Порубне → RO: 998 вант. · 4 д 1 год"
   },
   "odesa": {
-   "status": "limited",
-   "note": "Рені → MD: 184 вант. · 2 д 9 год"
+   "status": "ok",
+   "note": "Рені → MD: 2 вант. · 0 год"
   },
   "vinnytsia": {
    "status": "ok",
@@ -63,21 +63,28 @@
    "name": "Шегині",
    "to": "PL",
    "hours": 170,
-   "trucks": 604
+   "trucks": 603
   },
   {
    "oblast": "lviv",
    "name": "Шегині",
    "to": "PL",
-   "hours": 149,
-   "trucks": 644
+   "hours": 150,
+   "trucks": 645
   },
   {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
-   "hours": 166,
-   "trucks": 1691
+   "hours": 40,
+   "trucks": 432
+  },
+  {
+   "oblast": "volyn",
+   "name": "Ягодин",
+   "to": "PL",
+   "hours": 165,
+   "trucks": 1689
   },
   {
    "oblast": "volyn",
@@ -91,7 +98,7 @@
    "name": "Дякове",
    "to": "RO",
    "hours": 127,
-   "trucks": 518
+   "trucks": 517
   },
   {
    "oblast": "chernivtsi",
@@ -132,8 +139,8 @@
    "oblast": "chernivtsi",
    "name": "Мамалига",
    "to": "MD",
-   "hours": 7.2,
-   "trucks": 48
+   "hours": 7,
+   "trucks": 46
   },
   {
    "oblast": "vinnytsia",
@@ -146,15 +153,8 @@
    "oblast": "odesa",
    "name": "Рені",
    "to": "MD",
-   "hours": 57,
-   "trucks": 184
-  },
-  {
-   "oblast": "odesa",
-   "name": "Рені",
-   "to": "MD",
-   "hours": 0.0,
-   "trucks": 1
+   "hours": 0.3,
+   "trucks": 2
   },
   {
    "oblast": "chernivtsi",
