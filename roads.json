@@ -1,16 +1,16 @@
 {
- "updated": "2026-11-25T14:39:34Z",
- "checked_at": "2026-11-25T14:39:34Z",
+ "updated": "2026-11-25T14:42:47Z",
+ "checked_at": "2026-11-25T14:42:47Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Шегині → PL: 596 вант. · 7 д 0 год"
+   "note": "Шегині → PL: 598 вант. · 7 д 1 год"
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 1739 вант. · 7 д 2 год"
+   "note": "Ягодин → PL: 1741 вант. · 7 д 2 год"
   },
   "zakarpattia": {
    "status": "outage",
@@ -18,11 +18,11 @@
   },
   "chernivtsi": {
    "status": "ok",
-   "note": "Порубне → RO: 2 вант. · 0 год"
+   "note": "Красноїльськ → RO: 5 вант. · 1 год"
   },
   "odesa": {
    "status": "outage",
-   "note": "Орлівка → RO: 738 вант. · 6 д 13 год"
+   "note": "Орлівка → RO: 739 вант. · 6 д 13 год"
   }
  },
  "queue": [
@@ -38,7 +38,7 @@
    "name": "Рава-Руська",
    "to": "PL",
    "hours": 122,
-   "trucks": 938
+   "trucks": 939
   },
   {
    "oblast": "lviv",
@@ -79,8 +79,8 @@
    "oblast": "lviv",
    "name": "Шегині",
    "to": "PL",
-   "hours": 168.0,
-   "trucks": 596
+   "hours": 168.6,
+   "trucks": 598
   },
   {
    "oblast": "lviv",
@@ -94,14 +94,14 @@
    "name": "Ягодин",
    "to": "PL",
    "hours": 41,
-   "trucks": 446
+   "trucks": 445
   },
   {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
    "hours": 170,
-   "trucks": 1739
+   "trucks": 1741
   },
   {
    "oblast": "volyn",
@@ -125,18 +125,25 @@
    "trucks": 0
   },
   {
+   "oblast": "chernivtsi",
+   "name": "Красноїльськ",
+   "to": "RO",
+   "hours": 0.6,
+   "trucks": 5
+  },
+  {
    "oblast": "odesa",
    "name": "Орлівка",
    "to": "RO",
    "hours": 157,
-   "trucks": 738
+   "trucks": 739
   },
   {
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
-   "hours": 0.3,
-   "trucks": 2
+   "hours": 0.0,
+   "trucks": 1
   },
   {
    "oblast": "odesa",
@@ -149,7 +156,7 @@
    "oblast": "odesa",
    "name": "Маяки-Удобне",
    "to": "MD",
-   "hours": 0.7,
+   "hours": 0.4,
    "trucks": 7
   },
   {
@@ -157,7 +164,7 @@
    "name": "Рені",
    "to": "MD",
    "hours": 57,
-   "trucks": 181
+   "trucks": 182
   },
   {
    "oblast": "odesa",

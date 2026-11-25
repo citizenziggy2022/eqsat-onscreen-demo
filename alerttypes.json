@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T14:41:40Z",
+ "updated": "2026-11-25T14:42:40Z",
  "source": "siren.pp.ua (UkraineAlarm)",
  "types": {
   "AIR": {
@@ -11,9 +11,10 @@
     "kherson",
     "kirovohrad",
     "luhansk",
-    "mykolaiv"
+    "mykolaiv",
+    "sumy"
    ],
-   "areas": 25
+   "areas": 27
   },
   "ARTILLERY": {
    "regions": [
@@ -241,7 +242,7 @@
       "AIR": 1
      },
      "sumy": {
-      "AIR": 1
+      "AIR": 2
      },
      "kherson": {
       "AIR": 3
@@ -249,8 +250,8 @@
     },
     "partial": true,
     "first_at": "2026-11-24T22:00:48Z",
-    "samples": 871,
-    "last_at": "2026-11-25T14:41:40Z",
+    "samples": 872,
+    "last_at": "2026-11-25T14:42:40Z",
     "covered_oblasts": [
      "cherkasy",
      "chernihiv",
@@ -282,7 +283,7 @@
     "gap_count": 2
    }
   },
-  "last_at": "2026-11-25T14:41:40Z",
+  "last_at": "2026-11-25T14:42:40Z",
   "active": [
    "crimea:AIR",
    "dnipro:AIR",
@@ -294,7 +295,8 @@
    "kherson:AIR",
    "kirovohrad:AIR",
    "luhansk:AIR",
-   "mykolaiv:AIR"
+   "mykolaiv:AIR",
+   "sumy:AIR"
   ],
   "coverage_from": "2026-11-23T19:39:03Z",
   "covered_oblasts": [
