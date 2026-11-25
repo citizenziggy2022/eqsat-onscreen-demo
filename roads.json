@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25T14:12:34Z",
- "checked_at": "2026-11-25T14:12:34Z",
+ "updated": "2026-11-25T14:15:56Z",
+ "checked_at": "2026-11-25T14:15:56Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -23,13 +23,16 @@
   "odesa": {
    "status": "outage",
    "note": "Орлівка → RO: 733 вант. · 6 д 12 год"
-  },
-  "vinnytsia": {
-   "status": "ok",
-   "note": "Могилів-Подільський → MD: 9 вант. · 0 год"
   }
  },
  "queue": [
+  {
+   "oblast": "lviv",
+   "name": "Краківець",
+   "to": "PL",
+   "hours": 125,
+   "trucks": 1095
+  },
   {
    "oblast": "lviv",
    "name": "Краківець",
@@ -42,14 +45,14 @@
    "name": "Рава-Руська",
    "to": "PL",
    "hours": 121,
-   "trucks": 928
+   "trucks": 929
   },
   {
    "oblast": "lviv",
    "name": "Смільниця",
    "to": "PL",
-   "hours": 3.7,
-   "trucks": 19
+   "hours": 4,
+   "trucks": 20
   },
   {
    "oblast": "lviv",
@@ -91,7 +94,7 @@
    "name": "Шегині",
    "to": "PL",
    "hours": 145,
-   "trucks": 627
+   "trucks": 628
   },
   {
    "oblast": "zakarpattia",
@@ -143,18 +146,11 @@
    "trucks": 61
   },
   {
-   "oblast": "vinnytsia",
-   "name": "Могилів-Подільський",
-   "to": "MD",
-   "hours": 0.0,
-   "trucks": 9
-  },
-  {
    "oblast": "odesa",
    "name": "Рені",
    "to": "MD",
-   "hours": 59,
-   "trucks": 187
+   "hours": 57,
+   "trucks": 183
   },
   {
    "oblast": "odesa",
@@ -167,8 +163,8 @@
    "oblast": "chernivtsi",
    "name": "Росошани",
    "to": "MD",
-   "hours": 0.3,
-   "trucks": 5
+   "hours": 0.0,
+   "trucks": 3
   },
   {
    "oblast": "odesa",
