@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T21:57:55Z",
+ "updated": "2026-11-25T21:58:55Z",
  "source": "siren.pp.ua (UkraineAlarm)",
  "types": {
   "AIR": {
@@ -14,12 +14,13 @@
     "kyivobl",
     "luhansk",
     "poltava",
+    "rivne",
     "sumy",
     "vinnytsia",
     "zaporizhzhia",
     "zhytomyr"
    ],
-   "areas": 77
+   "areas": 79
   },
   "ARTILLERY": {
    "regions": [
@@ -257,12 +258,15 @@
      },
      "chernivtsi": {
       "AIR": 1
+     },
+     "rivne": {
+      "AIR": 1
      }
     },
     "partial": true,
     "first_at": "2026-11-24T22:00:48Z",
-    "samples": 1241,
-    "last_at": "2026-11-25T21:57:55Z",
+    "samples": 1242,
+    "last_at": "2026-11-25T21:58:55Z",
     "covered_oblasts": [
      "cherkasy",
      "chernihiv",
@@ -294,7 +298,7 @@
     "gap_count": 3
    }
   },
-  "last_at": "2026-11-25T21:57:55Z",
+  "last_at": "2026-11-25T21:58:55Z",
   "active": [
    "cherkasy:AIR",
    "chernihiv:AIR",
@@ -309,6 +313,7 @@
    "kyivobl:AIR",
    "luhansk:AIR",
    "poltava:AIR",
+   "rivne:AIR",
    "sumy:AIR",
    "vinnytsia:AIR",
    "zaporizhzhia:AIR",
