@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-25T12:04:32Z",
+ "generated_at": "2026-11-25T12:07:46Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 6 / dropped 0, showing 2"
+   "status": "ok: kept 5 / dropped 0, showing 2"
   },
   {
    "name": "Херсонська ОВА",
@@ -41,6 +41,24 @@
  ],
  "bulletins": [
   {
+   "id": "auto-dsns_telegram-81545",
+   "title": "Наші рятувальники з Житомирщини.",
+   "body": "У їхніх поглядах - втома після непростих виїздів, зосередженість і полегшення від того, що найважче вже позаду. За кожним таким поглядом - робота, відповідальність і готовність прийти на допомогу тим, хто її потребує. Дякуємо, Надзвичайні, що ви поруч! Сайт…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/81545",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-25T12:06:38Z",
+   "expires_at": "2026-11-26T00:06:38Z",
+   "auto": true,
+   "en_mt": {
+    "title": "Our rescuers from Zhytomyr region.",
+    "body": "In their views - fatigue after not easy trips, focus and relief that the most difficult is already behind. Behind each such view - work, responsibility and readiness to come to the aid of those who need it. Thank you, Emergencies, that you are nearby. Site…",
+    "by": "m2m100"
+   }
+  },
+  {
    "id": "auto-dsns_telegram-81535",
    "title": "1 людина загинула, 5 - постраждали, 1 - врятували надзвичайники з палаючої кабіни вантажівки після…",
    "body": "Через постійні повітряні тривоги рятувальникам доводилося періодично призупиняти роботи та переходити в безпечні місця. Наразі триває ліквідація наслідків обстрілів. Інформація уточнюється. Сайт • Fb • X • IG • YT • TT",
@@ -73,24 +91,6 @@
    "en_mt": {
     "title": "STATE OF THE ENERGY SYSTEM",
     "body": "Russia continues to attack the energy infrastructure of Ukraine. Over the past day, as a result of enemy strikes, a significant number of energy facilities important for the electricity supply of regions have been damaged. Due to enemy attacks, there are consumers without electricity in…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-81529",
-   "title": "6 людей, серед яких двоє дітей, травмовані внаслідок ранкового російського удару по Запоріжжю!",
-   "body": "Серед постраждалих – троє чоловіків віком 32, 71 та 74 роки, 88-річна жінка та двоє дітей віком 5 і 11 років. Їм надається вся необхідна допомога. Інформація щодо точної кількості травмованих уточнюється. Рятувальники ліквідували займання гаража та двох…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/81529",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-25T10:01:00Z",
-   "expires_at": "2026-11-25T22:01:00Z",
-   "auto": true,
-   "en_mt": {
-    "title": "6 people, including two children, were injured as a result of the morning Russian strike on Zaporizhzhia!",
-    "body": "Among the victims are three men aged 32, 71 and 74 years, an 88-year-old woman and two children aged 5 and 11 years. They are being provided with all necessary assistance. Information about the exact number of injured is being clarified. Rescuers have extinguished the fire in the garage and two…",
     "by": "m2m100"
    }
   },
