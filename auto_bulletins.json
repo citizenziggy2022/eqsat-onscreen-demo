@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-25T18:11:20Z",
+ "generated_at": "2026-11-25T18:14:42Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 6 / dropped 2, showing 2"
+   "status": "ok: kept 5 / dropped 2, showing 2"
   },
   {
    "name": "Херсонська ОВА",
@@ -41,6 +41,19 @@
  ],
  "bulletins": [
   {
+   "id": "auto-dsns_telegram-81577",
+   "title": "росія знову атакувала Одесу",
+   "body": "Унаслідок ворожої атаки частково зруйнований двоповерховий житловий будинок та прибудова. На місці влучання виникла пожежа в будинку та гаражі. Також пошкоджені 2 легкові автомобілі. Робота рятувальників ускладнювалася повторними сигналами повітряної…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/81577",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-25T18:14:06Z",
+   "expires_at": "2026-11-26T06:14:06Z",
+   "auto": true
+  },
+  {
    "id": "auto-dsns_telegram-81561",
    "title": "У Дніпрі через складну ситуацію з електропостачанням рятувальники ДСНС розгорнули додаткові Пункти надання…",
    "body": "У п’яти наметах люди можуть зігрітися, випити гарячого чаю та зарядити мобільні телефони й інші ґаджети. Для найменших відвідувачів також облаштували дитячі куточки. Пункти забезпечені генераторами, тож працюватимуть автономно й цілодобово. На кожній локації…",
@@ -55,24 +68,6 @@
    "en_mt": {
     "title": "In Dnipro due to the difficult situation with electricity supply, rescuers of the State Emergency Service of Ukraine deployed additional Points of assistance…",
     "body": "In five tents people can warm up, drink hot tea and charge mobile phones and other gadgets. For the youngest visitors, children's corners are also equipped. The points are equipped with generators, so they will work autonomously and around the clock. At each location…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-81560",
-   "title": "У Карпатах зима вже не натякає на свій прихід - вона впевнено вкриває вершини снігом",
-   "body": "Так, 26 листопада на Закарпатті та Прикарпатті вдень очікується мокрий сніг, місцями - його налипання. На решті території країни істотних опадів не прогнозують, на Одещині пройде дощ. Вночі температура опуститься до 1-7° морозу, вдень коливатиметься від 3°…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/81560",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-25T14:10:20Z",
-   "expires_at": "2026-11-26T02:10:20Z",
-   "auto": true,
-   "en_mt": {
-    "title": "In the Carpathians, winter is no longer hinting at its arrival - it confidently covers the peaks with snow",
-    "body": "Yes, on November 26 in Zakarpattia and Prykarpattia during the day wet snow is expected, in some places - its freezing. In the rest of the country's territory no significant precipitation is forecast, in Odeschyna rain will pass. At night the temperature will drop to 1-7° frost, during the day it will fluctuate from 3°…",
     "by": "m2m100"
    }
   },
