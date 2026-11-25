@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25T07:10:54Z",
- "checked_at": "2026-11-25T07:10:54Z",
+ "updated": "2026-11-25T07:14:04Z",
+ "checked_at": "2026-11-25T07:14:04Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -8,13 +8,17 @@
    "status": "outage",
    "note": "Краківець → PL: 638 вант. · 7 д 21 год"
   },
+  "volyn": {
+   "status": "limited",
+   "note": "Устилуг → PL: 91 вант. · 1 д 1 год"
+  },
   "zakarpattia": {
    "status": "outage",
-   "note": "Ужгород → SK: 724 вант. · 5 д 22 год"
+   "note": "Ужгород → SK: 723 вант. · 5 д 21 год"
   },
   "chernivtsi": {
    "status": "ok",
-   "note": "Красноїльськ → RO: 5 вант. · 0 год"
+   "note": "Дяківці → RO: 1 вант. · 0 год"
   },
   "odesa": {
    "status": "outage",
@@ -37,25 +41,11 @@
    "trucks": 638
   },
   {
-   "oblast": "lviv",
-   "name": "Смільниця",
+   "oblast": "volyn",
+   "name": "Устилуг",
    "to": "PL",
-   "hours": 0.0,
-   "trucks": 2
-  },
-  {
-   "oblast": "lviv",
-   "name": "Угринів",
-   "to": "PL",
-   "hours": 32,
-   "trucks": 154
-  },
-  {
-   "oblast": "lviv",
-   "name": "Угринів",
-   "to": "PL",
-   "hours": 142,
-   "trucks": 616
+   "hours": 24.6,
+   "trucks": 91
   },
   {
    "oblast": "zakarpattia",
@@ -75,8 +65,8 @@
    "oblast": "chernivtsi",
    "name": "Красноїльськ",
    "to": "RO",
-   "hours": 0.3,
-   "trucks": 5
+   "hours": 0.0,
+   "trucks": 3
   },
   {
    "oblast": "odesa",
@@ -97,14 +87,14 @@
    "name": "Виноградівка",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 4
+   "trucks": 3
   },
   {
    "oblast": "odesa",
    "name": "Маяки-Удобне",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 0
+   "trucks": 1
   },
   {
    "oblast": "odesa",
@@ -145,8 +135,8 @@
    "oblast": "zakarpattia",
    "name": "Ужгород",
    "to": "SK",
-   "hours": 142,
-   "trucks": 724
+   "hours": 141,
+   "trucks": 723
   },
   {
    "oblast": "zakarpattia",
