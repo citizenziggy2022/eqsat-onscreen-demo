@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-25T06:41:24Z",
- "checked_at": "2026-11-25T06:41:24Z",
+ "updated": "2026-11-25T06:44:46Z",
+ "checked_at": "2026-11-25T06:44:46Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Краківець → PL: 641 вант. · 7 д 11 год"
+   "note": "Краківець → PL: 640 вант. · 7 д 11 год"
   },
   "chernivtsi": {
    "status": "ok",
@@ -14,7 +14,7 @@
   },
   "odesa": {
    "status": "outage",
-   "note": "Орлівка → RO: 706 вант. · 6 д 6 год"
+   "note": "Орлівка → RO: 707 вант. · 6 д 7 год"
   },
   "vinnytsia": {
    "status": "ok",
@@ -22,16 +22,23 @@
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Чоп (Тиса) → HU: 1469 вант. · 6 д 1 год"
+   "note": "Чоп (Тиса) → HU: 1467 вант. · 6 д 1 год"
   }
  },
  "queue": [
   {
    "oblast": "lviv",
+   "name": "Грушів",
+   "to": "PL",
+   "hours": 4.7,
+   "trucks": 27
+  },
+  {
+   "oblast": "lviv",
    "name": "Краківець",
    "to": "PL",
    "hours": 115,
-   "trucks": 1009
+   "trucks": 1006
   },
   {
    "oblast": "lviv",
@@ -45,14 +52,7 @@
    "name": "Краківець",
    "to": "PL",
    "hours": 179,
-   "trucks": 641
-  },
-  {
-   "oblast": "lviv",
-   "name": "Смільниця",
-   "to": "PL",
-   "hours": 0.3,
-   "trucks": 3
+   "trucks": 640
   },
   {
    "oblast": "lviv",
@@ -66,7 +66,7 @@
    "name": "Угринів",
    "to": "PL",
    "hours": 141,
-   "trucks": 611
+   "trucks": 612
   },
   {
    "oblast": "chernivtsi",
@@ -79,8 +79,8 @@
    "oblast": "odesa",
    "name": "Орлівка",
    "to": "RO",
-   "hours": 150,
-   "trucks": 706
+   "hours": 151,
+   "trucks": 707
   },
   {
    "oblast": "chernivtsi",
@@ -114,8 +114,8 @@
    "oblast": "odesa",
    "name": "Рені",
    "to": "MD",
-   "hours": 50,
-   "trucks": 160
+   "hours": 49,
+   "trucks": 158
   },
   {
    "oblast": "odesa",
@@ -157,14 +157,14 @@
    "name": "Ужгород",
    "to": "SK",
    "hours": 143,
-   "trucks": 731
+   "trucks": 728
   },
   {
    "oblast": "zakarpattia",
    "name": "Чоп (Тиса)",
    "to": "HU",
    "hours": 145,
-   "trucks": 1469
+   "trucks": 1467
   }
  ]
 }
