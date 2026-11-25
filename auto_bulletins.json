@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-25T06:17:08Z",
+ "generated_at": "2026-11-25T06:37:46Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-dsns_telegram-81508",
+   "title": "росія атакувала Ковельщину — постраждали 5 людей",
+   "body": "Увечері внаслідок ворожого удару загорілися три вантажні та два легкові автомобілі, а також цивільна будівля. Вогнеборці ліквідували всі осередки займання. Від ДСНС залучалися 50 рятувальників та 9 одиниць техніки. Сайт • Fb • X • IG • YT • TT",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/81508",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-25T06:37:01Z",
+   "expires_at": "2026-11-25T18:37:01Z",
+   "auto": true,
+   "en_mt": {
+    "title": "Russia attacked Kovelshchyna — 5 people were injured",
+    "body": "In the evening, as a result of the enemy strike, three trucks and two cars, as well as a civilian building, caught fire. Firefighters eliminated all sources of ignition. 50 rescuers and 9 units of equipment were involved from the State Emergency Service. Site • Fb • X • IG • YT • TT",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-dsns_telegram-81502",
    "title": "рф уночі атакувала область — є загиблий",
@@ -91,24 +109,6 @@
    "en_mt": {
     "title": "Due to damage to the energy infrastructure as a result of Russian shelling, part of the residents of Zaporizhzhia…",
     "body": "Energetics are working on the restoration of electricity supply and are doing everything possible to return the light to people's homes as soon as possible. I ask everyone to treat the situation with understanding. I will inform about the restoration of electricity supply additionally.",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-81482",
-   "title": "через російську атаку загинули люди, серед них — дитина",
-   "body": "Унаслідок атаки рф сталося загоряння складського приміщення. Попри постійну загрозу та повторні сигнали повітряної тривоги, які змушували переривати роботу, вогнеборці приборкали вогонь. В Одеському районі через влучання пошкоджено виробничу будівлю та 3…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/81482",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-24T19:34:42Z",
-   "expires_at": "2026-11-25T07:34:42Z",
-   "auto": true,
-   "en_mt": {
-    "title": "people were killed in a Russian attack, among them a child",
-    "body": "As a result of the rf attack, a fire broke out in the warehouse. Despite the constant threat and repeated air raid signals that forced them to interrupt work, firefighters extinguished the fire. In the Odessa district, due to the hit, a production building and 3…",
     "by": "m2m100"
    }
   }
