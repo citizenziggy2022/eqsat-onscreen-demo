@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T01:59:41Z",
+ "updated": "2026-11-25T02:02:41Z",
  "source": "siren.pp.ua (UkraineAlarm)",
  "types": {
   "AIR": {
@@ -17,7 +17,7 @@
     "zaporizhzhia",
     "zhytomyr"
    ],
-   "areas": 47
+   "areas": 48
   },
   "ARTILLERY": {
    "regions": [
@@ -236,10 +236,10 @@
       "AIR": 1
      }
     },
-    "partial": false,
+    "partial": true,
     "first_at": "2026-11-24T22:00:48Z",
-    "samples": 209,
-    "last_at": "2026-11-25T01:59:41Z",
+    "samples": 210,
+    "last_at": "2026-11-25T02:02:41Z",
     "covered_oblasts": [
      "cherkasy",
      "chernihiv",
@@ -267,10 +267,11 @@
      "zakarpattia",
      "zaporizhzhia",
      "zhytomyr"
-    ]
+    ],
+    "gap_count": 1
    }
   },
-  "last_at": "2026-11-25T01:59:41Z",
+  "last_at": "2026-11-25T02:02:41Z",
   "active": [
    "chernihiv:AIR",
    "crimea:AIR",
