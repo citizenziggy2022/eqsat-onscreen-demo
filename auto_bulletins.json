@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-25T13:02:21Z",
+ "generated_at": "2026-11-25T13:07:35Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -41,6 +41,24 @@
  ],
  "bulletins": [
   {
+   "id": "auto-dsns_telegram-81553",
+   "title": "‼ 1 людина загинула внаслідок російського обстрілу у Слов’янську",
+   "body": "росіяни завдали авіаудару по житловій забудові в центральній частині міста. Пошкоджень зазнали 4 багатоповерхові та 6 приватних будинків, а також автомобілі. На місці події надзвичайники обстежили територію та надали допомогу 2 пораненим. Також рятувальники…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/81553",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-25T13:06:55Z",
+   "expires_at": "2026-11-26T01:06:55Z",
+   "auto": true,
+   "en_mt": {
+    "title": "‼ 1 person died as a result of Russian shelling in Sloviansk",
+    "body": "Russians launched an air strike on residential buildings in the central part of the city. 4 high-rise and 6 private houses, as well as cars, were damaged. At the scene, rescuers inspected the territory and provided assistance to 2 injured. Also, rescuers…",
+    "by": "m2m100"
+   }
+  },
+  {
    "id": "auto-dsns_telegram-81545",
    "title": "Наші рятувальники з Житомирщини.",
    "body": "У їхніх поглядах - втома після непростих виїздів, зосередженість і полегшення від того, що найважче вже позаду. За кожним таким поглядом - робота, відповідальність і готовність прийти на допомогу тим, хто її потребує. Дякуємо, Надзвичайні, що ви поруч! Сайт…",
@@ -55,24 +73,6 @@
    "en_mt": {
     "title": "Our rescuers from Zhytomyr region.",
     "body": "In their views - fatigue after not easy trips, focus and relief that the most difficult is already behind. Behind each such view - work, responsibility and readiness to come to the aid of those who need it. Thank you, Emergencies, that you are nearby. Site…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-81535",
-   "title": "1 людина загинула, 5 - постраждали, 1 - врятували надзвичайники з палаючої кабіни вантажівки після…",
-   "body": "Через постійні повітряні тривоги рятувальникам доводилося періодично призупиняти роботи та переходити в безпечні місця. Наразі триває ліквідація наслідків обстрілів. Інформація уточнюється. Сайт • Fb • X • IG • YT • TT",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/81535",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-25T11:00:49Z",
-   "expires_at": "2026-11-25T23:00:49Z",
-   "auto": true,
-   "en_mt": {
-    "title": "1 person died, 5 were injured, 1 was rescued by rescuers from a burning truck cabin after…",
-    "body": "Through constant air alerts, rescuers had to periodically suspend work and move to safe places. Currently, the elimination of the consequences of shelling is ongoing. Information is being clarified. Site • Fb • X • IG • YT • TT",
     "by": "m2m100"
    }
   },
