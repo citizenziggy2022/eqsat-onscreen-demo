@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25T16:36:01Z",
- "checked_at": "2026-11-25T16:36:01Z",
+ "updated": "2026-11-25T16:39:17Z",
+ "checked_at": "2026-11-25T16:39:17Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -14,11 +14,11 @@
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Ужгород → SK: 816 вант. · 6 д 16 год"
+   "note": "Ужгород → SK: 814 вант. · 6 д 16 год"
   },
   "chernivtsi": {
-   "status": "limited",
-   "note": "Мамалига → MD: 72 вант. · 12 год"
+   "status": "ok",
+   "note": "Мамалига → MD: 70 вант. · 12 год"
   },
   "odesa": {
    "status": "outage",
@@ -39,6 +39,13 @@
    "to": "PL",
    "hours": 25,
    "trucks": 123
+  },
+  {
+   "oblast": "lviv",
+   "name": "Угринів",
+   "to": "PL",
+   "hours": 142,
+   "trucks": 616
   },
   {
    "oblast": "volyn",
@@ -66,7 +73,7 @@
    "name": "Дякове",
    "to": "RO",
    "hours": 128,
-   "trucks": 526
+   "trucks": 524
   },
   {
    "oblast": "chernivtsi",
@@ -107,8 +114,8 @@
    "oblast": "chernivtsi",
    "name": "Мамалига",
    "to": "MD",
-   "hours": 12.4,
-   "trucks": 72
+   "hours": 12,
+   "trucks": 70
   },
   {
    "oblast": "odesa",
@@ -143,14 +150,14 @@
    "name": "Малий Березний",
    "to": "SK",
    "hours": 0.0,
-   "trucks": 0
+   "trucks": 1
   },
   {
    "oblast": "zakarpattia",
    "name": "Ужгород",
    "to": "SK",
    "hours": 160,
-   "trucks": 816
+   "trucks": 814
   }
  ]
 }
