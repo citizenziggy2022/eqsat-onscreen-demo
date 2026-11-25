@@ -1,10 +1,9 @@
 {
- "updated": "2026-11-25T07:38:16Z",
+ "updated": "2026-11-25T07:51:19Z",
  "source": "siren.pp.ua (UkraineAlarm)",
  "types": {
   "AIR": {
    "regions": [
-    "chernihiv",
     "crimea",
     "dnipro",
     "donetsk",
@@ -12,6 +11,7 @@
     "kherson",
     "kyivobl",
     "luhansk",
+    "odesa",
     "sumy",
     "zaporizhzhia",
     "zhytomyr"
@@ -252,8 +252,8 @@
     },
     "partial": true,
     "first_at": "2026-11-24T22:00:48Z",
-    "samples": 508,
-    "last_at": "2026-11-25T07:38:16Z",
+    "samples": 509,
+    "last_at": "2026-11-25T07:51:19Z",
     "covered_oblasts": [
      "cherkasy",
      "chernihiv",
@@ -282,12 +282,11 @@
      "zaporizhzhia",
      "zhytomyr"
     ],
-    "gap_count": 1
+    "gap_count": 2
    }
   },
-  "last_at": "2026-11-25T07:38:16Z",
+  "last_at": "2026-11-25T07:51:19Z",
   "active": [
-   "chernihiv:AIR",
    "crimea:AIR",
    "dnipro:AIR",
    "dnipro:ARTILLERY",
@@ -298,6 +297,7 @@
    "kherson:AIR",
    "kyivobl:AIR",
    "luhansk:AIR",
+   "odesa:AIR",
    "sumy:AIR",
    "zaporizhzhia:AIR",
    "zhytomyr:AIR"
