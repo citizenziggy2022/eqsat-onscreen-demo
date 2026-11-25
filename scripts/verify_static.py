@@ -56,6 +56,22 @@ CONTACT_RULES = {
     ("MOLDOVA · TRANSNISTRIA", "112"): ("https://112.md/", r"Moldova", r"SERVICIUL NAȚIONAL UNIC PENTRU APELURILE DE URGENȚĂ 112 AL REPUBLICII MOLDOVA", r"numărul unic pentru apeluri(?:le)? de urgență", "either"),
     ("MOLDOVA · TRANSNISTRIA", "+373 69 64 99 76"): ("https://moldova.mfa.gov.ua/", r"hotline|24/7", r"Посольство України в Республіці Молдова", r"24/7 телефон"),
     ("MOLDOVA · TRANSNISTRIA", "+373 22 58 22 84"): ("https://moldova.mfa.gov.ua/", r"Consular|Консуль", r"Посольство України в Республіці Молдова", r"КОНСУЛЬСЬКИЙ ВІДДІЛ"),
+    # Added Nov 25 2026 (candidate): the "family" card repeats numbers that the other cards already verify, plus NIB, the
+    # Missing Persons hotline, ICRC and Red Cross tracing. Each rule needs the number beside its own label on an official page.
+    ("family", "1648"): ("https://nib.gov.ua/", r"National Information Bureau|НІБ", r"Національне інформаційне бюро", r"ГАРЯЧА ЛІНІЯ ЦІЛОДОБОВО", "either"),
+    ("family", "+380 44 287 81 65"): ("https://nib.gov.ua/", r"NIB|National Information Bureau|НІБ", r"Національне інформаційне бюро", r"дзвінки з-за кордону", "after"),
+    ("family", "1698"): ("https://mvs.gov.ua/upovnovazenii-z-pitan-osib-zniklix-bezvisti-za-osoblivix-obstavin-1/kontakti/gariaca-liniia-upovnovazenogo-z-pitan-osib-zniklix-bezvisti-za-osoblivix-obstavin", r"Missing persons|зниклих", r"Уповноваженого з питань осіб, зниклих безвісти", r"за коротким номером"),
+    ("family", "0 800 300 155"): ("https://www.icrc.org/en/document/central-tracing-agency-missing-persons-ukraine", r"ICRC|МКЧХ", r"Central Tracing Agency", r"Call the ICRC In Ukraine"),
+    ("family", "0 800 332 656"): ("https://redcross.org.ua/rfl/", r"Red Cross|Червоний Хрест", r"СЛУЖБИ РОЗШУКУ УКРАЇНСЬКОГО ЧЕРВОНОГО ХРЕСТА", r"Зателефонувати на гарячу лінію"),
+}
+# The family card shows the same numbers with the same services; the same sources and labels apply (own-label check still runs per line).
+CONTACT_RULES[("family", "1678")] = CONTACT_RULES[("HOTLINES", "1678")]
+CONTACT_RULES[("family", "+380 44 299 74 08")] = CONTACT_RULES[("FROM OCCUPIED AREAS OR ABROAD", "+380 44 299 74 08")]
+CONTACT_RULES[("family", "0 800 300 529")] = CONTACT_RULES[("HOTLINES", "0 800 300 529")]
+# AM lines: the Ukrainian Radio page must list this frequency with the same hours the card shows.
+AM_RULES = {
+    "1278": (r"1278\s*кГц\s*\(цілодобово\)", r"24 h"),
+    "1386": (r"1386\s*кГц\s*\(з 00:00 до 6:30", r"night|00:00"),
 }
 # 112 only: if the DSNS page is blocked, the Interior Ministry's 112 page may stand in (number beside its own description).
 NATIONAL_FALLBACK = {"112": ("https://mvs.gov.ua/mvs-specprojekti/sluzba-112-usi-ekstreni-sluzbi-za-jedinim-nomerom", r"номер для звернення")}
@@ -69,8 +85,16 @@ def contact_rule(card_id, line):
     for url, own_label, identity, source_label, *mode in (rule if isinstance(rule, list) else [rule]):
         if not re.search(own_label, f"{line.get('en', '')} {line.get('uk', '')}", re.I):
             return None
-        out.append((url, identity, source_label, bool(mode and mode[0] == "either")))
+        out.append((url, identity, source_label, (mode[0] if mode else "")))
     return out
+
+
+def contact_bound_after(text, number, label_re):
+    """Number first, its own label right after (nothing but filler, no digits or ';' between)."""
+    digits = re.sub(r"\D", "", number)
+    phone = r"[\s().+\-]*".join(map(re.escape, digits))
+    m = re.search(rf"(?<!\d){phone}(?![\s().+\-]*\d)[^;\d]{{0,40}}?(?:{label_re})", text, re.I)
+    return m.group(0)[:180] if m else None
 
 
 def contact_bound(text, number, label_re):
@@ -156,6 +180,19 @@ def check_line(card_id, line):
         return hfcc_check(line)
     # the national rule applies only to the national card's own lines (the service label must fit), never to a same
     # number elsewhere (Moldova's 112, an advice line that mentions 101)
+    am = re.match(r"\s*(\d{4})\s*kHz\s*AM", num, re.I)
+    if am and am.group(1) in AM_RULES and "ukr.radio" in (line.get("source_url") or ""):
+        freq_re, own_re = AM_RULES[am.group(1)]
+        if not re.search(own_re, f"{line.get('en','')} {line.get('uk','')}", re.I):
+            return "unverified", line.get("source_url"), "line label does not match the rule", None
+        body, why = fetch(line["source_url"])
+        if body is None:
+            return "failed", line["source_url"], f"source page did not load ({why})", None
+        text = visible_text(body.decode("utf-8", "ignore"))
+        m = re.search(freq_re, text, re.I) if re.search(r"Українське радіо|Укрмедіа|ukr\.radio", text, re.I) else None
+        if m:
+            return "confirmed", line["source_url"], m.group(0)[:160], None
+        return "unverified", line["source_url"], "source loads but does not list this AM frequency with the card's hours", None
     rule = NATIONAL.get(num) if re.search(NATIONAL_LINE_LABEL.get(num, r"$^"), f"{line.get('en','')} {line.get('uk','')}", re.I) else None
     if rule:
         url, label_re = rule
@@ -179,7 +216,7 @@ def check_line(card_id, line):
     rules = contact_rule(card_id, line)
     if rules:
         blocked = []
-        for url, identity, source_label, either in rules:
+        for url, identity, source_label, how in rules:
             body, why = fetch(url)
             if body is None:
                 blocked.append(f"{url} ({why})")
@@ -188,7 +225,12 @@ def check_line(card_id, line):
             text = visible_text(body.decode("utf-8", "ignore"))
             if not re.search(identity, text, re.I):
                 return "unverified", url, "source loads but its expected service identity is missing", note
-            got = label_bound(text, num, source_label) if either else contact_bound(text, num, source_label)
+            if how == "either":
+                got = label_bound(text, num, source_label)
+            elif how == "after":
+                got = contact_bound_after(text, num, source_label)
+            else:
+                got = contact_bound(text, num, source_label)
             if got:
                 return "confirmed", url, got, note
             return "unverified", url, "source loads but does not show this number beside its contact label; review required, not evidence of a changed number", note
