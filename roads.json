@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25T07:37:11Z",
- "checked_at": "2026-11-25T07:37:11Z",
+ "updated": "2026-11-25T07:40:52Z",
+ "checked_at": "2026-11-25T07:40:52Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -10,7 +10,7 @@
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Дякове → RO: 503 вант. · 5 д 4 год"
+   "note": "Дякове → RO: 504 вант. · 5 д 4 год"
   },
   "chernivtsi": {
    "status": "outage",
@@ -18,11 +18,11 @@
   },
   "odesa": {
    "status": "outage",
-   "note": "Орлівка → RO: 711 вант. · 6 д 7 год"
+   "note": "Орлівка → RO: 710 вант. · 6 д 7 год"
   },
   "vinnytsia": {
    "status": "ok",
-   "note": "Могилів-Подільський → MD: 1 вант. · 0 год"
+   "note": "Могилів-Подільський → MD: 2 вант. · 0 год"
   }
  },
  "queue": [
@@ -35,17 +35,24 @@
   },
   {
    "oblast": "lviv",
-   "name": "Угринів",
+   "name": "Смільниця",
    "to": "PL",
-   "hours": 32,
-   "trucks": 153
+   "hours": 0.0,
+   "trucks": 1
   },
   {
    "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
-   "hours": 143,
-   "trucks": 617
+   "hours": 31,
+   "trucks": 152
+  },
+  {
+   "oblast": "lviv",
+   "name": "Угринів",
+   "to": "PL",
+   "hours": 142,
+   "trucks": 615
   },
   {
    "oblast": "lviv",
@@ -66,7 +73,7 @@
    "name": "Дякове",
    "to": "RO",
    "hours": 124,
-   "trucks": 503
+   "trucks": 504
   },
   {
    "oblast": "chernivtsi",
@@ -87,7 +94,7 @@
    "name": "Орлівка",
    "to": "RO",
    "hours": 151,
-   "trucks": 711
+   "trucks": 710
   },
   {
    "oblast": "chernivtsi",
@@ -100,8 +107,8 @@
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
-   "hours": 2.6,
-   "trucks": 20
+   "hours": 2.8,
+   "trucks": 21
   },
   {
    "oblast": "chernivtsi",
@@ -129,7 +136,7 @@
    "name": "Могилів-Подільський",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 1
+   "trucks": 2
   },
   {
    "oblast": "odesa",
@@ -151,6 +158,13 @@
    "to": "MD",
    "hours": 0.0,
    "trucks": 0
+  },
+  {
+   "oblast": "odesa",
+   "name": "Старокозаче",
+   "to": "MD",
+   "hours": 0.0,
+   "trucks": 5
   },
   {
    "oblast": "odesa",
