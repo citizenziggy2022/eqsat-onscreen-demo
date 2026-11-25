@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25T22:02:23Z",
- "checked_at": "2026-11-25T22:02:23Z",
+ "updated": "2026-11-25T22:05:53Z",
+ "checked_at": "2026-11-25T22:05:53Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -10,7 +10,7 @@
   },
   "volyn": {
    "status": "limited",
-   "note": "Ягодин → PL: 428 вант. · 1 д 15 год"
+   "note": "Ягодин → PL: 429 вант. · 1 д 15 год"
   },
   "zakarpattia": {
    "status": "outage",
@@ -18,11 +18,11 @@
   },
   "chernivtsi": {
    "status": "outage",
-   "note": "Порубне → RO: 1001 вант. · 4 д 1 год"
+   "note": "Порубне → RO: 1000 вант. · 4 д 1 год"
   },
   "odesa": {
-   "status": "limited",
-   "note": "Старокозаче → MD: 51 вант. · 12 год"
+   "status": "ok",
+   "note": "Виноградівка → MD: 1 вант. · 0 год"
   }
  },
  "queue": [
@@ -52,14 +52,14 @@
    "name": "Угринів",
    "to": "PL",
    "hours": 140,
-   "trucks": 607
+   "trucks": 608
   },
   {
    "oblast": "volyn",
    "name": "Устилуг",
    "to": "PL",
-   "hours": 18.3,
-   "trucks": 69
+   "hours": 17.4,
+   "trucks": 66
   },
   {
    "oblast": "lviv",
@@ -73,14 +73,14 @@
    "name": "Шегині",
    "to": "PL",
    "hours": 150,
-   "trucks": 647
+   "trucks": 646
   },
   {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
    "hours": 39,
-   "trucks": 428
+   "trucks": 429
   },
   {
    "oblast": "volyn",
@@ -108,7 +108,7 @@
    "name": "Порубне",
    "to": "RO",
    "hours": 97,
-   "trucks": 1001
+   "trucks": 1000
   },
   {
    "oblast": "chernivtsi",
@@ -157,7 +157,7 @@
    "name": "Росошани",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 1
+   "trucks": 0
   },
   {
    "oblast": "odesa",
@@ -165,13 +165,6 @@
    "to": "MD",
    "hours": 0.0,
    "trucks": 0
-  },
-  {
-   "oblast": "odesa",
-   "name": "Старокозаче",
-   "to": "MD",
-   "hours": 12.3,
-   "trucks": 51
   },
   {
    "oblast": "odesa",
@@ -198,8 +191,8 @@
    "oblast": "zakarpattia",
    "name": "Лужанка",
    "to": "HU",
-   "hours": 88,
-   "trucks": 318
+   "hours": 8.2,
+   "trucks": 33
   }
  ]
 }
