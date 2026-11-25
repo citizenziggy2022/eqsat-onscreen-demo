@@ -15,7 +15,7 @@ button,select,input[type=text]{background:#202a35;color:var(--tx);border:1px sol
 button{cursor:pointer;min-height:32px}button:hover{border-color:var(--acc)}button.primary{background:#0b4a6b;border-color:#1b7aa8}button:disabled{opacity:.4;cursor:default}
 .item{display:grid;grid-template-columns:28px 1fr auto;gap:8px;align-items:center;padding:8px 6px;border-top:1px solid var(--line)}
 .item:first-child{border-top:0}.n{color:var(--mut);text-align:center}.nm{overflow-wrap:anywhere}.sub{color:var(--mut);font-size:12px}
-.chip{font-size:11px;padding:1px 7px;border-radius:99px;border:1px solid var(--line);margin-left:6px}.chip.live{color:var(--acc);border-color:var(--acc)}.chip.done{color:var(--ok);border-color:var(--ok)}
+.chip{font-size:11px;padding:1px 7px;border-radius:99px;border:1px solid var(--line);margin-left:6px}.chip.live{color:var(--acc);border-color:var(--acc)}.chip.done{color:var(--ok);border-color:var(--ok)}.chip.bad{color:var(--bad);border-color:var(--bad)}.chip.warn{color:var(--warn);border-color:var(--warn)}.chip.ok{color:var(--ok);border-color:var(--ok)}.note{font-size:12px;margin-top:2px}.note.bad{color:var(--bad)}.note.warn{color:var(--warn)}
 .bar{height:6px;background:#202a35;border-radius:3px;margin-top:4px;overflow:hidden}.bar i{display:block;height:100%;background:var(--acc);width:0}
 canvas{width:100%;height:auto;background:#0b0f14;border:1px solid var(--line);border-radius:6px;image-rendering:pixelated;display:block}
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:8px;margin-top:10px}.stat{background:#11171d;border:1px solid var(--line);border-radius:8px;padding:6px 8px}.stat b{display:block;font-size:16px}.stat span{font-size:11px;color:var(--mut)}
@@ -30,10 +30,10 @@ ul.k{margin:6px 0 0;padding-left:18px}ul.k li{margin:3px 0}.mut{color:var(--mut)
 <div style="display:grid;gap:14px;align-content:start">
 <section><h2>Queue</h2>
 <div class="row" style="margin-bottom:8px"><input type="text" id="nm" placeholder="name e.g. news-pack.zip" style="flex:1;min-width:130px"><select id="sz"><option value="6">6 KB</option><option value="24">24 KB</option><option value="60" selected>60 KB</option><option value="150">150 KB</option></select><button id="add">Add mock file</button></div>
-<div class="row" style="margin-bottom:6px"><label>or a local file (read in this page only): <input type="file" id="fl" style="max-width:190px"></label></div>
+<div class="row" style="margin-bottom:6px"><label>Import real payload ZIPs, or one container ZIP holding several (read in this browser tab only, never uploaded): <input type="file" id="fl" multiple accept=".zip,.bin,application/zip" style="max-width:100%"></label></div><div class="sub" id="imp" style="margin-bottom:6px"></div>
 <div id="q"></div><div class="sub" id="qnote" style="margin-top:8px">Reordering affects only files that have not started. The file being sent is locked until it ends.</div></section>
 <section><h2>Simulated link</h2>
-<div class="row"><button class="primary" id="go">Start</button><button id="rs">Reset</button><label>speed <select id="sp"><option value="4">slow</option><option value="14" selected>normal</option><option value="50">fast</option></select></label></div>
+<div class="row"><button class="primary" id="go">Start</button><button id="rs">Reset</button><label>speed <select id="sp"><option value="4">slow</option><option value="14" selected>normal</option><option value="50">fast</option><option value="1000">turbo</option></select></label></div>
 <div class="row" style="margin-top:8px"><label>packet loss <input type="range" id="lo" min="0" max="5" step="0.5" value="0"> <b id="lov">0%</b></label><label>corruption <input type="range" id="co" min="0" max="5" step="0.5" value="0"> <b id="cov">0%</b></label></div>
 <div class="sub" style="margin:6px 0">Loss and corruption are applied to data packets after sending, only on the simulated link.</div>
 <canvas id="cv" width="640" height="120" aria-label="packet strip"></canvas>
@@ -160,6 +160,54 @@ ul.k{margin:6px 0 0;padding-left:18px}ul.k li{margin:3px 0}.mut{color:var(--mut)
 })(typeof window !== 'undefined' ? window : globalThis);
 </script>
 <script>
+// Local ZIP reader + payload checker. Runs only in this page: nothing is uploaded or stored.
+(function (root) {
+  const CT = (() => { const t = new Uint32Array(256); for (let n = 0; n < 256; n++) { let c = n; for (let k = 0; k < 8; k++) c = c & 1 ? 0xEDB88320 ^ (c >>> 1) : c >>> 1; t[n] = c >>> 0; } return t; })();
+  function crc(u8) { let c = 0xFFFFFFFF; for (let i = 0; i < u8.length; i++) c = CT[(c ^ u8[i]) & 255] ^ (c >>> 8); return (c ^ 0xFFFFFFFF) >>> 0; }
+  async function inflateRaw(u8) { const s = new Blob([u8]).stream().pipeThrough(new DecompressionStream('deflate-raw')); return new Uint8Array(await new Response(s).arrayBuffer()); }
+  function readZip(u8) {
+    const dv = new DataView(u8.buffer, u8.byteOffset, u8.byteLength); let e = -1;
+    for (let i = u8.length - 22; i >= Math.max(0, u8.length - 65557); i--) if (dv.getUint32(i, true) === 0x06054b50) { e = i; break; }
+    if (e < 0) throw new Error('not a ZIP (no end-of-archive record)');
+    const n = dv.getUint16(e + 10, true), cdOff = dv.getUint32(e + 16, true);
+    if (n === 0xFFFF || cdOff === 0xFFFFFFFF) throw new Error('ZIP64 is not supported in this mock');
+    const ents = []; let p = cdOff;
+    for (let i = 0; i < n; i++) {
+      if (p + 46 > u8.length || dv.getUint32(p, true) !== 0x02014b50) throw new Error('damaged central directory');
+      const nl = dv.getUint16(p + 28, true), el = dv.getUint16(p + 30, true), cl = dv.getUint16(p + 32, true);
+      ents.push({ method: dv.getUint16(p + 10, true), crc: dv.getUint32(p + 16, true), csize: dv.getUint32(p + 20, true), usize: dv.getUint32(p + 24, true), off: dv.getUint32(p + 42, true), name: new TextDecoder().decode(u8.subarray(p + 46, p + 46 + nl)) });
+      p += 46 + nl + el + cl;
+    }
+    async function data(en) {
+      const q = en.off; if (q + 30 > u8.length || dv.getUint32(q, true) !== 0x04034b50) throw new Error('bad local header');
+      const s = q + 30 + dv.getUint16(q + 26, true) + dv.getUint16(q + 28, true), raw = u8.subarray(s, s + en.csize);
+      if (en.method === 0) return raw; if (en.method === 8) return inflateRaw(raw); throw new Error('unsupported method ' + en.method);
+    }
+    return { entries: ents, data };
+  }
+  // Checks a payload ZIP shaped like an Ouinet client cache snapshot (data-v3/<xx>/<hash>/{head,body,sigs}).
+  async function analyze(u8) {
+    const r = { level: 'ok', notes: [], files: 0, heads: 0, bodies: 0, sigs: 0, crcBad: 0 };
+    let z; try { z = readZip(u8); } catch (x) { r.level = 'bad'; r.notes.push('Not a readable ZIP: ' + x.message); return r; }
+    const files = z.entries.filter(e => !e.name.endsWith('/')); r.files = files.length;
+    for (const e of files) {
+      const b = e.name.split('/').pop();
+      if (b === 'head') r.heads++; else if (b === 'body') r.bodies++; else if (b === 'sigs') r.sigs++;
+      try { if (crc(await z.data(e)) !== e.crc) r.crcBad++; } catch (x) { r.crcBad++; }
+    }
+    if (r.crcBad) { r.level = 'bad'; r.notes.push(r.crcBad + ' file(s) fail the ZIP CRC check'); }
+    if (r.files === 0) { r.level = 'bad'; r.notes.push('EMPTY: the ZIP holds only empty folders, no site content'); return r; }
+    if (r.heads === 0) { if (r.level === 'ok') r.level = 'warn'; r.notes.push('No cached responses found (not the expected cache layout)'); return r; }
+    const nb = r.heads - r.bodies; if (nb > 0) { if (r.level === 'ok') r.level = 'warn'; r.notes.push('PARTIAL: ' + nb + ' of ' + r.heads + ' cached responses have no stored body (can be redirects or errors)'); }
+    if (r.sigs !== r.heads) { if (r.level === 'ok') r.level = 'warn'; r.notes.push('signature files (' + r.sigs + ') do not match responses (' + r.heads + ')'); }
+    if (r.notes.length === 0) r.notes.push(r.heads + ' cached responses, all with body and signatures');
+    return r;
+  }
+  const api = { crc, readZip, analyze };
+  if (typeof module !== 'undefined') module.exports = api; else root.ZipTools = api;
+})(typeof window !== 'undefined' ? window : globalThis);
+</script>
+<script>
 const C=window.MockCore;let inj,sentItems,timer=null,seed=1,cellN=0;
 const $=id=>document.getElementById(id),el=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e};
 const fmt=n=>n>=1024?(n/1024).toFixed(n>=10240?0:1)+' KB':n+' B';
@@ -171,7 +219,7 @@ function render(){const q=$('q');q.textContent='';const rows=[];
  inj.queue.forEach(it=>rows.push({it,st:'queued'}));
  if(!rows.length){q.appendChild(el('div','sub','Queue is empty.'));return}
  rows.forEach((r,i)=>{const d=el('div','item');d.appendChild(el('div','n',r.st==='queued'?String(i+1-sentItems.length):'\u2022'));
-  const m=el('div');const t=el('div','nm',r.it.name);if(r.st==='live')t.appendChild(el('span','chip live','sending, locked'));if(r.st==='done')t.appendChild(el('span','chip done','sent'));m.appendChild(t);m.appendChild(el('div','sub',fmt(r.it.size)+' \u00b7 sha '+r.it.sha.slice(0,10)));
+  const m=el('div');const t=el('div','nm',r.it.name);if(r.st==='live')t.appendChild(el('span','chip live','sending, locked'));if(r.st==='done')t.appendChild(el('span','chip done','sent'));m.appendChild(t);m.appendChild(el('div','sub',fmt(r.it.size)+' \u00b7 sha '+r.it.sha.slice(0,10)));if(r.it.meta){const mt=r.it.meta;t.appendChild(el('span','chip '+mt.level,mt.level==='ok'?'checked ok':mt.level==='warn'?'partial':'empty / bad'));mt.notes.forEach(n=>m.appendChild(el('div','note '+(mt.level==='ok'?'':mt.level),n)))}
   if(r.st==='live'){const b=el('div','bar'),f=el('i');f.style.width=(100*(1-inj.curPk.length/r.it.total))+'%';b.appendChild(f);m.appendChild(b)}
   d.appendChild(m);const a=el('div','row');
   if(r.st==='queued'){const qi=inj.queue.indexOf(r.it);[['\u25b2',-1],['\u25bc',1]].forEach(([s,dl])=>{const b=el('button',null,s);b.setAttribute('aria-label',dl<0?'move up':'move down');b.disabled=(dl<0&&qi===0)||(dl>0&&qi===inj.queue.length-1);b.onclick=()=>{inj.move(r.it.id,dl);render()};a.appendChild(b)});const x=el('button',null,'\u2715');x.setAttribute('aria-label','remove');x.onclick=()=>{inj.remove(r.it.id);render()};a.appendChild(x)}
@@ -190,7 +238,13 @@ $('go').onclick=()=>{if(timer){stop();$('go').textContent='Resume';return}if(inj
 $('rs').onclick=reset;
 $('lo').oninput=()=>$('lov').textContent=$('lo').value+'%';$('co').oninput=()=>$('cov').textContent=$('co').value+'%';
 $('add').onclick=()=>{addMock($('nm').value.trim(),+$('sz').value);$('nm').value='';render();if(!timer&&!inj.idle())$('go').textContent=inj.sent.length?'Resume':'Start'};
-$('fl').onchange=async e=>{const f=e.target.files[0];if(!f)return;if(f.size>2e6){alert('Mock limit 2 MB per file');return}inj.add(f.name,new Uint8Array(await f.arrayBuffer()));e.target.value='';render()};
+$('fl').onchange=async e=>{const fs=[...e.target.files];e.target.value='';if(!fs.length)return;const im=$('imp');let added=0,bad=0,warn=0,ok=0;
+ const put=async(name,u8)=>{if(u8.length>8e6){im.textContent='Skipped '+name+': over the 8 MB mock limit per payload';return}const a=await ZipTools.analyze(u8);const it=inj.add(name,u8);it.meta=a;added++;a.level==='bad'?bad++:a.level==='warn'?warn++:ok++;render();await new Promise(r=>setTimeout(r))};
+ try{for(const f of fs){if(f.size>6.4e7){im.textContent='Skipped '+f.name+': over 64 MB';continue}im.textContent='Reading '+f.name+'...';const u8=new Uint8Array(await f.arrayBuffer());let z=null;try{z=ZipTools.readZip(u8)}catch(x){}
+  const inner=z?z.entries.filter(en=>!en.name.endsWith('/')&&/\.zip$/i.test(en.name)):[];
+  if(inner.length){for(const en of inner){im.textContent='Checking '+en.name.split('/').pop()+'...';await put(en.name.split('/').pop(),await z.data(en))}}else await put(f.name,u8)}
+  im.textContent='Added '+added+' payload(s): '+ok+' checked ok, '+warn+' partial, '+bad+' empty or bad. Flagged ones are still queued so you can test them.'}catch(x){im.textContent='Import stopped: '+x.message}
+ if(!timer&&!inj.idle())$('go').textContent=inj.sent.length?'Resume':'Start'};
 $('chk').onclick=()=>{const ch=C.channel(inj.sent,+$('lo').value,+$('co').value,seed++);const r=C.extract(ch.packets);const res=$('res');res.textContent='';
  const done=sentItems.filter(it=>!(inj.cur===it&&inj.curPk.length>0));
  const t=el('table');t.innerHTML='<tr><th>File</th><th>Size</th><th>Result</th></tr>';
