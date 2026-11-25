@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-25T06:31:09Z",
- "checked_at": "2026-11-25T06:31:09Z",
+ "updated": "2026-11-25T06:34:23Z",
+ "checked_at": "2026-11-25T06:34:23Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -10,11 +10,11 @@
   },
   "chernivtsi": {
    "status": "ok",
-   "note": "Дяківці → RO: 0 вант. · 0 год"
+   "note": "Порубне → RO: 15 вант. · 3 год"
   },
   "odesa": {
    "status": "outage",
-   "note": "Орлівка → RO: 704 вант. · 6 д 6 год"
+   "note": "Орлівка → RO: 703 вант. · 6 д 6 год"
   },
   "vinnytsia": {
    "status": "ok",
@@ -22,7 +22,7 @@
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Чоп (Тиса) → HU: 1477 вант. · 6 д 1 год"
+   "note": "Чоп (Тиса) → HU: 1474 вант. · 6 д 1 год"
   }
  },
  "queue": [
@@ -59,14 +59,21 @@
    "name": "Орлівка",
    "to": "RO",
    "hours": 150,
-   "trucks": 704
+   "trucks": 703
+  },
+  {
+   "oblast": "chernivtsi",
+   "name": "Порубне",
+   "to": "RO",
+   "hours": 2.6,
+   "trucks": 15
   },
   {
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
    "hours": 0.0,
-   "trucks": 2
+   "trucks": 1
   },
   {
    "oblast": "odesa",
@@ -94,7 +101,7 @@
    "name": "Рені",
    "to": "MD",
    "hours": 51,
-   "trucks": 165
+   "trucks": 163
   },
   {
    "oblast": "odesa",
@@ -136,7 +143,7 @@
    "name": "Чоп (Тиса)",
    "to": "HU",
    "hours": 145,
-   "trucks": 1477
+   "trucks": 1474
   }
  ]
 }
