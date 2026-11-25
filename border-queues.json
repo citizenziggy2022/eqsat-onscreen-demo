@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-25T09:28:17Z",
- "checked_at": "2026-11-25T09:28:17Z",
+ "updated": "2026-11-25T09:31:34Z",
+ "checked_at": "2026-11-25T09:31:34Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Угринів → PL: 616 вант. · 5 д 22 год"
+   "note": "Рава-Руська → PL: 591 вант. · 8 д 3 год"
   },
   "volyn": {
    "status": "outage",
@@ -39,17 +39,24 @@
   },
   {
    "oblast": "lviv",
-   "name": "Смільниця",
+   "name": "Рава-Руська",
    "to": "PL",
-   "hours": 0.0,
-   "trucks": 2
+   "hours": 119,
+   "trucks": 910
+  },
+  {
+   "oblast": "lviv",
+   "name": "Рава-Руська",
+   "to": "PL",
+   "hours": 195,
+   "trucks": 591
   },
   {
    "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
    "hours": 31,
-   "trucks": 150
+   "trucks": 149
   },
   {
    "oblast": "lviv",
@@ -111,8 +118,8 @@
    "oblast": "odesa",
    "name": "Виноградівка",
    "to": "MD",
-   "hours": 0.2,
-   "trucks": 6
+   "hours": 0.0,
+   "trucks": 2
   },
   {
    "oblast": "odesa",
@@ -175,7 +182,7 @@
    "name": "Лужанка",
    "to": "HU",
    "hours": 90,
-   "trucks": 324
+   "trucks": 323
   }
  ]
 }
