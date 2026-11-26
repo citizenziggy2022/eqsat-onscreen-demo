@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-26T10:48:27Z",
+ "generated_at": "2026-11-26T10:51:44Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -18,7 +18,7 @@
    "name": "Запорізька ОВА",
    "url": "https://t.me/s/zoda_gov_ua",
    "verified": "linked from zoda.gov.ua",
-   "status": "ok: kept 1 / dropped 1, showing 1"
+   "status": "ok: kept 2 / dropped 1, showing 2"
   },
   {
    "name": "Донецька ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-zoda_gov_ua-69351",
+   "title": "Ворог атакував FPV-дронами Космічний район Запоріжжя",
+   "body": "Поранено трьох людей. Медики надають їм усю необхідну допомогу.",
+   "source": "Запорізька ОВА",
+   "source_url": "https://t.me/zoda_gov_ua/69351",
+   "region": "Запоріжжя",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-26T10:50:09Z",
+   "expires_at": "2026-11-26T22:50:09Z",
+   "auto": true,
+   "en_mt": {
+    "title": "The enemy attacked the Space District of Zaporizhzhia with FPV drones",
+    "body": "Three people were injured. Medics are providing them with all necessary assistance.",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-dsns_telegram-81638",
    "title": "У Мобільному рятувальному центрі швидкого реагування «Суми» ДСНС України відбувся черговий випуск за…",
