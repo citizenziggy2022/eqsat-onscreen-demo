@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-26T01:01:03Z",
- "checked_at": "2026-11-26T01:01:03Z",
+ "updated": "2026-11-26T01:04:18Z",
+ "checked_at": "2026-11-26T01:04:18Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -17,8 +17,8 @@
    "note": "Дяківці → RO: 0 вант. · 0 год"
   },
   "odesa": {
-   "status": "limited",
-   "note": "Рені → MD: 175 вант. · 2 д 6 год"
+   "status": "ok",
+   "note": "Виноградівка → MD: 0 вант. · 0 год"
   },
   "vinnytsia": {
    "status": "ok",
@@ -26,7 +26,7 @@
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Чоп (Тиса) → HU: 1640 вант. · 6 д 18 год"
+   "note": "Чоп (Тиса) → HU: 1637 вант. · 6 д 17 год"
   }
  },
  "queue": [
@@ -42,7 +42,7 @@
    "name": "Рава-Руська",
    "to": "PL",
    "hours": 119,
-   "trucks": 911
+   "trucks": 910
   },
   {
    "oblast": "lviv",
@@ -139,13 +139,6 @@
    "oblast": "odesa",
    "name": "Рені",
    "to": "MD",
-   "hours": 54,
-   "trucks": 175
-  },
-  {
-   "oblast": "odesa",
-   "name": "Рені",
-   "to": "MD",
    "hours": 0.0,
    "trucks": 0
   },
@@ -188,8 +181,8 @@
    "oblast": "zakarpattia",
    "name": "Чоп (Тиса)",
    "to": "HU",
-   "hours": 162,
-   "trucks": 1640
+   "hours": 161,
+   "trucks": 1637
   }
  ]
 }
