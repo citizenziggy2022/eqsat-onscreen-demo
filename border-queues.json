@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-26T07:00:58Z",
- "checked_at": "2026-11-26T07:00:58Z",
+ "updated": "2026-11-26T07:04:05Z",
+ "checked_at": "2026-11-26T07:04:05Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -14,7 +14,7 @@
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Дякове → RO: 503 вант. · 5 д 3 год"
+   "note": "Чоп (Тиса) → HU: 1605 вант. · 6 д 14 год"
   },
   "chernivtsi": {
    "status": "ok",
@@ -22,7 +22,7 @@
   },
   "odesa": {
    "status": "outage",
-   "note": "Орлівка → RO: 738 вант. · 6 д 13 год"
+   "note": "Орлівка → RO: 739 вант. · 6 д 13 год"
   }
  },
  "queue": [
@@ -101,7 +101,7 @@
    "name": "Орлівка",
    "to": "RO",
    "hours": 157,
-   "trucks": 738
+   "trucks": 739
   },
   {
    "oblast": "chernivtsi",
@@ -121,8 +121,8 @@
    "oblast": "odesa",
    "name": "Маяки-Удобне",
    "to": "MD",
-   "hours": 0.0,
-   "trucks": 0
+   "hours": 0.2,
+   "trucks": 1
   },
   {
    "oblast": "odesa",
@@ -165,6 +165,13 @@
    "to": "SK",
    "hours": 0.0,
    "trucks": 0
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Чоп (Тиса)",
+   "to": "HU",
+   "hours": 158,
+   "trucks": 1605
   }
  ]
 }
