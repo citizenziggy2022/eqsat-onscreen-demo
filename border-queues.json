@@ -1,28 +1,28 @@
 {
- "updated": "2026-11-26T22:31:01Z",
- "checked_at": "2026-11-26T22:31:01Z",
+ "updated": "2026-11-26T22:35:18Z",
+ "checked_at": "2026-11-26T22:35:18Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Рава-Руська → PL: 624 вант. · 8 д 23 год"
+   "note": "Рава-Руська → PL: 623 вант. · 8 д 23 год"
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 847 вант. · 9 д 7 год"
+   "note": "Ягодин → PL: 841 вант. · 9 д 5 год"
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Чоп (Тиса) → HU: 1672 вант. · 6 д 20 год"
+   "note": "Чоп (Тиса) → HU: 1668 вант. · 6 д 20 год"
   },
   "chernivtsi": {
    "status": "ok",
    "note": "Дяківці → RO: 0 вант. · 0 год"
   },
   "odesa": {
-   "status": "ok",
-   "note": "Виноградівка → MD: 0 вант. · 0 год"
+   "status": "outage",
+   "note": "Орлівка → RO: 794 вант. · 7 д 1 год"
   },
   "vinnytsia": {
    "status": "ok",
@@ -42,27 +42,27 @@
    "name": "Краківець",
    "to": "PL",
    "hours": 196,
-   "trucks": 663
+   "trucks": 662
   },
   {
    "oblast": "lviv",
    "name": "Рава-Руська",
    "to": "PL",
    "hours": 135,
-   "trucks": 1035
+   "trucks": 1034
   },
   {
    "oblast": "lviv",
    "name": "Рава-Руська",
    "to": "PL",
    "hours": 215,
-   "trucks": 624
+   "trucks": 623
   },
   {
    "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
-   "hours": 2.8,
+   "hours": 3.0,
    "trucks": 18
   },
   {
@@ -118,8 +118,8 @@
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
-   "hours": 223,
-   "trucks": 847
+   "hours": 221,
+   "trucks": 841
   },
   {
    "oblast": "zakarpattia",
@@ -140,7 +140,14 @@
    "name": "Красноїльськ",
    "to": "RO",
    "hours": 0.0,
-   "trucks": 0
+   "trucks": 1
+  },
+  {
+   "oblast": "odesa",
+   "name": "Орлівка",
+   "to": "RO",
+   "hours": 169,
+   "trucks": 794
   },
   {
    "oblast": "chernivtsi",
@@ -224,7 +231,7 @@
    "name": "Чоп (Тиса)",
    "to": "HU",
    "hours": 164,
-   "trucks": 1672
+   "trucks": 1668
   }
  ]
 }
