@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-26T07:39:19Z",
+ "generated_at": "2026-11-26T07:44:23Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-dsns_telegram-81614",
+   "title": "рятувальники ліквідували пожежі після російських ударів по приватних домоволодіннях у Чернігівському та…",
+   "body": "Інформація про постраждалих не надходила. Сайт • Fb • X • IG • YT • TT",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/81614",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-26T07:42:21Z",
+   "expires_at": "2026-11-26T19:42:21Z",
+   "auto": true,
+   "en_mt": {
+    "title": "rescuers have eliminated fires after Russian strikes on private households in Chernihiv and…",
+    "body": "Information about the victims has not been received. Site • Fb • X • IG • YT • TT",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-dsns_telegram-81596",
    "title": "‼ протягом ночі росіяни атакували 4 райони області — постраждав чоловік",
@@ -109,24 +127,6 @@
    "en_mt": {
     "title": "At about 06:00 Russian occupiers attacked the Korabelnyi district of Kherson with a drone",
     "body": "Two female employees of a communal enterprise were injured in an enemy strike. Preliminarily, the women aged 56 and 32 years received mine-explosive injuries. The victims were taken to the hospital. Currently, medics are conducting an examination and providing them with assistance.",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-81586",
-   "title": "‼ 7 людей постраждали внаслідок нічної атаки рф",
-   "body": "Ще 4 людей евакуювали, серед них — 2 дітей. Уночі ворог атакував Деснянський район столиці. За однією з адрес унаслідок влучання виникли пожежі та сталися руйнування в нежитлових будівлях. За іншою адресою також горіли нежитлові споруди. Є руйнування. Усі…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/81586",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-26T05:08:39Z",
-   "expires_at": "2026-11-26T17:08:39Z",
-   "auto": true,
-   "en_mt": {
-    "title": "‼ 7 people were injured as a result of the night attack by the Russian Federation",
-    "body": "Another 4 people were evacuated, among them — 2 children. At night the enemy attacked the Desnyanskyi district of the capital. At one of the addresses, as a result of the hit, fires broke out and there was destruction of non-residential buildings. At another address, non-residential buildings were also on fire. There is destruction. Everyone…",
     "by": "m2m100"
    }
   }
