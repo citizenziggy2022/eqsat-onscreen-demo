@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-26T21:47:40Z",
- "checked_at": "2026-11-26T21:47:40Z",
+ "updated": "2026-11-26T21:53:06Z",
+ "checked_at": "2026-11-26T21:53:06Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -10,7 +10,7 @@
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 1749 вант. · 7 д 4 год"
+   "note": "Устилуг → PL: 561 вант. · 5 д 7 год"
   },
   "zakarpattia": {
    "status": "outage",
@@ -18,18 +18,21 @@
   },
   "chernivtsi": {
    "status": "ok",
-   "note": "Мамалига → MD: 50 вант. · 8 год"
+   "note": "Дяківці → RO: 0 вант. · 0 год"
   },
   "odesa": {
    "status": "limited",
-   "note": "Рені → MD: 179 вант. · 2 д 7 год"
-  },
-  "vinnytsia": {
-   "status": "ok",
-   "note": "Могилів-Подільський → MD: 1 вант. · 0 год"
+   "note": "Рені → MD: 175 вант. · 2 д 5 год"
   }
  },
  "queue": [
+  {
+   "oblast": "lviv",
+   "name": "Краківець",
+   "to": "PL",
+   "hours": 139,
+   "trucks": 1222
+  },
   {
    "oblast": "lviv",
    "name": "Краківець",
@@ -41,8 +44,8 @@
    "oblast": "lviv",
    "name": "Краківець",
    "to": "PL",
-   "hours": 198,
-   "trucks": 668
+   "hours": 197,
+   "trucks": 666
   },
   {
    "oblast": "lviv",
@@ -84,7 +87,7 @@
    "name": "Устилуг",
    "to": "PL",
    "hours": 127,
-   "trucks": 559
+   "trucks": 561
   },
   {
    "oblast": "lviv",
@@ -98,7 +101,7 @@
    "name": "Шегині",
    "to": "PL",
    "hours": 150,
-   "trucks": 651
+   "trucks": 650
   },
   {
    "oblast": "volyn",
@@ -106,13 +109,6 @@
    "to": "PL",
    "hours": 112,
    "trucks": 1158
-  },
-  {
-   "oblast": "volyn",
-   "name": "Ягодин",
-   "to": "PL",
-   "hours": 172,
-   "trucks": 1749
   },
   {
    "oblast": "zakarpattia",
@@ -153,29 +149,15 @@
    "oblast": "odesa",
    "name": "Маяки-Удобне",
    "to": "MD",
-   "hours": 0.2,
-   "trucks": 2
-  },
-  {
-   "oblast": "chernivtsi",
-   "name": "Мамалига",
-   "to": "MD",
-   "hours": 8.4,
-   "trucks": 50
-  },
-  {
-   "oblast": "vinnytsia",
-   "name": "Могилів-Подільський",
-   "to": "MD",
    "hours": 0.0,
-   "trucks": 1
+   "trucks": 2
   },
   {
    "oblast": "odesa",
    "name": "Рені",
    "to": "MD",
-   "hours": 55,
-   "trucks": 179
+   "hours": 53,
+   "trucks": 175
   },
   {
    "oblast": "odesa",
@@ -230,8 +212,8 @@
    "oblast": "zakarpattia",
    "name": "Лужанка",
    "to": "HU",
-   "hours": 84,
-   "trucks": 287
+   "hours": 4.2,
+   "trucks": 20
   }
  ]
 }
