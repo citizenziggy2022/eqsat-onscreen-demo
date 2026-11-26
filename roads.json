@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-26T06:39:18Z",
- "checked_at": "2026-11-26T06:39:18Z",
+ "updated": "2026-11-26T06:42:43Z",
+ "checked_at": "2026-11-26T06:42:43Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -12,6 +12,10 @@
    "status": "ok",
    "note": "Устилуг → PL: 35 вант. · 8 год"
   },
+  "zakarpattia": {
+   "status": "outage",
+   "note": "Чоп (Тиса) → HU: 1613 вант. · 6 д 15 год"
+  },
   "chernivtsi": {
    "status": "ok",
    "note": "Дяківці → RO: 0 вант. · 0 год"
@@ -22,14 +26,17 @@
   },
   "vinnytsia": {
    "status": "ok",
-   "note": "Могилів-Подільський → MD: 3 вант. · 0 год"
-  },
-  "zakarpattia": {
-   "status": "outage",
-   "note": "Чоп (Тиса) → HU: 1615 вант. · 6 д 15 год"
+   "note": "Могилів-Подільський → MD: 4 вант. · 0 год"
   }
  },
  "queue": [
+  {
+   "oblast": "lviv",
+   "name": "Краківець",
+   "to": "PL",
+   "hours": 128,
+   "trucks": 1124
+  },
   {
    "oblast": "lviv",
    "name": "Краківець",
@@ -80,6 +87,13 @@
    "trucks": 634
   },
   {
+   "oblast": "zakarpattia",
+   "name": "Дякове",
+   "to": "RO",
+   "hours": 123,
+   "trucks": 503
+  },
+  {
    "oblast": "chernivtsi",
    "name": "Дяківці",
    "to": "RO",
@@ -118,8 +132,8 @@
    "oblast": "vinnytsia",
    "name": "Могилів-Подільський",
    "to": "MD",
-   "hours": 0.0,
-   "trucks": 3
+   "hours": 0.3,
+   "trucks": 4
   },
   {
    "oblast": "odesa",
@@ -165,17 +179,10 @@
   },
   {
    "oblast": "zakarpattia",
-   "name": "Лужанка",
-   "to": "HU",
-   "hours": 89,
-   "trucks": 302
-  },
-  {
-   "oblast": "zakarpattia",
    "name": "Чоп (Тиса)",
    "to": "HU",
    "hours": 159,
-   "trucks": 1615
+   "trucks": 1613
   }
  ]
 }
