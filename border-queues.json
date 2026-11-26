@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-26T22:57:50Z",
- "checked_at": "2026-11-26T22:57:50Z",
+ "updated": "2026-11-26T23:02:29Z",
+ "checked_at": "2026-11-26T23:02:29Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -14,7 +14,7 @@
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Дякове → RO: 540 вант. · 5 д 12 год"
+   "note": "Ужгород → SK: 867 вант. · 7 д 3 год"
   },
   "chernivtsi": {
    "status": "ok",
@@ -22,7 +22,7 @@
   },
   "odesa": {
    "status": "ok",
-   "note": "Виноградівка → MD: 0 вант. · 0 год"
+   "note": "Старокозаче → MD: 20 вант. · 3 год"
   }
  },
  "queue": [
@@ -80,14 +80,14 @@
    "name": "Шегині",
    "to": "PL",
    "hours": 177,
-   "trucks": 630
+   "trucks": 629
   },
   {
    "oblast": "lviv",
    "name": "Шегині",
    "to": "PL",
    "hours": 149,
-   "trucks": 645
+   "trucks": 644
   },
   {
    "oblast": "volyn",
@@ -157,7 +157,7 @@
    "name": "Маяки-Удобне",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 1
+   "trucks": 2
   },
   {
    "oblast": "odesa",
@@ -189,6 +189,13 @@
   },
   {
    "oblast": "odesa",
+   "name": "Старокозаче",
+   "to": "MD",
+   "hours": 2.7,
+   "trucks": 20
+  },
+  {
+   "oblast": "odesa",
    "name": "Табаки",
    "to": "MD",
    "hours": 0.0,
@@ -205,22 +212,15 @@
    "oblast": "zakarpattia",
    "name": "Ужгород",
    "to": "SK",
+   "hours": 171,
+   "trucks": 867
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Ужгород",
+   "to": "SK",
    "hours": 0.0,
    "trucks": 0
-  },
-  {
-   "oblast": "zakarpattia",
-   "name": "Лужанка",
-   "to": "HU",
-   "hours": 2.8,
-   "trucks": 15
-  },
-  {
-   "oblast": "zakarpattia",
-   "name": "Лужанка",
-   "to": "HU",
-   "hours": 84,
-   "trucks": 285
   }
  ]
 }
