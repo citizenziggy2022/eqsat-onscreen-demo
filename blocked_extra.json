@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-26T01:03:48+00:00",
+ "generated": "2026-11-26T01:50:53+00:00",
  "sources": {
   "censoredplanet": {
    "name": "Censored Planet (University of Michigan)",
@@ -20,13 +20,13 @@
    "totals": {
     "RU": {
      "confirmed": 0,
-     "likely": 77,
-     "measured": 828
+     "likely": 78,
+     "measured": 838
     },
     "UA": {
      "confirmed": 0,
      "likely": 0,
-     "measured": 838
+     "measured": 830
     },
     "BY": {
      "confirmed": 0,
@@ -40,7 +40,7 @@
     }
    },
    "rule": "confirmed = a known block page was returned; likely = >=20 measurements, >=50% unexpected and >=30 points above the country median",
-   "seconds": 19.8
+   "seconds": 16.9
   },
   "rkn": {
    "name": "Roskomnadzor registry (via antifilter.download)",
@@ -49,16 +49,16 @@
    "total_domains": 1833407,
    "well_known_listed": 56,
    "note": "Official RKN blocking registry. Rows are registry entries (incl. wildcard and mirror domains), not distinct sites.",
-   "seconds": 14.7
+   "seconds": 15.7
   }
  },
  "credit": "Censored Planet (U. Michigan) · RKN registry via antifilter.download",
  "counts": {
-  "items": 121,
-  "new_vs_ooni": 61,
+  "items": 122,
+  "new_vs_ooni": 60,
   "by_source_country": {
    "rkn/RU": 44,
-   "censoredplanet/RU": 77
+   "censoredplanet/RU": 78
   }
  },
  "items": [
@@ -839,18 +839,6 @@
    "well_known": false
   },
   {
-   "domain": "kavkazr.com",
-   "country": "RU",
-   "source": "censoredplanet",
-   "status": "likely",
-   "last_seen": "2026-11-22",
-   "rate": 0.77,
-   "measurements": 179,
-   "category": "news",
-   "new_vs_ooni": true,
-   "well_known": false
-  },
-  {
    "domain": "matrix-client.matrix.org",
    "country": "RU",
    "source": "censoredplanet",
@@ -1223,6 +1211,18 @@
    "well_known": false
   },
   {
+   "domain": "kavkazr.com",
+   "country": "RU",
+   "source": "censoredplanet",
+   "status": "likely",
+   "last_seen": "2026-11-22",
+   "rate": 0.77,
+   "measurements": 179,
+   "category": "news",
+   "new_vs_ooni": false,
+   "well_known": false
+  },
+  {
    "domain": "scontent-frt3-2.cdninstagram.com",
    "country": "RU",
    "source": "censoredplanet",
@@ -1327,6 +1327,18 @@
    "rate": 0.76,
    "measurements": 184,
    "category": "grp",
+   "new_vs_ooni": false,
+   "well_known": false
+  },
+  {
+   "domain": "idelreal.org",
+   "country": "RU",
+   "source": "censoredplanet",
+   "status": "likely",
+   "last_seen": "2026-11-22",
+   "rate": 0.76,
+   "measurements": 176,
+   "category": "news",
    "new_vs_ooni": false,
    "well_known": false
   },
