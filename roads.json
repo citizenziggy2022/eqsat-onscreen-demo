@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-26T04:21:21Z",
- "checked_at": "2026-11-26T04:21:21Z",
+ "updated": "2026-11-26T04:24:44Z",
+ "checked_at": "2026-11-26T04:24:44Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Краківець → PL: 661 вант. · 8 д 4 год"
+   "note": "Краківець → PL: 659 вант. · 8 д 3 год"
   },
   "volyn": {
    "status": "ok",
@@ -25,11 +25,18 @@
    "note": "Могилів-Подільський → MD: 3 вант. · 0 год"
   },
   "zakarpattia": {
-   "status": "outage",
-   "note": "Чоп (Тиса) → HU: 1606 вант. · 6 д 14 год"
+   "status": "ok",
+   "note": "Малий Березний → SK: 0 вант. · 0 год"
   }
  },
  "queue": [
+  {
+   "oblast": "lviv",
+   "name": "Краківець",
+   "to": "PL",
+   "hours": 129,
+   "trucks": 1133
+  },
   {
    "oblast": "lviv",
    "name": "Краківець",
@@ -41,8 +48,8 @@
    "oblast": "lviv",
    "name": "Краківець",
    "to": "PL",
-   "hours": 196,
-   "trucks": 661
+   "hours": 195,
+   "trucks": 659
   },
   {
    "oblast": "lviv",
@@ -190,13 +197,6 @@
    "to": "SK",
    "hours": 0.0,
    "trucks": 0
-  },
-  {
-   "oblast": "zakarpattia",
-   "name": "Чоп (Тиса)",
-   "to": "HU",
-   "hours": 158,
-   "trucks": 1606
   }
  ]
 }
