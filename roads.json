@@ -1,32 +1,32 @@
 {
- "updated": "2026-11-26T03:29:54Z",
- "checked_at": "2026-11-26T03:29:54Z",
+ "updated": "2026-11-26T03:33:15Z",
+ "checked_at": "2026-11-26T03:33:15Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Рава-Руська → PL: 579 вант. · 7 д 22 год"
+   "note": "Шегині → PL: 590 вант. · 6 д 22 год"
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 1657 вант. · 6 д 18 год"
+   "note": "Ягодин → PL: 1654 вант. · 6 д 18 год"
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Дякове → RO: 502 вант. · 5 д 3 год"
+   "note": "Чоп (Тиса) → HU: 1618 вант. · 6 д 15 год"
   },
   "chernivtsi": {
    "status": "outage",
-   "note": "Порубне → RO: 970 вант. · 3 д 22 год"
+   "note": "Порубне → RO: 969 вант. · 3 д 22 год"
   },
   "odesa": {
    "status": "outage",
-   "note": "Орлівка → RO: 757 вант. · 6 д 17 год"
+   "note": "Орлівка → RO: 756 вант. · 6 д 17 год"
   },
   "vinnytsia": {
    "status": "ok",
-   "note": "Могилів-Подільський → MD: 3 вант. · 0 год"
+   "note": "Могилів-Подільський → MD: 4 вант. · 0 год"
   }
  },
  "queue": [
@@ -36,20 +36,6 @@
    "to": "PL",
    "hours": 0.0,
    "trucks": 0
-  },
-  {
-   "oblast": "lviv",
-   "name": "Рава-Руська",
-   "to": "PL",
-   "hours": 116,
-   "trucks": 892
-  },
-  {
-   "oblast": "lviv",
-   "name": "Рава-Руська",
-   "to": "PL",
-   "hours": 190,
-   "trucks": 579
   },
   {
    "oblast": "lviv",
@@ -105,21 +91,21 @@
    "name": "Ягодин",
    "to": "PL",
    "hours": 37,
-   "trucks": 400
+   "trucks": 399
   },
   {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
    "hours": 162,
-   "trucks": 1657
+   "trucks": 1654
   },
   {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
    "hours": 0.2,
-   "trucks": 8
+   "trucks": 9
   },
   {
    "oblast": "zakarpattia",
@@ -139,22 +125,22 @@
    "oblast": "chernivtsi",
    "name": "Красноїльськ",
    "to": "RO",
-   "hours": 0.3,
-   "trucks": 3
+   "hours": 0.0,
+   "trucks": 2
   },
   {
    "oblast": "odesa",
    "name": "Орлівка",
    "to": "RO",
    "hours": 161,
-   "trucks": 757
+   "trucks": 756
   },
   {
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
    "hours": 94,
-   "trucks": 970
+   "trucks": 969
   },
   {
    "oblast": "chernivtsi",
@@ -188,8 +174,8 @@
    "oblast": "vinnytsia",
    "name": "Могилів-Подільський",
    "to": "MD",
-   "hours": 0.3,
-   "trucks": 3
+   "hours": 0.0,
+   "trucks": 4
   },
   {
    "oblast": "odesa",
@@ -232,6 +218,13 @@
    "to": "SK",
    "hours": 0.0,
    "trucks": 0
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Чоп (Тиса)",
+   "to": "HU",
+   "hours": 159,
+   "trucks": 1618
   }
  ]
 }
