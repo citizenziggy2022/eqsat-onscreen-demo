@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-26T17:50:14Z",
+ "generated_at": "2026-11-26T17:57:48Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -24,7 +24,7 @@
    "name": "Донецька ОВА",
    "url": "https://t.me/s/VadymFilashkin",
    "verified": "channel of the OVA head (dn.gov.ua/persons/vadim-filashkin), links to dn.gov.ua",
-   "status": "ok: kept 1 / dropped 3, showing 1"
+   "status": "ok: kept 0 / dropped 3, showing 0"
   },
   {
    "name": "Луганська ОВА",
@@ -163,24 +163,6 @@
    "en_mt": {
     "title": "Approximately at 11:00 Russians attacked a man with a drone in Komyshany",
     "body": "A 58-year-old local resident who independently contacted the hospital was diagnosed with explosive injury, shrapnel wounds and bone fractures of the limbs, currently medics are providing him with all necessary assistance.",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-VadymFilashkin-19616",
-   "title": "Росія вбиває цивільних!",
-   "body": "За 25 листопада росіяни вбили 3 жителів Донеччини: 2 у Слов'янську та 1 у Билбасівці. Ще 18 людей в області за добу отримали поранення. Загальна кількість жертв росіян на Донеччині подана без урахування Маріуполя та Волновахи. __ Russia kills civilians! On…",
-   "source": "Донецька ОВА",
-   "source_url": "https://t.me/VadymFilashkin/19616",
-   "region": "Донеччина",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-26T05:56:52Z",
-   "expires_at": "2026-11-26T17:56:52Z",
-   "auto": true,
-   "en_mt": {
-    "title": "Russia is killing civilians!",
-    "body": "On 25 November Russians killed 3 residents of Donetsk region: 2 in Slovyansk and 1 in Bilytsivka. Another 18 people in the region received injuries per day. The total number of Russian victims in Donetsk region is given without taking into account Mariupol and Volnovakha. __ Russia kills civilians! On…",
     "by": "m2m100"
    }
   }
