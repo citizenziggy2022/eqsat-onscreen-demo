@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-26T02:15:09Z",
- "checked_at": "2026-11-26T02:15:09Z",
+ "updated": "2026-11-26T02:18:37Z",
+ "checked_at": "2026-11-26T02:18:37Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Рава-Руська → PL: 585 вант. · 8 д 1 год"
+   "note": "Краківець → PL: 666 вант. · 8 д 6 год"
   },
   "volyn": {
    "status": "outage",
@@ -22,7 +22,7 @@
   },
   "odesa": {
    "status": "outage",
-   "note": "Орлівка → RO: 766 вант. · 6 д 19 год"
+   "note": "Орлівка → RO: 764 вант. · 6 д 19 год"
   },
   "vinnytsia": {
    "status": "ok",
@@ -39,17 +39,10 @@
   },
   {
    "oblast": "lviv",
-   "name": "Рава-Руська",
+   "name": "Краківець",
    "to": "PL",
-   "hours": 117,
-   "trucks": 898
-  },
-  {
-   "oblast": "lviv",
-   "name": "Рава-Руська",
-   "to": "PL",
-   "hours": 192.7,
-   "trucks": 585
+   "hours": 198,
+   "trucks": 666
   },
   {
    "oblast": "lviv",
@@ -70,7 +63,7 @@
    "name": "Угринів",
    "to": "PL",
    "hours": 137,
-   "trucks": 597
+   "trucks": 598
   },
   {
    "oblast": "volyn",
@@ -85,6 +78,13 @@
    "to": "PL",
    "hours": 141,
    "trucks": 575
+  },
+  {
+   "oblast": "lviv",
+   "name": "Шегині",
+   "to": "PL",
+   "hours": 147,
+   "trucks": 636
   },
   {
    "oblast": "volyn",
@@ -112,21 +112,28 @@
    "name": "Красноїльськ",
    "to": "RO",
    "hours": 0.0,
-   "trucks": 5
+   "trucks": 4
   },
   {
    "oblast": "odesa",
    "name": "Орлівка",
    "to": "RO",
    "hours": 163,
-   "trucks": 766
+   "trucks": 764
   },
   {
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
-   "hours": 96.9,
+   "hours": 96.8,
    "trucks": 992
+  },
+  {
+   "oblast": "chernivtsi",
+   "name": "Порубне",
+   "to": "RO",
+   "hours": 2.8,
+   "trucks": 21
   },
   {
    "oblast": "chernivtsi",
@@ -197,13 +204,6 @@
    "to": "SK",
    "hours": 0.0,
    "trucks": 0
-  },
-  {
-   "oblast": "zakarpattia",
-   "name": "Лужанка",
-   "to": "HU",
-   "hours": 4.0,
-   "trucks": 21
   }
  ]
 }
