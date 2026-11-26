@@ -1,20 +1,20 @@
 {
- "updated": "2026-11-26T12:43:28Z",
- "checked_at": "2026-11-26T12:43:28Z",
+ "updated": "2026-11-26T12:47:09Z",
+ "checked_at": "2026-11-26T12:47:09Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Рава-Руська → PL: 599 вант. · 8 д 15 год"
+   "note": "Рава-Руська → PL: 597 вант. · 8 д 15 год"
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 939 вант. · 3 д 19 год"
+   "note": "Устилуг → PL: 575 вант. · 5 д 11 год"
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Дякове → RO: 505 вант. · 5 д 4 год"
+   "note": "Чоп (Тиса) → HU: 1648 вант. · 6 д 19 год"
   },
   "chernivtsi": {
    "status": "ok",
@@ -22,7 +22,7 @@
   },
   "odesa": {
    "status": "outage",
-   "note": "Орлівка → RO: 750 вант. · 6 д 16 год"
+   "note": "Орлівка → RO: 752 вант. · 6 д 16 год"
   }
  },
  "queue": [
@@ -44,15 +44,15 @@
    "oblast": "lviv",
    "name": "Рава-Руська",
    "to": "PL",
-   "hours": 120.1,
-   "trucks": 918
+   "hours": 119,
+   "trucks": 916
   },
   {
    "oblast": "lviv",
    "name": "Рава-Руська",
    "to": "PL",
    "hours": 207,
-   "trucks": 599
+   "trucks": 597
   },
   {
    "oblast": "lviv",
@@ -72,15 +72,22 @@
    "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
-   "hours": 140,
-   "trucks": 609
+   "hours": 141,
+   "trucks": 610
   },
   {
    "oblast": "volyn",
    "name": "Устилуг",
    "to": "PL",
-   "hours": 4.8,
-   "trucks": 25
+   "hours": 4.2,
+   "trucks": 23
+  },
+  {
+   "oblast": "volyn",
+   "name": "Устилуг",
+   "to": "PL",
+   "hours": 131,
+   "trucks": 575
   },
   {
    "oblast": "lviv",
@@ -100,15 +107,15 @@
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
-   "hours": 91,
-   "trucks": 939
+   "hours": 92,
+   "trucks": 946
   },
   {
    "oblast": "zakarpattia",
    "name": "Дякове",
    "to": "RO",
-   "hours": 124,
-   "trucks": 505
+   "hours": 123,
+   "trucks": 502
   },
   {
    "oblast": "chernivtsi",
@@ -122,7 +129,7 @@
    "name": "Орлівка",
    "to": "RO",
    "hours": 160,
-   "trucks": 750
+   "trucks": 752
   },
   {
    "oblast": "chernivtsi",
@@ -198,15 +205,22 @@
    "oblast": "zakarpattia",
    "name": "Лужанка",
    "to": "HU",
-   "hours": 2.3,
+   "hours": 2.0,
    "trucks": 12
   },
   {
    "oblast": "zakarpattia",
    "name": "Лужанка",
    "to": "HU",
-   "hours": 89,
-   "trucks": 303
+   "hours": 88,
+   "trucks": 302
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Чоп (Тиса)",
+   "to": "HU",
+   "hours": 163,
+   "trucks": 1648
   }
  ]
 }
