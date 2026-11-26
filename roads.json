@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-26T22:53:00Z",
- "checked_at": "2026-11-26T22:53:00Z",
+ "updated": "2026-11-26T22:57:50Z",
+ "checked_at": "2026-11-26T22:57:50Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -12,6 +12,10 @@
    "status": "outage",
    "note": "Ягодин → PL: 839 вант. · 9 д 4 год"
   },
+  "zakarpattia": {
+   "status": "outage",
+   "note": "Дякове → RO: 540 вант. · 5 д 12 год"
+  },
   "chernivtsi": {
    "status": "ok",
    "note": "Дяківці → RO: 0 вант. · 0 год"
@@ -19,10 +23,6 @@
   "odesa": {
    "status": "ok",
    "note": "Виноградівка → MD: 0 вант. · 0 год"
-  },
-  "zakarpattia": {
-   "status": "outage",
-   "note": "Лужанка → HU: 285 вант. · 3 д 12 год"
   }
  },
  "queue": [
@@ -45,7 +45,7 @@
    "name": "Рава-Руська",
    "to": "PL",
    "hours": 135,
-   "trucks": 1033
+   "trucks": 1034
   },
   {
    "oblast": "lviv",
@@ -58,15 +58,15 @@
    "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
-   "hours": 3.0,
-   "trucks": 17
+   "hours": 2.4,
+   "trucks": 15
   },
   {
    "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
-   "hours": 145,
-   "trucks": 628
+   "hours": 144.9,
+   "trucks": 626
   },
   {
    "oblast": "volyn",
@@ -74,13 +74,6 @@
    "to": "PL",
    "hours": 0.3,
    "trucks": 8
-  },
-  {
-   "oblast": "volyn",
-   "name": "Устилуг",
-   "to": "PL",
-   "hours": 127,
-   "trucks": 561
   },
   {
    "oblast": "lviv",
@@ -115,7 +108,7 @@
    "name": "Ягодин",
    "to": "PL",
    "hours": 0.0,
-   "trucks": 3
+   "trucks": 4
   },
   {
    "oblast": "volyn",
@@ -123,6 +116,13 @@
    "to": "PL",
    "hours": 220,
    "trucks": 839
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Дякове",
+   "to": "RO",
+   "hours": 132,
+   "trucks": 540
   },
   {
    "oblast": "chernivtsi",
@@ -136,7 +136,7 @@
    "name": "Красноїльськ",
    "to": "RO",
    "hours": 0.0,
-   "trucks": 1
+   "trucks": 0
   },
   {
    "oblast": "chernivtsi",
@@ -212,7 +212,7 @@
    "oblast": "zakarpattia",
    "name": "Лужанка",
    "to": "HU",
-   "hours": 3.1,
+   "hours": 2.8,
    "trucks": 15
   },
   {
