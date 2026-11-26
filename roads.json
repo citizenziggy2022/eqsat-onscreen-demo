@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-26T06:53:33Z",
- "checked_at": "2026-11-26T06:53:33Z",
+ "updated": "2026-11-26T06:56:56Z",
+ "checked_at": "2026-11-26T06:56:56Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -14,7 +14,7 @@
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Чоп (Тиса) → HU: 1609 вант. · 6 д 14 год"
+   "note": "Чоп (Тиса) → HU: 1608 вант. · 6 д 14 год"
   },
   "chernivtsi": {
    "status": "ok",
@@ -26,6 +26,13 @@
   }
  },
  "queue": [
+  {
+   "oblast": "lviv",
+   "name": "Грушів",
+   "to": "PL",
+   "hours": 0.5,
+   "trucks": 6
+  },
   {
    "oblast": "lviv",
    "name": "Краківець",
@@ -51,8 +58,8 @@
    "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
-   "hours": 136,
-   "trucks": 592
+   "hours": 137,
+   "trucks": 593
   },
   {
    "oblast": "volyn",
@@ -164,7 +171,7 @@
    "name": "Чоп (Тиса)",
    "to": "HU",
    "hours": 158,
-   "trucks": 1609
+   "trucks": 1608
   }
  ]
 }
