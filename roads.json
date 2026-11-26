@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-26T18:20:57Z",
- "checked_at": "2026-11-26T18:20:57Z",
+ "updated": "2026-11-26T18:24:31Z",
+ "checked_at": "2026-11-26T18:24:31Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Угринів → PL: 628 вант. · 6 д 1 год"
+   "note": "Угринів → PL: 629 вант. · 6 д 1 год"
   },
   "volyn": {
    "status": "outage",
@@ -14,7 +14,7 @@
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Чоп (Тиса) → HU: 1721 вант. · 7 д 2 год"
+   "note": "Чоп (Тиса) → HU: 1719 вант. · 7 д 1 год"
   },
   "chernivtsi": {
    "status": "ok",
@@ -22,11 +22,11 @@
   },
   "odesa": {
    "status": "ok",
-   "note": "Табаки → MD: 4 вант. · 0 год"
+   "note": "Табаки → MD: 5 вант. · 0 год"
   },
   "vinnytsia": {
    "status": "ok",
-   "note": "Могилів-Подільський → MD: 18 вант. · 1 год"
+   "note": "Могилів-Подільський → MD: 17 вант. · 1 год"
   }
  },
  "queue": [
@@ -49,14 +49,14 @@
    "name": "Угринів",
    "to": "PL",
    "hours": 145,
-   "trucks": 628
+   "trucks": 629
   },
   {
    "oblast": "volyn",
    "name": "Устилуг",
    "to": "PL",
-   "hours": 5.4,
-   "trucks": 26
+   "hours": 5.7,
+   "trucks": 27
   },
   {
    "oblast": "volyn",
@@ -70,7 +70,7 @@
    "name": "Ягодин",
    "to": "PL",
    "hours": 117,
-   "trucks": 1207
+   "trucks": 1203
   },
   {
    "oblast": "volyn",
@@ -126,7 +126,7 @@
    "name": "Могилів-Подільський",
    "to": "MD",
    "hours": 0.8,
-   "trucks": 18
+   "trucks": 17
   },
   {
    "oblast": "odesa",
@@ -153,8 +153,8 @@
    "oblast": "odesa",
    "name": "Табаки",
    "to": "MD",
-   "hours": 0.2,
-   "trucks": 4
+   "hours": 0.4,
+   "trucks": 5
   },
   {
    "oblast": "zakarpattia",
@@ -168,14 +168,14 @@
    "name": "Ужгород",
    "to": "SK",
    "hours": 0.0,
-   "trucks": 1
+   "trucks": 0
   },
   {
    "oblast": "zakarpattia",
    "name": "Чоп (Тиса)",
    "to": "HU",
-   "hours": 170,
-   "trucks": 1721
+   "hours": 169,
+   "trucks": 1719
   }
  ]
 }
