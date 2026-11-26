@@ -1,6 +1,6 @@
 {
- "fetched_at": "2026-11-26T06:00:54Z",
- "updated_at": "2026-11-26T05:40:00Z",
+ "fetched_at": "2026-11-26T06:08:02Z",
+ "updated_at": "2026-11-26T05:50:00Z",
  "source": "IODA (Internet Outage Detection and Analysis), Georgia Tech, https://ioda.inetintel.cc.gatech.edu",
  "note": "Internet signal per oblast. score 0-100 vs the region's own 7-day median (BGP 40%, ping /24 60%); level critical while IODA's outage alert for the region is critical. The cause is unknown (power, damage or shutdown look the same).",
  "critical": [
@@ -8,11 +8,11 @@
  ],
  "regions": {
   "crimea": {
-   "score": 92,
+   "score": 89,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9088,
-     "score": 87
+     "ratio": 0.8838,
+     "score": 82
     },
     "bgp": {
      "ratio": 1.0,
@@ -25,7 +25,7 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9846,
+     "ratio": 0.9902,
      "score": 100
     },
     "bgp": {
@@ -47,7 +47,7 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 1.0006,
+     "ratio": 0.9883,
      "score": 100
     },
     "bgp": {
@@ -69,7 +69,7 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9885,
+     "ratio": 0.9874,
      "score": 100
     },
     "bgp": {
@@ -83,7 +83,7 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9924,
+     "ratio": 0.9847,
      "score": 100
     },
     "bgp": {
@@ -97,7 +97,7 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9929,
+     "ratio": 0.991,
      "score": 100
     },
     "bgp": {
@@ -111,8 +111,8 @@
    "score": 97,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9458,
-     "score": 95
+     "ratio": 0.9432,
+     "score": 94
     },
     "bgp": {
      "ratio": 1.0332,
@@ -133,7 +133,7 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9956,
+     "ratio": 0.997,
      "score": 100
     },
     "bgp": {
@@ -152,11 +152,11 @@
    }
   },
   "ternopil": {
-   "score": 94,
+   "score": 91,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9232,
-     "score": 90
+     "ratio": 0.9031,
+     "score": 86
     },
     "bgp": {
      "ratio": 1.0,
@@ -221,7 +221,7 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9741,
+     "ratio": 0.9716,
      "score": 100
     },
     "bgp": {
@@ -243,7 +243,7 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 1.0017,
+     "ratio": 0.9966,
      "score": 100
     },
     "bgp": {
@@ -257,8 +257,8 @@
    "score": 99,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9648,
-     "score": 99
+     "ratio": 0.9623,
+     "score": 98
     },
     "bgp": {
      "ratio": 1.0043,
@@ -279,7 +279,7 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9838,
+     "ratio": 0.9845,
      "score": 100
     },
     "bgp": {
@@ -290,11 +290,11 @@
    "level": "normal"
   },
   "vinnytsia": {
-   "score": 98,
+   "score": 99,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9577,
-     "score": 97
+     "ratio": 0.9635,
+     "score": 99
     },
     "bgp": {
      "ratio": 0.999,
@@ -312,11 +312,11 @@
    }
   },
   "zhytomyr": {
-   "score": 96,
+   "score": 98,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.937,
-     "score": 93
+     "ratio": 0.9556,
+     "score": 97
     },
     "bgp": {
      "ratio": 1.006,
@@ -337,7 +337,7 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 1.0112,
+     "ratio": 1.0206,
      "score": 100
     },
     "bgp": {
@@ -359,7 +359,7 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9953,
+     "ratio": 0.9956,
      "score": 100
     },
     "bgp": {
@@ -373,11 +373,11 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 1.0665,
+     "ratio": 1.0363,
      "score": 100
     },
     "bgp": {
-     "ratio": 1.0006,
+     "ratio": 1.0004,
      "score": 100
     }
    },
@@ -387,7 +387,7 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9785,
+     "ratio": 0.9755,
      "score": 100
     },
     "bgp": {
@@ -409,7 +409,7 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9946,
+     "ratio": 0.9925,
      "score": 100
     },
     "bgp": {
@@ -423,7 +423,7 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 1.0029,
+     "ratio": 1.01,
      "score": 100
     },
     "bgp": {
@@ -437,7 +437,7 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9978,
+     "ratio": 0.9905,
      "score": 100
     },
     "bgp": {
@@ -451,11 +451,11 @@
    "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9748,
+     "ratio": 0.9721,
      "score": 100
     },
     "bgp": {
-     "ratio": 1.0116,
+     "ratio": 1.0114,
      "score": 100
     }
    },
@@ -470,11 +470,11 @@
    }
   },
   "kherson": {
-   "score": 97,
+   "score": 100,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.9456,
-     "score": 95
+     "ratio": 0.9733,
+     "score": 100
     },
     "bgp": {
      "ratio": 0.9914,
@@ -484,11 +484,11 @@
    "level": "normal"
   },
   "sevastopol": {
-   "score": 77,
+   "score": 72,
    "parts": {
     "ping-slash24": {
-     "ratio": 0.7871,
-     "score": 61
+     "ratio": 0.7518,
+     "score": 54
     },
     "bgp": {
      "ratio": 1.0,
