@@ -1,16 +1,16 @@
 {
- "updated": "2026-11-26T15:17:35Z",
- "checked_at": "2026-11-26T15:17:35Z",
+ "updated": "2026-11-26T15:21:24Z",
+ "checked_at": "2026-11-26T15:21:24Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Рава-Руська → PL: 622 вант. · 8 д 23 год"
+   "note": "Краківець → PL: 661 вант. · 8 д 4 год"
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 835 вант. · 9 д 3 год"
+   "note": "Ягодин → PL: 837 вант. · 9 д 4 год"
   },
   "zakarpattia": {
    "status": "outage",
@@ -22,7 +22,7 @@
   },
   "odesa": {
    "status": "outage",
-   "note": "Орлівка → RO: 770 вант. · 6 д 20 год"
+   "note": "Орлівка → RO: 775 вант. · 6 д 21 год"
   }
  },
  "queue": [
@@ -38,28 +38,14 @@
    "name": "Краківець",
    "to": "PL",
    "hours": 0.0,
-   "trucks": 2
+   "trucks": 0
   },
   {
    "oblast": "lviv",
    "name": "Краківець",
    "to": "PL",
-   "hours": 198,
-   "trucks": 665
-  },
-  {
-   "oblast": "lviv",
-   "name": "Рава-Руська",
-   "to": "PL",
-   "hours": 128,
-   "trucks": 978
-  },
-  {
-   "oblast": "lviv",
-   "name": "Рава-Руська",
-   "to": "PL",
-   "hours": 215,
-   "trucks": 622
+   "hours": 196,
+   "trucks": 661
   },
   {
    "oblast": "lviv",
@@ -108,28 +94,28 @@
    "name": "Шегині",
    "to": "PL",
    "hours": 152,
-   "trucks": 656
+   "trucks": 655
   },
   {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
-   "hours": 171,
-   "trucks": 1750
+   "hours": 172,
+   "trucks": 1751
   },
   {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
    "hours": 0.0,
-   "trucks": 16
+   "trucks": 14
   },
   {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
-   "hours": 219,
-   "trucks": 835
+   "hours": 220,
+   "trucks": 837
   },
   {
    "oblast": "zakarpattia",
@@ -149,8 +135,8 @@
    "oblast": "odesa",
    "name": "Орлівка",
    "to": "RO",
-   "hours": 164,
-   "trucks": 770
+   "hours": 165,
+   "trucks": 775
   },
   {
    "oblast": "chernivtsi",
@@ -199,7 +185,7 @@
    "name": "Росошани",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 2
+   "trucks": 3
   },
   {
    "oblast": "odesa",
@@ -214,13 +200,6 @@
    "to": "MD",
    "hours": 0.0,
    "trucks": 0
-  },
-  {
-   "oblast": "odesa",
-   "name": "Старокозаче",
-   "to": "MD",
-   "hours": 5.1,
-   "trucks": 28
   },
   {
    "oblast": "odesa",
