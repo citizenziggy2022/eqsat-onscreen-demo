@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-26T05:02:12Z",
+ "generated_at": "2026-11-26T05:09:10Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 1 / dropped 0, showing 1"
+   "status": "ok: kept 2 / dropped 0, showing 2"
   },
   {
    "name": "Херсонська ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-dsns_telegram-81586",
+   "title": "‼ 7 людей постраждали внаслідок нічної атаки рф",
+   "body": "Ще 4 людей евакуювали, серед них — 2 дітей. Уночі ворог атакував Деснянський район столиці. За однією з адрес унаслідок влучання виникли пожежі та сталися руйнування в нежитлових будівлях. За іншою адресою також горіли нежитлові споруди. Є руйнування. Усі…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/81586",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-26T05:08:39Z",
+   "expires_at": "2026-11-26T17:08:39Z",
+   "auto": true,
+   "en_mt": {
+    "title": "‼ 7 people were injured as a result of the night attack by the Russian Federation",
+    "body": "Another 4 people were evacuated, among them — 2 children. At night the enemy attacked the Desnyanskyi district of the capital. At one of the addresses, as a result of the hit, fires broke out and there was destruction of non-residential buildings. At another address, non-residential buildings were also on fire. There is destruction. Everyone…",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-dsns_telegram-81577",
    "title": "росія знову атакувала Одесу",
