@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-26T00:40:55Z",
- "checked_at": "2026-11-26T00:40:55Z",
+ "updated": "2026-11-26T00:44:20Z",
+ "checked_at": "2026-11-26T00:44:20Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -21,8 +21,8 @@
    "note": "Дяківці → RO: 0 вант. · 0 год"
   },
   "odesa": {
-   "status": "ok",
-   "note": "Виноградівка → MD: 0 вант. · 0 год"
+   "status": "limited",
+   "note": "Рені → MD: 185 вант. · 2 д 9 год"
   },
   "vinnytsia": {
    "status": "ok",
@@ -34,8 +34,8 @@
    "oblast": "lviv",
    "name": "Грушів",
    "to": "PL",
-   "hours": 2.1,
-   "trucks": 14
+   "hours": 2.3,
+   "trucks": 15
   },
   {
    "oblast": "lviv",
@@ -139,6 +139,13 @@
    "oblast": "odesa",
    "name": "Рені",
    "to": "MD",
+   "hours": 57,
+   "trucks": 185
+  },
+  {
+   "oblast": "odesa",
+   "name": "Рені",
+   "to": "MD",
    "hours": 0.0,
    "trucks": 0
   },
@@ -168,7 +175,7 @@
    "name": "Малий Березний",
    "to": "SK",
    "hours": 0.0,
-   "trucks": 1
+   "trucks": 0
   },
   {
    "oblast": "zakarpattia",
