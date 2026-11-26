@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-26T09:34:16Z",
+ "generated_at": "2026-11-26T09:40:24Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -18,7 +18,7 @@
    "name": "Запорізька ОВА",
    "url": "https://t.me/s/zoda_gov_ua",
    "verified": "linked from zoda.gov.ua",
-   "status": "ok: kept 1 / dropped 1, showing 1"
+   "status": "ok: kept 1 / dropped 0, showing 1"
   },
   {
    "name": "Донецька ОВА",
@@ -43,7 +43,7 @@
   {
    "id": "auto-dsns_telegram-81625",
    "title": "вчора ввечері росіяни атакували реактивним БпЛА місто Лозова, влучивши на території місцевого ринку!",
-   "body": "Виникла пожежа у двох складських будівлях на загальній площі 600 кв.м. На щастя, без постраждалих. На місці події, попри загрозу повторних ворожих ударів, працювали підрозділи ДСНС та офіцер-рятувальник громади.",
+   "body": "Виникла пожежа у двох складських будівлях на загальній площі 600 кв.м. На щастя, без постраждалих. На місці події, попри загрозу повторних ворожих ударів, працювали підрозділи ДСНС та офіцер-рятувальник громади. Сайт • Fb • X • IG • YT • TT",
    "source": "ДСНС України",
    "source_url": "https://t.me/dsns_telegram/81625",
    "region": "Україна",
@@ -54,7 +54,7 @@
    "auto": true,
    "en_mt": {
     "title": "Yesterday evening Russians attacked the city of Lozova with a jet-powered UAV, hitting the territory of the local market!",
-    "body": "A fire broke out in two storage buildings with a total area of 600 sq.m. Fortunately, there were no casualties. At the scene of the incident, despite the threat of repeated enemy strikes, units of the DSNs and an officer-rescuer of the community worked.",
+    "body": "A fire broke out in two storage buildings with a total area of 600 sq.m. Fortunately, there were no casualties. At the scene of the incident, despite the threat of repeated enemy strikes, units of the State Emergency Service and a community rescue officer worked. Site • Fb • X • IG • YT • TT",
     "by": "m2m100"
    }
   },
