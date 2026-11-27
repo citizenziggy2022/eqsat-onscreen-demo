@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-27T03:55:34Z",
- "checked_at": "2026-11-27T03:55:34Z",
+ "updated": "2026-11-27T04:03:42Z",
+ "checked_at": "2026-11-27T04:03:42Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -10,23 +10,23 @@
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 1709 вант. · 7 д 0 год"
+   "note": "Устилуг → PL: 551 вант. · 5 д 6 год"
+  },
+  "zakarpattia": {
+   "status": "outage",
+   "note": "Дякове → RO: 519 вант. · 5 д 7 год"
   },
   "chernivtsi": {
-   "status": "ok",
-   "note": "Дяківці → RO: 0 вант. · 0 год"
+   "status": "outage",
+   "note": "Порубне → RO: 1159 вант. · 4 д 16 год"
   },
   "odesa": {
    "status": "ok",
-   "note": "Виноградівка → MD: 3 вант. · 0 год"
+   "note": "Виноградівка → MD: 4 вант. · 0 год"
   },
   "vinnytsia": {
    "status": "ok",
-   "note": "Могилів-Подільський → MD: 0 вант. · 0 год"
-  },
-  "zakarpattia": {
-   "status": "ok",
-   "note": "Малий Березний → SK: 0 вант. · 0 год"
+   "note": "Могилів-Подільський → MD: 1 вант. · 0 год"
   }
  },
  "queue": [
@@ -42,14 +42,14 @@
    "name": "Краківець",
    "to": "PL",
    "hours": 132,
-   "trucks": 1165
+   "trucks": 1160
   },
   {
    "oblast": "lviv",
    "name": "Краківець",
    "to": "PL",
-   "hours": 0.0,
-   "trucks": 0
+   "hours": 0.3,
+   "trucks": 2
   },
   {
    "oblast": "lviv",
@@ -94,6 +94,13 @@
    "trucks": 3
   },
   {
+   "oblast": "volyn",
+   "name": "Устилуг",
+   "to": "PL",
+   "hours": 126,
+   "trucks": 551
+  },
+  {
    "oblast": "lviv",
    "name": "Шегині",
    "to": "PL",
@@ -104,8 +111,8 @@
    "oblast": "lviv",
    "name": "Шегині",
    "to": "PL",
-   "hours": 147,
-   "trucks": 636
+   "hours": 148,
+   "trucks": 638
   },
   {
    "oblast": "volyn",
@@ -115,11 +122,11 @@
    "trucks": 1075
   },
   {
-   "oblast": "volyn",
-   "name": "Ягодин",
-   "to": "PL",
-   "hours": 168,
-   "trucks": 1709
+   "oblast": "zakarpattia",
+   "name": "Дякове",
+   "to": "RO",
+   "hours": 127,
+   "trucks": 519
   },
   {
    "oblast": "chernivtsi",
@@ -139,6 +146,13 @@
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
+   "hours": 112,
+   "trucks": 1159
+  },
+  {
+   "oblast": "chernivtsi",
+   "name": "Порубне",
+   "to": "RO",
    "hours": 0.0,
    "trucks": 0
   },
@@ -147,7 +161,7 @@
    "name": "Виноградівка",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 3
+   "trucks": 4
   },
   {
    "oblast": "odesa",
@@ -160,8 +174,8 @@
    "oblast": "vinnytsia",
    "name": "Могилів-Подільський",
    "to": "MD",
-   "hours": 0.0,
-   "trucks": 0
+   "hours": 0.3,
+   "trucks": 1
   },
   {
    "oblast": "odesa",
