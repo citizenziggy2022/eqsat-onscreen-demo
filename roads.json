@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-27T04:29:38Z",
- "checked_at": "2026-11-27T04:29:38Z",
+ "updated": "2026-11-27T04:34:00Z",
+ "checked_at": "2026-11-27T04:34:00Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -10,7 +10,7 @@
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 1691 вант. · 6 д 22 год"
+   "note": "Ягодин → PL: 1686 вант. · 6 д 21 год"
   },
   "zakarpattia": {
    "status": "outage",
@@ -18,15 +18,15 @@
   },
   "chernivtsi": {
    "status": "outage",
-   "note": "Порубне → RO: 1144 вант. · 4 д 15 год"
+   "note": "Порубне → RO: 1143 вант. · 4 д 15 год"
   },
   "odesa": {
-   "status": "outage",
-   "note": "Орлівка → RO: 771 вант. · 6 д 20 год"
+   "status": "ok",
+   "note": "Виноградівка → MD: 7 вант. · 0 год"
   },
   "vinnytsia": {
    "status": "ok",
-   "note": "Могилів-Подільський → MD: 1 вант. · 0 год"
+   "note": "Могилів-Подільський → MD: 0 вант. · 0 год"
   }
  },
  "queue": [
@@ -66,13 +66,6 @@
    "trucks": 606
   },
   {
-   "oblast": "volyn",
-   "name": "Устилуг",
-   "to": "PL",
-   "hours": 0.0,
-   "trucks": 3
-  },
-  {
    "oblast": "lviv",
    "name": "Шегині",
    "to": "PL",
@@ -97,8 +90,8 @@
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
-   "hours": 166,
-   "trucks": 1691
+   "hours": 165,
+   "trucks": 1686
   },
   {
    "oblast": "volyn",
@@ -129,18 +122,11 @@
    "trucks": 0
   },
   {
-   "oblast": "odesa",
-   "name": "Орлівка",
-   "to": "RO",
-   "hours": 164,
-   "trucks": 771
-  },
-  {
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
    "hours": 111,
-   "trucks": 1144
+   "trucks": 1143
   },
   {
    "oblast": "chernivtsi",
@@ -175,7 +161,7 @@
    "name": "Могилів-Подільський",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 1
+   "trucks": 0
   },
   {
    "oblast": "odesa",
@@ -210,7 +196,7 @@
    "name": "Старокозаче",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 5
+   "trucks": 4
   },
   {
    "oblast": "odesa",
