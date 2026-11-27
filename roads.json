@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-27T18:04:49Z",
- "checked_at": "2026-11-27T18:04:49Z",
+ "updated": "2026-11-27T18:11:46Z",
+ "checked_at": "2026-11-27T18:11:46Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -14,18 +14,29 @@
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Дякове → RO: 596 вант. · 6 д 13 год"
+   "note": "Дякове → RO: 593 вант. · 6 д 12 год"
   },
   "chernivtsi": {
    "status": "ok",
-   "note": "Красноїльськ → RO: 1 вант. · 0 год"
+   "note": "Дяківці → RO: 1 вант. · 0 год"
   },
   "odesa": {
    "status": "outage",
-   "note": "Орлівка → RO: 838 вант. · 7 д 11 год"
+   "note": "Орлівка → RO: 838 вант. · 7 д 10 год"
+  },
+  "vinnytsia": {
+   "status": "ok",
+   "note": "Могилів-Подільський → MD: 10 вант. · 0 год"
   }
  },
  "queue": [
+  {
+   "oblast": "lviv",
+   "name": "Краківець",
+   "to": "PL",
+   "hours": 144.2,
+   "trucks": 1256
+  },
   {
    "oblast": "lviv",
    "name": "Краківець",
@@ -37,8 +48,8 @@
    "oblast": "lviv",
    "name": "Рава-Руська",
    "to": "PL",
-   "hours": 136,
-   "trucks": 1037
+   "hours": 135,
+   "trucks": 1036
   },
   {
    "oblast": "lviv",
@@ -100,8 +111,8 @@
    "oblast": "zakarpattia",
    "name": "Дякове",
    "to": "RO",
-   "hours": 157,
-   "trucks": 596
+   "hours": 156,
+   "trucks": 593
   },
   {
    "oblast": "chernivtsi",
@@ -114,21 +125,21 @@
    "oblast": "chernivtsi",
    "name": "Красноїльськ",
    "to": "RO",
-   "hours": 0.3,
+   "hours": 0.0,
    "trucks": 1
   },
   {
    "oblast": "odesa",
    "name": "Орлівка",
    "to": "RO",
-   "hours": 179,
+   "hours": 178,
    "trucks": 838
   },
   {
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
-   "hours": 0.3,
+   "hours": 0.0,
    "trucks": 1
   },
   {
@@ -146,6 +157,13 @@
    "trucks": 1
   },
   {
+   "oblast": "vinnytsia",
+   "name": "Могилів-Подільський",
+   "to": "MD",
+   "hours": 0.0,
+   "trucks": 10
+  },
+  {
    "oblast": "odesa",
    "name": "Рені",
    "to": "MD",
@@ -157,7 +175,7 @@
    "name": "Росошани",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 0
+   "trucks": 1
   },
   {
    "oblast": "odesa",
@@ -186,6 +204,20 @@
    "to": "SK",
    "hours": 0.0,
    "trucks": 0
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Лужанка",
+   "to": "HU",
+   "hours": 0.0,
+   "trucks": 2
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Лужанка",
+   "to": "HU",
+   "hours": 112,
+   "trucks": 275
   }
  ]
 }
