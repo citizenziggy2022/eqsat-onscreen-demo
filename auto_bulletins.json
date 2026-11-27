@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-27T03:36:51Z",
+ "generated_at": "2026-11-27T03:45:55Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -36,7 +36,7 @@
    "name": "Харківська ОВА",
    "url": "https://t.me/s/kharkivoda",
    "verified": "linked from kharkivoda.gov.ua",
-   "status": "ok: kept 1 / dropped 1, showing 1"
+   "status": "ok: kept 0 / dropped 1, showing 0"
   }
  ],
  "bulletins": [
@@ -109,24 +109,6 @@
    "en_mt": {
     "title": "A person was killed in an enemy attack.",
     "body": "Another person has been injured. The enemy struck the Dnipro district of Zaporizhzhia.",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-kharkivoda-33184",
-   "title": "На Харківщині можна замовити витяг про несудимість",
-   "body": "У ЦНАП міста Харкова та його територіальних підрозділах запровадили нову послугу — оформлення витягу про несудимість, зокрема з апостилем. Документ необхідний для працевлаштування, навчання за кордоном або оформлення посвідки на проживання. Апостиль…",
-   "source": "Харківська ОВА",
-   "source_url": "https://t.me/kharkivoda/33184",
-   "region": "Харківщина",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-26T15:45:33Z",
-   "expires_at": "2026-11-27T03:45:33Z",
-   "auto": true,
-   "en_mt": {
-    "title": "In Kharkiv region it is possible to order a certificate of no criminal record",
-    "body": "In the CNAP of Kharkiv city and its territorial departments, a new service has been introduced - the issuance of an extract on non-conviction, including with an apostille. The document is necessary for employment, study abroad or registration of a residence permit. Apostille…",
     "by": "m2m100"
    }
   }
