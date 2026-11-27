@@ -1,10 +1,27 @@
 {
  "note": "Official road/water notice CANDIDATES, NOT on air. Written by scripts/fetch_gov_review.py. Nothing is merged into auto_bulletins.json; an item airs only if the owner approves that single card and it is added by hand with an expiry.",
  "every_s": 600,
- "fetched_at": "2026-11-26T20:07:45Z",
+ "fetched_at": "2026-11-27T06:32:38Z",
  "on_air": false,
  "auto_approved": 0,
- "items": [],
+ "items": [
+  {
+   "id": "gov-roads-dorogy-derzhavnogo-znachennya-operatyvna",
+   "title": "Дороги державного значення: оперативна інформація на 27 листопада",
+   "body": "Станом на ранок проїзд усіма автошляхами державного значення забезпечено. Дорожні служби працюють у посиленому режимі. До зимового утримання доріг залучено 574 одиниці спецтехніки.",
+   "source": "Агентство відновлення · CC BY 4.0",
+   "source_url": "https://restoration.gov.ua/blog/dorogy-derzhavnogo-znachennya-operatyvna-informacziya-na-27-lystopada/",
+   "region": "Україна · дороги",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "auto": true,
+   "issued_at": "2026-11-27T06:29:41Z",
+   "expires_at": "2026-11-27T18:29:41Z",
+   "licence": "CC BY 4.0",
+   "status": "pending_review",
+   "on_air": false
+  }
+ ],
  "needs_review": [
   "needs review (planned/partial outage not fully parsed): infoxvodokanal/1272",
   "needs review (planned/partial outage not fully parsed): infoxvodokanal/1273",
