@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-27T06:19:55Z",
- "checked_at": "2026-11-27T06:19:55Z",
+ "updated": "2026-11-27T06:26:12Z",
+ "checked_at": "2026-11-27T06:26:12Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
@@ -14,7 +14,7 @@
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Дякове → RO: 521 вант. · 5 д 7 год"
+   "note": "Дякове → RO: 522 вант. · 5 д 8 год"
   },
   "chernivtsi": {
    "status": "ok",
@@ -26,7 +26,7 @@
   },
   "vinnytsia": {
    "status": "ok",
-   "note": "Могилів-Подільський → MD: 1 вант. · 0 год"
+   "note": "Могилів-Подільський → MD: 2 вант. · 0 год"
   }
  },
  "queue": [
@@ -35,7 +35,7 @@
    "name": "Краківець",
    "to": "PL",
    "hours": 0.0,
-   "trucks": 4
+   "trucks": 3
   },
   {
    "oblast": "lviv",
@@ -76,8 +76,8 @@
    "oblast": "zakarpattia",
    "name": "Дякове",
    "to": "RO",
-   "hours": 127,
-   "trucks": 521
+   "hours": 128,
+   "trucks": 522
   },
   {
    "oblast": "chernivtsi",
@@ -112,7 +112,7 @@
    "name": "Могилів-Подільський",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 1
+   "trucks": 2
   },
   {
    "oblast": "odesa",
@@ -151,13 +151,6 @@
   },
   {
    "oblast": "odesa",
-   "name": "Старокозаче",
-   "to": "MD",
-   "hours": 6,
-   "trucks": 22
-  },
-  {
-   "oblast": "odesa",
    "name": "Табаки",
    "to": "MD",
    "hours": 0.0,
@@ -176,6 +169,13 @@
    "to": "SK",
    "hours": 0.0,
    "trucks": 0
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Лужанка",
+   "to": "HU",
+   "hours": 86,
+   "trucks": 278
   }
  ]
 }
