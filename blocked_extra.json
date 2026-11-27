@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-27T00:10:59+00:00",
+ "generated": "2026-11-27T01:15:24+00:00",
  "sources": {
   "censoredplanet": {
    "name": "Censored Planet (University of Michigan)",
@@ -10,7 +10,7 @@
     "endDate": "2026-11-27"
    },
    "domains_tested": 870,
-   "query_errors": 1,
+   "query_errors": 2,
    "baseline_unexpected_share": {
     "RU": 0.0,
     "UA": 0.0,
@@ -26,7 +26,7 @@
     "UA": {
      "confirmed": 0,
      "likely": 0,
-     "measured": 838
+     "measured": 828
     },
     "BY": {
      "confirmed": 0,
@@ -40,7 +40,7 @@
     }
    },
    "rule": "confirmed = a known block page was returned; likely = >=20 measurements, >=50% unexpected and >=30 points above the country median",
-   "seconds": 19.9
+   "seconds": 17.0
   },
   "rkn": {
    "name": "Roskomnadzor registry (via antifilter.download)",
@@ -49,13 +49,13 @@
    "total_domains": 1840794,
    "well_known_listed": 56,
    "note": "Official RKN blocking registry. Rows are registry entries (incl. wildcard and mirror domains), not distinct sites.",
-   "seconds": 14.5
+   "seconds": 16.3
   }
  },
  "credit": "Censored Planet (U. Michigan) · RKN registry via antifilter.download",
  "counts": {
   "items": 147,
-  "new_vs_ooni": 87,
+  "new_vs_ooni": 91,
   "by_source_country": {
    "rkn/RU": 44,
    "censoredplanet/BY": 26,
@@ -526,7 +526,7 @@
    "status": "listed",
    "last_seen": "2026-11-26",
    "category": "rights",
-   "new_vs_ooni": false,
+   "new_vs_ooni": true,
    "well_known": true
   },
   {
@@ -1080,6 +1080,18 @@
    "well_known": false
   },
   {
+   "domain": "kavkazr.com",
+   "country": "RU",
+   "source": "censoredplanet",
+   "status": "likely",
+   "last_seen": "2026-11-25",
+   "rate": 0.76,
+   "measurements": 349,
+   "category": "news",
+   "new_vs_ooni": true,
+   "well_known": false
+  },
+  {
    "domain": "matrix-client.matrix.org",
    "country": "RU",
    "source": "censoredplanet",
@@ -1184,6 +1196,18 @@
    "rate": 0.75,
    "measurements": 361,
    "category": "comt",
+   "new_vs_ooni": true,
+   "well_known": false
+  },
+  {
+   "domain": "azatliq.org",
+   "country": "RU",
+   "source": "censoredplanet",
+   "status": "likely",
+   "last_seen": "2026-11-25",
+   "rate": 0.75,
+   "measurements": 346,
+   "category": "news",
    "new_vs_ooni": true,
    "well_known": false
   },
@@ -1356,6 +1380,18 @@
    "well_known": false
   },
   {
+   "domain": "idelreal.org",
+   "country": "RU",
+   "source": "censoredplanet",
+   "status": "likely",
+   "last_seen": "2026-11-25",
+   "rate": 0.74,
+   "measurements": 338,
+   "category": "news",
+   "new_vs_ooni": true,
+   "well_known": false
+  },
+  {
    "domain": "t.me",
    "country": "RU",
    "source": "censoredplanet",
@@ -1452,18 +1488,6 @@
    "well_known": false
   },
   {
-   "domain": "kavkazr.com",
-   "country": "RU",
-   "source": "censoredplanet",
-   "status": "likely",
-   "last_seen": "2026-11-25",
-   "rate": 0.76,
-   "measurements": 349,
-   "category": "news",
-   "new_vs_ooni": false,
-   "well_known": false
-  },
-  {
    "domain": "static.cdninstagram.com",
    "country": "RU",
    "source": "censoredplanet",
@@ -1508,18 +1532,6 @@
    "rate": 0.76,
    "measurements": 355,
    "category": "grp",
-   "new_vs_ooni": false,
-   "well_known": false
-  },
-  {
-   "domain": "azatliq.org",
-   "country": "RU",
-   "source": "censoredplanet",
-   "status": "likely",
-   "last_seen": "2026-11-25",
-   "rate": 0.75,
-   "measurements": 346,
-   "category": "news",
    "new_vs_ooni": false,
    "well_known": false
   },
@@ -1676,18 +1688,6 @@
    "rate": 0.74,
    "measurements": 359,
    "category": "grp",
-   "new_vs_ooni": false,
-   "well_known": false
-  },
-  {
-   "domain": "idelreal.org",
-   "country": "RU",
-   "source": "censoredplanet",
-   "status": "likely",
-   "last_seen": "2026-11-25",
-   "rate": 0.74,
-   "measurements": 338,
-   "category": "news",
    "new_vs_ooni": false,
    "well_known": false
   },
