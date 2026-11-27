@@ -1,6 +1,6 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-27T12:19:07Z",
+ "generated_at": "2026-11-27T12:33:24Z",
  "sources": [
   {
    "name": "ДСНС України",
@@ -24,7 +24,7 @@
    "name": "Донецька ОВА",
    "url": "https://t.me/s/VadymFilashkin",
    "verified": "channel of the OVA head (dn.gov.ua/persons/vadim-filashkin), links to dn.gov.ua",
-   "status": "ok: kept 2 / dropped 1, showing 2"
+   "status": "ok: kept 3 / dropped 1, showing 2"
   },
   {
    "name": "Луганська ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-VadymFilashkin-19641",
+   "title": "Дитинство має бути сповнене сміху, радості, нових вражень і щасливих моментів!",
+   "body": "У таборі «Соколята» в межах президентської ініціативи «Карпатська зміна» для дітей Донеччини відбувся креативний ярмарок, який вони організували власноруч. Кожна локація мала свою атмосферу, а кожен учасник — можливість спробувати щось нове та проявити…",
+   "source": "Донецька ОВА",
+   "source_url": "https://t.me/VadymFilashkin/19641",
+   "region": "Донеччина",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-27T12:27:30Z",
+   "expires_at": "2026-11-28T00:27:30Z",
+   "auto": true,
+   "en_mt": {
+    "title": "Childhood should be filled with laughter, joy, new impressions and happy moments!",
+    "body": "In the Sokolyata camp as part of the presidential initiative Carpathian Change a creative fair was held for children from Donbass which they organised themselves. Each location had its own atmosphere and each participant had the opportunity to try something new and show…",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-dsns_telegram-81711",
    "title": "двоє людей постраждали внаслідок чергової атаки росіян на Лозову",
@@ -163,24 +181,6 @@
    "en_mt": {
     "title": "29-year-old rescuer Oleg Martynenko died in Donetsk region on 4 March 2024.",
     "body": "He and his colleagues arrived at the site of the enemy shelling near Sloviansk, where a fire broke out. At that time, the Russian army struck again with a drone - at the rescuers and fire equipment. Oleg died along with his colleague - Bohdan Ravlyk. Oleg…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-VadymFilashkin-19638",
-   "title": "Росія вбиває цивільних!",
-   "body": "За 26 листопада росіяни вбили 1 жителя Донеччини: у Слов'янську. Ще 3 людини в області за добу отримали поранення. Загальна кількість жертв росіян на Донеччині подана без урахування Маріуполя та Волновахи. __ Russia kills civilians! On 26 November, the…",
-   "source": "Донецька ОВА",
-   "source_url": "https://t.me/VadymFilashkin/19638",
-   "region": "Донеччина",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-27T06:01:55Z",
-   "expires_at": "2026-11-27T18:01:55Z",
-   "auto": true,
-   "en_mt": {
-    "title": "Russia is killing civilians!",
-    "body": "On 26 November, Russians killed 1 resident of Donetsk region: in Slovyansk. Another 3 people in the region received injuries over the day. The total number of Russian victims in Donetsk region is given without taking into account Mariupol and Volnovakha.",
     "by": "m2m100"
    }
   }
