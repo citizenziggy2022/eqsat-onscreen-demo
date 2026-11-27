@@ -1,28 +1,28 @@
 {
- "updated": "2026-11-27T09:04:30Z",
- "checked_at": "2026-11-27T09:04:30Z",
+ "updated": "2026-11-27T09:14:24Z",
+ "checked_at": "2026-11-27T09:14:24Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Рава-Руська → PL: 610 вант. · 8 д 18 год"
+   "note": "Шегині → PL: 611 вант. · 7 д 4 год"
   },
   "volyn": {
    "status": "outage",
-   "note": "Устилуг → PL: 557 вант. · 5 д 6 год"
+   "note": "Устилуг → PL: 556 вант. · 5 д 6 год"
   },
   "zakarpattia": {
    "status": "outage",
-   "note": "Ужгород → SK: 837 вант. · 6 д 21 год"
+   "note": "Ужгород → SK: 835 вант. · 6 д 21 год"
   },
   "chernivtsi": {
    "status": "ok",
-   "note": "Росошани → MD: 2 вант. · 0 год"
+   "note": "Дяківці → RO: 0 вант. · 0 год"
   },
   "odesa": {
-   "status": "ok",
-   "note": "Маяки-Удобне → MD: 0 вант. · 0 год"
+   "status": "outage",
+   "note": "Орлівка → RO: 788 вант. · 7 д 1 год"
   },
   "vinnytsia": {
    "status": "ok",
@@ -41,13 +41,6 @@
    "oblast": "lviv",
    "name": "Краківець",
    "to": "PL",
-   "hours": 132,
-   "trucks": 1160
-  },
-  {
-   "oblast": "lviv",
-   "name": "Краківець",
-   "to": "PL",
    "hours": 0.0,
    "trucks": 1
   },
@@ -56,21 +49,14 @@
    "name": "Рава-Руська",
    "to": "PL",
    "hours": 132,
-   "trucks": 1011
-  },
-  {
-   "oblast": "lviv",
-   "name": "Рава-Руська",
-   "to": "PL",
-   "hours": 210,
-   "trucks": 610
+   "trucks": 1010
   },
   {
    "oblast": "lviv",
    "name": "Смільниця",
    "to": "PL",
    "hours": 0.0,
-   "trucks": 1
+   "trucks": 0
   },
   {
    "oblast": "lviv",
@@ -84,7 +70,7 @@
    "name": "Угринів",
    "to": "PL",
    "hours": 137,
-   "trucks": 600
+   "trucks": 601
   },
   {
    "oblast": "volyn",
@@ -98,14 +84,14 @@
    "name": "Устилуг",
    "to": "PL",
    "hours": 126,
-   "trucks": 557
+   "trucks": 556
   },
   {
    "oblast": "lviv",
    "name": "Шегині",
    "to": "PL",
-   "hours": 171,
-   "trucks": 610
+   "hours": 172,
+   "trucks": 611
   },
   {
    "oblast": "lviv",
@@ -119,21 +105,21 @@
    "name": "Ягодин",
    "to": "PL",
    "hours": 102,
-   "trucks": 1062
+   "trucks": 1061
   },
   {
    "oblast": "volyn",
    "name": "Ягодин",
    "to": "PL",
-   "hours": 0.0,
-   "trucks": 18
+   "hours": 0.2,
+   "trucks": 20
   },
   {
    "oblast": "zakarpattia",
    "name": "Дякове",
    "to": "RO",
    "hours": 129,
-   "trucks": 525
+   "trucks": 526
   },
   {
    "oblast": "chernivtsi",
@@ -147,7 +133,14 @@
    "name": "Красноїльськ",
    "to": "RO",
    "hours": 0.0,
-   "trucks": 2
+   "trucks": 3
+  },
+  {
+   "oblast": "odesa",
+   "name": "Орлівка",
+   "to": "RO",
+   "hours": 168.6,
+   "trucks": 788
   },
   {
    "oblast": "chernivtsi",
@@ -155,6 +148,13 @@
    "to": "RO",
    "hours": 0.0,
    "trucks": 0
+  },
+  {
+   "oblast": "odesa",
+   "name": "Виноградівка",
+   "to": "MD",
+   "hours": 0.0,
+   "trucks": 1
   },
   {
    "oblast": "odesa",
@@ -181,7 +181,7 @@
    "oblast": "chernivtsi",
    "name": "Росошани",
    "to": "MD",
-   "hours": 0.3,
+   "hours": 0.0,
    "trucks": 2
   },
   {
@@ -199,6 +199,20 @@
    "trucks": 0
   },
   {
+   "oblast": "odesa",
+   "name": "Старокозаче",
+   "to": "MD",
+   "hours": 6,
+   "trucks": 30
+  },
+  {
+   "oblast": "odesa",
+   "name": "Табаки",
+   "to": "MD",
+   "hours": 0.4,
+   "trucks": 3
+  },
+  {
    "oblast": "zakarpattia",
    "name": "Малий Березний",
    "to": "SK",
@@ -210,19 +224,12 @@
    "name": "Ужгород",
    "to": "SK",
    "hours": 165,
-   "trucks": 837
+   "trucks": 835
   },
   {
    "oblast": "zakarpattia",
    "name": "Ужгород",
    "to": "SK",
-   "hours": 0.0,
-   "trucks": 0
-  },
-  {
-   "oblast": "zakarpattia",
-   "name": "Лужанка",
-   "to": "HU",
    "hours": 0.0,
    "trucks": 2
   },
@@ -230,8 +237,15 @@
    "oblast": "zakarpattia",
    "name": "Лужанка",
    "to": "HU",
-   "hours": 82,
-   "trucks": 265
+   "hours": 0.3,
+   "trucks": 4
+  },
+  {
+   "oblast": "zakarpattia",
+   "name": "Чоп (Тиса)",
+   "to": "HU",
+   "hours": 158,
+   "trucks": 1600
   }
  ]
 }
