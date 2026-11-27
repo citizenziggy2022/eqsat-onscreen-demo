@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T23:14:59Z",
+ "updated": "2026-11-27T23:21:55Z",
  "source": "siren.pp.ua (UkraineAlarm)",
  "types": {
   "AIR": {
@@ -9,13 +9,14 @@
     "dnipro",
     "donetsk",
     "kharkiv",
+    "kyivcity",
     "kyivobl",
     "luhansk",
     "poltava",
     "sumy",
     "zaporizhzhia"
    ],
-   "areas": 37
+   "areas": 41
   },
   "ARTILLERY": {
    "regions": [
@@ -424,9 +425,9 @@
     "counts": {},
     "partial": true,
     "first_at": "2026-11-27T22:01:51Z",
-    "gap_count": 14,
-    "samples": 14,
-    "last_at": "2026-11-27T23:14:59Z",
+    "gap_count": 15,
+    "samples": 15,
+    "last_at": "2026-11-27T23:21:55Z",
     "covered_oblasts": [
      "cherkasy",
      "chernihiv",
@@ -457,7 +458,7 @@
     ]
    }
   },
-  "last_at": "2026-11-27T23:14:59Z",
+  "last_at": "2026-11-27T23:21:55Z",
   "active": [
    "chernihiv:AIR",
    "crimea:AIR",
@@ -467,6 +468,7 @@
    "kharkiv:AIR",
    "kharkiv:ARTILLERY",
    "kharkiv:URBAN_FIGHTS",
+   "kyivcity:AIR",
    "kyivobl:AIR",
    "luhansk:AIR",
    "poltava:AIR",
