@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-27T18:18:48Z",
+ "generated_at": "2026-11-27T18:32:27Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 5 / dropped 3, showing 2"
+   "status": "ok: kept 6 / dropped 2, showing 2"
   },
   {
    "name": "Херсонська ОВА",
@@ -41,6 +41,24 @@
  ],
  "bulletins": [
   {
+   "id": "auto-dsns_telegram-81739",
+   "title": "11 людей, зокрема 3 дітей, постраждали внаслідок російських ударів.",
+   "body": "Сьогодні ввечері ворог атакував населені пункти Лозівського та Харківського районів реактивними БпЛА. ◾У селі Хлібне Лозівського району зафіксоване влучання у приватне подвір’я, виникла пожежа, площею 150 кв.м, у житловому будинку та господарській споруді…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/81739",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-27T18:25:22Z",
+   "expires_at": "2026-11-28T06:25:22Z",
+   "auto": true,
+   "en_mt": {
+    "title": "11 people, including 3 children, were injured as a result of Russian strikes.",
+    "body": "This evening the enemy attacked the settlements of Lozivskyi and Kharkivskyi districts with reactive UAVs. ◾In the village of Khlibne, Lozivskyi district, a hit was recorded in a private yard, a fire broke out, with an area of 150 sq.m, in a residential building and an outbuilding…",
+    "by": "m2m100"
+   }
+  },
+  {
    "id": "auto-dsns_telegram-81725",
    "title": "Одна людина загинула, ще 12 постраждали внаслідок російської атаки на Житомирщині!",
    "body": "Сьогодні вдень ворог атакував цивільне підприємство в Малинській громаді - пошкоджена будівля підприємства, виникла пожежа. Через повітряну небезпеку рятувальники тимчасово відходили на безпечну відстань. Наразі пожежа ліквідована. Сайт • Fb • X • IG • YT • TT",
@@ -55,24 +73,6 @@
    "en_mt": {
     "title": "One person was killed, 12 more were injured as a result of the Russian attack on Zhytomyr region!",
     "body": "Today during the day the enemy attacked a civilian enterprise in Malynska community - the building of the enterprise was damaged, a fire broke out. Due to the air threat, rescuers temporarily retreated to a safe distance. At the moment the fire has been extinguished. Site • Fb • X • IG • YT • TT",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-81717",
-   "title": "Як пояснити дошкільнятам, що цікава знахідка може бути смертельно небезпечною?",
-   "body": "На Львівщині офіцер-рятувальник громади провів для малечі заняття з мінної безпеки. Діти дізналися, який вигляд можуть мати вибухонебезпечні предмети, де на них можна натрапити та чому не можна торкатися підозрілих знахідок. А ще — вчилися розпізнавати…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/81717",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-27T14:01:03Z",
-   "expires_at": "2026-11-28T02:01:03Z",
-   "auto": true,
-   "en_mt": {
-    "title": "How to explain to preschoolers that an interesting find can be life-threatening?",
-    "body": "In Lviv region, a community rescue officer held a lesson on mine safety for kids. Children learned what explosive objects might look like, where they can be found and why they should not touch suspicious finds. And also - learned to recognize…",
     "by": "m2m100"
    }
   },
