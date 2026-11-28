@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-28T17:44:29Z",
+ "generated_at": "2026-11-28T17:50:26Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 2 / dropped 5, showing 2"
+   "status": "ok: kept 3 / dropped 5, showing 2"
   },
   {
    "name": "Херсонська ОВА",
@@ -41,6 +41,24 @@
  ],
  "bulletins": [
   {
+   "id": "auto-dsns_telegram-81844",
+   "title": "у Білій Церкві рятувальники розгорнули пункт допомоги та ліквідовують наслідки ворожої атаки",
+   "body": "Внаслідок обстрілу у місті пошкоджено 8 житлових будинків — у квартирах вибито вікна, відсутнє електропостачання. Аби підтримати мешканців, підрозділи ДСНС розгорнули пункт надання допомоги. Тут люди можуть зігрітися, зарядити телефони та отримати необхідну…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/81844",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-28T17:48:37Z",
+   "expires_at": "2026-11-29T05:48:37Z",
+   "auto": true,
+   "en_mt": {
+    "title": "In Bila Tserkva, rescuers have deployed a assistance point and are eliminating the consequences of the enemy attack",
+    "body": "As a result of the shelling in the city, 8 residential buildings were damaged — windows were broken in apartments, there is no electricity supply. To support residents, DSNs units deployed a assistance point. Here people can warm up, charge their phones and receive necessary…",
+    "by": "m2m100"
+   }
+  },
+  {
    "id": "auto-dsns_telegram-81819",
    "title": "у Кременчуці та районі внаслідок ворожої атаки пошкоджено підприємство та житлові будинки",
    "body": "У м. Кременчук зафіксовано пошкодження на території одного з підприємств. Також у Кременчуцькому районі вибуховою хвилею вибито вікна у житлових будинках та господарчій споруді. До ліквідації наслідків атаки залучалися підрозділи ДСНС Полтавщини. Інформація…",
@@ -73,24 +91,6 @@
    "en_mt": {
     "title": "On the Day of Remembrance for the Victims of the Holodomors candles were lit. For those who did not survive. For those who were never born.",
     "body": "Eternal memory to the millions of innocent lost lives.",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-81799",
-   "title": "Рятувальники працюють у складних погодних умовах, щоб відновити життєзабезпечення населення",
-   "body": "Попри мороз, сильні пориви вітру та надзвичайно складні умови, рятувальники продовжують працювати над ліквідацією наслідків ворожої атаки. Там, де ворог руйнує, українські рятувальники, комунальники та інші служби роблять усе можливе, аби відновити…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/81799",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-28T11:36:45Z",
-   "expires_at": "2026-11-28T23:36:45Z",
-   "auto": true,
-   "en_mt": {
-    "title": "Rescuers are working in difficult weather conditions to restore the livelihoods of the population",
-    "body": "Despite the frost, strong gusts of wind and extremely difficult conditions, rescuers continue to work on eliminating the consequences of the enemy attack. Where the enemy destroys, Ukrainian rescuers, communal workers and other services do everything possible to restore…",
     "by": "m2m100"
    }
   },
