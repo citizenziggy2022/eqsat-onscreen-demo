@@ -1,5 +1,5 @@
 {
- "checked_at": "2026-11-27T20:07:20Z",
+ "checked_at": "2026-11-28T16:12:33Z",
  "method": "label-bound; see scripts/verify_static.py",
  "lines": [
   {
@@ -9,7 +9,7 @@
    "state": "confirmed",
    "source_url": "https://mvs.gov.ua/mvs-specprojekti/sluzba-112-usi-ekstreni-sluzbi-za-jedinim-nomerom",
    "evidence": "112 - це номер для звернення",
-   "confirmed_at": "2026-11-27T20:07:25Z",
+   "confirmed_at": "2026-11-28T16:12:39Z",
    "source_note": "primary source blocked (HTTP 403); fallback page used"
   },
   {
@@ -51,7 +51,7 @@
    "state": "confirmed",
    "source_url": "https://1548.gov.ua/about/",
    "evidence": "Телефони 1548",
-   "confirmed_at": "2026-11-27T20:07:26Z"
+   "confirmed_at": "2026-11-28T16:12:40Z"
   },
   {
    "file": "emergency.json",
@@ -60,7 +60,7 @@
    "state": "confirmed",
    "source_url": "https://ombudsman.gov.ua/",
    "evidence": "Гаряча лінія: 1678",
-   "confirmed_at": "2026-11-27T20:07:28Z"
+   "confirmed_at": "2026-11-28T16:12:42Z"
   },
   {
    "file": "emergency.json",
@@ -69,7 +69,7 @@
    "state": "confirmed",
    "source_url": "https://www.ombudsman.gov.ua/uk/voyennij-stan/koordinacijnij-shtab-z-pitan-povodzhennya-z-vijskovopolonenimi",
    "evidence": "Телефон: 0 800 300 529",
-   "confirmed_at": "2026-11-27T20:07:33Z",
+   "confirmed_at": "2026-11-28T16:12:47Z",
    "source_note": "earlier source blocked: https://koordshtab.gov.ua (HTTP 403)"
   },
   {
@@ -79,7 +79,7 @@
    "state": "confirmed",
    "source_url": "https://redcross.org.ua/contacts/",
    "evidence": "Телефон: 0800332656",
-   "confirmed_at": "2026-11-27T20:07:35Z"
+   "confirmed_at": "2026-11-28T16:12:49Z"
   },
   {
    "file": "emergency.json",
@@ -88,7 +88,7 @@
    "state": "confirmed",
    "source_url": "https://1548.gov.ua/about/",
    "evidence": "WhatsApp, Telegram, Viber +38(096) 078 84 33",
-   "confirmed_at": "2026-11-27T20:07:35Z"
+   "confirmed_at": "2026-11-28T16:12:49Z"
   },
   {
    "file": "emergency.json",
@@ -97,7 +97,7 @@
    "state": "confirmed",
    "source_url": "https://ombudsman.gov.ua/uk/news_details/41-ukrayinec-povernuvsya-z-okupaciyi-cherez-volin",
    "evidence": "тимчасово окупованих територій: +38 093 406 80 17",
-   "confirmed_at": "2026-11-27T20:07:37Z"
+   "confirmed_at": "2026-11-28T16:12:50Z"
   },
   {
    "file": "emergency.json",
@@ -106,7 +106,7 @@
    "state": "confirmed",
    "source_url": "https://ombudsman.gov.ua/",
    "evidence": "Для дзвінків з-за кордону: +380442997408",
-   "confirmed_at": "2026-11-27T20:07:37Z"
+   "confirmed_at": "2026-11-28T16:12:50Z"
   },
   {
    "file": "emergency.json",
@@ -123,7 +123,7 @@
    "state": "confirmed",
    "source_url": "https://1548.gov.ua/about/",
    "evidence": "Телефони 1548",
-   "confirmed_at": "2026-11-27T20:07:40Z"
+   "confirmed_at": "2026-11-28T16:12:53Z"
   },
   {
    "file": "emergency.json",
@@ -137,10 +137,9 @@
    "file": "emergency.json",
    "card": "MOLDOVA · TRANSNISTRIA",
    "number": "112",
-   "state": "confirmed",
+   "state": "unverified",
    "source_url": "https://112.md/",
-   "evidence": "numărul unic pentru apeluri de urgență disponibil gratuit la nivelul întregii țări 112",
-   "confirmed_at": "2026-11-27T20:07:44Z"
+   "evidence": "source loads but its expected service identity is missing"
   },
   {
    "file": "emergency.json",
@@ -165,7 +164,7 @@
    "state": "confirmed",
    "source_url": "https://nib.gov.ua/",
    "evidence": "ГАРЯЧА ЛІНІЯ ЦІЛОДОБОВО: 1648",
-   "confirmed_at": "2026-11-27T20:07:48Z"
+   "confirmed_at": "2026-11-28T16:13:01Z"
   },
   {
    "file": "emergency_extra.json",
@@ -174,7 +173,7 @@
    "state": "confirmed",
    "source_url": "https://nib.gov.ua/",
    "evidence": "380 44 287-81-65 дзвінки з-за кордону",
-   "confirmed_at": "2026-11-27T20:07:48Z"
+   "confirmed_at": "2026-11-28T16:13:01Z"
   },
   {
    "file": "emergency_extra.json",
@@ -183,7 +182,7 @@
    "state": "confirmed",
    "source_url": "https://mvs.gov.ua/upovnovazenii-z-pitan-osib-zniklix-bezvisti-za-osoblivix-obstavin-1/kontakti/gariaca-liniia-upovnovazenogo-z-pitan-osib-zniklix-bezvisti-za-osoblivix-obstavin",
    "evidence": "за коротким номером: 1698",
-   "confirmed_at": "2026-11-27T20:07:49Z"
+   "confirmed_at": "2026-11-28T16:13:04Z"
   },
   {
    "file": "emergency_extra.json",
@@ -192,7 +191,7 @@
    "state": "confirmed",
    "source_url": "https://www.icrc.org/en/document/central-tracing-agency-missing-persons-ukraine",
    "evidence": "Call the ICRC In Ukraine: 0 800 300 155",
-   "confirmed_at": "2026-11-27T20:07:50Z"
+   "confirmed_at": "2026-11-28T16:13:05Z"
   },
   {
    "file": "emergency_extra.json",
@@ -201,7 +200,7 @@
    "state": "confirmed",
    "source_url": "https://redcross.org.ua/rfl/",
    "evidence": "Зателефонувати на гарячу лінію: 0 800 332 656",
-   "confirmed_at": "2026-11-27T20:07:52Z"
+   "confirmed_at": "2026-11-28T16:13:06Z"
   },
   {
    "file": "emergency_extra.json",
@@ -210,7 +209,7 @@
    "state": "confirmed",
    "source_url": "https://ombudsman.gov.ua/",
    "evidence": "Гаряча лінія: 1678",
-   "confirmed_at": "2026-11-27T20:07:52Z"
+   "confirmed_at": "2026-11-28T16:13:06Z"
   },
   {
    "file": "emergency_extra.json",
@@ -219,7 +218,7 @@
    "state": "confirmed",
    "source_url": "https://ombudsman.gov.ua/",
    "evidence": "Для дзвінків з-за кордону: +380442997408",
-   "confirmed_at": "2026-11-27T20:07:52Z"
+   "confirmed_at": "2026-11-28T16:13:06Z"
   },
   {
    "file": "emergency_extra.json",
@@ -228,7 +227,7 @@
    "state": "confirmed",
    "source_url": "https://www.ombudsman.gov.ua/uk/voyennij-stan/koordinacijnij-shtab-z-pitan-povodzhennya-z-vijskovopolonenimi",
    "evidence": "Телефон: 0 800 300 529",
-   "confirmed_at": "2026-11-27T20:07:52Z",
+   "confirmed_at": "2026-11-28T16:13:06Z",
    "source_note": "earlier source blocked: https://koordshtab.gov.ua (HTTP 403)"
   },
   {
@@ -246,7 +245,7 @@
    "state": "confirmed",
    "source_url": "https://ukr.radio/maps",
    "evidence": "1278 кГц (цілодобово)",
-   "confirmed_at": "2026-11-27T20:07:53Z"
+   "confirmed_at": "2026-11-28T16:13:07Z"
   },
   {
    "file": "emergency_extra.json",
@@ -255,7 +254,7 @@
    "state": "confirmed",
    "source_url": "https://ukr.radio/maps",
    "evidence": "1386 кГц (з 00:00 до 6:30",
-   "confirmed_at": "2026-11-27T20:07:53Z"
+   "confirmed_at": "2026-11-28T16:13:07Z"
   },
   {
    "file": "emergency_extra.json",
@@ -264,13 +263,13 @@
    "state": "confirmed",
    "source_url": "http://www.hfcc.org/data/b26/b26allx2.zip",
    "evidence": "5955 1600 1630 29SW                           TIG  100 30        0 812 1234567 251026 280327 D       Ukr        ROU RRO ",
-   "confirmed_at": "2026-11-27T20:07:55Z",
-   "source_note": "; B26 ALL 27-nov-2026"
+   "confirmed_at": "2026-11-28T16:13:09Z",
+   "source_note": "; B26 ALL 28-nov-2026"
   }
  ],
  "counts": {
-  "confirmed": 21,
-  "unverified": 1,
+  "confirmed": 20,
+  "unverified": 2,
   "failed": 8
  }
 }
