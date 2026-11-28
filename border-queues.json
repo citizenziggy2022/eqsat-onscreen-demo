@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-28T02:36:45Z",
- "checked_at": "2026-11-28T02:36:45Z",
+ "updated": "2026-11-28T02:47:01Z",
+ "checked_at": "2026-11-28T02:47:01Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Краківець → PL: 651 вант. · 7 д 22 год"
+   "note": "Краківець → PL: 649 вант. · 7 д 22 год"
   },
   "volyn": {
    "status": "outage",
@@ -22,11 +22,11 @@
   },
   "vinnytsia": {
    "status": "ok",
-   "note": "Могилів-Подільський → MD: 3 вант. · 0 год"
+   "note": "Могилів-Подільський → MD: 2 вант. · 0 год"
   },
   "zakarpattia": {
-   "status": "outage",
-   "note": "Ужгород → SK: 889 вант. · 7 д 6 год"
+   "status": "ok",
+   "note": "Малий Березний → SK: 0 вант. · 0 год"
   }
  },
  "queue": [
@@ -49,7 +49,7 @@
    "name": "Краківець",
    "to": "PL",
    "hours": 190,
-   "trucks": 651
+   "trucks": 649
   },
   {
    "oblast": "lviv",
@@ -63,7 +63,7 @@
    "name": "Угринів",
    "to": "PL",
    "hours": 0.0,
-   "trucks": 2
+   "trucks": 1
   },
   {
    "oblast": "lviv",
@@ -77,7 +77,7 @@
    "name": "Устилуг",
    "to": "PL",
    "hours": 0.0,
-   "trucks": 1
+   "trucks": 2
   },
   {
    "oblast": "volyn",
@@ -91,7 +91,7 @@
    "name": "Шегині",
    "to": "PL",
    "hours": 165,
-   "trucks": 630
+   "trucks": 629
   },
   {
    "oblast": "lviv",
@@ -161,7 +161,14 @@
    "name": "Могилів-Подільський",
    "to": "MD",
    "hours": 0.0,
-   "trucks": 3
+   "trucks": 2
+  },
+  {
+   "oblast": "odesa",
+   "name": "Рені",
+   "to": "MD",
+   "hours": 62,
+   "trucks": 209
   },
   {
    "oblast": "odesa",
@@ -209,13 +216,6 @@
    "oblast": "zakarpattia",
    "name": "Ужгород",
    "to": "SK",
-   "hours": 174,
-   "trucks": 889
-  },
-  {
-   "oblast": "zakarpattia",
-   "name": "Ужгород",
-   "to": "SK",
    "hours": 0.0,
    "trucks": 0
   },
@@ -225,20 +225,6 @@
    "to": "HU",
    "hours": 0.0,
    "trucks": 1
-  },
-  {
-   "oblast": "zakarpattia",
-   "name": "Лужанка",
-   "to": "HU",
-   "hours": 104,
-   "trucks": 254
-  },
-  {
-   "oblast": "zakarpattia",
-   "name": "Чоп (Тиса)",
-   "to": "HU",
-   "hours": 160,
-   "trucks": 1625
   }
  ]
 }
