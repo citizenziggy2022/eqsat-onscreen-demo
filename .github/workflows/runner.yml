@@ -65,6 +65,8 @@ jobs:
               files="$files stream_health.json"
               laststreams=$(date +%s)
             fi
+            python3 scripts/map_history.py || fail "map history failed, keeping last file"
+            files="$files maphist.json"
             git add $files 2>/dev/null || true
             if ! git diff --cached --quiet; then
               git commit -q -m "live: data $(date -u +%H:%MZ)"
