@@ -348,7 +348,12 @@ def ensure_clone(clone, repo):
     Auto-creates the branch on first run. Returns True when ready."""
     if not os.path.isdir(os.path.join(clone, ".git")):
         os.makedirs(os.path.dirname(clone), exist_ok=True)
-        r = _run(["git", "clone", "--no-checkout", _auth_url(repo), clone])
+        # shallow, single-branch: the full history clone (2,000+ commits, a 34 MB snapshot re-committed nightly) no longer fits the time cap
+        r = _run(["git", "clone", "--no-checkout", "--depth", "1", "--single-branch", "--branch", "history", _auth_url(repo), clone])
+        if r.returncode != 0:
+            print(f"history shallow clone of branch history failed, trying default branch: {r.scrubbed[:200]}", file=sys.stderr)
+            shutil.rmtree(clone, ignore_errors=True)
+            r = _run(["git", "clone", "--no-checkout", "--depth", "1", _auth_url(repo), clone])
         if r.returncode != 0:
             print(f"history clone failed: {r.scrubbed[:300]}", file=sys.stderr)
             return False
