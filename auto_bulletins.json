@@ -1,18 +1,18 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-28T07:15:40Z",
+ "generated_at": "2026-11-28T07:42:07Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 2 / dropped 0, showing 2"
+   "status": "ok: kept 3 / dropped 0, showing 2"
   },
   {
    "name": "Херсонська ОВА",
    "url": "https://t.me/s/khersonskaODA",
    "verified": "linked from khoda.gov.ua; channel links back to khoda.gov.ua",
-   "status": "ok: kept 0 / dropped 9, showing 0"
+   "status": "ok: kept 0 / dropped 11, showing 0"
   },
   {
    "name": "Запорізька ОВА",
@@ -24,7 +24,7 @@
    "name": "Донецька ОВА",
    "url": "https://t.me/s/VadymFilashkin",
    "verified": "channel of the OVA head (dn.gov.ua/persons/vadim-filashkin), links to dn.gov.ua",
-   "status": "ok: kept 2 / dropped 2, showing 2"
+   "status": "ok: kept 2 / dropped 1, showing 2"
   },
   {
    "name": "Луганська ОВА",
@@ -40,6 +40,24 @@
   }
  ],
  "bulletins": [
+  {
+   "id": "auto-dsns_telegram-81761",
+   "title": "Чернігівщина: унаслідок російської атаки на підприємство в Ніжині загинули 7 людей, ще 7 травмовані",
+   "body": "У Ніжині завершено аварійно-рятувальні роботи на місці вчорашнього удару. Одну людину надзвичайникам вдалося врятувати з-під завалів. До ліквідації наслідків атаки залучалися 55 рятувальників ДСНС та 14 одиниць техніки, зокрема двоє кінологів зі службовими…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/81761",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-28T07:37:25Z",
+   "expires_at": "2026-11-28T19:37:25Z",
+   "auto": true,
+   "en_mt": {
+    "title": "Chernihiv region: as a result of the Russian attack on an enterprise in Nizhyn, 7 people were killed, 7 more were injured",
+    "body": "In Nizhyn, emergency rescue work has been completed at the site of yesterday's strike. One person was rescued by rescuers from under the rubble. 55 rescuers from the State Emergency Service and 14 units of equipment, including two cynologists with service dogs, were involved in eliminating the consequences of the attack.",
+    "by": "m2m100"
+   }
+  },
   {
    "id": "auto-VadymFilashkin-19666",
    "title": "31-річний рятувальник Богдан Равлик загинув на Донеччині 4 березня 2024 року.",
@@ -91,24 +109,6 @@
    "en_mt": {
     "title": "Russia is killing civilians!",
     "body": "On 27 November Russians killed 4 residents of Donetsk region: 3 in Slovyansk and 1 in Malotaranivka. Another 8 people in the region received injuries per day. The total number of Russian victims in Donetsk region is given without taking into account Mariupol and Volnovakha. __ Russia kills civilians! On…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-81751",
-   "title": "учора ввечері в одному з районів міста внаслідок скидання боєприпасу з ворожого БпЛА виникла пожежа в…",
-   "body": "Рятувальники оперативно прибули на місце події та ліквідували займання. Постраждалих немає. Сайт •Fb •X •IG •YT •TT",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/81751",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-28T05:43:19Z",
-   "expires_at": "2026-11-28T17:43:19Z",
-   "auto": true,
-   "en_mt": {
-    "title": "yesterday evening in one of the city's districts, a fire broke out in…",
-    "body": "Rescuers promptly arrived at the scene and extinguished the fire. There are no casualties. Site •Fb •X •IG •YT •TT",
     "by": "m2m100"
    }
   }
