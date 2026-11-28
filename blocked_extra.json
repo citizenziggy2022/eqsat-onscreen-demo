@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-28T06:28:28+00:00",
+ "generated": "2026-11-28T07:35:11+00:00",
  "sources": {
   "censoredplanet": {
    "name": "Censored Planet (University of Michigan)",
@@ -10,7 +10,7 @@
     "endDate": "2026-11-28"
    },
    "domains_tested": 870,
-   "query_errors": 2,
+   "query_errors": 1,
    "baseline_unexpected_share": {
     "RU": 0.0,
     "UA": 0.0,
@@ -20,8 +20,8 @@
    "totals": {
     "RU": {
      "confirmed": 0,
-     "likely": 76,
-     "measured": 819
+     "likely": 77,
+     "measured": 828
     },
     "UA": {
      "confirmed": 0,
@@ -40,7 +40,7 @@
     }
    },
    "rule": "confirmed = a known block page was returned; likely = >=20 measurements, >=50% unexpected and >=30 points above the country median",
-   "seconds": 19.9
+   "seconds": 17.0
   },
   "rkn": {
    "name": "Roskomnadzor registry (via antifilter.download)",
@@ -54,12 +54,12 @@
  },
  "credit": "Censored Planet (U. Michigan) · RKN registry via antifilter.download",
  "counts": {
-  "items": 146,
-  "new_vs_ooni": 86,
+  "items": 147,
+  "new_vs_ooni": 87,
   "by_source_country": {
    "rkn/RU": 44,
    "censoredplanet/BY": 26,
-   "censoredplanet/RU": 76
+   "censoredplanet/RU": 77
   }
  },
  "items": [
@@ -1076,6 +1076,18 @@
    "rate": 0.76,
    "measurements": 365,
    "category": "lgbt",
+   "new_vs_ooni": true,
+   "well_known": false
+  },
+  {
+   "domain": "kavkazr.com",
+   "country": "RU",
+   "source": "censoredplanet",
+   "status": "likely",
+   "last_seen": "2026-11-25",
+   "rate": 0.76,
+   "measurements": 349,
+   "category": "news",
    "new_vs_ooni": true,
    "well_known": false
   },
