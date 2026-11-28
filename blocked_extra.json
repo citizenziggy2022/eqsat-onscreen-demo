@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-28T13:26:03+00:00",
+ "generated": "2026-11-28T14:29:11+00:00",
  "sources": {
   "censoredplanet": {
    "name": "Censored Planet (University of Michigan)",
@@ -10,7 +10,7 @@
     "endDate": "2026-11-28"
    },
    "domains_tested": 870,
-   "query_errors": 1,
+   "query_errors": 2,
    "baseline_unexpected_share": {
     "RU": 0.0,
     "UA": 0.0,
@@ -20,8 +20,8 @@
    "totals": {
     "RU": {
      "confirmed": 0,
-     "likely": 77,
-     "measured": 829
+     "likely": 76,
+     "measured": 819
     },
     "UA": {
      "confirmed": 0,
@@ -40,7 +40,7 @@
     }
    },
    "rule": "confirmed = a known block page was returned; likely = >=20 measurements, >=50% unexpected and >=30 points above the country median",
-   "seconds": 20.3
+   "seconds": 20.1
   },
   "rkn": {
    "name": "Roskomnadzor registry (via antifilter.download)",
@@ -49,17 +49,17 @@
    "total_domains": 1846868,
    "well_known_listed": 56,
    "note": "Official RKN blocking registry. Rows are registry entries (incl. wildcard and mirror domains), not distinct sites.",
-   "seconds": 18.1
+   "seconds": 17.2
   }
  },
  "credit": "Censored Planet (U. Michigan) · RKN registry via antifilter.download",
  "counts": {
-  "items": 147,
-  "new_vs_ooni": 87,
+  "items": 146,
+  "new_vs_ooni": 86,
   "by_source_country": {
    "rkn/RU": 44,
    "censoredplanet/BY": 26,
-   "censoredplanet/RU": 77
+   "censoredplanet/RU": 76
   }
  },
  "items": [
@@ -1231,18 +1231,6 @@
    "last_seen": "2026-11-25",
    "rate": 0.75,
    "measurements": 354,
-   "category": "news",
-   "new_vs_ooni": true,
-   "well_known": false
-  },
-  {
-   "domain": "lemonde.fr",
-   "country": "RU",
-   "source": "censoredplanet",
-   "status": "likely",
-   "last_seen": "2026-11-25",
-   "rate": 0.75,
-   "measurements": 337,
    "category": "news",
    "new_vs_ooni": true,
    "well_known": false
