@@ -91,7 +91,7 @@ FEEDS = {
     "alerttypes":       ("siren.pp.ua (UkraineAlarm)", "https://siren.pp.ua/", None, 60),
     "feed":             ("internal rollup (alert states + Svoboda/KI)", None, None, 60),
     "news":             ("multi-outlet RSS headlines (headline+link only)", None, None, 120),
-    "stats":            ("internal admin telemetry rollup", None, None, 300),
+    # "stats" removed from the archive (Nov 28 2026): stats.json is ~160 KB and changes every minute, so raw/stats/2026-11.jsonl grew past GitHub's 100 MB push limit and blocked every push.
     "blocked":          ("OONI-derived blocking data", "https://ooni.org/", "OONI", 3600),
     "blocked_extra":    ("OONI-derived blocking data", "https://ooni.org/", "OONI", 3600),
     "blocked_history":  ("OONI-derived blocking history", "https://ooni.org/", "OONI", 3600),
