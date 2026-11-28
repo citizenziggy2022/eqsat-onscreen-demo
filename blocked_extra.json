@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-28T04:24:08+00:00",
+ "generated": "2026-11-28T05:26:10+00:00",
  "sources": {
   "censoredplanet": {
    "name": "Censored Planet (University of Michigan)",
@@ -10,7 +10,7 @@
     "endDate": "2026-11-28"
    },
    "domains_tested": 870,
-   "query_errors": 0,
+   "query_errors": 2,
    "baseline_unexpected_share": {
     "RU": 0.0,
     "UA": 0.0,
@@ -21,7 +21,7 @@
     "RU": {
      "confirmed": 0,
      "likely": 77,
-     "measured": 838
+     "measured": 820
     },
     "UA": {
      "confirmed": 0,
@@ -40,7 +40,7 @@
     }
    },
    "rule": "confirmed = a known block page was returned; likely = >=20 measurements, >=50% unexpected and >=30 points above the country median",
-   "seconds": 19.7
+   "seconds": 20.0
   },
   "rkn": {
    "name": "Roskomnadzor registry (via antifilter.download)",
@@ -49,7 +49,7 @@
    "total_domains": 1845301,
    "well_known_listed": 56,
    "note": "Official RKN blocking registry. Rows are registry entries (incl. wildcard and mirror domains), not distinct sites.",
-   "seconds": 13.9
+   "seconds": 12.9
   }
  },
  "credit": "Censored Planet (U. Michigan) · RKN registry via antifilter.download",
@@ -1704,18 +1704,6 @@
    "well_known": false
   },
   {
-   "domain": "messenger.com",
-   "country": "RU",
-   "source": "censoredplanet",
-   "status": "likely",
-   "last_seen": "2026-11-25",
-   "rate": 0.74,
-   "measurements": 700,
-   "category": "comt",
-   "new_vs_ooni": false,
-   "well_known": false
-  },
-  {
    "domain": "riseup.net",
    "country": "RU",
    "source": "censoredplanet",
@@ -1760,6 +1748,18 @@
    "rate": 0.74,
    "measurements": 345,
    "category": "grp",
+   "new_vs_ooni": false,
+   "well_known": false
+  },
+  {
+   "domain": "messenger.com",
+   "country": "RU",
+   "source": "censoredplanet",
+   "status": "likely",
+   "last_seen": "2026-11-25",
+   "rate": 0.73,
+   "measurements": 346,
+   "category": "comt",
    "new_vs_ooni": false,
    "well_known": false
   },
