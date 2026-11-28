@@ -1,18 +1,18 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-28T03:15:29Z",
+ "generated_at": "2026-11-28T03:26:27Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 2 / dropped 2, showing 2"
+   "status": "ok: kept 1 / dropped 2, showing 1"
   },
   {
    "name": "Херсонська ОВА",
    "url": "https://t.me/s/khersonskaODA",
    "verified": "linked from khoda.gov.ua; channel links back to khoda.gov.ua",
-   "status": "ok: kept 0 / dropped 9, showing 0"
+   "status": "ok: kept 0 / dropped 8, showing 0"
   },
   {
    "name": "Запорізька ОВА",
@@ -36,7 +36,7 @@
    "name": "Харківська ОВА",
    "url": "https://t.me/s/kharkivoda",
    "verified": "linked from kharkivoda.gov.ua",
-   "status": "ok: kept 0 / dropped 2, showing 0"
+   "status": "ok: kept 0 / dropped 1, showing 0"
   }
  ],
  "bulletins": [
@@ -55,24 +55,6 @@
    "en_mt": {
     "title": "11 people, including 3 children, were injured as a result of Russian strikes.",
     "body": "This evening the enemy attacked the settlements of Lozivskyi and Kharkivskyi districts with reactive UAVs. ◾In the village of Khlibne, Lozivskyi district, a hit was recorded in a private yard, a fire broke out, with an area of 150 sq.m, in a residential building and an outbuilding…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-81725",
-   "title": "Одна людина загинула, ще 12 постраждали внаслідок російської атаки на Житомирщині!",
-   "body": "Сьогодні вдень ворог атакував цивільне підприємство в Малинській громаді - пошкоджена будівля підприємства, виникла пожежа. Через повітряну небезпеку рятувальники тимчасово відходили на безпечну відстань. Наразі пожежа ліквідована. Сайт • Fb • X • IG • YT • TT",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/81725",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-27T15:25:46Z",
-   "expires_at": "2026-11-28T03:25:46Z",
-   "auto": true,
-   "en_mt": {
-    "title": "One person was killed, 12 more were injured as a result of the Russian attack on Zhytomyr region!",
-    "body": "Today during the day the enemy attacked a civilian enterprise in Malynska community - the building of the enterprise was damaged, a fire broke out. Due to the air threat, rescuers temporarily retreated to a safe distance. At the moment the fire has been extinguished. Site • Fb • X • IG • YT • TT",
     "by": "m2m100"
    }
   }
