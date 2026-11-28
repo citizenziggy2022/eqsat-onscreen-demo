@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-28T05:58:00Z",
+ "generated_at": "2026-11-28T06:04:49Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 2 / dropped 1, showing 2"
+   "status": "ok: kept 3 / dropped 1, showing 2"
   },
   {
    "name": "Херсонська ОВА",
@@ -41,6 +41,24 @@
  ],
  "bulletins": [
   {
+   "id": "auto-dsns_telegram-81754",
+   "title": "унаслідок нічної російської атаки виникла пожежа на території садового товариства",
+   "body": "У ніч проти 28 листопада ворог завдав удару реактивним безпілотником по Індустріальному району Харкова. Зафіксоване влучання на території одного із садових товариств, внаслідок чого загорілися житловий будинок та гараж. Загальна площа пожежі склала 300 кв.м.…",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/81754",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-28T06:03:14Z",
+   "expires_at": "2026-11-28T18:03:14Z",
+   "auto": true,
+   "en_mt": {
+    "title": "as a result of the night Russian attack a fire broke out on the territory of the garden association",
+    "body": "In the night of 28 November the enemy struck with a rocket-powered drone at the Industrialnyi district of Kharkiv. A hit was recorded on the territory of one of the gardening associations, as a result of which a residential building and a garage caught fire. The total area of the fire was 300 sq.m….",
+    "by": "m2m100"
+   }
+  },
+  {
    "id": "auto-VadymFilashkin-19664",
    "title": "Росія вбиває цивільних!",
    "body": "За 27 листопада росіяни вбили 4 жителів Донеччини: 3 у Слов'янську та 1 у Малотаранівці. Ще 8 людей в області за добу отримали поранення. Загальна кількість жертв росіян на Донеччині подана без урахування Маріуполя та Волновахи. __ Russia kills civilians! On…",
@@ -61,7 +79,7 @@
   {
    "id": "auto-dsns_telegram-81751",
    "title": "учора ввечері в одному з районів міста внаслідок скидання боєприпасу з ворожого БпЛА виникла пожежа в…",
-   "body": "Рятувальники оперативно прибули на місце події та ліквідували займання. Постраждалих немає.",
+   "body": "Рятувальники оперативно прибули на місце події та ліквідували займання. Постраждалих немає. Сайт •Fb •X •IG •YT •TT",
    "source": "ДСНС України",
    "source_url": "https://t.me/dsns_telegram/81751",
    "region": "Україна",
@@ -72,25 +90,7 @@
    "auto": true,
    "en_mt": {
     "title": "yesterday evening in one of the city's districts, a fire broke out in…",
-    "body": "Rescuers promptly arrived at the scene and extinguished the fire. There are no casualties.",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-81739",
-   "title": "11 людей, зокрема 3 дітей, постраждали внаслідок російських ударів.",
-   "body": "Сьогодні ввечері ворог атакував населені пункти Лозівського та Харківського районів реактивними БпЛА. ◾У селі Хлібне Лозівського району зафіксоване влучання у приватне подвір’я, виникла пожежа, площею 150 кв.м, у житловому будинку та господарській споруді…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/81739",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-27T18:25:22Z",
-   "expires_at": "2026-11-28T06:25:22Z",
-   "auto": true,
-   "en_mt": {
-    "title": "11 people, including 3 children, were injured as a result of Russian strikes.",
-    "body": "This evening the enemy attacked the settlements of Lozivskyi and Kharkivskyi districts with reactive UAVs. ◾In the village of Khlibne, Lozivskyi district, a hit was recorded in a private yard, a fire broke out, with an area of 150 sq.m, in a residential building and an outbuilding…",
+    "body": "Rescuers promptly arrived at the scene and extinguished the fire. There are no casualties. Site •Fb •X •IG •YT •TT",
     "by": "m2m100"
    }
   }
