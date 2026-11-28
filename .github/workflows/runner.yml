@@ -74,8 +74,8 @@ jobs:
             if [ -n "$HISTORY_TOKEN" ]; then
               git fetch -q origin main || true
               # hard cap (was uncapped: a failing push retried for ~5 min and held up every feed update).
-              # The first run of a fresh runner has to clone the history repo, so it gets a longer cap.
-              cap=40; [ -d /tmp/eqsat-hist/.git ] || cap=240
+              # (a first-clone allowance of 240 s was tried and removed: the clone of the history repo does not finish in 4 min, so it cost 4 min per loop)
+              cap=40
               # a run killed by the cap can leave a half-finished rebase in the clone: clear it first
               git -C /tmp/eqsat-hist rebase --abort >/dev/null 2>&1 || true
               timeout -k 5 "$cap" python3 scripts/history/collect.py --src . --clone /tmp/eqsat-hist --repo citizenziggy2022/eqsat-history || fail "history collect failed or hit the ${cap}s cap"
