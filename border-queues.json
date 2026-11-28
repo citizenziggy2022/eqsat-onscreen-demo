@@ -1,16 +1,16 @@
 {
- "updated": "2026-11-28T01:23:39Z",
- "checked_at": "2026-11-28T01:23:39Z",
+ "updated": "2026-11-28T01:32:06Z",
+ "checked_at": "2026-11-28T01:32:06Z",
  "kind": "border",
  "source": "єЧерга / eCherha · вантажівки / trucks",
  "regions": {
   "lviv": {
    "status": "outage",
-   "note": "Краківець → PL: 654 вант. · 7 д 23 год"
+   "note": "Краківець → PL: 653 вант. · 7 д 23 год"
   },
   "volyn": {
    "status": "outage",
-   "note": "Ягодин → PL: 1262 вант. · 5 д 2 год"
+   "note": "Ягодин → PL: 1255 вант. · 5 д 2 год"
   },
   "zakarpattia": {
    "status": "outage",
@@ -18,11 +18,11 @@
   },
   "chernivtsi": {
    "status": "outage",
-   "note": "Порубне → RO: 1342 вант. · 5 д 11 год"
+   "note": "Порубне → RO: 1332 вант. · 5 д 10 год"
   },
   "odesa": {
-   "status": "ok",
-   "note": "Виноградівка → MD: 0 вант. · 0 год"
+   "status": "limited",
+   "note": "Старокозаче → MD: 56 вант. · 12 год"
   },
   "vinnytsia": {
    "status": "ok",
@@ -49,7 +49,7 @@
    "name": "Краківець",
    "to": "PL",
    "hours": 191,
-   "trucks": 654
+   "trucks": 653
   },
   {
    "oblast": "lviv",
@@ -63,14 +63,14 @@
    "name": "Угринів",
    "to": "PL",
    "hours": 0.0,
-   "trucks": 3
+   "trucks": 2
   },
   {
    "oblast": "lviv",
    "name": "Угринів",
    "to": "PL",
    "hours": 135,
-   "trucks": 592
+   "trucks": 590
   },
   {
    "oblast": "volyn",
@@ -91,7 +91,7 @@
    "name": "Шегині",
    "to": "PL",
    "hours": 167,
-   "trucks": 637
+   "trucks": 636
   },
   {
    "oblast": "lviv",
@@ -105,7 +105,7 @@
    "name": "Ягодин",
    "to": "PL",
    "hours": 122,
-   "trucks": 1262
+   "trucks": 1255
   },
   {
    "oblast": "volyn",
@@ -139,8 +139,8 @@
    "oblast": "chernivtsi",
    "name": "Порубне",
    "to": "RO",
-   "hours": 131,
-   "trucks": 1342
+   "hours": 130,
+   "trucks": 1332
   },
   {
    "oblast": "chernivtsi",
@@ -200,6 +200,13 @@
   },
   {
    "oblast": "odesa",
+   "name": "Старокозаче",
+   "to": "MD",
+   "hours": 12.5,
+   "trucks": 56
+  },
+  {
+   "oblast": "odesa",
    "name": "Табаки",
    "to": "MD",
    "hours": 0.0,
@@ -224,7 +231,7 @@
    "name": "Лужанка",
    "to": "HU",
    "hours": 105,
-   "trucks": 257
+   "trucks": 256
   }
  ]
 }
