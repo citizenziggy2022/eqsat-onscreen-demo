@@ -328,7 +328,8 @@ def push_with_retry(cwd, remote="origin", branch="history", attempts=3):
         r = _run(["git", "push", remote, branch], cwd)
         if r.returncode == 0:
             return True
-        print(f"history push attempt {i + 1} failed: {r.scrubbed[-400:]}", file=sys.stderr)  # token already scrubbed
+        _big = " | ".join(l.strip()[:200] for l in r.scrubbed.splitlines() if ("File " in l or "GH001" in l or "exceeds" in l))
+        print(f"history push attempt {i + 1} failed: {_big or r.scrubbed[-400:]}", file=sys.stderr)  # token already scrubbed
         pull = _run(["git", "pull", "--rebase", remote, branch], cwd)
         if pull.returncode != 0:
             if not _resolve_jsonl_conflicts(cwd):
