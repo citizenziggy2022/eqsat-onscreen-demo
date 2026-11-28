@@ -6,38 +6,51 @@
       "switch:dishbox"
     ],
     "stats": [
-      "screen",
       "motion",
       "health",
+      "screen",
       "visitors",
       "blocked",
       "news",
       "alerts",
       "onair",
-      "qr"
+      "qr",
+      "maps"
     ],
     "content": [
+      "conflictphotos",
       "switch:photopanel",
+      "sec:maps",
       "sec:stations",
       "sec:bulletins",
-      "sec:maps",
-      "conflictphotos",
+      "sec:border",
       "sec:news_sources",
-      "sec:idents"
+      "sec:idents",
+      "sec:sponsor",
+      "sec:cta",
+      "switch:alertsound",
+      "switch:emergencystrip",
+      "sec:cards",
+      "switch:dishbox",
+      "sec:qr",
+      "switch:qrtrack"
     ],
     "settings": [
       "set:lang",
-      "set:view",
       "set:open",
+      "set:view",
       "set:stats",
-      "set:version",
-      "set:name",
-      "set:panel-transparency",
       "set:token",
       "set:logger",
-      "set:clear"
+      "set:name",
+      "set:panel-transparency",
+      "set:clear",
+      "set:version"
     ],
     "history": [
+      "runnererrors",
+      "emergencycheck",
+      "sourceissues",
       "logins",
       "changes",
       "versions"
@@ -51,10 +64,10 @@
       "group:lofi"
     ],
     "emergency": [
-      "switch:emergencystrip",
       "sec:cards",
+      "switch:emergencystrip",
       "switch:alertsound"
     ]
   },
-  "saved_at": "2026-11-13T12:04:49.946Z"
+  "saved_at": "2026-11-28T17:55:45.166Z"
 }
