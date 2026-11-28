@@ -1,12 +1,12 @@
 {
  "note": "Written by scripts/fetch_bulletins.py from official channels (see sources). en_mt = English machine translation (m2m100), shown as such. Safety posts only (alerts, shelters, evacuation, shelling, fires, power, water, gas, heat, mines, casualty notices, aid points, phone outages, road closures, rescue work). Text is the source's own, shortened. No post passing the filter = no auto bulletins. Manual bulletins in config.json / bulletins.json are shown first.",
- "generated_at": "2026-11-28T19:13:04Z",
+ "generated_at": "2026-11-28T19:25:40Z",
  "sources": [
   {
    "name": "ДСНС України",
    "url": "https://t.me/s/dsns_telegram",
    "verified": "Telegram verified badge; linked as the official channel of dsns.gov.ua",
-   "status": "ok: kept 3 / dropped 5, showing 2"
+   "status": "ok: kept 3 / dropped 4, showing 2"
   },
   {
    "name": "Херсонська ОВА",
@@ -41,6 +41,24 @@
  ],
  "bulletins": [
   {
+   "id": "auto-dsns_telegram-81851",
+   "title": "Чернігівщина: рятувальники ліквідували пожежі після ворожих ударів",
+   "body": "Сьогодні російські війська декілька разів атакували Корюківський район. Внаслідок ворожих ударів по території одного з підприємств виникли пожежі. Вогнеборці ДСНС ліквідували всі займання.",
+   "source": "ДСНС України",
+   "source_url": "https://t.me/dsns_telegram/81851",
+   "region": "Україна",
+   "category": "Офіційно / Official",
+   "severity": "info",
+   "issued_at": "2026-11-28T19:21:24Z",
+   "expires_at": "2026-11-29T07:21:24Z",
+   "auto": true,
+   "en_mt": {
+    "title": "Chernihiv region: rescuers eliminated fires after enemy strikes",
+    "body": "Today Russian troops attacked the Korukivskyi district several times. As a result of enemy strikes on the territory of one of the enterprises, fires broke out. Firefighters of the State Emergency Service eliminated all the fires.",
+    "by": "m2m100"
+   }
+  },
+  {
    "id": "auto-khersonskaODA-72400",
    "title": "Президент України Володимир Зеленський підписав Указ №1151/2026, яким увів у дію рішення РНБО від 23 жовтня…",
    "body": "Документ, зокрема, передбачає обмеження на оприлюднення у засобах масової інформації інформації про об’єкти паливно-енергетичного сектору та систем життєзабезпечення населення. Йдеться про такі відомості: ▪ Наслідки російських атак. Заборонено висвітлювати…",
@@ -73,24 +91,6 @@
    "en_mt": {
     "title": "In Bila Tserkva, rescuers have deployed a assistance point and are eliminating the consequences of the enemy attack",
     "body": "As a result of the shelling in the city, 8 residential buildings were damaged — windows were broken in apartments, there is no electricity supply. To support residents, DSNs units deployed a assistance point. Here people can warm up, charge their phones and receive necessary…",
-    "by": "m2m100"
-   }
-  },
-  {
-   "id": "auto-dsns_telegram-81819",
-   "title": "у Кременчуці та районі внаслідок ворожої атаки пошкоджено підприємство та житлові будинки",
-   "body": "У м. Кременчук зафіксовано пошкодження на території одного з підприємств. Також у Кременчуцькому районі вибуховою хвилею вибито вікна у житлових будинках та господарчій споруді. До ліквідації наслідків атаки залучалися підрозділи ДСНС Полтавщини. Інформація…",
-   "source": "ДСНС України",
-   "source_url": "https://t.me/dsns_telegram/81819",
-   "region": "Україна",
-   "category": "Офіційно / Official",
-   "severity": "info",
-   "issued_at": "2026-11-28T14:58:01Z",
-   "expires_at": "2026-11-29T02:58:01Z",
-   "auto": true,
-   "en_mt": {
-    "title": "In Kremenchuk and the district, as a result of the enemy attack, an enterprise and residential buildings were damaged",
-    "body": "In the city of Kremenchuk, damage was recorded on the territory of one of the enterprises. Also in the Kremenchuk district, the blast wave blew out windows in residential buildings and farm buildings. Units of the DSNs of Poltavshchyna were involved in the elimination of the consequences of the attack. Information…",
     "by": "m2m100"
    }
   },
